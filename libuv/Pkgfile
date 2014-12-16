@@ -1,0 +1,27 @@
+# Description:	Multi-platform support library with a focus on asynchronous I/O - git checkout.
+# URL:          https://github.com/libuv/libuv
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:	kori, kori at openmailbox dot org
+# Depends on:	git
+
+name=libuv
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/libuv/libuv.git
+	else
+		git clone git://github.com/libuv/libuv.git $name
+		cd $name
+	fi
+
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+
+	make DESTDIR=$PKG MANDIR="/usr/man/man1" install 
+}

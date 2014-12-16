@@ -1,0 +1,24 @@
+# Description:	ubase is a collection of tools similar in spirit to util-linux but much simpler - git checkout
+# URL:          http://tools.suckless.org/ubase
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:	kori, kori at openmailbox dot org
+# Depends on:	git
+
+name=ubase
+version=git
+release=1
+source=()
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git pull git://git.suckless.org/ubase
+    else
+        git clone git://git.suckless.org/ubase $name
+        cd $name
+    fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/opt/ubase MANPREFIX=/opt/ubase/man install 
+}

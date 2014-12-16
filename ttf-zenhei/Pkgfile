@@ -1,0 +1,17 @@
+# Description: A Hei Ti Style (sans-serif) Chinese Outline Font.
+# URL:         http://sourceforge.net/projects/wqy/
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  fontconfig
+
+name=ttf-zenhei
+version=0.9.45
+release=1
+source=(http://downloads.sourceforge.net/project/wqy/wqy-zenhei/$version%20%28Fighting-state%20RC1%29/wqy-zenhei-$version.tar.gz)
+
+build()	{
+	cd wqy-zenhei
+
+	install -Dm644 wqy-zenhei.ttc     $PKG/usr/share/fonts/X11/TTF/WenQuanYi/ZenHei.ttc
+	install -Dm644 44-wqy-zenhei.conf $PKG/etc/fonts/conf.avail/65-wqy-zenhei.conf
+}

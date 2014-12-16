@@ -1,0 +1,27 @@
+# Description: An efficient object serialization library, C/C++ version.
+# URL:         http://msgpack.org/
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  git
+
+name=msgpack-c
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/msgpack/msgpack-c.git
+	else
+		git clone git://github.com/msgpack/msgpack-c.git msgpack-c
+		cd $name
+	fi
+
+	./bootstrap
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install 
+}

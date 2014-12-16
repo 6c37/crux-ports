@@ -1,0 +1,5 @@
+#!/bin/sh
+if ! grep /bin/ksh /etc/shells > /dev/null 2>&1; then
+    echo "Adding ksh to /etc/shells ..."
+    echo "/bin/ksh" >> /etc/shells
+fi

@@ -1,0 +1,30 @@
+# Description: Vim's rebirth for the 21st century - git checkout
+# URL:         https://github.com/neovim/neovim
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  git cmake libuv luajit msgpack-c msgpack-lua lua-bitop lua-lpeg
+
+name=neovim
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull https://github.com/neovim/neovim
+	else
+		git clone https://github.com/neovim/neovim $name
+		cd $name
+	fi
+
+	cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
+	rm -rf $PKG/usr/share/nvim/runtime/{autoload,colors,compiler,ftplugin}/README.txt
+	rm -rf $PKG/usr/share/nvim/runtime/{indent,keymap,plugin,syntax,tools}/*README.txt
+}

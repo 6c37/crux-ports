@@ -1,0 +1,20 @@
+# Description: OpenBSD's version of ksh ported to Linux
+# URL:         http://www.connochaetos.org/oksh/
+# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    kori, kori at openmailbox dot org
+# Depends on: 
+
+name=oksh
+version=0.5.0
+release=1
+
+source=(http://www.connochaetos.org/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=$PKG
+  
+	make
+	make DESTDIR="$PKG" MANDIR="$PKG/usr/man/man1" install
+}

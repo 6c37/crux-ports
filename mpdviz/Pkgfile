@@ -1,0 +1,29 @@
+# Description:  Standalone console MPD visualizer - git checkout
+# URL:          https://github.com/lucy/mpdviz
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:   kori, kori at openmailbox dot org
+# Depends on:   git go fftw 
+
+name=mpdviz
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull https://github.com/lucy/mpdviz
+	else
+		git clone https://github.com/lucy/mpdviz $name
+		cd $name
+	fi
+
+	export GOPATH="$SRC"
+
+	go get -d
+	go clean
+	go build -o mpdviz
+
+	install -Dm755 mpdviz $PKG/usr/bin/mpdviz
+}

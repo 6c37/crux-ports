@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/fonts/
+drwxr-xr-x	root/root	etc/fonts/conf.avail/
+-rw-r--r--	root/root	etc/fonts/conf.avail/65-wqy-zenhei.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/WenQuanYi/
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/WenQuanYi/ZenHei.ttc

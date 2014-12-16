@@ -1,0 +1,35 @@
+# Description: A minimalist web browser - git checkout
+# URL:         https://github.com/conformal/xombrero
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  git libbsd desktop-file-utils webkitgtk
+
+name=xombrero
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/conformal/xombrero.git
+	else
+		git clone git://github.com/conformal/xombrero.git $name
+		cd $name
+	fi
+
+	sed -i 's/gnutls/& libbsd/' Makefile
+	sed -i 's|/usr/local|/usr|' xombrero.{h,conf}
+	sed -i 's|LIBS= gtk+-2.0|& javascriptcoregtk-1.0|' Makefile
+	sed -i 's|https://www.cyphertite.com|http://crux.nu|' xombrero.{c,conf,h}
+
+	cd "linux"
+
+	make PREFIX="/usr/" MANDIR="/usr/man" GTK_VERSION=gtk2
+	make install PREFIX="/usr" MANDIR="/usr/man" GTK-VERSION=gtk2 DESTDIR=$PKG
+
+	install -Dm644 ../xombrero.conf $PKG/etc/xombrero.conf
+	install -Dm644 ../xombrero.desktop  $PKG/usr/share/applications/xombrero.desktop
+	install -Dm755 ../config-checker.pl $PKG/usr/bin/xombrero-config-checker
+}

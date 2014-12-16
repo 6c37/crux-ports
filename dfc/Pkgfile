@@ -1,0 +1,29 @@
+# Description:  Display file system space usage using graph and colors - git checkout
+# URL:          http://projects.gw-computing.net/projects/dfc
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:   kori, kori at openmailbox dot org
+# Depends on:   git cmake
+
+name=dfc
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://gw-computing.net/$name.git
+	else
+		git clone git://gw-computing.net/$name.git $name
+		cd $name
+	fi
+
+	cmake ./ '-DPREFIX=/usr' '-DSYSCONFDIR=/etc' '-DMAN_PATH=/usr/man'
+
+	make DESTDIR=$PKG install
+
+	# clean up
+	rm -rf $PKG/usr/share/{doc,locale}
+	rm -rf $PKG/{usr/man,etc/xdg/dfc}/fr	
+}

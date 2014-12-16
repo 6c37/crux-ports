@@ -1,0 +1,20 @@
+# Description: Pattern-matching library for Lua 5.2
+# URL:         http://www.inf.puc-rio.br/~roberto/lpeg
+# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    kori, kori at openmailbox dot org
+# Depends on:  lua
+
+name=lua-lpeg
+version=0.12
+release=1
+
+source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
+
+build() {
+	cd lpeg-$version
+	
+	make LUADIR=/usr/include
+
+	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.2/lpeg.so
+	install -Dm644 re.lua  $PKG/usr/share/lua/5.2/re.lua
+}

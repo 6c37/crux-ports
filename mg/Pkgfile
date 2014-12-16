@@ -1,0 +1,21 @@
+# Description: A portable version of Micro GNU/Emacs by the OpenBSD team
+# URL:         http://homepage.boetes.org/software/mg/
+# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    kori, kori at openmailbox dot org
+# Depends on:  libbsd
+
+name=mg
+version=20141127
+release=1
+source=(http://homepage.boetes.org/software/mg/mg-$version.tar.gz
+        libs.patch
+)
+
+build() {
+	cd $name-$version
+
+	patch -p1 < ../libs.patch
+
+	make  
+	make prefix="/usr" DESTDIR="$PKG" BINDIR="$PKG/usr/bin" install
+}

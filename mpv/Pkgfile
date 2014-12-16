@@ -1,0 +1,35 @@
+# Description:  General Purpose video player based on MPlayer and mplayer2 - git checkout
+# URL:          http://mpv.io
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:   kori, kori at openmailbox dot org
+# Depends on:   libass ffmpeg docutils python
+# Nice to have: libdvdread libdvdnav
+
+name=mpv
+version=git
+release=1
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/mpv-player/mpv.git
+	else
+		git clone git://github.com/mpv-player/mpv.git $name
+		cd $name
+	fi
+
+	./bootstrap.py
+	./waf configure \
+		--prefix=$PKG/usr \
+		--mandir=$PKG/usr/man \
+		--disable-joystick \
+		--disable-direct3d \
+		--disable-cocoa \
+		--disable-coreaudio
+
+	./waf build
+	./waf install destdir=$PKG
+	rm -rf $PKG/share
+}

@@ -1,0 +1,22 @@
+# Description:  A set of monospaced OpenType fonts designed for coding environments
+# URL:          http://sourceforge.net/projects/sourcecodepro.adobe/
+# Packager:     kori, kori at openmailbox dot org
+# Maintainer:   kori, kori at openmailbox dot org
+# Depends on:   fontconfig
+
+name=otf-sourcecode
+version=1.017
+release=1
+source=(http://sourceforge.net/projects/sourcecodepro.adobe/files/SourceCodePro_FontsOnly-$version.zip)
+
+build() {
+    cd SourceCodePro_FontsOnly-$version
+
+	install -Dm644 OTF/SourceCodePro-ExtraLight.otf	$PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
+	install -Dm644 OTF/SourceCodePro-Light.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
+	install -Dm644 OTF/SourceCodePro-Regular.otf    $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Regular.otf
+	install -Dm644 OTF/SourceCodePro-Medium.otf     $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Medium.otf
+	install -Dm644 OTF/SourceCodePro-Bold.otf       $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Bold.otf
+	install -Dm644 OTF/SourceCodePro-Semibold.otf   $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Semibold.otf
+	install -Dm644 OTF/SourceCodePro-Black.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Black.otf
+}

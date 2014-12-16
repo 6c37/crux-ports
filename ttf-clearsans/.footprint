@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/ClearSans/
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/BoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Light.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Medium.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/MediumItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Regular.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/ClearSans/Thin.ttf

@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dmenu
+-rwxr-xr-x	root/root	usr/bin/dmenu_run
+-rwxr-xr-x	root/root	usr/bin/stest
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+drwxr-xr-x	root/root	usr/man/man1/man1/
+-rw-r--r--	root/root	usr/man/man1/man1/dmenu.1.gz
+-rw-r--r--	root/root	usr/man/man1/man1/stest.1.gz

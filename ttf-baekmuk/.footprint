@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/Baekmuk/
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Baekmuk/Batang.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Baekmuk/Dotum.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Baekmuk/Gulim.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Baekmuk/Headline.ttf

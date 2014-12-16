@@ -1,0 +1,24 @@
+# Description: Clear Sans from Intel.
+# URL:         https://01.org/clear-sans
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  fontconfig
+
+name=ttf-clearsans
+version=1.00
+release=1
+source=(https://01.org/sites/default/files/downloads/clear-sans/clearsans-1.00.zip)
+
+build() {
+	cd TTF
+
+	install -Dm644 ClearSans-Thin.ttf         $PKG/usr/share/fonts/X11/TTF/ClearSans/Thin.ttf
+	install -Dm644 ClearSans-Light.ttf        $PKG/usr/share/fonts/X11/TTF/ClearSans/Light.ttf
+	install -Dm644 ClearSans-Medium.ttf       $PKG/usr/share/fonts/X11/TTF/ClearSans/Medium.ttf
+	install -Dm644 ClearSans-Regular.ttf      $PKG/usr/share/fonts/X11/TTF/ClearSans/Regular.ttf
+	install -Dm644 ClearSans-Bold.ttf         $PKG/usr/share/fonts/X11/TTF/ClearSans/Bold.ttf
+
+	install -Dm644 ClearSans-Italic.ttf       $PKG/usr/share/fonts/X11/TTF/ClearSans/Italic.ttf
+	install -Dm644 ClearSans-MediumItalic.ttf $PKG/usr/share/fonts/X11/TTF/ClearSans/MediumItalic.ttf
+	install -Dm644 ClearSans-BoldItalic.ttf   $PKG/usr/share/fonts/X11/TTF/ClearSans/BoldItalic.ttf
+}

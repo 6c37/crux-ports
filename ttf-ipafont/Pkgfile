@@ -1,0 +1,20 @@
+# Description: Japanese outline fonts by Information-technology Promotion Agency, Japan
+# URL:         http://ipafont.ipa.go.jp/
+# Packager:    kori, kori at openmailbox dot org 
+# Maintainer:  kori, kori at openmailbox dot org 
+# Depends on:  fontconfig	
+
+name=ttf-ipafont
+version=00303
+release=2
+source=(http://iij.dl.sourceforge.jp/ipafonts/51868/IPAfont$version.zip)
+
+build() {
+	cd IPAfont00303
+
+	install -Dm644 ipag.ttf  $PKG/usr/share/fonts/X11/TTF/IPA/Gothic.ttf
+	install -Dm644 ipagp.ttf $PKG/usr/share/fonts/X11/TTF/IPA/PGothic.ttf
+
+	install -Dm644 ipam.ttf  $PKG/usr/share/fonts/X11/TTF/IPA/Mincho.ttf
+	install -Dm644 ipamp.ttf $PKG/usr/share/fonts/X11/TTF/IPA/PMincho.ttf
+}

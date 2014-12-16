@@ -1,0 +1,24 @@
+# Description: An efficient object serialization library implemented in pure Lua.
+# URL:         https://github.com/fperrad/lua-MessagePack
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  git
+
+name=msgpack-lua
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull https://github.com/fperrad/lua-MessagePack.git
+	else
+		git clone https://github.com/fperrad/lua-MessagePack.git msgpack-lua
+		cd $name
+	fi
+
+    make LUA=luajit LUAVER=5.1 PREFIX="/usr" DESTDIR="$PKG" install
+    make LUAVER=5.2 PREFIX="/usr" DESTDIR="$PKG" install
+}

@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/OTF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/OTF/Source/
+drwxr-xr-x	root/root	usr/share/fonts/X11/OTF/Source/CodePro/
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Black.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Bold.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Medium.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Regular.otf
+-rw-r--r--	root/root	usr/share/fonts/X11/OTF/Source/CodePro/Semibold.otf
