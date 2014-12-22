@@ -1,0 +1,24 @@
+# Description: Lightweight and customizable notification daemon - git checkout
+# URL:         https://github.com/knopwob/dunst
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org
+# Depends on:  git libnotify
+
+name=dunst
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/knopwob/dunst.git
+	else
+		git clone git://github.com/knopwob/dunst.git $name
+		cd $name
+	fi
+	
+	make PREFIX=/usr MANPREFIX=/usr/man
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
