@@ -28,25 +28,7 @@ build() {
 		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-gtk \
-		--disable-xft \
-		--disable-xrender \
-		--disable-xcursor \
-		--disable-rsvg \
-		--disable-bidi \
-		--disable-perllib \
-		--without-xpm \
-		--without-xft \
-		--disable-xft \
-		--disable-xinerama \
-		--without-stroke \
-		--disable-shm \
-		--without-rpm \
-		--without-readline \
-		--disable-readline \
-		--without-png \
-		--disable-png \
-		--without-gnome \
-		--without-imlib
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
