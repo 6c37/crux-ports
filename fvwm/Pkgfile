@@ -2,7 +2,7 @@
 # URL:         http://fvwm.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:
+# Depends on:  imlib2
 
 name=fvwm
 version=git
@@ -23,12 +23,11 @@ build() {
 	autoheader
 	automake --add-missing
 	autoreconf
-	./configure \
-		--prefix=/usr \
-		--mandir=/usr/man \
-		--libexecdir=/usr/lib \
-		--disable-gtk \
-		--disable-nls
+	./configure --prefix=/usr \
+				--mandir=/usr/man \
+				--libexecdir=/usr/lib \
+				--disable-gtk \
+				--disable-nls
 
 	make
 	make DESTDIR=$PKG install
