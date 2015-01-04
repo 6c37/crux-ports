@@ -1,0 +1,53 @@
+# Description: Extremely powerful ICCCM-compliant multiple virtual desktop window manager.
+# URL:         http://fvwm.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:
+
+name=fvwm
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull git://github.com/ThomasAdam/$name
+	else
+		git clone git://github.com/ThomasAdam/$name $name
+		cd $name
+	fi
+
+	aclocal
+	autoheader
+	automake --add-missing
+	autoreconf
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--libexecdir=/usr/lib \
+		--disable-gtk \
+		--disable-xft \
+		--disable-xrender \
+		--disable-xcursor \
+		--disable-rsvg \
+		--disable-bidi \
+		--disable-perllib \
+		--without-xpm \
+		--without-xft \
+		--disable-xft \
+		--disable-xinerama \
+		--without-stroke \
+		--disable-shm \
+		--without-rpm \
+		--without-readline \
+		--disable-readline \
+		--without-png \
+		--disable-png \
+		--without-gnome \
+		--without-imlib
+
+	make
+	make DESTDIR=$PKG install
+}
