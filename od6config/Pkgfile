@@ -1,0 +1,18 @@
+# Description:  Configuration tool for AMD Overdrive6 devices.
+# URL:          http://epixoip.github.io/od6config/
+# Packager:     esmth, esmth at openmailbox dot org
+# Maintainer:   esmth, esmth at openmailbox dot org
+# Depends on:   fglrx
+
+name=od6config
+version=git
+release=1
+source=(https://github.com/epixoip/od6config/archive/master.tar.gz)
+
+build() {
+	cd $name-master
+
+	make
+	make DESTDIR=$PKG install
+
+}

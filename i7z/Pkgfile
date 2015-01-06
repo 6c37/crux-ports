@@ -1,0 +1,23 @@
+# Description:  A better i7 (and now i3, i5) reporting tool for Linux.
+# URL:          https://code.google.com/p/i7z/
+# Packager:     esmth, esmth at openmailbox dot org
+# Maintainer:   esmth, esmth at openmailbox dot org
+# Depends on:   ncurses
+
+name=i7z
+version=0.27.2
+release=1
+source=(https://i7z.googlecode.com/files/i7z-0.27.2.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG install
+
+	mkdir $PKG/usr/man
+	mv $PKG/usr/share/man/* $PKG/usr/man/.
+
+	rm $PKG/usr/share -r
+
+}
