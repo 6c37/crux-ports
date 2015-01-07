@@ -2,7 +2,7 @@
 # URL:         http://rybczak.net/ncmpcpp
 # Maintainer:  kori, kori at openmailbox dot org
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
-# Depends on:  ncurses libmpdclient boost curl taglib
+# Depends on:  ncurses libmpdclient boost taglib
 
 name=ncmpcpp
 version=0.6.2
