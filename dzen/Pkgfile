@@ -1,0 +1,16 @@
+# Description: General purpose messaging, notification and menuing program for X11
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# URL:         https://github.com/robm/dzen
+# Depends on:  xorg-libx11 xorg-libxpm xorg-libxinerama xorg-libxft
+
+name=dzen
+version=git
+release=1
+source=(https://github.com/robm/dzen/archive/master.tar.gz)
+
+build() {
+  cd $name-master
+  make PREFIX=/usr
+  make MANPREFIX=/usr/man
+  make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
