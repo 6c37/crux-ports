@@ -2,7 +2,7 @@
 # URL:          https://bitbucket.org/melek/dmenu2
 # Packager:     kori, kori at openmailbox dot org
 # Maintainer:   kori, kori at openmailbox dot org
-# Depends on:   hg xorg-libxft xorg-libxinerama
+# Depends on:   mercurial xorg-libxft xorg-libxinerama
 
 name=dmenu2
 version=hg
