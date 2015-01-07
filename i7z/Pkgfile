@@ -13,11 +13,7 @@ build() {
 	cd $name-$version
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG mandir=/usr/man/ install
 
-	mkdir $PKG/usr/man
-	mv $PKG/usr/share/man/* $PKG/usr/man/.
-
-	rm $PKG/usr/share -r
-
+	rm -rf $PKG/usr/share
 }
