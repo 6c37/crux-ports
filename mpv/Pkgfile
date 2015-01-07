@@ -31,5 +31,5 @@ build () {
 
 	./waf build
 	./waf install destdir=$PKG
-	rm -rf $PKG/share
+	rm -rf $PKG/usr/share
 }
