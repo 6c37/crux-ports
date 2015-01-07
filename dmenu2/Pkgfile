@@ -20,6 +20,5 @@ build() {
 	fi
 
 	make
-
-	make DESTDIR="$PKG" MANPREFIX="/usr/man/man1" PREFIX=/usr install
+	make DESTDIR="$PKG" MANPREFIX="/usr/man/" PREFIX="/usr" install
 }
