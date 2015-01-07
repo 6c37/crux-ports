@@ -1,7 +1,7 @@
 # Description:  Utility for viewing and editing tags for MP3, FLAC, Ogg Vorbis, etc.
 # URL:          http://projects.gnome.org/easytag
-# Packager:     onodera, onodera at openmailbox dot com
-# Maintainer:   onodera, onodera at openmailbox dot com
+# Packager:     onodera, onodera at openmailbox dot org
+# Maintainer:   onodera, onodera at openmailbox dot org
 # Depends on:   gtk id3lib itstool
 # Nice to have: flac libvorbis
 
