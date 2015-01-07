@@ -1,0 +1,24 @@
+# Description:  An almost exact clone of ncmpc with some new features
+# URL:          http://rybczak.net/ncmpcpp
+# Maintainer:	kori, kori at openmailbox dot org
+# Packager:     kori, kori at openmailbox dot org
+# Depends on:   ncurses libmpdclient boost curl taglib
+
+name=ncmpcpp
+version=0.6.2
+release=1
+source=(https://github.com/arybczak/$name/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./autogen.sh \
+		--prefix=/usr \
+        --mandir=/usr/man \
+        --disable-clock
+
+    make
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/share
+}
