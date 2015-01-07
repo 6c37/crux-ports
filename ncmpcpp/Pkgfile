@@ -14,8 +14,8 @@ build() {
 
 	./autogen.sh \
 		--prefix=/usr \
-        --mandir=/usr/man \
-        --disable-clock
+		--mandir=/usr/man \
+		--disable-clock
 
     make
     make DESTDIR=$PKG install
