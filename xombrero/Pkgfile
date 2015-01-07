@@ -26,8 +26,8 @@ build() {
 
 	cd "linux"
 
-	make PREFIX="/usr/" MANDIR="/usr/man" GTK_VERSION=gtk2
-	make install PREFIX="/usr" MANDIR="/usr/man" GTK-VERSION=gtk2 DESTDIR=$PKG
+	make GTK_VERSION=gtk2
+	make PREFIX="/usr/" MANDIR="/usr/man" DESTDIR="$PKG" install 
 
 	install -Dm644 ../xombrero.conf $PKG/etc/xombrero.conf
 	install -Dm644 ../xombrero.desktop  $PKG/usr/share/applications/xombrero.desktop
