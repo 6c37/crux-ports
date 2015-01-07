@@ -19,12 +19,12 @@ build() {
 		cd $name
 	fi
 
-	./autogen.sh
-	./configure --prefix=/usr \
-				--mandir=/usr/man \
-				--libexecdir=/usr/lib \
-				--disable-gtk \
-				--disable-nls
+	./autogen.sh \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--libexecdir=/usr/lib \
+		--disable-gtk \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install

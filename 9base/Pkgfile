@@ -25,10 +25,9 @@ build() {
 	sed -i '/-static/d' config.mk
 
 	make
-
 	make DESTDIR=$PKG install
-	install -D -m755 $SRC/9 $PKG/usr/bin/9
-	install -D -m755 $SRC/plan9.sh $PKG/etc/profile.d/plan9.sh
+	install -Dm755 $SRC/9 $PKG/usr/bin/9
+	install -Dm755 $SRC/plan9.sh $PKG/etc/profile.d/plan9.sh
 
 	rm -f $PKG/opt/plan9/lib/troff/font/devutf/charlib/README
 }

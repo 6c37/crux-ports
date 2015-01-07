@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/cols
 -rwxr-xr-x	root/root	opt/sbase/bin/comm
 -rwxr-xr-x	root/root	opt/sbase/bin/cp
+-rwxr-xr-x	root/root	opt/sbase/bin/cron
 -rwxr-xr-x	root/root	opt/sbase/bin/cut
 -rwxr-xr-x	root/root	opt/sbase/bin/date
 -rwxr-xr-x	root/root	opt/sbase/bin/dirname
@@ -29,6 +30,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/kill
 -rwxr-xr-x	root/root	opt/sbase/bin/link
 -rwxr-xr-x	root/root	opt/sbase/bin/ln
+-rwxr-xr-x	root/root	opt/sbase/bin/logger
 -rwxr-xr-x	root/root	opt/sbase/bin/logname
 -rwxr-xr-x	root/root	opt/sbase/bin/ls
 -rwxr-xr-x	root/root	opt/sbase/bin/md5sum
@@ -89,6 +91,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/cols.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/comm.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cp.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/cron.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cut.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/date.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/dirname.1.gz
@@ -105,6 +108,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/kill.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/link.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/ln.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/logger.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/logname.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/ls.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/md5sum.1.gz
