@@ -1,7 +1,7 @@
 # Description: General purpose messaging, notification and menuing program for X11
-# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
-# Packager:    Joe Schillinger, js1 at openmailbox dot org
 # URL:         https://github.com/robm/dzen
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
 # Depends on:  xorg-libx11 xorg-libxpm xorg-libxinerama xorg-libxft
 
 name=dzen
