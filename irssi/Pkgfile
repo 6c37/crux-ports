@@ -1,0 +1,34 @@
+# Description: Terminal based IRC client for UNIX systems - git checkout
+# URL:         http://www.irssi.org/
+# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  kori, kori at openmailbox dot org 
+# Depends on:  git glib
+
+name=irssi
+version=git
+release=1
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull https://github.com/irssi/irssi.git
+	else
+		git clone https://github.com/irssi/irssi.git $name
+		cd $name
+	fi
+
+    ./autogen.sh \
+      --prefix=/usr \
+      --mandir=/usr/man \
+      --enable-ipv6 \
+      --with-proxy \
+      --with-perl-lib=site
+
+    make
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/share/{doc,irssi/help}
+	rm $(find $PKG -name .packlist -or -name perllocal.pod -or -name '*.bs')
+}
