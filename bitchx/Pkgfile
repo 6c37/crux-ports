@@ -1,7 +1,7 @@
 # Description:	BitchX is an IRC (Internet Relay Chat) client.
 # URL:          http://bitchx.sourceforge.net
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:	kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:	Luiz de Milon, kori at openmailbox dot org
 # Depends on:
 # Nice to have: cp437
 

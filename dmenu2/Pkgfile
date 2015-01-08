@@ -1,7 +1,7 @@
 # Description:  Fork of dmenu with many useful patches applied and additional options like screen select, dim or opacity change - hg checkout
 # URL:          https://bitbucket.org/melek/dmenu2
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:   kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:   Luiz de Milon, kori at openmailbox dot org
 # Depends on:   mercurial xorg-libxft xorg-libxinerama
 
 name=dmenu2

@@ -1,7 +1,7 @@
 # Description: C extension adding bitwise operations on numbers
 # URL:         http://bitop.luajit.org/index.html
-# Maintainer:  kori, kori at openmailbox dot org
-# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on:  lua
 
 name=lua-bitop

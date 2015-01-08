@@ -1,7 +1,7 @@
 # Description:  Display file system space usage using graph and colors - git checkout
 # URL:          http://projects.gw-computing.net/projects/dfc
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:   kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:   Luiz de Milon, kori at openmailbox dot org
 # Depends on:   git cmake
 
 name=dfc

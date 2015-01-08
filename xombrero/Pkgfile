@@ -1,7 +1,7 @@
 # Description: A minimalist web browser - git checkout
 # URL:         https://github.com/conformal/xombrero
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  git libbsd desktop-file-utils webkitgtk
 
 name=xombrero

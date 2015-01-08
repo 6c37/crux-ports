@@ -1,7 +1,7 @@
 # Description: An efficient object serialization library implemented in pure Lua.
 # URL:         https://github.com/fperrad/lua-MessagePack
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  git
 
 name=msgpack-lua

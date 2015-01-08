@@ -1,7 +1,7 @@
 # Description: Pattern-matching library for Lua 5.2
 # URL:         http://www.inf.puc-rio.br/~roberto/lpeg
-# Maintainer:  kori, kori at openmailbox dot org
-# Packager:    kori, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on:  lua
 
 name=lua-lpeg

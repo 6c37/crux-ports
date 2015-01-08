@@ -1,7 +1,7 @@
 # Description: Roboto font from Google.
 # URL:         http://www.google.com/design/spec/style/typography.html#typography-roboto
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends On:  fontconfig
 
 name=ttf-roboto

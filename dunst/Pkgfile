@@ -1,7 +1,7 @@
 # Description: Lightweight and customizable notification daemon - git checkout
 # URL:         https://github.com/knopwob/dunst
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  git libnotify libxdg-basedir
 
 name=dunst

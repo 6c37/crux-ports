@@ -1,7 +1,7 @@
 # Description: Vim's rebirth for the 21st century - git checkout
 # URL:         https://github.com/neovim/neovim
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  git cmake libuv luajit msgpack-c msgpack-lua lua-bitop lua-lpeg
 
 name=neovim

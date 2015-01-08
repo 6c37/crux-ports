@@ -1,7 +1,7 @@
 # Description: Just-in-time compiler and drop-in replacement for Lua 5.1 - git checkout
 # URL:         http://luajit.org/
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  git
 
 name=luajit

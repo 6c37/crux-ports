@@ -1,7 +1,7 @@
 # Description: Clear Sans from Intel.
 # URL:         https://01.org/clear-sans
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  fontconfig
 
 name=ttf-clearsans

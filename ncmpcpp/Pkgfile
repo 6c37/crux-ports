@@ -1,6 +1,6 @@
 # Description: An almost exact clone of ncmpc with some new features
 # URL:         http://rybczak.net/ncmpcpp
-# Maintainer:  kori, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
 # Depends on:  ncurses libmpdclient boost taglib
 

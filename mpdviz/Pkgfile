@@ -1,7 +1,7 @@
 # Description:  Standalone console MPD visualizer - git checkout
 # URL:          https://github.com/lucy/mpdviz
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:   kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:   Luiz de Milon, kori at openmailbox dot org
 # Depends on:   git go fftw 
 
 name=mpdviz

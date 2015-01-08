@@ -1,7 +1,7 @@
 # Description:	Emulates an old-style "code page 437" / "IBM-PC" character set terminal on a modern UTF-8 terminal emulator.
 # URL:          https://github.com/keaston/cp437
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:	kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:	Luiz de Milon, kori at openmailbox dot org
 # Depends on:
 
 name=cp437

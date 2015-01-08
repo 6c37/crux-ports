@@ -1,7 +1,7 @@
 # Description: The Liberation(tm) font family.
 # URL:         https://fedorahosted.org/liberation-fonts/
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  fontconfig
 
 name=ttf-liberation

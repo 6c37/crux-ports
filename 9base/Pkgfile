@@ -1,7 +1,7 @@
 # Description:  Port of various original Plan9 tools to *nix - git checkout
 # URL:          http://tools.suckless.org/9base
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:   kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:   Luiz de Milon, kori at openmailbox dot org
 # Depends on:   git 
 
 name=9base

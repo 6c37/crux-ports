@@ -1,7 +1,7 @@
 # Description: Terminal based IRC client for UNIX systems - git checkout
 # URL:         http://www.irssi.org/
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org 
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org 
 # Depends on:  git glib
 
 name=irssi

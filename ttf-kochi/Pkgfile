@@ -1,7 +1,7 @@
 # Description: High quality Japanese TrueType fonts
 # URL:         http://pkgsrc.se/fonts/kochi-ttf
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  fontconfig
 
 name=ttf-kochi

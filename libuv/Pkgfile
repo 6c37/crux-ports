@@ -1,7 +1,7 @@
 # Description:	Multi-platform support library with a focus on asynchronous I/O - git checkout.
 # URL:          https://github.com/libuv/libuv
-# Packager:     kori, kori at openmailbox dot org
-# Maintainer:	kori, kori at openmailbox dot org
+# Packager:     Luiz de Milon, kori at openmailbox dot org
+# Maintainer:	Luiz de Milon, kori at openmailbox dot org
 # Depends on:	git
 
 name=libuv

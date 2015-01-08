@@ -1,7 +1,7 @@
 # Description: Baekmuk is a set of Korean TrueType fonts.
 # URL:         http://kldp.net/projects/baekmuk/
-# Packager:    kori, kori at openmailbox dot org
-# Maintainer:  kori, kori at openmailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  fontconfig
 
 name=ttf-baekmuk
