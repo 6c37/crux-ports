@@ -12,8 +12,8 @@ source=(http://kldp.net/frs/download.php/1429/baekmuk-ttf-$version.tar.gz)
 build()	{
 	cd baekmuk-ttf-$version/
 
-	install -Dm644 ttf/hline.ttf $PKG/usr/share/fonts/X11/TTF/Baekmuk/Headline.ttf
+	install -Dm644 ttf/hline.ttf  $PKG/usr/share/fonts/X11/TTF/Baekmuk/Headline.ttf
 	install -Dm644 ttf/batang.ttf $PKG/usr/share/fonts/X11/TTF/Baekmuk/Batang.ttf
-	install -Dm644 ttf/dotum.ttf $PKG/usr/share/fonts/X11/TTF/Baekmuk/Dotum.ttf
-	install -Dm644 ttf/gulim.ttf $PKG/usr/share/fonts/X11/TTF/Baekmuk/Gulim.ttf
+	install -Dm644 ttf/dotum.ttf  $PKG/usr/share/fonts/X11/TTF/Baekmuk/Dotum.ttf
+	install -Dm644 ttf/gulim.ttf  $PKG/usr/share/fonts/X11/TTF/Baekmuk/Gulim.ttf
 }
