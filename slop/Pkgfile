@@ -1,0 +1,17 @@
+# Description: Utility to query the user for a selection and print the region to stdout
+# URL:         https://github.com/naelstrof/slop
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  cmake gcc-libs xorg-libxdxt xorg-libx11
+
+name=slop
+version=3.1.15
+release=1
+source=(https://github.com/naelstrof/slop/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cmake -DCMAKE_INSTALL_PREFIX=/usr/bin . .
+	make
+	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+}
