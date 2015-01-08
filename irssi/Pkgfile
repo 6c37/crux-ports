@@ -19,12 +19,12 @@ build () {
 		cd $name
 	fi
 
-    ./autogen.sh \
-      --prefix=/usr \
-      --mandir=/usr/man \
-      --enable-ipv6 \
-      --with-proxy \
-      --with-perl-lib=site
+	./autogen.sh \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--enable-ipv6 \
+		--with-proxy \
+		--with-perl-lib=site
 
     make
     make DESTDIR=$PKG install
