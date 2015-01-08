@@ -1,0 +1,17 @@
+# Description: Utility to take a screenshot using imlib2
+# URL:         https://github.com/naelstrof/maim
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  cmake freetype imlib2 xorg-libx11 xorg-libxext xorg-libxfixes xorg-libxrandr
+
+name=maim
+version=3.3.41
+release=1
+source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cmake -DCMAKE_INSTALL_PREFIX=/usr .
+	make
+	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+}
