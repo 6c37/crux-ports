@@ -26,9 +26,9 @@ build () {
 		--with-proxy \
 		--with-perl-lib=site
 
-    make
-    make DESTDIR=$PKG install
+	make
+	make DESTDIR=$PKG install
 
-    rm -rf $PKG/usr/share/{doc,irssi/help}
+	rm -rf $PKG/usr/share/{doc,irssi/help}
 	rm $(find $PKG -name .packlist -or -name perllocal.pod -or -name '*.bs')
 }
