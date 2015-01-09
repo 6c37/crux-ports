@@ -12,10 +12,10 @@ source=(http://libcaca.zoy.org/files/libcaca/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
+  
   ./configure --prefix=/usr --mandir=/usr/man \
     --enable-shared --disable-doc \
     --disable-cxx --disable-gl --disable-csharp --disable-static
   make
-
   make DESTDIR="$PKG" install
 }
