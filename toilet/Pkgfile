@@ -12,9 +12,9 @@ source=(http://libcaca.zoy.org/files/toilet/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
+  
   ./configure --prefix=/usr
   make
-
   make DESTDIR="$PKG" install
 }
 
