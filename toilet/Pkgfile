@@ -1,0 +1,20 @@
+# Description: free replacement for the FIGlet utility.
+# URL:         http://libcaca.zoy.org/wiki/toilet
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  libcaca
+
+name=toilet
+version=0.3
+release=1
+source=(http://libcaca.zoy.org/files/toilet/$name-$version.tar.gz)
+
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+
+  make DESTDIR="$PKG" install
+}
+
