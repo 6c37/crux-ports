@@ -19,5 +19,5 @@ build(){
 		git clone git://github.com/sloonz/rewritefs $name
 		cd $name
 	fi
-	make DESTDIR=$PKG install
+	make PREFIX="/usr" DESTDIR=$PKG install
 }
