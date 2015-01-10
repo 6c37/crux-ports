@@ -1,0 +1,8 @@
+drwxr-xr-x	kyubiko/users	usr/
+drwxr-xr-x	kyubiko/users	usr/local/
+drwxr-xr-x	kyubiko/users	usr/local/bin/
+-rwxr-xr-x	kyubiko/users	usr/local/bin/rewritefs
+drwxr-xr-x	kyubiko/users	usr/local/share/
+drwxr-xr-x	kyubiko/users	usr/local/share/man/
+drwxr-xr-x	kyubiko/users	usr/local/share/man/man1/
+-rw-r--r--	kyubiko/users	usr/local/share/man/man1/rewritefs.1.gz
