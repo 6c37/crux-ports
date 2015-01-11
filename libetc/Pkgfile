@@ -1,0 +1,21 @@
+# Description: 	An LD_PRELOAD-able shared library that intercepts file operations: if a program tries to open a dotfile in $HOME, it is redirected to $XDG_CONFIG_HOME
+# URL:		http://ordiluc.net/fs/libetc/
+# Packager:	Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:	Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on:	
+
+name=libetc
+version=0.4
+release=1
+source=(http://ordiluc.net/fs/libetc/$name-$version.tar.gz
+	libetc-0.4-firefox35.patch
+	libetc-0.4-makefile.patch
+)
+
+build(){
+	cd $name-$version
+	patch -p1 < ../libetc-0.4-firefox35.patch
+	patch -p1 < ../libetc-0.4-makefile.patch
+
+	make CLAGS="$CFLAGS -DXAUTH_HACK" DESTDIR=$PKG install
+}
