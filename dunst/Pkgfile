@@ -19,6 +19,6 @@ build() {
 		cd $name
 	fi
 	
-	make PREFIX=/usr MANPREFIX=/usr/man
-	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+	make
+	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
 }
