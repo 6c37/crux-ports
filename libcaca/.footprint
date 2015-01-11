@@ -41,6 +41,13 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/caca/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.pyo
+drwxr-xr-x	root/root	usr/lib/ruby/
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/
+-rw-r--r--	root/root	usr/lib/ruby/site_ruby/2.1/caca.rb
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/caca.la
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/caca.so
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/caca-config.1.gz

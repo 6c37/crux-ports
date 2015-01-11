@@ -2,7 +2,7 @@
 # URL:         http://caca.zoy.org/wiki/libcaca
 # Packager:    Joe Schillinger, js1 at openmailbox dot org
 # Maintainer:  Joe Schillinger, js1 at openmailbox dot org
-# Depends on:  imlib2 ncurses
+# Depends on:  imlib2
 
 name=libcaca
 version=0.99.beta19
@@ -11,11 +11,11 @@ source=(http://libcaca.zoy.org/files/libcaca/$name-$version.tar.gz)
 
 
 build() {
-  cd $name-$version
+	cd $name-$version
   
-  ./configure --prefix=/usr --mandir=/usr/man \
-    --enable-shared --disable-doc \
-    --disable-cxx --disable-gl --disable-csharp --disable-static
-  make
-  make DESTDIR="$PKG" install
+	./configure --prefix=/usr --mandir=/usr/man \
+		--enable-shared --disable-doc \
+		--disable-cxx --disable-gl --disable-csharp --disable-static
+	make
+	make DESTDIR="$PKG" install
 }
