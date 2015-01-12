@@ -1,0 +1,18 @@
+# Description: A tool which allows you to compose wallpapers for X
+# URL:         http://pkgsrc.se/x11/hsetroot
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  imlib2 xorg-server
+
+name=hsetroot
+version=1.0.2
+release=1
+source=(ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/$name-$version.tar.gz)
+
+build() {
+    cd "$name-$version"
+
+    ./configure --prefix=/usr
+    make LDFLAGS="-lX11"
+	install -Dm755 src/hsetroot $PKG/usr/bin/hsetroot
+}
