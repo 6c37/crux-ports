@@ -10,9 +10,9 @@ release=1
 source=(ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/$name-$version.tar.gz)
 
 build() {
-    cd "$name-$version"
+	cd "$name-$version"
 
-    ./configure --prefix=/usr
-    make LDFLAGS="-lX11"
+	./configure --prefix=/usr
+	make LDFLAGS="-lX11"
 	install -Dm755 src/hsetroot $PKG/usr/bin/hsetroot
 }
