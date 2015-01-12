@@ -1,0 +1,19 @@
+# Description: An implementation of the XDG Base Directory specifications.
+# URL:         https://github.com/devnev/libxdg-basedir
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  glibc
+
+name=libxdg-basedir
+version=1.2.0
+release=3
+source=(https://github.com/devnev/libxdg-basedir/archive/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$name-$version
+
+	./autogen.sh --prefix=/usr
+	make
+	make DESTDIR="$PKG" install  
+}
