@@ -12,7 +12,7 @@ source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
 build() {
 	cd $name-$version
 
-	cmake -DCMAKE_INSTALL_PREFIX=/usr .
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_MANDIR=/usr/man .
 	make
 	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
 }
