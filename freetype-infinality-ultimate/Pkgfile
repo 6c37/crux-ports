@@ -1,0 +1,28 @@
+# Description: Freetype patched with the infinality patches plus a couple more.
+# URL:         https://github.com/bohoomil/fontconfig-ultimate
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  
+
+name=freetype-infinality-ultimate
+version=2.5.5
+release=1
+source=(
+	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/01-freetype-2.5.5-enable-valid.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/02-ftsmooth-2.5.5.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/04-infinality-2.5.5-2014.12.30.patch
+)
+
+build() {
+	cd freetype-$version
+
+	for patch in ../*.patch; do
+		patch -Np1 < $patch
+	done
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR="$PKG" mandir="/usr/man" install
+}
