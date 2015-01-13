@@ -1,4 +1,4 @@
-aa55f7eae584dec7463930ab71ad3dc2  01-freetype-2.5.5-enable-valid.patch
-59560ee36b22a597144b231d27157563  02-ftsmooth-2.5.5.patch
-1d0b5e0bf49c05a9c7f4124862b4848d  04-infinality-2.5.5-2014.12.30.patch
+aa55f7eae584dec7463930ab71ad3dc2  01-enable-valid.patch
+59560ee36b22a597144b231d27157563  02-ftsmooth.patch
+1d0b5e0bf49c05a9c7f4124862b4848d  03-infinality.patch
 2a7a314927011d5030903179cf183be0  freetype-2.5.5.tar.bz2

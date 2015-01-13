@@ -9,9 +9,9 @@ version=2.5.5
 release=1
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/01-freetype-2.5.5-enable-valid.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/02-ftsmooth-2.5.5.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/04-infinality-2.5.5-2014.12.30.patch
+	01-enable-valid.patch
+	02-ftsmooth.patch
+	03-infinality.patch
 )
 
 build() {
