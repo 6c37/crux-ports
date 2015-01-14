@@ -12,15 +12,15 @@ source=()
 build() {
 	cd $PKGMK_SOURCE_DIR
 
-	if cd tewi-font; then
-		git pull git://github.com/lucy/tewi-font
+	if cd $name; then
+		git fetch -q;git reset --hard origin/master	
 	else
-		git clone git://github.com/lucy/tewi-font
-		cd tewi-font
+		git clone git://github.com/lucy/tewi-font $name
+		cd $name
 	fi
 
-	install -Dm644 Tewi-bold-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/Bold.bdf
-	install -Dm644 Tewi-normal-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/Normal.bdf
-	install -Dm644 Tewi2a-bold-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/2a/Bold.bdf
+	install -Dm644 Tewi-bold-11.bdf     $PKG/usr/share/fonts/X11/BDF/Tewi/Bold.bdf
+	install -Dm644 Tewi-normal-11.bdf   $PKG/usr/share/fonts/X11/BDF/Tewi/Normal.bdf
+	install -Dm644 Tewi2a-bold-11.bdf   $PKG/usr/share/fonts/X11/BDF/Tewi/2a/Bold.bdf
 	install -Dm644 Tewi2a-normal-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/2a/Normal.bdf
 }
