@@ -1,0 +1,24 @@
+# Description: A small bitmap font
+# URL: https://github.com/lucy/tewi-font
+# Packager: Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer: Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on: git
+
+name=bdf-tewi
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd tewi-font; then
+		git pull git://github.com/lucy/tewi-font
+	else
+		git clone git://github.com/lucy/tewi-font
+		cd tewi-font
+	fi
+
+	install -d -m755 $PKG/usr/share/fonts/misc/
+	install -m644 -t $PKG/usr/share/fonts/misc/ *.bdf	
+}
