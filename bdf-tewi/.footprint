@@ -1,8 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/fonts/
-drwxr-xr-x	root/root	usr/share/fonts/misc/
--rw-r--r--	root/root	usr/share/fonts/misc/Tewi-bold-11.bdf
--rw-r--r--	root/root	usr/share/fonts/misc/Tewi-normal-11.bdf
--rw-r--r--	root/root	usr/share/fonts/misc/Tewi2a-bold-11.bdf
--rw-r--r--	root/root	usr/share/fonts/misc/Tewi2a-normal-11.bdf
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/BDF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/BDF/Tewi/
+drwxr-xr-x	root/root	usr/share/fonts/X11/BDF/Tewi/2a/
+-rw-r--r--	root/root	usr/share/fonts/X11/BDF/Tewi/2a/Bold.bdf
+-rw-r--r--	root/root	usr/share/fonts/X11/BDF/Tewi/2a/Normal.bdf
+-rw-r--r--	root/root	usr/share/fonts/X11/BDF/Tewi/Bold.bdf
+-rw-r--r--	root/root	usr/share/fonts/X11/BDF/Tewi/Normal.bdf

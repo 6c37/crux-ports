@@ -1,8 +1,8 @@
-# Description: A small bitmap font
-# URL: https://github.com/lucy/tewi-font
-# Packager: Samuel Hand, samuel dot hand at openmailbox dot org
-# Maintainer: Samuel Hand, samuel dot hand at openmailbox dot org
-# Depends on: git
+# Description: Tewi: a small bitmap font - git checkout
+# URL:         https://github.com/lucy/tewi-font
+# Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:  Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on:  git
 
 name=bdf-tewi
 version=git
@@ -19,6 +19,8 @@ build() {
 		cd tewi-font
 	fi
 
-	install -d -m755 $PKG/usr/share/fonts/misc/
-	install -m644 -t $PKG/usr/share/fonts/misc/ *.bdf	
+	install -Dm644 Tewi-bold-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/Bold.bdf
+	install -Dm644 Tewi-normal-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/Normal.bdf
+	install -Dm644 Tewi2a-bold-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/2a/Bold.bdf
+	install -Dm644 Tewi2a-normal-11.bdf $PKG/usr/share/fonts/X11/BDF/Tewi/2a/Normal.bdf
 }
