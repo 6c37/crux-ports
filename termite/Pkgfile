@@ -1,0 +1,29 @@
+# Description: A keyboard-centric VTE-based terminal
+# URL:         https://github.com/thestinger/termite
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  vte3
+
+name=termite
+version=git
+release=1
+source=(fix-transparency.patch)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone --recursive git://github.com/thestinger/termite.git $name
+		cd $name
+	fi   
+         
+	patch -Np1 < $SRC/fix-transparency.patch
+	make 
+         
+	install -Dm644 man/termite.1 $PKG/usr/man/man1/termite.1
+	install -Dm644 man/termite.config.5 $PKG/usr/man/man5/termite.config.5
+	install -Dm644 termite.terminfo $PKG/usr/share/terminfo/x/xterm-termite
+	install -Dm755 termite $PKG/usr/bin/termite
+}

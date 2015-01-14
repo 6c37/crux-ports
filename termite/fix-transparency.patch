@@ -1,0 +1,13 @@
+diff --git a/termite.cc b/termite.cc
+index 70d907e..e3adfb3 100644
+--- a/termite.cc
++++ b/termite.cc
+@@ -1372,7 +1372,7 @@ static char *get_user_shell_with_fallback() {
+
+ static void on_alpha_screen_changed(GtkWindow *window, GdkScreen *, void *) {
+     GdkScreen *screen = gtk_widget_get_screen(GTK_WIDGET(window));
+-    GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
++    GdkVisual *visual = nullptr;
+
+     if (!visual)
+         visual = gdk_screen_get_system_visual(screen);
