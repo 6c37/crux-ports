@@ -1,0 +1,20 @@
+# Description:	A Sans-Serif style high quality CJK outline font 
+# URL:		http://sourceforge.net/projects/wqy/
+# Maintainer:	lee, rtlanceroad at gmail dot com
+# Depends on:	fontconfig xorg-font-util
+
+name=ttf-microhei
+_name=wqy-microhei
+version=0.2.0-beta
+release=1
+source=(http://www.sourceforge.net/projects/wqy/files/${_name}/$version/${_name}-$version.tar.gz 44-wqy-microhei.conf)
+
+build() {
+	cd ${_name}
+
+        install -Dm644 wqy-microhei.ttc $PKG/usr/share/fonts/X11/TTF/WenQuanYi/MicroHei.ttc
+        install -Dm644 $SRC/44-wqy-microhei.conf $PKG/etc/fonts/conf.avail/44-wqy-microhei.conf
+        install -Dm644 $SRC/44-wqy-microhei.conf $PKG/etc/fonts/conf.d/44-wqy-microhei.conf
+
+}
+
