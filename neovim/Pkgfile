@@ -27,4 +27,5 @@ build() {
 
 	rm -rf $PKG/usr/share/locale
 	rm -rf $PKG/usr/share/nvim/runtime/{autoload,colors,compiler,ftplugin,indent,keymap,plugin,syntax,tools}/*README.txt
+	rm -rf $PKG/usr/share/nvim/runtime/{doc,vimrc_example.vim}
 }
