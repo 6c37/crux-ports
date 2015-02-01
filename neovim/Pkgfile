@@ -7,7 +7,7 @@
 name=neovim
 version=git
 release=1
-source=()
+source=(use-legacy-float-names.patch)
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -19,6 +19,7 @@ build() {
 		cd $name
 	fi
 
+	patch < $SRC/use-legacy-float-names.patch
 	cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
