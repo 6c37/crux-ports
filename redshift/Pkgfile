@@ -1,22 +1,22 @@
-# Description: makes your screen more pleasant to use at night
+# Description: Adjusts the color temperature of your screen according to your surroundings.
 # URL:         http://jonls.dk/redshift/
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
 # Maintainer:  Joe Schillinger, js1 at openmailbox dot org
-# Depends on:  xorg-libxcb libdrm xorg-libxxf86vm
+# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm
 
 name=redshift
 version=1.10
 release=1
 
-source=(https://github.com/jonls/redshift/releases/download/v$version/redshift-$version.tar.xz)
+source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix= --mandir=/usr/man --disable-nls \
-		--disable-gui --disable-ubuntu
+	./configure --disable-nls --disable-gui --disable-ubuntu
+
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR="$PKG" prefix="/usr" mandir="/usr/man" install
 }
 
 
