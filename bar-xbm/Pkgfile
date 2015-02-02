@@ -1,5 +1,5 @@
 # Description: A lightweight xcb based bar, with xbm patch - git checkout
-# URL:         http://github.com/rootcoma/bar/
+# URL:         http://github.com/LemonBoy/bar/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
 # Depends on:  git xorg-libxcb xorg-xcb-util-image
