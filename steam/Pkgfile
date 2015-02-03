@@ -1,0 +1,18 @@
+# Description: The Steam gaming platform by Valve.
+# URL:         http://store.steampowered.com/
+# Packager:    Matt Housh, jaeger at morpheus dot net
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org 
+# Depends on:  xdg-utils mesa3d-32
+
+name=steam
+version=1.0.0.49
+release=1
+source=(http://repo.steampowered.com/steam/archive/precise/steam-launcher_"$version"_all.deb)
+
+build() {
+	ar p steam-launcher_1.0.0.49_all.deb data.tar.gz | tar -C ${PKG} -zxf -
+	mv $PKG/usr/share/man $PKG/usr/
+	rm -r $PKG/{etc,usr/share}
+	ln -sf /bin/true $PKG/usr/bin/steamdeps
+}
+

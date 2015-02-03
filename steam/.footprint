@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/99-steam-controller-perms.rules
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/steam
+lrwxrwxrwx	root/root	usr/bin/steamdeps -> /bin/true
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/steam/
+-rw-r--r--	root/root	usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man6/
+-rw-r--r--	root/root	usr/man/man6/steam.6.gz
