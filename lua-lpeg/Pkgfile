@@ -8,13 +8,13 @@ name=lua-lpeg
 version=0.12
 release=1
 
-source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
+source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-${version}.tar.gz)
 
 build() {
-	cd lpeg-$version
+	cd lpeg-${version}
 	
 	make LUADIR=/usr/include
 
-	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.2/lpeg.so
-	install -Dm644 re.lua  $PKG/usr/share/lua/5.2/re.lua
+	install -Dm755 lpeg.so ${PKG}/usr/lib/lua/5.2/lpeg.so
+	install -Dm644 re.lua  ${PKG}/usr/share/lua/5.2/re.lua
 }

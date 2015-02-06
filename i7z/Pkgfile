@@ -10,10 +10,10 @@ release=1
 source=(https://i7z.googlecode.com/files/i7z-0.27.2.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	make
-	make DESTDIR=$PKG mandir=/usr/man/ install
+	make DESTDIR=${PKG} mandir=/usr/man/ install
 
-	rm -rf $PKG/usr/share
+	rm -rf ${PKG}/usr/share
 }

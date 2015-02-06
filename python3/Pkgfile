@@ -7,10 +7,10 @@
 name=python3
 version=3.4.2
 release=1
-source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
+source=(http://python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
-	cd Python-$version
+	cd Python-${version}
 
 	./configure --prefix=/usr \
 		--mandir=/usr/man \
@@ -21,12 +21,12 @@ build() {
 		--with-tkinter
   
 	make
-	make DESTDIR=$PKG install
-	rm $PKG/usr/bin/2to3
+	make DESTDIR=${PKG} install
+	rm ${PKG}/usr/bin/2to3
 
 	# remove junk files
-	find $PKG -name "README*" -delete
-	find $PKG -name "ChangeLog*" -delete
-	find $PKG -name "TODO*" -delete
-	find $PKG -name "NEWS*" -delete
+	find ${PKG} -name "README*" -delete
+	find ${PKG} -name "ChangeLog*" -delete
+	find ${PKG} -name "TODO*" -delete
+	find ${PKG} -name "NEWS*" -delete
 }

@@ -8,10 +8,10 @@
 name=bitchx
 version=1.2.1
 release=1
-source=(http://downloads.sourceforge.net/project/$name/ircii-pana/$name-$version/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/project/${name}/ircii-pana/${name}-${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 	./configure \
 		--exec_prefix=/usr     \
 		--prefix=/usr          \
@@ -21,5 +21,5 @@ build() {
 		--with-ssl
 
 	make 
-	make DESTDIR="$PKG" install
+	make DESTDIR="${PKG}" install
 }

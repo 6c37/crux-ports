@@ -8,13 +8,13 @@ name=ttf-microhei
 version=0.2.0-beta
 release=1
 source=(
-	http://www.sourceforge.net/projects/wqy/files/wqy-microhei/$version/wqy-microhei-$version.tar.gz
+	http://www.sourceforge.net/projects/wqy/files/wqy-microhei/${version}/wqy-microhei-${version}.tar.gz
 	44-wqy-microhei.conf
 )
 
 build() {
 	cd wqy-microhei
 
-	install -Dm644 wqy-microhei.ttc          $PKG/usr/share/fonts/X11/TTF/WenQuanYi/MicroHei.ttc
-	install -Dm644 $SRC/44-wqy-microhei.conf $PKG/etc/fonts/conf.avail/44-wqy-microhei.conf
+	install -Dm644 wqy-microhei.ttc          ${PKG}/usr/share/fonts/X11/TTF/WenQuanYi/MicroHei.ttc
+	install -Dm644 ${SRC}/44-wqy-microhei.conf ${PKG}/etc/fonts/conf.avail/44-wqy-microhei.conf
 }

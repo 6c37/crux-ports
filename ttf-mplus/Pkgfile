@@ -7,58 +7,58 @@
 name=ttf-mplus
 version=TESTFLIGHT-059
 release=1
-source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-$version.tar.xz)
+source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-${version}.tar.xz)
 
 build() {
-	cd mplus-$version
+	cd mplus-${version}
 
-	install -Dm644 mplus-1c-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1c/Thin.ttf
-	install -Dm644 mplus-1c-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1c/Light.ttf
-	install -Dm644 mplus-1c-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/1c/Medium.ttf
-	install -Dm644 mplus-1c-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/1c/Regular.ttf
-	install -Dm644 mplus-1c-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1c/Bold.ttf
-	install -Dm644 mplus-1c-heavy.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1c/Heavy.ttf
-	install -Dm644 mplus-1c-black.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1c/Black.ttf
+	install -Dm644 mplus-1c-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Thin.ttf
+	install -Dm644 mplus-1c-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Light.ttf
+	install -Dm644 mplus-1c-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Medium.ttf
+	install -Dm644 mplus-1c-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Regular.ttf
+	install -Dm644 mplus-1c-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Bold.ttf
+	install -Dm644 mplus-1c-heavy.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Heavy.ttf
+	install -Dm644 mplus-1c-black.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1c/Black.ttf
 
-	install -Dm644 mplus-1m-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1m/Thin.ttf
-	install -Dm644 mplus-1m-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1m/Light.ttf
-	install -Dm644 mplus-1m-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/1m/Medium.ttf
-	install -Dm644 mplus-1m-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/1m/Regular.ttf
-	install -Dm644 mplus-1m-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1m/Bold.ttf
+	install -Dm644 mplus-1m-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1m/Thin.ttf
+	install -Dm644 mplus-1m-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1m/Light.ttf
+	install -Dm644 mplus-1m-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/1m/Medium.ttf
+	install -Dm644 mplus-1m-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/1m/Regular.ttf
+	install -Dm644 mplus-1m-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1m/Bold.ttf
 
-	install -Dm644 mplus-1mn-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1mn/Thin.ttf
-	install -Dm644 mplus-1mn-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1mn/Light.ttf
-	install -Dm644 mplus-1mn-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/1mn/Medium.ttf
-	install -Dm644 mplus-1mn-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/1mn/Regular.ttf
-	install -Dm644 mplus-1mn-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1mn/Bold.ttf
+	install -Dm644 mplus-1mn-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1mn/Thin.ttf
+	install -Dm644 mplus-1mn-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1mn/Light.ttf
+	install -Dm644 mplus-1mn-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/1mn/Medium.ttf
+	install -Dm644 mplus-1mn-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/1mn/Regular.ttf
+	install -Dm644 mplus-1mn-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1mn/Bold.ttf
 
-	install -Dm644 mplus-1p-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1p/Thin.ttf
-	install -Dm644 mplus-1p-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1p/Light.ttf
-	install -Dm644 mplus-1p-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/1p/Medium.ttf
-	install -Dm644 mplus-1p-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/1p/Regular.ttf
-	install -Dm644 mplus-1p-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1p/Bold.ttf
-	install -Dm644 mplus-1p-heavy.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1p/Heavy.ttf
-	install -Dm644 mplus-1p-black.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1p/Black.ttf
+	install -Dm644 mplus-1p-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Thin.ttf
+	install -Dm644 mplus-1p-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Light.ttf
+	install -Dm644 mplus-1p-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Medium.ttf
+	install -Dm644 mplus-1p-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Regular.ttf
+	install -Dm644 mplus-1p-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Bold.ttf
+	install -Dm644 mplus-1p-heavy.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Heavy.ttf
+	install -Dm644 mplus-1p-black.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/1p/Black.ttf
 
-	install -Dm644 mplus-2c-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2c/Thin.ttf
-	install -Dm644 mplus-2c-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2c/Light.ttf
-	install -Dm644 mplus-2c-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/2c/Medium.ttf
-	install -Dm644 mplus-2c-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/2c/Regular.ttf
-	install -Dm644 mplus-2c-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2c/Bold.ttf
-	install -Dm644 mplus-2c-heavy.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2c/Heavy.ttf
-	install -Dm644 mplus-2c-black.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2c/Black.ttf
+	install -Dm644 mplus-2c-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Thin.ttf
+	install -Dm644 mplus-2c-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Light.ttf
+	install -Dm644 mplus-2c-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Medium.ttf
+	install -Dm644 mplus-2c-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Regular.ttf
+	install -Dm644 mplus-2c-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Bold.ttf
+	install -Dm644 mplus-2c-heavy.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Heavy.ttf
+	install -Dm644 mplus-2c-black.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2c/Black.ttf
 
-	install -Dm644 mplus-2p-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2p/Thin.ttf
-	install -Dm644 mplus-2p-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2p/Light.ttf
-	install -Dm644 mplus-2p-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/2p/Medium.ttf
-	install -Dm644 mplus-2p-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/2p/Regular.ttf
-	install -Dm644 mplus-2p-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2p/Bold.ttf
-	install -Dm644 mplus-2p-heavy.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2p/Heavy.ttf
-	install -Dm644 mplus-2p-black.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2p/Black.ttf
+	install -Dm644 mplus-2p-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Thin.ttf
+	install -Dm644 mplus-2p-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Light.ttf
+	install -Dm644 mplus-2p-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Medium.ttf
+	install -Dm644 mplus-2p-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Regular.ttf
+	install -Dm644 mplus-2p-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Bold.ttf
+	install -Dm644 mplus-2p-heavy.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Heavy.ttf
+	install -Dm644 mplus-2p-black.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2p/Black.ttf
 
-	install -Dm644 mplus-2m-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2m/Thin.ttf
-	install -Dm644 mplus-2m-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/2m/Light.ttf
-	install -Dm644 mplus-2m-medium.ttf  $PKG/usr/share/fonts/X11/TTF/M+/2m/Medium.ttf
-	install -Dm644 mplus-2m-regular.ttf $PKG/usr/share/fonts/X11/TTF/M+/2m/Regular.ttf
-	install -Dm644 mplus-2m-bold.ttf    $PKG/usr/share/fonts/X11/TTF/M+/2m/Bold.ttf
+	install -Dm644 mplus-2m-thin.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2m/Thin.ttf
+	install -Dm644 mplus-2m-light.ttf   ${PKG}/usr/share/fonts/X11/TTF/M+/2m/Light.ttf
+	install -Dm644 mplus-2m-medium.ttf  ${PKG}/usr/share/fonts/X11/TTF/M+/2m/Medium.ttf
+	install -Dm644 mplus-2m-regular.ttf ${PKG}/usr/share/fonts/X11/TTF/M+/2m/Regular.ttf
+	install -Dm644 mplus-2m-bold.ttf    ${PKG}/usr/share/fonts/X11/TTF/M+/2m/Bold.ttf
 }

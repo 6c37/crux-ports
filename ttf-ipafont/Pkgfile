@@ -7,14 +7,14 @@
 name=ttf-ipafont
 version=00303
 release=2
-source=(http://iij.dl.sourceforge.jp/ipafonts/51868/IPAfont$version.zip)
+source=(http://iij.dl.sourceforge.jp/ipafonts/51868/IPAfont${version}.zip)
 
 build() {
 	cd IPAfont00303
 
-	install -Dm644 ipag.ttf  $PKG/usr/share/fonts/X11/TTF/IPA/Gothic.ttf
-	install -Dm644 ipagp.ttf $PKG/usr/share/fonts/X11/TTF/IPA/PGothic.ttf
+	install -Dm644 ipag.ttf  ${PKG}/usr/share/fonts/X11/TTF/IPA/Gothic.ttf
+	install -Dm644 ipagp.ttf ${PKG}/usr/share/fonts/X11/TTF/IPA/PGothic.ttf
 
-	install -Dm644 ipam.ttf  $PKG/usr/share/fonts/X11/TTF/IPA/Mincho.ttf
-	install -Dm644 ipamp.ttf $PKG/usr/share/fonts/X11/TTF/IPA/PMincho.ttf
+	install -Dm644 ipam.ttf  ${PKG}/usr/share/fonts/X11/TTF/IPA/Mincho.ttf
+	install -Dm644 ipamp.ttf ${PKG}/usr/share/fonts/X11/TTF/IPA/PMincho.ttf
 }

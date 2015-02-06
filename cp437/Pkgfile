@@ -10,8 +10,8 @@ release=1
 source=(https://github.com/keaston/cp437/archive/master.zip)
 
 build() {
-	cd $name-master
+	cd ${name}-master
 
 	make
-	install -Dm755 cp437     $PKG/usr/bin/cp437
+	install -Dm755 cp437     ${PKG}/usr/bin/cp437
 }

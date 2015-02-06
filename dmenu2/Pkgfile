@@ -10,15 +10,15 @@ release=1
 source=()
 
 build() {
-	cd $PKGMK_SOURCE_DIR
+	cd ${PKGMK_SOURCE_DIR}
 
-	if cd $name; then
-		hg pull https://bitbucket.org/melek/$name
+	if cd ${name}; then
+		hg pull https://bitbucket.org/melek/${name}
 	else
-		hg clone https://bitbucket.org/melek/$name $name
-		cd $name
+		hg clone https://bitbucket.org/melek/${name} ${name}
+		cd ${name}
 	fi
 
 	make
-	make DESTDIR="$PKG" MANPREFIX="/usr/man/" PREFIX="/usr" install
+	make DESTDIR="${PKG}" MANPREFIX="/usr/man/" PREFIX="/usr" install
 }

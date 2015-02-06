@@ -7,28 +7,28 @@
 name=ttf-ubuntu
 version=0.80
 release=1
-source=(http://font.ubuntu.com/download/ubuntu-font-family-$version.zip)
+source=(http://font.ubuntu.com/download/ubuntu-font-family-${version}.zip)
 
 build() {
-	cd ubuntu-font-family-$version
+	cd ubuntu-font-family-${version}
 
-	install -Dm644 Ubuntu-R.ttf      $PKG/usr/share/fonts/X11/TTF/Ubuntu/Regular.ttf
-	install -Dm644 Ubuntu-RI.ttf     $PKG/usr/share/fonts/X11/TTF/Ubuntu/RegularItalic.ttf
+	install -Dm644 Ubuntu-R.ttf      ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Regular.ttf
+	install -Dm644 Ubuntu-RI.ttf     ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/RegularItalic.ttf
 
-	install -Dm644 Ubuntu-L.ttf      $PKG/usr/share/fonts/X11/TTF/Ubuntu/Light.ttf
-	install -Dm644 Ubuntu-LI.ttf     $PKG/usr/share/fonts/X11/TTF/Ubuntu/LightItalic.ttf
+	install -Dm644 Ubuntu-L.ttf      ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Light.ttf
+	install -Dm644 Ubuntu-LI.ttf     ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/LightItalic.ttf
 
-	install -Dm644 Ubuntu-M.ttf      $PKG/usr/share/fonts/X11/TTF/Ubuntu/Medium.ttf
-	install -Dm644 Ubuntu-MI.ttf     $PKG/usr/share/fonts/X11/TTF/Ubuntu/MediumItalic.ttf
+	install -Dm644 Ubuntu-M.ttf      ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Medium.ttf
+	install -Dm644 Ubuntu-MI.ttf     ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/MediumItalic.ttf
 
-	install -Dm644 Ubuntu-B.ttf      $PKG/usr/share/fonts/X11/TTF/Ubuntu/Bold.ttf
-	install -Dm644 Ubuntu-BI.ttf     $PKG/usr/share/fonts/X11/TTF/Ubuntu/BoldItalic.ttf
+	install -Dm644 Ubuntu-B.ttf      ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Bold.ttf
+	install -Dm644 Ubuntu-BI.ttf     ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/BoldItalic.ttf
 
-	install -Dm644 Ubuntu-C.ttf      $PKG/usr/share/fonts/X11/TTF/Ubuntu/Condensed.ttf
+	install -Dm644 Ubuntu-C.ttf      ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Condensed.ttf
 
-	install -Dm644 UbuntuMono-R.ttf  $PKG/usr/share/fonts/X11/TTF/Ubuntu/Mono/Regular.ttf
-	install -Dm644 UbuntuMono-RI.ttf $PKG/usr/share/fonts/X11/TTF/Ubuntu/Mono/RegularItalic.ttf
+	install -Dm644 UbuntuMono-R.ttf  ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Mono/Regular.ttf
+	install -Dm644 UbuntuMono-RI.ttf ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Mono/RegularItalic.ttf
 
-	install -Dm644 UbuntuMono-B.ttf  $PKG/usr/share/fonts/X11/TTF/Ubuntu/Mono/Bold.ttf
-	install -Dm644 UbuntuMono-BI.ttf $PKG/usr/share/fonts/X11/TTF/Ubuntu/Mono/BoldItalic.ttf
+	install -Dm644 UbuntuMono-B.ttf  ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Mono/Bold.ttf
+	install -Dm644 UbuntuMono-BI.ttf ${PKG}/usr/share/fonts/X11/TTF/Ubuntu/Mono/BoldItalic.ttf
 }

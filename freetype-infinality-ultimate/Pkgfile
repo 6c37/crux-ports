@@ -8,21 +8,21 @@ name=freetype-infinality-ultimate
 version=2.5.5
 release=1
 source=(
-	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
+	http://download.savannah.gnu.org/releases/freetype/freetype-${version}.tar.bz2
 	01-enable-valid.patch
 	02-ftsmooth.patch
 	03-infinality.patch
 )
 
 build() {
-	cd freetype-$version
+	cd freetype-${version}
 
 	for patch in ../*.patch; do
-		patch -Np1 < $patch
+		patch -Np1 < ${patch}
 	done
 
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR="$PKG" mandir="/usr/man" install
+	make DESTDIR="${PKG}" mandir="/usr/man" install
 }

@@ -7,43 +7,43 @@
 name=nvidia-32-340
 version=340.65
 release=1
-source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
+source=(http://us.download.nvidia.com/XFree86/Linux-x86/${version}/NVIDIA-Linux-x86-${version}.run)
 
 build() {
-	sh NVIDIA-Linux-x86-$version.run --extract-only
-	cd NVIDIA-Linux-x86-$version
+	sh NVIDIA-Linux-x86-${version}.run --extract-only
+	cd NVIDIA-Linux-x86-${version}
 
 	# libraries
-	install -d $PKG/usr/lib32/{tls,vdpau}
-	install -m 0755 libGL.so.$version              $PKG/usr/lib32
-	install -m 0755 libOpenCL.so.1.0.0             $PKG/usr/lib32
-	install -m 0755 libcuda.so.$version            $PKG/usr/lib32
-	install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib32
-	install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib32
-	install -m 0755 libnvidia-encode.so.$version   $PKG/usr/lib32
-	install -m 0755 libnvidia-fbc.so.$version      $PKG/usr/lib32
-	install -m 0755 libnvidia-glcore.so.$version   $PKG/usr/lib32
-	install -m 0755 libnvidia-ifr.so.$version      $PKG/usr/lib32
-	install -m 0755 libnvidia-ml.so.$version       $PKG/usr/lib32
-	install -m 0755 libnvidia-opencl.so.$version   $PKG/usr/lib32
-	install -m 0755 libnvidia-tls.so.$version      $PKG/usr/lib32
-	install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib32
-	install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib32/tls
-	install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib32/vdpau
+	install -d ${PKG}/usr/lib32/{tls,vdpau}
+	install -m 0755 libGL.so.${version}              ${PKG}/usr/lib32
+	install -m 0755 libOpenCL.so.1.0.0             ${PKG}/usr/lib32
+	install -m 0755 libcuda.so.${version}            ${PKG}/usr/lib32
+	install -m 0755 libnvidia-cfg.so.${version}      ${PKG}/usr/lib32
+	install -m 0755 libnvidia-compiler.so.${version} ${PKG}/usr/lib32
+	install -m 0755 libnvidia-encode.so.${version}   ${PKG}/usr/lib32
+	install -m 0755 libnvidia-fbc.so.${version}      ${PKG}/usr/lib32
+	install -m 0755 libnvidia-glcore.so.${version}   ${PKG}/usr/lib32
+	install -m 0755 libnvidia-ifr.so.${version}      ${PKG}/usr/lib32
+	install -m 0755 libnvidia-ml.so.${version}       ${PKG}/usr/lib32
+	install -m 0755 libnvidia-opencl.so.${version}   ${PKG}/usr/lib32
+	install -m 0755 libnvidia-tls.so.${version}      ${PKG}/usr/lib32
+	install -m 0755 libnvcuvid.so.${version}         ${PKG}/usr/lib32
+	install -m 0755 tls/libnvidia-tls.so.${version}  ${PKG}/usr/lib32/tls
+	install -m 0755 libvdpau_nvidia.so.${version}    ${PKG}/usr/lib32/vdpau
 	
-	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.1
-	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so
+	ln -s libvdpau_nvidia.so.${version} ${PKG}/usr/lib32/vdpau/libvdpau_nvidia.so.1
+	ln -s libvdpau_nvidia.so.${version} ${PKG}/usr/lib32/vdpau/libvdpau_nvidia.so
 
-	ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so.1
-	ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so
+	ln -s libnvcuvid.so.${version} ${PKG}/usr/lib32/libnvcuvid.so.1
+	ln -s libnvcuvid.so.${version} ${PKG}/usr/lib32/libnvcuvid.so
 
-	ln -s libnvidia-ml.so.$version $PKG/usr/lib32/libnvidia-ml.so.1
-	ln -s libnvidia-ml.so.$version $PKG/usr/lib32/libnvidia-ml.so
+	ln -s libnvidia-ml.so.${version} ${PKG}/usr/lib32/libnvidia-ml.so.1
+	ln -s libnvidia-ml.so.${version} ${PKG}/usr/lib32/libnvidia-ml.so
 
-	ln -s libOpenCL.so.1.0.0 $PKG/usr/lib32/libOpenCL.so
+	ln -s libOpenCL.so.1.0.0 ${PKG}/usr/lib32/libOpenCL.so
 
 	# additional symlinks required by gl-select
-	ln -s libGL.so.$version $PKG/usr/lib32/libGL_so_1_2_nvidia
+	ln -s libGL.so.${version} ${PKG}/usr/lib32/libGL_so_1_2_nvidia
 
-	rm -rf $PKG/usr/{man,share} $PKG/lib
+	rm -rf ${PKG}/usr/{man,share} ${PKG}/lib
 }

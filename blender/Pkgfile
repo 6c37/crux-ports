@@ -7,10 +7,10 @@
 name=blender
 version=2.73a
 release=1
-source=(http://download.blender.org/source/$name-$version.tar.gz)
+source=(http://download.blender.org/source/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	mkdir build
 	cd build
@@ -30,5 +30,5 @@ build() {
 		-DWITH_PYTHON_INSTALL=OFF
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 }

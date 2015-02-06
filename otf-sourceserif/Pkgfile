@@ -7,12 +7,12 @@
 name=otf-sourceserif
 version=1.014
 release=1
-source=(http://sourceforge.net/projects/sourceserifpro.adobe/files/SourceSerifPro_FontsOnly-$version.zip)
+source=(http://sourceforge.net/projects/sourceserifpro.adobe/files/SourceSerifPro_FontsOnly-${version}.zip)
 
 build() {
-	cd source-serif-pro-$version\R
+	cd source-serif-pro-${version}\R
 
-	install -Dm644 OTF/SourceSerifPro-Regular.otf  $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Regular.otf
-	install -Dm644 OTF/SourceSerifPro-Bold.otf     $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Bold.otf
-	install -Dm644 OTF/SourceSerifPro-Semibold.otf $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Semibold.otf
+	install -Dm644 OTF/SourceSerifPro-Regular.otf  ${PKG}/usr/share/fonts/X11/OTF/Source/SerifPro/Regular.otf
+	install -Dm644 OTF/SourceSerifPro-Bold.otf     ${PKG}/usr/share/fonts/X11/OTF/Source/SerifPro/Bold.otf
+	install -Dm644 OTF/SourceSerifPro-Semibold.otf ${PKG}/usr/share/fonts/X11/OTF/Source/SerifPro/Semibold.otf
 }

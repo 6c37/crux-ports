@@ -7,12 +7,12 @@
 name=toilet
 version=0.3
 release=1
-source=(http://caca.zoy.org/raw-attachment/wiki/toilet/toilet-$version.tar.gz)
+source=(http://caca.zoy.org/raw-attachment/wiki/toilet/toilet-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
   
 	./configure --prefix=/usr
 	make
-	make DESTDIR="$PKG" mandir="/usr/man" install
+	make DESTDIR="${PKG}" mandir="/usr/man" install
 }

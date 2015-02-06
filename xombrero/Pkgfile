@@ -10,13 +10,13 @@ release=1
 source=()
 
 build() {
-	cd $PKGMK_SOURCE_DIR
+	cd ${PKGMK_SOURCE_DIR}
 
-	if cd $name; then
+	if cd ${name}; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/conformal/xombrero $name
-		cd $name
+		git clone git://github.com/conformal/xombrero ${name}
+		cd ${name}
 	fi
 
 	sed -i 's/gnutls/& libbsd/' Makefile
@@ -27,9 +27,9 @@ build() {
 	cd "linux"
 
 	make GTK_VERSION=gtk2
-	make PREFIX="/usr/" MANDIR="/usr/man" DESTDIR="$PKG" install 
+	make PREFIX="/usr/" MANDIR="/usr/man" DESTDIR="${PKG}" install 
 
-	install -Dm644 ../xombrero.conf $PKG/etc/xombrero.conf
-	install -Dm644 ../xombrero.desktop  $PKG/usr/share/applications/xombrero.desktop
-	install -Dm755 ../config-checker.pl $PKG/usr/bin/xombrero-config-checker
+	install -Dm644 ../xombrero.conf ${PKG}/etc/xombrero.conf
+	install -Dm644 ../xombrero.desktop  ${PKG}/usr/share/applications/xombrero.desktop
+	install -Dm755 ../config-checker.pl ${PKG}/usr/bin/xombrero-config-checker
 }

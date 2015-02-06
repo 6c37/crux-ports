@@ -10,8 +10,8 @@ release=1
 source=(https://github.com/epixoip/od6config/archive/master.tar.gz)
 
 build() {
-	cd $name-master
+	cd ${name}-master
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 }
