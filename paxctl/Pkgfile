@@ -7,11 +7,11 @@
 name=paxctl
 version=0.9
 release=1
-source=(https://pax.grsecurity.net/paxctl-$version.tar.gz)
+source=(https://pax.grsecurity.net/paxctl-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	make
-	make DESTDIR="$PKG" MANDIR=/usr/man/man1 install
+	make DESTDIR="${PKG}" MANDIR=/usr/man/man1 install
 }

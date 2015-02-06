@@ -11,8 +11,8 @@ source=(http://repo.steampowered.com/steam/archive/precise/steam-launcher_${vers
 
 build() {
 	ar p steam-launcher_${version}_all.deb data.tar.gz | tar -C ${PKG} -zxf -
-	mv $PKG/usr/share/man $PKG/usr/
-	rm -r $PKG/{etc,usr/share}
-	ln -sf /bin/true $PKG/usr/bin/steamdeps
+	mv ${PKG}/usr/share/man ${PKG}/usr/
+	rm -r ${PKG}/{etc,usr/share}
+	ln -sf /bin/true ${PKG}/usr/bin/steamdeps
 }
 

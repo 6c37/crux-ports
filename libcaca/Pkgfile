@@ -7,14 +7,14 @@
 name=libcaca
 version=0.99.beta19
 release=1
-source=(http://caca.zoy.org/files/libcaca/libcaca-$version.tar.gz)
+source=(http://caca.zoy.org/files/libcaca/libcaca-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
   
 	./configure --prefix=/usr --mandir=/usr/man \
 		--enable-shared --disable-doc \
 		--disable-cxx --disable-gl --disable-csharp --disable-static
 	make
-	make DESTDIR="$PKG" install
+	make DESTDIR="${PKG}" install
 }

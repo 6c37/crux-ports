@@ -10,13 +10,13 @@ release=1
 source=()
 
 build () {
-	cd $PKGMK_SOURCE_DIR
+	cd ${PKGMK_SOURCE_DIR}
 
-	if cd $name; then
+	if cd ${name}; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/irssi/irssi $name
-		cd $name
+		git clone https://github.com/irssi/irssi ${name}
+		cd ${name}
 	fi
 
 	./autogen.sh \
@@ -27,8 +27,8 @@ build () {
 		--with-perl-lib=site
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 
-	rm -rf $PKG/usr/share/{doc,irssi/help}
-	rm $(find $PKG -name .packlist -or -name perllocal.pod -or -name '*.bs')
+	rm -rf ${PKG}/usr/share/{doc,irssi/help}
+	rm $(find ${PKG} -name .packlist -or -name perllocal.pod -or -name '*.bs')
 }

@@ -8,15 +8,15 @@ name=redshift
 version=1.10
 release=1
 
-source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.xz)
+source=(https://github.com/jonls/redshift/releases/download/v${version}/${name}-${version}.tar.xz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	./configure --disable-nls --disable-gui --disable-ubuntu
 
 	make
-	make DESTDIR="$PKG" prefix="/usr" mandir="/usr/man" install
+	make DESTDIR="${PKG}" prefix="/usr" mandir="/usr/man" install
 }
 
 

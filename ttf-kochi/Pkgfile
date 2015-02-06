@@ -7,11 +7,11 @@
 name=ttf-kochi
 version=20030809
 release=1
-source=(http://dl.sourceforge.jp/efont/5411/kochi-substitute-$version.tar.bz2)
+source=(http://dl.sourceforge.jp/efont/5411/kochi-substitute-${version}.tar.bz2)
 
 build() {
 	cd kochi-substitute-20030809
 
-	install -Dm644 kochi-gothic-subst.ttf $PKG/usr/share/fonts/X11/TTF/Kochi/Gothic.ttf
-	install -Dm644 kochi-mincho-subst.ttf $PKG/usr/share/fonts/X11/TTF/Kochi/Mincho.ttf
+	install -Dm644 kochi-gothic-subst.ttf ${PKG}/usr/share/fonts/X11/TTF/Kochi/Gothic.ttf
+	install -Dm644 kochi-mincho-subst.ttf ${PKG}/usr/share/fonts/X11/TTF/Kochi/Mincho.ttf
 }

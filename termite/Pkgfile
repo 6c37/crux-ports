@@ -10,20 +10,20 @@ release=1
 source=(fix-transparency.patch)
 
 build() {
-	cd $PKGMK_SOURCE_DIR
+	cd ${PKGMK_SOURCE_DIR}
 
-	if cd $name; then
+	if cd ${name}; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone --recursive git://github.com/thestinger/termite.git $name
-		cd $name
+		git clone --recursive git://github.com/thestinger/termite.git ${name}
+		cd ${name}
 	fi   
          
-	patch -Np1 < $SRC/fix-transparency.patch
+	patch -Np1 < ${SRC}/fix-transparency.patch
 	make 
          
-	install -Dm644 man/termite.1 $PKG/usr/man/man1/termite.1
-	install -Dm644 man/termite.config.5 $PKG/usr/man/man5/termite.config.5
-	install -Dm644 termite.terminfo $PKG/usr/share/terminfo/x/xterm-termite
-	install -Dm755 termite $PKG/usr/bin/termite
+	install -Dm644 man/termite.1 ${PKG}/usr/man/man1/termite.1
+	install -Dm644 man/termite.config.5 ${PKG}/usr/man/man5/termite.config.5
+	install -Dm644 termite.terminfo ${PKG}/usr/share/terminfo/x/xterm-termite
+	install -Dm755 termite ${PKG}/usr/bin/termite
 }

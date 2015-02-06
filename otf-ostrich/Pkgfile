@@ -7,17 +7,17 @@
 name=otf-ostrich
 version=8f030a4
 release=1
-source=(http://files.theleagueofmoveabletype.com/downloads/theleagueof-ostrich-sans-bad"$version"20639c6066e53266647862d21d3501.zip)
+source=(http://files.theleagueofmoveabletype.com/downloads/theleagueof-ostrich-sans-bad${version}20639c6066e53266647862d21d3501.zip)
 
 build() {
 	cd ostrich-sans-master
-	install -Dm644 OstrichSans-Black.otf         $PKG/usr/share/fonts/X11/OTF/Ostrich/Black.otf
-	install -Dm644 OstrichSans-Bold.otf          $PKG/usr/share/fonts/X11/OTF/Ostrich/Bold.otf
-	install -Dm644 OstrichSans-Heavy.otf         $PKG/usr/share/fonts/X11/OTF/Ostrich/Heavy.otf
-	install -Dm644 OstrichSans-Light.otf         $PKG/usr/share/fonts/X11/OTF/Ostrich/Light.otf
-	install -Dm644 OstrichSans-Medium.otf        $PKG/usr/share/fonts/X11/OTF/Ostrich/Medium.otf
-	install -Dm644 OstrichSansDashed-Medium.otf  $PKG/usr/share/fonts/X11/OTF/Ostrich/Dashed/Medium.otf
-	install -Dm644 OstrichSansInline-Italic.otf  $PKG/usr/share/fonts/X11/OTF/Ostrich/Inline/Italic.otf
-	install -Dm644 OstrichSansInline-Regular.otf $PKG/usr/share/fonts/X11/OTF/Ostrich/Inline/Regular.otf
-	install -Dm644 OstrichSansRounded-Medium.otf $PKG/usr/share/fonts/X11/OTF/Ostrich/Rounded/Medium.otf
+	install -Dm644 OstrichSans-Black.otf         ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Black.otf
+	install -Dm644 OstrichSans-Bold.otf          ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Bold.otf
+	install -Dm644 OstrichSans-Heavy.otf         ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Heavy.otf
+	install -Dm644 OstrichSans-Light.otf         ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Light.otf
+	install -Dm644 OstrichSans-Medium.otf        ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Medium.otf
+	install -Dm644 OstrichSansDashed-Medium.otf  ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Dashed/Medium.otf
+	install -Dm644 OstrichSansInline-Italic.otf  ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Inline/Italic.otf
+	install -Dm644 OstrichSansInline-Regular.otf ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Inline/Regular.otf
+	install -Dm644 OstrichSansRounded-Medium.otf ${PKG}/usr/share/fonts/X11/OTF/Ostrich/Rounded/Medium.otf
 }

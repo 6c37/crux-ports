@@ -8,10 +8,10 @@
 name=easytag
 version=2.2.5
 release=1
-source=(https://download.gnome.org/sources/$name/2.2/$name-$version.tar.xz)
+source=(https://download.gnome.org/sources/${name}/2.2/${name}-${version}.tar.xz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	./configure \
 		--prefix=/usr \
@@ -20,7 +20,7 @@ build() {
 		--disable-nls
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 
-	rm -rf $PKG/usr/share
+	rm -rf ${PKG}/usr/share
 }

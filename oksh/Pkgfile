@@ -8,13 +8,13 @@ name=oksh
 version=0.5.0
 release=1
 
-source=(http://www.connochaetos.org/$name/$name-$version.tar.gz)
+source=(http://www.connochaetos.org/${name}/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
-	./configure --prefix=$PKG
+	./configure --prefix=${PKG}
   
 	make
-	make DESTDIR="$PKG" MANDIR="$PKG/usr/man/man1" install
+	make DESTDIR="${PKG}" MANDIR="${PKG}/usr/man/man1" install
 }

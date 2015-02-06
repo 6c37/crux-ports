@@ -7,26 +7,26 @@
 name=otf-sourcesans
 version=1.050
 release=1
-source=(http://sourceforge.net/projects/sourcesans.adobe/files/SourceSansPro_FontsOnly-$version.zip)
+source=(http://sourceforge.net/projects/sourcesans.adobe/files/SourceSansPro_FontsOnly-${version}.zip)
 
 build() {
-    cd SourceSansPro_FontsOnly-$version
+    cd SourceSansPro_FontsOnly-${version}
 
-	install -Dm644 OTF/SourceSansPro-ExtraLight.otf   $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLight.otf
-	install -Dm644 OTF/SourceSansPro-ExtraLightIt.otf $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLightItalic.otf
+	install -Dm644 OTF/SourceSansPro-ExtraLight.otf   ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLight.otf
+	install -Dm644 OTF/SourceSansPro-ExtraLightIt.otf ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLightItalic.otf
 
-	install -Dm644 OTF/SourceSansPro-Light.otf        $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Light.otf
-	install -Dm644 OTF/SourceSansPro-LightIt.otf      $PKG/usr/share/fonts/X11/OTF/Source/SansPro/LightItalic.otf
+	install -Dm644 OTF/SourceSansPro-Light.otf        ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Light.otf
+	install -Dm644 OTF/SourceSansPro-LightIt.otf      ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/LightItalic.otf
 
-	install -Dm644 OTF/SourceSansPro-Regular.otf      $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Regular.otf
-	install -Dm644 OTF/SourceSansPro-It.otf           $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Italic.otf
+	install -Dm644 OTF/SourceSansPro-Regular.otf      ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Regular.otf
+	install -Dm644 OTF/SourceSansPro-It.otf           ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Italic.otf
 
-	install -Dm644 OTF/SourceSansPro-Bold.otf         $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Bold.otf
-	install -Dm644 OTF/SourceSansPro-BoldIt.otf       $PKG/usr/share/fonts/X11/OTF/Source/SansPro/BoldItalic.otf
+	install -Dm644 OTF/SourceSansPro-Bold.otf         ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Bold.otf
+	install -Dm644 OTF/SourceSansPro-BoldIt.otf       ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/BoldItalic.otf
 
-	install -Dm644 OTF/SourceSansPro-Semibold.otf     $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Semibold.otf
-	install -Dm644 OTF/SourceSansPro-SemiboldIt.otf   $PKG/usr/share/fonts/X11/OTF/Source/SansPro/SemiboldItalic.otf
+	install -Dm644 OTF/SourceSansPro-Semibold.otf     ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Semibold.otf
+	install -Dm644 OTF/SourceSansPro-SemiboldIt.otf   ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/SemiboldItalic.otf
 	
-	install -Dm644 OTF/SourceSansPro-Black.otf        $PKG/usr/share/fonts/X11/OTF/Source/SansPro/Black.otf
-	install -Dm644 OTF/SourceSansPro-BlackIt.otf      $PKG/usr/share/fonts/X11/OTF/Source/SansPro/BlackItalic.otf
+	install -Dm644 OTF/SourceSansPro-Black.otf        ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/Black.otf
+	install -Dm644 OTF/SourceSansPro-BlackIt.otf      ${PKG}/usr/share/fonts/X11/OTF/Source/SansPro/BlackItalic.otf
 }

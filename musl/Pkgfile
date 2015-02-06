@@ -7,18 +7,18 @@
 name=musl
 version=1.1.6
 release=1
-source=(http://www.musl-libc.org/releases/$name-$version.tar.gz)
+source=(http://www.musl-libc.org/releases/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	./configure --prefix=/opt/musl --exec-prefix=/opt/musl
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 
-	install -d $PKG/usr/bin	
-	rm $PKG/lib/ld-musl-x86_64.so.1
-	ln -s /opt/musl/lib/libc.so $PKG/lib/ld-musl-x86_64.so.1
-	ln -s /opt/musl/bin/musl-gcc $PKG/usr/bin/musl-gcc
+	install -d ${PKG}/usr/bin
+	rm ${PKG}/lib/ld-musl-x86_64.so.1
+	ln -s /opt/musl/lib/libc.so ${PKG}/lib/ld-musl-x86_64.so.1
+	ln -s /opt/musl/bin/musl-gcc ${PKG}/usr/bin/musl-gcc
 }

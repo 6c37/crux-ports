@@ -7,15 +7,15 @@
 name=mg
 version=20141127
 release=1
-source=(http://homepage.boetes.org/software/mg/mg-$version.tar.gz
+source=(http://homepage.boetes.org/software/mg/mg-${version}.tar.gz
         libs.patch
 )
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	patch -p1 < ../libs.patch
 
 	make  
-	make prefix="/usr" DESTDIR="$PKG" BINDIR="$PKG/usr/bin" install
+	make prefix="/usr" DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin" install
 }

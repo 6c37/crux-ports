@@ -8,13 +8,13 @@ name=btsync
 version=1.4.106
 release=1
 source=(
-	http://syncapp.bittorrent.com/$version/"$name"_x64-"$version".tar.gz
+	http://syncapp.bittorrent.com/${version}/${name}_x64-${version}.tar.gz
 	fix-paths.patch
 )
 
 build() {
 	./btsync --dump-sample-config > btsync.conf
 	patch < fix-paths.patch
-	install -Dm644 btsync.conf $PKG/etc/btsync.conf
-	install -Dm755 btsync $PKG/usr/bin/btsync
+	install -Dm644 btsync.conf ${PKG}/etc/btsync.conf
+	install -Dm755 btsync ${PKG}/usr/bin/btsync
 }

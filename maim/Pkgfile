@@ -7,12 +7,12 @@
 name=maim
 version=3.3.41
 release=1
-source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
+source=(https://github.com/naelstrof/maim/archive/v${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 
 	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_MANDIR=/usr/man .
 	make
-	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+	make DESTDIR="${PKG}" PREFIX="/usr" MANPREFIX="/usr/man" install
 }

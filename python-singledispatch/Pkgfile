@@ -7,9 +7,9 @@
 name=python-singledispatch
 version=3.4.0.3
 release=1
-source=(https://pypi.python.org/packages/source/s/singledispatch/singledispatch-$version.tar.gz)
+source=(https://pypi.python.org/packages/source/s/singledispatch/singledispatch-${version}.tar.gz)
 
 build() {
-	cd singledispatch-$version
-	python setup.py install --root $PKG
+	cd singledispatch-${version}
+	python setup.py install --root ${PKG}
 }

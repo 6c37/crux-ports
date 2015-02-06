@@ -7,23 +7,23 @@
 name=ttf-meslo-dz
 version=1.2
 release=1
-source=(https://github.com/andreberg/Meslo-Font/raw/master/dist/v"$version"/Meslo%20LG%20DZ%20v"$version".zip)
+source=(https://github.com/andreberg/Meslo-Font/raw/master/dist/v"${version}"/Meslo%20LG%20DZ%20v"${version}".zip)
 
 build() {
 	cd "Meslo LG DZ v1.2"
 
-	install -Dm644 MesloLGLDZ-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Regular.ttf
-	install -Dm644 MesloLGLDZ-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Bold.ttf
-	install -Dm644 MesloLGLDZ-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Italic.ttf
-	install -Dm644 MesloLGLDZ-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/BoldItalic.ttf
+	install -Dm644 MesloLGLDZ-Regular.ttf    ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Regular.ttf
+	install -Dm644 MesloLGLDZ-Bold.ttf       ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Bold.ttf
+	install -Dm644 MesloLGLDZ-Italic.ttf     ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/Italic.ttf
+	install -Dm644 MesloLGLDZ-BoldItalic.ttf ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGL/BoldItalic.ttf
 
-	install -Dm644 MesloLGMDZ-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Regular.ttf
-	install -Dm644 MesloLGMDZ-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Bold.ttf
-	install -Dm644 MesloLGMDZ-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Italic.ttf
-	install -Dm644 MesloLGMDZ-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/BoldItalic.ttf
+	install -Dm644 MesloLGMDZ-Regular.ttf    ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Regular.ttf
+	install -Dm644 MesloLGMDZ-Bold.ttf       ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Bold.ttf
+	install -Dm644 MesloLGMDZ-Italic.ttf     ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/Italic.ttf
+	install -Dm644 MesloLGMDZ-BoldItalic.ttf ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGM/BoldItalic.ttf
 
-	install -Dm644 MesloLGSDZ-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Regular.ttf
-	install -Dm644 MesloLGSDZ-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Bold.ttf
-	install -Dm644 MesloLGSDZ-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Italic.ttf
-	install -Dm644 MesloLGSDZ-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/BoldItalic.ttf
+	install -Dm644 MesloLGSDZ-Regular.ttf    ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Regular.ttf
+	install -Dm644 MesloLGSDZ-Bold.ttf       ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Bold.ttf
+	install -Dm644 MesloLGSDZ-Italic.ttf     ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/Italic.ttf
+	install -Dm644 MesloLGSDZ-BoldItalic.ttf ${PKG}/usr/share/fonts/X11/TTF/Meslo/DZ/LGS/BoldItalic.ttf
 }

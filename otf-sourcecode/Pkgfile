@@ -12,11 +12,11 @@ source=(https://github.com/adobe-fonts/source-code-pro/archive/${version}R.tar.g
 build() {
     cd source-code-pro-${version}R
 
-	install -Dm644 OTF/SourceCodePro-ExtraLight.otf	$PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
-	install -Dm644 OTF/SourceCodePro-Light.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
-	install -Dm644 OTF/SourceCodePro-Regular.otf    $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Regular.otf
-	install -Dm644 OTF/SourceCodePro-Medium.otf     $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Medium.otf
-	install -Dm644 OTF/SourceCodePro-Bold.otf       $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Bold.otf
-	install -Dm644 OTF/SourceCodePro-Semibold.otf   $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Semibold.otf
-	install -Dm644 OTF/SourceCodePro-Black.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Black.otf
+	install -Dm644 OTF/SourceCodePro-ExtraLight.otf	${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
+	install -Dm644 OTF/SourceCodePro-Light.otf      ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
+	install -Dm644 OTF/SourceCodePro-Regular.otf    ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Regular.otf
+	install -Dm644 OTF/SourceCodePro-Medium.otf     ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Medium.otf
+	install -Dm644 OTF/SourceCodePro-Bold.otf       ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Bold.otf
+	install -Dm644 OTF/SourceCodePro-Semibold.otf   ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Semibold.otf
+	install -Dm644 OTF/SourceCodePro-Black.otf      ${PKG}/usr/share/fonts/X11/OTF/Source/CodePro/Black.otf
 }

@@ -10,15 +10,15 @@ release=1
 source=()
 
 build() {
-    cd $PKGMK_SOURCE_DIR
+    cd ${PKGMK_SOURCE_DIR}
 
-    if cd $name; then
+    if cd ${name}; then
         git fetch -q; git reset --hard origin/master
     else
-        git clone git://git.suckless.org/ubase $name
-        cd $name
+        git clone git://git.suckless.org/ubase ${name}
+        cd ${name}
     fi
 
 	make
-	make DESTDIR=$PKG PREFIX=/opt/ubase MANPREFIX=/opt/ubase/man install 
+	make DESTDIR=${PKG} PREFIX=/opt/ubase MANPREFIX=/opt/ubase/man install 
 }

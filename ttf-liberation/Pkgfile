@@ -7,23 +7,23 @@
 name=ttf-liberation
 version=2.00.1
 release=1
-source=(https://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-ttf-$version.tar.gz)
+source=(https://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-ttf-${version}.tar.gz)
 
 build() {
-	cd liberation-fonts-ttf-$version
+	cd liberation-fonts-ttf-${version}
 
-	install -Dm644 LiberationSans-Regular.ttf     $PKG/usr/share/fonts/X11/TTF/Liberation/Sans/Regular.ttf
-	install -Dm644 LiberationSans-Bold.ttf        $PKG/usr/share/fonts/X11/TTF/Liberation/Sans/Bold.ttf
-	install -Dm644 LiberationSans-Italic.ttf      $PKG/usr/share/fonts/X11/TTF/Liberation/Sans/Italic.ttf
-	install -Dm644 LiberationSans-BoldItalic.ttf  $PKG/usr/share/fonts/X11/TTF/Liberation/Sans/BoldItalic.ttf
+	install -Dm644 LiberationSans-Regular.ttf     ${PKG}/usr/share/fonts/X11/TTF/Liberation/Sans/Regular.ttf
+	install -Dm644 LiberationSans-Bold.ttf        ${PKG}/usr/share/fonts/X11/TTF/Liberation/Sans/Bold.ttf
+	install -Dm644 LiberationSans-Italic.ttf      ${PKG}/usr/share/fonts/X11/TTF/Liberation/Sans/Italic.ttf
+	install -Dm644 LiberationSans-BoldItalic.ttf  ${PKG}/usr/share/fonts/X11/TTF/Liberation/Sans/BoldItalic.ttf
 
-	install -Dm644 LiberationSerif-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Liberation/Serif/Regular.ttf
-	install -Dm644 LiberationSerif-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Liberation/Serif/Bold.ttf
-	install -Dm644 LiberationSerif-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Liberation/Serif/Italic.ttf
-	install -Dm644 LiberationSerif-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Liberation/Serif/BoldItalic.ttf
+	install -Dm644 LiberationSerif-Regular.ttf    ${PKG}/usr/share/fonts/X11/TTF/Liberation/Serif/Regular.ttf
+	install -Dm644 LiberationSerif-Bold.ttf       ${PKG}/usr/share/fonts/X11/TTF/Liberation/Serif/Bold.ttf
+	install -Dm644 LiberationSerif-Italic.ttf     ${PKG}/usr/share/fonts/X11/TTF/Liberation/Serif/Italic.ttf
+	install -Dm644 LiberationSerif-BoldItalic.ttf ${PKG}/usr/share/fonts/X11/TTF/Liberation/Serif/BoldItalic.ttf
 
-	install -Dm644 LiberationMono-Regular.ttf     $PKG/usr/share/fonts/X11/TTF/Liberation/Mono/Regular.ttf
-	install -Dm644 LiberationMono-Bold.ttf        $PKG/usr/share/fonts/X11/TTF/Liberation/Mono/Bold.ttf
-	install -Dm644 LiberationMono-Italic.ttf      $PKG/usr/share/fonts/X11/TTF/Liberation/Mono/Italic.ttf
-	install -Dm644 LiberationMono-BoldItalic.ttf  $PKG/usr/share/fonts/X11/TTF/Liberation/Mono/BoldItalic.ttf
+	install -Dm644 LiberationMono-Regular.ttf     ${PKG}/usr/share/fonts/X11/TTF/Liberation/Mono/Regular.ttf
+	install -Dm644 LiberationMono-Bold.ttf        ${PKG}/usr/share/fonts/X11/TTF/Liberation/Mono/Bold.ttf
+	install -Dm644 LiberationMono-Italic.ttf      ${PKG}/usr/share/fonts/X11/TTF/Liberation/Mono/Italic.ttf
+	install -Dm644 LiberationMono-BoldItalic.ttf  ${PKG}/usr/share/fonts/X11/TTF/Liberation/Mono/BoldItalic.ttf
 }

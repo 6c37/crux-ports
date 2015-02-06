@@ -10,30 +10,30 @@ release=1
 source=(http://material-design.storage.googleapis.com/downloads/RobotoTTF.zip)
 
 build() {
-	install -Dm644 Roboto-Thin.ttf                 $PKG/usr/share/fonts/X11/TTF/Roboto/Thin.ttf
-	install -Dm644 Roboto-ThinItalic.ttf           $PKG/usr/share/fonts/X11/TTF/Roboto/ThinItalic.ttf
+	install -Dm644 Roboto-Thin.ttf                 ${PKG}/usr/share/fonts/X11/TTF/Roboto/Thin.ttf
+	install -Dm644 Roboto-ThinItalic.ttf           ${PKG}/usr/share/fonts/X11/TTF/Roboto/ThinItalic.ttf
 
-	install -Dm644 Roboto-Light.ttf                $PKG/usr/share/fonts/X11/TTF/Roboto/Light.ttf
-	install -Dm644 Roboto-LightItalic.ttf          $PKG/usr/share/fonts/X11/TTF/Roboto/LightItalic.ttf
+	install -Dm644 Roboto-Light.ttf                ${PKG}/usr/share/fonts/X11/TTF/Roboto/Light.ttf
+	install -Dm644 Roboto-LightItalic.ttf          ${PKG}/usr/share/fonts/X11/TTF/Roboto/LightItalic.ttf
 
-	install -Dm644 Roboto-Regular.ttf              $PKG/usr/share/fonts/X11/TTF/Roboto/Regular.ttf
-	install -Dm644 Roboto-Italic.ttf               $PKG/usr/share/fonts/X11/TTF/Roboto/Italic.ttf
+	install -Dm644 Roboto-Regular.ttf              ${PKG}/usr/share/fonts/X11/TTF/Roboto/Regular.ttf
+	install -Dm644 Roboto-Italic.ttf               ${PKG}/usr/share/fonts/X11/TTF/Roboto/Italic.ttf
 
-	install -Dm644 Roboto-Medium.ttf               $PKG/usr/share/fonts/X11/TTF/Roboto/Medium.ttf
-	install -Dm644 Roboto-MediumItalic.ttf         $PKG/usr/share/fonts/X11/TTF/Roboto/MediumItalic.ttf
+	install -Dm644 Roboto-Medium.ttf               ${PKG}/usr/share/fonts/X11/TTF/Roboto/Medium.ttf
+	install -Dm644 Roboto-MediumItalic.ttf         ${PKG}/usr/share/fonts/X11/TTF/Roboto/MediumItalic.ttf
 
-	install -Dm644 Roboto-Bold.ttf                 $PKG/usr/share/fonts/X11/TTF/Roboto/Bold.ttf
-	install -Dm644 Roboto-BoldItalic.ttf           $PKG/usr/share/fonts/X11/TTF/Roboto/BoldItalic.ttf
+	install -Dm644 Roboto-Bold.ttf                 ${PKG}/usr/share/fonts/X11/TTF/Roboto/Bold.ttf
+	install -Dm644 Roboto-BoldItalic.ttf           ${PKG}/usr/share/fonts/X11/TTF/Roboto/BoldItalic.ttf
 
-	install -Dm644 Roboto-Black.ttf                $PKG/usr/share/fonts/X11/TTF/Roboto/Black.ttf
-	install -Dm644 Roboto-BlackItalic.ttf          $PKG/usr/share/fonts/X11/TTF/Roboto/BlackItalic.ttf
+	install -Dm644 Roboto-Black.ttf                ${PKG}/usr/share/fonts/X11/TTF/Roboto/Black.ttf
+	install -Dm644 Roboto-BlackItalic.ttf          ${PKG}/usr/share/fonts/X11/TTF/Roboto/BlackItalic.ttf
 
-	install -Dm644 RobotoCondensed-Bold.ttf        $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/Bold.ttf
-	install -Dm644 RobotoCondensed-BoldItalic.ttf  $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/BoldItalic.ttf
+	install -Dm644 RobotoCondensed-Bold.ttf        ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/Bold.ttf
+	install -Dm644 RobotoCondensed-BoldItalic.ttf  ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/BoldItalic.ttf
 
-	install -Dm644 RobotoCondensed-Regular.ttf     $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/Regular.ttf
-	install -Dm644 RobotoCondensed-Italic.ttf      $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/Italic.ttf
+	install -Dm644 RobotoCondensed-Regular.ttf     ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/Regular.ttf
+	install -Dm644 RobotoCondensed-Italic.ttf      ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/Italic.ttf
 
-	install -Dm644 RobotoCondensed-Light.ttf       $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/Light.ttf
-	install -Dm644 RobotoCondensed-LightItalic.ttf $PKG/usr/share/fonts/X11/TTF/Roboto/Condensed/LightItalic.ttf
+	install -Dm644 RobotoCondensed-Light.ttf       ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/Light.ttf
+	install -Dm644 RobotoCondensed-LightItalic.ttf ${PKG}/usr/share/fonts/X11/TTF/Roboto/Condensed/LightItalic.ttf
 }

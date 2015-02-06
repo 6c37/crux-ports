@@ -13,10 +13,10 @@ source=(
 )
 
 build() {
-        cd $name-master
+        cd ${name}-master
 
-	patch -p1 < "$SRC/fix_compiler_name.patch"
+	patch -p1 < "${SRC}/fix_compiler_name.patch"
 
         make
-        make DESTDIR="$PKG" PREFIX="/usr" MANDIR="/usr/man" install
+        make DESTDIR="${PKG}" PREFIX="/usr" MANDIR="/usr/man" install
 }

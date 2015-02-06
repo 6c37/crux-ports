@@ -7,14 +7,14 @@
 name=openimageio
 version=1.5.11
 release=1
-source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
+source=(https://github.com/OpenImageIO/oiio/archive/Release-${version}.tar.gz)
 
 build() {
-	cd oiio-Release-$version
+	cd oiio-Release-${version}
 
 	CFLAGS="" CXXFLAGS="" cmake ./ -DCMAKE_INSTALL_PREFIX=/usr -DOIIO_BUILD_TESTS=OFF
 
 	make
-	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/share
+	make DESTDIR=${PKG} install
+	rm -rf ${PKG}/usr/share
 }
