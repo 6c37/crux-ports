@@ -1,0 +1,29 @@
+# Description: D-Bus service for applications to request thumbnails.
+# URL:         http://www.xfce.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  intltool dbus-glib gkd-pixbuf
+# Optional:    popler-glib freetype
+
+name=tumbler
+version=0.1.31
+release=1
+source=(http://archive.xfce.org/src/xfce/tumbler/0.1/tumbler-$version.tar.bz2)
+
+build () {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib/tumbler \
+		--disable-static \
+		--disable-nls \
+		--disable-gtk-doc-html \
+		--disable-debug
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
+}
