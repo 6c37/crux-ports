@@ -2,11 +2,12 @@
 # URL:         https://github.com/ahodesuka/gtk/tree/bgo141154-filechooser-icon-view-gtk2
 # Packager:    Fredrik Rinnestam, fredrik at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libpcre libffi python tumbler
+# Depends on:  libpcre libffi python
+# Optional:    tumbler
 
 name=glib-ahoka
-version=2.46.2
-release=1
+version=2.48.0
+release=2
 source=(
 	http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz
 	gschemas.compiled
@@ -20,7 +21,8 @@ build () {
 
 	./configure --prefix=/usr \
 		--disable-man \
-		--with-pcre=system
+		--with-pcre=system \
+		--disable-fam
 
 	make
 	make -j1 DESTDIR=$PKG install
