@@ -3,9 +3,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/SDL2/
 -rw-r--r--	root/root	usr/include/SDL2/SDL_ttf.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libSDL2_ttf-2.0.so.0 -> libSDL2_ttf-2.0.so.0.10.3
--rwxr-xr-x	root/root	usr/lib/libSDL2_ttf-2.0.so.0.10.3
+lrwxrwxrwx	root/root	usr/lib/libSDL2_ttf-2.0.so.0 -> libSDL2_ttf-2.0.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib/libSDL2_ttf-2.0.so.0.14.0
 -rwxr-xr-x	root/root	usr/lib/libSDL2_ttf.la
-lrwxrwxrwx	root/root	usr/lib/libSDL2_ttf.so -> libSDL2_ttf-2.0.so.0.10.3
+lrwxrwxrwx	root/root	usr/lib/libSDL2_ttf.so -> libSDL2_ttf-2.0.so.0.14.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/SDL2_ttf.pc
