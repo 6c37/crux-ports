@@ -1,0 +1,19 @@
+# Description: Displays all the characters in a font using either the X11 core protocol or libXft2.
+# URL:         http://xorg.freedesktop.org/
+# Packager:    Tudor Roman, xenogenesis at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg-util-macros xorg-libxft xorg-libxrender xorg-libxmu
+
+name=xorg-xfd
+version=1.1.2
+release=1
+source=(http://xorg.freedesktop.org/archive/individual/app/xfd-${version}.tar.bz2)
+
+build() {
+	cd xfd-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
