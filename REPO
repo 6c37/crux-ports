@@ -20,6 +20,7 @@ d:autoconf-2.13
 d:busybox
 d:racket
 d:execline
+d:sind
 d:blender
 d:proot
 d:msgpack-lua
@@ -248,6 +249,9 @@ f:4fac1cd2ba16e73c9dbebe6b3d73a0c5:racket/Pkgfile
 f:a6f5ffa482d84af73f4c7c11cd1a2718:execline/.md5sum
 f:c4d2f3d9900b05ec263ab53612ee13b6:execline/.footprint
 f:c5e2f21bb2f6e95d7890c2ec6cd4836f:execline/Pkgfile
+f:9918920797e4d71e5de5d4870aaa0b34:sind/.md5sum
+f:fd75718c3f4ee3978438739e2e772368:sind/.footprint
+f:01aa7e7043835f2546c0d92426a598c8:sind/Pkgfile
 f:e080ee672b95d3f953ac1d87ef661182:blender/.md5sum
 f:c31d5da77ead89f8153b5bf714e67c8a:blender/.footprint
 f:1b480c0aae97dab5fa882778fb7d9535:blender/Pkgfile
