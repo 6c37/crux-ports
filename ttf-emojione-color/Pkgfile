@@ -5,10 +5,13 @@
 # Depends on:  fontconfig
 
 name=ttf-emojione-color
-version=1.0-beta3
+version=1.0
 release=1
-source=(https://github.com/eosrei/emojione-color-font/releases/download/v1.0-beta3/EmojiOneColor-SVGinOT-Linux-$version.zip)
+source=(https://github.com/eosrei/emojione-color-font/releases/download/v$version/EmojiOneColor-SVGinOT-Linux-$version.tar.gz)
 
 build() {
+	cd EmojiOneColor-SVGinOT-Linux-$version
+	
 	install -Dm644 EmojiOneColor-SVGinOT.ttf $PKG/usr/share/fonts/X11/TTF/EmojiOne/Color.ttf
+	install -Dm644 fontconfig/56-emojione-color.conf $PKG/etc/fonts/conf.avail/56-emojione-color.conf
 }
