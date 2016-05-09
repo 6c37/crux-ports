@@ -1,0 +1,22 @@
+# Description: Convert source code to syntax highlighted document.
+# URL:         http://www.gnu.org/software/src-highlite/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  boost
+
+name=source-highlight
+version=3.1.8
+release=1
+source=(ftp://ftp.gnu.org/gnu/src-highlite/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+		--sysconfdir=/etc
+
+	make
+	make prefix=$PKG/usr install
+
+	echo -e "\npkgfile = sh.lang" >> $PKG/usr/share/source-highlight/lang.map
+}
