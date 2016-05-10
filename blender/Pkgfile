@@ -6,35 +6,42 @@
 # Optional:    cuda
 
 name=blender
-version=2.76
+version=2.77a
 release=1
 source=(http://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	mkdir build
-	cd build
-	cmake -C ../ \
+	mkdir build && cd build
+	cmake -C ../build_files/cmake/config/blender_full.cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DPYTHON_VERSION=3.5 \
+		-DCMAKE_BUILD_TYPE=Release \
 		-DWITH_INSTALL_PORTABLE=OFF \
-		-DWITH_CYCLES=ON \
-		-DWITH_CYCLES_OSL=ON \
-		-DWITH_MOD_OCEANSIM=ON \
-		-DWITH_CODEC_FFMPEG=ON \
-		-DWITH_FFTW3=ON \
+		-DWITH_PYTHON_INSTALL=OFF \
+		-DOPENIMAGEIO_ROOT_DIR=/usr \
 		-DWITH_LLVM=ON \
-		-DWITH_OPENIMAGEIO=ON \
 		-DWITH_SYSTEM_OPENJPEG=ON \
-		-DWITH_INTERNATIONAL=OFF \
-		-DWITH_OPENAL=OFF \
-		-DWITH_PLAYER=OFF \
-		-DWITH_OPENSUBDIV=OFF \
+		-DWITH_GL_PROFILE_CORE=OFF \
+		-DWITH_GL_PROFILE_ES20=OFF \
+		-DLLVM_VERSION=3.5 \
+		-DLLVM_STATIC=ON \
+		-DPYTHON_VERSION=3.5 \
+		-DPYTHON_LIBPATH=/usr/lib \
+		-DPYTHON_LIBRARY=python3.5m \
+		-DPYTHON_INCLUDE_DIRS=/usr/include/python3.5m \
+		-DWITH_CYCLES_OSL=ON \
+		-DWITH_CYCLES_PTEX=ON \
+		-DWITH_OPENIMAGEIO=ON \
 		-DWITH_OPENCOLORIO=OFF \
 		-DWITH_GAMEENGINE=OFF \
-		-DWITH_PYTHON_INSTALL=OFF
+		-DWITH_INTERNATIONAL=OFF \
+		-DWITH_OPENAL=OFF \
+		-DWITH_PLAYER=OFF
 
 	make
 	make DESTDIR=$PKG install
+
+	python3 -m compileall $PKG/usr/share/blender
+	python3 -O -m compileall $PKG/usr/share/blender
 }
