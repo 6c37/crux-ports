@@ -1,0 +1,15 @@
+# Description: An icon theme designed to be smooth, sexy, clear, and efficient.
+# URL:         https://launchpad.net/elementaryicons
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  librsvg
+
+name=elementary-icon-theme
+version=3.2.2
+release=1
+source=(https://launchpad.net/elementaryicons/${version%%.*}.x/$version/+download/elementary-icon-theme-$version.tar.xz)
+
+build() {
+	install -dm 755 $PKG/usr/share/icons
+	cp -dr --no-preserve=ownership elementary-icon-theme-$version $PKG/usr/share/icons/Elementary
+}
