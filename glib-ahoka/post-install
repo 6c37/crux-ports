@@ -5,3 +5,5 @@ alias="glib-ahoka: glib"
 if [ -z "$(grep "$alias" /var/lib/pkg/prt-get.aliases)" ]; then
 	echo "$alias" >> /var/lib/pkg/prt-get.aliases
 fi
+
+glib-compile-schemas /usr/share/glib-2.0/schemas
