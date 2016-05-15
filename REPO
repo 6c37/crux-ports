@@ -82,6 +82,7 @@ d:ncmpcpp
 d:gexiv2
 d:libsigrok
 d:pcf-profont
+d:go
 d:pcf-tewi
 d:toilet
 d:atool
@@ -457,6 +458,9 @@ f:e0cdac742d7542f3cdd89d4aec213913:pcf-profont/post-install
 f:d51eaa1a1c1e90e8526f3ce5312d6669:pcf-profont/.md5sum
 f:c56ff3441beccabb4eb646fbf50d098f:pcf-profont/.footprint
 f:f0c460405494869d96945455fda4d464:pcf-profont/Pkgfile
+f:9adb904f9d992f13ffdf8c20a82a14ea:go/.md5sum
+f:4a16be3b85102551f1b2ecc52b749e8d:go/.footprint
+f:b0027d9f82227c380f51d1e5faac6ea9:go/Pkgfile
 f:3339d972b2c7a9575a4e6c38c0cc0a83:pcf-tewi/.md5sum
 f:59dde4666e26ff1b0fee499c20a8e8e5:pcf-tewi/.footprint
 f:3d18b5f43a891f3393100aa9054ce606:pcf-tewi/Pkgfile

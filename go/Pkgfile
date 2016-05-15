@@ -1,0 +1,37 @@
+# Description: The Go programming language.
+# URL:         http://golang.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Packager:    Matt Housh, jaeger at crux dot ninja
+# Depends on:  git mercurial
+
+name=go
+version=1.6.2
+release=1
+source=(https://storage.googleapis.com/golang/${name}${version}.linux-amd64.tar.gz \
+  https://storage.googleapis.com/golang/${name}${version}.src.tar.gz)
+
+unpack_source() {
+  install -d $SRC/go${version}
+  bsdtar -xf $PKGMK_SOURCE_DIR/${name}${version}.linux-amd64.tar.gz \
+    -C $SRC/go${version} --strip-components 1
+  bsdtar -xf $PKGMK_SOURCE_DIR/${name}${version}.src.tar.gz \
+    -C $SRC
+}
+
+build() {
+  export GOROOT_BOOTSTRAP=${SRC}/go${version}
+  export GOROOT_FINAL=/usr/lib/go
+  export GOOS=linux
+  export GOARCH=amd64
+
+  cd go/src
+  bash make.bash --no-clean
+
+  install -d $PKG/usr/lib
+  cp -r $SRC/go $PKG/usr/lib/
+
+  install -d $PKG/usr/bin
+  ln -s /usr/lib/go/bin/go $PKG/usr/bin/
+  ln -s /usr/lib/go/bin/gofmt $PKG/usr/bin/
+}
+
