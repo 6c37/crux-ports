@@ -2,19 +2,19 @@
 # URL:         https://neovim.io
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake libuv luajit msgpack-c msgpack-lua lua-lpeg libvterm libtermkey unibilium
+# Depends on:  cmake libuv msgpack-c lua-lpeg lua-mpack libvterm libtermkey
 
 name=neovim
-version=0.1.3
+version=0.1.4
 release=1
-source=(https://github.com/neovim/neovim/archive/v${version}.tar.gz)
+source=(https://github.com/neovim/neovim/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
 	cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share/locale
 }

@@ -278,6 +278,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/ftplugin/
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/bdf.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/bst.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/btm.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/bzl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/c.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/calendar.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/cdrdaoconf.vim
@@ -434,6 +435,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/ftplugin/
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/sudoers.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/svg.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/sysctl.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/systemd.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/systemverilog.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/tcl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/tcsh.vim
@@ -474,6 +476,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/indent/
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/awk.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/bib.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/bst.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/indent/bzl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/c.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/cdl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/ch.vim
@@ -557,9 +560,11 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/indent/
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/sml.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/sql.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/sqlanywhere.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/indent/systemd.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/systemverilog.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/tcl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/tcsh.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/indent/teraterm.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/tex.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/tf.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/tilde.vim
@@ -760,6 +765,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/syntax/
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/blank.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/bst.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/btm.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/syntax/bzl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/bzr.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/c.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/cabal.vim
@@ -1203,6 +1209,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/syntax/
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/synload.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/syntax.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/sysctl.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/syntax/systemd.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/systemverilog.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tads.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tags.vim
@@ -1215,6 +1222,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/syntax/
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tasm.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tcl.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tcsh.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/syntax/teraterm.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/terminfo.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/tex.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/texinfo.vim
