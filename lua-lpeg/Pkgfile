@@ -5,9 +5,9 @@
 # Depends on:  luajit
 
 name=lua-lpeg
-version=0.12
+version=1.0.0
 release=1
-source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-${version}.tar.gz)
+source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
 
 build() {
 	cd lpeg-$version
