@@ -529,11 +529,6 @@ drwxr-xr-x	root/root	usr/include/msgpack/preprocessor/variadic/detail/
 -rw-r--r--	root/root	usr/include/msgpack/zone.h
 -rw-r--r--	root/root	usr/include/msgpack/zone.hpp
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libmsgpack.a
--rwxr-xr-x	root/root	usr/lib/libmsgpack.la
-lrwxrwxrwx	root/root	usr/lib/libmsgpack.so -> libmsgpack.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libmsgpack.so.4 -> libmsgpack.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libmsgpack.so.4.0.0
 -rw-r--r--	root/root	usr/lib/libmsgpackc.a
 -rwxr-xr-x	root/root	usr/lib/libmsgpackc.la
 lrwxrwxrwx	root/root	usr/lib/libmsgpackc.so -> libmsgpackc.so.2.0.0
