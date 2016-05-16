@@ -5,17 +5,14 @@
 # Depends on:
 
 name=libressl
-version=2.3.3
+version=2.3.4
 release=1
 source=(
 	http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz
-	libressl-dummy-rand-egd.patch
 )
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/libressl-dummy-rand-egd.patch
 
 	./configure --prefix=/usr --with-openssldir=/etc/ssl
 
