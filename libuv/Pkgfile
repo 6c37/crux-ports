@@ -1,11 +1,11 @@
-# Description: Multi-platform support library with a focus on asynchronous I/O. (git checkout)
+# Description: Multi-platform support library with a focus on asynchronous I/O.
 # URL:         https://github.com/libuv/libuv
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
-# Depends on:  git
+# Depends on:  
 
 name=libuv
-version=1.8.0
+version=1.9.0
 release=1
 source=(https://github.com/libuv/libuv/archive/v$version.tar.gz)
 
