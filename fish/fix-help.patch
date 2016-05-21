@@ -1,0 +1,46 @@
+diff --git a/share/functions/__fish_print_help.fish b/share/functions/__fish_print_help.fish
+index 3d5ac0b..c69c037 100644
+--- a/share/functions/__fish_print_help.fish
++++ b/share/functions/__fish_print_help.fish
+@@ -10,11 +10,31 @@ function __fish_print_help --description "Print help message for the specified f
+ 		set item source
+ 	end
+ 
++	# Look for the help file, using various supported file extensions.
++	set file ''
++	for i in '.gz' ''
++		set j "$__fish_datadir/man/man1/$item.1$i"
++
++		if test -e "$j"
++			set file "$j"
++			break
++		end
++	end
++
+ 	# Do nothing if the file does not exist
+-	if not test -e "$__fish_datadir/man/man1/$item.1"
++	if test "$file" = ''
+ 		return
+ 	end
+ 
++	function read_help --argument file
++		switch "$file"
++			case '*.gz'
++				zcat "$file"
++			case '*'
++				cat "$file"
++		end
++	end
++
+ 	set -l IFS \n\ \t
+ 
+ 	# Render help output, save output into the variable 'help'
+@@ -39,7 +59,7 @@ function __fish_print_help --description "Print help message for the specified f
+ 		set cols (math $cols - 4) # leave a bit of space on the right
+ 		set rLL -rLL=$cols[1]n
+ 	end
+-	set help (nroff -man -c -t $rLL "$__fish_datadir/man/man1/$item.1" ^/dev/null)
++	set help (read_help "$file" | nroff -man -c -t $rLL - ^/dev/null)
+ 
+ 	# The original implementation trimmed off the top 5 lines and bottom 3 lines
+ 	# from the nroff output. Perhaps that's reliable, but the magic numbers make

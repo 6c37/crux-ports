@@ -2,20 +2,29 @@
 # URL:         http://fishshell.com
 # Packager:    lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Optional:    doxygen python
+# Depends on:  git doxygen libpcre2
+# Optional:    python
 
 name=fish
-version=2.2.0
-release=2
-source=(https://github.com/fish-shell/fish-shell/archive/$version.tar.gz)
+version=2.3.0
+release=1
+source=(
+	https://github.com/fish-shell/fish-shell/archive/$version.tar.gz
+	fix-help.patch
+)
 
 build() {
 	cd $name-shell-$version
 
+	# Fix --help (thanks ryu0 for the patch)
+	# pkgmk compresses all man pages, and unpatched fish can't read that
+	patch -p1 < $SRC/fix-help.patch
+
 	autoconf
 	./configure \
 		--prefix=/usr \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--without-included-pcre2
 
 	make
 	make DESTDIR=$PKG install
