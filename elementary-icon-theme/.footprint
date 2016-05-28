@@ -2,9 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/elementary/
--rw-r--r--	root/root	usr/share/icons/elementary/AUTHORS
 -rw-r--r--	root/root	usr/share/icons/elementary/CONTRIBUTORS
--rw-r--r--	root/root	usr/share/icons/elementary/COPYING
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/128/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/128/add.svg -> list-add.svg
