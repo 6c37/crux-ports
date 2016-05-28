@@ -7,7 +7,7 @@
 
 name=tumbler
 version=0.1.31
-release=1
+release=2
 source=(http://archive.xfce.org/src/xfce/tumbler/0.1/tumbler-$version.tar.bz2)
 
 build () {
@@ -25,5 +25,5 @@ build () {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/locale
+	rm -rf $PKG/usr/share/{gtk-doc,locale}
 }
