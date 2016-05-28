@@ -6,7 +6,7 @@
 
 name=json-glib
 version=1.0.4
-release=1
+release=2
 source=(https://download.gnome.org/sources/json-glib/1.0/json-glib-$version.tar.xz)
 
 build() {
@@ -16,4 +16,6 @@ build() {
   
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/{gtk-doc,locale}
 }
