@@ -82,19 +82,19 @@ drwxr-xr-x	root/root	usr/include/openssl/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcrypto.a
 -rw-r--r--	root/root	usr/lib/libcrypto.la
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.37.0.0
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so.37 -> libcrypto.so.37.0.0
--rw-r--r--	root/root	usr/lib/libcrypto.so.37.0.0
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.38.0.0
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so.38 -> libcrypto.so.38.0.0
+-rw-r--r--	root/root	usr/lib/libcrypto.so.38.0.0
 -rw-r--r--	root/root	usr/lib/libssl.a
 -rw-r--r--	root/root	usr/lib/libssl.la
-lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.38.0.0
-lrwxrwxrwx	root/root	usr/lib/libssl.so.38 -> libssl.so.38.0.0
--rw-r--r--	root/root	usr/lib/libssl.so.38.0.0
+lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.39.0.0
+lrwxrwxrwx	root/root	usr/lib/libssl.so.39 -> libssl.so.39.0.0
+-rw-r--r--	root/root	usr/lib/libssl.so.39.0.0
 -rw-r--r--	root/root	usr/lib/libtls.a
 -rw-r--r--	root/root	usr/lib/libtls.la
-lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.10.0.0
-lrwxrwxrwx	root/root	usr/lib/libtls.so.10 -> libtls.so.10.0.0
--rw-r--r--	root/root	usr/lib/libtls.so.10.0.0
+lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.11.0.0
+lrwxrwxrwx	root/root	usr/lib/libtls.so.11 -> libtls.so.11.0.0
+-rw-r--r--	root/root	usr/lib/libtls.so.11.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcrypto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libssl.pc
