@@ -1,8 +1,7 @@
-# Description: 	Openbox menu editor
-# URL: 		http://obmenu.sourceforge.net/
-# Maintainer: 	Lains, lainsce at airmail dot cc
-# Maintainer:  	6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on: 	python pygtk openbox
+# Description: Openbox menu editor
+# URL:         http://obmenu.sourceforge.net/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python pygtk openbox
 
 name=obmenu
 version=1.0
@@ -11,5 +10,6 @@ source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	python2 setup.py install --root="$PKG" --optimize=1
+
+	python2 setup.py install --root=$PKG --optimize=1
 }
