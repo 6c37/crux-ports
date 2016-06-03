@@ -1,6 +1,5 @@
 # Description: NVIDIA Linux Display Driver, 340xx legacy branch.
 # URL:         http://www.nvidia.com/
-# Packager:    Matt Housh, jaeger at morpheus dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk gl-select
 

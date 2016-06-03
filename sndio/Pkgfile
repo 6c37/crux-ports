@@ -1,6 +1,5 @@
 # Description: Small audio and MIDI framework part of the OpenBSD project.
 # URL:         http://www.sndio.org/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  alsa-lib
 

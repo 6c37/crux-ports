@@ -1,6 +1,5 @@
 # Description: Provides hardware access drivers for logic analyzers and other devices.
 # URL:         https://sigrok.org/wiki/Libsigrok
-# Packager:    Ryan Mullen, rmmullen at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  glibmm libzip doxygen
 

@@ -1,6 +1,5 @@
 # Description: The GNU IceCat browser.
 # URL:         https://www.gnu.org/software/gnuzilla/
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  alsa-lib dbus-glib gtk hunspell icu libevent libvpx nss util-linux xorg-libxdamage xorg-libxt
  

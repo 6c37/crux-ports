@@ -1,6 +1,5 @@
 # Description: Freetype patched with the infinality patches plus a couple more.
 # URL:         https://github.com/bohoomil/fontconfig-ultimate
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  zlib libpng harfbuzz
 

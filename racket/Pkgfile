@@ -1,6 +1,5 @@
 # Description: The Racket programming language compiler & tools.
 # URL:         https://racket-lang.org
-# Packager:    Lains, lainsce at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk sqlite3
 

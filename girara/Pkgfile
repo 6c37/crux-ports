@@ -1,6 +1,5 @@
 # Description: A library that implements a user interface that focuses on simplicity and minimalism.
 # URL:         https://pwmt.org/projects/girara/
-# Packager:    Lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk3
 # Optional:    check intltool

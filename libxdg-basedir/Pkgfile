@@ -1,6 +1,5 @@
 # Description: An implementation of the XDG Base Directory specifications.
 # URL:         https://github.com/devnev/libxdg-basedir
-# Packager:    Joe Schillinger, me at schil dot li
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 

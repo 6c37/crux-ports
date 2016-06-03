@@ -1,6 +1,5 @@
 # Description: Google Chrome Browser
 # URL:         http://chrome.google.com
-# Packager:    Lains, lainsce at airmail dot cc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk gconf nss cups libexif
 

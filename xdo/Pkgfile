@@ -1,6 +1,5 @@
 # Description: A small X utility to perform elementary actions on windows.
 # URL:         https://github.com/baskerville/xdo
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-libxcb xorg-xcb-util-wm
 

@@ -1,6 +1,5 @@
 # Description: Lightweight and fast web browser.
 # URL:         http://www.netsurf-browser.org/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libmng lcms2 gtk libjpeg-turbo libpng check p5-html-parser
 # Optional:    gstreamer

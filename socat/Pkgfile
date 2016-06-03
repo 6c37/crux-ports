@@ -1,6 +1,5 @@
 # Description: SOcket CAT - netcat-like utility with many enhancements
 # URL:         http://www.dest-unreach.org/socat
-# Packager:    Juergen Daubert, jue at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 
 name=socat

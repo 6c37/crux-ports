@@ -1,6 +1,5 @@
 # Description: Another XRandR GUI.
 # URL:         http://christian.amsuess.com/tools/arandr/
-# Packager:    ix, arcetera@openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  python xorg-xrandr pygtk docutils
 

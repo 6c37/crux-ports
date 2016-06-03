@@ -1,6 +1,5 @@
 # Description: Microcode image for the Intel Wireless WiFi link driver.
 # URL:         https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
-# Packager:    Rouven Schuerch, rs at tegonal dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 

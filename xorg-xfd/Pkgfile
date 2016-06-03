@@ -1,6 +1,5 @@
 # Description: Displays all the characters in a font using either the X11 core protocol or libXft2.
 # URL:         http://xorg.freedesktop.org/
-# Packager:    Tudor Roman, xenogenesis at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-util-macros xorg-libxft xorg-libxrender xorg-libxmu
 

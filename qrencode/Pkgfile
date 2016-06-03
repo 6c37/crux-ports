@@ -1,6 +1,5 @@
 # Description: C library for encoding data in a QR Code symbol
 # URL:         http://fukuchi.org/works/qrencode/index.html.en
-# Packager:    Tudor Roman, xenogenesis@openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libpng
 

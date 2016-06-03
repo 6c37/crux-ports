@@ -1,7 +1,6 @@
 # Description: Ubuntu's cursor theme.
 # URL:         http://launchpad.net/human-cursors-theme/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on:  python
 
 name=cursor-human

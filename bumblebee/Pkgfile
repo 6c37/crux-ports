@@ -1,6 +1,5 @@
 # Description: NVIDIA Optimus support for Linux through VirtualGL.
 # URL:         http://www.bumblebee-project.org
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  virtualgl glib libbsd bbswitch
 

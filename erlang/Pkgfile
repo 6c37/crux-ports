@@ -1,6 +1,5 @@
 # Description: A programming language used to build massively scalable soft real-time systems with requirements on high availability.
 # URL:         http://erlang.org
-# Packager:    Luiz de Milon, kori at openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 

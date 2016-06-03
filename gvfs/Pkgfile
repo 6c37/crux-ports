@@ -1,6 +1,5 @@
 # Description:	A userspace virtual filesystem designed to work with the I/O abstractions of gio (glib)
 # URL:		http://projects.gnome.org/
-# Packager:	Lains, lainsce at airmail dot cc
 # Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:	gtk3 libsecret libsoup xorg-libxdamage docbook-xsl udisks2
 

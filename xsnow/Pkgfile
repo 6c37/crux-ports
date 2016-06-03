@@ -1,6 +1,5 @@
 # Description: A small program that produces a snow effect on your desktop.
 # URL:         http://dropmix.xs4all.nl/rick/Xsnow/
-# Packager:    Zanthas, sergio at tfwno dot gf
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-imake xorg-gccmakedep
 

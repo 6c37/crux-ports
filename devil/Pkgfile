@@ -1,6 +1,5 @@
 # Description: Library for reading several different image formats.
 # URL:         http://openil.sourceforge.net/
-# Packager:    Name and email go here.
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libpng libmng jasper lcms openexr
 

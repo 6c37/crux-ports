@@ -1,6 +1,5 @@
 # Description: C extension adding bitwise operations on numbers.
 # URL:         http://bitop.luajit.org/index.html
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  luajit
 

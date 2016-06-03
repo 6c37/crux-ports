@@ -1,6 +1,5 @@
 # Description: Kernel module allowing to switch dedicated graphics card on Optimus laptops.
 # URL:         http://github.com/Bumblebee-Project/bbswtich
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 

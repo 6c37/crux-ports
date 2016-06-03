@@ -1,6 +1,5 @@
 # Description: An interpreter and compiler for the Scheme programming language.
 # URL:         http://www.gnu.org/software/guile
-# Packager:    Brian Tomlinson, darthlukan at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boehm-gc libunistring libffi
 

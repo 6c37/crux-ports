@@ -1,6 +1,5 @@
 # Description: Simple implementation of msgpack in C Lua.
 # URL:         https://github.com/fperrad/lua-MessagePack
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on: 
 

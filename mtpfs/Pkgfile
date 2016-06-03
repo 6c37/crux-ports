@@ -1,6 +1,5 @@
 # Description: A FUSE filesystem that supports reading and writing from any MTP device.
 # URL:         http://www.adebenham.com/mtpfs/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libid3tag fuse glib libmtp
 

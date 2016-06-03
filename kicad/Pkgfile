@@ -1,6 +1,5 @@
 # Description: A cross-platform and open source electronics design automation suite.
 # URL:         http://kicad-pcb.org
-# Packager:    Ryan Mullen, rmmullen at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  wxpython cmake git glew
 

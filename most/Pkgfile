@@ -1,6 +1,5 @@
 # Description: A paging program that supports multiple windows and moving right/left.
 # URL:         http://www.jedsoft.org/most/
-# Packager:    Vincenzo Colosimo, vico at bicisport dot de
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libslang2
 

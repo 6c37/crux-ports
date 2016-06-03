@@ -1,6 +1,5 @@
 # Description: Atari ST/STE/TT/Falcon emulator.
 # URL:         http://hatari.tuxfamily.org
-# Packager:    skrzyp, jot dot skrzyp at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  cmake libsdl zlib libpng readline xorg-libx11
 # Optional:    portaudio

@@ -1,6 +1,5 @@
 # Description: Skarnet's small and secure service supervision suite.
 # URL:         http://skarnet.org/software/s6/index.html
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  execline skalibs
 

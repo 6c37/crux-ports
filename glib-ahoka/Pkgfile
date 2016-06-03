@@ -1,6 +1,5 @@
 # Description: Low-level data structure handling, portability wrappers, and interfaces for runtime functionality, with ahoka's icon patch.
 # URL:         https://github.com/ahodesuka/gtk/tree/bgo141154-filechooser-icon-view-gtk2
-# Packager:    Fredrik Rinnestam, fredrik at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libpcre libffi python tumbler
 

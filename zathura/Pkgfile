@@ -1,6 +1,5 @@
 # Description:  A highly customizable and functional document viewer.
 # URL:          https://pwmt.org/projects/zathura/
-# Packager:     Lee, rtlanceroad at gmail dot com
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   girara gtk3
 # Nice to have: sqlite3 intltool check docutils

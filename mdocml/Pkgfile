@@ -1,6 +1,5 @@
 # Description: The mandoc UNIX manpage compiler toolset.
 # URL:         http://mdocml.bsd.lv/
-# Packager:    Svyatoslav Mishyn, juef at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  sqlite3
 

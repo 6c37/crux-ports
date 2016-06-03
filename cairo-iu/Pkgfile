@@ -1,6 +1,5 @@
 # Description: A 2D graphics library with support for multiple output devices patched for infinality.
 # URL:         http://www.cairographics.org/
-# Packager:    Fredrik Rinnestam, fredrik at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig xorg-libxext xorg-libxrender xorg-libpixman xorg-xcb-util glib
 

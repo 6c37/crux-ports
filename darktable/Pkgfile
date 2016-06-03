@@ -1,6 +1,5 @@
 # Description: Utility to organize and develop raw images.
 # URL:         http://darktable.sf.net/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk3 lensfun librsvg pugixml
 # Optional:    libsecret lua

@@ -1,6 +1,5 @@
 # Description:	D-Bus interfaces and tools for querying and manipulating storage devices
 # URL:		http://www.freedesktop.org/wiki/Software/udisks/
-# Packager:	Lains, lainsce at airmail dot cc
 # Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:	libatasmart
 

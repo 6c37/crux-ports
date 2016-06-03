@@ -1,6 +1,5 @@
 # Description: Prints freedesktop notifications to stdout.
 # URL:         https://github.com/htylo/simplenotifydaemon
-# Packager:    Tudor Roman, xenogenesis at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git
 

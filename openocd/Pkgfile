@@ -1,6 +1,5 @@
 # Description: Free and open on-chip debugging, in-system programming, and boundary-scan testing.
 # URL:         http://openocd.org
-# Packager:    Ryan Mullen, rmmullen at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 

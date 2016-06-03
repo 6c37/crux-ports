@@ -1,6 +1,5 @@
 # Description: Independent xorg server transparency setter.
 # URL:         http://forchheimer.se/transset-df/
-# Packager:    wildefyr, wildefur at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-libxcomposite xorg-libxrender
 

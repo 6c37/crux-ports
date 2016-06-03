@@ -1,6 +1,5 @@
 # Description: Multi-platform support library with a focus on asynchronous I/O.
 # URL:         https://github.com/libuv/libuv
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  
 

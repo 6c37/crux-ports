@@ -1,6 +1,5 @@
 # Description: Emulator of Atari 800/800XL/130XE/5200 with various extensions.
 # URL:         http://atari800.sourceforge.net
-# Packager:    skrzyp, jot dot skrzyp at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libsdl sdl_mixer sdl_image sdl_ttf sdl_sound sdl_net readline mesa3d
 

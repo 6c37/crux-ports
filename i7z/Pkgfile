@@ -1,6 +1,5 @@
 # Description:  A better i7 (and now i3, i5) reporting tool for Linux.
 # URL:          https://code.google.com/p/i7z/
-# Packager:     esmth, esmth at openmailbox dot org
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   ncurses
 

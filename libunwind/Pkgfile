@@ -1,6 +1,5 @@
 # Description: Portable and efficient C programming interface (API) to determine the call-chain of a program.
 # URL:         http://www.nongnu.org/libunwind/ 
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 

@@ -1,6 +1,5 @@
 # Description: A tool that converts X11 fonts from PCF to BDF format.
 # URL:         https://github.com/ganaware/pcf2bdf
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 

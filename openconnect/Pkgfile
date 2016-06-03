@@ -1,6 +1,5 @@
 # Description: An SSL VPN client.
 # URL:         http://infradead.org/openconnect
-# Packager:    wildefyr, wildefur at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libxm12 openssl pkg-config vpnc zlib
 

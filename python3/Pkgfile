@@ -1,6 +1,5 @@
 # Description: Python interpreter, version 3.5.
 # URL:         http://www.python.org/
-# Packager:    Kristian Lehmann, email at zero-io dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  sqlite3 expat libffi
 

@@ -1,6 +1,5 @@
 # Description: This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3.
 # URL:         https://pypi.python.org/pypi/singledispatch
-# Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  python
 

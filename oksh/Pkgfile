@@ -1,7 +1,6 @@
 # Description: OpenBSD's version of ksh ported to Linux
 # URL:         http://www.connochaetos.org/oksh/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on: 
 
 name=oksh

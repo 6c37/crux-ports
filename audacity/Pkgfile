@@ -1,6 +1,5 @@
 # Description: A A program that lets you manipulate digital audio waveforms.
 # URL:         https://github.com/audacity/audacity
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git ffmpeg cmake python lame libmad libid3tag wxgtk
 

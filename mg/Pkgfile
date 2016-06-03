@@ -1,7 +1,6 @@
 # Description: A portable version of Micro GNU/Emacs by the OpenBSD team
 # URL:         http://homepage.boetes.org/software/mg/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on:  libbsd
 
 name=mg

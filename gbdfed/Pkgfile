@@ -1,6 +1,5 @@
 # Description: A GTK bitmap font editor.
 # URL:         https://www.math.nmsu.edu/~mleisher/Software/gbdfed/
-# Packager:    Vincenzo Colosimo, vico at bicisport dot de
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk
 
