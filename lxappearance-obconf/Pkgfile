@@ -1,8 +1,7 @@
-# Description: 	LXAppearance OBConf plugin
-# URL: 		http://lxde.org
-# Maintainer: 	Lains, lainsce at airmail dot cc
-# Maintainer:  	6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on: 	openbox lxappearance xorg-libsm
+# Description: LXAppearance OBConf plugin
+# URL:         http://lxde.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  openbox lxappearance xorg-libsm
 
 name=lxappearance-obconf
 version=0.2.2
@@ -11,9 +10,8 @@ source=(http://downloads.sourceforge.net/lxde/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-	
+
 	./configure --prefix=/usr --disable-static
 	make
 	make DESTDIR=$PKG install
-
 }
