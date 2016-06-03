@@ -4,7 +4,7 @@
 # Depends on:
 
 name=the_silver_searcher
-version=0.31.0
+version=0.32.0
 release=1
 source=(https://github.com/ggreer/the_silver_searcher/archive/$version.tar.gz)
 
@@ -12,8 +12,7 @@ build() {
 	cd $name-$version
 
 	./build.sh
-	./configure --prefix=/usr \
-		--mandir=/usr/man
+	./configure --prefix=/usr
 
 	make DESTDIR=$PKG install
 }

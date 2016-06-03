@@ -1,10 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ag
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/ag.1.gz
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ag.1.gz
 drwxr-xr-x	root/root	usr/share/the_silver_searcher/
 drwxr-xr-x	root/root	usr/share/the_silver_searcher/completions/
 -rw-r--r--	root/root	usr/share/the_silver_searcher/completions/ag.bashcomp.sh
