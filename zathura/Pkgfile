@@ -5,16 +5,12 @@
 # Nice to have: sqlite3 intltool check docutils
 
 name=zathura
-version=0.3.4
+version=0.3.6
 release=1
-source=(https://pwmt.org/projects/zathura/download/zathura-${version}.tar.gz
-	fix_build_without_synctex.patch
-	)
+source=(https://pwmt.org/projects/zathura/download/zathura-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p0 -i $SRC/fix_build_without_synctex.patch
 
 	make
 	make DESTDIR=${PKG} install

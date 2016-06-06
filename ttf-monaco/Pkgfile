@@ -6,7 +6,7 @@
 name=ttf-monaco
 version=6.1
 release=1
-source=(https://github.com/cstrap/monaco-font/raw/master/Monaco_Linux.ttf)
+source=(file: Monaco_linux.ttf)
 
 build() {
 	install -Dm644 Monaco_Linux.ttf $PKG/usr/share/fonts/X11/TTF/Monaco/Monaco.ttf
