@@ -4,17 +4,12 @@
 # Depends on:  icu libuv
 
 name=nodejs
-version=4.2.6
+version=6.2.1
 release=1
-source=(
-	http://nodejs.org/dist/v$version/node-v$version.tar.gz
-	fix-libressl.patch
-)
+source=(http://nodejs.org/dist/v$version/node-v$version.tar.gz)
 
 build () {
 	cd node-v$version
-
-	patch -p1 < $SRC/fix-libressl.patch
 
 	./configure \
 		--prefix=/usr \
