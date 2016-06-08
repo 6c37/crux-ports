@@ -4,7 +4,7 @@
 # Depends on:  fish
 
 name=neet
-version=1.0.5
+version=1.0.6
 release=1
 source=(https://github.com/onodera-punpun/neet/archive/$version.tar.gz)
 
