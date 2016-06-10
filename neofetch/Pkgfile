@@ -1,7 +1,6 @@
 # Description: A fast, highly customizable system information script.
 # URL:         https://github.com/dylanaraps/neofetch
-# Packager:    ix, arcetera@openmailbox.org
-# Maintainer:  tudurom, xenogenesis@openmailbox.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git
 # Optional:    scrot xorg-xdpyinfo xorg-xprop
 
