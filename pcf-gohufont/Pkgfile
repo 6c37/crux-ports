@@ -1,0 +1,23 @@
+# Description: a monospace bitmap font, available in 11-px and 14-px heights
+# URL:         https://github.com/lucy/tewi-font
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  xorg-bdftopcf
+
+name=pcf-gohufont
+version=2.1
+release=1
+source=(https://github.com/hchargois/gohufont/archive/$version.tar.gz)
+
+build() {
+	cd gohufont-$version
+
+	bdftopcf gohufont-uni-11.bdf | gzip -9 > gohufont-uni-11.pcf.gz
+	bdftopcf gohufont-uni-11b.bdf | gzip -9 > gohufont-uni-11b.pcf.gz
+	bdftopcf gohufont-uni-14.bdf | gzip -9 > gohufont-uni-14.pcf.gz
+	bdftopcf gohufont-uni-14b.bdf | gzip -9 > gohufont-uni-14b.pcf.gz
+
+	install -Dm644 gohufont-uni-11.pcf.gz $PKG/usr/share/fonts/X11/PCF/Gohufont/11/Medium.pcf.gz
+	install -Dm644 gohufont-uni-11b.pcf.gz $PKG/usr/share/fonts/X11/PCF/Gohufont/11/Bold.pcf.gz
+	install -Dm644 gohufont-uni-14.pcf.gz $PKG/usr/share/fonts/X11/PCF/Gohufont/14/Medium.pcf.gz
+	install -Dm644 gohufont-uni-14b.pcf.gz $PKG/usr/share/fonts/X11/PCF/Gohufont/14/Bold.pcf.gz
+}
