@@ -5,8 +5,11 @@
 
 name=libressl
 version=2.4.1
-release=1
-source=(http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz)
+release=2
+source=(
+	http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz
+	mksslcert.sh
+)
 
 build() {
 	cd $name-$version
@@ -15,6 +18,8 @@ build() {
 
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
+
+	install -Dm 755 $SRC/mksslcert.sh $PKG/usr/bin/mksslcert
 
 	rm -rf $PKG/etc/ssl/cert.pem
 }

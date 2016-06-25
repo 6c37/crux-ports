@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	etc/ssl/certs/
 -rw-r--r--	root/root	etc/ssl/x509v3.cnf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mksslcert
 -rwxr-xr-x	root/root	usr/bin/openssl
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/openssl/
