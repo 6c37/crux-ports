@@ -14,7 +14,9 @@ source=(
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --with-openssldir=/etc/ssl
+	./configure \
+		--prefix=/usr \
+		--with-openssldir=/etc/ssl
 
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
