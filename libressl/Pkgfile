@@ -4,7 +4,7 @@
 # Depends on:
 
 name=libressl
-version=2.4.0
+version=2.4.1
 release=1
 source=(http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz)
 
