@@ -1,7 +1,0 @@
-#!/bin/sh
-
-alias="libressl-32: openssl-32"
-
-if [ -z "$(grep "$alias" /var/lib/pkg/prt-get.aliases)" ]; then
-	echo "$alias" >> /var/lib/pkg/prt-get.aliases
-fi
