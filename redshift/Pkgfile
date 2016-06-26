@@ -1,0 +1,21 @@
+# Description: Adjusts the color temperature of your screen according to your surroundings.
+# URL:         http://jonls.dk/redshift/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm
+
+name=redshift
+version=1.11
+release=1
+source=(https://github.com/jonls/redshift/releases/download/v$version/redshift-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+		--disable-nls \
+		--disable-gui \
+		--disable-ubuntu
+
+	make
+	make DESTDIR=$PKG install
+}
