@@ -4,9 +4,9 @@
 # Depends on:  sqlite3 expat libffi
 
 name=python3
-version=3.5.1
-release=3
-source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
+version=3.5.2
+release=1
+source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 
 build() {
 	cd Python-$version
@@ -16,7 +16,7 @@ build() {
 	rm -rf Modules/zlib
 	rm -rf Modules/_decimal/libmpdec
 
-	sed -i -e '68s/555/755/' Makefile.pre.in
+	sed -i '68s/555/755/' Makefile.pre.in
 
 	./configure --prefix=/usr \
 		--enable-shared \
