@@ -1,0 +1,14 @@
+# Description: Python3 compatibility utilities
+# URL:         https://pypi.python.org/pypi/six
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3
+
+name=python3-six
+version=1.10.0
+release=1
+source=(https://pypi.python.org/packages/source/s/six/six-$version.tar.gz)
+
+build() {
+	cd six-$version
+	python3 setup.py install --root $PKG --optimize=1
+}
