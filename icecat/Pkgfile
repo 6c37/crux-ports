@@ -27,5 +27,5 @@ build() {
 	install -m644 $SRC/gnu_headshadow.png browser/base/content/abouthome
  
 	make -f client.mk build
-    make -f client.mk DESTDIR=$PKG install
+    	make -f client.mk DESTDIR=$PKG install
 }
