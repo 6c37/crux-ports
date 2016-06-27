@@ -40,11 +40,6 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/irc.so.0 -> irc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so -> logger.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so.0 -> logger.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.so.0.0.0
--rw-r--r--	root/root	usr/lib/weechat/plugins/lua.a
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.la
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so -> lua.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so.0 -> lua.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.so.0.0.0
 -rw-r--r--	root/root	usr/lib/weechat/plugins/perl.a
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.la
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so -> perl.so.0.0.0
@@ -60,11 +55,6 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so.0 -> python.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so -> relay.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so.0 -> relay.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.so.0.0.0
--rw-r--r--	root/root	usr/lib/weechat/plugins/ruby.a
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/ruby.la
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/ruby.so -> ruby.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/ruby.so.0 -> ruby.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/ruby.so.0.0.0
 -rw-r--r--	root/root	usr/lib/weechat/plugins/script.a
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/script.la
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/script.so -> script.so.0.0.0
@@ -80,3 +70,9 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/trigger.so.0 -> trigger.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/xfer.so -> xfer.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/xfer.so.0 -> xfer.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/xfer.so.0.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/weechat.png
