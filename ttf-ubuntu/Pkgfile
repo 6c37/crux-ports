@@ -1,6 +1,6 @@
 # Description:  The font family used by the popular Ubuntu GNU + Linux distribution.
 # URL:          http://font.ubuntu.com/
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=ttf-ubuntu
