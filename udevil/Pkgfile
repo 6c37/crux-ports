@@ -15,7 +15,7 @@ build() {
 	make
 	make install DESTDIR=$PKG
 	install -Dm755 $PKGMK_SOURCE_DIR/devmon $PKG/etc/rc.d/devmon
-	getent group plugdev || groupadd plugdev
-	sudo chown root:plugdev $PKG/usr/bin/udevil
-	sudo chmod u+s,go-s,o-x $PKG/usr/bin/udevil
+	getent group plugdev || /usr/sbin/groupadd plugdev
+	chown root:plugdev $PKG/usr/bin/udevil
+	chmod u+s,go-s,o-x $PKG/usr/bin/udevil
 }
