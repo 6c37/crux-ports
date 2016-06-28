@@ -4,7 +4,7 @@
 # Depends on:  python
 
 name=python-futures
-version=2.2.0
+version=3.0.5
 release=1
 source=(https://pypi.python.org/packages/source/f/futures/futures-$version.tar.gz)
 
