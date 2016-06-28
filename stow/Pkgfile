@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=stow
-version=2.2.0
+version=2.2.2
 release=1
 source=(ftp://ftp.gnu.org/gnu/stow/stow-$version.tar.gz)
 
