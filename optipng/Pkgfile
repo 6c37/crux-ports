@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=optipng
-version=0.7.5
+version=0.7.6
 release=1
 source=(http://prdownloads.sourceforge.net/optipng/optipng-$version.tar.gz)
 
