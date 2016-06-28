@@ -1,0 +1,24 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/rubberband
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/rubberband/
+-rw-r--r--	root/root	usr/include/rubberband/RubberBandStretcher.h
+-rw-r--r--	root/root	usr/include/rubberband/rubberband-c.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/ladspa/
+-rw-r--r--	root/root	usr/lib/ladspa/ladspa-rubberband.cat
+-rwxr-xr-x	root/root	usr/lib/ladspa/ladspa-rubberband.so
+-rw-r--r--	root/root	usr/lib/librubberband.a
+lrwxrwxrwx	root/root	usr/lib/librubberband.so -> librubberband.so.2.1.0
+lrwxrwxrwx	root/root	usr/lib/librubberband.so.2 -> librubberband.so.2.1.0
+-rwxr-xr-x	root/root	usr/lib/librubberband.so.2.1.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/rubberband.pc
+drwxr-xr-x	root/root	usr/lib/vamp/
+-rw-r--r--	root/root	usr/lib/vamp/vamp-rubberband.cat
+-rwxr-xr-x	root/root	usr/lib/vamp/vamp-rubberband.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ladspa/
+drwxr-xr-x	root/root	usr/share/ladspa/rdf/
+-rw-r--r--	root/root	usr/share/ladspa/rdf/ladspa-rubberband.rdf

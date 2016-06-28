@@ -1,0 +1,19 @@
+# Description: A high quality software library for audio time-stretching and pitch-shifting.
+# URL:         http://www.breakfastquay.com/rubberband/index.html
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  fftw libsamplerate vamp-plugins-sdk ladspa
+# Optional:    speex
+
+name=rubberband
+version=1.8.1
+release=1
+source=(http://code.breakfastquay.com/attachments/download/34/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
