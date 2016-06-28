@@ -4,7 +4,7 @@
 # Depends on:
 
 name=toybox
-version=0.7.0
+version=0.7.1
 release=1
 source=(https://github.com/landley/toybox/archive/${version}.tar.gz)
 
