@@ -1,0 +1,18 @@
+# Description: Audio processing plugin system for plugins that extract descriptive information from audio data.
+# URL:         http://www.vamp-plugins.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libsndfie
+
+name=vamp-plugin-sdk
+version=2.6
+release=1
+source=(http://code.soundsoftware.ac.uk/attachments/download/1520/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
