@@ -23,4 +23,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/doc
+
+	mv $PKG/usr/bin/glxinfo $PKG/usr/bin/vglxinfo
 }
