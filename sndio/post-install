@@ -1,4 +1,4 @@
 #!/bin/sh
 
 mkdir -p /var/run/sndiod
-useradd -r -g audio -s /sbin/nologin -d /var/run/sndiod sndiod
+/usr/sbin/useradd -r -g audio -s /sbin/nologin -d /var/run/sndiod sndiod

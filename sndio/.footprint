@@ -6,14 +6,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/sndio.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libsndio.so -> libsndio.so.6.0
--rwxr-xr-x	root/root	usr/lib/libsndio.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libsndio.so -> libsndio.so.6.1
+-rwxr-xr-x	root/root	usr/lib/libsndio.so.6.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/aucat.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/midicat.1.gz
--rw-r--r--	root/root	usr/share/man/man1/sndiod.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 lrwxrwxrwx	root/root	usr/share/man/man3/mio_close.3.gz -> mio_open.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mio_eof.3.gz -> mio_open.3.gz
@@ -42,3 +41,5 @@ lrwxrwxrwx	root/root	usr/share/man/man3/sio_stop.3.gz -> sio_open.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/sio_write.3.gz -> sio_open.3.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/sndio.7.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/sndiod.8.gz

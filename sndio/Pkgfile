@@ -4,14 +4,14 @@
 # Depends on:  alsa-lib
 
 name=sndio
-version=1.0.1
+version=1.1.0
 release=1
 source=(http://www.sndio.org/sndio-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --enable-alsa
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
