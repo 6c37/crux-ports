@@ -6,14 +6,12 @@
 name=openocd
 version=0.9.0
 release=1
-source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr \
-		--mandir=/usr/share/man \
-		--disable-doxygen-html
+	./configure --prefix=/usr --disable-doxygen-html
 
 	make
 	make DESTDIR=$PKG install
@@ -24,5 +22,3 @@ build() {
 	rm -rf $PKG/usr/share/info
 	rm -rf $PKG/usr/share/openocd/contrib
 }
-
-# vim: set ft=sh noet :

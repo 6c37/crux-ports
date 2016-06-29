@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Create plugdev group
-getent group plugdev > /dev/null || groupadd -r plugdev
+getent group plugdev > /dev/null || /usr/sbin/groupadd -r plugdev
