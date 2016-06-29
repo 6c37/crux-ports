@@ -1,15 +1,15 @@
 # Description: A set of OpenType fonts designed for user interfaces.
-# URL:         http://sourceforge.net/projects/sourcecodepro.adobe/
+# URL:         http://adobe-fonts.github.io/source-sans-pro/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:
+# Depends on:  fontconfig
 
 name=otf-sourcesans
-version=1.050R
+version=1.075R
 release=1
-source=(https://github.com/adobe-fonts/source-sans-pro/archive/${version}.tar.gz)
+source=(https://github.com/adobe-fonts/source-sans-pro/archive/2.020R-ro/${version}-it.tar.gz)
 
 build() {
-	cd source-sans-pro-${version}
+	cd source-sans-pro-2.020R-ro-${version}-it
 
 	install -Dm644 OTF/SourceSansPro-ExtraLight.otf   $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLight.otf
 	install -Dm644 OTF/SourceSansPro-ExtraLightIt.otf $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLightItalic.otf
