@@ -1,7 +1,7 @@
 # Description: A modern sans-serif font with a very long neck.
 # URL:         https://www.theleagueofmoveabletype.com/ostrich-sans
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:
+# Depends on:  fontconfig
 
 name=otf-ostrich
 version=8f030a4
