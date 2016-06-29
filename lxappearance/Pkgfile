@@ -4,8 +4,8 @@
 # Depends on:  gtk intltool
 
 name=lxappearance
-version=0.6.1
-release=2
+version=0.6.2
+release=1
 source=(http://downloads.sourceforge.net/sourceforge/lxde/${name}-${version}.tar.xz)
 
 build() {
@@ -14,7 +14,7 @@ build() {
 	./configure --sysconfdir=/etc --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} mandir=/usr/share/man/ install
+	make DESTDIR=$PKG install
 	
-	rm -rf $PKG/usr/share/{locale,applications}
+	rm -rf $PKG/usr/share/locale
 }

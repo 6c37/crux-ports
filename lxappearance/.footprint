@@ -8,6 +8,8 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/lxappearance.pc
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/lxappearance.desktop
 drwxr-xr-x	root/root	usr/share/lxappearance/
 drwxr-xr-x	root/root	usr/share/lxappearance/ui/
 -rw-r--r--	root/root	usr/share/lxappearance/ui/about.ui
