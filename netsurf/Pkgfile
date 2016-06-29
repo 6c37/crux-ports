@@ -1,30 +1,27 @@
 # Description: Lightweight and fast web browser.
 # URL:         http://www.netsurf-browser.org/
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git libmng lcms2 gtk libjpeg-turbo libpng check p5-html-parser
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libmng lcms2 gtk libjpeg-turbo libpng check p5-html-parser
 # Optional:    gstreamer
 
 name=netsurf
 version=3.5
 release=1
-source=(netsurf.sh)
+source=(http://download.netsurf-browser.org/netsurf/releases/source-full/$name-all-$version.tar.gz
+	netsurf.sh)
 
 build() {
-	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
-	else
-		git clone git://git.netsurf-browser.org/netsurf-all $name
-		cd $name
-	fi
-
-	git submodule init
-	git submodule update
+	cd $name-all-$version
 
 	make LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2
 	make install LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2 DESTDIR=$PKG
 
 	mv $PKG/usr/bin/netsurf $PKG/usr/bin/netsurf.elf
 	install -Dm755 $SRC/netsurf.sh $PKG/usr/bin/netsurf
+
+	mv "$PKG/usr/share/netsurf/:./gtk/res/"* "$PKG/usr/share/netsurf" 
+	rm -rf "$PKG/usr/share/netsurf/"{:./gtk/res,:./gtk,:.}
+
+	rm -rf $PKG/usr/share/netsurf/{de,en,fr,it,ja,nl}
+
 }
