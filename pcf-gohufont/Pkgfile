@@ -1,6 +1,6 @@
 # Description: a monospace bitmap font, available in 11-px and 14-px heights
-# URL:         https://github.com/lucy/tewi-font
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# URL:         https://github.com/hchargois/gohufont
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-bdftopcf
 
 name=pcf-gohufont
