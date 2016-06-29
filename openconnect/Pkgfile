@@ -11,11 +11,10 @@ source=(ftp://ftp.infradead.org/pub/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--mandir=/usr/share/man \
-				--disable-static
+	./configure --prefix=/usr --disable-static
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }
