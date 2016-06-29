@@ -1,18 +1,15 @@
 # Description: Simple implementation of msgpack in C Lua.
 # URL:         https://github.com/fperrad/lua-MessagePack
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on: 
+# Depends on:  lua
 
 name=lua-mpack
-version=1.0.2
+version=0.3.4
 release=1
 source=(https://github.com/fperrad/lua-MessagePack/archive/${version}.tar.gz)
 
 build() {
-	cd libmpack-$version
+	cd lua-MessagePack-$version
 
-	gcc -O2 -fPIC -I/usr/include/luajit -c binding/lua/lmpack.c -o lmpack.o
-	gcc -shared -o mpack.so.5.1 lmpack.o
-
-	install -Dm755 mpack.so.5.1 $PKG/usr/lib/lua/5.1/mpack.so
+	make DESTDIR=$PKG PREFIX=/usr install LUAVER=5.3
 }
