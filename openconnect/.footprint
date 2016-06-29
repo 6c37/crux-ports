@@ -1,4 +1,6 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/openconnect
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/openconnect.h
 drwxr-xr-x	root/root	usr/lib/
@@ -8,8 +10,6 @@ lrwxrwxrwx	root/root	usr/lib/libopenconnect.so.5 -> libopenconnect.so.5.1.0
 -rwxr-xr-x	root/root	usr/lib/libopenconnect.so.5.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/openconnect.pc
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/openconnect
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/openconnect/
