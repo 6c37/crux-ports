@@ -1,7 +1,7 @@
 # Description: C extension adding bitwise operations on numbers.
 # URL:         http://bitop.luajit.org/index.html
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  luajit
+# Depends on:  luajit lua51 lua52
 
 name=lua-bitop
 version=1.0.2
@@ -12,5 +12,8 @@ build() {
 	cd LuaBitOp-$version
 	
 	make INCLUDES=' -I/usr/include/luajit' LUA='luajit'
+
 	install -Dm644 bit.so ${PKG}/usr/lib/lua/5.1/bit.so
+	install -Dm644 bit.so ${PKG}/usr/lib/lua/5.2/bit.so
+
 }
