@@ -13,4 +13,6 @@ build () {
 
 	python setup.py config
 	python setup.py install --root=$PKG --prefix=/usr
+
+	rm -rf $PKG/usr/share/locale
 }
