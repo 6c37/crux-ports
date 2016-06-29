@@ -1,17 +1,21 @@
 # Description: A set of serif OpenType fonts designed to complement Source Sans Pro
 # URL:         https://github.com/adobe-fonts/source-serif-pro
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:
+# Depends on:  fontconfig
 
 name=otf-sourceserif
-version=1.014R
+version=1.017R
 release=1
 source=(https://github.com/adobe-fonts/source-serif-pro/archive/${version}.tar.gz)
 
 build() {
 	cd source-serif-pro-${version}
 
-	install -Dm644 OTF/SourceSerifPro-Regular.otf  $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Regular.otf
-	install -Dm644 OTF/SourceSerifPro-Bold.otf     $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Bold.otf
-	install -Dm644 OTF/SourceSerifPro-Semibold.otf $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Semibold.otf
+	install -Dm644 OTF/SourceSerifPro-Regular.otf    $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Regular.otf
+	install -Dm644 OTF/SourceSerifPro-Bold.otf       $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Bold.otf
+	install -Dm644 OTF/SourceSerifPro-Semibold.otf   $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Semibold.otf
+	install -Dm644 OTF/SourceSerifPro-Black.otf      $PKG/usr/share/fonts/X11/Source/SerifPro/Black.otf
+	install -Dm644 OTF/SourceSerifPro-ExtraLight.otf $PKG/usr/share/fonts/X11/Source/SerifPro/ExtraLight.otf
+	install -Dm644 OTF/SourceSerifPro-Light.otf      $PKG/usr/share/fonts/X11/Source/SerifPro/Light.otf
+
 }
