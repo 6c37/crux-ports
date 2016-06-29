@@ -1,5 +1,5 @@
 # Description: Tools for working with the opus format.
-# URL:         https://www.opus-codec.org/downloads/
+# URL:         https://www.opus-codec.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  opus
 
@@ -10,10 +10,8 @@ source=(https://archive.mozilla.org/pub/opus/opus-tools-0.1.9.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--mandir=/usr/share/man \
-				--with-flac=yes
+	
+	./configure --prefix=/usr --with-flac=yes
 
 	make
 	make DESTDIR=$PKG install
