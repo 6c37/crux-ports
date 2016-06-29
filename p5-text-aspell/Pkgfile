@@ -1,6 +1,6 @@
 # Description: Perl interface to the GNU Aspell library.
 # URL:         http://search.cpan.org/~hank/Text-Aspell/
-# Maintainer:  onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  perl aspell
 
 name=p5-text-aspell
