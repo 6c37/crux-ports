@@ -4,14 +4,17 @@
 # Depends on:  openbox lxappearance xorg-libsm
 
 name=lxappearance-obconf
-version=0.2.2
-release=3
+version=0.2.3
+release=1
 source=(http://downloads.sourceforge.net/lxde/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
 	./configure --prefix=/usr --disable-static
+
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }
