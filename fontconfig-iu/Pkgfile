@@ -4,7 +4,7 @@
 # Depends on:  freetype expat gperf lxml
 
 name=fontconfig-iu
-version=2.11.95
+version=2.12.0
 release=2016-04-23
 source=(
 	http://fontconfig.org/release/fontconfig-$version.tar.bz2
