@@ -1,4 +1,4 @@
-# Description: Provides (streaming) protocol decoding functionality.
+# Description: A shared library (written in C) provides (streaming) protocol decoding functionality.
 # URL:         https://sigrok.org/wiki/Libsigrokdecode
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  glib
