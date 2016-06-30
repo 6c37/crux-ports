@@ -1,22 +1,25 @@
 # Description: C/C++ configuration file library.
-# URL:         http://www.hyperrealm.com/libconfig/
+# URL:         https://github.com/hyperrealm/libconfig
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  
+# Depends on:  texinfo
 
 name=libconfig
-version=1.5
+version=1.6
 release=1
 source=(https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	aclocal
-	autoconf
-	automake --add-missing
+	#sed -e '/(void *)YY_CURRENT_BUFFER,/a\\scanctx_getpath(yyextra),' -i lib/scanner.c
+
+	#touch lib/scanner.1
+
+	rm -rf lib/scanner.c
+
 	./configure --prefix=/usr
 
+	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share
 }
