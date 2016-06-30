@@ -1,6 +1,6 @@
 # Description: Multi-platform support library with a focus on asynchronous I/O.
 # URL:         https://github.com/libuv/libuv
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=libuv
@@ -12,8 +12,8 @@ build() {
 	cd $name-$version
 
 	./autogen.sh
-	./configure
+	./configure --prefix=/usr
 
 	make
-	make DESTDIR=$PKG prefix=/usr install 
+	make DESTDIR=$PKG install 
 }
