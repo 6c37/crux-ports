@@ -1,7 +1,7 @@
-# Description: A A program that lets you manipulate digital audio waveforms.
+# Description: A program that lets you manipulate digital audio waveforms.
 # URL:         https://github.com/audacity/audacity
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git ffmpeg cmake python lame libmad libid3tag wxgtk
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  ffmpeg cmake python lame libmad libid3tag wxgtk vamp-plugin-sdk
 
 name=audacity
 version=2.1.2
@@ -20,4 +20,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }
