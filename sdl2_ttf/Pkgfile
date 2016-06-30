@@ -1,7 +1,7 @@
 # Description: A library that allows you to use TrueType fonts in your SDL applications. (Version 2)
 # URL:         http://www.libsdl.org/projects/SDL_ttf
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  sdl2 freetype
+# Depends on:  libsdl2 freetype
 
 name=sdl2_ttf
 version=2.0.14
