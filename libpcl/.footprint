@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libpcl.so -> libpcl.so.1.0.11
 lrwxrwxrwx	root/root	usr/lib/libpcl.so.1 -> libpcl.so.1.0.11
 -rwxr-xr-x	root/root	usr/lib/libpcl.so.1.0.11
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man3/
--rw-r--r--	root/root	usr/man/man3/pcl.3.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/pcl.3.gz
