@@ -11,8 +11,10 @@ source=(http://ftp.gnome.org/pub/gnome/sources/GConf/3.2/GConf-$version.tar.xz)
 build() {
 	cd GConf-$version
 
-	./configure --prefix=/usr --disable-orbit
+	./configure --prefix=/usr --sysconfdir=/etc --disable-orbit
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }
