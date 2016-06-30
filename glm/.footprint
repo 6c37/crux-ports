@@ -20,8 +20,6 @@ drwxr-xr-x	root/root	usr/include/glm/detail/
 -rw-r--r--	root/root	usr/include/glm/detail/func_integer.inl
 -rw-r--r--	root/root	usr/include/glm/detail/func_matrix.hpp
 -rw-r--r--	root/root	usr/include/glm/detail/func_matrix.inl
--rw-r--r--	root/root	usr/include/glm/detail/func_noise.hpp
--rw-r--r--	root/root	usr/include/glm/detail/func_noise.inl
 -rw-r--r--	root/root	usr/include/glm/detail/func_packing.hpp
 -rw-r--r--	root/root	usr/include/glm/detail/func_packing.inl
 -rw-r--r--	root/root	usr/include/glm/detail/func_trigonometric.hpp
@@ -254,6 +252,8 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/mat4x4.hpp
 -rw-r--r--	root/root	usr/include/glm/matrix.hpp
 -rw-r--r--	root/root	usr/include/glm/packing.hpp
+drwxr-xr-x	root/root	usr/include/glm/simd/
+-rw-r--r--	root/root	usr/include/glm/simd/platform.h
 -rw-r--r--	root/root	usr/include/glm/trigonometric.hpp
 -rw-r--r--	root/root	usr/include/glm/vec2.hpp
 -rw-r--r--	root/root	usr/include/glm/vec3.hpp
