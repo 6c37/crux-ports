@@ -1,22 +1,23 @@
 # Description: An interactive shell for git.
-# URL:         http://thoughtbot.github.io/gitsh/
+# URL:         https://github.com/thoughtbot/gitsh
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  ruby
 
 name=gitsh
 version=0.10
 release=1
-source=(http://thoughtbot.github.io/gitsh/gitsh-0.10.tar.gz)
+source=(https://github.com/thoughtbot/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
+
+	./autogen.sh
 
 	./configure \
 	   --disable-debug \
 	   --disable-dependency-tracking \
 	   --disable-silent-rules \
-	   --prefix=/usr \
-	   --mandir=/usr/share/man
+	   --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
