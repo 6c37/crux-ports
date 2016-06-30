@@ -1,7 +1,7 @@
 # Description: Allows easy processing of keyboard entry from terminal-based programs.
-# URL:         https://github.com/neovim/libtermkey
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git unibilium
+# URL:         http://www.leonerd.org.uk/code/libtermkey/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  unibilium
 
 name=libtermkey
 version=0.18
