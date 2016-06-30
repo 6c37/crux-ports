@@ -4,7 +4,7 @@
 # Depends on:
 
 name=libunistring
-version=0.9.5
+version=0.9.6
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
