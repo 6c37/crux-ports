@@ -12,7 +12,7 @@ source=(http://www.bitchx.com/download/${name}-${version}.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --exec_prefix=/usr --prefix=/usr --enable-ipv6 --with-plugins --with-ssl
+	./configure --exec_prefix=/usr --prefix=/usr --enable-ipv6 --with-plugins --with-ssl --mandir=/usr/share/
 
 	make 
 	make DESTDIR=${PKG} install
