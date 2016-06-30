@@ -1,6 +1,6 @@
 # Description: An icon theme designed to be smooth, sexy, clear, and efficient.
 # URL:         https://launchpad.net/elementaryicons
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  librsvg
 
 name=elementary-icon-theme

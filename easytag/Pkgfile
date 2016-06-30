@@ -1,20 +1,19 @@
 # Description: Utility for viewing and editing tags for MP3, FLAC, Ogg Vorbis, and more.
 # URL:         http://projects.gnome.org/easytag
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk lib3tag id3lib intltool itstool
+# Depends on:  gtk libid3tag id3lib intltool itstool
 # Optional:    libvorbis flac
 
 name=easytag
-version=2.2.6
-release=4
-source=(https://download.gnome.org/sources/$name/2.2/$name-$version.tar.xz)
+version=2.4.2
+release=1
+source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
 	./configure \
 		--prefix=/usr \
-		--libexecdir=/usr/lib \
 		--disable-nls \
 		--with-gtk2
 
