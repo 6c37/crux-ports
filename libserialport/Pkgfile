@@ -1,4 +1,4 @@
-# Description: Intended to take care of the OS-specific details when writing software that uses serial ports.
+# Description: A minimal, cross-platform shared library (written in C) which is intended to take care of the OS-specific details when writing software that uses serial ports.
 # URL:         https://sigrok.org/wiki/Libserialport
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
@@ -11,7 +11,7 @@ source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/share/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
