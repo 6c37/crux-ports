@@ -11,6 +11,6 @@ source=(http://www.leonerd.org.uk/code/libtermkey/libtermkey-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	make
+	make PREFIX=/usr
 	make PREFIX=/usr DESTDIR=$PKG install
 }
