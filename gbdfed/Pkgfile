@@ -12,15 +12,15 @@ source=(
 )
 
 build() {
-    cd $name-$version
+    	cd $name-$version
 
 	sed -i 's/-D.*_DEPRECATED\s*\\*//' Makefile.in
 	patch -Np1 < ../num_signals.patch
 
-    ./configure --prefix=/usr
+	./configure --prefix=/usr
 
-    make
+	make
 
-    install -Dm755 gbdfed $PKG/usr/bin/gbdfed
-    install -Dm644 gbdfed.man $PKG/usr/share/man/man1/gbdfed.1
+	install -Dm755 gbdfed $PKG/usr/bin/gbdfed
+  	install -Dm644 gbdfed.man $PKG/usr/share/man/man1/gbdfed.1
 }
