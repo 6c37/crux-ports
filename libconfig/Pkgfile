@@ -11,17 +11,13 @@ source=(https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz)
 build() {
 	cd $name-$version
 
-	#sed -e '/(void *)YY_CURRENT_BUFFER,/a\\scanctx_getpath(yyextra),' -i lib/scanner.c
-
-	#touch lib/scanner.1
-
 	rm -rf lib/scanner.c
 
 	./configure --prefix=/usr
+	sed -i "s/doc//g" Makefile
 
 	make
 	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share
-
 }
