@@ -4,11 +4,20 @@ drwxr-xr-x	root/root	usr/include/libsigrok/
 -rw-r--r--	root/root	usr/include/libsigrok/libsigrok.h
 -rw-r--r--	root/root	usr/include/libsigrok/proto.h
 -rw-r--r--	root/root	usr/include/libsigrok/version.h
+drwxr-xr-x	root/root	usr/include/libsigrokcxx/
+-rw-r--r--	root/root	usr/include/libsigrokcxx/enums.hpp
+-rw-r--r--	root/root	usr/include/libsigrokcxx/libsigrokcxx.hpp
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libsigrok.a
 -rwxr-xr-x	root/root	usr/lib/libsigrok.la
 lrwxrwxrwx	root/root	usr/lib/libsigrok.so -> libsigrok.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsigrok.so.3 -> libsigrok.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsigrok.so.3.0.0
+-rw-r--r--	root/root	usr/lib/libsigrokcxx.a
+-rwxr-xr-x	root/root	usr/lib/libsigrokcxx.la
+lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so -> libsigrokcxx.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so.3 -> libsigrokcxx.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsigrokcxx.so.3.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsigrok.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libsigrokcxx.pc
