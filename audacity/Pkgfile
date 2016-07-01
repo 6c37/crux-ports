@@ -21,7 +21,7 @@ build() {
 	if [ "$(pkginfo -i | grep '^vamp-plugin-sdk ')" ]; then
 		VAMP='--with-libvamp'
 	else
-		VAM='--without-libvamp'
+		VAMP='--without-libvamp'
 	fi
 
 
