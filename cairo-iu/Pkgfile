@@ -9,6 +9,7 @@ release=2016-04-23
 source=(
 	http://cairographics.org/releases/cairo-$version.tar.xz
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+	colored-emoji.patch
 )
 
 build() {
@@ -17,6 +18,8 @@ build() {
 	for p in $SRC/fontconfig-ultimate-$release/cairo/*.patch; do
 		patch -p1 < $p
 	done
+
+	patch -p1 < $SRC/colored-emoji.patch
 
 	./configure --prefix=/usr \
 		--disable-static \
