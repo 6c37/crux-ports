@@ -11,6 +11,5 @@ source=(https://github.com/onodera-punpun/neet/archive/$version.tar.gz)
 build() {
 	cd $name-$version
 
-	make
 	make DESTDIR=$PKG install
 }
