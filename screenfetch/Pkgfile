@@ -1,0 +1,17 @@
+# Description: Fetches system/theme information in terminal for Linux desktop screenshots.
+# URL:         https://github.com/KittyKatt/screenFetch
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+# Optional:    scrot
+
+name=screenfetch
+version=3.7.0
+release=1
+source=(https://github.com/KittyKatt/screenFetch/archive/v$version.tar.gz)
+
+build() {
+	cd screenFetch-$version
+
+	install -Dm755 screenfetch-dev $PKG/usr/bin/screenfetch
+	install -Dm644 screenfetch.1   $PKG/usr/share/man/man1/screenfetch.1 
+}
