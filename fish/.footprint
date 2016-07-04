@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/fish
 -rwxr-xr-x	root/root	usr/bin/fish_indent
+-rwxr-xr-x	root/root	usr/bin/fish_key_reader
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/fish/
@@ -40,6 +41,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/adiff.fish
 -rw-r--r--	root/root	usr/share/fish/completions/als.fish
 -rw-r--r--	root/root	usr/share/fish/completions/alsactl.fish
+-rw-r--r--	root/root	usr/share/fish/completions/alsamixer.fish
 -rw-r--r--	root/root	usr/share/fish/completions/amixer.fish
 -rw-r--r--	root/root	usr/share/fish/completions/anamnesis.fish
 -rw-r--r--	root/root	usr/share/fish/completions/and.fish
@@ -204,6 +206,11 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/gem.fish
 -rw-r--r--	root/root	usr/share/fish/completions/git.fish
 -rw-r--r--	root/root	usr/share/fish/completions/go.fish
+-rw-r--r--	root/root	usr/share/fish/completions/godoc.fish
+-rw-r--r--	root/root	usr/share/fish/completions/gofmt.fish
+-rw-r--r--	root/root	usr/share/fish/completions/goimports.fish
+-rw-r--r--	root/root	usr/share/fish/completions/golint.fish
+-rw-r--r--	root/root	usr/share/fish/completions/gorename.fish
 -rw-r--r--	root/root	usr/share/fish/completions/gpasswd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/gpg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/gphoto2.fish
@@ -262,6 +269,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/lpstat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ls.fish
 -rw-r--r--	root/root	usr/share/fish/completions/lsblk.fish
+-rw-r--r--	root/root	usr/share/fish/completions/lscpu.fish
 -rw-r--r--	root/root	usr/share/fish/completions/lsof.fish
 -rw-r--r--	root/root	usr/share/fish/completions/lsusb.fish
 -rw-r--r--	root/root	usr/share/fish/completions/lua.fish
@@ -278,9 +286,11 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/md5sum.fish
 -rw-r--r--	root/root	usr/share/fish/completions/meat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/mix.fish
+-rw-r--r--	root/root	usr/share/fish/completions/mkdir.fish
 -rw-r--r--	root/root	usr/share/fish/completions/mkinitcpio.fish
 -rw-r--r--	root/root	usr/share/fish/completions/mktemp.fish
 -rw-r--r--	root/root	usr/share/fish/completions/mocp.fish
+-rw-r--r--	root/root	usr/share/fish/completions/modinfo.fish
 -rw-r--r--	root/root	usr/share/fish/completions/modprobe.fish
 -rw-r--r--	root/root	usr/share/fish/completions/mogrify.fish
 -rw-r--r--	root/root	usr/share/fish/completions/montage.fish
@@ -296,6 +306,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/native2ascii.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ncdu.fish
 -rw-r--r--	root/root	usr/share/fish/completions/netcat.fish
+-rw-r--r--	root/root	usr/share/fish/completions/netctl-auto.fish
 -rw-r--r--	root/root	usr/share/fish/completions/netctl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/nextd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/nice.fish
@@ -346,6 +357,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/pon.fish
 -rw-r--r--	root/root	usr/share/fish/completions/portmaster.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ports.fish
+-rw-r--r--	root/root	usr/share/fish/completions/poweroff.fish
 -rw-r--r--	root/root	usr/share/fish/completions/prevd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/prt-get.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ps.fish
@@ -422,6 +434,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/tar.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tee.fish
 -rw-r--r--	root/root	usr/share/fish/completions/telnet.fish
+-rw-r--r--	root/root	usr/share/fish/completions/termite.fish
 -rw-r--r--	root/root	usr/share/fish/completions/test.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tex.fish
 -rw-r--r--	root/root	usr/share/fish/completions/time.fish
@@ -438,6 +451,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/travis.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tree.fish
 -rw-r--r--	root/root	usr/share/fish/completions/type.fish
+-rw-r--r--	root/root	usr/share/fish/completions/udisksctl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ulimit.fish
 -rw-r--r--	root/root	usr/share/fish/completions/umount.fish
 -rw-r--r--	root/root	usr/share/fish/completions/uname.fish
@@ -480,6 +494,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/xrdb.fish
 -rw-r--r--	root/root	usr/share/fish/completions/xsel.fish
 -rw-r--r--	root/root	usr/share/fish/completions/xterm.fish
+-rw-r--r--	root/root	usr/share/fish/completions/xz.fish
 -rw-r--r--	root/root	usr/share/fish/completions/yaourt.fish
 -rw-r--r--	root/root	usr/share/fish/completions/yast2.fish
 -rw-r--r--	root/root	usr/share/fish/completions/yum.fish
@@ -568,6 +583,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_lpr_printers.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_lsblk_columns.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_make_targets.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_print_modules.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_mounted.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_packages.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_pacman_repos.fish
@@ -652,6 +668,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/realpath.fish
 -rw-r--r--	root/root	usr/share/fish/functions/seq.fish
 -rw-r--r--	root/root	usr/share/fish/functions/setenv.fish
+-rw-r--r--	root/root	usr/share/fish/functions/string.fish
 -rw-r--r--	root/root	usr/share/fish/functions/suspend.fish
 -rw-r--r--	root/root	usr/share/fish/functions/trap.fish
 -rw-r--r--	root/root	usr/share/fish/functions/type.fish
@@ -692,6 +709,7 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_config.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_indent.1.gz
+-rw-r--r--	root/root	usr/share/fish/man/man1/fish_key_reader.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_prompt.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_realpath.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_right_prompt.1.gz
@@ -785,5 +803,6 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/fish.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fish_indent.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fish_key_reader.1.gz
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/fish.pc
