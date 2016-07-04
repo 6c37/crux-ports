@@ -1,0 +1,24 @@
+# Description: A background browser and setter for X windows.
+# URL:         http://projects.l3ib.org/nitrogen/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gtkmm librsvg
+
+name=nitrogen
+version=1.5.2
+release=1
+source=(http://projects.l3ib.org/$name/files/$name-$version.tar.gz
+	001-fix-linker.patch
+)
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i $SRC/001-fix-linker.patch
+
+	export CXXFLAGS=" -std=c++11 -g -O2"
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
