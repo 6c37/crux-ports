@@ -5,7 +5,7 @@
 # Optional:    flac
 
 name=mpd
-version=0.19.16
+version=0.19.17
 release=1
 source=(
 	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
@@ -17,9 +17,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--sysconfdir=/etc \
-		--enable-libmpdclient \
-		--disable-libwrap
+		--sysconfdir=/etc
 
 	make
 	make DESTDIR=$PKG install
