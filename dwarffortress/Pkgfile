@@ -1,0 +1,35 @@
+# Description: A single-player fantasy game in which you build a dwarven outpost or play an adventurer in a randomly generated world.
+# URL:         http://www.bay12games.com/dwarves/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gtk sdl_image sdl_ttf openal libsndfile
+
+name=dwarffortress
+version=0.43.05
+release=1
+source=(
+	http://www.bay12games.com/dwarves/df_43_05_linux.tar.bz2
+	https://github.com/svenstaro/dwarf_fortress_unfuck/archive/$version.tar.gz
+	dwarffortress
+)
+
+build() {
+	cd dwarf_fortress_unfuck-$version
+
+	cmake .
+	make
+
+	install -dm755 $PKG/opt/
+	cp -r $SRC/df_linux $PKG/opt/dwarffortress
+
+	rm -r $PKG/opt/dwarffortress/{df,g_src}
+	rm -r $PKG/opt/dwarffortress/libs/*
+
+	find $PKG/opt/dwarffortress -type d -exec chmod 755 {} +
+	find $PKG/opt/dwarffortress -type f -exec chmod 644 {} +
+
+	install -Dm755 $SRC/df_linux/libs/Dwarf_Fortress $PKG/opt/dwarffortress/libs/Dwarf_Fortress
+	install -Dm755 $SRC/dwarf_fortress_unfuck-$version/libgraphics.so $PKG/opt/dwarffortress/libs/libgraphics.so
+	install -Dm755 $SRC/dwarffortress $PKG/usr/bin/dwarffortress
+
+	ln -s /usr/lib/libpng.so $PKG/opt/dwarffortress/libs/libpng.so.3
+}
