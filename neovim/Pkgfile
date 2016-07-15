@@ -1,7 +1,7 @@
 # Description: Vim fork focused on extensibility and agility.
 # URL:         https://neovim.io
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake libuv msgpack-c lua-lpeg lua-mpack libvterm libtermkey
+# Depends on:  cmake libuv msgpack-c lua-lpeg libmpack libvterm libtermkey
 
 name=neovim
 version=0.1.4
