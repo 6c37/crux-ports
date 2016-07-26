@@ -4,7 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.3-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.3.2-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.pyc
