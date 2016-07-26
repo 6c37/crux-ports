@@ -4,7 +4,7 @@
 # Depends on:  ncurses
 
 name=vifm
-version=0.8.1a
+version=0.8.2
 release=1
 source=(https://github.com/$name/$name/archive/v$version.tar.gz)
 
