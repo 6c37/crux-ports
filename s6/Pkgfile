@@ -1,10 +1,10 @@
 # Description: Skarnet's small and secure service supervision suite.
 # URL:         http://skarnet.org/software/s6/index.html
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  execline skalibs
+# Depends on:  execline
 
 name=s6
-version=2.2.4.3
+version=2.3.0.0
 release=1
 source=(http://skarnet.org/software/s6/s6-${version}.tar.gz)
 
@@ -14,5 +14,5 @@ build() {
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 }
