@@ -4,13 +4,14 @@
 # Depends on:  python3
 
 name=python3-setuptools
-version=20.6.7
+version=25.1.0
 release=1
-source=(http://pypi.python.org/packages/source/s/setuptools/setuptools-$version.tar.gz)
+source=(https://github.com/pypa/setuptools/archive/v$version.tar.gz)
 
 build() {
 	cd setuptools-$version
 
+	python3 bootstrap.py
 	python3 setup.py build
 
 	python3 setup.py install \
@@ -18,4 +19,6 @@ build() {
 		--root=$PKG \
 		--optimize=1 \
 		--skip-build
+
+	rm -rf $PKG/usr/bin/easy_install
 }
