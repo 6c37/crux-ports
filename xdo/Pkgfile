@@ -11,6 +11,6 @@ source=(https://github.com/baskerville/xdo/archive/$version.tar.gz)
 build() {
 	cd $name-$version
 
-	make
+	make PREFIX=/usr
 	make DESTDIR=$PKG PREFIX=/usr install
 }
