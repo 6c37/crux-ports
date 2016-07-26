@@ -4,15 +4,15 @@
 # Depends on:  gtk sqlite3
 
 name=racket
-version=6.5
+version=6.6
 release=1
 source=(http://download.racket-lang.org/installers/${version}/${name}-${version}-src.tgz)
 
 build () {
-	cd ${name}-${version}/src  
+	cd $name-$version/src  
 
 	CFLAGS+=" -fPIC" ./configure --prefix=/usr --sysconfdir=/etc --enable-shared
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 }
