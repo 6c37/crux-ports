@@ -1,4 +1,4 @@
-# Description: C library for encoding data in a QR Code symbol
+# Description: C library for encoding data in a QR Code symbol.
 # URL:         http://fukuchi.org/works/qrencode/index.html.en
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libpng
@@ -6,12 +6,13 @@
 name=qrencode
 version=3.4.4
 release=1
-source=(http://fukuchi.org/works/qrencode/qrencode-${version}.tar.gz)
+source=(http://fukuchi.org/works/qrencode/qrencode-$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	./configure --prefix=/usr
-    make
-	make DESTDIR=${PKG} install
+
+	make
+	make DESTDIR=$PKG install
 }
