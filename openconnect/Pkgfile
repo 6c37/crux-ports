@@ -4,7 +4,7 @@
 # Depends on:  libxm12 openssl pkg-config vpnc zlib
 
 name=openconnect
-version=7.06
+version=7.07
 release=1
 source=(ftp://ftp.infradead.org/pub/$name/$name-$version.tar.gz)
 
