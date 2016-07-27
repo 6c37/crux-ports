@@ -5,7 +5,7 @@
 # Optional:    qt4 qt5 glew
 
 name=openimageio
-version=1.6.14
+version=1.6.15
 release=1
 source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 
@@ -13,7 +13,7 @@ build() {
 	cd oiio-Release-$version
 
 	mkdir build && cd build
-	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DSTOP_ON_WARNING=0 -DOIIO_BUILD_CPP11=1 -DEXTRA_CPP_ARGS=-fPIC
 
 	make
 	make DESTDIR=$PKG install
