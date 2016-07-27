@@ -4,12 +4,14 @@
 # Depends on:  libffi
 
 name=ctypes.sh
-version=0.01
+version=1.1
 release=1
 source=(https://github.com/taviso/ctypes.sh/archive/v$version.tar.gz)
 
 build () {
 	cd $name-$version
+
+	sed -i 's,-D_GNU_SOURCE,-D_GNU_SOURCE $(FFI_CFLAGS),' src/Makefile.am
 
 	./autogen.sh
 	./configure --prefix=/usr
