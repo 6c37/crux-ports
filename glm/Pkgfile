@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=glm
-version=0.9.7.5
+version=0.9.7.6
 release=1
 source=(https://github.com/g-truc/glm/archive/$version.tar.gz)
 
