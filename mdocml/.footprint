@@ -4,17 +4,15 @@ drwxr-xr-x	root/root	etc/cron/daily/
 -rwxr-xr-x	root/root	etc/cron/daily/makewhatis
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--r-xr-xr-x	root/root	usr/bin/apropos
 -r-xr-xr-x	root/root	usr/bin/demandoc
--r-xr-xr-x	root/root	usr/bin/man
 -r-xr-xr-x	root/root	usr/bin/mandoc
--r-xr-xr-x	root/root	usr/bin/whatis
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/mandoc/
 -r--r--r--	root/root	usr/include/mandoc/man.h
 -r--r--r--	root/root	usr/include/mandoc/mandoc.h
 -r--r--r--	root/root	usr/include/mandoc/mandoc_aux.h
 -r--r--r--	root/root	usr/include/mandoc/mdoc.h
+-r--r--r--	root/root	usr/include/mandoc/roff.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/mandoc/
 -r--r--r--	root/root	usr/lib/mandoc/libmandoc.a
@@ -27,6 +25,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -r--r--r--	root/root	usr/share/man/man1/demandoc.1.gz
 -r--r--r--	root/root	usr/share/man/man1/man.1.gz
 -r--r--r--	root/root	usr/share/man/man1/mandoc.1.gz
+-r--r--r--	root/root	usr/share/man/man1/soelim.1.gz
 -r--r--r--	root/root	usr/share/man/man1/whatis.1
 drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/mandoc.3.gz
@@ -36,6 +35,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/mchars_alloc.3.gz
 -r--r--r--	root/root	usr/share/man/man3/tbl.3.gz
 drwxr-xr-x	root/root	usr/share/man/man5/
+-r--r--r--	root/root	usr/share/man/man5/man.conf.5.gz
 -r--r--r--	root/root	usr/share/man/man5/mandoc.db.5.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -r--r--r--	root/root	usr/share/man/man7/eqn.7.gz
@@ -46,5 +46,3 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -r--r--r--	root/root	usr/share/man/man7/tbl.7.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -r--r--r--	root/root	usr/share/man/man8/makewhatis.8.gz
-drwxr-xr-x	root/root	usr/share/mandoc/
--r--r--r--	root/root	usr/share/mandoc/example.style.css

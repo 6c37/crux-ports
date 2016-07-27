@@ -4,10 +4,10 @@
 # Depends on:  sqlite3
 
 name=mdocml
-version=1.13.3
+version=1.13.4
 release=1
 source=(
-	http://mdocml.bsd.lv/snapshots/mdocml-${version}.tar.gz
+	http://mdocml.bsd.lv/snapshots/mdocml-$version.tar.gz
 	configure.local
 	makewhatis
 )
@@ -15,11 +15,13 @@ source=(
 build() {
 	cd $name-$version
 	
-	cp ${SRC}/configure.local .
+	cp $SRC/configure.local .
 	./configure
 
 	make
-	make -j1 DESTDIR=${PKG} install
+	make -j1 DESTDIR=$PKG install
 
-	install -Dm755 ${SRC}/makewhatis ${PKG}/etc/cron/daily/makewhatis
+	rm -rf $PKG/usr/bin/{apropos,man,soelim,whatis}
+
+	install -Dm755 $SRC/makewhatis $PKG/etc/cron/daily/makewhatis
 }
