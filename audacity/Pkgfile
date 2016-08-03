@@ -17,14 +17,6 @@ build() {
 
 	patch -p1 < $SRC/fix-build.patch
 
-	local VAMP
-	if [ "$(pkginfo -i | grep '^vamp-plugin-sdk ')" ]; then
-		VAMP='--with-libvamp'
-	else
-		VAMP='--without-libvamp'
-	fi
-
-
 	CONFIG_SHELL=/bin/bash ./configure --prefix=/usr --disable-dependency-tracking $VAMP
 
 	make
