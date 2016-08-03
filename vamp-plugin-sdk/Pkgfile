@@ -5,11 +5,15 @@
 
 name=vamp-plugin-sdk
 version=2.6
-release=1
-source=(http://code.soundsoftware.ac.uk/attachments/download/1520/$name-$version.tar.gz)
+release=2
+source=(http://code.soundsoftware.ac.uk/attachments/download/1520/$name-$version.tar.gz
+	001-fix-libtool-archive.patch
+	)
 
 build() {
 	cd $name-$version
+
+	patch -p1 -i $SRC/001-fix-libtool-archive.patch
 
 	./configure --prefix=/usr
 
