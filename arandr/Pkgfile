@@ -15,5 +15,3 @@ build() {
 
 	rm -rf $PKG/usr/share/locale
 }
-
-# vim: set noet :
