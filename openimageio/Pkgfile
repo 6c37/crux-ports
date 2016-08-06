@@ -2,18 +2,22 @@
 # URL:         http://openimageio.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  cmake boost openjpeg libtiff libpng giflib ilmbase openexr
-# Optional:    qt4 qt5 glew
+# Optional:    qt4 qt5 glew ffmpeg
 
 name=openimageio
-version=1.6.15
+version=1.6.16
 release=1
 source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 
 build() {
 	cd oiio-Release-$version
 
+	sed -i '1i set_source_files_properties (ffmpeginput.cpp \nPROPERTIES COMPILE_FLAGS "-Wno-deprecated-declarations")' src/ffmpeg.imageio/CMakeLists.txt
+	sed -i '85i #define USE_CODECPAR (LIBAVCODEC_VERSION_INT >= AV_VERSION_INT(57,24,0))' src/ffmpeg.imageio/ffmpeginput.cpp
+	sed -i '21i set_source_files_properties (../ffmpeg.imageio/ffmpeginput.cpp \nPROPERTIES COMPILE_FLAGS "-Wno-deprecated-declarations")' src/libOpenImageIO/CMakeLists.txt
+
 	mkdir build && cd build
-	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DSTOP_ON_WARNING=0 -DOIIO_BUILD_CPP11=1 -DEXTRA_CPP_ARGS=-fPIC
+	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DSTOP_ON_WARNING=OFF -DOIIO_BUILD_CPP11=ON -DEXTRA_CPP_ARGS=-fPIC -DCMAKE_C_FLAGS=-fPIC -DOIIO_BUILD_TESTS=OFF -DUSE_FFMPEG=OFF
 
 	make
 	make DESTDIR=$PKG install
