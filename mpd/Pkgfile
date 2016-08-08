@@ -5,7 +5,7 @@
 # Optional:    flac
 
 name=mpd
-version=0.19.17
+version=0.19.18
 release=1
 source=(
 	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
