@@ -17,7 +17,7 @@ build() {
 	sed -i '21i set_source_files_properties (../ffmpeg.imageio/ffmpeginput.cpp \nPROPERTIES COMPILE_FLAGS "-Wno-deprecated-declarations")' src/libOpenImageIO/CMakeLists.txt
 
 	mkdir build && cd build
-	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DSTOP_ON_WARNING=OFF -DOIIO_BUILD_CPP11=ON -DEXTRA_CPP_ARGS=-fPIC -DCMAKE_C_FLAGS=-fPIC -DOIIO_BUILD_TESTS=OFF -DUSE_FFMPEG=OFF
+	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
 	make DESTDIR=$PKG install
