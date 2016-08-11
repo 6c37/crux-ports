@@ -4,16 +4,17 @@
 # Depends on:
 
 name=dtach
-version=0.8
-release=2
-source=(http://downloads.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+version=0.9
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	./configure
 
 	make
+
 	install -Dm755 dtach   $PKG/usr/bin/dtach
 	install -Dm644 dtach.1 $PKG/usr/share/man/man1/dtach.1
 }
