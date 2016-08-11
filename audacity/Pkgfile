@@ -17,7 +17,7 @@ build() {
 
 	patch -p1 < $SRC/fix-build.patch
 
-	CONFIG_SHELL=/bin/bash ./configure --prefix=/usr --disable-dependency-tracking $VAMP
+	CONFIG_SHELL=/bin/bash ./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
