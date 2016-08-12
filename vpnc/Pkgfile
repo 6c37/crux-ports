@@ -11,7 +11,10 @@ source=(https://www.unix-ag.uni-kl.de/~massar/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	make
+	make PREFIX=/usr
 	make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man install
+
 	install -Dm755 vpnc-script $PKG/etc/vpnc/vpnc-script
+
+	rm -rf $PKG/usr/share/doc
 }
