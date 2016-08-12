@@ -1,10 +1,10 @@
-# Description: 	Telegram, the secure IM platform
+# Description: 	Telegram, the secure IM platform.
 # URL: 		http://www.telegram.org
 # Maintainer:  	6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=telegram
-version=0.9.56
+version=0.10.1
 release=1
 source=(https://updates.tdesktop.com/tlinux/tsetup.$version.tar.xz)
 
