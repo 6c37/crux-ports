@@ -1,5 +1,5 @@
-# Description: MusicBrainz' audio files tagger
-# URL:         http://musicbrainz.org/doc/Picard_Tagger
+# Description: MusicBrainz' audio files tagger.
+# URL:         http://picard.musicbrainz.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  pyqt, mutagen, ffmpeg, libofa
 
