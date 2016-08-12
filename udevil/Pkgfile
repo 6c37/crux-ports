@@ -5,17 +5,18 @@
 
 name=udevil
 version=0.4.4
-release=1
+release=2
 source=(https://github.com/IgnorantGuru/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
 	./configure --prefix=/usr
+
 	make
-	make install DESTDIR=$PKG
+	make DESTDIR=$PKG install
+
 	install -Dm755 $PKGMK_SOURCE_DIR/devmon $PKG/etc/rc.d/devmon
-	getent group plugdev || /usr/sbin/groupadd plugdev
-	chown root:plugdev $PKG/usr/bin/udevil
-	chmod u+s,go-s,o-x $PKG/usr/bin/udevil
+
+	rm -rf $PKG/usr/{lib,share}
 }

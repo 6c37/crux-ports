@@ -1,0 +1,5 @@
+#!/bin/sh
+
+getent group plugdev || /usr/sbin/groupadd plugdev
+chown root:plugdev $PKG/usr/bin/udevil
+chmod u+s,go-s,o-x $PKG/usr/bin/udevil
