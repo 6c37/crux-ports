@@ -1,4 +1,4 @@
-# Description: Openbox menu editor
+# Description: Openbox menu editor.
 # URL:         http://obmenu.sourceforge.net/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  python pygtk openbox
