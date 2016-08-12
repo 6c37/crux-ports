@@ -1,4 +1,4 @@
-# Description: A Soulseek music-sharing client written in python.
+# Description: A soulseek music-sharing client written in python.
 # URL:         http://nicotine-plus.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk pygtk librsvg
