@@ -5,8 +5,8 @@
 
 name=ttf-baekmuk
 version=2.2
-release=1
-source=(http://kldp.net/frs/download.php/1429/baekmuk-ttf-$version.tar.gz)
+release=2
+source=(http://kldp.net/baekmuk/release/865-baekmuk-ttf-$version.tar.gz)
 
 build() {
 	cd baekmuk-ttf-$version/
