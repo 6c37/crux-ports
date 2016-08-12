@@ -1,4 +1,4 @@
-# Description: Backport of the concurrent.futures package from Python 3.2
+# Description: Backport of the concurrent.futures package from Python 3.2.
 # URL:         https://pypi.python.org/pypi/futures 
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  python
