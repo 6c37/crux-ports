@@ -1,4 +1,4 @@
-# Description: nVIDIA Linux Display Driver
+# Description: nVIDIA Linux Display Driver.
 # URL:         http://www.nvidia.com/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia-340
