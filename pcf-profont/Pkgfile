@@ -1,7 +1,7 @@
 # Description: A monospaced font created to be the most readable font for programming.
 # URL:         http://tobiasjung.name/profont/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:
+# Depends on:  fontconfig
 
 name=pcf-profont
 version=r400
