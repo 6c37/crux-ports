@@ -4,9 +4,9 @@
 # Depends on:  boehm-gc libunistring libffi
 
 name=guile
-version=2.0.11
+version=2.0.12
 release=1
-source=(ftp://ftp.gnu.org/gnu/guile/${name}-${version}.tar.gz)
+source=(ftp://ftp.gnu.org/gnu/guile/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -17,5 +17,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share/info
-	rm -rf $PKG/usr/lib/libguile-2.0.so.22.7.2-gdb.scm
+	rm -rf $PKG/usr/lib/libguile-2.0.so.22.8.0-gdb.scm
 }

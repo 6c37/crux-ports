@@ -118,6 +118,7 @@ drwxr-xr-x	root/root	usr/include/guile/2.0/libguile/
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/threads.h
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/throw.h
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/trees.h
+-rw-r--r--	root/root	usr/include/guile/2.0/libguile/unicode.h
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/uniform.h
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/validate.h
 -rw-r--r--	root/root	usr/include/guile/2.0/libguile/values.h
@@ -200,6 +201,7 @@ drwxr-xr-x	root/root	usr/lib/guile/2.0/ccache/ice-9/
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/threads.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/time.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/top-repl.go
+-rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/unicode.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/vlist.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/ice-9/weak-vector.go
 drwxr-xr-x	root/root	usr/lib/guile/2.0/ccache/language/
@@ -342,6 +344,7 @@ drwxr-xr-x	root/root	usr/lib/guile/2.0/ccache/srfi/
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-2.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-26.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-27.go
+-rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-28.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-31.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-34.go
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/srfi/srfi-35.go
@@ -429,9 +432,9 @@ drwxr-xr-x	root/root	usr/lib/guile/2.0/ccache/web/server/
 -rw-r--r--	root/root	usr/lib/guile/2.0/ccache/web/uri.go
 -rw-r--r--	root/root	usr/lib/libguile-2.0.a
 -rwxr-xr-x	root/root	usr/lib/libguile-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so -> libguile-2.0.so.22.7.2
-lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so.22 -> libguile-2.0.so.22.7.2
--rwxr-xr-x	root/root	usr/lib/libguile-2.0.so.22.7.2
+lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so -> libguile-2.0.so.22.8.0
+lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so.22 -> libguile-2.0.so.22.8.0
+-rwxr-xr-x	root/root	usr/lib/libguile-2.0.so.22.8.0
 -rw-r--r--	root/root	usr/lib/libguilereadline-v-18.a
 -rwxr-xr-x	root/root	usr/lib/libguilereadline-v-18.la
 lrwxrwxrwx	root/root	usr/lib/libguilereadline-v-18.so -> libguilereadline-v-18.so.18.0.0
@@ -515,6 +518,7 @@ drwxr-xr-x	root/root	usr/share/guile/2.0/ice-9/
 -rw-r--r--	root/root	usr/share/guile/2.0/ice-9/threads.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/ice-9/time.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/ice-9/top-repl.scm
+-rw-r--r--	root/root	usr/share/guile/2.0/ice-9/unicode.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/ice-9/vlist.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/ice-9/weak-vector.scm
 drwxr-xr-x	root/root	usr/share/guile/2.0/language/
@@ -657,6 +661,7 @@ drwxr-xr-x	root/root	usr/share/guile/2.0/srfi/
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-2.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-26.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-27.scm
+-rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-28.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-31.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-34.scm
 -rw-r--r--	root/root	usr/share/guile/2.0/srfi/srfi-35.scm
