@@ -23,9 +23,7 @@ build() {
 	patch -p0 -i "$SRC/gcc5-compile-fix.patch"
 
 	./bootstrap
-	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--bindir=/usr/share/bin
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
