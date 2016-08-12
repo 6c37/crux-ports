@@ -1,4 +1,4 @@
-# Description:	A lean, small and clean implementation of an ATA S.M.A.R.T. reading and parsing library
+# Description:	A lean, small and clean implementation of an ATA S.M.A.R.T. reading and parsing library.
 # URL:		http://0pointer.de/blog/projects/being-smart.html
 # Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
