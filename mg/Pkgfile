@@ -1,4 +1,4 @@
-# Description: A portable version of Micro GNU/Emacs by the OpenBSD team
+# Description: A portable version of Micro GNU/Emacs by the OpenBSD team.
 # URL:         http://homepage.boetes.org/software/mg/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libbsd
