@@ -14,6 +14,6 @@ build() {
 	mkdir -p $PKG/usr/bin
 	mkdir -p $PKG/usr/share/man/man1
 
-	make
+	make PREFIX=/usr
 	make DESTDIR=$PKG PREFIX=/usr MANDIR=$PKG/usr/share/man/man1 install
 }
