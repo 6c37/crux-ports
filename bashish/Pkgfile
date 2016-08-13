@@ -1,0 +1,20 @@
+# Description: A theme enviroment for text terminals.
+# URL:         http://sourceforge.net/projects/bashish
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=bashish
+version=2.2.4
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./autogen.sh --prefix=/usr
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install	
+}
