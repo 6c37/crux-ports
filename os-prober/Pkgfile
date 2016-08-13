@@ -1,0 +1,36 @@
+# Description:	Tool to detect other OSes. 
+# URL:		http://joey.kitenet.net/code/os-prober
+# Maintainer:	6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:	
+
+name=os-prober
+version=1.71
+release=1
+source=(http://ftp.de.debian.org/debian/pool/main/o/os-prober/${name}_$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	# adjust lib dir to allow detection of 64-bit distros
+	sed -i -e "s:/lib/ld\*\.so\*:/lib*/ld*.so*:g" os-probes/mounted/common/90linux-distro
+
+	# remove makefile
+	rm -f Makefile
+
+	# Compile newns
+	make newns
+
+	install -Dm755 linux-boot-prober $PKG/usr/bin/linux-boot-prober
+	install -Dm755 os-prober $PKG/usr/bin/os-prober
+	install -Dm755 newns $PKG/usr/lib/os-prober/newns
+	install -Dm755 common.sh $PKG/usr/share/os-prober/common.sh
+
+	for i in os-probes os-probes/mounted os-probes/init linux-boot-probes linux-boot-probes/mounted; do
+	  install -dm755 $PKG/usr/lib/$i
+	  install -m755 -t $PKG/usr/lib/$i $i/common/*
+	  [[] -d $i/x86 ]] && cp -r $i/x86/* $PKG/usr/lib/$i
+	done
+
+	install -Dm755 os-probes/mounted/powerpc/20macosx $PKG/usr/lib/os-probes/mounted/20macosx
+	install -dm755 $PKG/var/lib/os-prober	
+}
