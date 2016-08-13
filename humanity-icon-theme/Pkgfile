@@ -1,0 +1,21 @@
+# Description: Ubuntu humanity icons.
+# URL:         https://launchpad.net/humanity
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=humanity-icon-theme
+version=0.6.10
+release=1
+source=(https://launchpad.net/ubuntu/+archive/primary/+files/${name}_$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	install -d $PKG/usr/share/icons
+	mv * $PKG/usr/share/icons
+
+	rm -rf $PKG/usr/share/icons/{Humanity-Dark,Humanity}/{AUTHORS,COPYING}
+	rm -rf $PKG/usr/share/Humanity/CONTRIBUTORS
+	rm -rf $PKG/usr/share/icons/debian
+	rm -rf $PKG/usr/share/debian
+}
