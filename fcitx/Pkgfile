@@ -1,0 +1,18 @@
+# Description: input method framework with extension support.
+# URL:         https://fcitx-im.org/wiki/Fcitx
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  extra-cmake-modules intltool gtk gtk3 qt4 iso-codes xorg-libxrender xorg-libxfixes cairo pango dbus dbus-glib enchant xorg-libxkbfile xorg-libxkbcommon icu gobject-introspection
+
+name=fcitx
+version=4.2.9.1
+release=1
+source=(http://download.fcitx-im.org/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_GTK2_IM_MODULE=ON -DENABLE_GTK3_IM_MODULE=ON -DENABLE_QT_IM_MODULE=ON -DENABLE_PRESAGE=OFF -DSYSCONFDIR:PATH=/etc
+
+	make
+	make DESTDIR=$PKG install
+}
