@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gvolwheel
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pixmaps/
+drwxr-xr-x	root/root	usr/share/pixmaps/gvolwheel/
+-rw-r--r--	root/root	usr/share/pixmaps/gvolwheel/audio-volume-high.png
+-rw-r--r--	root/root	usr/share/pixmaps/gvolwheel/audio-volume-low.png
+-rw-r--r--	root/root	usr/share/pixmaps/gvolwheel/audio-volume-medium.png
+-rw-r--r--	root/root	usr/share/pixmaps/gvolwheel/audio-volume-muted.png
