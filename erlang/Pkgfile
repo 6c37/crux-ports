@@ -5,12 +5,14 @@
 
 
 name=erlang
-version=19.0
+version=19.0.3
 release=1
-source=(http://erlang.org/download/otp_src_${version}.tar.gz)
+source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
 build(){
-	cd otp_src_${version}
+	cd otp-OTP-$version
+
+	./otp_build setup
 
 	./configure \
 		--prefix=/usr \
