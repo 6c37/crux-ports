@@ -4,19 +4,19 @@
 # Depends on:  freetype expat gperf lxml
 
 name=fontconfig-iu
-version=2.12.0
-release=2016-04-23
+version=2.12.1
+release=2016-04-23 # Using forked 2016.08.18
 source=(
 	http://fontconfig.org/release/fontconfig-$version.tar.bz2
-	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+	https://github.com/archfan/infinality_bundle/raw/master/02_fontconfig-iu/fontconfig-ultimate-git.tar.bz2
 )
 
 build() {
 	cd fontconfig-$version
 
-	cp -r $SRC/fontconfig-ultimate-$release/conf.d.infinality conf.d.infinality
+	cp -r $SRC/fontconfig-ultimate-git/conf.d.infinality $SRC/fontconfig-$version/conf.d.infinality
 
-	for p in $SRC/fontconfig-ultimate-$release/fontconfig_patches/*.patch; do
+	for p in $SRC/fontconfig-ultimate-git/fontconfig_patches/*.patch; do
 		patch -p1 < $p
 	done
 
@@ -37,9 +37,9 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -Dm755 $SRC/fontconfig-ultimate-$release/fontconfig_patches/fc-presets $PKG/usr/bin/fc-presets
+	install -Dm755 $SRC/fontconfig-ultimate-git/fontconfig_patches/fc-presets $PKG/usr/bin/fc-presets
 	install -d $PKG/etc/fonts/conf.avail.infinality
-	cp -r $SRC/fontconfig-ultimate-$release/fontconfig_patches/{combi,free,ms} $PKG/etc/fonts/conf.avail.infinality
+	cp -r $SRC/fontconfig-ultimate-git/fontconfig_patches/{combi,free,ms} $PKG/etc/fonts/conf.avail.infinality
 
 	rm -f $PKG/etc/fonts/conf.d/README
 }
