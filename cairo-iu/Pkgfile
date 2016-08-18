@@ -5,21 +5,22 @@
 
 name=cairo-iu
 version=1.14.6
-release=2016-04-23
+release=2016-04-23 # Using forked 2016.08.18
 source=(
 	http://cairographics.org/releases/cairo-$version.tar.xz
-	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
-	colored-emoji.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/03_cairo-iu/cairo-make-lcdfilter-default.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/03_cairo-iu/cairo-respect-fontconfig_pb.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/03_cairo-iu/cairo-server-side-gradients.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/03_cairo-iu/cairo-webkit-html5-fix.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/03_cairo-iu/cairo-color-glyphs.patch
 )
 
 build() {
 	cd cairo-$version
 
-	for p in $SRC/fontconfig-ultimate-$release/cairo/*.patch; do
+	for p in $SRC/*.patch; do
 		patch -p1 < $p
 	done
-
-	patch -p1 < $SRC/colored-emoji.patch
 
 	./configure --prefix=/usr \
 		--disable-static \
