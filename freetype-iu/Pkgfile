@@ -4,17 +4,19 @@
 # Depends on:  zlib libpng harfbuzz
 
 name=freetype-iu
-version=2.6.3
-release=2016-04-23
+version=2.6.5
+release=2016-04-23 # Using forked 2016.08.18
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/01_freetype2-iu/0001-Enable-table-validation-modules.patch
+	https://raw.githubusercontent.com/archfan/infinality_bundle/master/01_freetype2-iu/0002-infinality-$version-2016.08.18.patch
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
 )
 
 build() {
 	cd freetype-$version
 
-	for p in $SRC/fontconfig-ultimate-$release/freetype/0*.patch; do
+	for p in $SRC/*.patch; do
 		patch -p1 < $p
 	done
 
