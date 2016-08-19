@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/pbc/
+-rw-r--r--	root/root	usr/include/pbc/pbc.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_a1_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_a_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_curve.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_d_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_e_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_f_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_field.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_fieldquadratic.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_fp.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_g_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_hilbert.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_i_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_memory.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_mnt.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_multiz.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_pairing.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_param.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_poly.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_random.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_singular.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_ternary_extension_field.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_test.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_utils.h
+-rw-r--r--	root/root	usr/include/pbc/pbc_z.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libpbc.a
+-rwxr-xr-x	root/root	usr/lib/libpbc.la
+lrwxrwxrwx	root/root	usr/lib/libpbc.so -> libpbc.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libpbc.so.1 -> libpbc.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libpbc.so.1.0.0
