@@ -1,25 +1,3 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/slop
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/slop/
--rw-r--r--	root/root	usr/share/slop/cross.frag
--rw-r--r--	root/root	usr/share/slop/cross.vert
-drwxr-xr-x	root/root	usr/share/slop/gothic/
-lrwxrwxrwx	root/root	usr/share/slop/gothic/corner_bl.png -> corner_tl.png
-lrwxrwxrwx	root/root	usr/share/slop/gothic/corner_br.png -> corner_tl.png
--rw-r--r--	root/root	usr/share/slop/gothic/corner_tl.png
-lrwxrwxrwx	root/root	usr/share/slop/gothic/corner_tr.png -> corner_tl.png
--rw-r--r--	root/root	usr/share/slop/gothic/straight.png
--rw-r--r--	root/root	usr/share/slop/hippie.frag
--rw-r--r--	root/root	usr/share/slop/hippie.vert
--rw-r--r--	root/root	usr/share/slop/invert.frag
--rw-r--r--	root/root	usr/share/slop/invert.vert
--rw-r--r--	root/root	usr/share/slop/refract.frag
--rw-r--r--	root/root	usr/share/slop/refract.vert
--rw-r--r--	root/root	usr/share/slop/ripple.frag
--rw-r--r--	root/root	usr/share/slop/ripple.vert
--rw-r--r--	root/root	usr/share/slop/simple.frag
--rw-r--r--	root/root	usr/share/slop/simple.vert
--rw-r--r--	root/root	usr/share/slop/wiggle.frag
--rw-r--r--	root/root	usr/share/slop/wiggle.vert
