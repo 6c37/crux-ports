@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/unterm
+-rwxr-xr-x	root/root	usr/bin/vterm-ctrl
+-rwxr-xr-x	root/root	usr/bin/vterm-dump
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/vterm.h
+-rw-r--r--	root/root	usr/include/vterm_keycodes.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libvterm.a
+-rwxr-xr-x	root/root	usr/lib/libvterm.la
+lrwxrwxrwx	root/root	usr/lib/libvterm.so -> libvterm.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libvterm.so.0 -> libvterm.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libvterm.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/vterm.pc

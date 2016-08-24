@@ -1,0 +1,17 @@
+# Description: Abstract VT220/xterm/ECMA-48 emulation library.
+# URL:         http://www.leonerd.org.uk/code/libvterm
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=libvterm
+_commit=487f21dbf65f1c28962fef3f064603f415fbaeb2
+version=20160825
+release=1
+source=(https://github.com/neovim/$name/archive/${_commit}.tar.gz)
+
+build() {
+	cd $name-${_commit}
+
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
+}
