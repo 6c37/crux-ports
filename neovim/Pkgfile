@@ -4,7 +4,7 @@
 # Depends on:  cmake libuv msgpack-c lua-lpeg libmpack libvterm libtermkey
 
 name=neovim
-version=0.1.4
+version=0.1.5
 release=1
 source=(https://github.com/neovim/neovim/archive/v$version.tar.gz)
 
