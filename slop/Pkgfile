@@ -1,7 +1,7 @@
 # Description: Utility to query the user for a selection and print the region to stdout.
 # URL:         https://github.com/naelstrof/slop
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake xorg-libxext imlib2 mesa3d xorg-libxrender xorg-libxrandr
+# Depends on:  cmake xorg-libxext imlib2 mesa3d xorg-libxrender xorg-libxrandr glew
 
 name=slop
 version=4.3.21
@@ -11,7 +11,7 @@ source=(https://github.com/naelstrof/slop/archive/v$version.tar.gz)
 build() {
 	cd $name-$version
 
-	cmake -DCMAKE_INSTALL_PREFIX=/usr
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_OPENGL_SUPPORT=false
 
 	make
 	make DESTDIR=$PKG install
