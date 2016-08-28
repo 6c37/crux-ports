@@ -6,10 +6,10 @@
 name=lxml
 version=3.6.4
 release=1
-source=(http://lxml.de/files/lxml-$version.tgz)
+source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-$name-$version
 
 	python setup.py build
 	python setup.py install --root $PKG
