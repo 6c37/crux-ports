@@ -7,12 +7,12 @@ name=cursor-human
 version=0.6
 release=1
 source=(
-	https://launchpadlibrarian.net/10063090/human-cursors-theme_${version}.tar.gz
+	https://launchpadlibrarian.net/10063090/human-cursors-theme_$version.tar.gz
 	index.theme
 )
 
 build() {
-	cd human-cursors-theme-${version}
+	cd human-cursors-theme-$version
 
 	python setup.py install --prefix=/usr --root=${PKG} --optimize=1
 	install -Dm644 ../index.theme $PKG/usr/share/icons/Human/index.theme
