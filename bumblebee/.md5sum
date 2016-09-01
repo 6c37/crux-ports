@@ -1,3 +1,10 @@
+ce459c536367e39a6fcc981651da3cc7  0001-bb_nvidia_modeset-detection_bug699_01.patch
+92c5aa0bfa39e41b0092362e555e93de  0002-bb_nvidia_modeset-detection_bug699_02.patch
+36d4bf3ae1d9cb378ca2eb0b60c390c3  0003-bb_nvidia_umv_detection_bug699.patch
+b6d6a0c2ce0dbbb4a2e9cf0c3bd14535  0004-bb_nvidia_drm_detection_bug699_01.patch
+40c37c529d65a3186a61ec4d72eb30ce  0005-bb_nvidia_drm_detection_bug699_02.patch
+d0a7d504a717e34b05fb4bc9ee68f881  0006-bb_hexadicimal_bug573.patch
+613527d15fb5d40925dc2b3843e545c4  0007-bb_mutebblogger.patch
 30974e677bb13e8a3825fd6f3e7d3b24  bumblebee-3.2.1.tar.gz
-d0a7d504a717e34b05fb4bc9ee68f881  bumblebee-hexadecimal.patch
+07f580e014d5a9e386eb561049cf36ff  bumblebee.conf
 f6dc9bf667b2c1016ee25b9f1722e1f8  bumblebeed

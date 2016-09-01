@@ -1,21 +1,31 @@
 # Description: NVIDIA Optimus support for Linux through VirtualGL.
 # URL:         http://www.bumblebee-project.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  virtualgl glib libbsd bbswitch
+# Depends on:  virtualgl glib
+# Optional:    bbswitch primus
 
 name=bumblebee
 version=3.2.1
-release=2
+release=3
 source=(
 	http://www.bumblebee-project.org/bumblebee-$version.tar.gz
-	bumblebee-hexadecimal.patch
+	0001-bb_nvidia_modeset-detection_bug699_01.patch
+	0002-bb_nvidia_modeset-detection_bug699_02.patch
+	0003-bb_nvidia_umv_detection_bug699.patch
+	0004-bb_nvidia_drm_detection_bug699_01.patch
+	0005-bb_nvidia_drm_detection_bug699_02.patch
+	0006-bb_hexadicimal_bug573.patch
+	0007-bb_mutebblogger.patch
+	bumblebee.conf
 	bumblebeed
 )
 
 build() {
 	cd $name-$version
 
-	patch -p1 < $SRC/bumblebee-hexadecimal.patch
+	for p in $SRC/*.patch; do
+		patch -p1 < $p
+	done
 
 	./configure \
 		CONF_DRIVER_MODULE_NVIDIA=nvidia \
@@ -24,14 +34,15 @@ build() {
 		--prefix=/usr \
 		--without-pidfile
 
-	# Stop nvidia from loading on boot
-	mkdir -p $PKG/usr/lib/modprobe.d/
-	echo "blacklist nvidia" > $PKG/usr/lib/modprobe.d/bumblebee.conf
-	echo "blacklist nouveau" >> $PKG/usr/lib/modprobe.d/bumblebee.conf
-
 	make
 	make DESTDIR=$PKG install
+
 	install -Dm755 $SRC/bumblebeed /etc/rc.d
+
+	# Blacklist nvidia and nouveau modules
+	# Reference: https://github.com/Bumblebee-Project/Bumblebee/issues/719
+	install -Dm644 $SRC/bumblebee.conf $PKG/usr/lib/modprobe.d/bumblebee.conf
+
 
 	rm -r $PKG/usr/share/doc
 }
