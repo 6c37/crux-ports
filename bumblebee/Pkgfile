@@ -43,6 +43,5 @@ build() {
 	# Reference: https://github.com/Bumblebee-Project/Bumblebee/issues/719
 	install -Dm644 $SRC/bumblebee.conf $PKG/usr/lib/modprobe.d/bumblebee.conf
 
-
 	rm -r $PKG/usr/share/doc
 }
