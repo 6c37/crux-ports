@@ -4,7 +4,7 @@
 # Depends on:  python3
 
 name=python3-setuptools
-version=26.0.0
+version=26.1.1
 release=1
 source=(https://github.com/pypa/setuptools/archive/v$version.tar.gz)
 
