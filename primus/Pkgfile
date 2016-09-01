@@ -1,0 +1,26 @@
+# Description: Faster OpenGL offloading for Bumblebee.
+# URL:         https://github.com/amonakov/primus
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  bumblebee
+
+name=primus
+_commit=d1afbf6fce2778c0751eddf19db9882e04f18bfd
+version=20151110
+release=1
+source=(
+	https://github.com/amonakov/primus/archive/${_commit}.tar.gz
+	register_cleanup.patch
+)
+
+build() {
+	cd $name-${_commit}
+
+	patch -p1 < $SRC/register_cleanup.patch
+
+	make
+
+	install -D lib/libGL.so.1 $PKG/usr/lib/primus/libGL.so.1
+	sed -e "s#^PRIMUS_libGL=.*#PRIMUS_libGL='/usr/\$LIB/primus:/usr/lib/nvidia:/usr/lib32/nvidia'#" primusrun > primusrun.dist
+	install -D primusrun.dist $PKG/usr/bin/primusrun
+	install -D primusrun.1 $PKG/usr/share/man/man1/primusrun.1
+	}
