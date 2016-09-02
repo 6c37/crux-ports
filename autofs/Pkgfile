@@ -17,7 +17,7 @@ build() {
 	sed -i 's|/etc/auto.misc|/etc/autofs/auto.misc|' samples/auto.master
 	sed -i 's|/etc/auto.master.d|/etc/autofs/auto.master.d|' samples/auto.master
 
-	bash configure --prefix=/usr \
+	./configure --prefix=/usr \
 		--sysconfdir=/etc/autofs \
 		--with-mapdir=/etc/autofs \
 		--sbindir=/usr/bin \
