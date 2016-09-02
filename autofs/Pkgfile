@@ -1,0 +1,36 @@
+# Description: A kernel-based automounter for Linux..
+# URL:         https://www.kernel.org/pub/linux/daemons/autofs/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libxml2
+
+name=autofs
+version=5.1.2
+release=1
+source=(
+	http://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-$version.tar.xz
+	autofs
+)
+
+build() {
+	cd $name-$version
+
+	sed -i 's|/etc/auto.misc|/etc/autofs/auto.misc|' samples/auto.master
+	sed -i 's|/etc/auto.master.d|/etc/autofs/auto.master.d|' samples/auto.master
+
+	bash configure --prefix=/usr \
+		--sysconfdir=/etc/autofs \
+		--with-mapdir=/etc/autofs \
+		--sbindir=/usr/bin \
+		--without-hesiod \
+		--enable-ignore-busy \
+		--without-openldap \
+		--disable-ext-env \
+		--enable-force-shutdown
+
+	make
+	make INSTALLROOT=$PKG install
+	install -dm755 $PKG/etc/autofs/auto.master.d
+	install -Dm755 $SRC/autofs $PKG/etc/rc.d/autofs
+
+	rm -rf $PKG/run
+}
