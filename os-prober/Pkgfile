@@ -5,7 +5,7 @@
 
 name=os-prober
 version=1.71
-release=1
+release=2
 source=(http://ftp.de.debian.org/debian/pool/main/o/os-prober/${name}_$version.tar.xz)
 
 build() {
@@ -28,7 +28,7 @@ build() {
 	for i in os-probes os-probes/mounted os-probes/init linux-boot-probes linux-boot-probes/mounted; do
 	  install -dm755 $PKG/usr/lib/$i
 	  install -m755 -t $PKG/usr/lib/$i $i/common/*
-	  [[] -d $i/x86 ]] && cp -r $i/x86/* $PKG/usr/lib/$i
+	  [[ -d $i/x86 ]] && cp -r $i/x86/* $PKG/usr/lib/$i
 	done
 
 	install -Dm755 os-probes/mounted/powerpc/20macosx $PKG/usr/lib/os-probes/mounted/20macosx
