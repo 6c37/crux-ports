@@ -1,0 +1,34 @@
+# Description: Open Source Continuous Replication / Cluster Synchronization Thing.
+# URL:         https://syncthing.net/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  go git
+
+name=syncthing
+version=0.14.5
+release=1
+source=(
+	https://github.com/syncthing/syncthing/releases/download/v$version/syncthing-source-v$version.tar.gz
+	syncthingd
+)
+
+build() {
+	export GOPATH=$(pwd)
+	install -d src/github.com/syncthing
+	mv syncthing src/github.com/syncthing/syncthing
+	cd src/github.com/syncthing/syncthing
+
+	go run build.go -no-upgrade -version v$version build
+
+	install -Dm755 syncthing $PKG/usr/bin/syncthing
+	install -Dm755 $SRC/syncthingd $PKG/etc/rc.d/syncthing
+	cd man
+	for f in $(find . -name '*.1' -print); do
+		install -Dm644 $f $PKG/usr/share/man/man1/$f
+	done
+	for f in $(find . -name '*.5' -print); do
+		install -Dm644 $f $PKG/usr/share/man/man5/$f
+	done
+	for f in $(find . -name '*.7' -print); do
+		install -Dm644 $f $PKG/usr/share/man/man7/$f
+	done
+}
