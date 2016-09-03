@@ -5,11 +5,10 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/mpd
-OPTS=""
 
 case $1 in
 start)
-	$SSD --start --exec $PROG -- $OPTS
+	$SSD --start --exec $PROG
 	;;
 stop)
 	$SSD --stop --retry 10 --exec $PROG
