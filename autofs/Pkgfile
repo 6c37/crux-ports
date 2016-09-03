@@ -1,4 +1,4 @@
-# Description: A kernel-based automounter for Linux..
+# Description: A kernel-based automounter for Linux.
 # URL:         https://www.kernel.org/pub/linux/daemons/autofs/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libxml2
