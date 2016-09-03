@@ -1,0 +1,25 @@
+# Description: Inotify file watcher for Syncthing.
+# URL:         https://syncthing.net/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  syncthing
+
+name=syncthing-inotify
+version=0.8.3
+release=1
+source=(
+	https://github.com/syncthing/syncthing-inotify/archive/v$version.tar.gz
+	syncthing-inotify
+)
+
+build() {
+	export GOPATH=$(pwd)
+	install -d src/github.com/syncthing/
+	mv $name-$version src/github.com/syncthing/$name
+	cd src/github.com/syncthing/$name
+
+	go get -v
+	go build -v
+
+	install -Dm755 syncthing-inotify $PKG/usr/bin/syncthing-inotify
+	install -Dm755 $SRC/syncthing-inotify $PKG/etc/rc.d/syncthing-inotify
+}
