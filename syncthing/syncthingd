@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# /etc/rc.d/autofs: start/stop syncthing daemon
+# /etc/rc.d/syncthing: start/stop syncthing daemon
 #
 
 SSD=/sbin/start-stop-daemon
