@@ -6,7 +6,7 @@
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/syncthing
 PID=/var/run/syncthing.pid
-OTPS="-no-browser"
+OPTS="-no-browser"
 
 case $1 in
 start)
