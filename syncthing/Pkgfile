@@ -13,9 +13,9 @@ source=(
 
 build() {
 	export GOPATH=$(pwd)
-	install -d src/github.com/syncthing
-	mv syncthing src/github.com/syncthing/syncthing
-	cd src/github.com/syncthing/syncthing
+	install -d src/github.com/$name
+	mv $name src/github.com/syncthing/$name
+	cd src/github.com/syncthing/$name
 
 	go run build.go -no-upgrade -version v$version build
 
