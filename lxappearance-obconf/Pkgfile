@@ -1,4 +1,4 @@
-# Description: LXAppearance OBConf plugin
+# Description: LXAppearance OBConf plugin.
 # URL:         http://lxde.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  openbox lxappearance xorg-libsm
