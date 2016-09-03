@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# /etc/rc.d/autofs: start/stop syncthing-inotify daemon
+# /etc/rc.d/syncthing-inotify: start/stop syncthing-inotify daemon
 #
 
 # Replace YOURAPIKEY, with well.. you API key
