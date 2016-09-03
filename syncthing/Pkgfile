@@ -20,7 +20,6 @@ build() {
 	go run build.go -no-upgrade -version v$version build
 
 	install -Dm755 syncthing $PKG/usr/bin/syncthing
-	install -dm755 $PKG/etc/syncthing
 	install -Dm755 $SRC/syncthingd $PKG/etc/rc.d/syncthing
 	cd man
 	for f in $(find . -name '*.1' -print); do
