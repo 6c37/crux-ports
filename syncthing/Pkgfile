@@ -13,7 +13,7 @@ source=(
 
 build() {
 	export GOPATH=$(pwd)
-	install -d src/github.com/$name
+	install -d src/github.com/syncthing
 	mv $name src/github.com/syncthing/$name
 	cd src/github.com/syncthing/$name
 
