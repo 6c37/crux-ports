@@ -1,0 +1,19 @@
+# Description: A compositor for X.
+# URL:         https://github.com/chjj/compton
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libconfig libpcre mesa3d xorg-libxcomposite xorg-libxinerama xorg-libxrandr xorg-libxdamage dbus asciidoc
+
+name=compton
+_commit=f1cd308cde0f1e1f21ec2ac8f16a3c873fa22d3a
+version=20160905
+release=1
+source=(https://github.com/chjj/$name/archive/${_commit}.tar.gz)
+
+build() {	
+	cd $name-${_commit}
+
+	make
+	make docs
+	make DESTDIR=$PKG install
+}
+
