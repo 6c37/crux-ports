@@ -7,13 +7,13 @@
 name=zathura
 version=0.3.6
 release=1
-source=(https://pwmt.org/projects/zathura/download/zathura-${version}.tar.gz)
+source=(https://pwmt.org/projects/zathura/download/zathura-$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 
-	rm -rf ${PKG}/usr/share/locale
+	rm -rf $PKG/usr/share/locale
 }
