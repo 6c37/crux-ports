@@ -12,7 +12,7 @@ build() {
 	cd $name-$version
 
 	make PREFIX=/usr
-	make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man install
+	make PREFIX=/usr DESTDIR=$PKG MANDIR=/usr/share/man install
 
 	install -Dm755 vpnc-script $PKG/etc/vpnc/vpnc-script
 
