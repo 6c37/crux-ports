@@ -14,7 +14,10 @@ build() {
     ./configure \
             --prefix=/usr \
             --disable-static \
-            --enable-shared
+            --enable-shared \
+            --enable-magick-compat
 
     make DESTDIR=$PKG install
+    
+    rm -rf $PKG/usr/share/doc
 }
