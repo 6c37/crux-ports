@@ -6,7 +6,7 @@
 name=virtualgl
 version=2.5
 release=2
-source=(https://github.com/VirtualGL/virtualgl/archive/$version.tar.gz)
+source=(https://github.com/VirtualGL/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
