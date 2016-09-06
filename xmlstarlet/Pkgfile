@@ -1,12 +1,12 @@
 # Description: A set of tools to transform, query, validate, and edit XML documents.
 # URL:         http://xmlstar.sourceforge.net/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libxml2 libxslt
+# Depends on:  libxslt
 
 name=xmlstarlet
 version=1.6.1
 release=1
-source=(http://downloads.sourceforge.net/sourceforge/xmlstar/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/sourceforge/${name:0:7}/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -17,4 +17,3 @@ build() {
 	make
 	make DESTDIR=$PKG install
 }
-
