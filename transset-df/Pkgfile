@@ -6,7 +6,7 @@
 name=transset-df
 version=6
 release=1
-source=(http://forchheimer.se/transset-df/transset-df-6.tar.gz)
+source=(http://forchheimer.se/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
