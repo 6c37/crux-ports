@@ -6,7 +6,7 @@
 name=xbanish
 version=1.4
 release=1
-source=(https://github.com/jcs/xbanish/archive/v$version.tar.gz)
+source=(https://github.com/jcs/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -15,5 +15,5 @@ build() {
 	mkdir -p $PKG/usr/share/man/man1
 
 	make PREFIX=/usr
-	make DESTDIR=$PKG PREFIX=/usr MANDIR=$PKG/usr/share/man/man1 install
+	make PREFIX=/usr DESTDIR=$PKG MANDIR=$PKG/usr/share/man/man1 install
 }
