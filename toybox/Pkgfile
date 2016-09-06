@@ -6,7 +6,7 @@
 name=toybox
 version=0.7.1
 release=1
-source=(https://github.com/landley/toybox/archive/${version}.tar.gz)
+source=(https://github.com/landley/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
