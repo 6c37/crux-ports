@@ -1,0 +1,25 @@
+# Description: A comprehensive software suite for reading barcodes.
+# URL:         http://zbar.sourceforge.net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python
+
+name=zbar
+version=0.10
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+    ./configure \
+            --prefix=/usr \
+            --without-gtk \
+            --without-qt \
+            --disable-video \
+            --without-imagemagick \
+            --without-x
+
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/share/doc
+}
