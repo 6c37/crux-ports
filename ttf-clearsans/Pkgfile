@@ -6,7 +6,7 @@
 name=ttf-clearsans
 version=1.00
 release=1
-source=(https://01.org/sites/default/files/downloads/clear-sans/clearsans-1.00.zip)
+source=(https://01.org/sites/default/files/downloads/clear-sans/clearsans-$version.zip)
 
 build() {
 	cd TTF
