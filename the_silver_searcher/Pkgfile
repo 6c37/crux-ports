@@ -6,7 +6,7 @@
 name=the_silver_searcher
 version=0.32.0
 release=1
-source=(https://github.com/ggreer/the_silver_searcher/archive/$version.tar.gz)
+source=(https://github.com/ggreer/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
