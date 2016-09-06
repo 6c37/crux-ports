@@ -6,10 +6,10 @@
 name=udisks2
 version=2.1.7
 release=1
-source=(http://udisks.freedesktop.org/releases/udisks-$version.tar.bz2)
+source=(http://udisks.freedesktop.org/releases/${name:0:7}-$version.tar.bz2)
 
 build() {
-	cd udisks-$version
+	cd ${name:0:7}-$version
 
 	sed -i -e '/^SUBDIRS =/ s/ doc//' Makefile.in
 
