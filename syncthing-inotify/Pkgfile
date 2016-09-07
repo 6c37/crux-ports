@@ -4,22 +4,23 @@
 # Depends on:  syncthing
 
 name=syncthing-inotify
+subname=${name:0:9}
 version=0.8.3
 release=1
 source=(
-	https://github.com/syncthing/syncthing-inotify/archive/v$version.tar.gz
-	syncthing-inotify
+	https://github.com/$subname/$name/archive/v$version.tar.gz
+	$name
 )
 
 build() {
 	export GOPATH=$(pwd)
-	install -d src/github.com/syncthing/
-	mv $name-$version src/github.com/syncthing/$name
-	cd src/github.com/syncthing/$name
+	install -d src/github.com/$subname/
+	mv $name-$version src/github.com/$subname/$name
+	cd src/github.com/$subname/$name
 
 	go get -v
 	go build -v
 
-	install -Dm755 syncthing-inotify $PKG/usr/bin/syncthing-inotify
-	install -Dm755 $SRC/syncthing-inotify $PKG/etc/rc.d/syncthing-inotify
+	install -Dm755 $name $PKG/usr/bin/$name
+	install -Dm755 $SRC/$name $PKG/etc/rc.d/$name
 }
