@@ -6,7 +6,7 @@
 name=slop
 version=4.3.21
 release=2
-source=(https://github.com/naelstrof/slop/archive/v$version.tar.gz)
+source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
