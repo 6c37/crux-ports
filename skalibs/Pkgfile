@@ -6,7 +6,7 @@
 name=skalibs
 version=2.3.10.0
 release=1
-source=(http://www.skarnet.org/software/skalibs/skalibs-${version}.tar.gz)
+source=(http://www.skarnet.org/software/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
