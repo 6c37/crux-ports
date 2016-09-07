@@ -7,7 +7,7 @@ name=sinit
 version=1.0
 release=2
 source=(
-	http://dl.suckless.org/sinit/sinit-${version}.tar.gz
+	http://dl.suckless.org/$name/$name-$version.tar.gz
 	config.h
 )
 
@@ -18,6 +18,6 @@ build() {
 
 	make 
 
-	install -Dm644 sinit.8 ${PKG}/usr/share/man/man8/sinit.8
-	install -Dm755 sinit   ${PKG}/sbin/sinit
+	install -Dm644 ${name}.8 ${PKG}/usr/share/man/man8/sinit.8
+	install -Dm755 $name   ${PKG}/sbin/sinit
 }
