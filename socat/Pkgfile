@@ -1,12 +1,13 @@
 # Description: SOcket CAT - netcat-like utility with many enhancements.
 # URL:         http://www.dest-unreach.org/socat
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends:
 
 name=socat
 version=1.7.3.1
 release=1
 source=(
-	http://www.dest-unreach.org/socat/download/$name-$version.tar.bz2
+	http://www.dest-unreach.org/$name/download/$name-$version.tar.bz2
 	libressl.patch
 )
 
