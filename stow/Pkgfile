@@ -6,7 +6,7 @@
 name=stow
 version=2.2.2
 release=1
-source=(ftp://ftp.gnu.org/gnu/stow/stow-$version.tar.gz)
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -16,5 +16,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf ${PKG}/usr/share/{doc,info}
+	rm -rf $PKG/usr/share/{doc,info}
 }
