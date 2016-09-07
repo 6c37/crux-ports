@@ -11,7 +11,7 @@ source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/share/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
