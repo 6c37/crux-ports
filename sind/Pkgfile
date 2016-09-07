@@ -6,13 +6,13 @@
 name=sind
 version=0.1
 release=1
-source=(https://github.com/htylo/simplenotifydaemon/archive/v${version}.tar.gz)
+source=(https://github.com/htylo/simplenotifydaemon/archive/v$version.tar.gz)
 
 build() {
 	cd simplenotifydaemon-$version
 
-	mkdir -p "$PKG/usr/bin"
+	mkdir -p $PKG/usr/bin
 
-	make PREFIX="$PKG/usr"
-	make PREFIX="$PKG/usr" install
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
 }
