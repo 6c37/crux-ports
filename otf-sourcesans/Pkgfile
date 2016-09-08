@@ -6,10 +6,10 @@
 name=otf-sourcesans
 version=1.075R
 release=1
-source=(https://github.com/adobe-fonts/source-sans-pro/archive/2.020R-ro/${version}-it.tar.gz)
+source=(https://github.com/adobe-fonts/source-sans-pro/archive/2.020R-ro/$version-it.tar.gz)
 
 build() {
-	cd source-sans-pro-2.020R-ro-${version}-it
+	cd source-sans-pro-2.020R-ro-$version-it
 
 	install -Dm644 OTF/SourceSansPro-ExtraLight.otf   $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLight.otf
 	install -Dm644 OTF/SourceSansPro-ExtraLightIt.otf $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLightItalic.otf
