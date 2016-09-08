@@ -1,15 +1,15 @@
 # Description: MusicBrainz' audio files tagger.
 # URL:         http://picard.musicbrainz.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  pyqt, mutagen, ffmpeg, libofa
+# Depends on:  pyqt mutagen ffmpeg libofa
 
 name=picard
 version=1.3.2
 release=1
-source=(ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-$version.tar.gz)
+source=(ftp://ftp.musicbrainz.org/pub/musicbrainz/$name/$name-$version.tar.gz)
 
 build () {
-	cd picard-release-$version
+	cd $name-release-$version
 
 	python setup.py config
 	python setup.py install --root=$PKG --prefix=/usr
