@@ -8,7 +8,7 @@ _commit=d1afbf6fce2778c0751eddf19db9882e04f18bfd
 version=20151110
 release=1
 source=(
-	https://github.com/amonakov/primus/archive/${_commit}.tar.gz
+	https://github.com/amonakov/$name/archive/${_commit}.tar.gz
 	register_cleanup.patch
 )
 
