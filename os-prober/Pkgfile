@@ -6,7 +6,7 @@
 name=os-prober
 version=1.71
 release=2
-source=(http://ftp.de.debian.org/debian/pool/main/o/os-prober/${name}_$version.tar.xz)
+source=(http://ftp.de.debian.org/debian/pool/main/o/$name/${name}_$version.tar.xz)
 
 build() {
 	cd $name-$version
@@ -21,9 +21,9 @@ build() {
 	make newns
 
 	install -Dm755 linux-boot-prober $PKG/usr/bin/linux-boot-prober
-	install -Dm755 os-prober $PKG/usr/bin/os-prober
-	install -Dm755 newns $PKG/usr/lib/os-prober/newns
-	install -Dm755 common.sh $PKG/usr/share/os-prober/common.sh
+	install -Dm755 $name $PKG/usr/bin/$name
+	install -Dm755 newns $PKG/usr/lib/$name/newns
+	install -Dm755 common.sh $PKG/usr/share/$name/common.sh
 
 	for i in os-probes os-probes/mounted os-probes/init linux-boot-probes linux-boot-probes/mounted; do
 	  install -dm755 $PKG/usr/lib/$i
@@ -32,5 +32,5 @@ build() {
 	done
 
 	install -Dm755 os-probes/mounted/powerpc/20macosx $PKG/usr/lib/os-probes/mounted/20macosx
-	install -dm755 $PKG/var/lib/os-prober	
+	install -dm755 $PKG/var/lib/$name	
 }
