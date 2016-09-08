@@ -6,11 +6,11 @@
 name=proot
 version=5.1.0
 release=1
-source=(https://github.com/proot-me/PRoot/archive/v$version.tar.gz)
+source=(https://github.com/$name-me/PRoot/archive/v$version.tar.gz)
 
 build() {
 	cd PRoot-$version/src
 
 	make
-	make install DESTDIR=$PKG/usr/bin
+	make DESTDIR=$PKG/usr/bin install
 }
