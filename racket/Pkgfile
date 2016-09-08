@@ -6,7 +6,7 @@
 name=racket
 version=6.6
 release=1
-source=(http://download.racket-lang.org/installers/${version}/${name}-${version}-src.tgz)
+source=(http://download.racket-lang.org/installers/$version/$name-$version-src.tgz)
 
 build () {
 	cd $name-$version/src  
