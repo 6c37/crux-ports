@@ -6,7 +6,7 @@
 name=qrencode
 version=3.4.4
 release=1
-source=(http://fukuchi.org/works/qrencode/qrencode-$version.tar.gz)
+source=(http://fukuchi.org/works/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
