@@ -4,12 +4,12 @@
 # Depends on:   fontconfig
 
 name=otf-sourcecode
-version=1.050
+version=1.050R
 release=1
-source=(https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/${version}R-it.tar.gz)
+source=(https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/$version-it.tar.gz)
 
 build() {
-	cd source-code-pro-2.030R-ro-${version}R-it
+	cd source-code-pro-2.030R-ro-$version-it
 
 	install -Dm644 OTF/SourceCodePro-ExtraLight.otf $PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
 	install -Dm644 OTF/SourceCodePro-Light.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
