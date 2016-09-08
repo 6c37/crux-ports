@@ -1,7 +1,7 @@
 # Description: An SSL VPN client.
 # URL:         http://infradead.org/openconnect
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libxm12 openssl pkg-config vpnc zlib
+# Depends on:  libxml2 openssl pkg-config vpnc zlib
 
 name=openconnect
 version=7.07
