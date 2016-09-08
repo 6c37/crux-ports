@@ -6,7 +6,7 @@
 name=otf2bdf
 version=3.1
 release=1
-source=(https://www.math.nmsu.edu/~mleisher/Software/otf2bdf/otf2bdf-$version.tgz)
+source=(https://www.math.nmsu.edu/~mleisher/Software/$name/$name-$version.tgz)
 
 build () {
 	cd $name-$version
@@ -14,7 +14,7 @@ build () {
 	./configure
 
 	make
-	install -Dm755 otf2bdf $PKG/usr/bin/otf2bdf
-	install -Dm644 otf2bdf.man $PKG/usr/share/man/man1/otf2bdf.1
-}
 
+	install -Dm755 $name $PKG/usr/bin/$name
+	install -Dm644 $name.man $PKG/usr/share/man/man1/$name.1
+}
