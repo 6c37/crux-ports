@@ -6,7 +6,7 @@
 name=pugixml
 version=1.7
 release=1
-source=(http://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz)
+source=(http://github.com/zeux/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -15,9 +15,9 @@ build() {
 	cd build
 
 	cmake ../scripts \
-    	-DCMAKE_BUILD_TYPE=Release \
-    	-DCMAKE_INSTALL_PREFIX=/usr \
-    	-DCMAKE_INSTALL_LIBDIR=lib \
+    		-DCMAKE_BUILD_TYPE=Release \
+    		-DCMAKE_INSTALL_PREFIX=/usr \
+    		-DCMAKE_INSTALL_LIBDIR=lib \
    		-DBUILD_SHARED_LIBS=ON
 
 	make
