@@ -6,14 +6,13 @@
 name=pcf2bdf
 version=1.05
 release=1
-source=(https://github.com/ganaware/pcf2bdf/archive/$version.tar.gz)
+source=(https://github.com/ganaware/$name/archive/$version.tar.gz)
 
 build () {
 	cd $name-$version
 
 	mv Makefile.gcc Makefile
 
-	make
-	make DESTDIR=$PKG PREFIX=/usr install
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
 }
-
