@@ -1,16 +1,6 @@
-diff --git a/include/tool/coroutine.h b/include/tool/coroutine.h
-index c7eaf5f..e21e18f 100644
 --- a/include/tool/coroutine.h
 +++ b/include/tool/coroutine.h
-@@ -3,6 +3,7 @@
-  *
-  * Copyright (C) 2013 CERN
-  * @author Tomasz Wlostowski <tomasz.wlostowski@cern.ch>
-+ * Copyright (C) 2016 KiCad Developers, see AUTHORS.txt for contributors.
-  *
-  * This program is free software; you can redistribute it and/or
-  * modify it under the terms of the GNU General Public License
-@@ -27,10 +28,14 @@
+@@ -27,10 +28,15 @@
  
  #include <cstdlib>
  
@@ -23,11 +13,12 @@ index c7eaf5f..e21e18f 100644
 +#include <boost/context/fcontext.hpp>
 +#else
 +#include <boost/context/execution_context.hpp>
++#include <boost/context/protected_fixedsize_stack.hpp>
 +#endif
  
  /**
   *  Class COROUNTINE.
-@@ -53,13 +58,12 @@
+@@ -53,13 +59,12 @@
   *  See coroutine_example.cpp for sample code.
   */
  
@@ -43,7 +34,7 @@ index c7eaf5f..e21e18f 100644
      {
      }
  
-@@ -69,8 +73,7 @@ public:
+@@ -69,8 +74,7 @@
       */
      template <class T>
      COROUTINE( T* object, ReturnType(T::* ptr)( ArgType ) ) :
@@ -53,7 +44,7 @@ index c7eaf5f..e21e18f 100644
      {
      }
  
-@@ -78,9 +81,15 @@ public:
+@@ -78,9 +82,15 @@
       * Constructor
       * Creates a coroutine from a delegate object
       */
@@ -72,7 +63,7 @@ index c7eaf5f..e21e18f 100644
      {
          // Avoid not initialized members, and make static analysers quiet
          m_args = 0;
-@@ -89,18 +98,26 @@ public:
+@@ -89,18 +99,26 @@
  
      ~COROUTINE()
      {
@@ -104,7 +95,7 @@ index c7eaf5f..e21e18f 100644
      /**
       * Function Yield()
       *
-@@ -110,7 +127,12 @@ public:
+@@ -110,7 +128,12 @@
       */
      void Yield()
      {
@@ -118,7 +109,7 @@ index c7eaf5f..e21e18f 100644
      }
  
      /**
-@@ -122,7 +144,11 @@ public:
+@@ -122,7 +145,11 @@
      void Yield( ReturnType& aRetVal )
      {
          m_retVal = aRetVal;
@@ -131,7 +122,7 @@ index c7eaf5f..e21e18f 100644
      }
  
      /**
-@@ -130,9 +156,9 @@ public:
+@@ -130,9 +157,9 @@
       *
       * Defines the entry point for the coroutine, if not set in the constructor.
       */
@@ -143,7 +134,7 @@ index c7eaf5f..e21e18f 100644
      }
  
      /* Function Call()
-@@ -143,6 +169,10 @@ public:
+@@ -143,6 +170,10 @@
       */
      bool Call( ArgType aArgs )
      {
@@ -154,7 +145,7 @@ index c7eaf5f..e21e18f 100644
          // fixme: Clean up stack stuff. Add a guard
          m_stack = malloc( c_defaultStackSize );
  
-@@ -151,22 +181,32 @@ public:
+@@ -151,22 +182,32 @@
  
          // correct the stack size
          m_stackSize -= ( (size_t) m_stack + m_stackSize - (size_t) sp );
@@ -175,7 +166,7 @@ index c7eaf5f..e21e18f 100644
  #else
 -        m_self = boost::context::make_fcontext( sp, m_stackSize, callerStub );
 +        m_callee = new context_type( std::allocator_arg_t(),
-+                    boost::context::fixedsize_stack( c_defaultStackSize ), &COROUTINE::callerStub );
++                    boost::context::protected_fixedsize_stack( c_defaultStackSize ), &COROUTINE::callerStub );
 +#endif
 +
 +#if BOOST_VERSION <= 106000
@@ -196,7 +187,7 @@ index c7eaf5f..e21e18f 100644
          return m_running;
      }
  
-@@ -179,7 +219,12 @@ public:
+@@ -179,7 +220,12 @@
       */
      bool Resume()
      {
@@ -210,7 +201,7 @@ index c7eaf5f..e21e18f 100644
  
          return m_running;
      }
-@@ -208,61 +253,66 @@ private:
+@@ -208,61 +254,66 @@
      static const int c_defaultStackSize = 2000000;    // fixme: make configurable
  
      /* real entry point of the coroutine */
