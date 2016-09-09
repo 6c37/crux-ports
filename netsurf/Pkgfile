@@ -7,7 +7,7 @@
 name=netsurf
 version=3.5
 release=1
-source=(http://download.netsurf-browser.org/netsurf/releases/source-full/$name-all-$version.tar.gz
+source=(http://download.netsurf-browser.org/$name/releases/source-full/$name-all-$version.tar.gz
 	netsurf.sh)
 
 build() {
