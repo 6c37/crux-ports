@@ -1,19 +1,20 @@
 # Description: Adjusts the color temperature of your screen according to your surroundings.
 # URL:         http://jonls.dk/redshift/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm
+# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm python3 gtk3
 
 name=redshift
 version=1.11
-release=1
-source=(https://github.com/jonls/$name/releases/download/v$version/$name-$version.tar.xz)
+release=2
+source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr \
+	./configure \
+		--prefix=/usr \
+		--enable-gtk \
 		--disable-nls \
-		--disable-gui \
 		--disable-ubuntu
 
 	make
