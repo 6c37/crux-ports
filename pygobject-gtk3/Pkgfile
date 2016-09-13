@@ -1,0 +1,22 @@
+# Description:  Python bindings for GObject.
+# URL:          https://wiki.gnome.org/Projects/PyGObject
+# Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:   gtk3 py3cairo
+
+name=pygobject-gtk3
+version=3.21.0
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/pygobject/${version::4}/pygobject-$version.tar.xz)
+
+build() {
+	cd pygobject-$version
+
+	./configure \
+		--prefix=/usr \
+		--disable-introspection
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG//usr/share/gtk-doc
+}

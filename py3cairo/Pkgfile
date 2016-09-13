@@ -1,0 +1,18 @@
+# Description:  A set of python bindings for cairo.
+# URL:          http://cairographics.org/pycairo
+# Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:   cairo python3
+
+name=py3cairo
+version=1.10.0
+release=1
+source=(http://cairographics.org/releases/pycairo-$version.tar.bz2)
+
+build() {
+	cd pycairo-$version
+
+	PYTHON=python3 ./waf configure --prefix=/usr
+
+	PYTHON=python3 ./waf build
+	PYTHON=python3 ./waf install --destdir=$PKG
+}
