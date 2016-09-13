@@ -4,9 +4,9 @@
 # Depends on:  
 
 name=texinfo
-version=6.1
+version=6.3
 release=1
-source=(ftp://ftp.gnu.org/pub/gnu/$name/$version-$version.tar.xz)
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
