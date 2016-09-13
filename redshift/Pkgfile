@@ -15,7 +15,8 @@ build() {
 		--prefix=/usr \
 		--enable-gtk \
 		--disable-nls \
-		--disable-ubuntu
+		--disable-ubuntu \
+		--disable-geoclue
 
 	make
 	make DESTDIR=$PKG install
