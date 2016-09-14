@@ -1,0 +1,18 @@
+# Description: Retask your jack plugs (eg. turn your microphone jack plug into a headphone one).
+# URL:         http://alsa-project.org/
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gtk3
+
+name=hda-jack-retask
+version=1.1.0
+release=1
+source=(ftp://ftp.alsa-project.org/pub/tools/alsa-tools-$version.tar.bz2)
+
+build() {
+	cd alsa-tools-$version/$name
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
