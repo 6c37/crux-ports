@@ -1,0 +1,16 @@
+# Description: A lint-like tool for Python to identify common errors quickly without executing code.
+# URL:         https://pypi.python.org/pypi/pyflakes
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3
+
+name=python3-pyflakes
+version=1.3.0
+release=1
+source=(https://pypi.io/packages/source/p/pyflakes/pyflakes-$version.tar.gz)
+
+build() {
+	cd pyflakes-$version
+	python3 setup.py build
+
+	python3 setup.py install --prefix=/usr --root=$PKG --optimize=1
+}
