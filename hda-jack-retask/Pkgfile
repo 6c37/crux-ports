@@ -9,7 +9,7 @@ release=1
 source=(ftp://ftp.alsa-project.org/pub/tools/alsa-tools-$version.tar.bz2)
 
 build() {
-	cd alsa-tools-$version/$name
+	cd alsa-tools-$version/hdajackretask
 
 	./configure --prefix=/usr
 
