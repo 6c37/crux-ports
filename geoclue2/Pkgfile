@@ -1,0 +1,23 @@
+# Description:	Modular geoinformation service built on the D-Bus message system. 
+# URL:		http://geoclue.freedesktop.org/
+# Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:	intltool libsoup json-glib networkmanager modemmanager
+
+name=geoclue2
+version=2.4.4
+release=1
+source=(http://freedesktop.org/software/geoclue/releases/${version:0:3}/geoclue-$version.tar.xz)
+
+build() {
+	cd geoclue-$version
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/$name \
+		--sysconfdir=/etc \
+		--disable-nmea-source \
+		--disable-nls
+
+	make
+	make DESTDIR=$PKG install
+}
