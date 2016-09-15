@@ -1,0 +1,18 @@
+# Description: A soulseek music-sharing client written in python.
+# URL:         http://nicotine-plus.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  pygtk librsvg
+
+name=nicotine+
+version=1.2.16
+release=2
+source=(http://downloads.sourceforge.net/project/nicotine-plus/nicotine-plus/$version/nicotine+-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	python2 setup.py install --root=$PKG
+	mv $PKG/usr/bin/nicotine.py $PKG/usr/bin/nicotine+
+
+	rm -rf $PKG/usr/share
+}
