@@ -1,0 +1,15 @@
+# Description: An audio metadata tag reader and writer.
+# URL:         https://github.com/quodlibet/mutagen
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python
+
+name=mutagen
+version=1.34.1
+release=1
+source=(https://github.com/quodlibet/$name/archive/release-$version.tar.gz)
+
+build() {
+	cd $name-release-$version
+
+	python2 setup.py install --root=$PKG
+}
