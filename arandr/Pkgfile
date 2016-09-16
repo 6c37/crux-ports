@@ -6,7 +6,7 @@
 name=arandr
 version=0.1.9
 release=1
-source=(http://christian.amsuess.com/tools/$name/files/$name-$version.tar.gz)
+source=(http://christian.amsuess.com/tools/arandr/files/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
