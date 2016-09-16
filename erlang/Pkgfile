@@ -7,7 +7,7 @@
 name=erlang
 version=19.0.6
 release=1
-source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
+source=(https://github.com/erlang/otp/archive/OTP-$version.tar.gz)
 
 build(){
 	cd otp-OTP-$version
