@@ -68,8 +68,7 @@ drwxr-xr-x	root/root	usr/include/s6/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/s6/
 -rw-r--r--	root/root	usr/lib/s6/libs6.a
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/s6lockd-helper
+-rwxr-xr-x	root/root	usr/lib/s6/s6lockd-helper
 drwxr-xr-x	root/root	usr/sbin/
 -rwx------	root/root	usr/sbin/s6-applyuidgid
 -rwx------	root/root	usr/sbin/s6-setuidgid
