@@ -1,0 +1,20 @@
+# Description: A simple X hotkey daemon.
+# URL:         https://github.com/baskerville/sxhkd
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg-xcb-util xorg-xcb-util-keysyms
+
+name=sxhkd
+version=0.5.6
+release=1
+source=(https://github.com/baskerville/$name/archive/$version.tar.gz)
+
+build () {
+    cd $name-$version
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANPREFIX=/usr/man \
+        install
+    # write access only for root
+    chmod 644 $PKG/usr/man/man1/sxhkd.1
+}
