@@ -17,4 +17,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	echo -e "\npkgfile = sh.lang" >> $PKG/usr/share/source-highlight/lang.map
+
+	rm -rf $PKG/usr/share/{doc,info}
 }

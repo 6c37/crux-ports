@@ -4,7 +4,7 @@
 # Depends on:	glib2 polkit libqmi
 
 name=modemmanager
-version=1.6.0
+version=1.6.2
 release=1
 source=(http://www.freedesktop.org/software/ModemManager/ModemManager-$version.tar.xz)
 

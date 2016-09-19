@@ -15,25 +15,26 @@ build() {
 	cd $name-$version
 
 	export CXXFLAGS=" -std=c++11"
-
 	patch -p1 -i $SRC/boost-1.61.patch
-
 	sed -i 's|TOOL_STATE_FUNC sptr( static_cast<T*>( this ), aStateFunc )|TOOL_STATE_FUNC sptr = std::bind( aStateFunc, static_cast<T*>( this ), std::placeholders::_1 )|' include/tool/tool_interactive.h
 
 	mkdir -p build/release; cd build/release
 
-	cmake	-DCMAKE_INSTALL_PREFIX=/usr \
-			-DMAN_INSTALL_DIR=/usr/share/man \
-			-DCMAKE_BUILD_TYPE=Release \
-			-DKICAD_REPO_NAME=stable \
-			-DBUILD_GITHUB_PLUGIN=ON \
-			-DKICAD_BUILD_VERSION=$version \
-			-DKICAD_SCRIPTING=ON \
-			-DKICAD_SCRIPTING_MODULES=ON \
-			-DKICAD_SCRIPTING_WXPYTHON=ON \
-			-DKICAD_SKIP_BOOST=ON \
-			../../
+	cmake -DCMAKE_INSTALL_PREFIX=/usr \
+		-DMAN_INSTALL_DIR=/usr/share/man \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DKICAD_REPO_NAME=stable \
+		-DBUILD_GITHUB_PLUGIN=ON \
+		-DKICAD_BUILD_VERSION=$version \
+		-DKICAD_SCRIPTING=ON \
+		-DKICAD_SCRIPTING_MODULES=ON \
+		-DKICAD_SCRIPTING_WXPYTHON=ON \
+		-DKICAD_SKIP_BOOST=ON \
+		../../
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/doc/kicad/INSTALL.txt
+	rm -rf $PKG/usr/share/doc/kicad/scripts/bom-in-python/README-bom.txt
 }

@@ -4,9 +4,9 @@
 # Depends on:  ctags giflib libjpeg-turbo libtiff xorg-libxpm
 
 name=emacs
-version=24.5
-release=3
-source=(ftp://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz)
+version=25.1
+release=1
+source=(http://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version

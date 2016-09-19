@@ -42,10 +42,8 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/pcbnew.desktop
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/kicad/
--rw-r--r--	root/root	usr/share/doc/kicad/INSTALL.txt
 drwxr-xr-x	root/root	usr/share/doc/kicad/scripts/
 drwxr-xr-x	root/root	usr/share/doc/kicad/scripts/bom-in-python/
--rw-r--r--	root/root	usr/share/doc/kicad/scripts/bom-in-python/README-bom.txt
 -rw-r--r--	root/root	usr/share/doc/kicad/scripts/bom-in-python/bom_csv_grouped_by_value.py
 -rw-r--r--	root/root	usr/share/doc/kicad/scripts/bom-in-python/bom_csv_grouped_by_value_with_fp.py
 -rw-r--r--	root/root	usr/share/doc/kicad/scripts/bom-in-python/bom_csv_sorted_by_ref.py

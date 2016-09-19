@@ -44,8 +44,6 @@ drwxr-xr-x	root/root	usr/share/doc/hatari/images/
 drwxr-xr-x	root/root	usr/share/hatari/
 -rw-r--r--	root/root	usr/share/hatari/hatari-icon.bmp
 drwxr-xr-x	root/root	usr/share/hatari/hatariui/
--rw-r--r--	root/root	usr/share/hatari/hatariui/README
--rw-r--r--	root/root	usr/share/hatari/hatariui/TODO
 -rw-r--r--	root/root	usr/share/hatari/hatariui/config.py
 -rw-r--r--	root/root	usr/share/hatari/hatariui/conftypes.py
 -rwxr-xr-x	root/root	usr/share/hatari/hatariui/debugui.py
