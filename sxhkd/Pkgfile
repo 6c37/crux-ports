@@ -10,11 +10,13 @@ source=(https://github.com/baskerville/$name/archive/$version.tar.gz)
 
 build () {
 	cd $name-$version
+
 	make
 	make DESTDIR=$PKG \
 		PREFIX=/usr \
 		MANPREFIX=/usr/man \
 		install
+
 	# write access only for root
 	chmod 644 $PKG/usr/man/man1/sxhkd.1
 }
