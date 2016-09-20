@@ -4,12 +4,12 @@
 # Depends on:  fontconfig	
 
 name=ttf-mplus
-version=TESTFLIGHT-061
+version=061
 release=1
-source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-$version.tar.xz)
+source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-TESTFLIGHT-$version.tar.xz)
 
 build() {
-	cd mplus-$version
+	cd mplus-TESTFLIGHT-$version
 
 	install -Dm644 mplus-1c-thin.ttf    $PKG/usr/share/fonts/X11/TTF/M+/1c/Thin.ttf
 	install -Dm644 mplus-1c-light.ttf   $PKG/usr/share/fonts/X11/TTF/M+/1c/Light.ttf

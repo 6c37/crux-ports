@@ -1,19 +1,15 @@
 # Description: A growing collection of the unix tools that nobody thought to write thirty years ago.
 # URL:         https://joeyh.name/code/moreutils/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  docbook-xsl git
+# Depends on:  docbook-xsl
 
 name=moreutils
 version=0.60
-release=1
-# stable release is 0.60
-# source=(http://ftp.de.debian.org/debian/pool/main/m/moreutils/moreutils_$version.orig.tar.gz)
-source=()
+release=2
+source=(https://dev.gentoo.org/%7Eradhermit/dist/$name-$version.tar.gz)
 
 build() {
-	#cd $name-$version.orig
-	git clone git://git.joeyh.name/moreutils.git $name
-	cd $name ; git checkout $version
+	cd $name-$version
 
 	make DOCBOOKXSL=/usr/share/xml/docbook/xsl-stylesheets 
 	make DESTDIR=$PKG PREFIX=/usr install
