@@ -1,0 +1,24 @@
+# Description: XFS filesystem incremental dump utility.
+# URL:         http://oss.sgi.com/projects/xfs/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xfsprogs
+
+name=xfsdump
+version=3.1.6
+release=1
+source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	# For some reason the --sbindir configure flag doesn't work
+	mv $PKG/sbin/* $PKG/usr/sbin
+
+	rm -rf $PKG/usr/share/{doc,locale}
+	rm -rf $PKG/sbin
+}
