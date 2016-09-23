@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/env_parallel.zsh
 -rwxr-xr-x	root/root	usr/bin/niceload
 -rwxr-xr-x	root/root	usr/bin/parallel
+-rwxr-xr-x	root/root	usr/bin/parcat
 lrwxrwxrwx	root/root	usr/bin/sem -> parallel
 -rwxr-xr-x	root/root	usr/bin/sql
 drwxr-xr-x	root/root	usr/share/
@@ -30,6 +31,9 @@ drwxr-xr-x	root/root	usr/share/doc/parallel/
 -rw-r--r--	root/root	usr/share/doc/parallel/parallel_tutorial.html
 -rw-r--r--	root/root	usr/share/doc/parallel/parallel_tutorial.pdf
 -rw-r--r--	root/root	usr/share/doc/parallel/parallel_tutorial.texi
+-rw-r--r--	root/root	usr/share/doc/parallel/parcat.html
+-rw-r--r--	root/root	usr/share/doc/parallel/parcat.pdf
+-rw-r--r--	root/root	usr/share/doc/parallel/parcat.texi
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.html
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.pdf
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.texi
@@ -41,6 +45,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/env_parallel.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/niceload.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/parallel.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/parcat.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/sem.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/sql.1.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
