@@ -6,9 +6,10 @@
 
 name=mpd
 version=0.19.19
-release=1
+release=2
 source=(
 	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
+	mpd.conf
 	mpd
 )
 
@@ -22,8 +23,10 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -Dm644 doc/mpdconf.example $PKG/etc/mpd.conf 
+	install -Dm644 $SRC/mpd.conf $PKG/etc/mpd.conf
 	install -Dm755 $SRC/mpd $PKG/etc/rc.d/mpd
+	install -d -g audio -o mpd -m755 $PKG/var/lib/mpd{,/playlists}
+	install -d -g audio -o mpd -m755 $PKG/var/run/mpd
 
 	rm -rf $PKG/usr/share/doc
 }
