@@ -1,0 +1,27 @@
+# Description: An AudioScrobbler client for MPD written in C++.
+# URL:         http://50hz.ws/mpdas/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  boost libid3tag libmpdclient glib ffmpeg
+# Optional:    libmpdclient mpd
+
+name=mpdas
+version=0.4.2
+release=2
+source=(
+	https://github.com/hrkfdn/$name/archive/$version.tar.gz
+	mpdas.conf
+	mpdas
+)
+
+build() {
+	cd $name-$version
+
+	sed -i 's/mpdasrc/mpdas.conf/g' *
+
+	make PREFIX=/usr CONFIG=/etc
+	make DESTDIR=$PKG PREFIX=/usr CONFIG=/etc MANPREFIX=/usr/share install
+
+	install -Dm644 $SRC/mpdas.conf $PKG/etc/mpdas.conf
+	install -Dm755 $SRC/mpdas $PKG/etc/rc.d/mpdas
+	install -d -g audio -o mpd -m755 $PKG/var/run/mpdas
+	}

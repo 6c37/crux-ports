@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/mpdas.conf
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/mpdas
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mpdas
+drwxr-xr-x	root/root	usr/share/
+-rw-r--r--	root/root	usr/share/mpdas.1
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/run/
+drwxr-xr-x	mpd/audio	var/run/mpdas/
