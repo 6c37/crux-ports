@@ -9,6 +9,7 @@ release=1
 source=(
 	http://dl.z3bra.org/releases/$name-$version.tar.bz2
 	http://swtch.com/plan9port/unix/mk-with-libs.tgz
+	synk.conf
 )
 
 build() {
@@ -21,4 +22,5 @@ build() {
 
 	../mk/mk/mk
 	../mk/mk/mk DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man install
+	install -Dm644 $SRC/synk.conf $PKG/etc/synk.conf
 }
