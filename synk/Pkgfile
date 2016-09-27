@@ -1,0 +1,24 @@
+# Description: A multi-host synchronisation tool backed by rsync(1) and ssh(1). 
+# URL:         http://z3bra.org/synk/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=synk
+version=1.0
+release=1
+source=(
+	http://dl.z3bra.org/releases/$name-$version.tar.bz2
+	http://swtch.com/plan9port/unix/mk-with-libs.tgz
+)
+
+build() {
+	# synk user plan9 mk, not gonna port it for the single
+	# package that uses it...
+	cd mk
+	make
+
+	cd ../$name-$version
+
+	../mk/mk/mk
+	../mk/mk/mk DESTDIR=$PKG PREFIX=/usr install
+}
