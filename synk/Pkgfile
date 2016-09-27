@@ -20,5 +20,5 @@ build() {
 	cd ../$name-$version
 
 	../mk/mk/mk
-	../mk/mk/mk DESTDIR=$PKG PREFIX=/usr install
+	../mk/mk/mk DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man install
 }
