@@ -1,0 +1,15 @@
+# Description: Python Imaging Library (PIL) fork.
+# URL:         http://python-pillow.github.io/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3-setuptools lcms libwebp
+
+name=python3-pillow
+version=3.3.1
+release=1
+source=(https://github.com/python-pillow/Pillow/archive/$version.tar.gz)
+
+build() {
+	cd Pillow-$version
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install --root=$PKG --optimize=0
+}
