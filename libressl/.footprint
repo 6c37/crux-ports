@@ -21,7 +21,6 @@ drwxr-xr-x	root/root	usr/include/openssl/
 -rw-r--r--	root/root	usr/include/openssl/cast.h
 -rw-r--r--	root/root	usr/include/openssl/chacha.h
 -rw-r--r--	root/root	usr/include/openssl/cmac.h
--rw-r--r--	root/root	usr/include/openssl/cms.h
 -rw-r--r--	root/root	usr/include/openssl/comp.h
 -rw-r--r--	root/root	usr/include/openssl/conf.h
 -rw-r--r--	root/root	usr/include/openssl/conf_api.h
@@ -83,19 +82,19 @@ drwxr-xr-x	root/root	usr/include/openssl/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcrypto.a
 -rw-r--r--	root/root	usr/lib/libcrypto.la
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.38.0.0
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so.38 -> libcrypto.so.38.0.0
--rw-r--r--	root/root	usr/lib/libcrypto.so.38.0.0
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.38.0.1
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so.38 -> libcrypto.so.38.0.1
+-rw-r--r--	root/root	usr/lib/libcrypto.so.38.0.1
 -rw-r--r--	root/root	usr/lib/libssl.a
 -rw-r--r--	root/root	usr/lib/libssl.la
-lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.39.0.0
-lrwxrwxrwx	root/root	usr/lib/libssl.so.39 -> libssl.so.39.0.0
--rw-r--r--	root/root	usr/lib/libssl.so.39.0.0
+lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.39.0.1
+lrwxrwxrwx	root/root	usr/lib/libssl.so.39 -> libssl.so.39.0.1
+-rw-r--r--	root/root	usr/lib/libssl.so.39.0.1
 -rw-r--r--	root/root	usr/lib/libtls.a
 -rw-r--r--	root/root	usr/lib/libtls.la
-lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.11.0.0
-lrwxrwxrwx	root/root	usr/lib/libtls.so.11 -> libtls.so.11.0.0
--rw-r--r--	root/root	usr/lib/libtls.so.11.0.0
+lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.11.0.4
+lrwxrwxrwx	root/root	usr/lib/libtls.so.11 -> libtls.so.11.0.4
+-rw-r--r--	root/root	usr/lib/libtls.so.11.0.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcrypto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libssl.pc
@@ -189,7 +188,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_int_ctrl.3.gz -> BIO_ctrl.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_make_bio_pair.3.gz -> BIO_s_bio.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_method_type.3.gz -> BIO_find_type.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_new.3.gz
--rw-r--r--	root/root	usr/share/man/man3/BIO_new_CMS.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_accept.3.gz -> BIO_s_accept.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_bio_pair.3.gz -> BIO_s_bio.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_buffer_ssl_connect.3.gz -> BIO_f_ssl.3.gz
@@ -372,22 +370,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BUF_MEM_free.3.gz -> BUF_MEM_new.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BUF_MEM_grow.3.gz -> BUF_MEM_new.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/BUF_MEM_new.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BUF_strdup.3.gz -> BUF_MEM_new.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_add0_cert.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_add1_recipient_cert.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_add1_signer.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_compress.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_decrypt.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_encrypt.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_final.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_get0_RecipientInfos.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_get0_SignerInfos.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_get0_type.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_get1_ReceiptRequest.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_sign.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_sign_receipt.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_uncompress.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_verify.3.gz
--rw-r--r--	root/root	usr/share/man/man3/CMS_verify_receipt.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/CONF_modules_finish.3.gz -> CONF_modules_free.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CONF_modules_free.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/CONF_modules_load.3.gz -> CONF_modules_load_file.3.gz
@@ -968,7 +950,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_AUX.3.gz -> PEM_read_bio_
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_CRL.3.gz -> PEM_read_bio_PrivateKey.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_REQ.3.gz -> PEM_read_bio_PrivateKey.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_REQ_NEW.3.gz -> PEM_read_bio_PrivateKey.3.gz
--rw-r--r--	root/root	usr/share/man/man3/PEM_write_bio_CMS_stream.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DHparams.3.gz -> PEM_read_bio_PrivateKey.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DSAPrivateKey.3.gz -> PEM_read_bio_PrivateKey.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DSA_PUBKEY.3.gz -> PEM_read_bio_PrivateKey.3.gz
@@ -1062,9 +1043,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/RSA_verify_ASN1_OCTET_STRING.3.gz -> RSA
 lrwxrwxrwx	root/root	usr/share/man/man3/SHA1_Final.3.gz -> SHA1.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SHA1_Init.3.gz -> SHA1.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SHA1_Update.3.gz -> SHA1.3.gz
--rw-r--r--	root/root	usr/share/man/man3/SMIME_read_CMS.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SMIME_read_PKCS7.3.gz
--rw-r--r--	root/root	usr/share/man/man3/SMIME_write_CMS.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SMIME_write_PKCS7.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_description.3.gz -> SSL_CIPHER_get_name.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_get_bits.3.gz -> SSL_CIPHER_get_name.3.gz
@@ -1469,7 +1448,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/des_read_pw_string.3.gz -> des_read_pw.3
 -rw-r--r--	root/root	usr/share/man/man3/evp.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/get_session_cb.3.gz -> SSL_CTX_sess_set_get_cb.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ASN1_OBJECT.3.gz -> d2i_ASN1_OBJECT.3.gz
--rw-r--r--	root/root	usr/share/man/man3/i2d_CMS_bio_stream.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DHparams.3.gz -> d2i_DHparams.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAPrivateKey.3.gz -> d2i_DSAPublicKey.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAPublicKey.3.gz -> d2i_DSAPublicKey.3.gz
