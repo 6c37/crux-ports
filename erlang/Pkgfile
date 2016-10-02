@@ -5,7 +5,7 @@
 
 
 name=erlang
-version=19.1
+version=19.1.1
 release=1
 source=(https://github.com/erlang/otp/archive/OTP-$version.tar.gz)
 
