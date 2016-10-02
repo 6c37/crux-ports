@@ -6,7 +6,7 @@
 
 name=bitchx
 version=1.2.1
-release=1
+release=2
 source=(http://www.bitchx.com/download/$name-$version.tar.gz)
 
 build() {
@@ -16,4 +16,6 @@ build() {
 
 	make 
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/lib/bx/translation
 }
