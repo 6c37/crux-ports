@@ -5,15 +5,15 @@
 
 name=udisks2
 version=2.1.7
-release=1
-source=(http://udisks.freedesktop.org/releases/${name:0:7}-$version.tar.bz2)
+release=2
+source=(http://udisks.freedesktop.org/releases/udisks-$version.tar.bz2)
 
 build() {
-	cd ${name:0:7}-$version
+	cd udisks-$version
 
 	sed -i -e '/^SUBDIRS =/ s/ doc//' Makefile.in
 
-	./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-nls
+	./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --with-udevdir=/usr/lib/udev --localstatedir=/var --disable-nls
 
 	make
 	make DESTDIR=$PKG install
