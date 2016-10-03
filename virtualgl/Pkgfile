@@ -4,8 +4,8 @@
 # Depends on:  xorg-libxv glu libjpeg-turbo xorg-xcb-util-keysyms
 
 name=virtualgl
-version=2.5
-release=2
+version=2.5.1
+release=1
 source=(https://github.com/VirtualGL/$name/archive/$version.tar.gz)
 
 build() {
