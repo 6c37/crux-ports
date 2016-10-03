@@ -11,15 +11,16 @@ source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz
 build() {
 	cd $name-$version
 
-    ./configure \
-            --prefix=/usr \
-            --without-gtk \
-            --without-qt \
-            --disable-video \
-            --without-imagemagick \
-            --without-x
+	./configure \
+		--prefix=/usr \
+		--without-gtk \
+		--without-qt \
+		--disable-video \
+		--without-imagemagick \
+		--without-x
 
-    make DESTDIR=$PKG install
+	make
+	make DESTDIR=$PKG install
 
-    rm -rf $PKG/usr/share/doc
+	rm -rf $PKG/usr/share/doc
 }
