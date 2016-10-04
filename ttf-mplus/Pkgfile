@@ -4,7 +4,7 @@
 # Depends on:  fontconfig	
 
 name=ttf-mplus
-version=061
+version=062
 release=1
 source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-TESTFLIGHT-$version.tar.xz)
 
