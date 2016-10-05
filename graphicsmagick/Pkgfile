@@ -11,13 +11,14 @@ source=(ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-$vers
 build() {
 	cd GraphicsMagick-$version
 
-    ./configure \
-            --prefix=/usr \
-            --disable-static \
-            --enable-shared \
-            --enable-magick-compat
+	./configure \
+		--prefix=/usr \
+		--disable-static \
+		--enable-shared \
+		--enable-magick-compat
 
-    make DESTDIR=$PKG install
-    
-    rm -rf $PKG/usr/share/doc
+		make
+		make DESTDIR=$PKG install
+
+		rm -rf $PKG/usr/share/doc
 }
