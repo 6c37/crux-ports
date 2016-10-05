@@ -17,8 +17,8 @@ build() {
 		--enable-shared \
 		--enable-magick-compat
 
-		make
-		make DESTDIR=$PKG install
+	make
+	make DESTDIR=$PKG install
 
-		rm -rf $PKG/usr/share/doc
+	rm -rf $PKG/usr/share/doc
 }
