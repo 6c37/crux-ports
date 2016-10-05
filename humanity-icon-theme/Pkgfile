@@ -4,9 +4,9 @@
 # Depends on:  
 
 name=humanity-icon-theme
-version=0.6.10
+version=0.6.11
 release=1
-source=(https://launchpad.net/ubuntu/+archive/primary/+files/${name}_$version.tar.gz)
+source=(https://launchpad.net/ubuntu/+archive/primary/+files/${name}_$version.tar.xz)
 
 build() {
 	cd $name-$version
