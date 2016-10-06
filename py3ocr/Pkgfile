@@ -1,7 +1,7 @@
 # Description:  A Python wrapper for Tesseract and Cuneiform.
 # URL:          https://github.com/jflesch/pyocr
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:   tesseract python3 python3-setuptools
+# Depends on:   tesseract python3 python3-setuptools python3-six
 
 name=py3ocr
 version=0.4.2
