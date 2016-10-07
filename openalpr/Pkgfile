@@ -1,0 +1,21 @@
+# Description: An automatic License Plate Recognition library.
+# URL:         http://www.openalpr.com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  opencv tesseract log4cplus
+
+name=openalpr
+version=2.3.0
+release=1
+source=(https://github.com/$name/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version/src
+
+	cmake \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_BUILD_TYPE=Release \
+		.
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
