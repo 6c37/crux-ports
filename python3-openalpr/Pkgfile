@@ -1,0 +1,16 @@
+# Description: An automatic License Plate Recognition library python bindings.
+# URL:         http://www.openalpr.com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3 openalpr
+
+name=python3-openalpr
+version=2.3.0
+release=1
+source=(https://github.com/openalpr/openalpr/archive/v$version.tar.gz)
+
+build() {
+	cd openalpr-$version/src/bindings/python
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install --root=$PKG --optimize=1
+}
