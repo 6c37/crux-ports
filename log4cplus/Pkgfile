@@ -1,0 +1,20 @@
+# Description: A C++ logger very close to Java's log4j.
+# URL:         http://log4cplus.sourceforge.net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=log4cplus
+version=1.2.0
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		 --prefix=/usr \
+		--with-working-locale
+
+	make
+	make DESTDIR=$PKG install
+}
