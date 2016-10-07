@@ -1,0 +1,311 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/opencv_annotation
+-rwxr-xr-x	root/root	usr/bin/opencv_createsamples
+-rwxr-xr-x	root/root	usr/bin/opencv_haartraining
+-rwxr-xr-x	root/root	usr/bin/opencv_performance
+-rwxr-xr-x	root/root	usr/bin/opencv_traincascade
+-rwxr-xr-x	root/root	usr/bin/opencv_visualisation
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/opencv/
+-rw-r--r--	root/root	usr/include/opencv/cv.h
+-rw-r--r--	root/root	usr/include/opencv/cv.hpp
+-rw-r--r--	root/root	usr/include/opencv/cvaux.h
+-rw-r--r--	root/root	usr/include/opencv/cvaux.hpp
+-rw-r--r--	root/root	usr/include/opencv/cvwimage.h
+-rw-r--r--	root/root	usr/include/opencv/cxcore.h
+-rw-r--r--	root/root	usr/include/opencv/cxcore.hpp
+-rw-r--r--	root/root	usr/include/opencv/cxeigen.hpp
+-rw-r--r--	root/root	usr/include/opencv/cxmisc.h
+-rw-r--r--	root/root	usr/include/opencv/highgui.h
+-rw-r--r--	root/root	usr/include/opencv/ml.h
+drwxr-xr-x	root/root	usr/include/opencv2/
+-rw-r--r--	root/root	usr/include/opencv2/calib3d.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/calib3d/
+-rw-r--r--	root/root	usr/include/opencv2/calib3d/calib3d.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/contrib/
+-rw-r--r--	root/root	usr/include/opencv2/contrib/contrib.hpp
+-rw-r--r--	root/root	usr/include/opencv2/contrib/detection_based_tracker.hpp
+-rw-r--r--	root/root	usr/include/opencv2/contrib/hybridtracker.hpp
+-rw-r--r--	root/root	usr/include/opencv2/contrib/openfabmap.hpp
+-rw-r--r--	root/root	usr/include/opencv2/contrib/retina.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/core/
+-rw-r--r--	root/root	usr/include/opencv2/core/affine.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/core.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/core_c.h
+-rw-r--r--	root/root	usr/include/opencv2/core/cuda_devptrs.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/devmem2d.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/eigen.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/gpumat.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/internal.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/mat.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/opengl_interop.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/opengl_interop_deprecated.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/operations.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/types_c.h
+-rw-r--r--	root/root	usr/include/opencv2/core/version.hpp
+-rw-r--r--	root/root	usr/include/opencv2/core/wimage.hpp
+-rw-r--r--	root/root	usr/include/opencv2/features2d.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/features2d/
+-rw-r--r--	root/root	usr/include/opencv2/features2d/features2d.hpp
+-rw-r--r--	root/root	usr/include/opencv2/flann.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/flann/
+-rw-r--r--	root/root	usr/include/opencv2/flann/all_indices.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/allocator.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/any.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/autotuned_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/composite_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/config.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/defines.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/dist.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/dummy.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/dynamic_bitset.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/flann.hpp
+-rw-r--r--	root/root	usr/include/opencv2/flann/flann_base.hpp
+-rw-r--r--	root/root	usr/include/opencv2/flann/general.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/ground_truth.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/hdf5.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/heap.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/hierarchical_clustering_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/index_testing.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/kdtree_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/kdtree_single_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/kmeans_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/linear_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/logger.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/lsh_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/lsh_table.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/matrix.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/miniflann.hpp
+-rw-r--r--	root/root	usr/include/opencv2/flann/nn_index.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/object_factory.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/params.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/random.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/result_set.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/sampling.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/saving.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/simplex_downhill.h
+-rw-r--r--	root/root	usr/include/opencv2/flann/timer.h
+drwxr-xr-x	root/root	usr/include/opencv2/gpu/
+drwxr-xr-x	root/root	usr/include/opencv2/gpu/device/
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/block.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/border_interpolate.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/color.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/common.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/datamov_utils.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/gpu/device/detail/
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/color_detail.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/reduce.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/reduce_key_val.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/transform_detail.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/type_traits_detail.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/detail/vec_distance_detail.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/dynamic_smem.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/emulation.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/filters.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/funcattrib.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/functional.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/limits.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/reduce.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/saturate_cast.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/scan.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/simd_functions.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/static_check.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/transform.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/type_traits.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/utility.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/vec_distance.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/vec_math.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/vec_traits.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/warp.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/warp_reduce.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/device/warp_shuffle.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/devmem2d.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/gpu.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/gpumat.hpp
+-rw-r--r--	root/root	usr/include/opencv2/gpu/stream_accessor.hpp
+-rw-r--r--	root/root	usr/include/opencv2/highgui.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/highgui/
+-rw-r--r--	root/root	usr/include/opencv2/highgui/cap_ios.h
+-rw-r--r--	root/root	usr/include/opencv2/highgui/highgui.hpp
+-rw-r--r--	root/root	usr/include/opencv2/highgui/highgui_c.h
+-rw-r--r--	root/root	usr/include/opencv2/highgui/ios.h
+-rw-r--r--	root/root	usr/include/opencv2/imgproc.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/imgproc/
+-rw-r--r--	root/root	usr/include/opencv2/imgproc/imgproc.hpp
+-rw-r--r--	root/root	usr/include/opencv2/imgproc/imgproc_c.h
+-rw-r--r--	root/root	usr/include/opencv2/imgproc/types_c.h
+drwxr-xr-x	root/root	usr/include/opencv2/legacy/
+-rw-r--r--	root/root	usr/include/opencv2/legacy/blobtrack.hpp
+-rw-r--r--	root/root	usr/include/opencv2/legacy/compat.hpp
+-rw-r--r--	root/root	usr/include/opencv2/legacy/legacy.hpp
+-rw-r--r--	root/root	usr/include/opencv2/legacy/streams.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ml.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/ml/
+-rw-r--r--	root/root	usr/include/opencv2/ml/ml.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/nonfree/
+-rw-r--r--	root/root	usr/include/opencv2/nonfree/features2d.hpp
+-rw-r--r--	root/root	usr/include/opencv2/nonfree/gpu.hpp
+-rw-r--r--	root/root	usr/include/opencv2/nonfree/nonfree.hpp
+-rw-r--r--	root/root	usr/include/opencv2/nonfree/ocl.hpp
+-rw-r--r--	root/root	usr/include/opencv2/objdetect.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/objdetect/
+-rw-r--r--	root/root	usr/include/opencv2/objdetect/objdetect.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/ocl/
+-rw-r--r--	root/root	usr/include/opencv2/ocl/matrix_operations.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ocl/ocl.hpp
+-rw-r--r--	root/root	usr/include/opencv2/opencv.hpp
+-rw-r--r--	root/root	usr/include/opencv2/opencv_modules.hpp
+-rw-r--r--	root/root	usr/include/opencv2/photo.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/photo/
+-rw-r--r--	root/root	usr/include/opencv2/photo/photo.hpp
+-rw-r--r--	root/root	usr/include/opencv2/photo/photo_c.h
+-rw-r--r--	root/root	usr/include/opencv2/stitching.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/stitching/
+drwxr-xr-x	root/root	usr/include/opencv2/stitching/detail/
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/autocalib.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/blenders.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/camera.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/exposure_compensate.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/matchers.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/motion_estimators.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/seam_finders.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/util.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/util_inl.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/warpers.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/detail/warpers_inl.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/stitcher.hpp
+-rw-r--r--	root/root	usr/include/opencv2/stitching/warpers.hpp
+-rw-r--r--	root/root	usr/include/opencv2/superres.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/superres/
+-rw-r--r--	root/root	usr/include/opencv2/superres/optical_flow.hpp
+-rw-r--r--	root/root	usr/include/opencv2/superres/superres.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ts.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/ts/
+-rw-r--r--	root/root	usr/include/opencv2/ts/gpu_perf.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ts/gpu_test.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ts/ts.hpp
+-rw-r--r--	root/root	usr/include/opencv2/ts/ts_gtest.h
+-rw-r--r--	root/root	usr/include/opencv2/ts/ts_perf.hpp
+-rw-r--r--	root/root	usr/include/opencv2/video.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/video/
+-rw-r--r--	root/root	usr/include/opencv2/video/background_segm.hpp
+-rw-r--r--	root/root	usr/include/opencv2/video/tracking.hpp
+-rw-r--r--	root/root	usr/include/opencv2/video/video.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab.hpp
+drwxr-xr-x	root/root	usr/include/opencv2/videostab/
+-rw-r--r--	root/root	usr/include/opencv2/videostab/deblurring.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/fast_marching.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/fast_marching_inl.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/frame_source.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/global_motion.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/inpainting.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/log.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/motion_stabilizing.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/optical_flow.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/stabilizer.hpp
+-rw-r--r--	root/root	usr/include/opencv2/videostab/videostab.hpp
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libopencv_calib3d.so -> libopencv_calib3d.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_calib3d.so.2.4 -> libopencv_calib3d.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_calib3d.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_contrib.so -> libopencv_contrib.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_contrib.so.2.4 -> libopencv_contrib.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_contrib.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_core.so -> libopencv_core.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_core.so.2.4 -> libopencv_core.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_core.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_features2d.so -> libopencv_features2d.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_features2d.so.2.4 -> libopencv_features2d.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_features2d.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_flann.so -> libopencv_flann.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_flann.so.2.4 -> libopencv_flann.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_flann.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_gpu.so -> libopencv_gpu.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_gpu.so.2.4 -> libopencv_gpu.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_gpu.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_highgui.so -> libopencv_highgui.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_highgui.so.2.4 -> libopencv_highgui.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_highgui.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_imgproc.so -> libopencv_imgproc.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_imgproc.so.2.4 -> libopencv_imgproc.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_imgproc.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_legacy.so -> libopencv_legacy.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_legacy.so.2.4 -> libopencv_legacy.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_legacy.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_ml.so -> libopencv_ml.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_ml.so.2.4 -> libopencv_ml.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_ml.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_nonfree.so -> libopencv_nonfree.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_nonfree.so.2.4 -> libopencv_nonfree.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_nonfree.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_objdetect.so -> libopencv_objdetect.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_objdetect.so.2.4 -> libopencv_objdetect.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_objdetect.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_ocl.so -> libopencv_ocl.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_ocl.so.2.4 -> libopencv_ocl.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_ocl.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_photo.so -> libopencv_photo.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_photo.so.2.4 -> libopencv_photo.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_photo.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_stitching.so -> libopencv_stitching.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_stitching.so.2.4 -> libopencv_stitching.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_stitching.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_superres.so -> libopencv_superres.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_superres.so.2.4 -> libopencv_superres.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_superres.so.2.4.13
+-rw-r--r--	root/root	usr/lib/libopencv_ts.a
+lrwxrwxrwx	root/root	usr/lib/libopencv_video.so -> libopencv_video.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_video.so.2.4 -> libopencv_video.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_video.so.2.4.13
+lrwxrwxrwx	root/root	usr/lib/libopencv_videostab.so -> libopencv_videostab.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libopencv_videostab.so.2.4 -> libopencv_videostab.so.2.4.13
+-rwxr-xr-x	root/root	usr/lib/libopencv_videostab.so.2.4.13
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/opencv.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/OpenCV/
+-rw-r--r--	root/root	usr/share/OpenCV/OpenCVConfig-version.cmake
+-rw-r--r--	root/root	usr/share/OpenCV/OpenCVConfig.cmake
+-rw-r--r--	root/root	usr/share/OpenCV/OpenCVModules-release.cmake
+-rw-r--r--	root/root	usr/share/OpenCV/OpenCVModules.cmake
+drwxr-xr-x	root/root	usr/share/OpenCV/doc/
+-rw-r--r--	root/root	usr/share/OpenCV/doc/acircles_pattern.png
+-rw-r--r--	root/root	usr/share/OpenCV/doc/opencv-logo-white.png
+-rw-r--r--	root/root	usr/share/OpenCV/doc/opencv-logo.png
+-rw-r--r--	root/root	usr/share/OpenCV/doc/opencv-logo2.png
+-rw-r--r--	root/root	usr/share/OpenCV/doc/opencv.ico
+-rw-r--r--	root/root	usr/share/OpenCV/doc/pattern.png
+drwxr-xr-x	root/root	usr/share/OpenCV/haarcascades/
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_eye.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_eye_tree_eyeglasses.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalcatface.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalcatface_extended.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_fullbody.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_lefteye_2splits.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_licence_plate_rus_16stages.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_lowerbody.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_eyepair_big.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_eyepair_small.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_leftear.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_lefteye.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_mouth.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_nose.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_rightear.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_righteye.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_mcs_upperbody.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_profileface.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_righteye_2splits.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_russian_plate_number.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_smile.xml
+-rw-r--r--	root/root	usr/share/OpenCV/haarcascades/haarcascade_upperbody.xml
+drwxr-xr-x	root/root	usr/share/OpenCV/lbpcascades/
+-rw-r--r--	root/root	usr/share/OpenCV/lbpcascades/lbpcascade_frontalcatface.xml
+-rw-r--r--	root/root	usr/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml
+-rw-r--r--	root/root	usr/share/OpenCV/lbpcascades/lbpcascade_profileface.xml
+-rw-r--r--	root/root	usr/share/OpenCV/lbpcascades/lbpcascade_silverware.xml
