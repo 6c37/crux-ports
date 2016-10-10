@@ -2929,16 +2929,6 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/templates_py/__pycache__/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/templates_py/ui_pie_menu.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/templates_py/ui_previews_custom_icon.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/templates_py/ui_previews_dynamic_enum.py
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/blender/
--rw-r--r--	root/root	usr/share/doc/blender/GPL-license.txt
--rw-r--r--	root/root	usr/share/doc/blender/GPL3-license.txt
--rw-r--r--	root/root	usr/share/doc/blender/LICENSE-bfont.ttf.txt
--rw-r--r--	root/root	usr/share/doc/blender/Python-license.txt
--rw-r--r--	root/root	usr/share/doc/blender/copyright.txt
--rw-r--r--	root/root	usr/share/doc/blender/jemalloc-license.txt
--rw-r--r--	root/root	usr/share/doc/blender/ocio-license.txt
--rw-r--r--	root/root	usr/share/doc/blender/readme.html
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
