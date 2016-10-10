@@ -4,8 +4,8 @@
 # Depends on:  libpcre libffi python tumbler
 
 name=glib-ahoka
-version=2.50.0
-release=2
+version=2.50.1
+release=1
 source=(
 	http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz
 	gschemas.compiled
