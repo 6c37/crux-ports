@@ -435,7 +435,6 @@ drwxr-xr-x	root/root	usr/lib/guile/2.0/ccache/web/server/
 lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so -> libguile-2.0.so.22.8.1
 lrwxrwxrwx	root/root	usr/lib/libguile-2.0.so.22 -> libguile-2.0.so.22.8.1
 -rwxr-xr-x	root/root	usr/lib/libguile-2.0.so.22.8.1
--rw-r--r--	root/root	usr/lib/libguile-2.0.so.22.8.1-gdb.scm
 -rw-r--r--	root/root	usr/lib/libguilereadline-v-18.a
 -rwxr-xr-x	root/root	usr/lib/libguilereadline-v-18.la
 lrwxrwxrwx	root/root	usr/lib/libguilereadline-v-18.so -> libguilereadline-v-18.so.18.0.0

@@ -17,5 +17,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share/info
-	rm -rf $PKG/usr/lib/libguile-2.0.so.22.8.0-gdb.scm
+	rm -rf $PKG/usr/lib/libguile-2.0.so.22.8.1-gdb.scm
 }
