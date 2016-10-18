@@ -4,12 +4,13 @@
 # Depends on:  unibilium
 
 name=libtermkey
-version=0.18
+_commit=34058046142167cb44260341c500af8988eff618
+version=20161018
 release=1
-source=(http://www.leonerd.org.uk/code/libtermkey/libtermkey-$version.tar.gz)
+source=(https://github.com/neovim/$name/archive/${_commit}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-${_commit}
 
 	make PREFIX=/usr
 	make PREFIX=/usr DESTDIR=$PKG install
