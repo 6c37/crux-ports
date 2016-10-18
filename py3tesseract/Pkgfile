@@ -6,7 +6,7 @@
 name=py3tesseract
 version=0.1.6
 release=1
-source=(https://pypi.python.org/packages/fc/0c/f4d4124d648484005f9f29ed21c986fe9efcce8c90604a6e9fb0de4dda5e/pytesseract-$version.tar.gz)
+source=(https://pypi.python.org/packages/source/p/pytesseract/pytesseract-$version.tar.gz)
 
 build() {
 	cd pytesseract-$version
