@@ -4,19 +4,18 @@
 # Depends on:  syncthing
 
 name=syncthing-inotify
-subname=${name:0:9}
-version=0.8.3
+version=0.8.4
 release=1
 source=(
-	https://github.com/$subname/$name/archive/v$version.tar.gz
+	https://github.com/syncthing/$name/archive/v$version.tar.gz
 	$name
 )
 
 build() {
 	export GOPATH=$(pwd)
-	install -d src/github.com/$subname/
-	mv $name-$version src/github.com/$subname/$name
-	cd src/github.com/$subname/$name
+	install -d src/github.com/syncthing/
+	mv $name-$version src/github.com/syncthing/$name
+	cd src/github.com/syncthing/$name
 
 	go get -v
 	go build -v
