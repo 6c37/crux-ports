@@ -1,11 +1,11 @@
 # Description: Adjusts the color temperature of your screen according to your surroundings.
 # URL:         http://jonls.dk/redshift/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm pygobject-gtk3 py3xdg geoclue2
+# Depends on:  libdrm xorg-libxcb xorg-libxxf86vm
 
 name=redshift
 version=1.11
-release=2
+release=3
 source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.xz)
 
 build() {
@@ -13,8 +13,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-gui \
-		--enable-geoclue2 \
+		--disable-gui \
 		--disable-nls \
 		--disable-ubuntu
 
