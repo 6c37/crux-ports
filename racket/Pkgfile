@@ -4,7 +4,7 @@
 # Depends on:  gtk sqlite3
 
 name=racket
-version=6.6
+version=6.7
 release=1
 source=(http://download.racket-lang.org/installers/$version/$name-$version-src.tgz)
 
