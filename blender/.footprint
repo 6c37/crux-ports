@@ -348,6 +348,7 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_shadow_all.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_subsurface.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_traversal.h
+-rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_types.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_volume.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/bvh_volume_all.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/bvh/qbvh_nodes.h
