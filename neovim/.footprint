@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/autoload/
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/health.vim
 drwxr-xr-x	root/root	usr/share/nvim/runtime/autoload/health/
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/health/nvim.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/autoload/health/provider.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/htmlcomplete.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/javascriptcomplete.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/man.vim
@@ -153,6 +154,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/doc/
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/change.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/cmdline.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/debug.txt
+-rw-r--r--	root/root	usr/share/nvim/runtime/doc/deprecated.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/develop.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/diff.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/digraph.txt
@@ -203,7 +205,6 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/doc/
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/provider.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/quickfix.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/quickref.txt
--rw-r--r--	root/root	usr/share/nvim/runtime/doc/quotes.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/recover.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/remote.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/remote_plugin.txt
@@ -329,6 +330,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/ftplugin/
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/go.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/gpg.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/gprof.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/groovy.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/group.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/grub.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/haml.vim
@@ -777,6 +779,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/syntax/
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/autoit.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/automake.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/ave.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/syntax/avra.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/awk.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/ayacc.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/syntax/b.vim
