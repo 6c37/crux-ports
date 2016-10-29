@@ -4,7 +4,7 @@
 # Depends on:  python3
 
 name=python3-setuptools
-version=28.6.1
+version=28.7.0
 release=1
 source=(https://pypi.io/packages/source/s/setuptools/setuptools-$version.tar.gz)
 
