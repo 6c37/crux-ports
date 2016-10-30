@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/s6-accessrules-cdb-from-fs
 -rwxr-xr-x	root/root	usr/bin/s6-accessrules-fs-from-cdb
+-rwx------	root/root	usr/bin/s6-applyuidgid
 -rwxr-xr-x	root/root	usr/bin/s6-cleanfifodir
 -rwxr-xr-x	root/root	usr/bin/s6-connlimit
 -rwxr-xr-x	root/root	usr/bin/s6-envdir
@@ -38,6 +39,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/s6-mkfifodir
 -rwxr-xr-x	root/root	usr/bin/s6-setlock
 -rwxr-xr-x	root/root	usr/bin/s6-setsid
+-rwx------	root/root	usr/bin/s6-setuidgid
 -rwxr-xr-x	root/root	usr/bin/s6-softlimit
 -rwxr-xr-x	root/root	usr/bin/s6-sudo
 -rwxr-xr-x	root/root	usr/bin/s6-sudoc
@@ -69,6 +71,3 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/s6/
 -rw-r--r--	root/root	usr/lib/s6/libs6.a
 -rwxr-xr-x	root/root	usr/lib/s6/s6lockd-helper
-drwxr-xr-x	root/root	usr/sbin/
--rwx------	root/root	usr/sbin/s6-applyuidgid
--rwx------	root/root	usr/sbin/s6-setuidgid

@@ -4,7 +4,7 @@
 # Depends on:  execline
 
 name=s6
-version=2.3.0.0
+version=2.4.0.0
 release=1
 source=(http://skarnet.org/software/$name/$name-$version.tar.gz)
 
