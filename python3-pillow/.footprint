@@ -195,7 +195,6 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/PIL/__pycache__/features.cpython-35.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/PIL/_binary.py
 -rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_imaging.cpython-35m-x86_64-linux-gnu.so
--rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_imagingcms.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_imagingft.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_imagingmath.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_imagingmorph.cpython-35m-x86_64-linux-gnu.so
@@ -204,9 +203,9 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/PIL/_util.py
 -rwxr-xr-x	root/root	usr/lib/python3.5/site-packages/PIL/_webp.cpython-35m-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/PIL/features.py
-drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/
--rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/top_level.txt
--rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.3.3-py3.5.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/Pillow-3.4.2-py3.5.egg-info/zip-safe
