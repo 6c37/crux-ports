@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/skalibs/
+-rw-r--r--	root/root	usr/include/skalibs/alarm.h
 -rw-r--r--	root/root	usr/include/skalibs/alloc.h
 -rw-r--r--	root/root	usr/include/skalibs/allreadwrite.h
 -rw-r--r--	root/root	usr/include/skalibs/avlnode.h
@@ -47,7 +48,6 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/random.h
 -rw-r--r--	root/root	usr/include/skalibs/randomegd.h
 -rw-r--r--	root/root	usr/include/skalibs/rc4.h
--rw-r--r--	root/root	usr/include/skalibs/rrandom.h
 -rw-r--r--	root/root	usr/include/skalibs/segfault.h
 -rw-r--r--	root/root	usr/include/skalibs/selfpipe.h
 -rw-r--r--	root/root	usr/include/skalibs/setgroups.h
@@ -74,10 +74,6 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/uint32.h
 -rw-r--r--	root/root	usr/include/skalibs/uint64.h
 -rw-r--r--	root/root	usr/include/skalibs/ulong.h
--rw-r--r--	root/root	usr/include/skalibs/unirandom.h
--rw-r--r--	root/root	usr/include/skalibs/unirandomdev.h
--rw-r--r--	root/root	usr/include/skalibs/unirandomegd.h
--rw-r--r--	root/root	usr/include/skalibs/unisurf.h
 -rw-r--r--	root/root	usr/include/skalibs/unix-timed.h
 -rw-r--r--	root/root	usr/include/skalibs/unix-transactional.h
 -rw-r--r--	root/root	usr/include/skalibs/unixconnection.h
@@ -86,18 +82,19 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/ushort.h
 -rw-r--r--	root/root	usr/include/skalibs/webipc.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so -> libskarnet.so.2.3
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.3 -> libskarnet.so.2.3.10
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.3.10 -> libskarnet.so.2.3.10.0
--rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.3.10.0
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so -> libskarnet.so.2.4
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.4 -> libskarnet.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.4.0 -> libskarnet.so.2.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.4.0.0
 drwxr-xr-x	root/root	usr/lib/skalibs/
 -rw-r--r--	root/root	usr/lib/skalibs/libskarnet.a
 drwxr-xr-x	root/root	usr/lib/skalibs/sysdeps/
--rw-r--r--	root/root	usr/lib/skalibs/sysdeps/rt.lib
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/socket.lib
+-rw-r--r--	root/root	usr/lib/skalibs/sysdeps/spawn.lib
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/sysclock.lib
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/sysdeps
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/sysdeps.h
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/tainnow.lib
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/target
+-rw-r--r--	root/root	usr/lib/skalibs/sysdeps/timer.lib
 -rw-r--r--	root/root	usr/lib/skalibs/sysdeps/util.lib
