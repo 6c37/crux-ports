@@ -1,0 +1,11 @@
+--- a/data/org.gnome.EasyTAG.gschema.xml	2016-04-14 22:17:28.076136567 +0200
++++ b/data/org.gnome.EasyTAG.gschema.xml	2016-04-14 22:16:54.979468708 +0200
+@@ -244,7 +244,7 @@
+     <key name="id3v2-version-4" type="b">
+       <summary>Enable ID3v2.4 support</summary>
+       <description>Whether to write ID3v2.4 tags when ID3v2 support is enabled</description>
+-      <default>false</default>
++      <default>true</default>
+     </key>
+ 
+     <key name="id3v2-convert-old" type="b">
