@@ -4,14 +4,15 @@
 # Depends on:  ncurses libmpdclient boost taglib
 
 name=ncmpcpp
-version=0.7.5
+version=0.7.7
 release=1
-source=(http://rybczak.net/ncmpcpp/stable/ncmpcpp-$version.tar.bz2)
+source=(http://rybczak.net/$name/stable/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
 
-	./autogen.sh --prefix=/usr --disable-clock
+	./autogen.sh
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
