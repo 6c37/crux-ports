@@ -8,82 +8,81 @@ version=340.96
 release=1
 source=(
 	http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
-    90-nvidia-uvm.rules
+	90-nvidia-uvm.rules
 	cr4.patch
 )
 
 build() {
-    sh NVIDIA-Linux-x86_64-$version-no-compat32.run --extract-only
-    cd NVIDIA-Linux-x86_64-$version-no-compat32
+	sh NVIDIA-Linux-x86_64-$version-no-compat32.run --extract-only
+	cd NVIDIA-Linux-x86_64-$version-no-compat32
 	patch -p0 < ${SRC}/cr4.patch
 
-    # libraries
-    install -d $PKG/usr/lib/{tls,vdpau}
-    install -m 0755 libGL.so.$version              $PKG/usr/lib
-    install -m 0755 libOpenCL.so.1.0.0             $PKG/usr/lib
-    install -m 0755 libcuda.so.$version            $PKG/usr/lib
-    install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib
-    install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib
-    install -m 0755 libnvidia-encode.so.$version   $PKG/usr/lib
-    install -m 0755 libnvidia-fbc.so.$version      $PKG/usr/lib
-    install -m 0755 libnvidia-glcore.so.$version   $PKG/usr/lib
-    install -m 0755 libnvidia-ifr.so.$version      $PKG/usr/lib
-    install -m 0755 libnvidia-ml.so.$version       $PKG/usr/lib
-    install -m 0755 libnvidia-opencl.so.$version   $PKG/usr/lib
-    install -m 0755 libnvidia-tls.so.$version      $PKG/usr/lib
-    install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib
-    install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib/tls
-    install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib/vdpau
+	# libraries
+	install -d $PKG/usr/lib/{tls,vdpau}
+	install -m 0755 libGL.so.$version              $PKG/usr/lib
+	install -m 0755 libOpenCL.so.1.0.0             $PKG/usr/lib
+	install -m 0755 libcuda.so.$version            $PKG/usr/lib
+	install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib
+	install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib
+	install -m 0755 libnvidia-encode.so.$version   $PKG/usr/lib
+	install -m 0755 libnvidia-fbc.so.$version      $PKG/usr/lib
+	install -m 0755 libnvidia-glcore.so.$version   $PKG/usr/lib
+	install -m 0755 libnvidia-ifr.so.$version      $PKG/usr/lib
+	install -m 0755 libnvidia-ml.so.$version       $PKG/usr/lib
+	install -m 0755 libnvidia-opencl.so.$version   $PKG/usr/lib
+	install -m 0755 libnvidia-tls.so.$version      $PKG/usr/lib
+	install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib
+	install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib/tls
+	install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib/vdpau
 
-    ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so.1
-    ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so
+	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so.1
+	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so
 
-    ln -s libnvcuvid.so.$version $PKG/usr/lib/libnvcuvid.so.1
-    ln -s libnvcuvid.so.$version $PKG/usr/lib/libnvcuvid.so
+	ln -s libnvcuvid.so.$version $PKG/usr/lib/libnvcuvid.so.1
+	ln -s libnvcuvid.so.$version $PKG/usr/lib/libnvcuvid.so
 
-    ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so.1
-    ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so
+	ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so.1
+	ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so
 
-    ln -s libOpenCL.so.1.0.0 $PKG/usr/lib/libOpenCL.so
+	ln -s libOpenCL.so.1.0.0 $PKG/usr/lib/libOpenCL.so
 
-    # xorg driver/extensions
-    install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
-    install -m 0755 nvidia_drv.so                  $PKG/usr/lib/xorg/modules/drivers
-    install -m 0755 libglx.so.$version             $PKG/usr/lib/xorg/modules/extensions
-    install -m 0755 libnvidia-wfb.so.$version      $PKG/usr/lib/xorg/modules
+	# xorg driver/extensions
+	install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
+	install -m 0755 nvidia_drv.so                  $PKG/usr/lib/xorg/modules/drivers
+	install -m 0755 libglx.so.$version             $PKG/usr/lib/xorg/modules/extensions
+	install -m 0755 libnvidia-wfb.so.$version      $PKG/usr/lib/xorg/modules
 
-    # nvidia programs amd man-pages
-    install -d $PKG/usr/{bin,man/man1}
-    install -m 0755 nvidia-{debugdump,persistenced,settings,smi,xconfig} \
-        $PKG/usr/bin
-    install -m 0644 nvidia-{persistenced,settings,smi,xconfig}.1.gz \
-        $PKG/usr/man/man1
+	# nvidia programs amd man-pages
+	install -d $PKG/usr/{bin,man/man1}
+	install -m 0755 nvidia-{debugdump,persistenced,settings,smi,xconfig} \
+	$PKG/usr/bin
+	install -m 0644 nvidia-{persistenced,settings,smi,xconfig}.1.gz \
+	$PKG/usr/man/man1
 
-    # desktop file and icon
-    install -d $PKG/usr/share/{applications,pixmaps}
-    sed -i 's:__UTILS_PATH__:/usr/bin: ; s:__PIXMAP_PATH__:/usr/share/pixmaps:' nvidia-settings.desktop
-    install -m 0644 nvidia-settings.desktop $PKG/usr/share/applications
-    install -m 0644 nvidia-settings.png $PKG/usr/share/pixmaps
+	# desktop file and icon
+	install -d $PKG/usr/share/{applications,pixmaps}
+	sed -i 's:__UTILS_PATH__:/usr/bin: ; s:__PIXMAP_PATH__:/usr/share/pixmaps:' nvidia-settings.desktop
+	install -m 0644 nvidia-settings.desktop $PKG/usr/share/applications
+	install -m 0644 nvidia-settings.png $PKG/usr/share/pixmaps
 
-    # additional symlinks required by gl-select
-    ln -s libGL.so.$version $PKG/usr/lib/libGL_so_1_2_nvidia
-    ln -s libglx.so.$version $PKG/usr/lib/xorg/modules/extensions/libglx_so_nvidia
+	# additional symlinks required by gl-select
+	ln -s libGL.so.$version $PKG/usr/lib/libGL_so_1_2_nvidia
+	ln -s libglx.so.$version $PKG/usr/lib/xorg/modules/extensions/libglx_so_nvidia
 
-    # opencl icd file
-    install -m 0644 -D nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
+	# opencl icd file
+	install -m 0644 -D nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
-    # nvidia-uvm module udev rule
-    install -d $PKG/lib/udev/rules.d
-    install -m 0644 $SRC/90-nvidia-uvm.rules $PKG/lib/udev/rules.d/90-nvidia-uvm.rules
+	# nvidia-uvm module udev rule
+	install -d $PKG/lib/udev/rules.d
+	install -m 0644 $SRC/90-nvidia-uvm.rules $PKG/lib/udev/rules.d/90-nvidia-uvm.rules
 
-    # kernel module
-    cd kernel
+	# kernel module
+	cd kernel
 	IGNORE_CC_MISMATCH=1 make module
-    install -D -m 0644 nvidia.ko $PKG/lib/modules/`uname -r`/extra/nvidia.ko
+	install -D -m 0644 nvidia.ko $PKG/lib/modules/`uname -r`/extra/nvidia.ko
 
-    # nvidia-uvm module
-    cd uvm
+	# nvidia-uvm module
+	cd uvm
 	IGNORE_CC_MISMATCH=1 make module
-    install -D -m 0644 nvidia-uvm.ko $PKG/lib/modules/`uname -r`/extra/nvidia-uvm.ko
+	install -D -m 0644 nvidia-uvm.ko $PKG/lib/modules/`uname -r`/extra/nvidia-uvm.ko
 }
-
