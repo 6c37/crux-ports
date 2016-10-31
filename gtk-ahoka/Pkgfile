@@ -7,7 +7,7 @@ name=gtk-ahoka
 version=2.24.30
 release=1
 source=(
-	http://download.gnome.org/sources/gtk+/2.24/gtk+-$version.tar.xz
+	http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz
 	xid-collision-debug.patch
 	gtk2-filechooser-icon-view.patch
 	gtk.immodules
