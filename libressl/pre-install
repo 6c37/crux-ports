@@ -1,4 +1,0 @@
-#!/bin/sh
-
-cd /usr/ports/core/wget
-pkgmk -do

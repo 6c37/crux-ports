@@ -1,6 +1,0 @@
-23a0b2f0235431d35238df1d3a517fdb  cairo-1.14.6.tar.xz
-d8cbf8b8b4cb3cba83010fb172b0139c  cairo-color-glyphs.patch
-1ec7560b9f05b5b0a6aca41cfdb8ea93  cairo-make-lcdfilter-default.patch
-939d3aaa1941a64d046dffad44d8b371  cairo-respect-fontconfig_pb.patch
-6224cef2ee6602df6e5f49e31e53f8fd  cairo-server-side-gradients.patch
-6080d20e289f5e75cc013e8f40710aa3  cairo-webkit-html5-fix.patch

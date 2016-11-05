@@ -1,9 +1,0 @@
-#!/bin/sh
-
-alias="gtk-ahoka: gtk"
-
-if [ -z "$(grep "$alias" /var/lib/pkg/prt-get.aliases)" ]; then
-	echo "$alias" >> /var/lib/pkg/prt-get.aliases
-fi
-
-gtk-query-immodules-2.0 --update-cache
