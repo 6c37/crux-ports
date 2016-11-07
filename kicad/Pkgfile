@@ -1,21 +1,21 @@
 # Description: A cross-platform and open source electronics design automation suite.
 # URL:         http://kicad-pcb.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  wxpython cmake glew glm swig
+# Depends on:  wxpython cmake glew glm swig boost
 
 name=kicad
 version=4.0.4
 release=1
 source=(
 	https://launchpad.net/$name/${version%.*}/$version/+download/$name-$version.tar.xz
-	boost-1.61.patch
+	boost.patch
 )
 
 build() {
 	cd $name-$version
 
-	export CXXFLAGS=" -std=c++11"
-	patch -p1 -i $SRC/boost-1.61.patch
+	export CXXFLAGS+=" -std=c++11"
+	patch -p1 -i $SRC/boost.patch
 
 	mkdir -p build/release; cd build/release
 
@@ -23,11 +23,12 @@ build() {
 		-DMAN_INSTALL_DIR=/usr/share/man \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DKICAD_REPO_NAME=stable \
-		-DBUILD_GITHUB_PLUGIN=ON \
 		-DKICAD_BUILD_VERSION=$version \
+		-DBUILD_GITHUB_PLUGIN=OFF \
 		-DKICAD_SCRIPTING=ON \
 		-DKICAD_SCRIPTING_MODULES=ON \
 		-DKICAD_SCRIPTING_WXPYTHON=ON \
+		-DPYTHON_LIBRARY=/usr/lib/python2.7/config/libpython2.7.so \
 		-DKICAD_SKIP_BOOST=ON \
 		../../
 
