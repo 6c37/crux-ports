@@ -5,7 +5,7 @@
 
 name=racket
 version=6.7
-release=1
+release=2
 source=(http://download.racket-lang.org/installers/$version/$name-$version-src.tgz)
 
 build () {
@@ -15,4 +15,6 @@ build () {
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/{doc,racket}
 }
