@@ -4,8 +4,8 @@
 # Depends on:  xorg-xcb-util xorg-xcb-util-keysyms
 
 name=sxhkd
-version=0.5.6
-release=2
+version=0.5.7
+release=1
 source=(https://github.com/baskerville/$name/archive/$version.tar.gz)
 
 build () {
