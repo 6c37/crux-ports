@@ -5,13 +5,13 @@
 
 name=luajit
 version=2.0.4
-release=1
+release=2
 source=(http://luajit.org/download/LuaJIT-${version}.tar.gz)
 
 build() {
 	cd LuaJIT-${version}
 
-	make PREFIX="/usr" amalg
+	make PREFIX="/usr" CFLAGS=" -fPIC" amalg
 	make DESTDIR=${PKG} PREFIX="/usr" install
 
 	ln -s /usr/include/luajit-2.0 ${PKG}/usr/include/luajit
