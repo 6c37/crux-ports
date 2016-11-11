@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/share/doc/hatari/
 drwxr-xr-x	root/root	usr/share/doc/hatari/images/
 -rw-r--r--	root/root	usr/share/doc/hatari/images/callgraph.png
 -rw-r--r--	root/root	usr/share/doc/hatari/images/callgraph.svg
+-rw-r--r--	root/root	usr/share/doc/hatari/images/cpu.png
 -rw-r--r--	root/root	usr/share/doc/hatari/images/devices.png
 -rw-r--r--	root/root	usr/share/doc/hatari/images/fileselector.png
 -rw-r--r--	root/root	usr/share/doc/hatari/images/floppydisks.png
