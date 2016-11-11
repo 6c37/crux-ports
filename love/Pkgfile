@@ -4,7 +4,7 @@
 # Depends on:  freetype libmodplug luajit libsdl2 openal physfs mpg123
 
 name=love
-version=0.10.1
+version=0.10.2
 release=1
 source=(https://bitbucket.org/rude/love/downloads/love-$version-linux-src.tar.gz)
 
