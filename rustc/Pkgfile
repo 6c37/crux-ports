@@ -5,9 +5,9 @@
 
 
 name=rustc
-version=1.12.1
+version=1.13.0
 release=1
-source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz) 
+source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz) 
 
 build() {
 	cd $name-$version
