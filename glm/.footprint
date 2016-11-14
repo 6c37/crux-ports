@@ -292,8 +292,8 @@ drwxr-xr-x	root/root	usr/include/glm/simd/
 drwxr-xr-x	root/root	usr/lib64/
 drwxr-xr-x	root/root	usr/lib64/cmake/
 drwxr-xr-x	root/root	usr/lib64/cmake/glm/
+-rw-r--r--	root/root	usr/lib64/cmake/glm/glmConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/glm/glmTargets.cmake
--rw-r--r--	root/root	usr/lib64/cmake/glm/glmVersion.cmake
 drwxr-xr-x	root/root	usr/lib64/pkgconfig/
 -rw-r--r--	root/root	usr/lib64/pkgconfig/glm.pc
 drwxr-xr-x	root/root	usr/share/
