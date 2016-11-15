@@ -4,16 +4,12 @@
 # Depends on:  gtkmm librsvg
 
 name=nitrogen
-version=1.5.2
+version=1.6.0
 release=1
-source=(http://projects.l3ib.org/$name/files/$name-$version.tar.gz
-	001-fix-linker.patch
-)
+source=(http://projects.l3ib.org/$name/files/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 -i $SRC/001-fix-linker.patch
 
 	export CXXFLAGS=" -std=c++11 -g -O2"
 
