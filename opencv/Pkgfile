@@ -1,7 +1,7 @@
 # Description: An Open Source Computer Vision Library.
 # URL:         http://opencv.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake mesa
+# Depends on:  cmake mesa3d
 
 name=opencv
 version=2.4.13.1
