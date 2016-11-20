@@ -575,7 +575,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/gtk-about-symbo
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/mail-reply-sender-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/mail-reply-sender-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/mail-send-receive-symbolic.svg
--rwxr-xr-x	root/root	usr/share/icons/elementary/actions/symbolic/mail-send-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/mail-send-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/mark-location-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/media-eject-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/media-eq-symbolic.svg
@@ -761,10 +761,11 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/32/multimedia-photo-viewer.
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/preferences-desktop-font.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/preferences-desktop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/system-file-manager.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/apps/32/system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/system-software-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/system-software-update.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/system-users.svg
--rw-r--r--	root/root	usr/share/icons/elementary/apps/32/ubiquity.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/32/ubiquity.svg -> system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/32/utilities-terminal.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/32/web-browser.svg -> internet-web-browser.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/apps/48/
@@ -793,10 +794,11 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/multimedia-photo-viewer.
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/preferences-desktop-font.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/preferences-desktop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/system-file-manager.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/apps/48/system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/system-software-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/system-software-update.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/system-users.svg
--rw-r--r--	root/root	usr/share/icons/elementary/apps/48/ubiquity.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/ubiquity.svg -> system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/utilities-terminal.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/web-browser.svg -> internet-web-browser.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/apps/64/
@@ -824,10 +826,11 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/multimedia-photo-viewer.
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/preferences-desktop-font.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/preferences-desktop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/system-file-manager.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/apps/64/system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/system-software-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/system-software-update.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/system-users.svg
--rw-r--r--	root/root	usr/share/icons/elementary/apps/64/ubiquity.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/ubiquity.svg -> system-os-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/utilities-terminal.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/web-browser.svg -> internet-web-browser.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/apps/symbolic/
@@ -1264,6 +1267,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/symbolic/drive-harddisk-
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/drive-multidisk-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/drive-optical-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/drive-removable-media-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/fingerprint-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/input-dialpad-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/input-gaming-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/input-keyboard-symbolic.svg
@@ -2455,6 +2459,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/status/48/aptdaemon-working.svg 
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/battery-low.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/battery-missing.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/bluetooth-disabled-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/status/48/brightness-display-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/dialog-error.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/dialog-information.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/dialog-password.svg
