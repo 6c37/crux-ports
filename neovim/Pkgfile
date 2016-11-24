@@ -5,11 +5,15 @@
 
 name=neovim
 version=0.1.6
-release=1
-source=(https://github.com/neovim/neovim/archive/v$version.tar.gz)
+release=2
+source=(https://github.com/neovim/neovim/archive/v$version.tar.gz
+	CVE-2016-1248.patch
+	)
 
 build() {
 	cd $name-$version
+
+	patch -sl -Np0 -i $SRC/CVE-2016-1248.patch
 
 	mkdir build; cd build
 
