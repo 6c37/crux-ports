@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/netsurf
--rwxr-xr-x	root/root	usr/bin/netsurf.elf
+-rwxr-xr-x	root/root	usr/bin/netsurf-gtk
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/netsurf/
 -rw-r--r--	root/root	usr/share/netsurf/Messages
@@ -50,7 +50,6 @@ drwxr-xr-x	root/root	usr/share/netsurf/throbber/
 -rw-r--r--	root/root	usr/share/netsurf/throbber/throbber7.png
 -rw-r--r--	root/root	usr/share/netsurf/throbber/throbber8.png
 -rw-r--r--	root/root	usr/share/netsurf/toolbar.gtk2.ui
--rw-r--r--	root/root	usr/share/netsurf/toolbarIndices (EMPTY)
 -rw-r--r--	root/root	usr/share/netsurf/viewdata.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/warning.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/welcome.html
