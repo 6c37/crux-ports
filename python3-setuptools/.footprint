@@ -61,14 +61,14 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/pkg_resources/extern/
 drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-35.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-35.pyc
-drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/PKG-INFO
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/SOURCES.txt
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/dependency_links.txt
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/entry_points.txt
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/requires.txt
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/top_level.txt
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools-28.8.0-py3.5.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools-29.0.1-py3.5.egg-info/zip-safe
 drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/__pycache__/
@@ -115,6 +115,9 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/__pycache__/windows_support.cpython-35.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/__pycache__/windows_support.cpython-35.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/archive_util.py
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/cli-32.exe
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/cli-64.exe
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/cli.exe
 drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/command/
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/command/__pycache__/
@@ -177,6 +180,7 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/command/__pycach
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/install_egg_info.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/install_lib.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/install_scripts.py
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/launcher manifest.xml
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/py36compat.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/register.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/command/rotate.py
@@ -195,6 +199,9 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/extern/__pycache
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/extern/__pycache__/__init__.cpython-35.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/extern/__pycache__/__init__.cpython-35.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/glob.py
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/gui-32.exe
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/gui-64.exe
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/gui.exe
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/launch.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/lib2to3_ex.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/monkey.py
@@ -205,8 +212,8 @@ drwxr-xr-x	root/root	usr/lib/python3.5/site-packages/setuptools/extern/__pycache
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/py27compat.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/py31compat.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/sandbox.py
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools/script (dev).tmpl
--rw-rw-r--	root/root	usr/lib/python3.5/site-packages/setuptools/script.tmpl
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/script (dev).tmpl
+-rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/script.tmpl
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/site-patch.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/ssl_support.py
 -rw-r--r--	root/root	usr/lib/python3.5/site-packages/setuptools/unicode_utils.py
