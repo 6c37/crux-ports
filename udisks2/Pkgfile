@@ -4,8 +4,8 @@
 # Depends on:	libgudev polkit libatasmart
 
 name=udisks2
-version=2.1.7
-release=3
+version=2.1.8
+release=1
 source=(http://udisks.freedesktop.org/releases/udisks-$version.tar.bz2)
 
 build() {
