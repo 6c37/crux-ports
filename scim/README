@@ -1,0 +1,9 @@
+- scim needs non-POSIX and non-C locales, please generate locales first.
+- add the following to your ~/.xinitrc:
+
+	export XMODIFIERS=@im=SCIM
+	export GTK_IM_MODULE="scim"
+	export QT_IM_MODULE="scim"
+	LANG=`your langauge` scim -d
+
+- scim-pinyin is added. For other language support, file an issue at #6c37 .
