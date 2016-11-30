@@ -4,6 +4,7 @@ d:weechat
 d:gvolwheel
 d:python3-pillow
 d:s6
+d:scim
 d:neovim
 d:mpd
 d:fgsl
@@ -208,6 +209,7 @@ d:ttf-roboto
 d:abduco
 d:libvterm
 d:libconfig
+d:scim-pinyin
 d:randstr
 d:kicad
 d:compton
@@ -229,6 +231,12 @@ f:e4422369c6e842d612d5c04b80516ece:python3-pillow/.md5sum
 f:903a7516b7cd3bf532303bf918fb585a:s6/Pkgfile
 f:b7536322726dbd381259b8d5f6e4c062:s6/.footprint
 f:3d5ccb3cfbc9bd1c3f11bf0303fb7c3b:s6/.md5sum
+f:ecdaecfa458fcbcf8fe74f07e7d7fd99:scim/Pkgfile
+f:efeead09f0c6b4a366919520e16f9f26:scim/post-install
+f:2fd08fe8f25e5559c2f027086a003da1:scim/.footprint
+f:89a30df95d19045cf749b917a2db5ab9:scim/xinput-scim
+f:c12861d58bb403ec0b518613b13b162d:scim/README
+f:acbac99436fc809d00c9d975c651becf:scim/.md5sum
 f:a144ca25f3dc2736c120e733870e0668:neovim/Pkgfile
 f:3d9b039ffb238fd31c10702b4a629180:neovim/.footprint
 f:898f62f4d3d42b1df67a2db3b96aa10b:neovim/.md5sum
@@ -915,6 +923,9 @@ f:7c10cd052839361849b3a5a3475822eb:libvterm/.md5sum
 f:978c26d380ffee923daad2fe5972ae79:libconfig/Pkgfile
 f:4151e504e97b40f4849211e09c2ef231:libconfig/.footprint
 f:f23c612f7bc813e50b1d42ffe7caaf45:libconfig/.md5sum
+f:c2136f5ccbdec3c20e56b85e73a0414c:scim-pinyin/Pkgfile
+f:cdfe5d720d6765583cd355e441d0fe41:scim-pinyin/.footprint
+f:ebd3bdf051140a703f873fcd9adfdc8a:scim-pinyin/.md5sum
 f:441ee928637de3e3a2a91ef7254eb7aa:randstr/Pkgfile
 f:7463325f2c34577020892640487de320:randstr/.footprint
 f:d2fb495cb2c99a7954eba338087f4f68:randstr/.md5sum
