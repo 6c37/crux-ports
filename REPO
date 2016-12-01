@@ -180,6 +180,7 @@ d:python3-pyflakes
 d:execline
 d:libmtp
 d:opencv
+d:fcitx
 d:openalpr
 d:gexiv2
 d:ttf-zenhei
@@ -188,6 +189,7 @@ d:mingetty
 d:sox
 d:xorg-xfd
 d:arandr
+d:fcitx-configtool
 d:udevil
 d:units
 d:luajit
@@ -830,6 +832,11 @@ f:59486f7fee9bdc40f728cf9bf3b2a0a3:libmtp/.md5sum
 f:0379bc60487d612f87df48d2d80e2825:opencv/Pkgfile
 f:146ea6cfc1d2c6633e1470b3a8052f70:opencv/.footprint
 f:a47958946aeb4e2d22f39c613cd3213e:opencv/.md5sum
+f:e37ed8733f5d2572d7b3603f9e514df4:fcitx/Pkgfile
+f:efeead09f0c6b4a366919520e16f9f26:fcitx/post-install
+f:dd05238f67d4464e8a6881934212cdc8:fcitx/.footprint
+f:404482b5dc63ec0da1177eebb554a659:fcitx/README
+f:ab85c25edd6307de5a2bce95ff8f2c9d:fcitx/.md5sum
 f:8b2d66a621c53952cb4d07d24dd33e12:openalpr/Pkgfile
 f:0a2d0a612ca155b06b58e4acbf26a70f:openalpr/.footprint
 f:053b822743fcc05359cfab0a9d64652d:openalpr/.md5sum
@@ -856,6 +863,9 @@ f:591ace95f972f42275a6ad6645e46876:xorg-xfd/.md5sum
 f:a41c03ab62b37f0ffefe699dba46fe18:arandr/Pkgfile
 f:ab341ce1537dd2eec268e0253fe559b6:arandr/.footprint
 f:65f73134e43b2a0f0229df1711fd1876:arandr/.md5sum
+f:bf3761a2a9dd1e21e1ffe54395d03fa9:fcitx-configtool/Pkgfile
+f:89f0ec72fe9c4a0c467ee8142f3b27df:fcitx-configtool/.footprint
+f:4df605e4266da013ff95c9146d64affd:fcitx-configtool/.md5sum
 f:949b6a65b34ca3f0e140b877b72a580e:udevil/Pkgfile
 f:fc0a500487b8069f78fded0070cf462c:udevil/devmon
 f:5ed8aef73490eeffc60254c703791f38:udevil/post-install
