@@ -1,0 +1,15 @@
+# Description: Set color temperature.
+# URL:         http://www.tedunangst.com/flak/post/sct-set-color-temperature
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=sct
+version=1.0.0
+release=1
+source=(http://www.tedunangst.com/flak/files/sct.c)
+
+build() {
+	cc -std=c99 $CFLAGS -I /usr/X11R6/include -o sct sct.c -L /usr/X11R6/lib -lm -lX11 -lXrandr
+
+	install -Dm755 sct $PKG/usr/bin/sct
+}
