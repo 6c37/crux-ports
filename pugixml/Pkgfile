@@ -4,17 +4,17 @@
 # Depends on:  cmake 
 
 name=pugixml
-version=1.7
+version=1.8.1
 release=1
 source=(http://github.com/zeux/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-${version%.*}
 
 	mkdir -p build
 	cd build
 
-	cmake ../scripts \
+	cmake .. \
     		-DCMAKE_BUILD_TYPE=Release \
     		-DCMAKE_INSTALL_PREFIX=/usr \
     		-DCMAKE_INSTALL_LIBDIR=lib \
