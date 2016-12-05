@@ -1,4 +1,0 @@
-This is a *DEAD* pkg, the upstream has the following announcement:
-
-	Note: This project is now DEAD; end-of-life. There will likely be no further releases.
-	All the code will be migrated into libticket instead. libtermkey should not be used for new programs; use libticket.
