@@ -105,6 +105,7 @@ d:lemonbar
 d:screenfetch
 d:ctypes.sh
 d:qrencode
+d:ibus
 d:otf2bdf
 d:redshift
 d:easytag
@@ -583,6 +584,11 @@ f:0262513981f7659c26efee683ee8d21a:ctypes.sh/.md5sum
 f:c5a614d351c1933d97999c9d8a9319a3:qrencode/Pkgfile
 f:db6454bc5946fbc49a9330f83f115bb0:qrencode/.footprint
 f:4c181c6929c49caeff9426d632d99192:qrencode/.md5sum
+f:78767bae60c21fcbff6554da07c8a79c:ibus/Pkgfile
+f:9df56a0f6f4040fddc1089494ba36ef4:ibus/.footprint
+f:f14eae286ebab0d22a667bb4afe3f71f:ibus/README
+f:efeead09f0c6b4a366919520e16f9f26:ibus/post-install
+f:f5233aa00a58cb26eb7c51ce16a79f03:ibus/.md5sum
 f:7163d32e0d34c4eba4c42090adeff49c:otf2bdf/Pkgfile
 f:225283c9f8cae8540937aa9d1324d595:otf2bdf/.footprint
 f:3b902813a1861edf525b6e44ec799c4f:otf2bdf/.md5sum
