@@ -1,3 +1,3 @@
 #!/bin/sh
 
-useradd -r -d /var/lib/mpd -s /bin/false -G audio mpd
+/usr/sbin/useradd -r -d /var/lib/mpd -s /bin/false -G audio mpd
