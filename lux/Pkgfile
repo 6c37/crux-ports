@@ -1,0 +1,16 @@
+# Description: A linux kernel updater preferring git to patching.
+# URL:         https://github.com/somasis/lux
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git
+
+name=lux
+version=0.7.1
+release=1
+source=(https://github.com//somasis/$name/releases/download/v$version/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	make prefix=/usr
+	make prefix=/usr sysconfdir=/etc localstatedir=/var DESTDIR=$PKG install
+}
