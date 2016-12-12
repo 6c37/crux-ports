@@ -286,7 +286,7 @@ f:4df605e4266da013ff95c9146d64affd:fcitx-configtool/.md5sum
 f:bf6db89c6f967188cb561213636e44be:slop/Pkgfile
 f:3879d31c7675fe5136556830091ba5f7:slop/.footprint
 f:c0c6f733d8d629aa675a0494a2a37535:slop/.md5sum
-f:1e065ee9b3b6006ecdd67019c467ef11:imv/Pkgfile
+f:dd1dce27eab31cb3060dddc359c71531:imv/Pkgfile
 f:2b148c244a1728f658d3d809e4d4d566:imv/.footprint
 f:fbea0fcb6658314ba862c62b0c5369a3:imv/.md5sum
 f:b7d9ab281e313f8bb114e62ad5ecb830:libuv/Pkgfile
@@ -718,7 +718,7 @@ f:603a63157a15b1bee350b5d34845c678:devil/.md5sum
 f:74196a8423da37a7d03174e57a632b37:exfat-utils/Pkgfile
 f:07350cf94a8e739d20a9da6d7fc4ad17:exfat-utils/.footprint
 f:7f88e3adf2858aaa9d99fc8060b16333:exfat-utils/.md5sum
-f:d4bd47c4dfbf14549b122a5e68eb8aa2:lux/Pkgfile
+f:5616d69b479d9dc578f9f2c4b3407626:lux/Pkgfile
 f:662de23462fd2a1a296dfd35ed74e9f5:lux/.footprint
 f:8fc2e5d075b26d4c65f8eb15776ac993:lux/.md5sum
 f:c6732a9ed0d14475a8e4943f9f700870:busybox/Pkgfile
