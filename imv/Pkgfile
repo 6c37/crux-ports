@@ -1,5 +1,5 @@
 # Description: Image viewer for Wayland and X11.
-# URL:         http://github.com/eXeC64/imv
+# URL:         https://github.com/eXeC64/imv
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  freeimage sdl2_ttf
 
