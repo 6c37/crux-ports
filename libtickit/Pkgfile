@@ -4,7 +4,7 @@
 # Depends on:  libtermkey
 
 name=libtickit
-version=415
+version=473
 release=1
 source=(http://www.leonerd.org.uk/code/$name/$name-0+bzr$version.tar.gz)
 

@@ -25,7 +25,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_pen_clear_attr.3.gz -> tickit_pen
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_pen_clone.3.gz -> tickit_pen_new.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_pen_copy.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_pen_copy_attr.3.gz -> tickit_pen_copy.3.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/tickit_pen_destroy.3.gz -> tickit_pen_new.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_pen_equiv.3.gz -> tickit_pen_equiv_attr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_pen_equiv_attr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_pen_get_bool_attr.3.gz
@@ -70,7 +69,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_rectset_get_rects.3.gz -> tickit_
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_char_at.3.gz -> tickit_renderbuffer_char.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_clear.3.gz -> tickit_renderbuffer_eraserect.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_clip.3.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_destroy.3.gz -> tickit_renderbuffer_new.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_erase.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_erase_at.3.gz -> tickit_renderbuffer_erase.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_erase_to.3.gz -> tickit_renderbuffer_erase.3.gz
@@ -83,6 +81,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_has_cursorpos.3.gz -
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_hline_at.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_mask.3.gz -> tickit_renderbuffer_clip.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_new.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_ref.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_reset.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_restore.3.gz -> tickit_renderbuffer_save.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_save.3.gz
@@ -99,6 +98,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_textn.3.gz -> tickit
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_textn_at.3.gz -> tickit_renderbuffer_text.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_renderbuffer_translate.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_ungoto.3.gz -> tickit_renderbuffer_goto.3.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_unref.3.gz -> tickit_renderbuffer_ref.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_vline_at.3.gz -> tickit_renderbuffer_hline_at.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_vtextf.3.gz -> tickit_renderbuffer_text.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_renderbuffer_vtextf_at.3.gz -> tickit_renderbuffer_text.3.gz
@@ -118,7 +118,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_await_started_tv.3.gz -> tic
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_bind_event.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_chpen.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_clear.3.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_destroy.3.gz -> tickit_term_new.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_term_emit_key.3.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_emit_mouse.3.gz -> tickit_term_emit_key.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_erasech.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_flush.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_get_input_fd.3.gz -> tickit_term_set_input_fd.3.gz
@@ -141,6 +142,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_new_for_termtype.3.gz -> tic
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_print.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_printf.3.gz -> tickit_term_print.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_printn.3.gz -> tickit_term_print.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_term_ref.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_refresh_size.3.gz -> tickit_term_get_size.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_scrollrect.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_term_set_input_fd.3.gz
@@ -153,16 +155,21 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_set_size.3.gz -> tickit_term
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_setctl_str.3.gz -> tickit_term_setctl_int.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_setpen.3.gz -> tickit_term_chpen.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_unbind_event_id.3.gz -> tickit_term_bind_event.3.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_unref.3.gz -> tickit_term_ref.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_term_vprintf.3.gz -> tickit_term_print.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_bind_event.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_bottom.3.gz -> tickit_window_get_geometry.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_window_children.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_window_close.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_cols.3.gz -> tickit_window_get_geometry.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_destroy.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_expose.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_flush.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_get_abs_geometry.3.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_get_children.3.gz -> tickit_window_children.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_get_geometry.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_get_pen.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_window_get_term.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_hide.3.gz -> tickit_window_show.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_is_focused.3.gz -> tickit_window_take_focus.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_is_visible.3.gz -> tickit_window_show.3.gz
@@ -175,6 +182,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_lower_to_back.3.gz -> tick
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_parent.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_raise.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_raise_to_front.3.gz -> tickit_window_raise.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tickit_window_ref.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_reposition.3.gz -> tickit_window_set_geometry.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_resize.3.gz -> tickit_window_set_geometry.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_right.3.gz -> tickit_window_get_geometry.3.gz
@@ -192,6 +200,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_set_pen.3.gz -> tickit_win
 -rw-r--r--	root/root	usr/share/man/man3/tickit_window_take_focus.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_top.3.gz -> tickit_window_get_geometry.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_unbind_event_id.3.gz -> tickit_window_bind_event.3.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tickit_window_unref.3.gz -> tickit_window_ref.3.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/tickit.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/tickit_debug.7.gz
