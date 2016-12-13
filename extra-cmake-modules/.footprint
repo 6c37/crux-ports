@@ -55,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMUninstallTarget.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMUseFindModules.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMVersionHeader.h.in
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMWinResolveSymlinks.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ecm_uninstall.cmake.in
 drwxr-xr-x	root/root	usr/share/ECM/toolchain/
 -rw-r--r--	root/root	usr/share/ECM/toolchain/Android.cmake
