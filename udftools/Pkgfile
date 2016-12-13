@@ -7,11 +7,12 @@ name=udftools
 version=1.0.0b3
 release=1
 source=(http://sourceforge.net/projects/linux-udf/files/$name/$version/$name-$version.tar.gz \
-		udftools-1.0.0b3.patch \
-		gcc4-compile.patch \
-		udftools-limits.patch \
-		udftools-open_missing_mode.patch \
-		gcc5-compile-fix.patch)
+	udftools-1.0.0b3.patch \
+	gcc4-compile.patch \
+	udftools-limits.patch \
+	udftools-open_missing_mode.patch \
+	gcc5-compile-fix.patch
+	)
 
 build() {
 	cd $name-$version
