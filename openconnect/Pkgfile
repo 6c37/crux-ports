@@ -4,7 +4,7 @@
 # Depends on:  libxml2 openssl pkg-config vpnc zlib
 
 name=openconnect
-version=7.07
+version=7.08
 release=1
 source=(ftp://ftp.infradead.org/pub/$name/$name-$version.tar.gz)
 
