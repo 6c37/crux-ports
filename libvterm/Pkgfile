@@ -4,8 +4,8 @@
 # Depends on:  
 
 name=libvterm
-_commit=11682793d84668057c5aedc3d7f8071bb54eaf2c
-version=20161115
+_commit=224b8dcde1c9640c29a34aa60c0f0d56ad298449
+version=20161219
 release=1
 source=(https://github.com/neovim/$name/archive/${_commit}.tar.gz)
 
