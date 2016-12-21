@@ -4,7 +4,7 @@
 # Depends on:  cmake mesa3d
 
 name=opencv
-version=2.4.13.1
+version=2.4.13.2
 release=1
 source=(https://github.com/$name/$name/archive/$version.tar.gz)
 
