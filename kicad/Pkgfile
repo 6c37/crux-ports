@@ -4,8 +4,8 @@
 # Depends on:  wxpython cmake glew glm swig boost
 
 name=kicad
-version=4.0.4
-release=2
+version=4.0.5
+release=1
 source=(
 	https://launchpad.net/$name/${version%.*}/$version/+download/$name-$version.tar.xz
 	boost.patch
