@@ -1,10 +1,10 @@
-# Description: Python interpreter, version 3.5.
+# Description: Python interpreter, version 3.6.
 # URL:         http://www.python.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  sqlite3 expat libffi
 
 name=python3
-version=3.5.2
+version=3.6.0
 release=1
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 
@@ -15,8 +15,6 @@ build() {
 	rm -rf Modules/_ctypes/{darwin,libffi}*
 	rm -rf Modules/zlib
 	rm -rf Modules/_decimal/libmpdec
-
-	sed -i '68s/555/755/' Makefile.pre.in
 
 	./configure --prefix=/usr \
 		--enable-shared \
@@ -37,5 +35,5 @@ build() {
 	find $PKG -name "TODO*" -delete
 	find $PKG -name "NEWS*" -delete
 
-	ln -s /usr/bin/python3.5 $PKG/usr/bin/python3
+	ln -s /usr/bin/python3.6 $PKG/usr/bin/python3
 }
