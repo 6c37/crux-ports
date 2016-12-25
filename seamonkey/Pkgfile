@@ -1,23 +1,16 @@
 # Description: The Mozilla internet suite.
 # URL:         http://www.seamonkey-project.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  nss libidl gtk python yasm mesa3d unzip zip libevent libvpx
+# Depends on:  nss libidl gtk python yasm mesa3d unzip zip libevent libvpx icu
 # Optional:    ffmpeg
  
 name=seamonkey
-version=2.40
+version=2.46
 release=4
-source=(
-	https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz
-	firefox-45-disable-location.services.mozilla.com.patch
-	firefox-45-prefs.patch
-)
+source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/firefox-45-disable-location.services.mozilla.com.patch
-	patch -p1 < $SRC/firefox-45-prefs.patch
 
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
@@ -31,7 +24,6 @@ cat <<- EOF > .mozconfig
 
 	ac_add_options --with-system-jpeg
 	ac_add_options --with-system-zlib
-	ac_add_options --with-system-mng
 	ac_add_options --with-system-png
 	ac_add_options --with-system-libvpx
 	ac_add_options --with-system-icu
@@ -49,38 +41,19 @@ cat <<- EOF > .mozconfig
 	ac_add_options --with-distribution-id=nu.crux
 
 	ac_add_options --enable-extensions=default,-gnomevfs
-	ac_add_options --enable-shared
-	ac_add_options --enable-svg
-	ac_add_options --enable-canvas
-	ac_add_options --enable-crypto
-	ac_add_options --enable-single-profile
-	ac_add_options --enable-places
-	ac_add_options --enable-storage
-	ac_add_options --enable-places_bookmarks
-	ac_add_options --enable-image-encoder=all
-	ac_add_options --enable-xft
 	ac_add_options --enable-safe-browsing
 	ac_add_options --enable-url-classifier
 	ac_add_options --enable-gio
 	ac_add_options --enable-elf-hack
 
-	ac_add_options --disable-static
 	ac_add_options --disable-tests
-	ac_add_options --disable-mochitest
 	ac_add_options --disable-dbus
-	ac_add_options --disable-gstreamer
 	ac_add_options --disable-gconf
 	ac_add_options --disable-debug
-	ac_add_options --disable-installer
 	ac_add_options --disable-updater
-	ac_add_options --disable-xprint
-	ac_add_options --disable-profilesharing
-	ac_add_options --disable-gnomevfs
 	ac_add_options --disable-gnomeui
-	ac_add_options --disable-mailnews
 	ac_add_options --disable-crashreporter
 	ac_add_options --disable-necko-wifi
-	ac_add_options --disable-libnotify
 	ac_add_options --disable-pulseaudio
 EOF
 
