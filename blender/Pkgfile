@@ -6,7 +6,7 @@
 
 name=blender
 version=2.78a
-release=1
+release=2
 source=(http://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
@@ -17,10 +17,10 @@ build() {
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DWITH_PYTHON=ON \
-		-DPYTHON_VERSION=3.5 \
+		-DPYTHON_VERSION=3.6 \
 		-DPYTHON_LIBPATH=/usr/lib \
-		-DPYTHON_LIBRARY=python3.5m \
-		-DPYTHON_INCLUDE_DIRS=/usr/include/python3.5m \
+		-DPYTHON_LIBRARY=python3.6m \
+		-DPYTHON_INCLUDE_DIRS=/usr/include/python3.6m \
 		-DWITH_PYTHON_INSTALL=OFF \
 		-DOPENIMAGEIO_ROOT_DIR=/usr \
 		-DWITH_CYCLES=ON \
