@@ -4,7 +4,7 @@
 # Depends on:  libtiff libpng
 
 name=leptonica
-version=1.73
+version=1.74
 release=1
 source=(http://www.$name.com/source/$name-$version.tar.gz)
 
