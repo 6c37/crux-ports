@@ -5,7 +5,7 @@
 
 name=py3crypto
 version=2.6.1
-release=1
+release=2
 source=(https://pypi.python.org/packages/source/p/pycrypto/pycrypto-$version.tar.gz)
 
 build() {
