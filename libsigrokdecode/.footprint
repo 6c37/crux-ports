@@ -6,9 +6,9 @@ drwxr-xr-x	root/root	usr/include/libsigrokdecode/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libsigrokdecode.a
 -rwxr-xr-x	root/root	usr/lib/libsigrokdecode.la
-lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so -> libsigrokdecode.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so.3 -> libsigrokdecode.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libsigrokdecode.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so -> libsigrokdecode.so.3.0.1
+lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so.3 -> libsigrokdecode.so.3.0.1
+-rwxr-xr-x	root/root	usr/lib/libsigrokdecode.so.3.0.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsigrokdecode.pc
 drwxr-xr-x	root/root	usr/share/
@@ -29,16 +29,36 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/arm_itm/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/arm_tpiu/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/arm_tpiu/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/arm_tpiu/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/aud/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/aud/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/aud/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/avr_isp/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/avr_isp/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/avr_isp/parts.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/avr_isp/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/avr_pdi/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/avr_pdi/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/avr_pdi/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/can/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/can/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/can/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/__init__.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/plugtrx/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/plugtrx/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/plugtrx/mod.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/sdcard/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/sdcard/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/sdcard/mod.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/mod.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/dcf77/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dcf77/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dcf77/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/dmx512/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dmx512/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dmx512/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ds1307/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds1307/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds1307/pd.py
@@ -52,6 +72,12 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/eeprom24xx/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/em4100/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/em4100/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/em4100/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/em4305/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/em4305/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/em4305/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/gpib/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/gpib/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/gpib/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/pd.py
@@ -134,6 +160,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/pan1321/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/parallel/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/parallel/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/parallel/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ps2/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ps2/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ps2/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/pwm/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/pwm/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/pwm/pd.py
@@ -146,6 +175,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rfm12/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rgb_led_spi/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rgb_led_spi/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rgb_led_spi/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rgb_led_ws281x/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rgb_led_ws281x/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rgb_led_ws281x/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rtc8564/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rtc8564/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rtc8564/pd.py
@@ -166,12 +198,18 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/spiflash/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/spiflash/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/spiflash/lists.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/spiflash/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ssi32/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ssi32/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ssi32/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/stepper_motor/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/stepper_motor/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/stepper_motor/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/swd/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/swd/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/swd/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/t55xx/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/t55xx/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/t55xx/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/tca6408a/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/tca6408a/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/tca6408a/pd.py
@@ -196,6 +234,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/usb_request/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/usb_signalling/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/usb_signalling/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/usb_signalling/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/wiegand/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/wiegand/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/wiegand/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/xfp/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/xfp/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/xfp/pd.py

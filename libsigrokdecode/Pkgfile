@@ -4,15 +4,12 @@
 # Depends on:  glib python3
 
 name=libsigrokdecode
-version=0.4.0
-release=2
+version=0.4.1
+release=1
 source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	# since 3.6 is not backported, we use this to fix it.
-	sed -i -e 's,python-3.5 >= 3.5,python-3.6 >= 3.6,' configure configure.ac
 
 	./configure --prefix=/usr
 
