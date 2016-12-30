@@ -1,6 +1,5 @@
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/modules/
-drwxr-xr-x	root/root	usr/lib/modules/4.5.0-zen-lappun/
-drwxr-xr-x	root/root	usr/lib/modules/4.5.0-zen-lappun/extra/
--rw-r--r--	root/root	usr/lib/modules/4.5.0-zen-lappun/extra/bbswitch.ko
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/modules/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/
+-rw-r--r--	root/root	lib/modules/<kernel-version>/extra/bbswitch.ko
