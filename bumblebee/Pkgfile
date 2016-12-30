@@ -37,7 +37,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -Dm755 $SRC/bumblebeed /etc/rc.d
+	install -Dm755 $SRC/bumblebeed $PKG/etc/rc.d/bumblebeed
 
 	# Blacklist nvidia and nouveau modules
 	# Reference: https://github.com/Bumblebee-Project/Bumblebee/issues/719

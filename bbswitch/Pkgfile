@@ -12,5 +12,5 @@ build() {
 	cd $name-$version
 
 	make
-	install -Dm644 bbswitch.ko $PKG/usr/lib/modules/`uname -r`/extra/bbswitch.ko
+	install -Dm644 bbswitch.ko $PKG/lib/modules/`uname -r`/extra/bbswitch.ko
 }
