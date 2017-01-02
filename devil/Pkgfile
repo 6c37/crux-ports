@@ -4,25 +4,16 @@
 # Depends on:  libpng libmng jasper lcms openexr
 
 name=devil
-version=1.7.8
+version=1.8.0
 release=1
-source=(
-	http://downloads.sourceforge.net/openil/DevIL-${version}.tar.gz
-	gcc.patch
-	libpng.patch
-)
+source=(http://downloads.sourceforge.net/openil/DevIL-${version}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd DevIL/DevIL
 
-	for p in $SRC/*.patch; do
-		patch -Np1 < $p
-	done
-
-	./configure --prefix=/usr --enable-ILU
+	mkdir build ; cd build
+	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
-	make DESTDIR=${PKG} install
-
-	rm -rf ${PKG}/usr/share/info
+	make DESTDIR=$PKG install
 }

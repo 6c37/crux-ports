@@ -1,26 +1,14 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/ilur
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/IL/
--rw-r--r--	root/root	usr/include/IL/devil_cpp_wrapper.hpp
 -rw-r--r--	root/root	usr/include/IL/il.h
 -rw-r--r--	root/root	usr/include/IL/ilu.h
--rw-r--r--	root/root	usr/include/IL/ilu_region.h
+-rw-r--r--	root/root	usr/include/IL/ilut.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libIL.a
--rwxr-xr-x	root/root	usr/lib/libIL.la
-lrwxrwxrwx	root/root	usr/lib/libIL.so -> libIL.so.1.1.0
-lrwxrwxrwx	root/root	usr/lib/libIL.so.1 -> libIL.so.1.1.0
--rwxr-xr-x	root/root	usr/lib/libIL.so.1.1.0
--rw-r--r--	root/root	usr/lib/libILU.a
--rwxr-xr-x	root/root	usr/lib/libILU.la
-lrwxrwxrwx	root/root	usr/lib/libILU.so -> libILU.so.1.1.0
-lrwxrwxrwx	root/root	usr/lib/libILU.so.1 -> libILU.so.1.1.0
--rwxr-xr-x	root/root	usr/lib/libILU.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libIL.so
+-rwxr-xr-x	root/root	usr/lib/libILU.so
+-rwxr-xr-x	root/root	usr/lib/libILUT.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/IL.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ILU.pc
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/devil/
-drwxr-xr-x	root/root	usr/share/devil/examples/
+-rw-r--r--	root/root	usr/lib/pkgconfig/ILUT.pc
