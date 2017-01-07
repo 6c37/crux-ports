@@ -4,13 +4,13 @@
 # Depends on:  python3
 
 name=python3-pyflakes
-version=1.3.0
-release=2
+version=1.4.0
+release=1
 source=(https://pypi.io/packages/source/p/pyflakes/pyflakes-$version.tar.gz)
 
 build() {
 	cd pyflakes-$version
-	python3 setup.py build
 
+	python3 setup.py build
 	python3 setup.py install --prefix=/usr --root=$PKG --optimize=1
 }
