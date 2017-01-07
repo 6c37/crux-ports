@@ -4,7 +4,7 @@
 # Depends on:  xorg-libxcb xorg-xcb-util-wm
 
 name=xdo
-version=0.5.3
+version=0.5.4
 release=1
 source=(https://github.com/baskerville/$name/archive/$version.tar.gz)
 
