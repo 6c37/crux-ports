@@ -38,6 +38,7 @@ drwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/git_repository/
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/interpreter.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/line_editor.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/line_editor_history_filter.rb
+-rwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/line_editor_native.so
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/magic_variables.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/module_delegator.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/parser.rb

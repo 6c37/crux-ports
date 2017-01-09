@@ -1,6 +1,1 @@
-08cb7c54b51d6483a28db7f3739f072d  gcc4-compile.patch
-629392c8268752855fe2dbd91295dcbf  gcc5-compile-fix.patch
-92f1e78d8a336304e5d6588618b5d3cf  udftools-1.0.0b3.patch
-2f491ddd63f31040797236fe18db9e60  udftools-1.0.0b3.tar.gz
-9d3820b017f2f39f8d3faca12381bcdd  udftools-limits.patch
-ff606c797dbfc04a07781b5cadf2cb6d  udftools-open_missing_mode.patch
+3b538c0ee1e77abae665fdd6f68f37bb  udftools-1.2.tar.gz
