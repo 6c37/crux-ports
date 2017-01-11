@@ -1,12 +1,12 @@
 # Description: A small program that produces a snow effect on your desktop.
-# URL:         http://dropmix.xs4all.nl/rick/Xsnow/
+# URL:         https://janswaal.home.xs4all.nl/Xsnow/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-imake xorg-gccmakedep
 
 name=xsnow
 version=1.42
 release=2
-source=(http://dropmix.xs4all.nl/rick/Xsnow/$name-$version.tar.gz)
+source=(https://janswaal.home.xs4all.nl/rick/Xsnow/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
