@@ -1,0 +1,19 @@
+# Description: Simple MTP fuse filesystem driver.
+# URL:         https://github.com/phatina/simple-mtpfs/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libid3tag fuse glib libmtp
+
+name=simple-mtpfs
+version=0.3.0
+release=1
+source=(https://github.com/phatina/$name/archive/$name-$version.tar.gz)
+
+build() {
+	cd $name-$name-$version
+
+	./autogen.sh
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
