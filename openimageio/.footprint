@@ -11,9 +11,11 @@ drwxr-xr-x	root/root	usr/include/OpenImageIO/
 -rw-r--r--	root/root	usr/include/OpenImageIO/SHA1.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/argparse.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/array_view.h
+-rw-r--r--	root/root	usr/include/OpenImageIO/atomic.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/color.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/coordinate.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/dassert.h
+-rw-r--r--	root/root	usr/include/OpenImageIO/deepdata.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/errorhandler.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/export.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/filesystem.h
@@ -54,12 +56,12 @@ drwxr-xr-x	root/root	usr/include/OpenImageIO/
 -rw-r--r--	root/root	usr/include/OpenImageIO/varyingref.h
 -rw-r--r--	root/root	usr/include/OpenImageIO/version.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so -> libOpenImageIO.so.1.6
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so.1.6 -> libOpenImageIO.so.1.6.18
--rwxr-xr-x	root/root	usr/lib/libOpenImageIO.so.1.6.18
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so -> libOpenImageIO_Util.so.1.6
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so.1.6 -> libOpenImageIO_Util.so.1.6.18
--rwxr-xr-x	root/root	usr/lib/libOpenImageIO_Util.so.1.6.18
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so -> libOpenImageIO.so.1.7
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so.1.7 -> libOpenImageIO.so.1.7.10
+-rwxr-xr-x	root/root	usr/lib/libOpenImageIO.so.1.7.10
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so -> libOpenImageIO_Util.so.1.7
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so.1.7 -> libOpenImageIO_Util.so.1.7.10
+-rwxr-xr-x	root/root	usr/lib/libOpenImageIO_Util.so.1.7.10
 drwxr-xr-x	root/root	usr/lib/python/
 drwxr-xr-x	root/root	usr/lib/python/site-packages/
 -rwxr-xr-x	root/root	usr/lib/python/site-packages/OpenImageIO.so
