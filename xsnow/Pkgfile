@@ -6,7 +6,7 @@
 name=xsnow
 version=1.42
 release=2
-source=(https://janswaal.home.xs4all.nl/rick/Xsnow/$name-$version.tar.gz)
+source=(https://janswaal.home.xs4all.nl/Xsnow/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
