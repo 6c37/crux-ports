@@ -2,12 +2,12 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.6/
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.4-py3.6.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr-0.4.5-py3.6.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/
@@ -17,6 +17,8 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/builders.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/cuneiform.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/cuneiform.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/error.cpython-36.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/error.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/pyocr.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/pyocr.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/tesseract.cpython-36.opt-1.pyc
@@ -25,6 +27,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/__pycache__/util.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/builders.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/cuneiform.py
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/error.py
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/libtesseract/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pyocr/libtesseract/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pyocr/libtesseract/__pycache__/
