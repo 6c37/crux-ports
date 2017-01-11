@@ -4,7 +4,7 @@
 # Depends on:  fontconfig
 
 name=otf-sourceserif
-version=1.017R
+version=2.000R
 release=1
 source=(https://github.com/adobe-fonts/source-serif-pro/archive/$version.tar.gz)
 
