@@ -5,8 +5,8 @@
 # Optional:    rtmpdump	
 
 name=you-get
-version=0.4.595
-release=2
+version=0.4.626
+release=1
 source=(https://github.com/soimort/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
