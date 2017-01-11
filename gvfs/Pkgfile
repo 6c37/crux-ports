@@ -1,7 +1,7 @@
-# Description:	A userspace virtual filesystem designed to work with the I/O abstractions of gio (glib).
-# URL:		https://wiki.gnome.org/Projects/gvfs
-# Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:	gtk3 libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr
+# Description: A userspace virtual filesystem designed to work with the I/O abstractions of gio (glib).
+# URL:         https://wiki.gnome.org/Projects/gvfs
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gtk3 libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr
 
 name=gvfs
 version=1.30.3
