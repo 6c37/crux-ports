@@ -5,15 +5,15 @@
 # Optional:    check intltool
 
 name=girara
-version=0.2.6
+version=0.2.7
 release=1
-source=(https://pwmt.org/projects/${name}/download/${name}-${version}.tar.gz)
+source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share
 }

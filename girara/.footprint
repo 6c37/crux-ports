@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/include/girara/
 -rw-r--r--	root/root	usr/include/girara/entry.h
 -rw-r--r--	root/root	usr/include/girara/girara.h
 -rw-r--r--	root/root	usr/include/girara/input-history.h
+-rw-r--r--	root/root	usr/include/girara/log.h
 -rw-r--r--	root/root	usr/include/girara/macros.h
 -rw-r--r--	root/root	usr/include/girara/session.h
 -rw-r--r--	root/root	usr/include/girara/settings.h
