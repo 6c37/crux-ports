@@ -13,4 +13,3 @@ build() {
 
 	install -D -m 0644 iwlwifi-6050-5.ucode $PKG/lib/firmware/iwlwifi-6050-5.ucode
 }
-
