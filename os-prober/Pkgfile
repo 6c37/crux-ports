@@ -1,7 +1,7 @@
-# Description:	Tool to detect other OSes. 
-# URL:		http://joey.kitenet.net/code/os-prober
-# Maintainer:	6c37 team, https://github.com/6c37/crux-ports/issues
-# Depends on:	
+# Description: Tool to detect other OSes. 
+# URL:         https://joey.kitenet.net/code/os-prober
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
 
 name=os-prober
 version=1.71
@@ -11,10 +11,10 @@ source=(http://ftp.de.debian.org/debian/pool/main/o/$name/${name}_$version.tar.x
 build() {
 	cd $name-$version
 
-	# adjust lib dir to allow detection of 64-bit distros
+	# Adjust lib dir to allow detection of 64-bit distros
 	sed -i -e "s:/lib/ld\*\.so\*:/lib*/ld*.so*:g" os-probes/mounted/common/90linux-distro
 
-	# remove makefile
+	# Remove makefile
 	rm -f Makefile
 
 	# Compile newns
@@ -32,5 +32,5 @@ build() {
 	done
 
 	install -Dm755 os-probes/mounted/powerpc/20macosx $PKG/usr/lib/os-probes/mounted/20macosx
-	install -dm755 $PKG/var/lib/$name	
+	install -dm755 $PKG/var/lib/$name
 }
