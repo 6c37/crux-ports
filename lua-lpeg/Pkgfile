@@ -4,7 +4,7 @@
 # Depends on:  luajit lua51 lua52 lua
 
 name=lua-lpeg
-version=1.0.0
+version=1.0.1
 release=1
 source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
 
