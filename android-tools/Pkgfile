@@ -1,7 +1,7 @@
 # Description: Android platform tools.
 # URL:         https://sites.google.com/a/android.com/tools/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  git
+# Depends on:  
 
 name=android-tools
 version=7.0.0_p24
