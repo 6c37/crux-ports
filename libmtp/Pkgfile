@@ -5,13 +5,15 @@
 
 name=libmtp
 version=1.1.12
-release=1
+release=3
 source=(http://downloads.sourceforge.net/libmtp/libmtp-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr
+	./configure \
+		--prefix=/usr \
+		--with-udev=/lib/udev
 
 	make
 	make DESTDIR=$PKG install

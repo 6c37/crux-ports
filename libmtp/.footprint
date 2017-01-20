@@ -1,3 +1,10 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/hwdb.d/
+-rw-r--r--	root/root	lib/udev/hwdb.d/69-libmtp.hwdb
+-rwxr-xr-x	root/root	lib/udev/mtp-probe
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/69-libmtp.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mtp-albumart
@@ -32,9 +39,3 @@ lrwxrwxrwx	root/root	usr/lib/libmtp.so.9 -> libmtp.so.9.3.0
 -rwxr-xr-x	root/root	usr/lib/libmtp.so.9.3.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libmtp.pc
-drwxr-xr-x	root/root	usr/lib/udev/
-drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
--rw-r--r--	root/root	usr/lib/udev/hwdb.d/69-libmtp.hwdb
--rwxr-xr-x	root/root	usr/lib/udev/mtp-probe
-drwxr-xr-x	root/root	usr/lib/udev/rules.d/
--rw-r--r--	root/root	usr/lib/udev/rules.d/69-libmtp.rules
