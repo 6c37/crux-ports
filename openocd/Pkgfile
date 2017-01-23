@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=openocd
-version=0.9.0
+version=0.10.0
 release=1
 source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
 
@@ -17,8 +17,7 @@ build() {
 	make DESTDIR=$PKG install
 
 	install -d $PKG/lib/udev/rules.d
-	install -m 0644 contrib/99-openocd.rules $PKG/lib/udev/rules.d/99-openocd.rules
+	install -m 0644 contrib/60-openocd.rules $PKG/lib/udev/rules.d/60-openocd.rules
 
-	rm -rf $PKG/usr/share/info
-	rm -rf $PKG/usr/share/openocd/contrib
+	rm -rf $PKG/usr/share/{info,openocd/contrib}
 }
