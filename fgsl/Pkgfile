@@ -5,18 +5,15 @@
 # Optional:    doxygen
 
 name=fgsl
-version=1.1.0
+version=1.2.0
 release=1
-source=(https://github.com/reinh-bader/$name/archive/v$version.tar.gz)
+source=(http://www.lrz.de/services/software/mathematik/gsl/fortran/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	mkdir m4
-	autoreconf -fi
-	
 	./configure --prefix=/usr
 
-	make
-	make DESTDIR=${PKG} install
+	make -j1
+	make DESTDIR=$PKG install
 }
