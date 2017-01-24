@@ -1,0 +1,3 @@
+Please dont use sudo build rustc because rustc will download stage0 
+automatically using shell scripts and movit it to /tmp which is owned by 
+root, in this case, sudo is not sufficient. Use real root instead.
