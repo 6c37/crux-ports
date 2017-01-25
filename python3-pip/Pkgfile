@@ -1,0 +1,15 @@
+# Description: The PyPA recommended tool for installing Python packages.
+# URL:         https://pip.pypa.io/en/stable
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3-setuptools
+
+name=python3-pip
+version=9.0.1
+release=1
+source=(https://pypi.io/packages/source/p/pip/pip-$version.tar.gz)
+
+build() {
+	cd pip-$version
+
+	python3 setup.py install --prefix=/usr --root=$PKG
+}
