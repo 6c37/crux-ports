@@ -12,4 +12,6 @@ build() {
 	cd pip-$version
 
 	python3 setup.py install --prefix=/usr --root=$PKG
+
+	rm -rf $PKG/usr/bin/pip
 }
