@@ -4,17 +4,12 @@
 # Depends:
 
 name=socat
-version=1.7.3.1
+version=1.7.3.2
 release=1
-source=(
-	http://www.dest-unreach.org/$name/download/$name-$version.tar.bz2
-	libressl.patch
-)
+source=(http://www.dest-unreach.org/$name/download/$name-$version.tar.bz2)
 
 build () {
 	cd $name-$version
-
-	patch -p1 < $SRC/libressl.patch
 
 	./configure --prefix=/usr
 
