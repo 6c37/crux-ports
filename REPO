@@ -730,9 +730,9 @@ f:ea26cbb6390c986162223a82cd45d506:parallel/Pkgfile
 f:bbb2c476b5480bb34edef2b26b60bade:parallel/.footprint
 f:94302648116c2c49e6b78e66aa4c2e39:parallel/.md5sum
 f:1d44f40cd589493de8f4541aed8aea09:syncthing/syncthingd
-f:acfca336d8425fccb4773d727794ac7b:syncthing/Pkgfile
+f:ce9979e30346f6dd49d0d7068d056e1c:syncthing/Pkgfile
 f:c3de938c6da4e7a3ca5ffb8c33455e4e:syncthing/.footprint
-f:c8271bdbef2d0aef99a3617be3371a40:syncthing/.md5sum
+f:570f8b6d926eea85ae0d274adafcac2f:syncthing/.md5sum
 f:6d7562023e8c6cdd9ae1895171393414:luajit/Pkgfile
 f:40daa9bda811d0ebd51a30fd6ab3c3f9:luajit/.footprint
 f:bea6ef59da1245af018a05c5843e480a:luajit/.md5sum
