@@ -13,14 +13,14 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pkg_resources/
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/pkg_resources/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pkg_resources/__pycache__/__init__.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/pkg_resources/__pycache__/__init__.cpython-36.pyc
-drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/top_level.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.0.2-py3.6.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools-34.1.0-py3.6.egg-info/zip-safe
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/
@@ -30,6 +30,8 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/archive_util.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/config.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/config.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/dep_util.cpython-36.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/dep_util.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/depends.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/depends.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/__pycache__/dist.cpython-36.opt-1.pyc
@@ -89,6 +91,8 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycach
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/bdist_rpm.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/bdist_wininst.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/bdist_wininst.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/build_clib.cpython-36.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/build_clib.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/build_ext.cpython-36.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/build_ext.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycache__/build_py.cpython-36.opt-1.pyc
@@ -129,6 +133,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycach
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/bdist_egg.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/bdist_rpm.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/bdist_wininst.py
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/build_clib.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/build_ext.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/build_py.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/develop.py
@@ -149,6 +154,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/setuptools/command/__pycach
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/upload.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/command/upload_docs.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/config.py
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/dep_util.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/depends.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/dist.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/setuptools/extension.py
