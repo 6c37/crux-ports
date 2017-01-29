@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=humanity-icon-theme
-version=0.6.11
+version=0.6.12
 release=1
 source=(https://launchpad.net/ubuntu/+archive/primary/+files/${name}_$version.tar.xz)
 
