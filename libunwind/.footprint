@@ -20,11 +20,6 @@ lrwxrwxrwx	root/root	usr/lib/libunwind-generic.so -> libunwind-x86_64.so
 lrwxrwxrwx	root/root	usr/lib/libunwind-ptrace.so -> libunwind-ptrace.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libunwind-ptrace.so.0 -> libunwind-ptrace.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libunwind-ptrace.so.0.0.0
--rw-r--r--	root/root	usr/lib/libunwind-setjmp.a
--rwxr-xr-x	root/root	usr/lib/libunwind-setjmp.la
-lrwxrwxrwx	root/root	usr/lib/libunwind-setjmp.so -> libunwind-setjmp.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libunwind-setjmp.so.0 -> libunwind-setjmp.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libunwind-setjmp.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libunwind-x86_64.a
 -rwxr-xr-x	root/root	usr/lib/libunwind-x86_64.la
 lrwxrwxrwx	root/root	usr/lib/libunwind-x86_64.so -> libunwind-x86_64.so.8.0.1
@@ -39,37 +34,4 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libunwind-coredump.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libunwind-generic.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libunwind-ptrace.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/libunwind-setjmp.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libunwind.pc
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man3/
--rw-r--r--	root/root	usr/share/man/man3/_U_dyn_cancel.3.gz
--rw-r--r--	root/root	usr/share/man/man3/_U_dyn_register.3.gz
--rw-r--r--	root/root	usr/share/man/man3/libunwind-dynamic.3.gz
--rw-r--r--	root/root	usr/share/man/man3/libunwind-ia64.3.gz
--rw-r--r--	root/root	usr/share/man/man3/libunwind-ptrace.3.gz
--rw-r--r--	root/root	usr/share/man/man3/libunwind-setjmp.3.gz
--rw-r--r--	root/root	usr/share/man/man3/libunwind.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_backtrace.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_create_addr_space.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_destroy_addr_space.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_flush_cache.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_accessors.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_fpreg.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_proc_info.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_proc_info_by_ip.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_proc_name.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_get_reg.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_getcontext.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_init_local.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_init_remote.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_is_fpreg.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_is_signal_frame.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_regname.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_resume.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_set_caching_policy.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_set_fpreg.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_set_reg.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_step.3.gz
--rw-r--r--	root/root	usr/share/man/man3/unw_strerror.3.gz
