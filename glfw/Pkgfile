@@ -1,0 +1,20 @@
+# Description: A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input.
+# URL:         http://www.glfw.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg cmake
+
+name=glfw
+version=3.2.1
+release=1
+source=(https://github.com/$name/$name/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	mkdir build; cd build
+
+	cmake ..  -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=on
+
+	make
+	make DESTDIR=$PKG install
+}
