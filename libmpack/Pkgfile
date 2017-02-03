@@ -4,7 +4,7 @@
 # Depends on:  lua51 lua52 lua
 
 name=libmpack
-version=1.0.3
+version=1.0.4
 release=1
 source=(https://github.com/tarruda/$name/archive/$version.tar.gz)
 

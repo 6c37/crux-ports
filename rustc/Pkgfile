@@ -5,14 +5,14 @@
 
 
 name=rustc
-version=1.14.0
+version=1.15.0
 release=1
 source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz) 
 
 build() {
-	cd $name-$version
+	cd $name-$version-src
 
-	./configure --prefix=/usr --disable-docs --release-channel=stable
+	./configure --prefix=/usr --disable-docs --release-channel=stable --disable-rustbuild
 
 	make CFLAGS="$CFLAGS -fPIC -w"
 	make DESTDIR=$PKG install

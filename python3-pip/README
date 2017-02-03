@@ -1,4 +1,3 @@
 if you have install issue with >=python3-setuptools-34.0.x, change 
-python3-setuptool Pkgfile(version=33.1.1 and dependes on: python3) and 
-install python3-setuptools first, then install python3-pip and upgrade 
-python3-setuptools.
+python3-setuptool Pkgfile(version=33.1.1) and install python3-setuptools 
+first, then install python3-pip and upgrade python3-setuptools.

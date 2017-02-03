@@ -10,6 +10,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/actions/16/system-shutdown-pa
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/actions/16/system-shutdown-restart-panel.svg
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/actions/22/
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/actions/24/
+lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/actions@2 -> actions
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/apps/
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/apps/16/
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/apps/16/gnome-do-panel.svg
@@ -155,6 +156,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/apps/24/nm-vpn-connecting14.s
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/apps/24/xchat-panel.svg
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/apps/48/
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/apps/48/gsd-xrandr.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/apps@2 -> apps
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/devices/
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/devices/16/
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/devices/16/nm-device-wired.svg
@@ -170,6 +172,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/devices/24/gnome-dev-wavelan.
 lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/devices/24/network-wired.svg -> ../../status/24/network-transmit-receive.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/devices/24/network-wireless.svg -> ../../status/24/nm-signal-100.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/devices/24/nm-device-wired.svg -> ../../status/24/network-transmit-receive.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/devices@2 -> devices
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/index.theme
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/places/
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/places/16/
@@ -198,6 +201,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/places/64/distributor-logo.sv
 lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/places/64/gnome-main-menu.svg -> start-here.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/places/64/novell-button.svg -> start-here.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/places/64/start-here.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/places@2 -> places
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/status/
 drwxr-xr-x	root/root	usr/share/icons/Humanity-Dark/status/16/
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/status/16/audio-output-none-panel.svg
@@ -846,6 +850,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/status/48/weather-few-clouds-
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/status/48/weather-showers.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/status/48/weather-snow.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity-Dark/status/48/weather-storm.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity-Dark/status@2 -> status
 drwxr-xr-x	root/root	usr/share/icons/Humanity/
 -rw-r--r--	root/root	usr/share/icons/Humanity/CONTRIBUTORS
 drwxr-xr-x	root/root	usr/share/icons/Humanity/actions/
@@ -2202,6 +2207,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/actions/64/stop.svg -> process-sto
 drwxr-xr-x	root/root	usr/share/icons/Humanity/actions/symbolic/
 -rw-r--r--	root/root	usr/share/icons/Humanity/actions/symbolic/list-add-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/actions/symbolic/list-remove-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/actions@2 -> actions
 drwxr-xr-x	root/root	usr/share/icons/Humanity/animations/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/animations/16/
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/animations/16/gnome-spinner-rest.svg -> process-idle.svg
@@ -2287,6 +2293,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/animations/48/brasero-disc-00.svg 
 -rw-r--r--	root/root	usr/share/icons/Humanity/animations/48/brasero-disc-85.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/animations/48/brasero-disc-90.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/animations/48/brasero-disc-95.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/animations@2 -> animations
 drwxr-xr-x	root/root	usr/share/icons/Humanity/apps/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/apps/128/
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/128/Etermutilities-terminal.svg -> utilities-terminal.svg
@@ -2974,7 +2981,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/locale.svg -> preferences-
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/logviewer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/lv_icon.svg -> gnome-fs-blockdev.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/mandrivaupdate.svg -> system-software-update.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/media-player-48.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/media-player-48.svg -> org.gnome.Totem.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/menu-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/mousepad.svg -> accessories-text-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/news-feed.svg -> internet-feed-reader.svg
@@ -3136,7 +3143,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/user-bookmarks.svg -> epip
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/user-info.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/utilities-system-monitor.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/utilities-terminal.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/video-player.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/video-player.svg -> org.gnome.Totem.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/vinagre.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/wallpaper.svg -> preferences-desktop-wallpaper.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/web-browser.svg
@@ -3168,8 +3175,8 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xfsm-suspend.svg -> gnome-
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xfsm-switch.svg -> gnome-session-switch.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xfwm4.svg -> preferences-system-windows.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/ximian-evolution-calendar.svg -> evolution-calendar.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xine.svg -> totem.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xmms.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xine.svg -> org.gnome.Totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xmms.svg -> org.gnome.Totem.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/xscreensaver.svg -> preferences-desktop-screensaver.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/yumex.svg -> system-software-installer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/zen-icon.svg -> system-software-update.svg
@@ -3524,7 +3531,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/locale.svg -> preferences-
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/logviewer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/lv_icon.svg -> gnome-fs-blockdev.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/mandrivaupdate.svg -> system-software-update.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/media-player-48.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/media-player-48.svg -> org.gnome.Totem.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/menu-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/mousepad.svg -> accessories-text-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/news-feed.svg -> internet-feed-reader.svg
@@ -3636,7 +3643,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/user-bookmarks.svg -> epip
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/user-info.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/utilities-system-monitor.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/utilities-terminal.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/video-player.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/video-player.svg -> org.gnome.Totem.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/vinagre.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/visor.svg -> ../../devices/48/pda.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/web-browser.svg
@@ -3667,8 +3674,8 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xfsm-suspend.svg -> gnome-
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xfsm-switch.svg -> gnome-session-switch.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xfwm4.svg -> preferences-system-windows.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/ximian-evolution-calendar.svg -> evolution-calendar.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xine.svg -> totem.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xmms.svg -> totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xine.svg -> org.gnome.Totem.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xmms.svg -> org.gnome.Totem.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/xscreensaver.svg -> preferences-desktop-screensaver.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/yumex.svg -> system-software-installer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/zen-icon.svg -> system-software-update.svg
@@ -3761,6 +3768,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/xfce-unknown.svg -> help-b
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/xfce4-mcs-manager.svg -> gconf-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/xfce4-mcs-manager.xpm -> gconf-editor.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/yumex.svg -> system-software-installer.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps@2 -> apps
 drwxr-xr-x	root/root	usr/share/icons/Humanity/categories/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/categories/128/
 -rw-r--r--	root/root	usr/share/icons/Humanity/categories/128/application-community.svg
@@ -4140,6 +4148,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/64/xfce-multimedia.svg 
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/64/xfce-office.svg -> applications-office.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/64/xfce-system-settings.svg -> preferences-system.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/64/xfce-utils.svg -> applications-accessories.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories@2 -> categories
 drwxr-xr-x	root/root	usr/share/icons/Humanity/devices/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/devices/128/
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices/128/block-device.svg -> drive-harddisk.svg
@@ -4704,6 +4713,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices/64/multimedia-player-apple
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices/64/system.svg -> computer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices/64/yast_HD.svg -> drive-harddisk.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices/64/yast_idetude.svg -> drive-harddisk.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/devices@2 -> devices
 drwxr-xr-x	root/root	usr/share/icons/Humanity/emblems/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/emblems/16/
 -rw-r--r--	root/root	usr/share/icons/Humanity/emblems/16/emblem-OK.icon
@@ -4937,6 +4947,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/emblems/48/emblem-system.svg -> ..
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/emblems/48/emblem-urgent.svg -> ../../apps/48/clock.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/emblems/48/emblem-videos.icon
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/emblems/48/emblem-videos.svg -> ../../mimes/48/video-x-generic.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/emblems@2 -> emblems
 -rw-r--r--	root/root	usr/share/icons/Humanity/index.theme
 drwxr-xr-x	root/root	usr/share/icons/Humanity/mimes/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/mimes/128/
@@ -6563,6 +6574,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/mimes/64/text-htmlh.svg -> text-ht
 -rw-r--r--	root/root	usr/share/icons/Humanity/mimes/64/text-x-preview.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/mimes/64/text-xml.svg -> text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/mimes/64/tgz.svg -> package-x-generic.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/mimes@2 -> mimes
 drwxr-xr-x	root/root	usr/share/icons/Humanity/places/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/places/128/
 -rw-r--r--	root/root	usr/share/icons/Humanity/places/128/bookmark-missing.svg
@@ -7123,6 +7135,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/places/64/xfce-trash_empty.svg -> 
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/places/64/xfce-trash_full.svg -> user-trash-full.svg
 drwxr-xr-x	root/root	usr/share/icons/Humanity/places/scalable/
 -rw-r--r--	root/root	usr/share/icons/Humanity/places/scalable/gnome-fs-directory-accept.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/places@2 -> places
 drwxr-xr-x	root/root	usr/share/icons/Humanity/status/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/status/128/
 -rw-r--r--	root/root	usr/share/icons/Humanity/status/128/aptdaemon-add.svg
@@ -8096,6 +8109,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/status/64/stock_unknown.svg -> dia
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/status/64/xfce-unknown.svg -> dialog-question.svg
 drwxr-xr-x	root/root	usr/share/icons/Humanity/status/scalable/
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/status/scalable/folder-drag-accept.svg -> ../../places/scalable/gnome-fs-directory-accept.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/status@2 -> status
 drwxr-xr-x	root/root	usr/share/icons/Humanity/stock/
 drwxr-xr-x	root/root	usr/share/icons/Humanity/stock/16/
 -rw-r--r--	root/root	usr/share/icons/Humanity/stock/16/stock_insert-note.svg
@@ -8133,3 +8147,4 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/stock/48/stock_new-meeting.svg -> 
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/stock/48/stock_people.svg -> ../../apps/48/system-users.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/stock/48/stock_person.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/stock/48/stock_zoom-page.svg -> ../../actions/48/zoom-best-fit.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/stock@2 -> stock

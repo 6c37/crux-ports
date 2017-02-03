@@ -1,10 +1,10 @@
 # Description: Tools for working with the opus format.
 # URL:         https://www.opus-codec.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  opus
+# Depends on:  opus flac
 
 name=opus-tools
-version=0.1.9
+version=0.1.10
 release=1
 source=(https://archive.mozilla.org/pub/opus/${name}-$version.tar.gz)
 

@@ -4,7 +4,7 @@
 # Depends on:   tesseract python3 python3-setuptools python3-six
 
 name=py3ocr
-version=0.4.5
+version=0.4.6
 release=1
 source=(https://github.com/jflesch/pyocr/archive/$version.tar.gz)
 
