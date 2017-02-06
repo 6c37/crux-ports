@@ -15,6 +15,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/adaptor/boost/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/boost/msgpack_variant_decl.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/boost/optional.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/boost/string_ref.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/boost/string_view.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/carray.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/char_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/check_container_size.hpp
@@ -567,6 +568,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/v1/adaptor/boost/
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/boost/msgpack_variant_decl.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/boost/optional.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/boost/string_ref.hpp
+-rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/boost/string_view.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/carray.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/char_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/check_container_size.hpp
