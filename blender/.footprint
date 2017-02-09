@@ -384,6 +384,8 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_curve.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_motion_curve.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_motion_triangle.h
+-rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_motion_triangle_intersect.h
+-rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_motion_triangle_shader.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_object.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_patch.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/geom_primitive.h
@@ -402,6 +404,7 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/geom/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_emission.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_film.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_globals.h
+-rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_image_opencl.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_jitter.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_light.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/kernel_math.h
@@ -499,6 +502,7 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/svm/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_atomic.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_color.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_half.h
+-rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_hash.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_math.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_math_fast.h
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/kernel/util_static_assert.h

@@ -5,8 +5,8 @@
 # Optional:    cuda
 
 name=blender
-version=2.78a
-release=2
+version=2.78b
+release=1
 source=(http://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
