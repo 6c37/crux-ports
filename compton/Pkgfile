@@ -9,7 +9,7 @@ version=20161110
 release=1
 source=(https://github.com/chjj/$name/archive/${_commit}.tar.gz)
 
-build() {	
+build() {
 	cd $name-${_commit}
 
 	make
