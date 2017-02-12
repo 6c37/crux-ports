@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQKSvdIzVNks44uU8PFYPFGyMhwNJIfOZfplUt3EUcGQIg8p8ZHskucZvdgGqHpmxmUJ53f68xEn1SrGBlfqwA4=
+SHA256 (Pkgfile) = fd26242c7eae95b0460432149c3d799fdd358ba536ab004944c9051203ba4822
+SHA256 (.footprint) = d8df04e3a510af1f0ec59776b66efecafec8aa45853bca7fac54d5b9eae74473
+SHA256 (busybox-1.26.2.tar.bz2) = da3e44913fc1a9c9b7c5337ea5292da518683cbff32be630777f565d6036af16

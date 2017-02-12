@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpbWv1dVGMlj0dpxTYJTJkLFi8T/NyfM0JPnMAtn7zrs4PiyrQzE5TR3tlxJ4JPCDYJizjL1v1HlUktn2++gyGQk=
+SHA256 (Pkgfile) = 9d46fa86ecbb1b31b60bc0d5273ebc69a338443c8e5a9849682c31009c73b9a0
+SHA256 (.footprint) = 752ba14cf59d671aca9782c2e1cbe090c53be93921b0ed84050e633922b40e14
+SHA256 (rubberband-1.8.1.tar.bz2) = ff0c63b0b5ce41f937a8a3bc560f27918c5fe0b90c6bc1cb70829b86ada82b75

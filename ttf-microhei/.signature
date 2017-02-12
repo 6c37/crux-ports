@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpfbI3pVDwHAJDe6SgYR+Yj2Yb+oCUksDjQBMiSvEa0aY9snk8F4zzHV46wtYnmg+oVOPZvHQFzo3c0D1CVKikwA=
+SHA256 (Pkgfile) = c62c221684859040bf0c7d2e6de422e0d14d451227ebc4508b4986a2cd57ac5f
+SHA256 (.footprint) = 963a49c7c07365745d463debd976a33dcadc89f1b26e34f86d63513506bbc4b1
+SHA256 (wqy-microhei-0.2.0-beta.tar.gz) = 2802ac8023aa36a66ea6e7445854e3a078d377ffff42169341bd237871f7213e
+SHA256 (44-wqy-microhei.conf) = 7781f2b92cd68a5967d35eacb4b18fdceeb48da8e51626667ce5434856b4a22b

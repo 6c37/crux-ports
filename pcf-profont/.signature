@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpddCQE1BPPnveUJoufXbXJ+rDk1WJW1P9nSa3xwz5SKXUDaQ2iyE1rwHSLc7i9hUj+ps+m9axY6JrqOzQ6H1dg4=
+SHA256 (Pkgfile) = 45d539554ac4ce95284d9f89b1cdaed6565b4553b54119c7e7055bfb2f2968ec
+SHA256 (.footprint) = a6008ab1a0e9c37930b4171b1d512c3a87315e9e012f98f3ee9f7e007a2faca5
+SHA256 (downloadfile.php?file=profont-x11.zip) = 99ab6ba0e48ea3cba2dee2bb0e1fafe0a4d60541ebc1a47a7cbdffee552c9ca7

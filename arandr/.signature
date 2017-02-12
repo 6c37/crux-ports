@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQ3cl4+TvMuXhoMIwG+xOFb3jOfwOtqEGPmFMWG099WSbpHGIqvv2isCMg54VaStTJ5Ya/SCY+hk9JFnP8OIUwQ=
+SHA256 (Pkgfile) = 711bb5ce3c9576ed74d5f20beae1fd886adf9a024566218c574ff0be41bb3edb
+SHA256 (.footprint) = cc79f349f909255e174ffc480724a34291fa2ecbc85d8a888dd41be1c799041f
+SHA256 (arandr-0.1.9.tar.gz) = bb2b57dc37787c4eb7c33c5136cea3829d1b885862cdd827f16ef51e9f0a6ec4

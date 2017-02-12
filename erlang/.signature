@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpYUzX1tMiuX7GBpdAFA5UQm+vqE6in95cLxIis4OqyBWAibElhi3r6o8+8bqy3pLDKZJ4rq3nzM79MXOPNEVHQU=
+SHA256 (Pkgfile) = 635ef3db928a7127e2c636b3c63a406c5bc89a67e4881bf57ca5fb40c383cadc
+SHA256 (.footprint) = 77226134e169f20f8eec5f43bb8361dbcace1276a8da3bd0549f070bb6ce0a2b
+SHA256 (OTP-19.2.3.tar.gz) = 51dd3eda2b5e835588ed215328c3943b69bc353d892577411570641f37c51ad8

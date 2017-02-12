@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQiu1CbPun2sczkv/al2t9yQBOcf0A3KMW8EYyuNgvnQvnscNILmje0HkdK55N/NMgMK58Eyz8QtA6NLHmNSTA0=
+SHA256 (Pkgfile) = 09b4a3a7f4a8a923dd6b3fa46eba0cbc4006dfc09f2585e88f66e40de91c5ba8
+SHA256 (.footprint) = 22f0c6f29b832ea4046923b7a837f1d95697ac74fb4d308214735af2a2656947
+SHA256 (xmlstarlet-1.6.1.tar.gz) = 15d838c4f3375332fd95554619179b69e4ec91418a3a5296e7c631b7ed19e7ca

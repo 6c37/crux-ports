@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpWAlurAb+Ch1LTPZXtqfHlg079KSOdjQYhdy2BOGc0ZyFLbwXsrj73v6gvDDeluf9++hq1OXP8lxUUv/IlgO4AA=
+SHA256 (Pkgfile) = b875f4421dc3ef5153293fea9ab9ce3bace264dd394f3e9f5966699dca728c3a
+SHA256 (.footprint) = 9698f2f47857757d2a8e184ade9aba392b24b8c4b6aef5588f733b3fedd6e088
+SHA256 (stow-2.2.2.tar.gz) = e2f77649301b215b9adbc2f074523bedebad366812690b9dc94457af5cf273df

@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpfeBGWREUnl5TyxKgeXtkvdMsTI50ugZRkm+hEGX4jk/H8u1C7rOFSLVsVjXo5QE/do72qJi8TZUrqKdvkDiywM=
+SHA256 (Pkgfile) = 90c4bca2fe504485838b1f397959a3c159f26daf532733e3b38d0795092c30ee
+SHA256 (.footprint) = dea8d845f5fd61393703586e3733b36c94f106fee038895e9a3bd7b66931be5f
+SHA256 (vamp-plugin-sdk-2.6.tar.gz) = d0d3578137ac0c1e63f31561081a8d61da526a81152bc1dc9383b629bc07f85f
+SHA256 (001-fix-libtool-archive.patch) = 9dfb66a2e19be69016fca1b6c24a85476a2124c79ecbfc1a53be3b3eb3517f8f

@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpchP2HqUzmP/CmBZFT338S/LHpSW8zkXvrc1TwG2HNGwH1WiqEkfK3SqVgyILxCTM90mPV2q9zZE+bBU++JUOgU=
+SHA256 (Pkgfile) = 81d373fa3cf9683934b73eedf8947069126750b4382f71e87f907baec1bf6081
+SHA256 (.footprint) = 1e51add67e6e25753ac06a33d66d2f3bf0fec7a0b78764b4b5f98198fd835df2
+SHA256 (libserialport-0.1.1.tar.gz) = 4a2af9d9c3ff488e92fb75b4ba38b35bcf9b8a66df04773eba2a7bbf1fa7529d

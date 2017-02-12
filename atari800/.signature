@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQkslpS/3Xxktd9mzELaslvFKF0fIm0cdTgiHt59DVc9hKw0fv/tGXWcy4GpxTUOFJltando8SKJzu980xjXYQo=
+SHA256 (Pkgfile) = 5fbcda2920ff251d7f3577e79120af30f677d9eb95f05d077f7bb38095cce155
+SHA256 (.footprint) = 7e57b70f5e818bbaeb26ec6353016f367485f187d098e8d7bf992a301a8883c0
+SHA256 (atari800-3.1.0.tar.gz) = 901b02cce92ddb0b614f8034e6211f24cbfc2f8fb1c6581ba0097b1e68f91e0c

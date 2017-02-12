@@ -1,2 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpbwNjGAMWArTe1BSxJbtJArcBL+f7lnCmjajlk2AAzRb/Rfs+7hMXzmfypT+wMow3ldIODW4dPZnOXRkRkd9ewg=
+SHA256 (Pkgfile) = 70992d6602d80ad3f88958d9509e7a71b5e4b991fcb7c38bafdd05829d551de9
+SHA256 (.footprint) = 5aa621882065b5f0add2687a9700a37fcd4750b30d36d0b1b5327f3fe4e7a8ba
+SHA256 (NVIDIA-Linux-x86_64-340.96-no-compat32.run) = 280f9db2aea52cab42e141f0393604c7a6d43e7f65d3e60c2319c2674ecc14c4
+SHA256 (90-nvidia-uvm.rules) = c35c61cebf5bf9a112ac06539bdc670a388afa4b50a7f8223a114fbeafedb140
+SHA256 (cr4.patch) = c9986c306f452614fcf23990c55ffe12bdc451bcbd65a5200269f90a722a3d35

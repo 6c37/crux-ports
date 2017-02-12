@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpRQtYA0UTxXMtlICHhhqk46KDGMque6OoYaj70wPwoNKNQVfBHXG1hmNo9FscZVrRSHFBQ2yLvkzEJ0NvENePQg=
+SHA256 (Pkgfile) = e1f933dce104e1ada293ab19903356b32deadd4bb9ac563c204fc206d73c0d3b
+SHA256 (.footprint) = 2e2f25f171fdfcc4cf8b7c41e2cda12a1a7b3a16085010d361c61f58c06f542f
+SHA256 (lxappearance-obconf-0.2.3.tar.xz) = 3150b33b4b7beb71c1803aee2be21c94767d73b70dfc8d2bcaafe2650ea83149

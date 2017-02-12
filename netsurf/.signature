@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpRbY58Z8Rb83IXHmrFWijUMnkztejNkOyReMTAlHsADAQsKp2BvUv04IgP8Zf3qf8UV+74BZ4/JX/7imUb2T/AQ=
+SHA256 (Pkgfile) = ee8c054736ce330a5489c60588d20a830598174749843cb298dcf803e4dda32e
+SHA256 (.footprint) = 038fbacebeeb3efb0401dde683d3ead71e009b182b908bdf149f2830a24da17c
+SHA256 (netsurf-all-3.6.tar.gz) = fdde93ab180222bda8e2135dbb52d7cc1b63c66eaa5da74782f1ce6d894df8b1
+SHA256 (netsurf.sh) = 129dff954bd8e42e60f0d54c84be412ce82c01658833ee4e42842a1784aaab44

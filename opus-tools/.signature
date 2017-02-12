@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpUhUJMcUCZpK15ECER3xvkJLu3RlU18sS0boo5U6vCifUtqzZMvLfcEHdSDkqZBBHBJzvwRg8Kz21N6o3l+Z3AM=
+SHA256 (Pkgfile) = 7a5d1aef8a51d3937604b92944ea11191b5ad8707deb917f51fb2db5ed9fc6ba
+SHA256 (.footprint) = d4b5b170b4833fb6142f82b6f8329c55fe919f9a00c062003693dd6cd1595684
+SHA256 (opus-tools-0.1.10.tar.gz) = a2357532d19471b70666e0e0ec17d514246d8b3cb2eb168f68bb0f6fd372b28c

@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpUR5Y8sUCiLrh+zb/mTQWAdUfdGw+EaFmzn7CUJjkNYP6mReeWDvsb+7fVYzE9N15P8qltHJdXg1e4UmZOvHoQs=
+SHA256 (Pkgfile) = 4a1bc27c191352c3be53b780ad085af6b73733f69bf0e4b2cecc3c24fffbde79
+SHA256 (.footprint) = 052fe398976d00bcc9541f6ba9138c638603a70eccb2ca01d810dbc16930cfdc
+SHA256 (seamonkey-2.46.source.tar.xz) = 39c84ce6fa1ed7c30152473e0dcd858df07437e84b29e5a18973db437a28a912

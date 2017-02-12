@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpb8dIO27Z1LPeJxGT1aKp1LGF2OiYOd0dA6arNFL72XRW+HBUyn1cMQ/lWeNVd0/8DjnuRiim+G1qV0idsFd4Ak=
+SHA256 (Pkgfile) = 27b7e07166ec6c495f323afab249683e6a5acc92b64003efda8e1668d3d41374
+SHA256 (.footprint) = 14cced3ac81cf027c428deaa96a7b5e868d005d84cbcc36ba359df8fe0adf980
+SHA256 (abduco-0.6.tar.gz) = c90909e13fa95770b5afc3b59f311b3d3d2fdfae23f9569fa4f96a3e192a35f4

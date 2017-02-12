@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpVzNccOrhTX/8Ztlqij1bA/pJdNgkkng9o++0e0Qi7PVimoExTQ3TinW9GSRrCw9qlVqs98mV+8TtfImAjuuQwU=
+SHA256 (Pkgfile) = 468c7a28eb838b01baf8dfcc104b77dbe944a44a90c8ddb1b73e30d90c512599
+SHA256 (.footprint) = 5c7895a4a0ed662e383816c1a8144384484b304409f96a3264eed8fbfcdf5332
+SHA256 (wqy-zenhei-0.9.45.tar.gz) = e4b7e306475bf9427d1757578f0e4528930c84c44eaa3f167d4c42f110ee75d6

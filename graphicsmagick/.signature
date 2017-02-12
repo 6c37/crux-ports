@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpdPebNOigOuAOa7KwmIKMK3ScBHuWqsbZd5vMxZ+Alg/NxsNUf0W5klna8O/6RKoE2Td/BAXKxo68mRQH/aYVQA=
+SHA256 (Pkgfile) = 7748681686abd6fd8f961629b583237a19e8da03c60e779d0ca7f388f30bb137
+SHA256 (.footprint) = ca3c2999e879763f06c0b16ec8a57505c43b7dc8aec14965a4b0dae3b460849f
+SHA256 (GraphicsMagick-1.3.25.tar.xz) = d64bfa52d2e0730eff9ce3ed51d4fc78dbb68e2adaa317b2bb3c56e6ee61ac9f

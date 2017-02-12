@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpf4nkP0beKIhqFQspCR3F/kHO14YUKJj7FUhrM2ltyTgDCClbWS/sde9GL64SJ8T6arDLhCu/Rov9NCcJ8TyHQw=
+SHA256 (Pkgfile) = a678f06fa4e7956cd717ff0c226826aca702922be8951daa8a409117c5681904
+SHA256 (.footprint) = 762fc0d1ec20644fea4c7e11990c6df959df087081e3cdf5282f32823f24da02
+SHA256 (moreutils-0.60.tar.gz) = a095e9647ccde72d43a4d39ee215c6ac59a00b2cd1da17ccbcaf70e3923ae011

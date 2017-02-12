@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpc93TC/Jc/ueUQxVPOCtFIrm+udM35mwlXvCN8QO/kR4CnqwoEQR3j7JSlSNosORO0Ma4b54lyEjZtZXs0gIxg8=
+SHA256 (Pkgfile) = f70bfd45f9398b8daab13111ef0cd572276704b852e74227cbda783f33be702b
+SHA256 (.footprint) = 7bf7dac96b6c3de2ce77403282080ddd47488654cfad85ec86589bfa9cf45a32
+SHA256 (bitchx-1.2.1.tar.gz) = 2d270500dd42b5e2b191980d584f6587ca8a0dbda26b35ce7fadb519f53c83e2

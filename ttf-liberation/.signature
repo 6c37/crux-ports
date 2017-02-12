@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpeClPfgMTL2RyLqRaMQAGZml7XX3lxIv85b8tuuO1paCR9v7krJ3prJqKrePcmTd9n2+g5OgziANAfhPJHdxqgU=
+SHA256 (Pkgfile) = 166891a203dcb9009ccb6de1a91e250b2dc10ce6d980e20eb37c81cfc2f6ee3b
+SHA256 (.footprint) = b0a73822c450e89d78662ce295d4f41a8eadd5b8592b4454a3b8475450a4bc1c
+SHA256 (liberation-fonts-ttf-2.00.1.tar.gz) = 7890278a6cd17873c57d9cd785c2d230d9abdea837e96516019c5885dd271504

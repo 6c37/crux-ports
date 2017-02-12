@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQGUGkYrGQ7WMWK+BIwT6bT+4q2N8VLKSHKF6Q69jAtFUp3ueW1DYiEqdQWZodt90zKriTtJ6zjn5wCC8AqO/gw=
+SHA256 (Pkgfile) = b3bae995241d90d544a626c951051dd29eaf55d8dc17e89694136caaab04d5cb
+SHA256 (.footprint) = 7feb667389a8cf8cb84de7687e07d9890293efe28660cc118d9c067a760fde3c
+SHA256 (luit-1.1.1.tar.gz) = 87b0be0bd01f3b857a53e6625bdd31cef18418c95394b7f4387f8ecef78e45da
+SHA256 (git_fixes.patch) = aa5d83b8cc772e135e57ae0f0d2b7662b51981f4a120a136a7b201c254b23327

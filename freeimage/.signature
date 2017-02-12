@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpQ0nvaRfvLzH86WtJgjJ/ixo1tNmVlOeFbftZxVh/fQBANBO2NvUrcJZZ7y9Qq6yZk9lA9Qvjd56+YUE3V3OUgg=
+SHA256 (Pkgfile) = f5b31b7b2dc62334200e577acd6e53859d4f3f0997d27778b373015d54db7c82
+SHA256 (.footprint) = fe660fb7d198fba03180c8ae1760f25e98700e5798fe7d7fccf105d40959d79c
+SHA256 (FreeImage3170.zip) = fbfc65e39b3d4e2cb108c4ffa8c41fd02c07d4d436c594fff8dab1a6d5297f89
+SHA256 (gcc5.diff) = ccb5d30bba4932d512db066acca5781e46404b62619f43f98d8bf2a8f314133e

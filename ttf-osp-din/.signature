@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpa/z5NmOwj0GxL8HG0ukLYYXxrUcsM3cPx92ld/SP+tLc5OFnhXuNY4JkkbfavSlA6vl6x7nBgukvwwrnc07xgs=
+SHA256 (Pkgfile) = 23b8611cf8b149b73d00d58df1dcf8cca5462844d798399145bdf9e97983f18c
+SHA256 (.footprint) = 03d32f1994acd550132901ba027d7161a6151f19cb7be565c6fe492541825baf
+SHA256 (OSP-foundry_DIN.zip) = 3b88ee35eb9ed3acfa52733da8e79bbca0b17c23f3a679a3c4d4bc4d9e34cc55

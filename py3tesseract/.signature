@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpcbcfm4/4vxX5qStPYYKUSxK6WtIPgKUxRAPkVTrcEyMUk9pJEczfYwWwOR5e7kCE3EgS59ODavsD3jcthKlWgs=
+SHA256 (Pkgfile) = a969d59619889114e95a5bfa0d94dd7704dabc5738dc7878291ffa2bebf07e54
+SHA256 (.footprint) = bf677c4394c42eb9ed5a1351a2b40b03a721cf8c1110207663c6cb2949619568
+SHA256 (pytesseract-0.1.6.tar.gz) = 319c3a47114d32813c305cf61463106fc57baf4e0d84318b938a640d1e8550cb

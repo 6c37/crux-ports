@@ -1,2 +1,11 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpVKsMoF0OvIdndkzt7+igWZFqwafBpYN/Dna3BEKamlJLR+lqVsAvldSVwKv/yqAwq9y8B8TToTyr3x3bzoYhQY=
+SHA256 (Pkgfile) = 4d64567d39d0b4dced28ee8a60e624790eaf4799373325cb9ffecf801f9065ef
+SHA256 (.footprint) = 2b9b386c0968394f9fcf2af2745d63a6b12c993431cfc5c9d85f57ba2b2cb7ec
+SHA256 (android-tools-core-7.0.0_r24.tar.gz) = b6eac2868570c458418c9d9317a00d5ca2552eb33faa693a8014b928c71c1718
+SHA256 (android-tools-extras-7.0.0_r24.tar.gz) = 7085bba77af11b7758a4146bc7b13aa2c3ba6ca0e15ccf9173bc86fc32bf5342
+SHA256 (android-tools-libselinux-7.0.0_r24.tar.gz) = cd6ec4a1ba06e76dbb2e9eeaa06d23d39e48a21186a9bcc7522694ca1b603b3d
+SHA256 (android-tools-f2fs-tools-7.0.0_r24.tar.gz) = 53ae7ea6f7c28847ea249624681fc055b0e95b27f09a55946e22a8352aa91887
+SHA256 (android-tools-safe-iop-7.0.0_r24.tar.gz) = 7e961123b32bd0e6fd2d594508746bcaefb6e56990f3afc2c4891f25fcbd7a4d
+SHA256 (android-tools-gtest-7.0.0_r24.tar.gz) = 8d8e482c14b39df2e5f9db9d0dec6696adeaaf8380de4a7afd76ee83ac702b7a
+SHA256 (android-tools.patch) = 08686f177f6c1bd6901b43816aa83e5f1f3c512f583470b1a520b62d54c3d3e6

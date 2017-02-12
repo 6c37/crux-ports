@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpUC+hbpZ5nstohNZfTQLi1js6Ui+wCI2gAyxIi1hqWw6Yw/aHKMaSStF+CxSrDsf1Xd7PaHpvhlcLuLwdz8kPgw=
+SHA256 (Pkgfile) = 62d4399906bf7d02b58fb2e839e146ba64303fa422c85f9490fe7b0ea06e8f7d
+SHA256 (.footprint) = c512e1b480d22d8d3635ffdad6f33b51fd3601ed2aba394b3ee5b110ad9fb0c3
+SHA256 (vpnc-0.5.3.tar.gz) = 46cea3bd02f207c62c7c6f2f22133382602baeda1dc320747809e94881414884

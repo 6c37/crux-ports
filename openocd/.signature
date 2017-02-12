@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpTqu9FiM40C/qEzixkaJyROwhP561ZhzuI1ThbZPZFRR31CUmRLZvucRaw/KcIUulcNv+bDPdDgz08Fpby+phwg=
+SHA256 (Pkgfile) = 77fe32390c3a01fd9029574b1954e53a9c7546e80a8634bafd3147ff8064eec3
+SHA256 (.footprint) = f7fa4097c8dfa5bfccad7f72d3a3a8d414cc6d069e963e45292a593703bda60d
+SHA256 (openocd-0.10.0.tar.gz) = eda3b03919cc0ffb70e7de9c877092a0311aaaa4e1532937e9f86ac1863fe526

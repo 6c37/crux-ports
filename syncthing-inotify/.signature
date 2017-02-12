@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpaaqqTCZj4P+VWdqQEd+is+uTy03RbCkgdA2hzhbm88ckZb0iqLC+Dq1fCzKovnFuK9Eb30nmPt5mg4fFyGTwQA=
+SHA256 (Pkgfile) = baea220d75a20632e8282a3e12fd376c8ed1c1b16620576a85ef0f39427d757e
+SHA256 (.footprint) = 5d1580d5b530ecfea4f76a3969b4ca74e85e0bee0a7f4e2059005b038350b03b
+SHA256 (v0.8.5.tar.gz) = 552db71ddd086ffd21390e3bca4ceb2de53e0d4383a9321b8be17611ddb92aa4
+SHA256 (syncthing-inotify) = 0d2a5465285ffe8f331b4842882a45a14aa8ef4ae53251942f0735cc240d20cb

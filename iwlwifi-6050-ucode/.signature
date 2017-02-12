@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpR642hD4xAV0sneCayBQBojoyIIdEq4TROyahyYpuNKlKPwtq7R8i1VEItLLMDs7ZPRQdsDVJLanBJZI+CAXlwQ=
+SHA256 (Pkgfile) = 1573e670e3b0aabde27a815d263c76fc9de8c90ffc30bcc635eb964d96d5ff9e
+SHA256 (.footprint) = 733458d2d60833b8b1d26cec389988a32b190a08fdd98e68133b270b997aa374
+SHA256 (iwlwifi-6050-ucode-41.28.5.1.tgz) = 597d9a3ddb4b69f4590b436cf33d30a342bab2de3c9d8fa3d007b039accb20c4

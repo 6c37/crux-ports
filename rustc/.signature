@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpWi3HKU1EZXb0yXpuxIgGizd1fIVe4Scp7MIkzOXOx5AVBkZ7MIHKM6DMhyMrpVbzjr5UuiN6OuntR7P8vJRaAo=
+SHA256 (Pkgfile) = 76fec7db52d822e4ec06e878e94ac3cdf80bfb13e7f18e1177b8615c5ee4af46
+SHA256 (.footprint) = 4e86fd8ab27b35f32b0c5c3d32dea3e52613bf7c753a4a91ff7ba650ba7a60c9
+SHA256 (rustc-1.15.1-src.tar.gz) = 2e7daad418a830b45b977cd7ecf181b65f30f73df63ff36e124ea5fe5d1af327

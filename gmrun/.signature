@@ -1,2 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpbb0b6SaetbeR5x7a+GI6GvHc+rjbwchbtW26z1XHOrXqJueaMqgmGGCH2+KkNxdHdVM2KfJpXacnRF0Q6BGHQY=
+SHA256 (Pkgfile) = 7188e5429fc0a6f819b7bb8120a344821e5491dcb46d3bc0de4b559b3755b970
+SHA256 (.footprint) = 613cd9cf1779343272dafda13e9faeb5aee5b042f0309f159cd986d200e5e4bc
+SHA256 (gmrun-0.9.2.tar.gz) = 17297bce53249ccc7145931db22251b47f77ac355f78cf8abf1e87ae16341fa0
+SHA256 (gmrun-0.9.2-gcc43.patch) = 89b50fe01ab40386208de1f5ba32295fb6a33abb3e6fa809c402f26810124aba
+SHA256 (gmrun-0.9.2-glibc210.patch) = 3e3428398cc578e0dd3cea42ba8a4b9d98267e2305c6c307af5acaee82924ccf

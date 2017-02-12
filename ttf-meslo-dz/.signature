@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd7s1CSVIcl8vSyFXYKczXYDNzkVgE14veCbaULPXKnTle4+w/s9jJwqwNvnpRFTRJINb4aLRMOeh+lnSz0zQU=
+RWSsZdBvSzGVpUrgOyS0zvqpJyTeqiQqC5s1kyLAMVnyZAEJjXUu/WmsMmQITwpu0MJJKQI9ynhmJkHS15TC/EgH14SyZMX27gs=
+SHA256 (Pkgfile) = f82f94a169ee149e974d2035458de96f2c8ae0e1ca6f6afb24ce6738b219bf05
+SHA256 (.footprint) = 22c1e0d6a1fa11b5fb98d3da5afe2a50e6607097f7d934a5b58a00c3ab3e2048
+SHA256 (Meslo%20LG%20DZ%20v1.2.1.zip) = e5201a6816281872c23a2b2f43ac91dc8c1f9d91e9f4b82d64e9bfcb769ecb52
