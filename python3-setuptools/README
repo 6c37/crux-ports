@@ -1,9 +1,0 @@
-if you have install issue with >=python3-setuptools-34.0.x, change 
-python3-setuptool Pkgfile(version=33.1.1) and install python3-setuptools 
-first, then install python3-pip and upgrade python3-setuptools.
-
-The reason why we drop python3-pip as a dependency of 
-python3-setuptools is that currently python3-pip depends on 
-python3-setuptools, and if we add python3-pip as a dependency of 
-python3-setuptools, cyclic dependency will happen, and you wont be 
-able to execute any prt-get commands in that case.
