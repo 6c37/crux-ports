@@ -928,7 +928,6 @@ drwxr-xr-x	root/root	usr/lib/bx/help/8_Scripts/
 -rw-r--r--	root/root	usr/lib/bx/help/8_Scripts/wallopstat.bz2
 -rw-r--r--	root/root	usr/lib/bx/help/8_Scripts/webster.bz2
 -rw-r--r--	root/root	usr/lib/bx/help/8_Scripts/window.bz2
--rw-r--r--	root/root	usr/lib/bx/help/README_FIRST.bz2
 drwxr-xr-x	root/root	usr/lib/bx/plugins/
 -rw-r--r--	root/root	usr/lib/bx/plugins/BitchX.hints
 -rwxr-xr-x	root/root	usr/lib/bx/plugins/acro.so
