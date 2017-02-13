@@ -310,7 +310,6 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/archimesh/__pycache__
 drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/archimesh/images/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/archimesh/images/fabric_diffuse.png
 drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/blender_id/
--rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/blender_id/README.md
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/blender_id/__init__.py
 drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/blender_id/__pycache__/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/blender_id/__pycache__/__init__.cpython-36.opt-1.pyc
@@ -515,7 +514,6 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/cycles/license/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/license/NVidia.txt
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/license/OSL.txt
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/license/Sobol.txt
--rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/license/readme.txt
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/osl.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/presets.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/cycles/properties.py
@@ -1235,7 +1233,6 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/export.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/mesh_helpers.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/operators.py
--rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/readme.rst
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/report.py
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/todo.rst
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/object_print3d_utils/ui.py
@@ -1493,7 +1490,6 @@ drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/render_povray/__pycac
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/render_povray/update_files.py
 drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/rigify/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/rigify/CREDITS
--rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/rigify/README
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/rigify/__init__.py
 drwxr-xr-x	root/root	usr/share/blender/2.78/scripts/addons/rigify/__pycache__/
 -rw-r--r--	root/root	usr/share/blender/2.78/scripts/addons/rigify/__pycache__/__init__.cpython-36.opt-1.pyc
