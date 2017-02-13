@@ -1,0 +1,21 @@
+# Description: A free, fast-paced crossplatform first-person shooter.
+# URL:         http://xonotic.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  alsa-lib curl libjpeg libmodplug libvorbis libxpm xorg-libxxf86dga xorg-libxxf86vm libpng 
+
+name=xonotic
+version=0.8.1
+release=1
+source=(http://dl.xonotic.org/xonotic-0.8.1.zip)
+
+build() {
+	cd Xonotic
+
+	make -C source/darkplaces CPUOPTIMIZATIONS="${CFLAGS}" DP_FS_BASEDIR=/usr/share/xonotic/ DP_LINK_TO_LIBJPEG=1 cl-release
+
+	install -Dm755 source/darkplaces/darkplaces-glx $PKG/usr/bin/xonotic-glx
+
+	mkdir -p $PKG/usr/share/xonotic/
+	mv data $PKG/usr/share/xonotic/
+	install -Dm644 key_0.d0pk $PKG/usr/share/xonotic/key_0.d0pk
+}
