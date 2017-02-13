@@ -17,6 +17,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/client.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/config.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/constants.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/key_encoding.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/keys.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/layout.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/main.cpython-36.pyc
@@ -50,6 +51,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/fontconfig.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/freetype.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/render.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/key_encoding.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/keys.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/kitty.conf
 -rw-r--r--	root/root	usr/lib/kitty/kitty/layout.py
