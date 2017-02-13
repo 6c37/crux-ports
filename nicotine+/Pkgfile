@@ -4,7 +4,7 @@
 # Depends on:  pygtk mutagen
 
 name=nicotine+
-version=1.4.0
+version=1.4.1
 release=1
 source=(https://github.com/Nicotine-Plus/${name/+/}-plus/archive/$version.tar.gz)
 

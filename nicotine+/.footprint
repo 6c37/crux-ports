@@ -4,7 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/nicotine-1.4.0-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/nicotine-1.4.1-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/pynicotine/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/pynicotine/ConfigParser.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/pynicotine/ConfigParser.pyc
