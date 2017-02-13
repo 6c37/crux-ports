@@ -4,7 +4,7 @@
 # Depends on:  gtkmm librsvg
 
 name=nitrogen
-version=1.6.0
+version=1.6.1
 release=1
 source=(http://projects.l3ib.org/$name/files/$name-$version.tar.gz)
 
@@ -17,4 +17,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }

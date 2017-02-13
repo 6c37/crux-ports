@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpTjz6LBde0LxPx8eCEv11T5fulfCTtLqlhy+YgfDwY4wxbEUcQKXD9ReaI0GVYBFbXi5T+nxlhamu5CzkceH5w4=
-SHA256 (Pkgfile) = 27bd48ee59285dcde8f1b222e3f952f238c724cc01ac3c34fa942710c4486163
+RWSsZdBvSzGVpflZwJEJZz/bYl9cdKKirtvdv06o2ipNNFDA7H3o2INyYNMKY0mgH0HvH/g0hC1ldqGM2XkLfLrP5tUK0/w9aAc=
+SHA256 (Pkgfile) = 49230192d1e9d0ff35bb9ec6a0d81059c1257f3e1ec64e0dde5b14431598edf5
 SHA256 (.footprint) = 3b76cf2da33aacb24046c31fddead3d51c3e12f14202c4fbc777e2fe8ad6dd0d
-SHA256 (nitrogen-1.6.0.tar.gz) = 194a423fa4d24db069a64d2ffa1e4ece2e65d2466aed9ee037a59f3d141634de
+SHA256 (nitrogen-1.6.1.tar.gz) = f40213707b7a3be87e556f65521cef8795bd91afda13dfac8f00c3550375837d
