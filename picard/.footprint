@@ -4,7 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.3.2-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.4-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.pyc
@@ -25,6 +25,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/browser/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/cluster.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/collection.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/collection.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/compat.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/compat.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/config.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/config.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/config_upgrade.py
@@ -54,6 +56,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/caa.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/caa_release_group.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/caa_release_group.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/local.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/local.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/whitelist.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/providers/whitelist.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/coverart/utils.py
@@ -94,6 +98,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/formats/mutagenext/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/mbxml.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/metadata.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/metadata.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/oauth.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/oauth.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/plugin.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/plugin.pyc
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/plugins/
@@ -181,6 +187,10 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/ui/options/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/passworddialog.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ratingwidget.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ratingwidget.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/searchdialog.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/searchdialog.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/sortablecheckboxlist.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/sortablecheckboxlist.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/tagsfromfilenames.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/tagsfromfilenames.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_cdlookup.py
@@ -231,6 +241,10 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/ui/options/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_options_tags.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_passworddialog.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_passworddialog.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_provider_options_caa.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_provider_options_caa.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_provider_options_local.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_provider_options_local.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_tagsfromfilenames.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/ui_tagsfromfilenames.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/ui/util.py
@@ -287,3 +301,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-rw-r--	root/root	usr/share/icons/hicolor/48x48/apps/picard.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
+-rw-rw-r--	root/root	usr/share/icons/hicolor/scalable/apps/picard.svg

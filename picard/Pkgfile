@@ -4,7 +4,7 @@
 # Depends on:  pyqt mutagen ffmpeg libofa
 
 name=picard
-version=1.3.2
+version=1.4
 release=1
 source=(ftp://ftp.musicbrainz.org/pub/musicbrainz/$name/$name-$version.tar.gz)
 
