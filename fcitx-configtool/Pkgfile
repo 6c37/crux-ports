@@ -4,7 +4,7 @@
 # Depends on:	fcitx
 
 name=fcitx-configtool
-version=0.4.8
+version=0.4.9
 release=1
 source=(http://download.fcitx-im.org/$name/$name-$version.tar.xz)
 
@@ -17,5 +17,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/locale
+	rm -rf $PKG/usr/share
 }
