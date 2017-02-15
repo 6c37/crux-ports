@@ -12,6 +12,9 @@ drwxr-xr-x	root/root	usr/share/fonts/X11/PCF/Tewi/2a/
 drwxr-xr-x	root/root	usr/share/fonts/X11/PCF/Tewi/fw/
 -rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewi/fw/Bold.pcf.gz
 -rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewi/fw/Medium.pcf.gz
+drwxr-xr-x	root/root	usr/share/fonts/X11/PCF/Tewi/hm/
+-rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewi/hm/Bold.pcf.gz
+-rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewi/hm/Medium.pcf.gz
 drwxr-xr-x	root/root	usr/share/fonts/X11/PCF/Tewii/
 -rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewii/Bold.pcf.gz
 -rw-r--r--	root/root	usr/share/fonts/X11/PCF/Tewii/Medium.pcf.gz

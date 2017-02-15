@@ -1,2 +1,0 @@
-Since only python3 provides module sys with sys.stdout.detach() usage, 
-python2 doesn't, so this pkg will hard depend on python3 on purpose. 

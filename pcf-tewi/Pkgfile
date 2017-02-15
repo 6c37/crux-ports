@@ -4,15 +4,12 @@
 # Depends on:  python3 xorg-bdftopcf fontconfig
 
 name=pcf-tewi
-version=2.0.1
-release=2
+version=2.0.2
+release=1
 source=(https://github.com/lucy/tewi-font/archive/$version.tar.gz)
 
 build() {
 	cd tewi-font-$version
-
-	sed -i 's,#!/usr/bin/env python,#!/usr/bin/env python3,' scripts/diff.py 
-	sed -i 's,#!/usr/bin/env python,#!/usr/bin/env python3,' scripts/merge.py 
 
 	make
 	make var
@@ -25,6 +22,9 @@ build() {
 
 	install -Dm644 out/tewifw-medium-11.pcf.gz $PKG/usr/share/fonts/X11/PCF/Tewi/fw/Medium.pcf.gz
 	install -Dm644 out/tewifw-bold-11.pcf.gz   $PKG/usr/share/fonts/X11/PCF/Tewi/fw/Bold.pcf.gz
+
+	install -Dm644 out/tewihm-medium-11.pcf.gz $PKG/usr/share/fonts/X11/PCF/Tewi/hm/Medium.pcf.gz
+	install -Dm644 out/tewihm-bold-11.pcf.gz   $PKG/usr/share/fonts/X11/PCF/Tewi/hm/Bold.pcf.gz
 
 	install -Dm644 out/tewii-medium-11.pcf.gz  $PKG/usr/share/fonts/X11/PCF/Tewii/Medium.pcf.gz
 	install -Dm644 out/tewii-bold-11.pcf.gz    $PKG/usr/share/fonts/X11/PCF/Tewii/Bold.pcf.gz
