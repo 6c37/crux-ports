@@ -5,11 +5,14 @@
 
 name=proot
 version=5.1.0
-release=1
-source=(https://github.com/$name-me/PRoot/archive/v$version.tar.gz)
+release=2
+source=(https://github.com/$name-me/PRoot/archive/v$version.tar.gz
+	loader.patch)
 
 build() {
 	cd PRoot-$version/src
+
+	patch -Np1 < $SRC/loader.patch
 
 	make
 	make DESTDIR=$PKG/usr/bin install
