@@ -5,7 +5,7 @@
 
 name=emacs
 version=25.1
-release=2
+release=3
 source=(http://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz)
 
 build() {
@@ -30,5 +30,5 @@ build() {
 	find $PKG -name '*README*' -delete
 	find $PNG -name '*NEWS*' -delete
 	find $PKG -name COPYING -delete
-	find $PKG/usr/share/emacs/$version/etc -name '[A-Z]*' -delete
+	find $PKG/usr/share/emacs/$version/etc -name '[A-Z]*' ! -name '*.map' ! -name '*.el' ! -name '*.xml' ! -name Makefile ! -name 'TUTORIAL*' -delete
 }
