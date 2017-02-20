@@ -33,9 +33,9 @@ drwxr-xr-x	root/root	usr/include/tesseract/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libtesseract.a
 -rwxr-xr-x	root/root	usr/lib/libtesseract.la
-lrwxrwxrwx	root/root	usr/lib/libtesseract.so -> libtesseract.so.3.0.4
-lrwxrwxrwx	root/root	usr/lib/libtesseract.so.3 -> libtesseract.so.3.0.4
--rwxr-xr-x	root/root	usr/lib/libtesseract.so.3.0.4
+lrwxrwxrwx	root/root	usr/lib/libtesseract.so -> libtesseract.so.3.0.5
+lrwxrwxrwx	root/root	usr/lib/libtesseract.so.3 -> libtesseract.so.3.0.5
+-rwxr-xr-x	root/root	usr/lib/libtesseract.so.3.0.5
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/tesseract.pc
 drwxr-xr-x	root/root	usr/share/
@@ -71,6 +71,7 @@ drwxr-xr-x	root/root	usr/share/tessdata/configs/
 -rw-r--r--	root/root	usr/share/tessdata/configs/quiet
 -rw-r--r--	root/root	usr/share/tessdata/configs/rebox
 -rw-r--r--	root/root	usr/share/tessdata/configs/strokewidth
+-rw-r--r--	root/root	usr/share/tessdata/configs/tsv
 -rw-r--r--	root/root	usr/share/tessdata/configs/txt
 -rw-r--r--	root/root	usr/share/tessdata/configs/unlv
 -rw-r--r--	root/root	usr/share/tessdata/pdf.ttf

@@ -4,15 +4,16 @@
 # Depends on:  cairo icu pango leptonica
 
 name=tesseract
-version=3.04.01
+version=3.05.00
 release=1
 source=(https://github.com/$name-ocr/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	[ -f Makefile ] || ./configure --prefix=/usr
+	./autogen.sh
+	./configure --prefix=/usr
 
 	make
-	make DESTDIR=$PKG PREFIX=/usr install
+	make DESTDIR=$PKG install
 }
