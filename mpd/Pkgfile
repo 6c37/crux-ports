@@ -5,16 +5,18 @@
 # Optional:    flac
 
 name=mpd
-version=0.20.4
+version=0.20.5
 release=1
 source=(
-	https://www.musicpd.org/download/mpd/${version%.*}/$name-$version.tar.xz
+	https://github.com/MaxKellermann/MPD/archive/v$version.tar.gz
 	mpd.conf
 	mpd
 )
 
 build() {
-	cd $name-$version
+	cd MPD-$version
+
+	./autogen.sh
 
 	./configure \
 		--prefix=/usr \
