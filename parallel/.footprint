@@ -1,11 +1,14 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/env_parallel
+-rwxr-xr-x	root/root	usr/bin/env_parallel.ash
 -rwxr-xr-x	root/root	usr/bin/env_parallel.bash
 -rwxr-xr-x	root/root	usr/bin/env_parallel.csh
+-rwxr-xr-x	root/root	usr/bin/env_parallel.dash
 -rwxr-xr-x	root/root	usr/bin/env_parallel.fish
 -rwxr-xr-x	root/root	usr/bin/env_parallel.ksh
 -rwxr-xr-x	root/root	usr/bin/env_parallel.pdksh
+-rwxr-xr-x	root/root	usr/bin/env_parallel.sh
 -rwxr-xr-x	root/root	usr/bin/env_parallel.tcsh
 -rwxr-xr-x	root/root	usr/bin/env_parallel.zsh
 -rwxr-xr-x	root/root	usr/bin/niceload
