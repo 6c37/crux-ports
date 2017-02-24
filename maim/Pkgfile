@@ -5,13 +5,13 @@
 
 name=maim
 version=4.4.49
-release=1
+release=2
 source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	cmake -DCMAKE_INSTALL_PREFIX=/usr
+	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
 	make DESTDIR=$PKG install
