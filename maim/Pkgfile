@@ -4,7 +4,7 @@
 # Depends on:  cmake slop freetype xorg-libxfixes xorg-libxrandr
 
 name=maim
-version=4.4.48
+version=4.4.49
 release=1
 source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
 
