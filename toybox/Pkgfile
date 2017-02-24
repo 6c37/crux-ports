@@ -4,9 +4,9 @@
 # Depends on:
 
 name=toybox
-version=0.7.2
+version=0.7.3
 release=1
-source=(https://github.com/landley/$name/archive/$version.tar.gz)
+source=(http://landley.net/$name/downloads/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
