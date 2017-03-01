@@ -5,15 +5,12 @@
 # Optional:    poppler-glib imagemagick gdk-pixbuf
 
 name=pqiv
-version=2.8.1
+version=2.8.2
 release=1
-source=(https://github.com/phillipberndt/$name/archive/$version.tar.gz
-	fix-gtk2-build.patch)
+source=(https://github.com/phillipberndt/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	patch -p0 < $SRC/fix-gtk2-build.patch
 
 	./configure \
 		--prefix=/usr \
