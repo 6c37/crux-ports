@@ -6,7 +6,7 @@
 
 name=blender
 version=2.78c
-release=1
+release=2
 source=(http://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
@@ -34,6 +34,6 @@ build() {
 	python3 -m compileall $PKG/usr/share/blender
 	python3 -O -m compileall $PKG/usr/share/blender
 
-	rm -rf $PKG/usr/share/{doc,blender/${version%b}/scripts/addons/cycles/license}
+	rm -rf $PKG/usr/share/{doc,blender/${version%c}/scripts/addons/cycles/license}
 	find $PKG -iname 'readme*' -delete
 }
