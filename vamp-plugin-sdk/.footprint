@@ -30,14 +30,14 @@ drwxr-xr-x	root/root	usr/include/vamp/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libvamp-hostsdk.a
 -rw-r--r--	root/root	usr/lib/libvamp-hostsdk.la
-lrwxrwxrwx	root/root	usr/lib/libvamp-hostsdk.so -> libvamp-hostsdk.so.3.6.0
-lrwxrwxrwx	root/root	usr/lib/libvamp-hostsdk.so.3 -> libvamp-hostsdk.so.3.6.0
--rwxr-xr-x	root/root	usr/lib/libvamp-hostsdk.so.3.6.0
+lrwxrwxrwx	root/root	usr/lib/libvamp-hostsdk.so -> libvamp-hostsdk.so.3.7.0
+lrwxrwxrwx	root/root	usr/lib/libvamp-hostsdk.so.3 -> libvamp-hostsdk.so.3.7.0
+-rwxr-xr-x	root/root	usr/lib/libvamp-hostsdk.so.3.7.0
 -rw-r--r--	root/root	usr/lib/libvamp-sdk.a
 -rw-r--r--	root/root	usr/lib/libvamp-sdk.la
-lrwxrwxrwx	root/root	usr/lib/libvamp-sdk.so -> libvamp-sdk.so.2.6.0
-lrwxrwxrwx	root/root	usr/lib/libvamp-sdk.so.2 -> libvamp-sdk.so.2.6.0
--rwxr-xr-x	root/root	usr/lib/libvamp-sdk.so.2.6.0
+lrwxrwxrwx	root/root	usr/lib/libvamp-sdk.so -> libvamp-sdk.so.2.7.0
+lrwxrwxrwx	root/root	usr/lib/libvamp-sdk.so.2 -> libvamp-sdk.so.2.7.0
+-rwxr-xr-x	root/root	usr/lib/libvamp-sdk.so.2.7.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/vamp-hostsdk.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vamp-sdk.pc
