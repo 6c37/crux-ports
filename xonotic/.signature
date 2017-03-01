@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfd3Q2O+XHog0by4fp7RuxNFewkHH4OgAKT9LrYLs2pMD89dAh7YhSk+moJgR8qxTyY6Nf4HtY5tEtVMR8orvgE=
-SHA256 (Pkgfile) = a815c19e007549ff8056c3e2d12eec3a0ce52fcdd34db294937f66c5d55d9d8e
-SHA256 (.footprint) = 90ef76649ac1fea36088d169615eb3cae08b1760f3e0162c276c5bb1865031b8
+RWSsZdBvSzGVpfniJKubnynh2zlDcUALmE1sHAyuqlL/khOd9WvOrWxhtkDHjDF1NNRvBMdrQeOhYZS4p15Osq5XH5+jgpbBwQo=
+SHA256 (Pkgfile) = 13e8cf368294da4bebb6a3184390c81222a79dd02b8fa6b316297b7c0029a260
+SHA256 (.footprint) = 83de69f3c6599cdaa3591b4c3b97a780974ff1299a27ec0d427f171419a04d57
 SHA256 (xonotic-0.8.1.zip) = be8bcc41e2993a2f26d4d04c65a7eab810443bd98b11b45e482ffdbbf284c46f

@@ -5,8 +5,8 @@
 
 name=xonotic
 version=0.8.1
-release=1
-source=(http://dl.xonotic.org/xonotic-0.8.1.zip)
+release=2
+source=(http://dl.xonotic.org/$name-$version.zip)
 
 build() {
 	cd Xonotic
