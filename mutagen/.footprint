@@ -9,7 +9,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen-1.36.2-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen-1.37-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/mutagen/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/__init__.pyc
@@ -78,6 +78,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/mutagen/asf/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/asf/_objects.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/asf/_util.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/asf/_util.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/dsf.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/dsf.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/easyid3.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/easyid3.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/mutagen/easymp4.py

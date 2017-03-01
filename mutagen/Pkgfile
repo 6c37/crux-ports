@@ -4,7 +4,7 @@
 # Depends on:  python
 
 name=mutagen
-version=1.36.2
+version=1.37
 release=1
 source=(https://github.com/quodlibet/$name/archive/release-$version.tar.gz)
 
