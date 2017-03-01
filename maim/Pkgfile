@@ -1,10 +1,10 @@
-# Description: Utility to take a screenshot using imlib2.
+# Description: Utility to take a screenshot.
 # URL:         https://github.com/naelstrof/maim
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  cmake slop freetype xorg-libxfixes xorg-libxrandr
 
 name=maim
-version=4.4.56
+version=4.4.60
 release=1
 source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
 
