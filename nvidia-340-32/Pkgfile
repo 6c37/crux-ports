@@ -4,7 +4,7 @@
 # Depends on:  gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia-340
 
 name=nvidia-340-32
-version=340.96
+version=340.102
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
@@ -29,7 +29,7 @@ build() {
 	install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib32
 	install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib32/tls
 	install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib32/vdpau
-	
+
 	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.1
 	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so
 
