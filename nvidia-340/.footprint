@@ -19,39 +19,39 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nvidia-smi
 -rwxr-xr-x	root/root	usr/bin/nvidia-xconfig
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libGL.so.340.96
-lrwxrwxrwx	root/root	usr/lib/libGL_so_1_2_nvidia -> libGL.so.340.96
+-rwxr-xr-x	root/root	usr/lib/libGL.so.340.102
+lrwxrwxrwx	root/root	usr/lib/libGL_so_1_2_nvidia -> libGL.so.340.102
 lrwxrwxrwx	root/root	usr/lib/libOpenCL.so -> libOpenCL.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libOpenCL.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libcuda.so.340.96
-lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so -> libnvcuvid.so.340.96
-lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so.1 -> libnvcuvid.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-compiler.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-ifr.so.340.96
-lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so -> libnvidia-ml.so.340.96
-lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so.1 -> libnvidia-ml.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-opencl.so.340.96
--rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.340.96
+-rwxr-xr-x	root/root	usr/lib/libcuda.so.340.102
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so -> libnvcuvid.so.340.102
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so.1 -> libnvcuvid.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-compiler.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ifr.so.340.102
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so -> libnvidia-ml.so.340.102
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so.1 -> libnvidia-ml.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-opencl.so.340.102
+-rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.340.102
 drwxr-xr-x	root/root	usr/lib/tls/
--rwxr-xr-x	root/root	usr/lib/tls/libnvidia-tls.so.340.96
+-rwxr-xr-x	root/root	usr/lib/tls/libnvidia-tls.so.340.102
 drwxr-xr-x	root/root	usr/lib/vdpau/
-lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.340.96
-lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.340.96
--rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.340.96
+lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.340.102
+lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.340.102
+-rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.340.102
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/nvidia_drv.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.340.96
-lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx_so_nvidia -> libglx.so.340.96
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.340.96
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.340.102
+lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx_so_nvidia -> libglx.so.340.102
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.340.102
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/nvidia-persistenced.1.gz

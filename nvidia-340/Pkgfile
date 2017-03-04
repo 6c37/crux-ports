@@ -4,7 +4,7 @@
 # Depends on:  gtk gl-select
 
 name=nvidia-340
-version=340.96
+version=340.102
 release=1
 source=(
 	http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
