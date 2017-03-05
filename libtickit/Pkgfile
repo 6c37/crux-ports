@@ -4,12 +4,12 @@
 # Depends on:  libtermkey
 
 name=libtickit
-version=492
+version=0.1
 release=1
-source=(http://www.leonerd.org.uk/code/$name/$name-0.1-RC3+bzr$version.tar.gz)
+source=(http://www.leonerd.org.uk/code/$name/$name-0.1.tar.gz)
 
 build() {
-	cd $name-0.1-RC3+bzr$version
+	cd $name-$version
 
 	make PREFIX=/usr
 	make PREFIX=/usr DESTDIR=$PKG install
