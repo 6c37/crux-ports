@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpeaUMMBDKL2LCll86c+X2YgDjxnNvRlMQA7cH5+PODcyU9ZJssk9XWDEXcHDmxlIISv5HGcHP681E522JBQEgwY=
-SHA256 (Pkgfile) = 893ca06c675783c040baa3fd2a859f50cadeae05bd87bc55039fde99e749e082
-SHA256 (.footprint) = 8361a4a89b243c69e466d441ef0aef706cccb4c011e9bd0b5b08eafdd95401db
-SHA256 (ibus-1.5.14.tar.gz) = a42b40fe4642f36bf2a6f0b4649f54f4043812d6bfee4faca38117799a009d3c
+RWSsZdBvSzGVpQXa3qoFV7grYQFDeEJFg82qIZZmWkP8JBeRwrjUDTLzha+kDyLiElKjK2jb+A9jb4ckzlhEOCfeqq/S45s4fw0=
+SHA256 (Pkgfile) = bba10301b7506b0c18e9a584045dfe2e062d401783284c74c2476227f9a9febd
+SHA256 (.footprint) = 3eca0fb3a733092677b73f78e78fe85265ad2419c9b047d5e73d44d02542e325
+SHA256 (ibus-1.5.15.tar.gz) = 41f7baad6f3aac0cdfaebef674a8731ae47950f140edfbeefebaeed78c93e385

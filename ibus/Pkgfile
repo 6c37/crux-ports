@@ -4,7 +4,7 @@
 # Depends on:  dbus-python libnotify iso-codes intltool
 
 name=ibus
-version=1.5.14
+version=1.5.15
 release=1
 source=(https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz)
 
@@ -60,6 +60,9 @@ build() {
 		--with-python=python2 \
 		--enable-python-library \
 		$EMOJI
+
+	# Workaround with --disable-emoji-dict
+	make -C tools maintainer-clean-generic
 
 	make
 	make DESTDIR=$PKG install

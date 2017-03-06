@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/include/ibus-1.0/
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusconfig.h
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusconfigservice.h
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusdebug.h
+-rw-r--r--	root/root	usr/include/ibus-1.0/ibusemoji.h
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusengine.h
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusenginedesc.h
 -rw-r--r--	root/root	usr/include/ibus-1.0/ibusenginesimple.h
@@ -59,9 +60,9 @@ drwxr-xr-x	root/root	usr/lib/ibus/
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-ui-gtk3
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-x11
 -rwxr-xr-x	root/root	usr/lib/libibus-1.0.la
-lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.514
-lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so.5 -> libibus-1.0.so.5.0.514
--rwxr-xr-x	root/root	usr/lib/libibus-1.0.so.5.0.514
+lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.515
+lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so.5 -> libibus-1.0.so.5.0.515
+-rwxr-xr-x	root/root	usr/lib/libibus-1.0.so.5.0.515
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ibus-1.0.pc
 drwxr-xr-x	root/root	usr/lib/python2.7/
@@ -250,3 +251,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/ibus-daemon.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ibus-setup.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ibus.1.gz
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/ibus-1.0.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/ibus-1.0.vapi
