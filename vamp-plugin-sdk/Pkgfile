@@ -4,9 +4,9 @@
 # Depends on:  libsndfile
 
 name=vamp-plugin-sdk
-version=2.7
+version=2.7.1
 release=1
-source=(http://code.soundsoftware.ac.uk/attachments/download/2190/$name-$version.tar.gz)
+source=(http://code.soundsoftware.ac.uk/attachments/download/2206/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version

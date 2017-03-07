@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpf8jvqgbGTLQ3k5i4XhU5xt+i2HKgm+/czMtV3z8jjL/8dirEPiCEsvpItND1E6a/CjVMN97It1puzffjzaVfQw=
-SHA256 (Pkgfile) = 14e6cefb4a62d672a9ca23407c7afba608f928c2af29bc4b5effe8b3c9d100ae
+RWSsZdBvSzGVpai0BknefQeyY7dhU9tc8kRjxueARnffcpGjHUnxKiOm136Ak285DjySI7Iyc6Z83KeKwvjtc5RR9L7kWoCdIA0=
+SHA256 (Pkgfile) = fc59f463d91e750c82eab596409ce9e4ed6e2df380bb844cd09c2e0ee6e5550d
 SHA256 (.footprint) = 78f9ba7086294c34d6a3d2f58b53a80eb904baad964ba0938da738d0b3236c0c
-SHA256 (vamp-plugin-sdk-2.7.tar.gz) = 482fd174884e5aaac3f6734372cb2d9fb9e0820806cc8dc528c008dc67d39d4b
+SHA256 (vamp-plugin-sdk-2.7.1.tar.gz) = c6fef3ff79d2bf9575ce4ce4f200cbf219cbe0a21cfbad5750e86ff8ae53cb0b
