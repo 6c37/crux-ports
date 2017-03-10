@@ -1,9 +1,0 @@
-In order to let ECM work,you need to install Sphinx at first. For now, you can install it using pip2 in root user, or _sudo_
-
-	* pip2 install --upgrade Sphinx
-or
-	* pip2 install -U Sphinx
-
-more info see Sphinx webpage http://sphinx-doc.org/
-
-Tips: Sphinx needs too many python packages as dependencies which are not listed in crux repo. That's why we manage it using pip(2).
