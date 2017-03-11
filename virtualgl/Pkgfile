@@ -4,7 +4,7 @@
 # Depends on:  xorg-libxv glu libjpeg-turbo xorg-xcb-util-keysyms
 
 name=virtualgl
-version=2.5.1
+version=2.5.2
 release=1
 source=(https://github.com/VirtualGL/$name/archive/$version.tar.gz)
 
@@ -12,17 +12,15 @@ build() {
 	cd $name-$version
 
 	 cmake . \
-		-DCMAKE_INSTALL_PREFIX=/usr/share \
-		-DTJPEG_INCLUDE_DIR=/usr/include \
-		-DTJPEG_LIBRARY=/usr/lib/libturbojpeg.so \
-		-DVGL_LIBDIR=/usr/lib \
-		-DVGL_BINDIR=/usr/bin \
-		-DVGL_FAKEXCB=1
+		-DCMAKE_BINARY_DIR=/usr \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_DEFAULT_LIBDIR=lib \
+		-DCMAKE_SYSTEM_PROCESSOR=x86_64
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/doc
+	rm -rf $PKG/usr/share
 
 	rm -rf $PKG/usr/bin/.vglrun.vars64
 

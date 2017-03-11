@@ -13,12 +13,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/vglrun
 -rwxr-xr-x	root/root	usr/bin/vglserver_config
 -rwxr-xr-x	root/root	usr/bin/vglxinfo
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/rr.h
+-rw-r--r--	root/root	usr/include/rrtransport.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libdlfaker.so
 -rwxr-xr-x	root/root	usr/lib/libgefaker.so
 -rwxr-xr-x	root/root	usr/lib/libvglfaker-nodl.so
 -rwxr-xr-x	root/root	usr/lib/libvglfaker.so
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/include/
--rw-r--r--	root/root	usr/share/include/rr.h
--rw-r--r--	root/root	usr/share/include/rrtransport.h
