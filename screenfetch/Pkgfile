@@ -5,7 +5,7 @@
 # Optional:    scrot
 
 name=screenfetch
-version=3.7.0
+version=3.8.0
 release=1
 source=(https://github.com/KittyKatt/screenFetch/archive/v$version.tar.gz)
 
