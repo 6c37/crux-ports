@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpTeOKVVYY1rwQ1swqCLWNu8DpTzolDTHkss9e9GNmOQgj50J/OfGrGxt+ZuUEH6roHDT/ZV2v9pdmCzxLlCfHg0=
-SHA256 (Pkgfile) = 12b4075ec94dafd4519137bbefbbb1460bf230cc889934a62ebf14c3d427fd48
+RWSsZdBvSzGVpVGzSkTEC61I92c0Ih+DgxOAXYgArRZN+yTHpu7pdRH5vkIrJ+G9IZInb+e9LtGOvto2wdyNhaLpGGZhN9ti5w0=
+SHA256 (Pkgfile) = d3497d27db12d7bbdbc3bcbd51f51cb2991a52c24d6258e0da0b849ef8843cf1
 SHA256 (.footprint) = 3b32050d791d650d794a47f62d93af3d85a3f14dd0b56dc1602f92891cd716d7
 SHA256 (firefox-52.0.source.tar.xz) = 494ec86875ea60043658e402b664ccd5af4709acc3a478de8729f7cbac9ea3c1
 SHA256 (firefox-install-dir.patch) = 32c0102521b7296627ba457575c742746400680c3aecd18be8b1b382dccdc0ce

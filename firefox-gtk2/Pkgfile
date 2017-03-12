@@ -5,7 +5,7 @@
  
 name=firefox-gtk2
 version=52.0
-release=1
+release=2
 source=(
 	http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
 	firefox-install-dir.patch
@@ -34,6 +34,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
 	ac_add_options --enable-system-sqlite
+	ac_add_options --enable-alsa
 	ac_add_options --with-pthreads
 	ac_add_options --enable-official-branding
 	ac_add_options --with-distribution-id=nu.crux
