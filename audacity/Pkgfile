@@ -17,6 +17,10 @@ build() {
 
 	patch -p1 < $SRC/fix-build.patch
 
+	sed -i '299 s/false/nullptr/' src/import/ImportFLAC.cpp
+	sed -i '316 s/false/nullptr/' src/import/ImportFLAC.cpp
+	sed -i '269 s/false/nullptr/' src/effects/vamp/LoadVamp.cpp
+
 	CONFIG_SHELL=/bin/bash ./configure --prefix=/usr
 
 	make
