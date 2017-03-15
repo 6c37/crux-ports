@@ -6,7 +6,7 @@
 
 name=audacity
 version=2.1.2
-release=1
+release=2
 source=(
 	https://github.com/$name/$name/archive/Audacity-$version.tar.gz
 	fix-build.patch	
@@ -26,5 +26,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/locale
+	rm -rf $PKG/usr/share/{locale,doc}
 }
