@@ -71,7 +71,6 @@ drwxr-xr-x	root/root	usr/share/audacity/plug-ins/
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/StudioFadeOut.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/adjustable-fade.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/beat.ny
--rw-r--r--	root/root	usr/share/audacity/plug-ins/clicktrack.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/clipfix.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/crossfadeclips.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/crossfadetracks.ny
@@ -82,8 +81,10 @@ drwxr-xr-x	root/root	usr/share/audacity/plug-ins/
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/lowpass.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/notch.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/pluck.ny
+-rw-r--r--	root/root	usr/share/audacity/plug-ins/rhythmtrack.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/rissetdrum.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/sample-data-export.ny
+-rw-r--r--	root/root	usr/share/audacity/plug-ins/sample-data-import.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/tremolo.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/vocalrediso.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/vocalremover.ny
