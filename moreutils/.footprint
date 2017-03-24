@@ -8,7 +8,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/isutf8
 -rwxr-xr-x	root/root	usr/bin/lckdo
 -rwxr-xr-x	root/root	usr/bin/mispipe
--rwxr-xr-x	root/root	usr/bin/parallel
+-rwxr-xr-x	root/root	usr/bin/moreutils_parallel
 -rwxr-xr-x	root/root	usr/bin/pee
 -rwxr-xr-x	root/root	usr/bin/sponge
 -rwxr-xr-x	root/root	usr/bin/ts
@@ -26,7 +26,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rwxr-xr-x	root/root	usr/share/man/man1/isutf8.1.gz
 -rwxr-xr-x	root/root	usr/share/man/man1/lckdo.1.gz
 -rwxr-xr-x	root/root	usr/share/man/man1/mispipe.1.gz
--rwxr-xr-x	root/root	usr/share/man/man1/parallel.1.gz
+-rwxr-xr-x	root/root	usr/share/man/man1/moreutils_parallel.1.gz
 -rwxr-xr-x	root/root	usr/share/man/man1/pee.1.gz
 -rwxr-xr-x	root/root	usr/share/man/man1/sponge.1.gz
 -rwxr-xr-x	root/root	usr/share/man/man1/ts.1.gz

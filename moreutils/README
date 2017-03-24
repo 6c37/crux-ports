@@ -1,0 +1,2 @@
+Parallel from package moreutils are conflicted with one provided by gnu, 
+I've renamed parallel(from moreutils) to moreutils_parallel for a solution.

@@ -5,12 +5,15 @@
 
 name=moreutils
 version=0.60
-release=2
-source=(https://dev.gentoo.org/%7Eradhermit/dist/$name-$version.tar.gz)
+release=3
+source=(http://ftp.de.debian.org/debian/pool/main/m/$name/${name}_$version.orig.tar.xz)
 
 build() {
 	cd $name-$version
 
 	make DOCBOOKXSL=/usr/share/xml/docbook/xsl-stylesheets 
 	make DESTDIR=$PKG PREFIX=/usr install
+
+	mv $PKG/usr/bin/parallel $PKG/usr/bin/${name}_parallel
+	mv $PKG/usr/share/man/man1/parallel.1 $PKG/usr/share/man/man1/${name}_parallel.1
 }
