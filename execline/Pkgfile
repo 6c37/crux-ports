@@ -4,9 +4,9 @@
 # Depends on:  skalibs
 
 name=execline
-version=2.2.0.0
+version=2.3.0.0
 release=1
-source=(http://skarnet.org/software/execline/execline-${version}.tar.gz)
+source=(http://skarnet.org/software/execline/execline-$version.tar.gz)
 
 build() {
 	cd $name-$version
