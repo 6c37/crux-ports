@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/config.h
 -rw-r--r--	root/root	usr/include/skalibs/datastruct.h
 -rw-r--r--	root/root	usr/include/skalibs/direntry.h
+-rw-r--r--	root/root	usr/include/skalibs/disize.h
 -rw-r--r--	root/root	usr/include/skalibs/diuint.h
 -rw-r--r--	root/root	usr/include/skalibs/diuint32.h
 -rw-r--r--	root/root	usr/include/skalibs/djbtime.h
@@ -34,7 +35,6 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/gensetdyn.h
 -rw-r--r--	root/root	usr/include/skalibs/genwrite.h
 -rw-r--r--	root/root	usr/include/skalibs/getpeereid.h
--rw-r--r--	root/root	usr/include/skalibs/gidstuff.h
 -rw-r--r--	root/root	usr/include/skalibs/iobuffer.h
 -rw-r--r--	root/root	usr/include/skalibs/iopause.h
 -rw-r--r--	root/root	usr/include/skalibs/ip46.h
@@ -46,7 +46,6 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/nonposix.h
 -rw-r--r--	root/root	usr/include/skalibs/nsig.h
 -rw-r--r--	root/root	usr/include/skalibs/random.h
--rw-r--r--	root/root	usr/include/skalibs/randomegd.h
 -rw-r--r--	root/root	usr/include/skalibs/rc4.h
 -rw-r--r--	root/root	usr/include/skalibs/segfault.h
 -rw-r--r--	root/root	usr/include/skalibs/selfpipe.h
@@ -69,23 +68,21 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/surf.h
 -rw-r--r--	root/root	usr/include/skalibs/sysdeps.h
 -rw-r--r--	root/root	usr/include/skalibs/tai.h
--rw-r--r--	root/root	usr/include/skalibs/uint.h
+-rw-r--r--	root/root	usr/include/skalibs/types.h
 -rw-r--r--	root/root	usr/include/skalibs/uint16.h
 -rw-r--r--	root/root	usr/include/skalibs/uint32.h
 -rw-r--r--	root/root	usr/include/skalibs/uint64.h
--rw-r--r--	root/root	usr/include/skalibs/ulong.h
 -rw-r--r--	root/root	usr/include/skalibs/unix-timed.h
 -rw-r--r--	root/root	usr/include/skalibs/unix-transactional.h
 -rw-r--r--	root/root	usr/include/skalibs/unixconnection.h
 -rw-r--r--	root/root	usr/include/skalibs/unixmessage.h
 -rw-r--r--	root/root	usr/include/skalibs/unixonacid.h
--rw-r--r--	root/root	usr/include/skalibs/ushort.h
 -rw-r--r--	root/root	usr/include/skalibs/webipc.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so -> libskarnet.so.2.4
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.4 -> libskarnet.so.2.4.0
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.4.0 -> libskarnet.so.2.4.0.2
--rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.4.0.2
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so -> libskarnet.so.2.5
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.5 -> libskarnet.so.2.5.0
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.5.0 -> libskarnet.so.2.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.5.0.0
 drwxr-xr-x	root/root	usr/lib/skalibs/
 -rw-r--r--	root/root	usr/lib/skalibs/libskarnet.a
 drwxr-xr-x	root/root	usr/lib/skalibs/sysdeps/
