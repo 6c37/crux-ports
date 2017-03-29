@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpc8ABdBJ9ytE28azEF1eybP5/LVHanm9QlExHQ1rp2evT58bHmGqA+dmymaN2uTiIyFGvF1geHCRVcQEIE7afAE=
-SHA256 (Pkgfile) = b908be6edbde869e4b6464e57c2d3a3bb7e57bce4a81cfc38a1f1593fa58b76c
-SHA256 (.footprint) = f5ab3e87800a106f5177f7a9a1968e786d06548bd443df3ce39e94960176fc3e
-SHA256 (udisks-2.1.8.tar.bz2) = da416914812a77e5f4d82b81deb8c25799fd3228d27d52f7bf89a501b1857dda
+RWSsZdBvSzGVpepLI4cRqKafWIyUr4nU4P5HbnCkFovyvzySc2VQ+3BTi3L4lKziO55HM3qt+KfJ/B5eGOYuR8MNmZFTawbNSgk=
+SHA256 (Pkgfile) = c609bcac1a305453bf2755f58f8e08a09cb2691dac2e3b2a48285cd7e796f2ab
+SHA256 (.footprint) = 7943a5845b0dad0a4f9d0e10edae040a8a27de1f207fc42c3bc0f53891632e77
+SHA256 (udisks-2.6.4.tar.bz2) = d65389a861a9a475d3c8e0ad2b8603d9961977f1a00024093b5bacd711e774f2
