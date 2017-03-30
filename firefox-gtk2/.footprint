@@ -4940,6 +4940,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/
 -rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/aushelper@mozilla.org.xpi
+-rw-r--r--	root/root	usr/lib/firefox/browser/features/deployment-checker@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/e10srollout@mozilla.org.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/icons/
 -rw-r--r--	root/root	usr/lib/firefox/browser/icons/mozicon128.png
