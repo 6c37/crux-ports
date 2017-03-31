@@ -41,7 +41,6 @@ drwxr-xr-x	root/root	usr/lib/gvfs/
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-computer
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-dav
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-ftp
--rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-fuse
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-http
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-localtest
 -rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-metadata
