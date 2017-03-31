@@ -1,11 +1,11 @@
 # Description: A single-player fantasy game in which you build a dwarven outpost or play an adventurer in a randomly generated world.
 # URL:         http://www.bay12games.com/dwarves/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk sdl_image sdl_ttf openal libsndfile
+# Depends on:  gtk sdl_image sdl_ttf openal libsndfile glew
 
 name=dwarffortress
 version=0.43.05
-release=1
+release=2
 source=(
 	http://www.bay12games.com/dwarves/df_43_05_linux.tar.bz2
 	https://github.com/svenstaro/dwarf_fortress_unfuck/archive/$version.tar.gz
