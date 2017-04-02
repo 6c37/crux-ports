@@ -4,7 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.4-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard-1.4.1-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/__init__.pyc
@@ -266,6 +266,10 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/picard/util/devutil/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/icontheme.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/imageinfo.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/imageinfo.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/imagelist.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/imagelist.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/lrucache.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/lrucache.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/tags.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/tags.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/picard/util/textencoding.py

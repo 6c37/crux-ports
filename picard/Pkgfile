@@ -4,12 +4,15 @@
 # Depends on:  pyqt mutagen ffmpeg libofa
 
 name=picard
-version=1.4
+version=1.4.1
 release=1
 source=(ftp://ftp.musicbrainz.org/pub/musicbrainz/$name/$name-$version.tar.gz)
 
 build () {
 	cd $name-release-$version
+
+	sed -i '/import sip/d' setup.py
+	sed -i '/^sip.setapi/d' setup.py
 
 	python setup.py config
 	python setup.py install --root=$PKG --prefix=/usr
