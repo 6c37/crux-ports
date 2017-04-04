@@ -1,11 +1,11 @@
 # Description: GConf configuration system.
 # URL:         http://www.gnome.org/projects/gconf/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  dbus-glib intltool
+# Depends on:  dbus-glib intltool libxml2 polkit
 
 name=gconf
 version=3.2.6
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/gnome/sources/GConf/${version%.*}/GConf-$version.tar.xz)
 
 build() {

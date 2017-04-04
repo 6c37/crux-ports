@@ -43,8 +43,6 @@ drwxr-xr-x	root/root	usr/lib/gio/modules/
 -rw-r--r--	root/root	usr/lib/gio/modules/libgsettingsgconfbackend.a
 -rwxr-xr-x	root/root	usr/lib/gio/modules/libgsettingsgconfbackend.la
 -rwxr-xr-x	root/root	usr/lib/gio/modules/libgsettingsgconfbackend.so
-drwxr-xr-x	root/root	usr/lib/girepository-1.0/
--rw-r--r--	root/root	usr/lib/girepository-1.0/GConf-2.0.typelib
 -rw-r--r--	root/root	usr/lib/libgconf-2.a
 -rwxr-xr-x	root/root	usr/lib/libgconf-2.la
 lrwxrwxrwx	root/root	usr/lib/libgconf-2.so -> libgconf-2.so.4.1.5
@@ -63,8 +61,6 @@ drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.GConf.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.gnome.GConf.Defaults.service
-drwxr-xr-x	root/root	usr/share/gir-1.0/
--rw-r--r--	root/root	usr/share/gir-1.0/GConf-2.0.gir
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/gconf/
