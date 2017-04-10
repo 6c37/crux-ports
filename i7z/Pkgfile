@@ -1,15 +1,16 @@
 # Description:  A better i7 (and now i3, i5) reporting tool for Linux.
-# URL:          https://code.google.com/p/i7z/
+# URL:          https://code.google.com/p/i7z
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:   ncurses
+# Depends on:   
 
 name=i7z
-version=0.27.2
-release=3
-source=(https://$name.googlecode.com/files/$name-$version.tar.gz)
+version=20170410
+_commit=5023138d7c35c4667c938b853e5ea89737334e92
+release=1
+source=(https://github.com/ajaiantilal/$name/archive/${_commit}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-${_commit}
 
 	make
 	make sbindir=/usr/bin/ DESTDIR=$PKG install
