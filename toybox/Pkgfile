@@ -1,12 +1,12 @@
 # Description: All-in-one Linux command line.
-# URL:         http://www.landley.net/toybox
+# URL:         https://www.landley.net/toybox
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=toybox
 version=0.7.3
 release=1
-source=(http://landley.net/$name/downloads/$name-$version.tar.gz)
+source=(https://landley.net/$name/downloads/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
