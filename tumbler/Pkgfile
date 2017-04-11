@@ -1,5 +1,5 @@
 # Description: D-Bus service for applications to request thumbnails.
-# URL:         http://www.xfce.org/
+# URL:         https://www.xfce.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  intltool dbus-glib gdk-pixbuf
 # Optional:    popler-glib freetype
@@ -7,9 +7,9 @@
 name=tumbler
 version=0.1.31
 release=2
-source=(http://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
-build () {
+build() {
 	cd $name-$version
 
 	./configure \
