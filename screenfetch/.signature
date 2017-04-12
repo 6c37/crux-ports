@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpbfeVX2wQEvAYS7irEJPxkNLracYIXdEg3jOcoeXdZdWQ1zHzfJkgUeDdxyqChTevfyl81QSEMK6bk5DQuCcJAM=
-SHA256 (Pkgfile) = 0a6147402e215c89e686952136ef49fcf9cff0308bea5bbc35adc2a6be024f58
+RWSsZdBvSzGVpdSxqcwCRUyXcazz4A4pNUIBsPHEWuWWkASpUQCczk8FErLmn1RkyoQB/vSII6QCKF8XS0wUVfeKSzCkjMvW6Qg=
+SHA256 (Pkgfile) = cdf3a5a300b0b73134b19d51df9d4fe22869e96eddb0e745ecc41cea67d8ef9b
 SHA256 (.footprint) = d0436fc44235f931807b90cb4e5d5cd2cc091291cfa9f6676448725662001db3
 SHA256 (v3.8.0.tar.gz) = 248283ee3c24b0dbffb79ed685bdd518554073090c1c167d07ad2a729db26633
+SHA256 (0001-Fix-gpu-variable-check-esp-it-s-empty.patch) = 1e8af1ff0a297fb6eb007e7b226b477b82629a16a2baeef65315e3b6ce0e9b76
