@@ -1,12 +1,12 @@
 # Description: Manipulate unicode and C strings according to the Unicode Standard.
-# URL:         http://www.gnu.org/software/libunistring
+# URL:         https://www.gnu.org/software/libunistring
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=libunistring
 version=0.9.7
 release=1
-source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
