@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpVKsMoF0OvIdndkzt7+igWZFqwafBpYN/Dna3BEKamlJLR+lqVsAvldSVwKv/yqAwq9y8B8TToTyr3x3bzoYhQY=
-SHA256 (Pkgfile) = 4d64567d39d0b4dced28ee8a60e624790eaf4799373325cb9ffecf801f9065ef
+RWSsZdBvSzGVpf6GXrec1p9RpVLgHzj300eJ0lDlX7jhp11s6lkeuQhG1P7SYe3fu2W+GFIEwldGPkpb8dw2OmhlHfaU7hn//QE=
+SHA256 (Pkgfile) = f0ca1b1e9db8d6759e761d9c03cefbb4eb1d7d261e31e15cdefece71b8f4de39
 SHA256 (.footprint) = 2b9b386c0968394f9fcf2af2745d63a6b12c993431cfc5c9d85f57ba2b2cb7ec
 SHA256 (android-tools-core-7.0.0_r24.tar.gz) = b6eac2868570c458418c9d9317a00d5ca2552eb33faa693a8014b928c71c1718
 SHA256 (android-tools-extras-7.0.0_r24.tar.gz) = 7085bba77af11b7758a4146bc7b13aa2c3ba6ca0e15ccf9173bc86fc32bf5342
