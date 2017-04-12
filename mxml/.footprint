@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mxmldoc
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/mxml.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libmxml.a
+lrwxrwxrwx	root/root	usr/lib/libmxml.so -> libmxml.so.1.5
+lrwxrwxrwx	root/root	usr/lib/libmxml.so.1 -> libmxml.so.1.5
+-rwxr-xr-x	root/root	usr/lib/libmxml.so.1.5
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/mxml.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/mxml/
+-rw-r--r--	root/root	usr/share/doc/mxml/0.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/1.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/2.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/3.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/4.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/A.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/B.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/C.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/CHANGES
+-rw-r--r--	root/root	usr/share/doc/mxml/COPYING
+-rw-r--r--	root/root	usr/share/doc/mxml/D.gif
+-rw-r--r--	root/root	usr/share/doc/mxml/README
+-rw-r--r--	root/root	usr/share/doc/mxml/mxml.html
+-rw-r--r--	root/root	usr/share/doc/mxml/mxmldoc.xsd
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/mxmldoc.1.gz
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/mxml.3.gz
