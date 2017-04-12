@@ -1,0 +1,18 @@
+# Description: C runtime for the ANTLR parsing library.
+# URL:         http://www.antlr.org/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=libantlr3c
+version=3.4
+release=1
+source=(http://www.antlr3.org/download/C/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --enable-64bit
+
+	make
+	make DESTDIR=$PKG install
+}

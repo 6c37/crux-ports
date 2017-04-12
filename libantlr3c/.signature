@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpWkFitM+l3VdewYXDDZBdxxMiSIsgZWRfPGXvZ2+yXw4KYhwrFLsnKpXxNa/a9WvBM99oQHdRfhRwYE6vOg9egI=
+SHA256 (Pkgfile) = 8cf1fd141af40e7720a5eaceafa4048142ffb6073d23fa2b527bfddafbf364dc
+SHA256 (.footprint) = bfb0bee1dd938f2c10f55f718a276f3df167f6df61b8877fa8453d4233b284bb
+SHA256 (libantlr3c-3.4.tar.gz) = ca914a97f1a2d2f2c8e1fca12d3df65310ff0286d35c48b7ae5f11dcc8b2eb52
