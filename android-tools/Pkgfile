@@ -1,18 +1,18 @@
 # Description: Android platform tools.
 # URL:         https://sites.google.com/a/android.com/tools/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  
+# Depends on:
 
 name=android-tools
 version=7.0.0_p24
 release=1
 source=(
-	http://dev.alpinelinux.org/archive/$name/$name-core-${version/_p/_r}.tar.gz
-	http://dev.alpinelinux.org/archive/$name/$name-extras-${version/_p/_r}.tar.gz
-	http://dev.alpinelinux.org/archive/$name/$name-libselinux-${version/_p/_r}.tar.gz
-	http://dev.alpinelinux.org/archive/$name/$name-f2fs-tools-${version/_p/_r}.tar.gz
-	http://dev.alpinelinux.org/archive/$name/$name-safe-iop-${version/_p/_r}.tar.gz
-	http://dev.alpinelinux.org/archive/$name/$name-gtest-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-core-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-extras-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-libselinux-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-f2fs-tools-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-safe-iop-${version/_p/_r}.tar.gz
+	https://dev.alpinelinux.org/archive/$name/$name-gtest-${version/_p/_r}.tar.gz
 	android-tools.patch
 )
 
