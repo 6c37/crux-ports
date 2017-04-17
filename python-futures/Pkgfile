@@ -4,9 +4,9 @@
 # Depends on:  python
 
 name=python-futures
-version=3.0.5
+version=3.1.1
 release=1
-source=(https://pypi.python.org/packages/source/f/futures/futures-$version.tar.gz)
+source=(https://files.pythonhosted.org/packages/source/f/futures/futures-$version.tar.gz)
 
 build() {
 	cd futures-$version

@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpayjkJl3vBIzZNV9tEyAmSbWkDFFqPVl4diuhml1lmaPKL53N2qtF9+wpiZkR7UM27gWWAHhgRml63QfW4k3xAs=
-SHA256 (Pkgfile) = 07a010835322c85a4b2ba165abbe5b8f12e52312efb161a70fde848ff4a5f83c
-SHA256 (.footprint) = 452bd9d1949a22d99f9ea43497b06b8b3927b4752fc210d6332289e6b2fe5021
-SHA256 (futures-3.0.5.tar.gz) = 0542525145d5afc984c88f914a0c85c77527f65946617edb5274f72406f981df
+RWSsZdBvSzGVpS7qJPKSxB0jWazs6XHNxQHY5I2XSy78GYwA/S/AQe1EleXKh7ikFwcTSGeG38/v6DqSavKlEadus2B1xf/o4gg=
+SHA256 (Pkgfile) = e83fdcca82eb0f661cb88b40b8cf65def0379b95307b9ad478f20d10860f768a
+SHA256 (.footprint) = a0a6845fbe7f6d585e6bf64f9c9df1adf32c03fb5a8fdd166a281e06a42dfca2
+SHA256 (futures-3.1.1.tar.gz) = 51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd

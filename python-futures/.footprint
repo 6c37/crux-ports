@@ -14,10 +14,4 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/concurrent/futures/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/process.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/thread.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/thread.pyc
-drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/PKG-INFO
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/SOURCES.txt
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/dependency_links.txt
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/not-zip-safe
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/pbr.json
--rw-rw-r--	root/root	usr/lib/python2.7/site-packages/futures-3.0.5-py2.7.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/futures-3.1.1-py2.7.egg-info
