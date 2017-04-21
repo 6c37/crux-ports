@@ -201,6 +201,7 @@ drwxr-xr-x	root/root	usr/lib/guile/2.2/ccache/ice-9/peg/
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/rw.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/safe-r5rs.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/safe.go
+-rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/sandbox.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/save-stack.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/scm-style-repl.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/ice-9/serialize.go
@@ -434,6 +435,7 @@ drwxr-xr-x	root/root	usr/lib/guile/2.2/ccache/system/repl/
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/repl/error-handling.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/repl/repl.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/repl/server.go
+-rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/syntax.go
 drwxr-xr-x	root/root	usr/lib/guile/2.2/ccache/system/vm/
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/vm/assembler.go
 -rw-r--r--	root/root	usr/lib/guile/2.2/ccache/system/vm/coverage.go
@@ -477,9 +479,9 @@ lrwxrwxrwx	root/root	usr/lib/guile/2.2/extensions/guile-readline.so.0 -> guile-r
 -rwxr-xr-x	root/root	usr/lib/guile/2.2/extensions/guile-readline.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libguile-2.2.a
 -rwxr-xr-x	root/root	usr/lib/libguile-2.2.la
-lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so -> libguile-2.2.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so.1 -> libguile-2.2.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libguile-2.2.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so -> libguile-2.2.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so.1 -> libguile-2.2.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libguile-2.2.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/guile-2.2.pc
 drwxr-xr-x	root/root	usr/share/
@@ -555,6 +557,7 @@ drwxr-xr-x	root/root	usr/share/guile/2.2/ice-9/peg/
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/rw.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/safe-r5rs.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/safe.scm
+-rw-r--r--	root/root	usr/share/guile/2.2/ice-9/sandbox.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/save-stack.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/scm-style-repl.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/ice-9/serialize.scm
@@ -803,6 +806,7 @@ drwxr-xr-x	root/root	usr/share/guile/2.2/system/repl/
 -rw-r--r--	root/root	usr/share/guile/2.2/system/repl/error-handling.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/system/repl/repl.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/system/repl/server.scm
+-rw-r--r--	root/root	usr/share/guile/2.2/system/syntax.scm
 drwxr-xr-x	root/root	usr/share/guile/2.2/system/vm/
 -rw-r--r--	root/root	usr/share/guile/2.2/system/vm/assembler.scm
 -rw-r--r--	root/root	usr/share/guile/2.2/system/vm/coverage.scm
