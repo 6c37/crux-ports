@@ -1,0 +1,25 @@
+# Description:  A lightweight multiplatform web browser written in Qt Framework and using its web rendering engine QtWebEngine.
+# URL:         https://www.qupzilla.com/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  qtwebengine git
+
+name=qupzilla
+version=2.1.2
+release=1
+source=(
+	https://github.com/$name/$name/archive/v$version.tar.gz
+	https://github.com/$name/$name-plugins/archive/master.zip
+)
+
+build() {
+	cd $name-$version
+
+	cp -r $SRC/$name-plugins-master/plugins/Videoner src/plugins
+
+	export DISABLE_UPDATES_CHECK=true \
+		QUPZILLA_PREFIX=/usr/
+
+	qmake-qt5
+	make
+	make INSTALL_ROOT=$PKG install
+}
