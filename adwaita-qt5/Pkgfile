@@ -1,0 +1,20 @@
+# Description: A style to bend Qt applications to look like they belong into GNOME Shell.
+# URL:         https://github.com/MartinBriza/adwaita-qt
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  qt5
+
+name=adwaita-qt5
+version=0.99
+release=1
+source=(https://github.com/MartinBriza/adwaita-qt/archive/$version.tar.gz)
+
+build() {
+	cd adwaita-qt-$version
+
+	cmake . \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr
+
+	make
+	make install/fast DESTDIR=$PKG
+}
