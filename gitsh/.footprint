@@ -30,11 +30,15 @@ drwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/commands/
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/environment.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/error.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/exit_statuses.rb
+-rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/file_runner.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/git_repository.rb
 drwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/git_repository/
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/git_repository/status.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/history.rb
--rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/interactive_runner.rb
+drwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/input_strategies/
+-rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/input_strategies/file.rb
+-rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/input_strategies/interactive.rb
+-rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/input_strategies/string.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/interpreter.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/line_editor.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/line_editor_history_filter.rb
@@ -48,8 +52,8 @@ drwxr-xr-x	root/root	usr/share/gitsh/ruby/lib/gitsh/parser/
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/prompt_color.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/prompter.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/quote_detector.rb
--rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/script_runner.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/shell_command_runner.rb
+-rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/string_runner.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/terminal.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/transformer.rb
 -rw-r--r--	root/root	usr/share/gitsh/ruby/lib/gitsh/version.rb
