@@ -4,7 +4,7 @@
 # Depends on:  boehm-gc libunistring libffi
 
 name=guile
-version=2.2.1
+version=2.2.2
 release=1
 source=(ftp://ftp.gnu.org/gnu/guile/$name-$version.tar.gz)
 

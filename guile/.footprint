@@ -479,9 +479,9 @@ lrwxrwxrwx	root/root	usr/lib/guile/2.2/extensions/guile-readline.so.0 -> guile-r
 -rwxr-xr-x	root/root	usr/lib/guile/2.2/extensions/guile-readline.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libguile-2.2.a
 -rwxr-xr-x	root/root	usr/lib/libguile-2.2.la
-lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so -> libguile-2.2.so.1.1.0
-lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so.1 -> libguile-2.2.so.1.1.0
--rwxr-xr-x	root/root	usr/lib/libguile-2.2.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so -> libguile-2.2.so.1.2.0
+lrwxrwxrwx	root/root	usr/lib/libguile-2.2.so.1 -> libguile-2.2.so.1.2.0
+-rwxr-xr-x	root/root	usr/lib/libguile-2.2.so.1.2.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/guile-2.2.pc
 drwxr-xr-x	root/root	usr/share/
