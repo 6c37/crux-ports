@@ -1,4 +1,4 @@
-# Description: A Simple X background setter inspired by imlibsetroot and feh. 
+# Description: A simple X background setter inspired by imlibsetroot and feh. 
 # URL:         https://github.com/ttzhou/setroot
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  imlib2 xorg-server
