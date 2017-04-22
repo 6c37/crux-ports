@@ -4,7 +4,7 @@
 # Depends on:  ruby
 
 name=gitsh
-version=0.11.1
+version=0.11.2
 release=1
 source=(https://github.com/thoughtbot/$name/archive/v$version.tar.gz)
 

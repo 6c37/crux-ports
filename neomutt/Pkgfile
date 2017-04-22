@@ -1,10 +1,10 @@
 # Description: Powerful text-based mail client with all the best feature patches.
 # URL:         https://www.neomutt.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  
+# Depends on:  gpgme
 
 name=neomutt
-version=20170306
+version=20170421
 release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
@@ -20,6 +20,7 @@ build () {
 		--enable-smtp \
 		--enable-hcache \
 		--enable-sidebar \
+		--enable-gpgme \
 		--enable-compressed \
 		--with-ssl \
 		--enable-hcache \

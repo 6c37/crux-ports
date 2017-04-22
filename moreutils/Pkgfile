@@ -4,9 +4,9 @@
 # Depends on:  docbook-xsl
 
 name=moreutils
-version=0.60
-release=3
-source=(http://ftp.de.debian.org/debian/pool/main/m/$name/${name}_$version.orig.tar.xz)
+version=0.61
+release=1
+source=(https://github.com/rtlanceroad/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
