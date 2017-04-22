@@ -1,4 +1,4 @@
-# Description:  A lightweight multiplatform web browser written in Qt Framework and using its web rendering engine QtWebEngine.
+# Description: A lightweight multiplatform web browser written in Qt Framework and using its web rendering engine QtWebEngine.
 # URL:         https://www.qupzilla.com/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  qtwebengine
