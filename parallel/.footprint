@@ -40,6 +40,8 @@ drwxr-xr-x	root/root	usr/share/doc/parallel/
 -rw-r--r--	root/root	usr/share/doc/parallel/parcat.html
 -rw-r--r--	root/root	usr/share/doc/parallel/parcat.pdf
 -rw-r--r--	root/root	usr/share/doc/parallel/parcat.texi
+-rw-r--r--	root/root	usr/share/doc/parallel/parset.pdf
+-rw-r--r--	root/root	usr/share/doc/parallel/parset.texi
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.html
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.pdf
 -rw-r--r--	root/root	usr/share/doc/parallel/sem.texi
@@ -52,6 +54,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/niceload.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/parallel.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/parcat.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/parset.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/sem.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/sql.1.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
