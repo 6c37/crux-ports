@@ -55,6 +55,11 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so.0 -> python.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so -> relay.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so.0 -> relay.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/ruby.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/ruby.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/ruby.so -> ruby.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/ruby.so.0 -> ruby.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/ruby.so.0.0.0
 -rw-r--r--	root/root	usr/lib/weechat/plugins/script.a
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/script.la
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/script.so -> script.so.0.0.0
