@@ -1,12 +1,12 @@
 # Description: The Mozilla internet suite.
 # URL:         http://www.seamonkey-project.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  nss libidl gtk python yasm mesa3d unzip zip libvpx icu hunspell autoconf-2.13
+# Depends on:  nss libidl gtk3 python yasm mesa3d unzip zip libvpx icu hunspell autoconf-2.13
 # Optional:    ffmpeg
 
 name=seamonkey
 version=2.48b1
-release=1
+release=2
 source=(https://archive.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz)
 
 build() {
@@ -18,10 +18,10 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
 	ac_add_options --prefix=/usr
 
-	ac_add_options --enable-optimize="$CFLAGS"
+	ac_add_options --enable-optimize
 	ac_add_options --enable-strip
 	ac_add_options --enable-install-strip
-	ac_add_options --enable-default-toolkit=cairo-gtk2-x11
+	ac_add_options --enable-default-toolkit=cairo-gtk3
 	mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
 
 	ac_add_options --with-system-jpeg
@@ -46,7 +46,6 @@ cat <<- EOF > .mozconfig
 	ac_add_options --with-distribution-id=nu.crux
 
 	ac_add_options --enable-extensions=default,-gnomevfs,-irc
-	ac_add_options --enable-safe-browsing
 	ac_add_options --enable-url-classifier
 	ac_add_options --enable-gio
 	ac_add_options --enable-elf-hack
@@ -58,6 +57,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --disable-updater
 	ac_add_options --disable-gnomeui
 	ac_add_options --disable-crashreporter
+	ac_add_options --disable-safe-browsing
 	ac_add_options --disable-necko-wifi
 	ac_add_options --disable-pulseaudio
 EOF
