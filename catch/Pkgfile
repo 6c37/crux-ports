@@ -1,0 +1,20 @@
+# Description: A modern, C++-native, header-only, framework for unit-tests, TDD and BDD.
+# URL:         https://github.com/philsquared/Catch
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  cmake
+
+name=catch
+version=1.9.3
+release=1
+source=(https://github.com/philsquared/$name/archive/v$version.tar.gz)
+
+build() {
+	cd Catch-$version
+
+	cmake .\
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr
+
+	make
+	make DESTDIR=$PKG  install
+}
