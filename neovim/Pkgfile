@@ -4,16 +4,18 @@
 # Depends on:  cmake libuv msgpack-c lua-lpeg libmpack libvterm libtermkey
 
 name=neovim
-version=0.1.7
+version=0.2.0
 release=1
 source=(https://github.com/neovim/neovim/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	mkdir build; cd build
+	mkdir build ; cd build
 
-	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+	cmake .. \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr
 
 	make DESTDIR=$PKG install
 
