@@ -1,0 +1,32 @@
+# Description: A small binary serialization /RPC library that implements both the msgpack and msgpack-rpc specification.
+# URL:         https://github.com/tarruda/libmpack
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  lua51 lua52 lua
+
+name=libmpack
+version=1.0.4
+release=1
+source=(https://github.com/tarruda/$name/archive/$version.tar.gz)
+
+build() {
+	cd libmpack-$version
+
+	make PREFIX=/usr
+
+	#lua5.1
+	gcc -O2 -fPIC -I/usr/include/lua5.1 -c binding/lua/lmpack.c -o lmpack.o
+	gcc -shared -o mpack.so.5.1 lmpack.o
+	install -Dm755 mpack.so.5.1 "$PKG/usr/lib/lua/5.1/mpack.so"
+
+	#lua5.2
+	gcc -O2 -fPIC -I/usr/include/lua5.2 -c binding/lua/lmpack.c -o lmpack.o
+	gcc -shared -o mpack.so.5.2 lmpack.o
+	install -Dm755 mpack.so.5.2 "$PKG/usr/lib/lua/5.2/mpack.so"
+
+
+	#lua
+	gcc -O2 -fPIC -I/usr/include -c binding/lua/lmpack.c -o lmpack.o
+	gcc -shared -o mpack.so.5.3 lmpack.o
+	install -Dm755 mpack.so.5.3 "$PKG/usr/lib/lua/5.3/mpack.so"
+
+}
