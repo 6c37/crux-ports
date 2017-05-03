@@ -5,14 +5,14 @@
 
 name=elementary-icon-theme
 version=4.0.3
-release=1
+release=2
 source=(https://launchpad.net/elementaryicons/${version%%.*}.x/$version/+download/elementary-icon-theme-$version.tar.xz)
 
 build() {
 	install -dm755 $PKG/usr/share/icons
 	cp -dr --no-preserve=ownership elementary-icon-theme-$version $PKG/usr/share/icons/elementary
 
-	rm $PKG/usr/share/icons/elementary/{AUTHORS,COPYING}
+	rm $PKG/usr/share/icons/elementary/{AUTHORS,CONTRIBUTORS,COPYING,README.md}
 
 	find $PKG -type d -exec chmod 755 {} +
 	find $PKG -type f -exec chmod 644 {} +
