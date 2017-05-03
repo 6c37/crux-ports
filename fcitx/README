@@ -1,10 +1,10 @@
-- fcitx needs non-POSIX and non-C locales, please generate locales first.
-- add the following to your ~/.xinitrc:
+- Fcitx needs non-POSIX and non-C locales, please generate locales first.
+- Add the following to your ~/.xinitrc:
 
 	export XMODIFIERS=@im=fcitx
 	export GTK_IM_MODULE=fcitx
 	export QT_IM_MODULE=fcitx
 	LANG=`your langauge` fcitx -d
 
-- for diagnosing any problem, run `fcitx-diagnose` .
-- pinyin is natively built-in. For other language support, file an issue at #6c37 .
+- For diagnosing any problem, run `fcitx-diagnose` .
+- Pinyin is natively built-in. For other language support, file an issue at #6c37 .
