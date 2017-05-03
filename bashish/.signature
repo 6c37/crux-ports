@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpR9o2wssU/kli2ryvLrE7N+7GJ9E3qs+dhA3Cs+UP9gs7nlUHAc4sDqErlcCaH587lH+TEdsJ8R6eEhGywqa0wU=
-SHA256 (Pkgfile) = c4d9741ffdc2481acb12c796c389a411482b55e038bdc3aa92cd054c5cafe5dd
-SHA256 (.footprint) = e4d950bbeed49ded714812b468628240aa7d1f6fd67978b31c58d99ae6633e36
+RWSsZdBvSzGVpfRjB7znkzFA2Qc1RIlzhSeEM5WmRY2Y7tlWCJKTtqEiav3N83PC2Mh9tFsfie8vWQp/29H8IvcKdFj1f5aeuQI=
+SHA256 (Pkgfile) = 41f6f9c39a65940ae6a26ec6f96d57a3134a09fa68a1007e4a9d5e6fa70d29ca
+SHA256 (.footprint) = abbd993bd1299de0a6a3041165f6385787cb2b347c6390cc7c8bdc604f9970ca
 SHA256 (bashish-2.2.4.tar.gz) = 3de48bc1aa69ec73dafc7436070e688015d794f22f6e74d5c78a0b09c938204b

@@ -341,15 +341,6 @@ drwxr-xr-x	root/root	usr/share/bashish/themes/computer/ubuntu/
 -rwxr-xr-x	root/root	usr/share/bashish/themes/computer/ubuntu/prompt.bash
 -rwxr-xr-x	root/root	usr/share/bashish/themes/computer/ubuntu/prompt.tcsh
 -rwxr-xr-x	root/root	usr/share/bashish/themes/computer/ubuntu/theme
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/bashish/
--rw-r--r--	root/root	usr/share/doc/bashish/BUGS
--rw-r--r--	root/root	usr/share/doc/bashish/CREDITS
--rw-r--r--	root/root	usr/share/doc/bashish/ChangeLog
--rw-r--r--	root/root	usr/share/doc/bashish/HACKING
--rw-r--r--	root/root	usr/share/doc/bashish/README
--rw-r--r--	root/root	usr/share/doc/bashish/THEME
--rw-r--r--	root/root	usr/share/doc/bashish/TODO
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/bashish.1.gz
