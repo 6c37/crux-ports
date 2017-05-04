@@ -5,7 +5,7 @@
 
 name=lua-lpeg
 version=1.0.1
-release=1
+release=2
 source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
 
 build() {
@@ -24,6 +24,5 @@ build() {
 
 	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.3/lpeg.so
 	install -Dm644 re.lua  $PKG/usr/share/lua/5.3/re.lua
-
 
 }
