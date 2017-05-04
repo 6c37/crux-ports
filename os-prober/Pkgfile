@@ -4,12 +4,17 @@
 # Depends on:  
 
 name=os-prober
-version=1.74
+version=1.75
 release=1
-source=(http://ftp.de.debian.org/debian/pool/main/o/$name/${name}_$version.tar.xz)
+source=(
+	http://ftp.de.debian.org/debian/pool/main/o/$name/${name}_$version.tar.xz
+	Fix-CRUX-grub-menu-entry-detection.patch
+)
 
 build() {
-	cd $name
+	cd $name-$version
+
+	patch -p1 < $SRC/Fix-CRUX-grub-menu-entry-detection.patch
 
 	# Adjust lib dir to allow detection of 64-bit distros
 	sed -i -e "s:/lib/ld\*\.so\*:/lib*/ld*.so*:g" os-probes/mounted/common/90linux-distro
