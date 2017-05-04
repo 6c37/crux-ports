@@ -1,12 +1,12 @@
 # Description: Prints freedesktop notifications to stdout.
-# URL:         https://github.com/htylo/simplenotifydaemon
+# URL:         https://github.com/ihaveadrin/simplenotifydaemon
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=sind
 version=0.1
 release=1
-source=(https://github.com/htylo/simplenotifydaemon/archive/v$version.tar.gz)
+source=(https://github.com/ihaveadrin/simplenotifydaemon/archive/v$version.tar.gz)
 
 build() {
 	cd simplenotifydaemon-$version
