@@ -5,8 +5,8 @@
 
 name=lua-bitop
 version=1.0.2
-release=1
-source=(http://bitop.luajit.org/download/LuaBitOp-${version}.tar.gz)
+release=2
+source=(http://bitop.luajit.org/download/LuaBitOp-$version.tar.gz)
 
 build() {
 	cd LuaBitOp-$version
@@ -15,5 +15,4 @@ build() {
 
 	install -Dm644 bit.so ${PKG}/usr/lib/lua/5.1/bit.so
 	install -Dm644 bit.so ${PKG}/usr/lib/lua/5.2/bit.so
-
 }
