@@ -5,7 +5,7 @@
 
 name=libtermkey
 _commit=205c743ad93bae3939e96c27ac2fbfc5a7008c73
-version=20170413
+version=20170504
 release=1
 source=(https://github.com/neovim/$name/archive/${_commit}.tar.gz)
 
