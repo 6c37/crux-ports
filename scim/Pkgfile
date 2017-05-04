@@ -6,9 +6,10 @@
 name=scim
 version=1.4.17
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz
+source=(
+	http://downloads.sourceforge.net/$name/$name-$version.tar.gz
 	xinput-scim
-	)
+)
 
 build() {
 	cd $name-$version
