@@ -1,7 +1,7 @@
 # Description: The slang library version 2.
 # URL:         http://www.jedsoft.org/slang/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libpcre, libpng
+# Depends on:  libpcre libpng
 
 name=libslang2
 version=2.3.1a
@@ -11,7 +11,9 @@ source=(http://www.jedsoft.org/releases/slang/slang-$version.tar.bz2)
 build () {
 	cd slang-$version
 
-	./configure --prefix=/usr --sysconfdir=/etc
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc
 
 	make -j1 all
 	make -j1 DESTDIR=$PKG install-all
