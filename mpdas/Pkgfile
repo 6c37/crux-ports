@@ -6,7 +6,7 @@
 
 name=mpdas
 version=0.4.2
-release=3
+release=4
 source=(
 	https://github.com/hrkfdn/$name/archive/$version.tar.gz
 	mpdas.conf
@@ -23,9 +23,9 @@ build() {
 	sed -i 's|http://ws.audioscrobbler.com/|https://ws.audioscrobbler.com/|g' *
 
 	make PREFIX=/usr CONFIG=/etc
-	make DESTDIR=$PKG PREFIX=/usr CONFIG=/etc MANPREFIX=/usr/share install
+	make DESTDIR=$PKG PREFIX=/usr CONFIG=/etc MANPREFIX=/usr/share/man/man1 install
 
 	install -Dm644 $SRC/mpdas.conf $PKG/etc/mpdas.conf
 	install -Dm755 $SRC/mpdas $PKG/etc/rc.d/mpdas
 	install -d -g audio -o mpd -m755 $PKG/var/run/mpdas
-	}
+}
