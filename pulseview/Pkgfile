@@ -14,8 +14,10 @@ build() {
 	mkdir build; cd build
 
 	cmake .. \
-			-DCMAKE_INSTALL_PREFIX=/usr \
-			-DMAN_INSTALL_DIR=/usr/share/man
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DMAN_INSTALL_DIR=/usr/share/man \
+		-DCMAKE_CXX_FLAGS=-fext-numeric-literals \
+		-DDISABLE_WERROR=TRUE
 
 	make
 	make DESTDIR=$PKG install
