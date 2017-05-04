@@ -5,7 +5,7 @@
 
 name=mdocml
 version=1.14.1
-release=1
+release=2
 source=(
 	http://mdocml.bsd.lv/snapshots/mdocml-$version.tar.gz
 	configure.local
