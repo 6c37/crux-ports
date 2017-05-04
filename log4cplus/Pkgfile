@@ -12,7 +12,7 @@ build() {
 	cd $name-$version
 
 	./configure \
-		 --prefix=/usr \
+		--prefix=/usr \
 		--with-working-locale
 
 	make
