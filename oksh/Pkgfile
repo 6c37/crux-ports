@@ -5,15 +5,24 @@
 
 name=oksh
 version=0.5.9
-release=1
+release=2
 
-source=(http://www.connochaetos.org/$name/$name-$version.tar.gz)
+source=(
+	http://www.connochaetos.org/$name/$name-$version.tar.gz
+	Fix-Makefile.patch
+)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=$PKG
+	patch -p1 < $SRC/Fix-Makefile.patch
+
+	sed -i '/install: installdirs all/s/installdirs all//' Makefile.in
+
+	./configure --prefix=/usr
   
 	make
-	make DESTDIR="$PKG" MANDIR="$PKG/usr/man/man1" install
+	
+	install -D ksh $PKG/bin/ksh
+	install -Dm 644 ksh.1 $PKG/usr/share/man/man1/ksh.1 
 }

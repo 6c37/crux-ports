@@ -1,0 +1,105 @@
+diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
+--- oksh-0.5.9.orig/Makefile.in	2017-05-04 16:04:59.151640740 +0800
++++ oksh-0.5.9/Makefile.in	2017-05-04 16:26:14.664678468 +0800
+@@ -10,7 +10,6 @@ CPP = @CPP@
+ 
+ INSTALL = @INSTALL@
+ INSTALL_PROGRAM = @INSTALL_PROGRAM@
+-INSTALL_DATA = @INSTALL_DATA@
+ 
+ DEFS = @DEFS@
+ LIBS = @LIBS@
+@@ -23,15 +22,11 @@ LDFLAGS = @LDFLAGS@
+ SHELL_PROG = ksh
+ 
+ prefix = @prefix@
+-exec_prefix = @exec_prefix@
+-transform=@program_transform_name@
+ 
+-bindir = $(exec_prefix)/bin
+-mandir = $(prefix)/man/man$(manext)
++bindir = /bin
++mandir = $(prefix)/share/man/man$(manext)
+ manext = 1
+ 
+-# Suffix for executables: nothing for unix, .exe for os/2.
+-exe_suffix=
+ 
+ SHELL = /bin/sh
+ 
+@@ -70,7 +65,7 @@ OS2FILES = os2/Makefile os2/config.h os2
+ 	os2/kshrc.ksh os2/make.sed os2/os2.c os2/os2siglist.out \
+ 	os2/README.os2 os2/NEWS.os2 os2/os2bugs os2/th.cmd os2/config.cache
+ 
+-all: $(SHELL_PROG)$(exe_suffix) 
++all: $(SHELL_PROG)
+ 
+ # This shouldn't be first - some makes don't know about PRECIOUS and assume it
+ # is the default target.
+@@ -80,9 +75,8 @@ all: $(SHELL_PROG)$(exe_suffix)
+ 	$(CC) -c $(CPPFLAGS) $(DEFS) -I. -I$(srcdir) $(CFLAGS) $<
+ 
+ install: installdirs all
+-	$(INSTALL_PROGRAM) $(SHELL_PROG)$(exe_suffix) $(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix)
+-	-$(INSTALL_DATA) $(SHELL_PROG).1 $(mandir)/`echo $(SHELL_PROG)|sed '$(transform)'`.$(manext)
+-	-@prog=$(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix);\
++	$(INSTALL_PROGRAM) $(SHELL_PROG) $(bindir)
++	$(INSTALL_PROGRAM) -m 0644 $(SHELL_PROG).1 $(mandir)
+ 	    test -f /etc/shells \
+ 	    && (grep "^$$prog\$$" /etc/shells > /dev/null \
+ 		|| echo \
+@@ -93,13 +87,13 @@ installdirs:
+ 	$(srcdir)/mkinstalldirs $(bindir) $(mandir)
+ 
+ uninstall:
+-	rm -f $(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix)
+-	rm -f $(mandir)/`echo $(SHELL_PROG)|sed '$(transform)'`.$(manext)
++	rm -f $(bindir)/$(SHELL_PROG)
++	rm -f $(mandir)/$(SHELL_PROG).1
+ 
+ check test:
+-	$(srcdir)/tests/th-sh $(srcdir)/tests/th -s $(srcdir)/tests -p ./$(SHELL_PROG)$(exe_suffix) -C pdksh,sh,ksh,posix,posix-upu $(TESTARGS)
++	$(srcdir)/tests/th-sh $(srcdir)/tests/th -s $(srcdir)/tests -p ./$(SHELL_PROG) -C pdksh,sh,ksh,posix,posix-upu $(TESTARGS)
+ 
+-$(SHELL_PROG)$(exe_suffix): $(OBJS)
++$(SHELL_PROG): $(OBJS)
+ 	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS)
+ 
+ 
+@@ -132,17 +126,17 @@ siglist.out: config.h sh.h siglist.in si
+ 	$(srcdir)/siglist.sh "$(CPP) $(CPPFLAGS) $(DEFS) -I. -I$(srcdir)" < $(srcdir)/siglist.in > tmpsiglist.out
+ 	mv tmpsiglist.out siglist.out
+ 
+-debugtools: check-fd$(exe_suffix) check-sigs$(exe_suffix) \
+-	check-pgrp$(exe_suffix)
++debugtools: check-fd check-sigs \
++	check-pgrp
+ 
+ check-fd.o check-pgrp.o check-sigs.o: config.h
+-check-fd$(exe_suffix): check-fd.o
++check-fd: check-fd.o
+ 	$(CC) $(LDFLAGS) -o $@ check-fd.o $(LIBS)
+ 
+-check-pgrp$(exe_suffix): check-pgrp.o
++check-pgrp: check-pgrp.o
+ 	$(CC) $(LDFLAGS) -o $@ check-pgrp.o $(LIBS)
+ 
+-check-sigs$(exe_suffix): check-sigs.o
++check-sigs: check-sigs.o
+ 	$(CC) $(LDFLAGS) -o $@ check-sigs.o $(LIBS)
+ 
+ TAGS: $(SRCS) $(HDRS)
+@@ -152,10 +146,10 @@ tags: $(SRCS) $(HDRS)
+ 	cd $(srcdir) && ctags -wt $(SRCS) $(HDRS)
+ 
+ clean:
+-	rm -f ksh$(exe_suffix) sh$(exe_suffix) $(OBJS) siglist.out \
++	rm -f ksh sh $(OBJS) siglist.out \
+ 	      core a.out mon.out gmon.out \
+-	      version.c.bak Makefile.bak Makefile.tmp check-fd$(exe_suffix) \
+-	      check-pgrp$(exe_suffix) check-sigs$(exe_suffix)
++	      version.c.bak Makefile.bak Makefile.tmp check-fd \
++	      check-pgrp check-sigs
+ 
+ mostlyclean: clean
+ 
