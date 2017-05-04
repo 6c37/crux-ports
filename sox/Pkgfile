@@ -11,14 +11,15 @@ source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--with-lame \
-				--with-mp3 \
-				--with-oggvorbis \
-				--with-flac \
-				--with-wavpack \
-				--with-distro="Crux"
+	./configure \
+		--prefix=/usr \
+		--bindir=/usr/bin \
+		--with-lame \
+		--with-mp3 \
+		--with-oggvorbis \
+		--with-flac \
+		--with-wavpack \
+		--with-distro="CRUX"
 
 	make
 	make DESTDIR=$PKG install
