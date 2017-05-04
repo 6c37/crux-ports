@@ -1,11 +1,11 @@
 # Description: A 2D game engine which uses the Lua scripting language.
 # URL:         https://love2d.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  freetype libmodplug luajit libsdl2 openal physfs mpg123
+# Depends on:  freetype libmodplug libtheora luajit libsdl2 openal physfs mpg123
 
 name=love
 version=0.10.2
-release=1
+release=2
 source=(https://bitbucket.org/rude/love/downloads/love-$version-linux-src.tar.gz)
 
 build() {
