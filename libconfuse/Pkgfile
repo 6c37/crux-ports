@@ -5,14 +5,18 @@
 
 name=libconfuse
 version=3.0
-release=1
+release=2
 source=(https://github.com/martinh/$name/releases/download/v$version/confuse-$version.tar.xz)
 
 build() {
 	cd confuse-$version
 
-	./configure --prefix=/usr
+	./configure \
+		--prefix=/usr \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share
 }
