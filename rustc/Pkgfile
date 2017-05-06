@@ -1,22 +1,29 @@
 # Description: The Rust programming language compiler and utilities.
 # URL:         http://www.rust-lang.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:
+# Depends on:  llvm-utils
 
 
 name=rustc
-version=1.16.0
+version=1.17.0
 release=1
-source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz) 
+source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz)
 
 build() {
 	cd $name-$version-src
 
-	./configure --prefix=/usr --disable-docs --release-channel=stable --disable-rustbuild
+	rm -rf src/llvm
 
-	make CFLAGS="$CFLAGS -fPIC -w"
+	./configure \
+		--prefix=/usr \
+		--disable-docs \
+		--release-channel=stable \
+		--llvm-root=/usr \
+		--disable-codegen-tests
+
+	./x.py build --verbose
 	make DESTDIR=$PKG install
-	
+
 	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version}
 	rm -rf $PKG/usr/share/doc
 }
