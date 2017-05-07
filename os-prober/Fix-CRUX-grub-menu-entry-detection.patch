@@ -5,7 +5,7 @@ diff -pruN os-prober-1.75.orig/os-probes/mounted/common/90linux-distro os-prober
  	elif [ -e "$dir/etc/devuan_version" ]; then
  		short="Devuan"
  		long="$(printf "Devuan GNU/Linux (%s)\n" "$(cat "$dir/etc/devuan_version")")"
-+	elif [ -e  "$dir/usr/bin/crux" ]; then
++	elif [ -e "$dir/usr/bin/crux" ]; then
 +		short="CRUX"
 +		long="$(printf "CRUX GNU/Linux" "$(cat "$dir/usr/bin/crux" | grep echo | cut -b 20-22)")"
  	else
