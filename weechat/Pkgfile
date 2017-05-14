@@ -5,7 +5,7 @@
 # Optional:    python ruby lua tcl gnutls
 
 name=weechat
-version=1.7.1
+version=1.8
 release=1
 source=(https://github.com/$name/$name/archive/v$version.tar.gz)
 
@@ -13,7 +13,9 @@ build() {
 	cd $name-$version
 
 	./autogen.sh
-	./configure --prefix=/usr --disable-nls
+	./configure \
+		--prefix=/usr \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
