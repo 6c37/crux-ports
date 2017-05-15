@@ -42,6 +42,7 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGenerateHeaders.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGeneratePkgConfigFile.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGeneratePriFile.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMGenerateQmlTypes.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMInstallIcons.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMMarkAsTest.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMMarkNonGuiExecutable.cmake
@@ -59,6 +60,8 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMVersionHeader.h.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMWinResolveSymlinks.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ecm_uninstall.cmake.in
+drwxr-xr-x	root/root	usr/share/ECM/test-modules/
+-rw-r--r--	root/root	usr/share/ECM/test-modules/test_execute_and_compare.cmake
 drwxr-xr-x	root/root	usr/share/ECM/toolchain/
 -rw-r--r--	root/root	usr/share/ECM/toolchain/Android.cmake
 -rw-r--r--	root/root	usr/share/ECM/toolchain/deployment-file.json.in
