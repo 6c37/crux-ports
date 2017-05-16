@@ -4,12 +4,26 @@
 # Depends on:  dbus-python libnotify iso-codes intltool
 
 name=ibus
-version=1.5.15
+version=1.5.16
 release=1
-source=(https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz)
+source=(
+	https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz
+	http://www.unicode.org/Public/emoji/4.0/emoji-data.txt
+	http://www.unicode.org/Public/emoji/4.0/emoji-sequences.txt
+	http://www.unicode.org/Public/emoji/4.0/emoji-test.txt
+	http://www.unicode.org/Public/emoji/4.0/emoji-zwj-sequences.txt
+	https://github.com/fujiwarat/cldr-emoji-annotation/releases/download/31.0.1_1/cldr-emoji-annotation-31.0.1_1.tar.gz
+	)
 
 build() {
-	cd $name-$version
+	install -d $SRC/$name-$version/emoji
+	cp $SRC/emoji-*.txt $SRC/$name-$version/emoji
+
+	install -d $SRC/$name-$version/annotation
+	cd $SRC/cldr-emoji-annotation-31.0.1_1
+	./configure --prefix=$SRC/$name-$version/annotation
+	make
+	make install
 
 	local VALA
 	if [ "$(pkginfo -i | grep '^vala ' )" ]
@@ -38,10 +52,12 @@ build() {
 	local EMOJI
 	if [ "$(pkginfo -i | grep '^json-glib ' )" ]
 	then
-		EMOJI='--enable-emoji-dict'
+		EMOJI="--enable-emoji-dict --with-unicode-emoji-dir=$SRC/$name-$version/emoji --with-emoji-annotation-dir=$SRC/$name-$version/annotation/share/unicode/cldr/common/annotations"
 	else
 		EMOJI='--disable-emoji-dict'
 	fi
+
+	cd $SRC/$name-$version
 
 	./configure \
 		--prefix=/usr \
@@ -60,9 +76,6 @@ build() {
 		--with-python=python2 \
 		--enable-python-library \
 		$EMOJI
-
-	# Workaround with --disable-emoji-dict
-	make -C tools maintainer-clean-generic
 
 	make
 	make DESTDIR=$PKG install

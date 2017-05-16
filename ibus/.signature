@@ -1,5 +1,10 @@
-untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQXa3qoFV7grYQFDeEJFg82qIZZmWkP8JBeRwrjUDTLzha+kDyLiElKjK2jb+A9jb4ckzlhEOCfeqq/S45s4fw0=
-SHA256 (Pkgfile) = bba10301b7506b0c18e9a584045dfe2e062d401783284c74c2476227f9a9febd
-SHA256 (.footprint) = 3eca0fb3a733092677b73f78e78fe85265ad2419c9b047d5e73d44d02542e325
-SHA256 (ibus-1.5.15.tar.gz) = 41f7baad6f3aac0cdfaebef674a8731ae47950f140edfbeefebaeed78c93e385
+untrusted comment: verify with /home/lee/6c37.pub
+RWSsZdBvSzGVpfYWc8tLMPaKKHgiZadGSbakurq1dTxXmNItL6gvDvlF2U8zGRUov6txTCTjhJFtsZ3AKkzIyNE3n9BlJvpN7wQ=
+SHA256 (Pkgfile) = f927f2867809dfb2c54514e42605c5a59af785f24e6914af1d1178c6388cbb45
+SHA256 (.footprint) = 7808a0fe99938eb49a6dfb8b5e85bc0860c9b4f6b3899f556b74ee15fcd4f85a
+SHA256 (ibus-1.5.16.tar.gz) = 36b57bfbe4f92e3281fb535cae65794b6f25164b2a3288e73e6d06b4a409fe1e
+SHA256 (emoji-data.txt) = 11e04eabc3cbda7c9337f6cced9ebe331673d776d20558697dbad9221d4084ac
+SHA256 (emoji-sequences.txt) = 369961fc8ff454d47ca0541124c7c9f5d83436e76f2641935b203427c67c5d2b
+SHA256 (emoji-test.txt) = ceafd77cc07eca1a2ebafebd9c7d6d63c6dd3808243365dd14eb500d39f31769
+SHA256 (emoji-zwj-sequences.txt) = 254b25ca1953a0aba72dff04d15176ac3abe5e6a2022546edaa13d74a96406ee
+SHA256 (cldr-emoji-annotation-31.0.1_1.tar.gz) = 2736f637e953fa9bb07f16c10b76013d887c2f7ae15215dbc5f2efb394fe78a8
