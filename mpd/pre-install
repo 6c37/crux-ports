@@ -1,7 +1,0 @@
-#!/bin/sh
-
-name=mpd
-
-if ! id -u $name >/dev/null 2>&1; then
-	/usr/sbin/useradd -r -d /var/lib/$name -s /bin/false -G audio $name
-fi
