@@ -1,0 +1,8 @@
+For multihead setups, it uses xorg-libxinerama instead of xorg-libxrandr
+by defaults, that is:
+		-DBMPANEL2_FEATURE_XRANDR=OFF
+		-DBMPANEL2_FEATURE_XINERAMA=ON
+So if you want to use xorg-libxrandr only, or use both for multihead 
+setups, make sure you have either package, or both installed, appened 
+your changed settings after cmake line, ignore signature and footprint,  
+then (re)install.

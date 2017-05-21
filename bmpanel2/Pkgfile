@@ -1,0 +1,22 @@
+# Description: A NETWM Compliant Panel for X11.
+# URL:         https://github.com/nsf/bmpanel2
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  cmake pygtk asciidoc
+
+name=bmpanel2
+_commit=8163c3ce2f075fe6e3113fcbca23186362240f4d
+version=20170521
+release=1
+source=(https://github.com/nsf/$name/archive/${_commit}.tar.gz)
+
+build() {
+	cd $name-${_commit}
+
+	cmake . \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DPYTHON_EXECUTABLE=/usr/bin/python2
+
+	make
+	make DESTDIR=$PKG install
+}
