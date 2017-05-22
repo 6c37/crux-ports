@@ -4,14 +4,16 @@
 # Depends on:  execline
 
 name=s6
-version=2.5.0.0
+version=2.5.1.0
 release=1
 source=(http://skarnet.org/software/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --libexecdir=/usr/lib/s6
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/s6
 
 	make
 	make DESTDIR=$PKG install
