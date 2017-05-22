@@ -1,0 +1,21 @@
+# Description: Fcitx Qt5 IM module.
+# URL:         https://github.com/fcitx/fcitx-qt5
+# Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
+# Depends on:  fcitx qt5
+
+name=fcitx-qt5
+version=1.1.0
+release=1
+source=(https://download.fcitx-im.org/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	cmake . \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib
+
+	make
+	make DESTDIR=$PKG install
+}

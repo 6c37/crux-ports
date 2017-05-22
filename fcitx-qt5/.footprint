@@ -1,0 +1,45 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/FcitxQt5/
+drwxr-xr-x	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtconnection.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtdbusaddons_export.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtformattedpreedit.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtinputcontextproxy.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtinputmethoditem.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtinputmethodproxy.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtkeyboardlayout.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtDBusAddons/fcitxqtkeyboardproxy.h
+drwxr-xr-x	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/fcitxqtconfiguifactory.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/fcitxqtconfiguiplugin.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/fcitxqtconfiguiwidget.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/fcitxqtkeysequencewidget.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/FcitxQtWidgetsAddons/fcitxqtwidgetsaddons_export.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/fcitxqtdbusaddons_version.h
+-rw-r--r--	root/root	usr/include/FcitxQt5/fcitxqtwidgetsaddons_version.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/FcitxQt5DBusAddons/
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5DBusAddons/FcitxQt5DBusAddonsConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5DBusAddons/FcitxQt5DBusAddonsConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5DBusAddons/FcitxQt5DBusAddonsTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5DBusAddons/FcitxQt5DBusAddonsTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/FcitxQt5WidgetsAddonsConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/FcitxQt5WidgetsAddonsConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/FcitxQt5WidgetsAddonsTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/FcitxQt5WidgetsAddonsTargets.cmake
+drwxr-xr-x	root/root	usr/lib/fcitx/
+drwxr-xr-x	root/root	usr/lib/fcitx/libexec/
+-rwxr-xr-x	root/root	usr/lib/fcitx/libexec/fcitx-qt5-gui-wrapper
+lrwxrwxrwx	root/root	usr/lib/libFcitxQt5DBusAddons.so -> libFcitxQt5DBusAddons.so.1
+lrwxrwxrwx	root/root	usr/lib/libFcitxQt5DBusAddons.so.1 -> libFcitxQt5DBusAddons.so.1.0
+-rwxr-xr-x	root/root	usr/lib/libFcitxQt5DBusAddons.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libFcitxQt5WidgetsAddons.so -> libFcitxQt5WidgetsAddons.so.1
+lrwxrwxrwx	root/root	usr/lib/libFcitxQt5WidgetsAddons.so.1 -> libFcitxQt5WidgetsAddons.so.1.0
+-rwxr-xr-x	root/root	usr/lib/libFcitxQt5WidgetsAddons.so.1.0
+drwxr-xr-x	root/root	usr/lib/qt5/
+drwxr-xr-x	root/root	usr/lib/qt5/plugins/
+drwxr-xr-x	root/root	usr/lib/qt5/plugins/platforminputcontexts/
+-rwxr-xr-x	root/root	usr/lib/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
