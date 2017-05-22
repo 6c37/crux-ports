@@ -1,4 +1,3 @@
-- Use scim or fcitx as your first choice because it's kinda WIP to get it worked.
 - Ibus needs non-POSIX and non-C locales, please generate locales first.
 - Add the following to your ~/.xinitrc:
 
