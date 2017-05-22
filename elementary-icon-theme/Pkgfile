@@ -4,8 +4,8 @@
 # Depends on:  librsvg
 
 name=elementary-icon-theme
-version=4.0.3
-release=2
+version=4.1.0
+release=1
 source=(https://launchpad.net/elementaryicons/${version%%.*}.x/$version/+download/elementary-icon-theme-$version.tar.xz)
 
 build() {

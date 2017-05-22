@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpdOckB/Xwt4370HqEsCRxCjS7InyLUw94Kk7/DtKp1JfB1QPpyGv/J3M+R3QmjrP6apSgscd+ESyAwre2uvrygA=
-SHA256 (Pkgfile) = 65bcd89fe727f0eca5af5d66200ea29d96dd7253eb775928f7a824b624784410
-SHA256 (.footprint) = 4f7e13a5bda580b5d2dd56e3793f3f17338e0dd7cb65b6842ec48b77cf406d7b
-SHA256 (elementary-icon-theme-4.0.3.tar.xz) = abd39e18a5782d05afc7a44de56802e1245e371cdbf9eab569e6111f39b86c44
+RWSsZdBvSzGVpV9p5d8XLKW7kFPZWFmNzd9q9nkEDAZceG6kuPdTAv61FiUzQx19LzZwKecncLg7A5sAwtnyUW/V/MrwIrA6CAs=
+SHA256 (Pkgfile) = 8b468fa67117bd54eb3d2df15594e1f109d759c75127865626093e44802b887c
+SHA256 (.footprint) = 75619fff2ab165ad21728949bba446a011a2ed41375c30cbf39de3098acf1ec4
+SHA256 (elementary-icon-theme-4.1.0.tar.xz) = 55eb7d264180d2550372612381462b5dadf379e7b404bf9a2044b6940499f322
