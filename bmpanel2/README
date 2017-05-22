@@ -1,5 +1,5 @@
 For multihead setups, it uses xorg-libxinerama instead of xorg-libxrandr
-by defaults, that is:
+by default, that is:
 		-DBMPANEL2_FEATURE_XRANDR=OFF
 		-DBMPANEL2_FEATURE_XINERAMA=ON
 So if you want to use xorg-libxrandr only, or use both for multihead 
