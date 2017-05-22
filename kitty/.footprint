@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/layout.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/main.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/mouse.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/rgb.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/session.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/shaders.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/tabs.cpython-36.pyc
@@ -57,6 +58,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/layout.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/main.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/mouse.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/rgb.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/session.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/shaders.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/tabs.py
