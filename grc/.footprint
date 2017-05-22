@@ -1,5 +1,7 @@
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/grc.conf
+-rw-r--r--	root/root	etc/grc.fish
+-rw-r--r--	root/root	etc/grc.zsh
 drwxr-xr-x	root/root	etc/profile.d/
 -rw-r--r--	root/root	etc/profile.d/grc.bashrc
 drwxr-xr-x	root/root	usr/

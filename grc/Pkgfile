@@ -4,7 +4,7 @@
 # Depends on:  python
 
 name=grc
-version=1.11
+version=1.11.1
 release=1
 source=(https://github.com/garabik/$name/archive/v$version.tar.gz)
 
