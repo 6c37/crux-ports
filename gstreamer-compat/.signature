@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUeDm/qIMhb4+DMGE4Tvxa55enNIVaWpeqHP+6s4WWpVhAapOP19moRCagwUTXYewSDtWvYydFdlFBILKZ1uiA8=
-SHA256 (Pkgfile) = a14787fedf94e528a052ce9b4d28be9cb0ce1365a50d4ecb6ba079249d50d412
-SHA256 (.footprint) = 377ef468b02dc79b6b213f0b7496381b4ac46343c923b49e384d47ce4a4ae315
-SHA256 (gstreamer-0.10.36.tar.xz) = 9151aa108c177054387885763fa0e433e76780f7c5655c70a5390f2a6c6871da
