@@ -18,18 +18,18 @@ build() {
 	cmake .
 	make
 
-	install -dm755 $PKG/opt/
-	cp -r $SRC/df_linux $PKG/opt/dwarffortress
+	install -dm755 $PKG/usr/share
+	cp -r $SRC/df_linux $PKG/usr/share/dwarffortress
 
-	rm -r $PKG/opt/dwarffortress/{df,g_src}
-	rm -r $PKG/opt/dwarffortress/libs/*
+	rm -r $PKG/usr/share/dwarffortress/{df,g_src}
+	rm -r $PKG/usr/share/dwarffortress/libs/*
 
-	find $PKG/opt/dwarffortress -type d -exec chmod 755 {} +
-	find $PKG/opt/dwarffortress -type f -exec chmod 644 {} +
+	find $PKG/usr/share/dwarffortress -type d -exec chmod 755 {} +
+	find $PKG/usr/share/dwarffortress -type f -exec chmod 644 {} +
 
-	install -Dm755 $SRC/df_linux/libs/Dwarf_Fortress $PKG/opt/dwarffortress/libs/Dwarf_Fortress
-	install -Dm755 $SRC/dwarf_fortress_unfuck-$version/libgraphics.so $PKG/opt/dwarffortress/libs/libgraphics.so
+	install -Dm755 $SRC/df_linux/libs/Dwarf_Fortress $PKG/usr/share/dwarffortress/libs/Dwarf_Fortress
+	install -Dm755 $SRC/dwarf_fortress_unfuck-$version/libgraphics.so $PKG/usr/share/dwarffortress/libs/libgraphics.so
 	install -Dm755 $SRC/dwarffortress $PKG/usr/bin/dwarffortress
 
-	ln -s /usr/lib/libpng.so $PKG/opt/dwarffortress/libs/libpng.so.3
+	ln -s /usr/lib/libpng.so $PKG/usr/share/dwarffortress/libs/libpng.so.3
 }
