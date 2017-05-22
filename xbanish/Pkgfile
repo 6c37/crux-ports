@@ -4,7 +4,7 @@
 # Depends on:  xorg-libx11 xorg-libxfixes xorg-libxcb xorg-libxi xorg-libxt xorg-xproto
 
 name=xbanish
-version=1.4
+version=1.5
 release=1
 source=(https://github.com/jcs/$name/archive/v$version.tar.gz)
 
