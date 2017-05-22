@@ -6,7 +6,7 @@
 name=busybox
 version=1.26.2
 release=1
-source=(http://busybox.net/downloads/busybox-$version.tar.bz2)
+source=(http://busybox.net/downloads/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
@@ -26,4 +26,3 @@ build() {
 	make CC="$CC"
 	install -m 0755 -D busybox $PKG/sbin/busybox.static
 }
-
