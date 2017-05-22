@@ -4,7 +4,7 @@
 # Depends on:  qt5
 
 name=qt5ct
-version=0.31
+version=0.32
 release=1
 source=(https://downloads.sourceforge.net/project/$name/$name-$version.tar.bz2)
 
