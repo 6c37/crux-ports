@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpU6kKwO41/vftVkVyW3DeHMOp5bfV8Ro6qNdZAEMDXtTN4odw4UulE+RfvWUsMaPUQj8rswkviWU5KIlF0ptKwo=
+SHA256 (Pkgfile) = 70f06d8aea828358e0aacffca3fa21d856588a70bd2a2d47ccf9f8f9b01687ec
+SHA256 (.footprint) = 404f4c38c5d4ebfffa495046ecba7769f890d384fc2bb20ff0e71905238789e9
+SHA256 (ytree-1.99pl1.tar.gz) = 763e8c2af528174cd738ed8f2eca62579e3edef57ccbd242be7cf181ae15d251
+SHA256 (Fix-Makefile.patch) = b588017c41a2d8f7b7d6c726231ba4b7893bde71d51fb4f8c152c599025234f6

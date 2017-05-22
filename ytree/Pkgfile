@@ -1,0 +1,21 @@
+# Description: A UNIX Filemanager.
+# URL:         http://www.han.de/~werner/ytree.html
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=ytree
+version=1.99pl1
+release=1
+source=(
+	http://www.han.de/~werner/$name-$version.tar.gz
+	Fix-Makefile.patch
+	)
+
+build() {
+	cd $name-$version
+
+	patch -p1 < $SRC/Fix-Makefile.patch
+
+	make
+	make DESTDIR=$PKG install
+}
