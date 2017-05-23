@@ -1,0 +1,63 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/caca-config
+-rwxr-xr-x	root/root	usr/bin/cacaclock
+-rwxr-xr-x	root/root	usr/bin/cacademo
+-rwxr-xr-x	root/root	usr/bin/cacafire
+-rwxr-xr-x	root/root	usr/bin/cacaplay
+-rwxr-xr-x	root/root	usr/bin/cacaserver
+-rwxr-xr-x	root/root	usr/bin/cacaview
+-rwxr-xr-x	root/root	usr/bin/img2txt
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/caca++.h
+-rw-r--r--	root/root	usr/include/caca.h
+-rw-r--r--	root/root	usr/include/caca0.h
+-rw-r--r--	root/root	usr/include/caca_conio.h
+-rw-r--r--	root/root	usr/include/caca_types.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libcaca++.a
+-rwxr-xr-x	root/root	usr/lib/libcaca++.la
+lrwxrwxrwx	root/root	usr/lib/libcaca++.so -> libcaca++.so.0.99.19
+lrwxrwxrwx	root/root	usr/lib/libcaca++.so.0 -> libcaca++.so.0.99.19
+-rwxr-xr-x	root/root	usr/lib/libcaca++.so.0.99.19
+-rw-r--r--	root/root	usr/lib/libcaca.a
+-rwxr-xr-x	root/root	usr/lib/libcaca.la
+lrwxrwxrwx	root/root	usr/lib/libcaca.so -> libcaca.so.0.99.19
+lrwxrwxrwx	root/root	usr/lib/libcaca.so.0 -> libcaca.so.0.99.19
+-rwxr-xr-x	root/root	usr/lib/libcaca.so.0.99.19
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/caca++.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/caca.pc
+drwxr-xr-x	root/root	usr/lib/python2.7/
+drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
+drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/caca/
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/__init__.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/canvas.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/canvas.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/canvas.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/common.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/common.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/common.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/display.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/display.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/display.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/dither.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/dither.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/dither.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.pyo
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/libcaca/
+-rw-r--r--	root/root	usr/share/libcaca/caca.txt
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/caca-config.1.gz
+lrwxrwxrwx	root/root	usr/share/man/man1/cacademo.1.gz -> cacafire.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacafire.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaplay.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaserver.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaview.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/img2txt.1.gz
