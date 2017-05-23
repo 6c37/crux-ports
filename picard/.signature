@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpatzKTLpiZv8bNTT5ai85QPtfCl3Ub6dQzVuv26RgdAcNx2kogz2GgUtXWn2QjqP1mWh7TbooQ8dciQ7PbreLQQ=
-SHA256 (Pkgfile) = 52d0b166a265c41ce19c5cde2912c40df86f166e0bce8d41898e6d29aa0e4a64
-SHA256 (.footprint) = 7912714b0b4f83acd32f5a5ff884b10e40e6401f87bf61a7e44aa841a19c7719
-SHA256 (picard-1.4.1.tar.gz) = 994c7f835e1adbd7905e88af841ee6e7c249dc75b8be9963b1b3dc6cb8de6a4a
+RWSsZdBvSzGVpR2TKStzMqWXN7bRXdOLDtzLi/XC80ZwRv4wKskKQ+NXL3uOZHo6oxpNiwDmQWF7MSDB+2fazdSN/jKuMwlPdAs=
+SHA256 (Pkgfile) = 5db5933b92384b93314f80a6e32a8cc16e32779a443a19cd04847e1141480ada
+SHA256 (.footprint) = edbf38e43630600b64887c0ba77866cbf8589fd6146930b7f00ba2ef68f6c93b
+SHA256 (picard-1.4.2.tar.gz) = f0adee3877bbd66c827a43b57dd2233037b99f6ebfdc1700b26cb9d400992234
