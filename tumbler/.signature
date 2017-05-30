@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpchz7RSNNkFMiq39ZVlmjYQHVcFx1Hfcr1+ZFR5fTh7bzYd74COh5ZmKcQy/wcdhJWYmxH68tgKi8V9PSowRbQw=
-SHA256 (Pkgfile) = c0af9e6554c5e1637fd641fd8a12722c2fbbba9a8860cd1a6e7d6db3eee7b9db
-SHA256 (.footprint) = cc05c77a6de2bb30f9d46477630a40e89211f9230f0b8ad59ed6d4ace27f49e9
-SHA256 (tumbler-0.1.90.tar.bz2) = 1ae8ee8805f9c6574a15efcf325afb905c294366bdb65e9276bb42ac117f68aa
+RWSsZdBvSzGVpdjTpYnihyIntd/vBJISW3sjGkKaGnL2eBfy9xGiJXRFwbFybV7yeg/DVnTc0f54kyd6K+HbUM3i8Ai/qUNBpQg=
+SHA256 (Pkgfile) = 41daabee4f90d437cd6958c47687a774d465e56ad6a924adb41d0fb7d38e9b8e
+SHA256 (.footprint) = cb45f69db342ab1bf08d8b2fce5064800e19d0b9cdef4a963e1a0efb27c29f35
+SHA256 (tumbler-0.1.92.1.tar.bz2) = 77185e0322b882f206c94ed1236cdf1b944c26a075f8de03b752696923597418
