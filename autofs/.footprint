@@ -1,4 +1,3 @@
--rw-r--r--	root/root	autofs
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/autofs/
 -rw-r--r--	root/root	etc/autofs/auto.master
@@ -6,6 +5,7 @@ drwxr-xr-x	root/root	etc/autofs/auto.master.d/
 -rw-r--r--	root/root	etc/autofs/auto.misc
 -rwxr-xr-x	root/root	etc/autofs/auto.net
 -rwxr-xr-x	root/root	etc/autofs/auto.smb
+-rw-r--r--	root/root	etc/autofs/autofs
 -rw-r--r--	root/root	etc/autofs/autofs.conf
 -rw-------	root/root	etc/autofs/autofs_ldap_auth.conf
 drwxr-xr-x	root/root	etc/rc.d/
