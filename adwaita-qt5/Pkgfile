@@ -4,12 +4,12 @@
 # Depends on:  qt5
 
 name=adwaita-qt5
-version=0.99
+version=1.0
 release=1
-source=(https://github.com/MartinBriza/adwaita-qt/archive/$version.tar.gz)
+source=(https://github.com/MartinBriza/${name%5}/archive/$version.tar.gz)
 
 build() {
-	cd adwaita-qt-$version
+	cd ${name%5}-$version
 
 	cmake . \
 		-DCMAKE_BUILD_TYPE=Release \
