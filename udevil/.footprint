@@ -1,6 +1,4 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/conf.d/
--rw-r--r--	root/root	etc/conf.d/devmon
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/devmon
 drwxr-xr-x	root/root	etc/udevil/
