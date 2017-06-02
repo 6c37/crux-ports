@@ -33,11 +33,11 @@ build() {
 		make -C GUI clean
 		make -C GUI
 		make
-		make sbindir=/usr/bin DESTDIR=$PKG install
+		make sbindir=/usr/bin/ DESTDIR=$PKG install
 		install -D -m 0755 GUI/${name}_GUI $PKG/usr/bin/${name}_GUI
 	else
 		make
-		make sbindir=/usr/bin DESTDIR=$PKG install
+		make sbindir=/usr/bin/ DESTDIR=$PKG install
 	fi
 
 	rm -rf $PKG/usr/share/doc
