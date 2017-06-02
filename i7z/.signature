@@ -1,5 +1,12 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpdQJV0mwtmZrwsFwOPfq+u4iHhRPROb39NxYO9PDQb66z5VLQjwEC4IDQgQ32Z4Nlx/wEvnNSWUAcUgNGHD5sw0=
-SHA256 (Pkgfile) = 78493e05db791491872728576d6f73f5a964be7cd5354d015ac308925803c414
-SHA256 (.footprint) = bf96d0cca84f8724c2b838bca7c00c0049ed1f192f3999bb2fe2379ef25fab9b
+RWSsZdBvSzGVpVM2+nx0mRuUU9jUg6u+wiKDWCHDJOtbK7Sh/Gy8bO5q+J4XzK1bNDF+yNuPgMkzWGo5ScdZLJBBVO1lbvDb/w0=
+SHA256 (Pkgfile) = f8c12f22627d5eef7553c12548c065712f387b021c7d6fd67741beca98a18d68
+SHA256 (.footprint) = 1852b9eac141e191bac0193be5d08d2ea094b616faa4a22e41cb717fda6ca828
 SHA256 (5023138d7c35c4667c938b853e5ea89737334e92.tar.gz) = e127bddf850e7febd39cef2d2b13dca5fe19cc2a1bb1099d72b683be5d8bd1c0
+SHA256 (fix-insecure-tempfile.patch) = 0ca3a67b5793b0be84c26993bea2a5d300e14ddbe685c67b42fba1f6d57f0a07
+SHA256 (fix_cpuid_asm.patch) = 78d6b44d5f5a93fea6ebf10f704925b21bf51d92c090dc5cad9ff836cda0b254
+SHA256 (hyphen-used-as-minus-sign.patch) = 6bb8466ac41d9de4cae0ea84508e0919cb99da24098c12c1517d23322c0a3f5f
+SHA256 (i7z-0.27.2-ncurses.patch) = 0286dbda73a37b6c3300c98150eafdc23276c1dbebe17ee85659ee00a1457f57
+SHA256 (install-i7z_rw_registers.patch) = d974c331280348358d1ab3703dd670f23189bb76229d6f57276738c04f69bc76
+SHA256 (qt5.patch) = e52f2c47cdd071ffefab9550ba816100f1d1ea367654bd5752655aef9680bcd6
+SHA256 (use_stdbool.patch) = 8eb552d74fd4fda6cecbcf390843174d9c879f5c6b1459a9f7d3d1780cd9c351

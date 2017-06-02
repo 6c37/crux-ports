@@ -1,1 +1,8 @@
 b482a83e18b4f7308b1adf6355dcf734  5023138d7c35c4667c938b853e5ea89737334e92.tar.gz
+dc69e35f0abf7e774eee1af51a86bc19  fix-insecure-tempfile.patch
+b83110bce6f52f3009e0d6d91c201b01  fix_cpuid_asm.patch
+5d5723fbc4c953888a3b09c3867a3b12  hyphen-used-as-minus-sign.patch
+bfbf9eea60bdccbc988cc21c1996e037  i7z-0.27.2-ncurses.patch
+428dbbe41bde2b14c62c59c53ad2ea57  install-i7z_rw_registers.patch
+1055e4603bd1dfc23b6ea97af2a2b79c  qt5.patch
+4803c110fbb6d7cc50bf821e622b86c1  use_stdbool.patch
