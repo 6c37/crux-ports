@@ -5,7 +5,7 @@
 # Optional:    python xsel
 
 name=fish
-version=2.5.0
+version=2.6.0
 release=1
 source=(https://github.com/fish-shell/fish-shell/archive/$version.tar.gz)
 
