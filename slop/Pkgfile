@@ -4,7 +4,7 @@
 # Depends on:  cmake xorg-libxext glm
 
 name=slop
-version=6.3.40
+version=6.3.41
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
