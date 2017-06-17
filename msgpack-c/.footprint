@@ -31,6 +31,9 @@ drwxr-xr-x	root/root	usr/include/msgpack/adaptor/cpp11/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/unique_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/unordered_map.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/unordered_set.hpp
+drwxr-xr-x	root/root	usr/include/msgpack/adaptor/cpp17/
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp17/optional.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp17/string_view.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/define.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/define_decl.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/deque.hpp
@@ -584,6 +587,9 @@ drwxr-xr-x	root/root	usr/include/msgpack/v1/adaptor/cpp11/
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/cpp11/unique_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/cpp11/unordered_map.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/cpp11/unordered_set.hpp
+drwxr-xr-x	root/root	usr/include/msgpack/v1/adaptor/cpp17/
+-rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/cpp17/optional.hpp
+-rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/cpp17/string_view.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/define.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/define_decl.hpp
 -rw-r--r--	root/root	usr/include/msgpack/v1/adaptor/deque.hpp
@@ -727,6 +733,12 @@ drwxr-xr-x	root/root	usr/include/msgpack/v2/detail/
 -rw-r--r--	root/root	usr/include/msgpack/zone.hpp
 -rw-r--r--	root/root	usr/include/msgpack/zone_decl.hpp
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/msgpack/
+-rw-r--r--	root/root	usr/lib/cmake/msgpack/msgpack-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/msgpack/msgpack-config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/msgpack/msgpack-targets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/msgpack/msgpack-targets.cmake
 -rw-r--r--	root/root	usr/lib/libmsgpackc.a
 lrwxrwxrwx	root/root	usr/lib/libmsgpackc.so -> libmsgpackc.so.2
 lrwxrwxrwx	root/root	usr/lib/libmsgpackc.so.2 -> libmsgpackc.so.2.0.0
