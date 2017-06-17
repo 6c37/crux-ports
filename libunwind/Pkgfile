@@ -4,7 +4,7 @@
 # Depends on:
 
 name=libunwind
-version=1.2
+version=1.2.1
 release=1
 source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
 
