@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/share/ECM/cmake/
 drwxr-xr-x	root/root	usr/share/ECM/find-modules/
 -rw-r--r--	root/root	usr/share/ECM/find-modules/ECMFindModuleHelpersStub.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindEGL.cmake
+-rw-r--r--	root/root	usr/share/ECM/find-modules/FindGperf.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindInotify.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindKF5.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindLibGit2.cmake
