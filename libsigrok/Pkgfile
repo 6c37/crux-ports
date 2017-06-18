@@ -4,7 +4,7 @@
 # Depends on:  glibmm libzip doxygen
 
 name=libsigrok
-version=0.4.0
+version=0.5.0
 release=1
 source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 

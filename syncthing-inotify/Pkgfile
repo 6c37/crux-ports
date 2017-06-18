@@ -4,7 +4,7 @@
 # Depends on:  syncthing
 
 name=syncthing-inotify
-version=0.8.5
+version=0.8.7
 release=1
 source=(
 	https://github.com/syncthing/$name/archive/v$version.tar.gz

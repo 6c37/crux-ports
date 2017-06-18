@@ -10,14 +10,26 @@ drwxr-xr-x	root/root	usr/include/libsigrokcxx/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libsigrok.a
 -rwxr-xr-x	root/root	usr/lib/libsigrok.la
-lrwxrwxrwx	root/root	usr/lib/libsigrok.so -> libsigrok.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libsigrok.so.3 -> libsigrok.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libsigrok.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrok.so -> libsigrok.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrok.so.4 -> libsigrok.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libsigrok.so.4.0.0
 -rw-r--r--	root/root	usr/lib/libsigrokcxx.a
 -rwxr-xr-x	root/root	usr/lib/libsigrokcxx.la
-lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so -> libsigrokcxx.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so.3 -> libsigrokcxx.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libsigrokcxx.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so -> libsigrokcxx.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokcxx.so.4 -> libsigrokcxx.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libsigrokcxx.so.4.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsigrok.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsigrokcxx.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/48x48/mimetypes/libsigrok.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/mimetypes/libsigrok.svg
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/application/
+-rw-r--r--	root/root	usr/share/mime/application/vnd.sigrok.session.xml

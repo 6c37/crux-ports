@@ -4,7 +4,7 @@
 # Depends on:  glib python3
 
 name=libsigrokdecode
-version=0.4.1
+version=0.5.0
 release=1
 source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 

@@ -1,10 +1,10 @@
 # Description: A Qt based logic analyzer, oscilloscope and MSO GUI for sigrok.
 # URL:         https://sigrok.org/wiki/PulseView
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake libsigrok libsigrokdecode qt4
+# Depends on:  cmake libsigrok libsigrokdecode qt5 boost
 
 name=pulseview
-version=0.3.0
+version=0.4.0
 release=1
 source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 
