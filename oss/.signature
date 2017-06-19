@@ -1,0 +1,11 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpV2RdPXSn5uFQBlbjw6TiuhO6ZJY7jIHmGg67LfX0iNvKcSQ4Dn0NsuA+l5wZTgLSy0shoIwDLt2W/4sKmY9ygM=
+SHA256 (Pkgfile) = afb59ada48c817025a2639b4c820706e6868369edd89c75b5dec37e6c67d2668
+SHA256 (.footprint) = 5e0528928add3cd7fd32e8e26307fc36d0cce00622ada30954d03d44a6e648f5
+SHA256 (oss-v4.2-build2017-src-gpl.tar.bz2) = 289f9ccfc691d240c14210d5686d822b133d6bfcbd3373c760627eda72f80d3b
+SHA256 (oss) = eda976d500abb8955bef10095fc668e15266d450978f1c7f8c6b5194c7c08564
+SHA256 (remove-hal.patch) = fba70ba34d2aa3d69266e529d3ef81ab9a8cdd5d35fe54208a43c06f5cbc3c34
+SHA256 (rm-init-scripts.patch) = 0b9f49225269dbe4c80db152b242faee7ea01d6d3c1b5ae3f58d15e5b3645da8
+SHA256 (soundon.patch) = dfd4c9157a335bb3a1b0a81e2ccd11dbf25cec635ca65cb6e5204358bf0f4d25
+SHA256 (kmod-link.patch) = 4cf32ed1e30fdd36188bf016654b3d3bb98c10767370f34af27549ea8e628cd6
+SHA256 (ossvermagic.patch) = 01d70dbe19f7c5abc97bbf437f435beda3f5581bd9f6048997bd132b8e827213

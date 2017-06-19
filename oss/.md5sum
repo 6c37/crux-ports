@@ -1,0 +1,7 @@
+439c0b8aac41694a596ed2fe53c50522  kmod-link.patch
+e227949416b266674d6b30963df0204c  oss
+22f51bc9d80cdb59bb296bfb37209a80  oss-v4.2-build2017-src-gpl.tar.bz2
+cc949da86f53096f6f934aec5d857557  ossvermagic.patch
+5ce513818f1d5fa3543b7e4dfe929b65  remove-hal.patch
+d1722c91a222e9786fe613f47c713510  rm-init-scripts.patch
+65f07fe241bfbf912f76d8b6d8f276b5  soundon.patch

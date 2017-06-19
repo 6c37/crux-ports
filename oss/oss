@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# /etc/rc.d/oss: start/stop oss daemon
+#
+
+ONPROG=/usr/sbin/soundon
+OFFPROG=/usr/sbin/soundoff
+
+case $1 in
+start)
+	$ONPROG
+	;;
+stop)
+	$OFFPROG
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+*)
+	echo "usage: $0 [start|stop|restart]"
+	;;
+esac
+
+# End of file

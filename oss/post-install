@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sh /usr/lib/oss/build/install.sh

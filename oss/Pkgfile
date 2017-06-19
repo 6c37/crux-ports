@@ -1,0 +1,50 @@
+# Description: Open Sound System UNIX audio architecture.
+# URL:         http://developer.opensound.com/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gtk
+
+name=oss
+version=4.2_2017
+release=1
+source=(
+	http://www.4front-tech.com/developer/sources/stable/gpl/$name-v${version/_*}-build${version/*_}-src-gpl.tar.bz2
+	oss
+	remove-hal.patch
+	rm-init-scripts.patch
+	soundon.patch
+	kmod-link.patch
+	ossvermagic.patch
+)
+
+build () {
+	cd oss-v${version/_*}-build${version/*_}-src-gpl
+
+	rm -rf build
+	mkdir build
+
+	patch -p0 < $SRC/ossvermagic.patch
+
+	cd setup/Linux
+	patch -p2 < $SRC/rm-init-scripts.patch
+	rm oss/etc/S89oss
+	patch -p2 < $SRC/remove-hal.patch
+	rm oss/scripts/*oss_usb-create-device*
+	patch -p1 < $SRC/soundon.patch
+
+	mv oss/build/{osscore.c,osscore_wrapper.c}
+	patch -p2 < $SRC/kmod-link.patch
+	cd ../..
+
+	cd build
+	../configure --enable-libsalsa=NO --regparm
+	make build
+
+	make DESTDIR=$PKG/ copy
+
+	cd $PKG
+	mkdir -p lib/modules/$(uname -r)/extra
+	grep -IlrZ '\<lib/modules/[^/]\+/kernel/oss\>' . | xargs -0 sed -i "s,\<lib/modules/\([^/]\+\)/kernel/oss\>,lib/modules/\1/extra,g" --
+	chmod -R a+rX .
+
+	install -Dm755 $SRC/oss $PKG/etc/rc.d/oss
+}
