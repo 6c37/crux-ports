@@ -1,17 +1,19 @@
 # Description: A ncurses based file manager with vi like keybindings.
 # URL:         http://vifm.info
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  ncurses
+# Depends on:  
 
 name=vifm
-version=0.8.2
+version=0.9
 release=1
 source=(https://github.com/$name/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --disable-nls
+	./configure \
+		--prefix=/usr \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
