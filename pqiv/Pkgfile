@@ -2,10 +2,10 @@
 # URL:         http://www.pberndt.com/Programme/Linux/pqiv/index.html
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk ffmpeg
-# Optional:    poppler-glib imagemagick gdk-pixbuf
+# Optional:    poppler-glib imagemagick gdk-pixbuf libwebp
 
 name=pqiv
-version=2.8.5
+version=2.9
 release=1
 source=(https://github.com/phillipberndt/$name/archive/$version.tar.gz)
 
