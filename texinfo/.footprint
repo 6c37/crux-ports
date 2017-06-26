@@ -11,6 +11,9 @@ lrwxrwxrwx	root/root	usr/bin/makeinfo -> texi2any
 -rwxr-xr-x	root/root	usr/bin/texindex
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/texinfo/
+-rw-r--r--	root/root	usr/lib/texinfo/MiscXS.a
+-rwxr-xr-x	root/root	usr/lib/texinfo/MiscXS.la
+-rwxr-xr-x	root/root	usr/lib/texinfo/MiscXS.so
 -rw-r--r--	root/root	usr/lib/texinfo/XSParagraph.a
 -rwxr-xr-x	root/root	usr/lib/texinfo/XSParagraph.la
 -rwxr-xr-x	root/root	usr/lib/texinfo/XSParagraph.so
@@ -31,7 +34,6 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/texinfo.5.gz
 drwxr-xr-x	root/root	usr/share/texinfo/
 drwxr-xr-x	root/root	usr/share/texinfo/DebugTexinfo/
--rw-r--r--	root/root	usr/share/texinfo/DebugTexinfo/DebugCount.pm
 -rw-r--r--	root/root	usr/share/texinfo/DebugTexinfo/DebugTree.pm
 drwxr-xr-x	root/root	usr/share/texinfo/Pod-Simple-Texinfo/
 drwxr-xr-x	root/root	usr/share/texinfo/Pod-Simple-Texinfo/Pod/
@@ -63,10 +65,13 @@ drwxr-xr-x	root/root	usr/share/texinfo/Texinfo/Convert/XSParagraph/
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Convert/XSParagraph/TestXS.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Documentlanguages.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Encoding.pm
+-rw-r--r--	root/root	usr/share/texinfo/Texinfo/MiscXS.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/ModulePath.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Parser.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Report.pm
 -rw-r--r--	root/root	usr/share/texinfo/Texinfo/Structuring.pm
+-rw-r--r--	root/root	usr/share/texinfo/Texinfo/Transformations.pm
+-rw-r--r--	root/root	usr/share/texinfo/Texinfo/XSLoader.pm
 -rw-r--r--	root/root	usr/share/texinfo/htmlxref.cnf
 drwxr-xr-x	root/root	usr/share/texinfo/init/
 -rw-r--r--	root/root	usr/share/texinfo/init/book.pm
