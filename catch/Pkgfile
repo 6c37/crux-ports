@@ -4,7 +4,7 @@
 # Depends on:  cmake
 
 name=catch
-version=1.9.5
+version=1.9.6
 release=1
 source=(https://github.com/philsquared/$name/archive/v$version.tar.gz)
 
