@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpaq4RsEFBXlSRNbi5iIvSe7aDqi+lmYsZgcTC68bd9B03/rfsVyG1q7b7vj99EdTF4g0FPAk5sQFQcQro6X5uAw=
-SHA256 (Pkgfile) = 7fa0881ddaaf1e9ff10c497ecaedc6d74f22d8097e3db12de1fa1201188aa317
+RWSsZdBvSzGVpfkwx0EWBTO7fbOfwYiIryZR2cmbUusr5ITnh+1uFBl2erLP5ThICTA5uBkltLYVYdWwTs+qF1pzRqp51KEfDA0=
+SHA256 (Pkgfile) = 0ca32492fa8ca9c93f1bff42ff02af4ae4a4c177bfffc058be4a1316b512f22e
 SHA256 (.footprint) = 304a8bff621cd9e72899712ff96855b3a777f9f233dcb4820f32fba094becae7
-SHA256 (os-prober_1.75.tar.xz) = f4ef620455c5ffc3545daf4f32861640a48b0b3b6edda72491eecc1818653446
+SHA256 (os-prober_1.76.tar.xz) = d3a580610e0148ee1fea98de993b27b856870fb0a31e9ce1a33be2654e2c64ed
 SHA256 (Fix-CRUX-grub-menu-entry-detection.patch) = 9e230c685c325995df857e322564d827c42d754d5113e5b124fdf0b1c1d49864
