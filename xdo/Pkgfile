@@ -1,10 +1,10 @@
 # Description: A small X utility to perform elementary actions on windows.
 # URL:         https://github.com/baskerville/xdo
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxcb xorg-xcb-util-wm
+# Depends on:  xorg-xcb-util-wm
 
 name=xdo
-version=0.5.5
+version=0.5.6
 release=1
 source=(https://github.com/baskerville/$name/archive/$version.tar.gz)
 
