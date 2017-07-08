@@ -15,6 +15,7 @@ drwxr-xr-x	root/root	usr/share/ECM/find-modules/
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindPng2Ico.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindPoppler.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindPythonModuleGeneration.cmake
+-rw-r--r--	root/root	usr/share/ECM/find-modules/FindQHelpGenerator.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindQtWaylandScanner.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindSharedMimeInfo.cmake
 -rw-r--r--	root/root	usr/share/ECM/find-modules/FindWayland.cmake
@@ -35,6 +36,7 @@ drwxr-xr-x	root/root	usr/share/ECM/kde-modules/
 -rw-r--r--	root/root	usr/share/ECM/kde-modules/appstreamtest.cmake
 drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMAddAppIcon.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMAddQch.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMAddTests.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMCoverageOption.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMCreateQmFromPoFiles.cmake
@@ -50,6 +52,8 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMOptionalAddSubdirectory.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMPackageConfigHelpers.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMPoQmTools.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMQchDoxygen.config.in
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMQchDoxygenLayout.xml
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQmLoader.cpp.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cpp.in
