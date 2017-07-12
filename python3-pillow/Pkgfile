@@ -4,7 +4,7 @@
 # Depends on:  python3-setuptools lcms libwebp
 
 name=python3-pillow
-version=4.2.0
+version=4.2.1
 release=1
 source=(https://github.com/python-pillow/Pillow/archive/$version.tar.gz)
 
