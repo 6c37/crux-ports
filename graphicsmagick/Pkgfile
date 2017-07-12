@@ -4,7 +4,7 @@
 # Depends on:  libpng libxml2 freetype libtiff dcraw libwebp libjpeg-turbo
 
 name=graphicsmagick
-version=1.3.25
+version=1.3.26
 release=1
 source=(ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/${version%.*}/GraphicsMagick-$version.tar.xz)
 

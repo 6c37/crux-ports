@@ -102,35 +102,35 @@ drwxr-xr-x	root/root	usr/include/GraphicsMagick/wand/
 -rw-r--r--	root/root	usr/include/GraphicsMagick/wand/wand_api.h
 -rw-r--r--	root/root	usr/include/GraphicsMagick/wand/wand_symbols.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/GraphicsMagick-1.3.25/
-drwxr-xr-x	root/root	usr/lib/GraphicsMagick-1.3.25/config/
--rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.25/config/delegates.mgk
--rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.25/config/type-ghostscript.mgk
--rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.25/config/type-solaris.mgk
--rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.25/config/type-windows.mgk
--rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.25/config/type.mgk
+drwxr-xr-x	root/root	usr/lib/GraphicsMagick-1.3.26/
+drwxr-xr-x	root/root	usr/lib/GraphicsMagick-1.3.26/config/
+-rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.26/config/delegates.mgk
+-rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.26/config/type-ghostscript.mgk
+-rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.26/config/type-solaris.mgk
+-rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.26/config/type-windows.mgk
+-rw-r--r--	root/root	usr/lib/GraphicsMagick-1.3.26/config/type.mgk
 -rwxr-xr-x	root/root	usr/lib/libGraphicsMagick++.la
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick++.so -> libGraphicsMagick++.so.12.1.1
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick++.so.12 -> libGraphicsMagick++.so.12.1.1
--rwxr-xr-x	root/root	usr/lib/libGraphicsMagick++.so.12.1.1
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick++.so -> libGraphicsMagick++.so.12.2.0
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick++.so.12 -> libGraphicsMagick++.so.12.2.0
+-rwxr-xr-x	root/root	usr/lib/libGraphicsMagick++.so.12.2.0
 -rwxr-xr-x	root/root	usr/lib/libGraphicsMagick.la
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick.so -> libGraphicsMagick.so.3.15.1
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick.so.3 -> libGraphicsMagick.so.3.15.1
--rwxr-xr-x	root/root	usr/lib/libGraphicsMagick.so.3.15.1
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick.so -> libGraphicsMagick.so.3.16.0
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagick.so.3 -> libGraphicsMagick.so.3.16.0
+-rwxr-xr-x	root/root	usr/lib/libGraphicsMagick.so.3.16.0
 -rwxr-xr-x	root/root	usr/lib/libGraphicsMagickWand.la
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagickWand.so -> libGraphicsMagickWand.so.2.7.4
-lrwxrwxrwx	root/root	usr/lib/libGraphicsMagickWand.so.2 -> libGraphicsMagickWand.so.2.7.4
--rwxr-xr-x	root/root	usr/lib/libGraphicsMagickWand.so.2.7.4
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagickWand.so -> libGraphicsMagickWand.so.2.8.0
+lrwxrwxrwx	root/root	usr/lib/libGraphicsMagickWand.so.2 -> libGraphicsMagickWand.so.2.8.0
+-rwxr-xr-x	root/root	usr/lib/libGraphicsMagickWand.so.2.8.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/GraphicsMagick++.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/GraphicsMagick.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/GraphicsMagickWand.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/GraphicsMagick-1.3.25/
-drwxr-xr-x	root/root	usr/share/GraphicsMagick-1.3.25/config/
--rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.25/config/colors.mgk
--rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.25/config/log.mgk
--rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.25/config/modules.mgk
+drwxr-xr-x	root/root	usr/share/GraphicsMagick-1.3.26/
+drwxr-xr-x	root/root	usr/share/GraphicsMagick-1.3.26/config/
+-rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.26/config/colors.mgk
+-rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.26/config/log.mgk
+-rw-r--r--	root/root	usr/share/GraphicsMagick-1.3.26/config/modules.mgk
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/GraphicsMagick++-config.1.gz
