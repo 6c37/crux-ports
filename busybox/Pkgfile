@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=busybox
-version=1.26.2
+version=1.27.1
 release=1
 source=(http://busybox.net/downloads/$name-$version.tar.bz2)
 
