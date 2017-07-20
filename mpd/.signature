@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpfsCX3DGRaLhIUE4OSW8j0MYKr5vaHCzX1gbA31GgR7CCZujBPadmuz+8b3idoSq7A6EfBVeD1TpWU+kr/eo7wM=
+SHA256 (Pkgfile) = c26a0df4b6c1002d879b364bf5854af6bbafdd04938bdfe951d86013f5d5c7ee
+SHA256 (.footprint) = bcd7daae7de8b5a5b358c0b114099a78672b05a8c408213304ecb7a46fcf2fb2
+SHA256 (mpd-0.20.9.tar.xz) = cd77a2869e32354b004cc6b34fcb0bee56114caa2d9ed862aaa8071441e34eb7
+SHA256 (mpd.conf) = c5b6487795e664d9f3225bc0677df06aebae313628df236d707f0b3a2611a252
+SHA256 (mpd) = 4ba40c5d18ef9cf1093d2edf39bce1cef20a08c059c1c5fa04b26c67a0170a64

@@ -2,11 +2,11 @@
 # URL:         https://50hz.ws/mpdas/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost libid3tag libmpdclient glib ffmpeg
-# Optional:    libmpdclient mpd
+# Optional:    mpd
 
 name=mpdas
-version=0.4.2
-release=4
+version=0.4.3
+release=1
 source=(
 	https://github.com/hrkfdn/$name/archive/$version.tar.gz
 	mpdas.conf
@@ -18,9 +18,6 @@ build() {
 
 	# Use more consistent config filename
 	sed -i 's/mpdasrc/mpdas.conf/g' *
-
-	# Use https last.fm URL
-	sed -i 's|http://ws.audioscrobbler.com/|https://ws.audioscrobbler.com/|g' *
 
 	make PREFIX=/usr CONFIG=/etc
 	make DESTDIR=$PKG PREFIX=/usr CONFIG=/etc MANPREFIX=/usr/share/man/man1 install
