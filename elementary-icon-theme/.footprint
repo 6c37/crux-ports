@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/elementary/
+-rw-r--r--	root/root	usr/share/icons/elementary/CODE_OF_CONDUCT.md
+-rw-r--r--	root/root	usr/share/icons/elementary/CONTRIBUTING.md
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/128/
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/128/address-book-new.svg
@@ -59,7 +61,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/browser-download.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/document-open-recent.svg -> ../../places/16/folder-recent.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/document-open.svg -> ../../places/16/folder-drag-accept.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/document-page-setup.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/16/document-properties.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/document-properties.svg -> open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/document-revert-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/document-revert.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/document-save.svg -> ../../mimes/16/text-x-install.svg
@@ -117,11 +119,16 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/go-previous-rtl.svg -
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/mail-reply-all.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/mail-reply-sender-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/mail-reply-sender.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/16/mail-send.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-eject.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-playback-pause.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-playback-start.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-playback-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-record.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/media-seek-backward-rtl.svg -> media-seek-forward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-seek-backward.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/media-seek-forward-rtl.svg -> media-seek-backward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-seek-forward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/media-skip-backward-rtl.svg -> media-skip-forward.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/16/media-skip-backward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/16/media-skip-forward-rtl.svg -> media-skip-backward.svg
@@ -189,7 +196,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/document-open-recent.
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/document-open.svg -> ../../places/24/folder-drag-accept.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/document-page-setup.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/document-print.svg -> ../../devices/24/printer.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/24/document-properties.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/document-properties.svg -> open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/document-revert-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/document-revert.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/document-save-as.svg
@@ -276,6 +283,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/jockey-proprietary.sv
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/mail-reply-all.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/mail-reply-sender-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/mail-reply-sender.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/24/mail-send.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-eject.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-playback-pause-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-playback-pause.svg
@@ -284,11 +292,15 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/jockey-proprietary.sv
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-playback-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-record.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-backward-rtl-symbolic.svg -> media-seek-forward-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-backward-rtl.svg -> media-seek-forward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-backward-symbolic-rtl.svg -> media-seek-forward-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-seek-backward-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-seek-backward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-forward-rtl-symbolic.svg -> media-seek-backward-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-forward-rtl.svg -> media-seek-backward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-seek-forward-symbolic-rtl.svg -> media-seek-backward-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-seek-forward-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/24/media-seek-forward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-skip-backward-rtl-symbolic.svg -> media-skip-forward-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-skip-backward-rtl.svg -> media-skip-forward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/24/media-skip-backward-symbolic-rtl.svg -> media-skip-forward-symbolic.svg
@@ -340,7 +352,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/browser-download.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/document-open.svg -> ../../places/32/folder-drag-accept.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/document-page-setup.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/document-print.svg -> ../../devices/32/printer.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/32/document-properties.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/document-properties.svg -> open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/document-revert-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/document-revert.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/document-save.svg -> ../../mimes/32/text-x-install.svg
@@ -367,13 +379,25 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/edit-delete.svg -> ..
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/mail-reply-all.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/mail-reply-sender-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/mail-reply-sender.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-playback-pause.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-playback-start.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-playback-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-record.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/media-seek-backward-rtl.svg -> media-seek-forward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-seek-backward.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/media-seek-forward-rtl.svg -> media-seek-backward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-seek-forward.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/media-skip-backward-rtl.svg -> media-skip-forward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-skip-backward.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/media-skip-forward-rtl.svg -> media-skip-backward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/media-skip-forward.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/object-inverse.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/process-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-lock-screen.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-log-out.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-restart.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-reboot.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/32/system-restart.svg -> system-reboot.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-shutdown.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/system-suspend.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/32/tag-new.svg
@@ -393,7 +417,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/browser-download.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/document-open.svg -> ../../places/48/folder-drag-accept.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/document-page-setup.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/document-print.svg -> ../../devices/48/printer.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/48/document-properties.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/document-properties.svg -> open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/document-revert-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/document-revert.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/document-save.svg -> ../../mimes/48/text-x-install.svg
@@ -444,6 +468,10 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/go-previous-rtl.svg -
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-playback-start.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-playback-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-record.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/media-seek-backward-rtl.svg -> media-seek-forward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-seek-backward.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/media-seek-forward-rtl.svg -> media-seek-backward.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-seek-forward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/media-skip-backward-rtl.svg -> media-skip-forward.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/media-skip-backward.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/media-skip-forward-rtl.svg -> media-skip-backward.svg
@@ -451,10 +479,12 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/media-skip-forward-rt
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/object-inverse.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/object-rotate-left.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/object-rotate-right.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/48/open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/process-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-lock-screen.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-log-out.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-restart.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-reboot.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/system-restart.svg -> system-reboot.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-run.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/system-shutdown.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/tag-new.svg
@@ -470,7 +500,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/browser-download.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/document-open-recent.svg -> ../../places/64/folder-recent.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/document-open.svg -> ../../places/64/folder-drag-accept.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/document-page-setup.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/64/document-properties.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/document-properties.svg -> open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/document-revert-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/document-revert.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/document-save.svg -> ../../mimes/64/text-x-install.svg
@@ -500,6 +530,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/64/edit-delete.svg -> ..
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/media-playback-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/media-record.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/object-inverse.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/64/open-menu.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/process-stop.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/64/tag-new.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/symbolic/
@@ -553,11 +584,9 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/edit-undo-rtl-s
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/find-location-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/folder-new-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/font-select-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-less-rtl-symbolic.svg -> format-indent-more-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-less-symbolic-rtl.svg -> format-indent-more-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-less-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-less-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-more-rtl-symbolic.svg -> format-indent-less-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-more-symbolic-rtl.svg -> format-indent-less-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-more-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-more-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-justify-center-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-justify-fill-symbolic.svg
@@ -568,8 +597,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-indent-m
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-bold-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-clear-formatting-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-direction-ltr-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-direction-rtl-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/format-text-direction-symbolic-rtl.svg -> format-text-direction-rtl-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-direction-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-italic-es-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-italic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/format-text-larger-symbolic.svg
@@ -600,6 +628,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/go-previous-sym
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/go-up-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/gtk-about-symbolic.svg -> help-about-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/help-about-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/help-contents-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/help-info-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/image-crop-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/image-red-eye-symbolic.svg
@@ -654,9 +683,9 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/pan-end-symboli
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/pan-start-symbolic-rtl.svg -> pan-end-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pan-start-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pan-up-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/pane-hide-symbolic-rtl.svg -> pane-show-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pane-hide-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pane-hide-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/pane-show-symbolic-rtl.svg -> pane-hide-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pane-show-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/pane-show-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/symbolic/process-stop-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/symbolic/selection-end-symbolic-rtl.svg -> selection-start-symbolic.svg
@@ -823,7 +852,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/accessories-camera.svg -
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/accessories-screenshot.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/accessories-text-editor.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/application-default-icon.svg
--rw-r--r--	root/root	usr/share/icons/elementary/apps/48/apport.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/apport.svg -> ../../categories/48/bug.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/48/archive-manager.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/evince.svg -> postscript-viewer.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/48/file-roller.svg -> archive-manager.svg
@@ -856,7 +885,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/accessories-camera.svg -
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/accessories-screenshot.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/accessories-text-editor.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/application-default-icon.svg
--rw-r--r--	root/root	usr/share/icons/elementary/apps/64/apport.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/apport.svg -> ../../categories/64/bug.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/apps/64/archive-manager.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/evince.svg -> postscript-viewer.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/apps/64/file-roller.svg -> archive-manager.svg
@@ -897,6 +926,7 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/categories/128/
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/128/preferences-desktop-accessibility.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/128/preferences-desktop-online-accounts.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/128/preferences-system-network.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/128/system-help.svg -> ../../actions/128/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/16/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/16/config-language.svg -> preferences-desktop-locale.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/16/preferences-bluetooth.svg -> ../../devices/16/bluetooth.svg
@@ -908,6 +938,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/16/preferences-deskto
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/16/preferences-system-parental-controls.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/16/preferences-system-power.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/16/preferences-system-time.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/16/system-help.svg -> ../../actions/16/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/24/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/24/config-language.svg -> preferences-desktop-locale.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/24/preferences-bluetooth.svg -> ../../devices/24/bluetooth.svg
@@ -922,6 +953,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/24/preferences-deskto
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/24/preferences-system-power.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/24/preferences-system-privacy.svg -> ../../status/24/locked.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/24/preferences-system-time.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/24/system-help.svg -> ../../actions/24/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/32/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/32/applications-internet.svg -> preferences-desktop-online-accounts.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/32/applications-multimedia.svg
@@ -948,6 +980,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/32/preferences-system
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/32/preferences-system-sharing.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/32/preferences-system-time.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/32/preferences-system.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/32/system-help.svg -> ../../actions/32/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/48/
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/48/applications-accessories.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/48/applications-audio-symbolic.svg
@@ -971,6 +1004,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/applications-syste
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/48/applications-video-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/48/applications-video-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/applications-webbrowsers.svg -> ../../apps/48/web-browser.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/categories/48/bug.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/config-language.svg -> preferences-desktop-locale.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/preferences-bluetooth.svg -> ../../devices/48/bluetooth.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/48/preferences-desktop-accessibility.svg
@@ -989,6 +1023,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/preferences-system
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/48/system-help.svg -> ../../actions/48/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/64/
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/applications-internet.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/categories/64/bug.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-desktop-accessibility.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-desktop-online-accounts.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-desktop-sound.svg
@@ -997,8 +1032,10 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/categories/64/
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-system-parental-controls.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-system-power.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/64/preferences-system-time.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/64/system-help.svg -> ../../actions/64/help-contents.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/categories/symbolic/
-lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/symbolic/applications-education-symbolic.svg -> applications-science-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-development-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-education-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-engineering-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-games-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-graphics-symbolic.svg
@@ -1008,12 +1045,11 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/symbolic/applications
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/applications-utilities-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/bug-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/event-birthday-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/network-wireless-hotspot-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-desktop-accessibility-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-desktop-locale-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-other-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-system-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/system-help-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/symbolic/system-help-symbolic.svg -> ../../actions/symbolic/help-contents-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories@2x -> categories
 -rw-r--r--	root/root	usr/share/icons/elementary/cursor.theme
 drwxr-xr-x	root/root	usr/share/icons/elementary/cursors/
@@ -1107,6 +1143,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/cursors/v_double_arrow -> sb_v_d
 lrwxrwxrwx	root/root	usr/share/icons/elementary/cursors@2x -> cursors
 drwxr-xr-x	root/root	usr/share/icons/elementary/devices/
 drwxr-xr-x	root/root	usr/share/icons/elementary/devices/128/
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/128/audio-input-microphone.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/128/audio-speakers.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/128/camera-web.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/128/computer.svg -> video-display.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/128/drive-cdrom.svg -> drive-optical.svg
@@ -1195,6 +1233,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/24/system.svg -> video-d
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/24/video-display.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/devices/32/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/32/audio-card.svg -> audio-speakers.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/32/audio-input-microphone.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/32/audio-speakers.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/32/bluetooth.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/32/camera-web.svg
@@ -1304,6 +1343,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/48/system.svg -> video-d
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/48/video-display.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/devices/64/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/64/audio-card.svg -> audio-speakers.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/64/audio-input-microphone.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/audio-speakers.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/camera-photo.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/camera-web.svg
@@ -1314,6 +1354,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/64/drive-cdrom.svg -> dr
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/64/drive-optical.svg -> media-optical.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/drive-removable-media-usb.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/input-gaming.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/devices/64/input-keyboard.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/input-mouse.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/64/input-tablet.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/64/media-cdr.svg -> media-optical.svg
@@ -1384,6 +1425,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/devices/symbolic/phone-samsung-g
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/uninterruptible-power-supply-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/devices/symbolic/video-display-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/devices@2x -> devices
+-rw-r--r--	root/root	usr/share/icons/elementary/elementary.gpl
 drwxr-xr-x	root/root	usr/share/icons/elementary/emblems/
 drwxr-xr-x	root/root	usr/share/icons/elementary/emblems/16/
 -rw-r--r--	root/root	usr/share/icons/elementary/emblems/16/emblem-readonly.svg
@@ -1511,6 +1553,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-enriched-rtl.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-htmlh.svg -> text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-plain-rtl.svg -> text-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-richtext-rtl.svg -> office-document-rtl.svg
@@ -1519,8 +1562,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-richtext.svg -> o
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-c++.svg -> text-x-script.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-c++src.svg -> text-x-c++.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-copying-rtl.svg -> text-rtl.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-copying.svg -> text.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-cmake.svg -> text-x-makefile.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-csharp.svg -> text-x-script.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-csrc.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-generic-rtl.svg -> text-rtl.svg
@@ -1528,6 +1571,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-generic.svg -> 
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-install.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-java-source.svg -> text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-java.svg -> text-x-java-source.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/text-x-meson.svg -> text-x-makefile.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-readme.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/text-x-script.svg
@@ -1616,13 +1661,14 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/image.svg -> image-x-ge
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/office-spreadsheet-rtl.svg -> x-office-spreadsheet-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/office-spreadsheet.svg -> x-office-spreadsheet.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/shellscript.svg -> text-x-script.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-css.svg -> text.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-css.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-csv-rtl.svg -> x-office-spreadsheet-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-csv.svg -> x-office-spreadsheet.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-directory.svg -> office-contact.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-enriched-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-richtext-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-richtext.svg -> office-document.svg
@@ -1631,13 +1677,14 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-spreadsheet.svg ->
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-authors.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-c++.svg -> text-x-script.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-cmake.svg -> text-x-makefile.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-copying.svg -> text.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-csharp.svg -> text-x-script.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-generic-template-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-generic-template.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-generic.svg -> text.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-install.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-makefile.svg -> text.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/text-x-meson.svg -> text-x-makefile.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-readme.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/text-x-script.svg
@@ -1745,6 +1792,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/media-video.svg -> vide
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/office-spreadsheet-rtl.svg -> x-office-spreadsheet-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/office-spreadsheet.svg -> x-office-spreadsheet.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/shellscript.svg -> text-x-script.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-css.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-csv-rtl.svg -> x-office-spreadsheet-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-csv.svg -> x-office-spreadsheet.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-directory.svg -> office-contact.svg
@@ -1752,6 +1800,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-enriched-rtl.svg -
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-htmlh.svg -> text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-plain-rtl.svg -> text-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-richtext-rtl.svg -> office-document-rtl.svg
@@ -1761,8 +1810,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-spreadsheet-rtl.sv
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-spreadsheet.svg -> x-office-spreadsheet.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-c++.svg -> text-x-script.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-copying-rtl.svg -> text-rtl.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-copying.svg -> text.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-cmake.svg -> text-x-makefile.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-csharp.svg -> text-x-script.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-generic-rtl.svg -> text-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-generic-template-rtl.svg
@@ -1771,6 +1820,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-generic.svg -> t
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-install.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-java-source.svg -> text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-java.svg -> text-x-java-source.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/text-x-meson.svg -> text-x-makefile.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-readme.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/text-x-script.svg
@@ -1910,6 +1961,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-enriched-rtl.svg -
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-htmlh.svg -> text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-plain-rtl.svg -> text-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-richtext-rtl.svg -> office-document-rtl.svg
@@ -1920,8 +1972,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-spreadsheet.svg ->
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-c++.svg -> text-x-script.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-c++src.svg -> text-x-c++.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-copying-rtl.svg -> text-rtl.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-copying.svg -> text.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-cmake.svg -> text-x-makefile.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-credits.svg -> text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-csharp.svg -> text-x-script.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-generic-rtl.svg -> text-rtl.svg
@@ -1931,6 +1983,8 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-generic.svg -> t
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-install.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-java-source.svg -> text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-java.svg -> text-x-java-source.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/text-x-meson.svg -> text-x-makefile.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-python.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/text-x-readme.svg
@@ -2075,6 +2129,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-enriched-rtl.svg -
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-htmlh.svg -> text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-plain-rtl.svg -> text-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-richtext-rtl.svg -> office-document-rtl.svg
@@ -2088,8 +2143,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-c++src.svg -> te
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-changelog.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-chdr.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-cmake.svg -> text-x-makefile.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-copying-rtl.svg -> text-rtl.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-copying.svg -> text.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-credits.svg -> text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-csharp.svg -> text-x-script.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-csrc.svg
@@ -2099,9 +2153,9 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-generic.svg -> t
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-install.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-java-source.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-java.svg -> text-x-java-source.svg
--rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-makefile-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-makefile.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-meson.svg -> text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/text-x-patch.svg -> text-x-changelog.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-python.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/text-x-readme.svg
@@ -2248,6 +2302,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-enriched-rtl.svg -
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-enriched.svg -> office-document.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-html.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-htmlh.svg -> text-html.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-markdown.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-plain-rtl.svg -> text-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-plain.svg -> text.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-richtext-rtl.svg -> office-document-rtl.svg
@@ -2261,8 +2316,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-c++src.svg -> te
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-changelog.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-chdr.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-cmake.svg -> text-x-makefile.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-copying-rtl.svg -> text-rtl.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-copying.svg -> text.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-copying.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-credits.svg -> text-x-authors.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-csharp.svg -> text-x-script.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-csrc.svg
@@ -2274,6 +2328,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-java-source.svg 
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-java.svg -> text-x-java-source.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-makefile.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-meson.svg -> text-x-makefile.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/text-x-patch.svg -> text-x-changelog.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-python.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/text-x-readme.svg
@@ -2309,9 +2364,12 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/mimes/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/application-certificate-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/application-rss+xml-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/application-x-appliance-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/application-x-class-file-symbolic.svg -> text-html-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/application-x-executable-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/application-xml-symbolic.svg -> text-html-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/audio-x-generic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/credit-card-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/html-symbolic.svg -> text-html-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/image-x-generic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/inode-directory-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/media-audio-symbolic.svg -> audio-x-generic-symbolic.svg
@@ -2319,8 +2377,10 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/media-image-symbo
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/media-video-symbolic.svg -> video-x-generic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/package-x-generic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/text-html-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/text-htmlh-symbolic.svg -> text-html-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/text-x-copying-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/text-x-generic-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/text-x-html-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/symbolic/text-xml-symbolic.svg -> text-html-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/video-x-generic-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/x-office-address-book-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/symbolic/x-office-calendar-symbolic.svg
@@ -2382,7 +2442,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/places/16/library-music.svg -> f
 -rw-r--r--	root/root	usr/share/icons/elementary/places/16/mail-inbox.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/16/mail-mailbox.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/16/mail-outbox.svg
--rw-r--r--	root/root	usr/share/icons/elementary/places/16/mail-sent.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/places/16/mail-sent.svg -> ../../actions/16/mail-send.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/16/network-server.svg -> ../../devices/16/video-display.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/16/network-workgroup.svg -> ../../categories/16/preferences-system-network.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/16/playlist-automatic.svg
@@ -2414,7 +2474,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/folder-publicshare.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/gtk-network.svg -> folder-remote.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/inode-directory.svg -> folder.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/library-music.svg -> folder-music.svg
--rw-r--r--	root/root	usr/share/icons/elementary/places/24/mail-sent.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/mail-sent.svg -> ../../actions/24/mail-send.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/network-server.svg -> ../../devices/24/video-display.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/network-workgroup.svg -> ../../categories/24/preferences-system-network.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/places/24/user-bookmarks.svg -> ../../actions/24/help-about.svg
@@ -2513,6 +2573,7 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/places/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/folder-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/folder-templates-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/folder-videos-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/places/symbolic/mail-sent-symbolic.svg -> ../../actions/symbolic/mail-send-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/network-server-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/network-workgroup-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/places/symbolic/user-bookmarks-symbolic.svg
@@ -2529,9 +2590,6 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/status/128/
 lrwxrwxrwx	root/root	usr/share/icons/elementary/status/128/software-update-available.svg -> ../../apps/128/system-software-update.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/status/16/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/16/account-logged-in.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/16/aptdaemon-add.svg -> aptdaemon-download.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/16/aptdaemon-download.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/16/aptdaemon-working.svg -> aptdaemon-download.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/16/avatar-default.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/16/dialog-error.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/16/dialog-information.svg
@@ -2569,9 +2627,6 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/status/16/user-idle.svg -> user-
 -rw-r--r--	root/root	usr/share/icons/elementary/status/16/user-typing.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/status/24/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/airplane-mode-symbolic.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/24/aptdaemon-add.svg -> aptdaemon-download.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/24/aptdaemon-download.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/24/aptdaemon-working.svg -> aptdaemon-download.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/audio-volume-high-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/audio-volume-low-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/audio-volume-medium-symbolic.svg
@@ -2608,6 +2663,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/status/24/error.svg -> dialog-er
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-cellular-signal-none-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-cellular-signal-ok-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-cellular-signal-weak-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/24/network-offline-symbolic.svg -> network-wired-offline-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-vpn-lock-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-wired-acquiring-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/24/network-wired-disconnected-symbolic.svg
@@ -2673,13 +2729,6 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/status/32/security-medium.svg ->
 lrwxrwxrwx	root/root	usr/share/icons/elementary/status/32/software-update-available.svg -> ../../apps/32/system-software-update.svg
 drwxr-xr-x	root/root	usr/share/icons/elementary/status/48/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/airplane-mode.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/48/aptdaemon-add.svg -> aptdaemon-download.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/48/aptdaemon-delete.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/48/aptdaemon-download.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/48/aptdaemon-setup.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/48/aptdaemon-update-cache.svg -> aptdaemon-upgrade.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/48/aptdaemon-upgrade.svg
-lrwxrwxrwx	root/root	usr/share/icons/elementary/status/48/aptdaemon-working.svg -> aptdaemon-download.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/audio-volume-high-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/audio-volume-low-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/48/audio-volume-medium-symbolic.svg
@@ -2792,10 +2841,12 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/status/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/checkbox-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/computer-fail-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/content-loading-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/daytime-sunrise-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/daytime-sunset-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/dialog-error-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/dialog-information-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/dialog-password-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/dialog-question-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/dialog-question-symbolic.svg -> ../../actions/symbolic/help-contents-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/dialog-warning-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/display-brightness-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/folder-drag-accept-symbolic.svg
@@ -2811,8 +2862,10 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/status/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-consecutive-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-no-repeat-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-no-repeat-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-no-shuffle-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-one-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-no-shuffle-symbolic-rtl.svg -> media-playlist-consecutive-symbolic-rtl.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-no-shuffle-symbolic.svg -> media-playlist-consecutive-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-one-symbolic-rtl.svg -> media-playlist-repeat-song-symbolic-rtl.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-one-symbolic.svg -> media-playlist-repeat-song-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-song-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-song-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/media-playlist-repeat-symbolic-rtl.svg
@@ -2844,7 +2897,7 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/status/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-cellular-signal-weak-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-error-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-idle-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-offline-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/network-offline-symbolic.svg -> network-wired-offline-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-receive-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-transmit-receive-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-transmit-symbolic.svg
@@ -2859,6 +2912,7 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/status/symbolic/
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-acquiring-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-connected-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-encrypted-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-hotspot-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-no-route-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-offline-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/network-wireless-signal-excellent-secure-symbolic.svg
