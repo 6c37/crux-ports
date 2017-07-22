@@ -1,11 +1,11 @@
 # Description: A graphic library that outputs text instead of pixels.
 # URL:         http://caca.zoy.org/wiki/libcaca
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  python
+# Depends on:  python imlib2
 
 name=libcaca
 version=0.99.beta19
-release=1
+release=2
 source=(http://caca.zoy.org/files/$name/$name-$version.tar.gz)
 
 build() {
