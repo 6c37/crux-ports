@@ -1,0 +1,25 @@
+# Description: A dbus session bus service to bring up authentication dialogs.
+# URL:         https://www.freedesktop.org/wiki/Software/polkit
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  polkit gtk3
+
+name=polkit-gnome
+version=0.105
+release=1
+source=(
+	https://download.gnome.org/sources/$name/$version/$name-$version.tar.bz2
+	polkit-gnome-authentication-agent-1.desktop
+)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	install -Dm 644 $SRC/polkit-gnome-authentication-agent-1.desktop $PKG/usr/share/applications/polkit-gnome-authentication-agent-1.desktop
+
+	rm -rf $PKG/usr/share/locale
+}

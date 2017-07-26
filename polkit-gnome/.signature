@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpUPtTEuEdUL1kbKrfc42QqVEq6Vc9rLcfQAOkoM3kG+AMSimPBOdlpCwMUbtY82UXZOVSG/M7E0DFr1kS8JbMQ8=
+SHA256 (Pkgfile) = ad20988f4cc566e33a116de7af400b77d0a2c8eb0009692003b698e66f55607d
+SHA256 (.footprint) = d5ee753f8669252c4bfbd610e8ca3884361c9557bd8d6309fade27585a05f007
+SHA256 (polkit-gnome-0.105.tar.bz2) = 5177fdbd9ba9c8443860663a56d20a17881b4b107572acf0c81d4158dd170130
+SHA256 (polkit-gnome-authentication-agent-1.desktop) = 9fa420fc008ae20c902fa2bb2af363205a6a674082bad85a0aad8c22c9c3c94d
