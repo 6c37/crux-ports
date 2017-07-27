@@ -5,11 +5,16 @@
 
 name=bbswitch
 version=0.8
-release=1
-source=(https://github.com/Bumblebee-Project/bbswitch/archive/v$version.tar.gz)
+release=2
+source=(
+	https://github.com/Bumblebee-Project/bbswitch/archive/v$version.tar.gz
+	bbswitch-0.8-kernel-4.12.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/bbswitch-0.8-kernel-4.12.patch
 
 	make
 	install -Dm644 bbswitch.ko $PKG/lib/modules/`uname -r`/extra/bbswitch.ko
