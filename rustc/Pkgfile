@@ -5,24 +5,20 @@
 
 
 name=rustc
-version=1.18.0
+version=1.19.0
 release=1
 source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz)
 
 build() {
 	cd $name-$version-src
 
-	rm -rf src/llvm
+	cat > config.toml << EOF
+[install]
+prefix="/usr"
+EOF
 
-	./configure \
-		--prefix=/usr \
-		--disable-docs \
-		--release-channel=stable \
-		--llvm-root=/usr \
-		--disable-codegen-tests
-
-	./x.py build --verbose
-	make DESTDIR=$PKG install
+	python2 ./x.py build --verbose
+	DESTDIR=$PKG python2 ./x.py install
 
 	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version}
 	rm -rf $PKG/usr/share/doc
