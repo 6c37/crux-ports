@@ -6,7 +6,7 @@
 
 name=mpdas
 version=0.4.3
-release=1
+release=2
 source=(
 	https://github.com/hrkfdn/$name/archive/$version.tar.gz
 	mpdas.conf

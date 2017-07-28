@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpV7KNOuxD6+kJpD+e3HkIYaHaHxhVT++clP3a9On3MpitUZwJC3pkhRsggtfj3NXyqx7eKzDkIPP2JvYogAlngM=
-SHA256 (Pkgfile) = ebef2aef3b2bac7f9a0ffbfca6f0e32f36bcd3f44e6610b7beb8be9adbdfe9e2
+RWSsZdBvSzGVpWnxbSEr5nd4lpzCTA+WlBcw8Io1UqVFvb5J/tmlSrKG5QNnlY/ZLhkmn6EepTWwTYeVIvTqy3S7ZDkzW1TTFQU=
+SHA256 (Pkgfile) = 7e997d1ff2b7d77efd299cd2a9036ab20f822b08f68156d762a3a2d098ffe7e6
 SHA256 (.footprint) = 3b1b509f3e68881eb9e0d85a0573d8b88e3862ef32df2f00dca82cf139b668ec
 SHA256 (0.4.3.tar.gz) = 069e368bde35b2b3bd79439052c863a0f8c3b25ed454b5ab51f84fa6878b674e
-SHA256 (mpdas.conf) = eb348b127672a35d0e96574cb5d54498eb105e0b52556c9545be86d9676d4a18
+SHA256 (mpdas.conf) = 93679179a4515b2ba514c61e33a237b1de00d2acd050fd414bc5c4a05c3c67e3
 SHA256 (mpdas) = 93d80e3912283dc51a6ca1c8a0ee33b0ed77a1489ec19d7e6ee227889025ba80
