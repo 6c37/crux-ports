@@ -1,25 +1,25 @@
 # Description: The mandoc UNIX manpage compiler toolset.
-# URL:         http://mdocml.bsd.lv/
+# URL:         http://mandoc.bsd.lv/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=mdocml
-version=1.14.1
-release=2
+version=1.14.2
+release=1
 source=(
-	http://mdocml.bsd.lv/snapshots/mdocml-$version.tar.gz
+	http://mandoc.bsd.lv/snapshots/mandoc-$version.tar.gz
 	configure.local
 	makewhatis
 )
 
 build() {
-	cd $name-$version
+	cd mandoc-$version
 	
 	cp $SRC/configure.local .
 	./configure
 
 	make
-	make -j1 DESTDIR=$PKG install
+	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/bin/{apropos,man,soelim,whatis}
 
