@@ -4,13 +4,14 @@
 # Depends on:  cmake mesa3d
 
 name=opencv
-version=2.4.13.2
+version=2.4.13.3
 release=1
 source=(https://github.com/$name/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
+	mkdir build ; cd build
 	cmake \
 		-D CMAKE_INSTALL_PREFIX=/usr \
 		-D CMAKE_BUILD_TYPE=Release \
@@ -20,7 +21,7 @@ build() {
 		-D BUILD_PERF_TESTS=OFF \
 		-D BUILD_EXAMPLES=OFF \
 		-D CMAKE_SKIP_RPATH=ON \
-		.
+		..
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install
