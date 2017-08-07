@@ -4,15 +4,13 @@
 # Depends on:  talloc libarchive
 
 name=proot
-version=5.1.0
-release=2
-source=(https://github.com/$name-me/PRoot/archive/v$version.tar.gz
-	loader.patch)
+_commit=afe225dc804e7926e588e8af22fbc5433b773e2d
+version=20170807
+release=1
+source=(https://github.com/$name-me/PRoot/archive/${_commit}.tar.gz)
 
 build() {
-	cd PRoot-$version/src
-
-	patch -Np1 < $SRC/loader.patch
+	cd PRoot-${_commit}/src
 
 	make
 	make DESTDIR=$PKG/usr/bin install
