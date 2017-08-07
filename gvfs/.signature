@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpbHmmF/qS5GFvZtprvlldTHYhrPDi1EP2PGoFdIUzeW58FqaG7QJs91o8Q3akdNYhPGB0vpB+l703Zeu0JNtLw4=
-SHA256 (Pkgfile) = 48a6308f1d713baebb3bee7c0c6d1b025b38443a295393e7a944a918f1cb499e
+RWSsZdBvSzGVpaCbF6SgpuwmMkSxQR5uTT5Oy1d/KnoCqnkVQ5pdnro8igwrJaaZhdzXQRvfxcnX23OiN8LeRDWOuZccxkJyjwo=
+SHA256 (Pkgfile) = 6db74a674cc94f9998ac3460eab006126682763736ec0595e8d48d83a7a0fbaa
 SHA256 (.footprint) = 13a1762cdec835977540f3b79426cb0271d8b206d8a270bef960fd6968fcd2f3
-SHA256 (gvfs-1.33.3.tar.xz) = 9edf5c0fb159f9805d811bb0d319d09c10ad0fd7b03b58c1b358dbbe1ae1ae09
+SHA256 (gvfs-1.33.90.tar.xz) = 21fa23bbd70fa7eb21fbf3801cb8538023e1275ba622f7115c5b3e9131d32f33
 SHA256 (gvfs-deprecated_remove_bashism.patch) = bde019d3d0cebeeb5332af1a60557f8e36821e0cdad1b02e5ef4a2b0fd32f4a3
