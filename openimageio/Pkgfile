@@ -5,8 +5,8 @@
 # Optional:    qt4 qt5 glew ffmpeg
 
 name=openimageio
-version=1.7.15
-release=2
+version=1.7.16
+release=1
 source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 
 build() {
