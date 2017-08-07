@@ -1,8 +1,9 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpb0tRcuSXI6L9BtosG9zwOMEXJGvEVuf6GJ+TbUPMyCLkXGwcyrtkyIU58dGCpKMTpel0wQvjceFic95HI3ergc=
-SHA256 (Pkgfile) = f37467396f8fab84137a07b66e2c130aff66b77998af22083bd55f74f5e85b6d
+RWSsZdBvSzGVpch13d09tEh1XCa5oYOIKVOdmclcZVKfeTDLBcHLm65BjvzX3CD/tqOI5dl+W6YrfdZ/zvYHGVWn1nvwf/JX8gM=
+SHA256 (Pkgfile) = 7013f3d3cecd730c29d609ef58f1a931f951033252de36ce1f5981d9a21598d7
 SHA256 (.footprint) = 3b1b509f3e68881eb9e0d85a0573d8b88e3862ef32df2f00dca82cf139b668ec
 SHA256 (0.4.3.tar.gz) = 069e368bde35b2b3bd79439052c863a0f8c3b25ed454b5ab51f84fa6878b674e
 SHA256 (mpdas.conf) = 93679179a4515b2ba514c61e33a237b1de00d2acd050fd414bc5c4a05c3c67e3
 SHA256 (mpdas) = 93d80e3912283dc51a6ca1c8a0ee33b0ed77a1489ec19d7e6ee227889025ba80
 SHA256 (remove-colon-from-token-delimiter.patch) = e5021877ee812276f8e273d875c5499942f1a0be8db9f2e90c742eaaae04533c
+SHA256 (fix-config-line-tokens-splitting.patch) = 6d9225b9379c65696c985cc0302e055377bdea97c923f9c6d3d3419cd878affb

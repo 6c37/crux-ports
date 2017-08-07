@@ -6,18 +6,20 @@
 
 name=mpdas
 version=0.4.3
-release=3
+release=4
 source=(
 	https://github.com/hrkfdn/$name/archive/$version.tar.gz
 	mpdas.conf
 	mpdas
 	remove-colon-from-token-delimiter.patch
+	fix-config-line-tokens-splitting.patch
 )
 
 build() {
 	cd $name-$version
 
 	patch -p1 < $SRC/remove-colon-from-token-delimiter.patch
+	patch -p1 < $SRC/fix-config-line-tokens-splitting.patch
 
 	# Use more consistent config filename
 	sed -i 's/mpdasrc/mpdas.conf/g' *

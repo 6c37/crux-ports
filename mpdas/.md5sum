@@ -1,4 +1,5 @@
 876f9733a774e6b3f8b4e46cfa794a99  0.4.3.tar.gz
+a2c9f54f727dfd5a17a5367df3fcad0b  fix-config-line-tokens-splitting.patch
 08fa60092012c207db00e14cca4612c0  mpdas
 631fb910f140edcb98f451f806c3f2e6  mpdas.conf
 ef676fca984ddeaba267e4d3d4373d2b  remove-colon-from-token-delimiter.patch
