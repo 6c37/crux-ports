@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=mdocml
-version=1.14.2
+version=1.14.3
 release=1
 source=(
 	http://mandoc.bsd.lv/snapshots/mandoc-$version.tar.gz
