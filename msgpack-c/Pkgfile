@@ -5,7 +5,7 @@
 # Optional:    boost doxygen 
 
 name=msgpack-c
-version=2.1.3
+version=2.1.5
 release=1
 source=(https://github.com/${name%-c}/$name/archive/cpp-$version.tar.gz)
 
