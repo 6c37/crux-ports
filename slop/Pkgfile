@@ -4,14 +4,18 @@
 # Depends on:  xorg-libxext glm glew icu
 
 name=slop
-version=7.3.48
+version=7.3.49
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+	cmake \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DSLOP_OPENGL=True \
+		.
 
 	make
 	make DESTDIR=$PKG install
