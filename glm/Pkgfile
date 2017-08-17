@@ -4,15 +4,19 @@
 # Depends on:  cmake
 
 name=glm
-version=0.9.8.4
+version=0.9.8.5
 release=1
-source=(https://github.com/g-truc/glm/archive/$version.tar.gz)
+source=(https://github.com/g-truc/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_COMPILER_ID=GNU -DCMAKE_CXX_FLAGS=" -std=c++11"
-	
+	cmake . \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_CXX_COMPILER_ID=GNU \
+		-DCMAKE_CXX_FLAGS=" -std=c++11"
+
+	make	
 	make DESTDIR=$PKG install
 
 	mkdir -p $PKG/usr/share/doc
