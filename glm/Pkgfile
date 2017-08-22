@@ -4,7 +4,7 @@
 # Depends on:  cmake
 
 name=glm
-version=0.9.8.5
+version=0.9.9-a1
 release=1
 source=(https://github.com/g-truc/$name/archive/$version.tar.gz)
 
