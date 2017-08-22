@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpaL0Bq7oS/oVy2BWfie1hcd2nWxxju1Hvok1dbFIPBoMmTeETEkY/0cddK/fJMPiUbE6wxMCG4b3geU8vds0bgA=
+SHA256 (Pkgfile) = 85e0b706164c1266329dea1a631408f59019ed39e63de626f82cbbbe7e0b005e
+SHA256 (.footprint) = fcee4a9f05b572a4d9450621d7074a91f156263a6773d1a6e9478cf31b2fcee9
+SHA256 (libwacom-0.25.tar.bz2) = 29d0862cd008a82e19f4b74a35ca9da49dfdb994a1bc761bc87e503c9de040cc

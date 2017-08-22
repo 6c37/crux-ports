@@ -1,0 +1,22 @@
+# Description: Library to identify Wacom tablets and their features.
+# URL:         https://sourceforge.net/projects/linuxwacom/files/libwacom/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  glib libgudev
+
+name=libwacom
+version=0.25
+release=1
+source=(https://sourceforge.net/projects/linuxwacom/files/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	install -m755 -d $PKG/lib/udev/rules.d
+	cd tools
+	./generate-udev-rules > $PKG/lib/udev/rules.d/65-libwacom.rules
+}
