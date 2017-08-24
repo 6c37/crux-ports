@@ -32,11 +32,15 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/window.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/borders.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/boss.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/cell_fragment.glsl
+-rw-r--r--	root/root	usr/lib/kitty/kitty/cell_vertex.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/char_grid.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/child.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/client.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/config.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/constants.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/cursor_fragment.glsl
+-rw-r--r--	root/root	usr/lib/kitty/kitty/cursor_vertex.glsl
 -rwxr-xr-x	root/root	usr/lib/kitty/kitty/fast_data_types.so
 drwxrwxr-x	root/root	usr/lib/kitty/kitty/fonts/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__init__.py (EMPTY)
