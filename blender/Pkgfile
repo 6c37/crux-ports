@@ -2,18 +2,17 @@
 # URL:         http://blender.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu openimageio python3
-# Optional:    cuda
 
 name=blender
-version=2.78c
-release=2
-source=(http://download.blender.org/source/blender-$version.tar.gz)
+version=2.79rc2
+release=1
+source=(https://git.blender.org/gitweb/gitweb.cgi/blender.git/snapshot/7b397cdfc8109abde3175b88400131dda5782448.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-7b397cd
 
 	mkdir build && cd build
-	cmake -C ../build_files/cmake/config/blender_full.cmake ../ \
+	cmake -C ../build_files/cmake/config/blender_release.cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DWITH_PYTHON=ON \
@@ -23,7 +22,10 @@ build() {
 		-DPYTHON_INCLUDE_DIRS=/usr/include/python3.6m \
 		-DWITH_PYTHON_INSTALL=OFF \
 		-DOPENIMAGEIO_ROOT_DIR=/usr \
+		-DWITH_GL_PROFILE_CORE=OFF \
+		-DWITH_GL_PROFILE_ES20=OFF \
 		-DWITH_CYCLES=ON \
+		-DWITH_CYCLES_PTEX=OFF \
 		-DWITH_INTERNATIONAL=OFF \
 		-DWITH_SYSTEM_OPENJPEG=ON \
 		-DWITH_INSTALL_PORTABLE=OFF
