@@ -4,12 +4,12 @@
 # Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu openimageio python3
 
 name=blender
-version=2.79rc2
-release=1
-source=(https://git.blender.org/gitweb/gitweb.cgi/blender.git/snapshot/7b397cdfc8109abde3175b88400131dda5782448.tar.gz)
+version=2.78c
+release=2
+source=(https://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
-	cd $name-7b397cd
+	cd $name-$version
 
 	mkdir build && cd build
 	cmake -C ../build_files/cmake/config/blender_release.cmake ../ \
