@@ -5,7 +5,7 @@
 
 
 name=erlang
-version=20.0.3
+version=20.0.4
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
@@ -20,7 +20,7 @@ build(){
 		--enable-smp-support \
 		--enable-kernel-poll \
 		--enable-hipe \
-		--enable-sctp \
+		--enable-sctp
 
 	make
 	make DESTDIR=$PKG install
