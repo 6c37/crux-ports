@@ -12,9 +12,9 @@ drwxr-xr-x	root/root	usr/include/libwacom-1.0/libwacom/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libwacom.a
 -rwxr-xr-x	root/root	usr/lib/libwacom.la
-lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.5.3
-lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.5.3
--rwxr-xr-x	root/root	usr/lib/libwacom.so.2.5.3
+lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.5.4
+lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.5.4
+-rwxr-xr-x	root/root	usr/lib/libwacom.so.2.5.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libwacom.pc
 drwxr-xr-x	root/root	usr/share/
@@ -55,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-13.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-16.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtf-720.tablet
+-rw-r--r--	root/root	usr/share/libwacom/dth-1152.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dth-2242.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dti-520.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtk-1651.tablet
@@ -82,7 +83,9 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/intuos-m-p2.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-m-pt.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-m-pt2.tablet
+-rw-r--r--	root/root	usr/share/libwacom/intuos-pro-2-l-wl.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-pro-2-l.tablet
+-rw-r--r--	root/root	usr/share/libwacom/intuos-pro-2-m-wl.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-pro-2-m.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-pro-l.tablet
 -rw-r--r--	root/root	usr/share/libwacom/intuos-pro-m.tablet
@@ -126,9 +129,15 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-12c.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-4004.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-4800.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-4809.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-4814.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-481a.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-4822.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-4824.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-484c.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5000.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5002.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-5010.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5013.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5014.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-503e.tablet
