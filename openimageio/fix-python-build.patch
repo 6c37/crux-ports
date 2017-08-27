@@ -1,0 +1,290 @@
+From f67ae87d820a12c0451f8877e735c49b44dbbf63 Mon Sep 17 00:00:00 2001
+From: Larry Gritz <lg@larrygritz.com>
+Date: Sat, 26 Aug 2017 10:57:00 -0700
+Subject: [PATCH] Repair breaks after boost python 1.65 changes (#1753)
+
+Alas, the new Boost 1.65 moves some boost python material from one
+namespace to another in a way that breaks compatibility related to
+support for numpy arrays. This breaks the build, including all of
+our MacOS-based TravisCI tests, which of course pick up the latest
+Boost via Homebrew.
+---
+ CMakeLists.txt                |  2 +-
+ src/python/CMakeLists.txt     |  4 ++--
+ src/python/py_imagebuf.cpp    | 23 +++++++++++++++--------
+ src/python/py_imageoutput.cpp | 10 +++++-----
+ src/python/py_oiio.cpp        | 21 +++++++++++++++++++--
+ src/python/py_oiio.h          | 25 ++++++++-----------------
+ 6 files changed, 50 insertions(+), 35 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 42b3982f1..961ecd9d8 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -70,7 +70,7 @@ option (USE_OPENGL "Include OpenGL support" ON)
+ option (USE_QT "Include Qt support" ON)
+ option (FORCE_OPENGL_1 "Force iv to use OpenGL's fixed pipeline")
+ option (USE_PYTHON "Build the Python bindings" ON)
+-option (USE_PYTHON3 "Build the Python3 bindings")
++option (USE_PYTHON3 "Build the Python3 bindings" OFF)
+ set (PYTHON_VERSION 2.6)
+ set (PYTHON3_VERSION 3.2)
+ option (PYLIB_INCLUDE_SONAME "If ON, soname/soversion will be set for Python module library")
+diff --git a/src/python/CMakeLists.txt b/src/python/CMakeLists.txt
+index 41e1a3eef..6e935be2f 100644
+--- a/src/python/CMakeLists.txt
++++ b/src/python/CMakeLists.txt
+@@ -19,7 +19,7 @@ if (NOT BOOST_CUSTOM AND NOT BUILD_PY3)
+     unset(PYTHON_INCLUDE_PATH)
+     unset(PYTHON_INCLUDE_PATH CACHE)
+     find_package (PythonLibs ${PYTHON_VERSION} REQUIRED)
+-    find_package (Boost 1.42 REQUIRED COMPONENTS python)
++    find_package (Boost 1.53 REQUIRED COMPONENTS python)
+ elseif (BOOST_CUSTOM AND NOT BUILD_PY3)
+     find_package (PythonLibs ${PYTHON_VERSION} REQUIRED)
+ else ()
+@@ -43,7 +43,7 @@ else ()
+     #different names on different systems. Try the most common ones
+     #(boost_python3, boost_python-py34, …).
+     foreach (_boost_py3_lib python3 python-py${PYTHON_VERSION_MAJOR}${PYTHON_VERSION_MINOR})
+-        find_package (Boost 1.42 QUIET COMPONENTS ${_boost_py3_lib})
++        find_package (Boost 1.53 QUIET COMPONENTS ${_boost_py3_lib})
+         string (TOUPPER ${_boost_py3_lib} boost_py3_lib_name)
+         if (Boost_${boost_py3_lib_name}_FOUND)
+             #Not the most beautiful thing to do, but that gets them included in
+diff --git a/src/python/py_imagebuf.cpp b/src/python/py_imagebuf.cpp
+index a8d5a9556..e8b06e108 100644
+--- a/src/python/py_imagebuf.cpp
++++ b/src/python/py_imagebuf.cpp
+@@ -346,7 +346,7 @@ ImageBuf_set_deep_value_uint (ImageBuf &buf, int x, int y, int z,
+ 
+ 
+ bool
+-ImageBuf_set_pixels_tuple (ImageBuf &buf, ROI roi, tuple data)
++ImageBuf_set_pixels_tuple (ImageBuf &buf, ROI roi, const tuple& data)
+ {
+     if (! roi.defined())
+         roi = buf.roi();
+@@ -364,8 +364,13 @@ ImageBuf_set_pixels_tuple (ImageBuf &buf, ROI roi, tuple data)
+ 
+ 
+ bool
+-ImageBuf_set_pixels_array (ImageBuf &buf, ROI roi, numeric::array data)
++ImageBuf_set_pixels_array (ImageBuf &buf, ROI roi, const object& data)
+ {
++    // If it's a tuple, we handle that with the other function
++    extract<tuple> tup (data);
++    if (tup.check())
++        return ImageBuf_set_pixels_tuple (buf, roi, tup());
++
+     if (! roi.defined())
+         roi = buf.roi();
+     roi.chend = std::min (roi.chend, buf.nchannels()+1);
+@@ -373,13 +378,15 @@ ImageBuf_set_pixels_array (ImageBuf &buf, ROI roi, numeric::array data)
+     if (size == 0)
+         return true;   // done
+ 
+-    TypeDesc type;
+-    size_t pylen = 0;
+-    const void *addr = python_array_address (data, type, pylen);
+-    if (!addr || size > pylen)
++    TypeDesc elementtype;
++    size_t numelements;
++    const void* addr = python_array_address (data, elementtype, numelements);
++    if (!addr || size > numelements)
+         return false;   // Not enough data to fill our ROI
+-
+-    buf.set_pixels (roi, type, addr);
++    std::vector<float> vals (numelements);
++    convert_types (elementtype, addr, TypeDesc::TypeFloat, vals.data(),
++                   int(numelements));
++    buf.set_pixels (roi, TypeDesc::TypeFloat, &vals[0]);
+     return true;
+ }
+ 
+diff --git a/src/python/py_imageoutput.cpp b/src/python/py_imageoutput.cpp
+index 1c2e5f3c9..2203aac4d 100644
+--- a/src/python/py_imageoutput.cpp
++++ b/src/python/py_imageoutput.cpp
+@@ -112,7 +112,7 @@ ImageOutputWrap::make_read_buffer (object &buffer, imagesize_t size)
+ 
+ 
+ bool
+-ImageOutputWrap::write_scanline_array (int y, int z, numeric::array &buffer)
++ImageOutputWrap::write_scanline_array (int y, int z, object &buffer)
+ {
+     TypeDesc format;
+     size_t numelements = 0;
+@@ -154,7 +154,7 @@ ImageOutputWrap::write_scanline_bt (int y, int z, TypeDesc::BASETYPE format,
+ 
+ bool
+ ImageOutputWrap::write_scanlines_array (int ybegin, int yend, int z,
+-                                        numeric::array &buffer)
++                                        object &buffer)
+ {
+     TypeDesc format;
+     size_t numelements = 0;
+@@ -199,7 +199,7 @@ ImageOutputWrap::write_scanlines_bt (int ybegin, int yend, int z,
+ 
+ bool
+ ImageOutputWrap::write_tile_array (int x, int y, int z,
+-                                   numeric::array &buffer)
++                                   object &buffer)
+ {
+     TypeDesc format;
+     size_t numelements = 0;
+@@ -243,7 +243,7 @@ ImageOutputWrap::write_tile_bt (int x, int y, int z, TypeDesc::BASETYPE format,
+ bool
+ ImageOutputWrap::write_tiles_array (int xbegin, int xend, int ybegin, int yend,
+                                     int zbegin, int zend,
+-                                    numeric::array &buffer)
++                                    object &buffer)
+ {
+     TypeDesc format;
+     size_t numelements = 0;
+@@ -290,7 +290,7 @@ ImageOutputWrap::write_tiles_bt (int xbegin, int xend, int ybegin, int yend,
+ 
+ 
+ bool
+-ImageOutputWrap::write_image_array (numeric::array &buffer)
++ImageOutputWrap::write_image_array (object &buffer)
+ {
+     TypeDesc format;
+     size_t numelements = 0;
+diff --git a/src/python/py_oiio.cpp b/src/python/py_oiio.cpp
+index df5c56d98..b940e5337 100644
+--- a/src/python/py_oiio.cpp
++++ b/src/python/py_oiio.cpp
+@@ -79,6 +79,14 @@ typedesc_from_python_array_code (char code)
+ 
+ 
+ 
++std::string
++object_classname (const object& obj)
++{
++    return extract<std::string>(obj.attr("__class__").attr("__name__"));
++}
++
++
++
+ object
+ C_array_to_Python_array (const char *data, TypeDesc type, size_t size)
+ {
+@@ -313,11 +321,18 @@ oiio_get_string_attribute_d (const char *name, const char *defaultval)
+ 
+ 
+ const void *
+-python_array_address (numeric::array &data, TypeDesc &elementtype,
++python_array_address (const object &data, TypeDesc &elementtype,
+                       size_t &numelements)
+ {
+     // Figure out the type of the array
+-    object tcobj = data.attr("typecode");
++    object tcobj;
++    try {
++        tcobj = data.attr("typecode");
++    } catch(...) {
++        return NULL;
++    }
++    if (! tcobj)
++        return NULL;
+     extract<char> tce (tcobj);
+     char typecode = tce.check() ? (char)tce : 0;
+     elementtype = typedesc_from_python_array_code (typecode);
+@@ -395,7 +410,9 @@ OIIO_DECLARE_PYMODULE(OIIO_PYMODULE_NAME) {
+     scope().attr("VERSION_PATCH") = OIIO_VERSION_PATCH;
+     scope().attr("INTRO_STRING") = OIIO_INTRO_STRING;
+ 
++#if BOOST_VERSION < 106500
+     boost::python::numeric::array::set_module_and_type("array", "array");
++#endif
+ }
+ 
+ } // namespace PyOpenImageIO
+diff --git a/src/python/py_oiio.h b/src/python/py_oiio.h
+index fb53b12bd..20070f09a 100644
+--- a/src/python/py_oiio.h
++++ b/src/python/py_oiio.h
+@@ -69,12 +69,13 @@ bool PyProgressCallback(void*, float);
+ object C_array_to_Python_array (const char *data, TypeDesc type, size_t size);
+ const char * python_array_code (TypeDesc format);
+ TypeDesc typedesc_from_python_array_code (char code);
++std::string object_classname (const object& obj);
+ 
+ 
+ // Given python array 'data', figure out its element type and number of
+ // elements, and return the memory address of its contents.  Return NULL as
+ // the address for an error.
+-const void * python_array_address (numeric::array &data, TypeDesc &elementtype,
++const void * python_array_address (const object &data, TypeDesc &elementtype,
+                                    size_t &numelements);
+ 
+ 
+@@ -89,7 +90,7 @@ void py_to_stdvector (std::vector<T> &vals, const object &obj)
+         for (int i = 0, e = len(tup()); i < e; ++i)
+             py_to_stdvector<T> (vals, tup()[i]);
+     } else {
+-        // non-tuple case
++        // non-tuple case (presumably scalar)
+         extract<T> t (obj);
+         vals.push_back (t.check() ? t() : T());
+     }
+@@ -106,16 +107,6 @@ void py_to_stdvector (std::vector<T> &vals, const tuple &tup)
+ 
+ 
+ 
+-// Suck up a tuple of presumed T values into a vector<T>
+-template<typename T>
+-void py_to_stdvector (std::vector<T> &vals, const numeric::array &arr)
+-{
+-    for (int i = 0, e = len(arr); i < e; ++i)
+-        vals.push_back (extract<T>(arr[i]));
+-}
+-
+-
+-
+ // Convert an array of T values into either tuple. FUNC is a conversion
+ // function such as PyInt_FromLong, PyFloat_FromDouble, or
+ // PyString_FromString.
+@@ -313,12 +304,12 @@ class ImageOutputWrap {
+                          stride_t xstride=AutoStride);
+     bool write_scanline_bt (int, int, TypeDesc::BASETYPE,
+                             boost::python::object&, stride_t xstride=AutoStride);
+-    bool write_scanline_array (int, int, numeric::array&);
++    bool write_scanline_array (int, int, object&);
+     bool write_scanlines (int, int, int, TypeDesc, boost::python::object&,
+                          stride_t xstride=AutoStride);
+     bool write_scanlines_bt (int, int, int, TypeDesc::BASETYPE,
+                             boost::python::object&, stride_t xstride=AutoStride);
+-    bool write_scanlines_array (int, int, int, numeric::array&);
++    bool write_scanlines_array (int, int, int, object&);
+     bool write_tile (int, int, int, TypeDesc, boost::python::object&,
+                      stride_t xstride=AutoStride, stride_t ystride=AutoStride,
+                      stride_t zstride=AutoStride);
+@@ -326,7 +317,7 @@ class ImageOutputWrap {
+                         boost::python::object&, stride_t xstride=AutoStride,
+                         stride_t ystride=AutoStride,
+                         stride_t zstride=AutoStride);
+-    bool write_tile_array (int, int, int, numeric::array&);
++    bool write_tile_array (int, int, int, object&);
+     bool write_tiles (int, int, int, int, int, int,
+                       TypeDesc, boost::python::object&,
+                       stride_t xstride=AutoStride, stride_t ystride=AutoStride,
+@@ -336,7 +327,7 @@ class ImageOutputWrap {
+                          stride_t xstride=AutoStride,
+                          stride_t ystride=AutoStride,
+                          stride_t zstride=AutoStride);
+-    bool write_tiles_array (int, int, int, int, int, int, numeric::array&);
++    bool write_tiles_array (int, int, int, int, int, int, object&);
+     bool write_image (TypeDesc format, object &buffer,
+                       stride_t xstride=AutoStride,
+                       stride_t ystride=AutoStride,
+@@ -345,7 +336,7 @@ class ImageOutputWrap {
+                          stride_t xstride=AutoStride,
+                          stride_t ystride=AutoStride,
+                          stride_t zstride=AutoStride);
+-    bool write_image_array (numeric::array &buffer);
++    bool write_image_array (object &buffer);
+     bool write_deep_scanlines (int ybegin, int yend, int z,
+                                const DeepData &deepdata);
+     bool write_deep_tiles (int xbegin, int xend, int ybegin, int yend,
