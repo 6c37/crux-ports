@@ -1,30 +1,29 @@
 # Description: A library for reading and writing images, including classes, utilities, and applications.
-# URL:         https://sites.google.com/site/openimageio/home
+# URL:         http://openimageio.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake boost openjpeg libtiff libpng giflib ilmbase openexr python
-# Optional:    qt4 qt5 ffmpeg python3
+# Depends on:  cmake boost openjpeg libtiff libpng giflib ilmbase openexr
+# Optional:    qt4 qt5 glew ffmpeg python3
 
 name=openimageio
 version=1.7.16
-release=2
-source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
+release=3
+source=(
+	https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz
+	oiio-boost-1.65-fix.patch
+)
 
 build() {
 	cd oiio-Release-$version
 
+	patch -p1 < $SRC/oiio-boost-1.65-fix.patch
+
 	[ -e '/usr/lib/pkgconfig/python-3'* ] && PKGMK_OIIO=' -DUSE_PYTHON3=ON'
 
 	mkdir build && cd build
-	# We disable python for now, see #111
 	cmake .. \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DUSE_OPENSSL=ON \
-		-DSTOP_ON_WARNING=OFF \
-		-DOIIO_BUILD_TESTS=OFF \
-		$PKGMK_OIIO \
-		-DUSE_PYTHON=OFF \
-		-DUSE_PYTHON3=OFF
+		$PKGMK_OIIO
 
 	make
 	make DESTDIR=$PKG install
