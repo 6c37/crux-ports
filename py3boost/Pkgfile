@@ -1,0 +1,43 @@
+# Description: Free peer-reviewed portable C++ source libraries for python3 binding.
+# URL:         http://www.boost.org/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  boost python3
+
+name=py3boost
+version=1.65.0
+release=1
+source=(http://downloads.sourceforge.net/project/${name#py3}/${name#py3}/$version/${name#py3}_${version//./_}.tar.bz2)
+
+build() {
+	cd ${name#py3}_${version//./_}
+
+	sed -i '19s:=python:=python3.6:' bootstrap.sh
+	sed -i '20s:=:=3.6:' bootstrap.sh
+
+	export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/include/python3.6m"
+
+	export _stagedir="$SRC/stagedir"
+
+	local JOBS=$(awk 'BEGIN{RS="-j|--jobs="} NR==2 {print $1}'  <<< $MAKEFLAGS)
+	test -n "$JOBS" && export JOBS="-j $JOBS"
+
+	./bootstrap.sh \
+		--prefix="${_stagedir}" \
+		--with-toolset=gcc \
+		--with-icu \
+		--with-libraries=python
+
+	./b2 stage \
+		variant=release \
+		threading=multi \
+		runtime-link=shared \
+		link=shared,static \
+		debug-symbols=off \
+		toolset=gcc \
+		--prefix="${_stagedir/python3}" \
+		--with-python \
+		install
+
+	install -dm 755 $PKG/usr/lib
+	cp -a ${_stagedir}/lib/libboost_python3* $PKG/usr/lib
+}
