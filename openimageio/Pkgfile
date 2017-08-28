@@ -6,7 +6,7 @@
 
 name=openimageio
 version=1.7.16
-release=3
+release=4
 source=(
 	https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz
 	oiio-boost-1.65-fix.patch
@@ -23,6 +23,7 @@ build() {
 	cmake .. \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DUSE_OPENSSL=ON \
 		$PKGMK_OIIO
 
 	make
