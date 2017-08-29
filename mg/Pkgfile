@@ -4,10 +4,10 @@
 # Depends on:  libbsd
 
 name=mg
-version=20170401
+version=20170828
 release=1
 source=(
-	http://homepage.boetes.org/software/mg/mg-$version.tar.gz
+	http://homepage.boetes.org/software/$name/$name-$version.tar.gz
 	libs.patch
 )
 
@@ -17,5 +17,5 @@ build() {
 	patch -p1 < ../libs.patch
 
 	make  
-	make prefix="/usr" mandir=/usr/share/man DESTDIR="$PKG" BINDIR="$PKG/usr/bin" install
+	make prefix=/usr mandir=/usr/share/man DESTDIR=$PKG BINDIR=$PKG/usr/bin install
 }
