@@ -1,12 +1,12 @@
 # Description: A library for reading and writing images, including classes, utilities, and applications.
 # URL:         http://openimageio.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake py3boost openjpeg libtiff libpng giflib ilmbase openexr
-# Optional:    qt4 qt5 glew ffmpeg
+# Depends on:  cmake openjpeg libtiff libpng giflib ilmbase openexr
+# Optional:    qt4 qt5 glew ffmpeg py3boost
 
 name=openimageio
 version=1.7.16
-release=5
+release=6
 source=(
 	https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz
 	oiio-boost-1.65-fix.patch
@@ -15,11 +15,12 @@ source=(
 build() {
 	cd oiio-Release-$version
 
-	sed -i 's/1.42/1.53/g' src/python/CMakeLists.txt
-
 	patch -p1 < $SRC/oiio-boost-1.65-fix.patch
 
-	export PY3FLAGS=' -DUSE_PYTHON3=ON -DPYLIB3_INSTALL_DIR=lib/python3.6/site-packages'
+	if [ "$(pkginfo -i | grep '^py3boost ' )" ] ; then
+		sed -i 's/1.42/1.53/g' src/python/CMakeLists.txt
+		export PY3FLAGS=' -DUSE_PYTHON3=ON -DPYLIB3_INSTALL_DIR=lib/python3.6/site-packages'
+	fi
 
 	mkdir build && cd build
 	cmake .. \
