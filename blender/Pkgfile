@@ -1,11 +1,11 @@
 # Description: A fully integrated 3D graphics creation suite.
 # URL:         http://blender.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu openimageio python3
+# Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
 
 name=blender
 version=2.78c
-release=2
+release=3
 source=(https://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
@@ -15,6 +15,8 @@ build() {
 	cmake -C ../build_files/cmake/config/blender_release.cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_BUILD_TYPE=Release \
+		-DWITH_INSTALL_PORTABLE=OFF \
+		-DWITH_INTERNATIONAL=OFF \
 		-DWITH_PYTHON=ON \
 		-DPYTHON_VERSION=3.6 \
 		-DPYTHON_LIBPATH=/usr/lib \
@@ -22,13 +24,11 @@ build() {
 		-DPYTHON_INCLUDE_DIRS=/usr/include/python3.6m \
 		-DWITH_PYTHON_INSTALL=OFF \
 		-DOPENIMAGEIO_ROOT_DIR=/usr \
-		-DWITH_GL_PROFILE_CORE=OFF \
-		-DWITH_GL_PROFILE_ES20=OFF \
 		-DWITH_CYCLES=ON \
+		-DWITH_CYCLES_NATIVE_ONLY=ON \
 		-DWITH_CYCLES_PTEX=OFF \
-		-DWITH_INTERNATIONAL=OFF \
 		-DWITH_SYSTEM_OPENJPEG=ON \
-		-DWITH_INSTALL_PORTABLE=OFF
+		-DWITH_SYSTEM_LZO=ON
 
 	make
 	make DESTDIR=$PKG install
