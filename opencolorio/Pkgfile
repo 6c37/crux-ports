@@ -1,0 +1,19 @@
+# Description: A complete color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.
+# URL:         http://opencolorio.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  cmake
+# Optional:    python openimageio
+
+name=opencolorio
+version=1.0.9
+release=1
+source=(https://github.com/imageworks/OpenColorIO/archive/v$version.tar.gz)
+
+build() {
+	cd OpenColorIO-$version
+
+	cmake . -DCMAKE_INSTALL_PREFIX=/usr
+
+	make	
+	make DESTDIR=$PKG install
+}
