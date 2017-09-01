@@ -1,13 +1,13 @@
 # Description: Smart Common Input Method platform.
 # URL:         http://sourceforge.net/projects/scim
 # Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk pango
+# Depends on:  gtk gtk3 qt4
 
 name=scim
-version=1.4.17
+version=1.4.18
 release=1
 source=(
-	http://downloads.sourceforge.net/$name/$name-$version.tar.gz
+	https://github.com/$name-im/$name/archive/$version.tar.gz
 	xinput-scim
 )
 
@@ -19,7 +19,8 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--enable-ld-version-script \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--with-gtk-version=2
 
 	make
 	make DESTDIR=$PKG install
