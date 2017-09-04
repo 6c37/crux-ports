@@ -110,6 +110,8 @@ drwxr-xr-x	root/root	usr/include/fcitx/module/x11/
 drwxr-xr-x	root/root	usr/include/fcitx/module/xkb/
 -rw-r--r--	root/root	usr/include/fcitx/module/xkb/fcitx-xkb.h
 -rw-r--r--	root/root	usr/include/fcitx/module/xkb/xkb.h
+drwxr-xr-x	root/root	usr/include/fcitx/module/xkbdbus/
+-rw-r--r--	root/root	usr/include/fcitx/module/xkbdbus/fcitx-xkbdbus.h
 -rw-r--r--	root/root	usr/include/fcitx/profile.h
 -rw-r--r--	root/root	usr/include/fcitx/ui.h
 drwxr-xr-x	root/root	usr/lib/
@@ -260,6 +262,7 @@ drwxr-xr-x	root/root	usr/share/fcitx/data/
 -rw-r--r--	root/root	usr/share/fcitx/data/punc.mb.zh_HK
 -rw-r--r--	root/root	usr/share/fcitx/data/punc.mb.zh_TW
 drwxr-xr-x	root/root	usr/share/fcitx/data/quickphrase.d/
+-rw-r--r--	root/root	usr/share/fcitx/data/quickphrase.d/emoji-eac.mb
 -rw-r--r--	root/root	usr/share/fcitx/data/quickphrase.d/emoji.mb
 -rw-r--r--	root/root	usr/share/fcitx/data/quickphrase.d/latex.mb
 -rw-r--r--	root/root	usr/share/fcitx/data/vk.conf
@@ -278,8 +281,10 @@ drwxr-xr-x	root/root	usr/share/fcitx/inputmethod/
 -rw-r--r--	root/root	usr/share/fcitx/inputmethod/qw.conf
 -rw-r--r--	root/root	usr/share/fcitx/inputmethod/shuangpin.conf
 drwxr-xr-x	root/root	usr/share/fcitx/pinyin/
+-rw-r--r--	root/root	usr/share/fcitx/pinyin/pySym.mb
 -rw-r--r--	root/root	usr/share/fcitx/pinyin/pybase.mb
 -rw-r--r--	root/root	usr/share/fcitx/pinyin/pyphrase.mb
+-rw-r--r--	root/root	usr/share/fcitx/pinyin/sp.dat
 drwxr-xr-x	root/root	usr/share/fcitx/py-enhance/
 -rw-r--r--	root/root	usr/share/fcitx/py-enhance/py_stroke.mb
 -rw-r--r--	root/root	usr/share/fcitx/py-enhance/py_table.mb
