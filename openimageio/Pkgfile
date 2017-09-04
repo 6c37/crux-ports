@@ -5,20 +5,14 @@
 # Optional:    qt4 qt5 glew ffmpeg py3boost
 
 name=openimageio
-version=1.7.16
-release=6
-source=(
-	https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz
-	oiio-boost-1.65-fix.patch
-)
+version=1.7.17
+release=1
+source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 
 build() {
 	cd oiio-Release-$version
 
-	patch -p1 < $SRC/oiio-boost-1.65-fix.patch
-
 	if [ "$(pkginfo -i | grep '^py3boost ' )" ] ; then
-		sed -i 's/1.42/1.53/g' src/python/CMakeLists.txt
 		export PY3FLAGS=' -DUSE_PYTHON3=ON -DPYLIB3_INSTALL_DIR=lib/python3.6/site-packages'
 	fi
 

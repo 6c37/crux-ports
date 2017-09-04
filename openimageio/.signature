@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpZ0ZueO6V64uKr6Ij2/H4i2/6v4R5woFefrUhvyzBODOuGibAo9UFUhiWzghymNulHHhTcjKdj18cTh0LvAJAwE=
-SHA256 (Pkgfile) = 06cfaebcaae45bb10cc5b871540dd6a6648d9afb090aa85d7ee1ffb2494380f3
-SHA256 (.footprint) = 1ef5e0e63c102651b4c701c80c271afd288ad5885b2b3afdde1d03cfbc430763
-SHA256 (Release-1.7.16.tar.gz) = 12576b336e734ce196961b19847c166805c61f4729c9aa5d6a5957eb7a056539
-SHA256 (oiio-boost-1.65-fix.patch) = 7e620c15d8c3834fe165707879f42d51998a4fa3d0309d1b3efe593939e2946c
+RWSsZdBvSzGVpWY163qsyY+hKKa6pgqyp0nGA+urk/UiTofC+NZXIGo6uLxRmYKOPmFAk760xMMfI/JnMnw6aEkKvv2q4aln9A8=
+SHA256 (Pkgfile) = 0e9032f2e2138b3eb5d61b4b65d14449fcd616adaeef2ef60fdf84a5f25c4078
+SHA256 (.footprint) = 31f515c349498f4d9599d271ced1d64ad3eea0706c05b19357a3e43c6a55db16
+SHA256 (Release-1.7.17.tar.gz) = 669c59d06399dd882c3e2469bb3a4b33d537db150f6fe056495c3429b5c3838f
