@@ -7,12 +7,12 @@ name=kicad
 version=4.0.7
 release=1
 source=(
-	https://github.com/Kicad/Kicad-source-mirror/archive/$version.tar.gz
+	https://launchpad.net/$name/${version%.*}/$version/+download/$name-$version.tar.xz
 	boost.patch
 )
 
 build() {
-	cd $name-source-mirror-$version
+	cd $name-$version
 
 	export CXXFLAGS+=" -std=c++11"
 	patch -p1 < $SRC/boost.patch
