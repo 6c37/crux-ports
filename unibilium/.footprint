@@ -4,9 +4,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libunibilium.a
 -rw-r--r--	root/root	usr/lib/libunibilium.la
-lrwxrwxrwx	root/root	usr/lib/libunibilium.so -> libunibilium.so.0.3.0
-lrwxrwxrwx	root/root	usr/lib/libunibilium.so.0 -> libunibilium.so.0.3.0
--rwxr-xr-x	root/root	usr/lib/libunibilium.so.0.3.0
+lrwxrwxrwx	root/root	usr/lib/libunibilium.so -> libunibilium.so.0.3.1
+lrwxrwxrwx	root/root	usr/lib/libunibilium.so.0 -> libunibilium.so.0.3.1
+-rwxr-xr-x	root/root	usr/lib/libunibilium.so.0.3.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/unibilium.pc
 drwxr-xr-x	root/root	usr/share/
