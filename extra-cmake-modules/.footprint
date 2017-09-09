@@ -42,6 +42,7 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMCreateQmFromPoFiles.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMEnableSanitizers.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMFindModuleHelpers.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMFindQMLModule.cmake.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGenerateHeaders.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGeneratePkgConfigFile.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMGeneratePriFile.cmake
@@ -52,6 +53,7 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMOptionalAddSubdirectory.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMPackageConfigHelpers.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMPoQmTools.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMQMLModules.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQchDoxygen.config.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQchDoxygenLayout.xml
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQmLoader.cpp.in
