@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpWvSl8idqmOe1OPd2UTgSN0SNdvbAAsoxxGWeTFMfQbdPYQMsngOFm4ONBAV8g46FNbnqage6PVQaK53VbwmhwY=
-SHA256 (Pkgfile) = 84328cefbf21b9dd00b4a26d5edc8aac739dbf4c80373a822b6e3721bec27973
-SHA256 (.footprint) = 9b853919fcd1f836fba93e45ec343ffb7c3ee61408996646ba4141e52f9d91bd
+RWSsZdBvSzGVpenUXbOj/8p8HWOWlr8EvKdtN+hQhm9F3n0quTwCJNinWHYErlObPb2bggTq0tpJj5eGwWJMCN0yCFXaUNtPKAU=
+SHA256 (Pkgfile) = d1831f9b6032bb57fc5450f0d6ab03de05caf8cac8c2316afbae509be75ce793
+SHA256 (.footprint) = 6f04efe38044dd617c8897bb3a6ffda79653f610682e75cacf9917af75a3b064
 SHA256 (emacs-25.2.tar.xz) = 59b55194c9979987c5e9f1a1a4ab5406714e80ffcfd415cc6b9222413bc073fa
+SHA256 (remove-unsafe-enriched-mode-translations.patch) = e0a8892aea5512a4104bad495989e0057f4cb15a0eeb59540533df4714c03a93

@@ -1,15 +1,20 @@
 # Description: An extensible, customizable text editor.
 # URL:         https://www.gnu.org/software/emacs/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  ctags giflib libjpeg-turbo libtiff xorg-libxpm
+# Depends on:  ctags giflib libpng libtiff xorg-libxaw
 
 name=emacs
 version=25.2
-release=1
-source=(https://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz)
+release=2
+source=(
+	https://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz
+	remove-unsafe-enriched-mode-translations.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/remove-unsafe-enriched-mode-translations.patch
 
 	ac_cv_lib_gif_EGifPutExtensionLast=yes
 	./configure \
@@ -17,8 +22,6 @@ build() {
 		--libexecdir=/usr/lib \
 		--localstatedir=/var \
 		--sysconfdir=/etc \
-		--without-makeinfo \
-		--without-gif \
 		--with-xft
 
 	make
@@ -26,7 +29,6 @@ build() {
 
 	rm $PKG/usr/bin/{c,e}tags
 	rm $PKG/usr/share/man/man1/{c,e}tags.1.gz
-	rm -rf $PKG/usr/share/info
 	find $PKG -name '*README*' -delete
 	find $PNG -name '*NEWS*' -delete
 	find $PKG -name COPYING -delete
