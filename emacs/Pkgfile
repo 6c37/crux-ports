@@ -4,17 +4,12 @@
 # Depends on:  ctags giflib libpng libtiff xorg-libxaw
 
 name=emacs
-version=25.2
-release=2
-source=(
-	https://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz
-	remove-unsafe-enriched-mode-translations.patch
-)
+version=25.3
+release=1
+source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/remove-unsafe-enriched-mode-translations.patch
 
 	ac_cv_lib_gif_EGifPutExtensionLast=yes
 	./configure \

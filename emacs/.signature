@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpenUXbOj/8p8HWOWlr8EvKdtN+hQhm9F3n0quTwCJNinWHYErlObPb2bggTq0tpJj5eGwWJMCN0yCFXaUNtPKAU=
-SHA256 (Pkgfile) = d1831f9b6032bb57fc5450f0d6ab03de05caf8cac8c2316afbae509be75ce793
-SHA256 (.footprint) = 6f04efe38044dd617c8897bb3a6ffda79653f610682e75cacf9917af75a3b064
-SHA256 (emacs-25.2.tar.xz) = 59b55194c9979987c5e9f1a1a4ab5406714e80ffcfd415cc6b9222413bc073fa
-SHA256 (remove-unsafe-enriched-mode-translations.patch) = e0a8892aea5512a4104bad495989e0057f4cb15a0eeb59540533df4714c03a93
+RWSsZdBvSzGVpVfylNg6x37ZCXze1z90T6XWM5Lmiu5OweKeb2LZzWyrI9BqbdPoAvL9e0nJu0vYUTv33SopBwx3V6wrngSCYgc=
+SHA256 (Pkgfile) = ae9daee072628bb6d4ccd15f58203e4a617771ca706795f3f253c261551fc590
+SHA256 (.footprint) = 02b40bd112a9bf5168f3039e81932813a6463a63f6555f716e94ef065b3f32c0
+SHA256 (emacs-25.3.tar.xz) = 253ac5e7075e594549b83fd9ec116a9dc37294d415e2f21f8ee109829307c00b
