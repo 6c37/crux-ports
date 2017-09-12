@@ -5,7 +5,7 @@
 
 name=blender
 version=2.79
-release=1
+release=2
 source=(https://download.blender.org/source/blender-$version.tar.gz)
 
 build() {
@@ -28,8 +28,7 @@ build() {
 		-DWITH_CYCLES_NATIVE_ONLY=ON \
 		-DWITH_CYCLES_PTEX=OFF \
 		-DWITH_SYSTEM_OPENJPEG=ON \
-		-DWITH_SYSTEM_LZO=ON \
-		-DWITH_SYSTEM_EIGEN=ON
+		-DWITH_SYSTEM_LZO=ON
 
 	make
 	make DESTDIR=$PKG install
@@ -37,6 +36,6 @@ build() {
 	python3 -m compileall $PKG/usr/share/blender
 	python3 -O -m compileall $PKG/usr/share/blender
 
-	rm -rf $PKG/usr/share/{doc,blender/${version%c}/scripts/addons/cycles/license}
+	rm -rf $PKG/usr/share/{doc,blender/$version/scripts/addons/cycles/license}
 	find $PKG -iname 'readme*' -delete
 }
