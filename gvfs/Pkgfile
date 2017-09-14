@@ -4,7 +4,7 @@
 # Depends on:  gtk3 libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr
 
 name=gvfs
-version=1.33.92
+version=1.34.0
 release=1
 source=(
 	http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz
