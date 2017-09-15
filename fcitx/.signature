@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQJ1zY3jd/+jlgXaRKRPB7wrZYOjVe0AKnWy2RaXDHSBF7m+vitJ0I0fAb7LD6GnnssRrneAHUVj3NadrU5lwQg=
-SHA256 (Pkgfile) = 56c15f4dddb88f383ad8f9b9361909486418cf17b590bb55e66459b2d8e58199
+RWSsZdBvSzGVpR021sJ+mxUs+2b/LOWb3xVY3uKGlkHCB0+8n1n2QR7XmJPfaPhVqVumXmBy66/EXoWltk+yZNfDRhDqmKcB+Aw=
+SHA256 (Pkgfile) = 253bbf1e62bd16343badbec50f67805d83c4875477b70801d44333d9c99f1f1b
 SHA256 (.footprint) = 0118ba16e442d544157abd565edd10ad61cfe076a9387cfbbff39a3aed5c6782
-SHA256 (fcitx-4.2.9.2_dict.tar.xz) = 2cdd7c138163f717aacca8eabb18a4a823c808a408e4b0770f5be2e3e892de20
+SHA256 (fcitx-4.2.9.3_dict.tar.xz) = 543cc301f274367429880cb80c53349ed44435e7c64d757cca9b0d1844e2a91e
