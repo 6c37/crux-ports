@@ -4,8 +4,8 @@
 # Depends on:  talloc libarchive
 
 name=proot
-_commit=afe225dc804e7926e588e8af22fbc5433b773e2d
-version=20170807
+_commit=fdc253bc6983c3e301909747249a9ac063813aa0
+version=20170919
 release=1
 source=(https://github.com/$name-me/PRoot/archive/${_commit}.tar.gz)
 
