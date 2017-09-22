@@ -2,9 +2,10 @@
 # URL:         http://fukuchi.org/works/qrencode/index.html.en
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libpng
+# Optional:    xorg-libxpm
 
 name=qrencode
-version=3.4.4
+version=4.0.0
 release=1
 source=(http://fukuchi.org/works/$name/$name-$version.tar.gz)
 
