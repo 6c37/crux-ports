@@ -1,0 +1,35 @@
+# Description: A window manager designed for speed, usability, and consistency.
+# URL:         https://github.com/bbidulock/icewm
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg-libxft gdk-pixbuf xorg-libxrandr xorg-libsm xorg-mkfontdir
+# Optional:    xorg-libxinerama libsndfile fribidi
+
+name=icewm
+version=1.4.2
+release=1
+source=(https://github.com/bbidulock/$name/releases/download/$version/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-nls \
+		--disable-i18n \
+		--enable-sm \
+		--enable-shape \
+		--enable-shaped-decorations \
+		--enable-gradients \
+		--enable-xrandr \
+		--enable-xfreetype \
+		--enable-corefonts \
+		--enable-guievents \
+		--enable-silent-rules \
+		--disable-menus-gnome2 \
+		--with-x \
+		--with-icesound=ALSA,OSS
+
+	make
+	make DESTDIR=$PKG install
+}
