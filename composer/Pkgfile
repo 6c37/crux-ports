@@ -1,0 +1,13 @@
+# Description: Dependency Manager for PHP.
+# URL:         https://getcomposer.org/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  php git
+
+name=composer
+version=1.5.2
+release=1
+source=(https://getcomposer.org/download/$version/$name.phar)
+
+build() {
+	install -Dm755 composer.phar $PKG/usr/bin/composer
+}
