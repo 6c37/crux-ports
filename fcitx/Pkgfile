@@ -4,7 +4,7 @@
 # Depends on:  extra-cmake-modules gtk gtk3 qt4 iso-codes xorg-libxfixes cairo dbus-glib enchant libxkbcommon icu
 
 name=fcitx
-version=4.2.9.3
+version=4.2.9.4
 release=1
 source=(http://download.$name-im.org/$name/$name-${version}_dict.tar.xz)
 
