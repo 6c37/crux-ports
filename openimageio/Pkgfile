@@ -12,16 +12,14 @@ source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 build() {
 	cd oiio-Release-$version
 
-	if [ "$(pkginfo -i | grep '^py3boost ' )" ] ; then
-		export PY3FLAGS=' -DUSE_PYTHON3=ON -DPYLIB3_INSTALL_DIR=lib/python3.6/site-packages'
-	fi
-
 	mkdir build && cd build
 	cmake .. \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DUSE_OPENSSL=ON \
-		$PY3FLAGS
+		-DCMAKE_INSTALL_LIBDIR=/usr/lib/ \
+		-DUSE_PYTHON=ON \
+		-DPYLIB_LIB_PREFIX=/usr/lib \
+		-DUSE_OPENSSL=ON
 
 	make
 	make DESTDIR=$PKG install
