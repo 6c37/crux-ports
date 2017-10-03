@@ -1,6 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/createfontdatachunk.py
 -rwxr-xr-x	root/root	usr/bin/enhancer.py
 -rwxr-xr-x	root/root	usr/bin/explode.py
 -rwxr-xr-x	root/root	usr/bin/gifmaker.py
@@ -195,6 +194,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/PIL/__pycache__/version.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/PIL/_binary.py
 -rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_imaging.cpython-36m-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_imagingcms.cpython-36m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_imagingft.cpython-36m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_imagingmath.cpython-36m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_imagingmorph.cpython-36m-x86_64-linux-gnu.so
@@ -204,10 +204,10 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/__pycache__/
 -rwxr-xr-x	root/root	usr/lib/python3.6/site-packages/PIL/_webp.cpython-36m-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/PIL/features.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/PIL/version.py
-drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/top_level.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.2.1-py3.6.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/Pillow-4.3.0-py3.6.egg-info/zip-safe
