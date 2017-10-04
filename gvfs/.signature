@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpdqx7q5N6knuGnhUtMwZU7/Nw+c8bcPU7snNITJ3w/RmYIklDNuopkJr8uQAHbj3VruFHYvTJ/sICRuTQeAN9wI=
-SHA256 (Pkgfile) = 4df9c3880f6d59eaa79c4ead065323e4608ec8d8421d33acc5d5e4dabc609b38
-SHA256 (.footprint) = 13a1762cdec835977540f3b79426cb0271d8b206d8a270bef960fd6968fcd2f3
-SHA256 (gvfs-1.34.0.tar.xz) = 79fb4fd9a671333efc6f3c88dd5d1589481390bc3978b03b6de89599a62e015a
-SHA256 (gvfs-deprecated_remove_bashism.patch) = bde019d3d0cebeeb5332af1a60557f8e36821e0cdad1b02e5ef4a2b0fd32f4a3
+RWSsZdBvSzGVpT1UxY1B3sYDVgxTyeYzB1ywnCmqpWRESoASUWgT7VooWV/dlhEYfld88ow8QNSsk4TVrOax+shbxOrFw1aTbg0=
+SHA256 (Pkgfile) = 60ffda7fd1939bc9b7831d5398cea971188a2840bd69144d5648ff212de570b6
+SHA256 (.footprint) = 5f780ff37f17b7453b82f4e1a693ab0dc7e17a2425239601040a6f2e96cfc486
+SHA256 (gvfs-1.34.1.tar.xz) = 7ef9b2aec234004271a575118a0e35b3c36ce3309e5f9da109635651843372b4

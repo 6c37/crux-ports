@@ -4,17 +4,12 @@
 # Depends on:  gtk3 libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr
 
 name=gvfs
-version=1.34.0
+version=1.34.1
 release=1
-source=(
-	http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz
-	gvfs-deprecated_remove_bashism.patch
-)
+source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/gvfs-deprecated_remove_bashism.patch
 
 	./configure \
 		--prefix=/usr \
