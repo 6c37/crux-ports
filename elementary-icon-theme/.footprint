@@ -2,8 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/elementary/
--rw-r--r--	root/root	usr/share/icons/elementary/.gitignore
--rw-r--r--	root/root	usr/share/icons/elementary/CMakeLists.txt
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/
 drwxr-xr-x	root/root	usr/share/icons/elementary/actions/128/
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/128/address-book-new.svg
@@ -1069,10 +1067,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/symbolic/preferences-
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-system-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/categories/symbolic/preferences-system-time-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/categories/symbolic/system-help-symbolic.svg -> ../../actions/symbolic/help-contents-symbolic.svg
-drwxr-xr-x	root/root	usr/share/icons/elementary/cmake/
--rw-r--r--	root/root	usr/share/icons/elementary/cmake/InstallSymlink.cmake
 drwxr-xr-x	root/root	usr/share/icons/elementary/cursors/
--rw-r--r--	root/root	usr/share/icons/elementary/cursors/CMakeLists.txt
 -rw-r--r--	root/root	usr/share/icons/elementary/cursors/X_cursor
 -rw-r--r--	root/root	usr/share/icons/elementary/cursors/bd_double_arrow
 -rw-r--r--	root/root	usr/share/icons/elementary/cursors/bottom_left_corner
@@ -3013,7 +3008,3 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/status/symbolic/process-error-sy
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/weather-snow-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/weather-storm-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/status/symbolic/weather-windy-symbolic.svg
-drwxr-xr-x	root/root	usr/share/icons/elementary/volumeicon/
--rw-r--r--	root/root	usr/share/icons/elementary/volumeicon/.VolumeIcon.icns
--rw-r--r--	root/root	usr/share/icons/elementary/volumeicon/.VolumeIcon.png
--rw-r--r--	root/root	usr/share/icons/elementary/volumeicon/CMakeLists.txt
