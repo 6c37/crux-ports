@@ -41,6 +41,7 @@ d:libantlr3c
 d:glm
 d:sxhkd
 d:picard
+d:pick
 d:composer
 d:mpd
 d:blender
@@ -342,10 +343,10 @@ f:3016ae31a3ba6d88a9b968a75b368b75:python-singledispatch/.md5sum
 f:b629d5835ffc90049511dd9028123382:python-singledispatch/.footprint
 f:b94ff0e6fe7b8e566211bca17fe4fd57:python-singledispatch/.signature
 f:4a9956f27c79772bfa7cbdecb6ee8d0d:python-singledispatch/Pkgfile
-f:5b2e7659221e872cc865bc573ddd3249:libvterm/.md5sum
+f:c95a65ac17154106728683b71e3f9ff5:libvterm/.md5sum
 f:15c1e599c2eac2105278219aad174086:libvterm/.footprint
-f:400056d101b2718a86a38537992a0544:libvterm/.signature
-f:759d94e73c87ba20365bef9eb188949b:libvterm/Pkgfile
+f:f58f9f0765b035f5ebbeb2ca84c11e1b:libvterm/.signature
+f:1c6d02362c41aa3507f876b3706677cc:libvterm/Pkgfile
 f:38297d4ea781a9c2504fb17e5af1085d:txtw/.md5sum
 f:e3ff4859fab042d150a43e86deb7587b:txtw/.footprint
 f:e23357ca762b4a80131eddb00abc3807:txtw/.signature
@@ -444,6 +445,10 @@ f:78ebc792185c72f5ef8757c7d2b93412:picard/.md5sum
 f:64d8f9fdf78294f54ced86752520bc54:picard/.footprint
 f:afa4633c472a1ac2c01d5f497bf69bb2:picard/.signature
 f:b6c2ed7949dd61d9c3f059311714900d:picard/Pkgfile
+f:bb30eecb438f9a3cbd0bd7516afdf742:pick/.md5sum
+f:abb42e76878c06c5f85bc62b8399c576:pick/.footprint
+f:0752ad9514ab5c4b2299bba924db517f:pick/.signature
+f:e581fea5198b524512d04a436b7bf8ae:pick/Pkgfile
 f:f66f6879f115ca73ef31798941a137f1:composer/.md5sum
 f:679356f8fffe547e95a2db86def23a24:composer/.footprint
 f:7220a47d4f620b21662c8ad5ac9c0627:composer/.signature
