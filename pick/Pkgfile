@@ -1,0 +1,18 @@
+# Description: A fuzzy search tool for the command-line.
+# URL:         https://github.com/calleerlandsson/pick
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=pick
+version=1.9.0
+release=1
+source=(https://github.com/calleerlandsson/$name/releases/download/v$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
