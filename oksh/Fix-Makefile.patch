@@ -1,6 +1,5 @@
-diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
---- oksh-0.5.9.orig/Makefile.in	2017-05-04 16:04:59.151640740 +0800
-+++ oksh-0.5.9/Makefile.in	2017-05-04 16:26:14.664678468 +0800
+--- a/Makefile.in	2017-10-09 15:47:26.577014210 +0800
++++ b/Makefile.in	2017-10-09 16:02:39.415045650 +0800
 @@ -10,7 +10,6 @@ CPP = @CPP@
  
  INSTALL = @INSTALL@
@@ -9,7 +8,12 @@ diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
  
  DEFS = @DEFS@
  LIBS = @LIBS@
-@@ -23,15 +22,11 @@ LDFLAGS = @LDFLAGS@
+@@ -20,19 +19,16 @@ CFLAGS = @CFLAGS@
+ LDSTATIC = 
+ LDFLAGS = @LDFLAGS@
+ 
++DESTDIR = @DESTDIR@
++
  SHELL_PROG = ksh
  
  prefix = @prefix@
@@ -24,10 +28,11 @@ diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
  
 -# Suffix for executables: nothing for unix, .exe for os/2.
 -exe_suffix=
- 
+-
  SHELL = /bin/sh
  
-@@ -70,7 +65,7 @@ OS2FILES = os2/Makefile os2/config.h os2
+ SRCS = alloc.c c_ksh.c c_sh.c c_test.c c_ulimit.c edit.c emacs.c \
+@@ -70,7 +66,7 @@ OS2FILES = os2/Makefile os2/config.h os2
  	os2/kshrc.ksh os2/make.sed os2/os2.c os2/os2siglist.out \
  	os2/README.os2 os2/NEWS.os2 os2/os2bugs os2/th.cmd os2/config.cache
  
@@ -36,26 +41,31 @@ diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
  
  # This shouldn't be first - some makes don't know about PRECIOUS and assume it
  # is the default target.
-@@ -80,9 +75,8 @@ all: $(SHELL_PROG)$(exe_suffix)
+@@ -79,27 +75,23 @@ all: $(SHELL_PROG)$(exe_suffix)
+ .c.o:
  	$(CC) -c $(CPPFLAGS) $(DEFS) -I. -I$(srcdir) $(CFLAGS) $<
  
- install: installdirs all
+-install: installdirs all
 -	$(INSTALL_PROGRAM) $(SHELL_PROG)$(exe_suffix) $(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix)
 -	-$(INSTALL_DATA) $(SHELL_PROG).1 $(mandir)/`echo $(SHELL_PROG)|sed '$(transform)'`.$(manext)
 -	-@prog=$(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix);\
-+	$(INSTALL_PROGRAM) $(SHELL_PROG) $(bindir)
-+	$(INSTALL_PROGRAM) -m 0644 $(SHELL_PROG).1 $(mandir)
++install:
++	$(INSTALL_PROGRAM) -D $(SHELL_PROG) $(DESTDIR)$(bindir)/$(SHELL_PROG)
++	$(INSTALL_PROGRAM) -D -m 0644 $(SHELL_PROG).$(manext) $(DESTDIR)$(mandir)/$(SHELL_PROG).$(manext)
  	    test -f /etc/shells \
  	    && (grep "^$$prog\$$" /etc/shells > /dev/null \
  		|| echo \
-@@ -93,13 +87,13 @@ installdirs:
- 	$(srcdir)/mkinstalldirs $(bindir) $(mandir)
+ "NOTE: /etc/shells does not contain $$prog \
+       you should add it if you want to set your shell to $(SHELL_PROG)")
  
+-installdirs:
+-	$(srcdir)/mkinstalldirs $(bindir) $(mandir)
+-
  uninstall:
 -	rm -f $(bindir)/`echo $(SHELL_PROG)|sed '$(transform)'`$(exe_suffix)
 -	rm -f $(mandir)/`echo $(SHELL_PROG)|sed '$(transform)'`.$(manext)
-+	rm -f $(bindir)/$(SHELL_PROG)
-+	rm -f $(mandir)/$(SHELL_PROG).1
++	rm -f $(DESTDIR)$(bindir)/$(SHELL_PROG)
++	rm -f $(DESTDIR)$(mandir)/$(SHELL_PROG).$(manext)
  
  check test:
 -	$(srcdir)/tests/th-sh $(srcdir)/tests/th -s $(srcdir)/tests -p ./$(SHELL_PROG)$(exe_suffix) -C pdksh,sh,ksh,posix,posix-upu $(TESTARGS)
@@ -66,7 +76,7 @@ diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
  	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS)
  
  
-@@ -132,17 +126,17 @@ siglist.out: config.h sh.h siglist.in si
+@@ -132,17 +124,17 @@ siglist.out: config.h sh.h siglist.in si
  	$(srcdir)/siglist.sh "$(CPP) $(CPPFLAGS) $(DEFS) -I. -I$(srcdir)" < $(srcdir)/siglist.in > tmpsiglist.out
  	mv tmpsiglist.out siglist.out
  
@@ -89,7 +99,7 @@ diff -pruN oksh-0.5.9.orig/Makefile.in oksh-0.5.9/Makefile.in
  	$(CC) $(LDFLAGS) -o $@ check-sigs.o $(LIBS)
  
  TAGS: $(SRCS) $(HDRS)
-@@ -152,10 +146,10 @@ tags: $(SRCS) $(HDRS)
+@@ -152,10 +144,10 @@ tags: $(SRCS) $(HDRS)
  	cd $(srcdir) && ctags -wt $(SRCS) $(HDRS)
  
  clean:
