@@ -5,14 +5,12 @@
 # Optional:    ffmpeg
 
 name=seamonkey
-version=2.48
+version=2.49.1
 release=1
-source=(https://archive.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz)
+source=(https://archive.mozilla.org/pub/$name/candidates/$version-candidates/build3/source/$name-$version.source.tar.xz)
 
 build() {
 	cd $name-$version
-
-	export CFLAGS="$CFLAGS -mno-avx"
 
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
@@ -31,8 +29,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --with-system-icu
 	ac_add_options --with-system-bz2
 	ac_add_options --with-system-nspr
-	# Breaks build
-	#ac_add_options --with-system-libevent
+	ac_add_options --with-system-libevent
 	ac_add_options --with-system-nss
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
