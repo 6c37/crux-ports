@@ -18,9 +18,6 @@ build() {
 
 	export _stagedir="$SRC/stagedir"
 
-	local JOBS=$(awk 'BEGIN{RS="-j|--jobs="} NR==2 {print $1}'  <<< $MAKEFLAGS)
-	test -n "$JOBS" && export JOBS="-j $JOBS"
-
 	./bootstrap.sh \
 		--prefix="${_stagedir}" \
 		--with-toolset=gcc \
