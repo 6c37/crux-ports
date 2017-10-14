@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=neomutt
-version=20170912
+version=20171013
 release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
@@ -13,7 +13,7 @@ build () {
 
 	./prepare \
 		--prefix=/usr \
-		--with-docdir=/usr/share/mutt \
+		--with-docdir=/usr/share/doc/$name \
 		--with-mailpath=/var/spool/mail \
 		--enable-pop \
 		--enable-imap \
@@ -29,8 +29,4 @@ build () {
 
 	make
 	make DESTDIR=$PKG install
-
-	find $PKG/usr/share/mutt/* ! -name manual.txt -delete
-	rm $PKG/usr/etc/{Muttrc,mime.types}.dist 
-	rm $PKG/usr/share/man/man5/{mmdf.5,mbox.5}
 }
