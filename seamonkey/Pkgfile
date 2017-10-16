@@ -6,8 +6,8 @@
 
 name=seamonkey
 version=2.49.1
-release=1
-source=(https://archive.mozilla.org/pub/$name/candidates/$version-candidates/build3/source/$name-$version.source.tar.xz)
+release=2
+source=(https://archive.mozilla.org/pub/$name/candidates/$version-candidates/build4/source/$name-$version.source.tar.xz)
 
 build() {
 	cd $name-$version
