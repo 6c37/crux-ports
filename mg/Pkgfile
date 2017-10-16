@@ -4,7 +4,7 @@
 # Depends on:  libbsd
 
 name=mg
-version=20170828
+version=20171014
 release=1
 source=(
 	http://homepage.boetes.org/software/$name/$name-$version.tar.gz
