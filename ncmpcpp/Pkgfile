@@ -1,12 +1,12 @@
 # Description: An almost exact clone of ncmpc with some new features.
 # URL:         http://rybczak.net/ncmpcpp
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  ncurses libmpdclient boost taglib
+# Depends on:  libmpdclient boost taglib
 
 name=ncmpcpp
-version=0.8
+version=0.8.1
 release=1
-source=(http://rybczak.net/$name/stable/$name-$version.tar.bz2)
+source=(https://github.com/arybczak/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
