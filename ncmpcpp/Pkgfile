@@ -6,7 +6,7 @@
 name=ncmpcpp
 version=0.8.1
 release=1
-source=(https://github.com/arybczak/$name/archive/$version.tar.gz)
+source=(http://rybczak.net/$name/stable/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
