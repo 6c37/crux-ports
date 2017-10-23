@@ -1,10 +1,10 @@
 # Description: A modern, hackable, featureful, OpenGL based terminal emulator.
 # URL:         https://github.com/kovidgoyal/kitty
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  python3 glew glfw freetype fontconfig xorg-xdpyinfo xsel glu
+# Depends on:  python3 glew glfw freetype fontconfig xorg-xdpyinfo xsel glu libunistring
 
 name=kitty
-version=0.3.0
+version=0.4.0
 release=1
 source=(https://github.com/kovidgoyal/$name/archive/v$version.tar.gz)
 
