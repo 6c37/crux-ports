@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUKwxZ3TZzTa6+UpyxUZoCQQdVsmp4WPr466LMYMGKGqX/djZwvW8JGDxy3py3H90eJk7GPeHDSQVzpyT11pcgE=
+RWSsZdBvSzGVpdc7RuYEU8qzfSbvyVuEGdq5Ra1LD1HJ1yGSNf/pl6rvpOtTaEmft9YbbIsYwJrbMJUlDEE+PaDKcmDWa1UoHQI=
 SHA256 (Pkgfile) = 9d74ab68b95b115f87428efeb04a014d0deee1c4062f49ab5074c778ab7f7390
-SHA256 (.footprint) = d7c270b40110fa17e73dd4585aa61067cefb165daf64bb9260a255819822241b
+SHA256 (.footprint) = e6d85f68c6e548893a85c44c0e4fad90219a3969e913849c9bf17fe443dfdcc8
 SHA256 (ibus-1.5.17.tar.gz) = 0347a8055977ca458e8add750af5f9b76e1a524844cc3b0e2fad70ce153dd219
 SHA256 (emoji-data.txt) = 48da01c9355fe1aedefdb24c81a5aa00758944f0a028759d51c5492914597059
 SHA256 (emoji-sequences.txt) = bae21ec6fee64b98d2bc6b6b7c976d80fdc9e9bafc5e197b38475fad6498fc3f
