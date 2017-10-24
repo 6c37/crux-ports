@@ -15,7 +15,7 @@ drwxr-xr-x	root/root	usr/share/netsurf/
 -rw-r--r--	root/root	usr/share/netsurf/default.ico
 -rw-r--r--	root/root	usr/share/netsurf/downloads.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/favicon.png
--rw-r--r--	root/root	usr/share/netsurf/history.gtk2.ui
+-rw-r--r--	root/root	usr/share/netsurf/globalhistory.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/hotlist.gtk2.ui
 drwxr-xr-x	root/root	usr/share/netsurf/icons/
 -rw-r--r--	root/root	usr/share/netsurf/icons/arrow-l.png
@@ -28,6 +28,7 @@ drwxr-xr-x	root/root	usr/share/netsurf/icons/
 -rw-r--r--	root/root	usr/share/netsurf/internal.css
 -rw-r--r--	root/root	usr/share/netsurf/languages
 -rw-r--r--	root/root	usr/share/netsurf/licence.html
+-rw-r--r--	root/root	usr/share/netsurf/localhistory.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/login.gtk2.ui
 -rw-r--r--	root/root	usr/share/netsurf/maps.html
 -rw-r--r--	root/root	usr/share/netsurf/netsurf-16x16.xpm

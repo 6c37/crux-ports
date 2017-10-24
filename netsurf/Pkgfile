@@ -1,14 +1,16 @@
 # Description: Lightweight and fast web browser.
 # URL:         http://www.netsurf-browser.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libidn libmng lcms2 gtk libjpeg-turbo libpng check p5-html-parser
+# Depends on:  libidn libmng gtk p5-html-parser
 # Optional:    gstreamer
 
 name=netsurf
-version=3.6
+version=3.7
 release=1
-source=(http://download.netsurf-browser.org/$name/releases/source-full/$name-all-$version.tar.gz
-	netsurf.sh)
+source=(
+	http://download.$name-browser.org/$name/releases/source-full/$name-all-$version.tar.gz
+	$name.sh
+)
 
 build() {
 	cd $name-all-$version
@@ -19,5 +21,4 @@ build() {
 	install -Dm755 $SRC/netsurf.sh $PKG/usr/bin/netsurf
 
 	rm -rf $PKG/usr/share/netsurf/{de,en,fr,it,ja,nl}
-
 }
