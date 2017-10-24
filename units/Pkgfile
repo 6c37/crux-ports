@@ -4,7 +4,7 @@
 # Depends on:
 
 name=units
-version=2.14
+version=2.15
 release=1
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
