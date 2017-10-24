@@ -455,6 +455,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/actions/48/go-previous-rtl.svg -
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/insert-object.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/list-add.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/list-remove.svg
+-rw-r--r--	root/root	usr/share/icons/elementary/actions/48/mail-archive.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/mail-forward-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/mail-forward.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/actions/48/mail-reply-all-rtl.svg
@@ -1501,6 +1502,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-atom+xml.s
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-rss+xml.svg -> internet-feed.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/application-vnd.ms-access.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/128/application-vnd.ms-powerpoint.presentation.macroEnabled.12.svg -> application-vnd.ms-powerpoint.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/128/application-vnd.ms-powerpoint.svg
@@ -1611,6 +1613,7 @@ drwxr-xr-x	root/root	usr/share/icons/elementary/mimes/16/
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/application-pdf.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/16/application-vnd.oasis.opendocument.chart.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/application-vnd.oasis.opendocument.database.svg -> office-database.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/16/application-vnd.oasis.opendocument.spreadsheet-rtl.svg -> x-office-spreadsheet-rtl.svg
@@ -1731,6 +1734,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-atom+xml.sv
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-rss+xml.svg -> internet-feed.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/application-vnd.ms-access.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/24/application-vnd.ms-excel.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/24/application-vnd.ms-powerpoint.presentation.macroEnabled.12.svg -> application-vnd.ms-powerpoint.svg
@@ -1880,6 +1884,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-atom+xml.sv
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-rss+xml.svg -> internet-feed.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/application-vnd.ms-access.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/32/application-vnd.ms-excel.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/32/application-vnd.ms-powerpoint.presentation.macroEnabled.12.svg -> application-vnd.ms-powerpoint.svg
@@ -2044,6 +2049,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-atom+xml.sv
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-rss+xml.svg -> internet-feed.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/application-vnd.ms-access.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/48/application-vnd.ms-excel.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/48/application-vnd.ms-powerpoint.presentation.macroEnabled.12.svg -> application-vnd.ms-powerpoint.svg
@@ -2216,6 +2222,7 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-atom+xml.sv
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-rss+xml.svg -> internet-feed.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-rtf-rtl.svg -> office-document-rtl.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-rtf.svg -> office-document.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-vnd.cups-pdf-banner.svg -> text-x-preview.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/application-vnd.ms-access.svg
 -rw-r--r--	root/root	usr/share/icons/elementary/mimes/64/application-vnd.ms-excel.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary/mimes/64/application-vnd.ms-powerpoint.presentation.macroEnabled.12.svg -> application-vnd.ms-powerpoint.svg
