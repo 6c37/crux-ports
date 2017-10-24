@@ -79,7 +79,7 @@ drwxr-xr-x	root/root	usr/include/glm/detail/
 -rw-r--r--	root/root	usr/include/glm/detail/type_mat4x4_simd.inl
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec.hpp
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec.inl
--rw-r--r--	root/root	usr/include/glm/detail/type_vec1.hpp
+-rw-r--r--	root/root	usr/include/glm/detail/type_vec1.hpp (EMPTY)
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec1.inl
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec2.hpp
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec2.inl
@@ -90,6 +90,11 @@ drwxr-xr-x	root/root	usr/include/glm/detail/
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec4_simd.inl
 -rw-r--r--	root/root	usr/include/glm/exponential.hpp
 -rw-r--r--	root/root	usr/include/glm/ext.hpp
+drwxr-xr-x	root/root	usr/include/glm/ext/
+-rw-r--r--	root/root	usr/include/glm/ext/vec1.hpp
+-rw-r--r--	root/root	usr/include/glm/ext/vec1.inl (EMPTY)
+-rw-r--r--	root/root	usr/include/glm/ext/vector_relational.hpp
+-rw-r--r--	root/root	usr/include/glm/ext/vector_relational.inl
 -rw-r--r--	root/root	usr/include/glm/fwd.hpp
 -rw-r--r--	root/root	usr/include/glm/geometric.hpp
 -rw-r--r--	root/root	usr/include/glm/glm.hpp
@@ -240,6 +245,8 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/std_based_type.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/string_cast.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/string_cast.inl
+-rw-r--r--	root/root	usr/include/glm/gtx/texture.hpp
+-rw-r--r--	root/root	usr/include/glm/gtx/texture.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/transform.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/transform.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/transform2.hpp
@@ -445,6 +452,7 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00076_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00077.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00077_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00078.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00078_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00079.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00079_source.html
@@ -554,9 +562,11 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00131_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00132.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00132_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00133.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00133_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00134.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00134_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00139.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00140.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00141.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00142.html
@@ -674,11 +684,14 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/folderopen.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/index.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/jquery.js
+-rw-r--r--	root/root	usr/share/doc/glm/api/logo-mini.png
+-rw-r--r--	root/root	usr/share/doc/glm/api/man.doxy
 -rw-r--r--	root/root	usr/share/doc/glm/api/modules.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_f.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_g.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_h.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/open.png
+-rw-r--r--	root/root	usr/share/doc/glm/api/pages.doxy (EMPTY)
 drwxr-xr-x	root/root	usr/share/doc/glm/api/search/
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/all_0.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/all_0.js
@@ -918,7 +931,6 @@ drwxr-xr-x	root/root	usr/share/doc/glm/manual/
 -rw-r--r--	root/root	usr/share/doc/glm/manual/references-outerra2.jpg
 -rw-r--r--	root/root	usr/share/doc/glm/manual/references-outerra3.jpg
 -rw-r--r--	root/root	usr/share/doc/glm/manual/references-outerra4.jpg
--rw-r--r--	root/root	usr/share/doc/glm/pages.doxy
 drwxr-xr-x	root/root	usr/share/doc/glm/theme/
 -rw-r--r--	root/root	usr/share/doc/glm/theme/doxygen.css
 -rw-r--r--	root/root	usr/share/doc/glm/theme/tabs.css
