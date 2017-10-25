@@ -9,7 +9,7 @@ release=1
 source=(
 	http://www.han.de/~werner/$name-$version.tar.gz
 	Fix-Makefile.patch
-	)
+)
 
 build() {
 	cd $name-$version

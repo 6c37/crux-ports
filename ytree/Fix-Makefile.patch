@@ -1,6 +1,5 @@
-diff -pruN ytree-1.99pl1-o/Makefile ytree-1.99pl1/Makefile
---- ytree-1.99pl1-o/Makefile	2017-05-22 19:27:10.224278985 +0800
-+++ ytree-1.99pl1/Makefile	2017-05-22 19:49:53.901196397 +0800
+--- a/Makefile	2017-05-22 19:27:10.224278985 +0800
++++ b/Makefile	2017-05-22 19:49:53.901196397 +0800
 @@ -13,13 +13,12 @@ CC          ?= cc
  # ADD_CFLAGS: Add -DVI_KEYS if you want vi-cursor-keys
  #
