@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=neomutt
-version=20171013
+version=20171027
 release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
