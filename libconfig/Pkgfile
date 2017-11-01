@@ -4,16 +4,17 @@
 # Depends on:  
 
 name=libconfig
-version=1.6
+version=1.7
 release=1
-source=(https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz)
+source=(https://github.com/hyperrealm/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	rm -rf lib/scanner.c
+	autoreconf -f -i -v
 
 	./configure --prefix=/usr
+
 	sed -i "s/doc//g" Makefile
 
 	make
