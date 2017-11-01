@@ -4,13 +4,11 @@
 # Depends on:
 
 name=mxml
-version=2.10
+version=2.11
 release=1
-source=(https://github.com/michaelrsweet/$name/archive/release-$version.tar.gz)
+source=(https://github.com/michaelrsweet/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
-	cd $name-release-$version
-
 	./configure --prefix=/usr
 
 	make
