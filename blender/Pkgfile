@@ -1,18 +1,18 @@
 # Description: A fully integrated 3D graphics creation suite.
 # URL:         http://blender.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
+# Depends on:  boost desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
 
 name=blender
 version=2.79
 release=2
-source=(https://download.blender.org/source/blender-$version.tar.gz)
+source=(https://download.$name.org/source/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
 	mkdir build && cd build
-	cmake -C ../build_files/cmake/config/blender_release.cmake ../ \
+	cmake -C ../build_files/cmake/config/${name}_release.cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DWITH_INSTALL_PORTABLE=OFF \
@@ -33,9 +33,9 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	python3 -m compileall $PKG/usr/share/blender
-	python3 -O -m compileall $PKG/usr/share/blender
+	python3 -m compileall $PKG/usr/share/$name
+	python3 -O -m compileall $PKG/usr/share/$name
 
-	rm -rf $PKG/usr/share/{doc,blender/$version/scripts/addons/cycles/license}
+	rm -rf $PKG/usr/share/{doc,$name/$version/scripts/addons/cycles/license}
 	find $PKG -iname 'readme*' -delete
 }
