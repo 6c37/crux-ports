@@ -7,7 +7,7 @@
 name=fgsl
 version=1.2.0
 release=1
-source=(http://www.lrz.de/services/software/mathematik/gsl/fortran/download/$name-$version.tar.gz)
+source=(http://www.lrz.de/services/software/mathematik/${name:1:3}/fortran/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
