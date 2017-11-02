@@ -27,5 +27,5 @@ build() {
 	find $PKG -name '*README*' -delete
 	find $PNG -name '*NEWS*' -delete
 	find $PKG -name COPYING -delete
-	find $PKG/usr/share/emacs/$version/etc -name '[A-Z]*' ! -name '*.map' ! -name '*.el' ! -name '*.xml' ! -name Makefile ! -name 'TUTORIAL*' -delete
+	find $PKG/usr/share/$name/$version/etc -name '[A-Z]*' ! -name '*.map' ! -name '*.el' ! -name '*.xml' ! -name Makefile ! -name 'TUTORIAL*' -delete
 }
