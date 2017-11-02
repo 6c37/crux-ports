@@ -1,18 +1,20 @@
 # Description: Library for reading several different image formats.
 # URL:         http://openil.sourceforge.net/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libpng libmng jasper lcms openexr
+# Depends on:  libpng libmng jasper openexr
 
 name=devil
 version=1.8.0
 release=1
-source=(http://downloads.sourceforge.net/openil/DevIL-${version}.tar.gz)
+source=(http://downloads.sourceforge.net/openil/DevIL-$version.tar.gz)
 
 build() {
 	cd DevIL/DevIL
 
 	mkdir build ; cd build
-	cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+	cmake .. \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr
 
 	make
 	make DESTDIR=$PKG install
