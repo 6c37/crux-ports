@@ -6,7 +6,7 @@
 name=abduco
 version=0.6
 release=1
-source=(http://brain-dump.org/projects/abduco/abduco-$version.tar.gz)
+source=(http://brain-dump.org/projects/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
