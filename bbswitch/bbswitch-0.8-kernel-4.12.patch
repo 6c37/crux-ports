@@ -1,6 +1,5 @@
-diff -uNr bbswitch-0.8/bbswitch.c bbswitch-0.8-new/bbswitch.c
---- bbswitch-0.8/bbswitch.c	2013-12-04 18:22:06.000000000 -0500
-+++ bbswitch-0.8-new/bbswitch.c	2017-07-08 01:11:54.588545766 -0400
+--- a/bbswitch.c	2013-12-04 18:22:06.000000000 -0500
++++ b/bbswitch.c	2017-07-08 01:11:54.588545766 -0400
 @@ -31,7 +31,14 @@
  #include <linux/pci.h>
  #include <linux/acpi.h>
