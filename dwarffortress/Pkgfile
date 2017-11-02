@@ -9,7 +9,7 @@ release=2
 source=(
 	http://www.bay12games.com/dwarves/df_43_05_linux.tar.bz2
 	https://github.com/svenstaro/dwarf_fortress_unfuck/archive/$version.tar.gz
-	dwarffortress
+	$name
 )
 
 build() {
@@ -19,17 +19,17 @@ build() {
 	make
 
 	install -dm755 $PKG/usr/share
-	cp -r $SRC/df_linux $PKG/usr/share/dwarffortress
+	cp -r $SRC/df_linux $PKG/usr/share/$name
 
-	rm -r $PKG/usr/share/dwarffortress/{df,g_src}
-	rm -r $PKG/usr/share/dwarffortress/libs/*
+	rm -r $PKG/usr/share/$name/{df,g_src}
+	rm -r $PKG/usr/share/$name/libs/*
 
-	find $PKG/usr/share/dwarffortress -type d -exec chmod 755 {} +
-	find $PKG/usr/share/dwarffortress -type f -exec chmod 644 {} +
+	find $PKG/usr/share/$name -type d -exec chmod 755 {} +
+	find $PKG/usr/share/$name -type f -exec chmod 644 {} +
 
-	install -Dm755 $SRC/df_linux/libs/Dwarf_Fortress $PKG/usr/share/dwarffortress/libs/Dwarf_Fortress
-	install -Dm755 $SRC/dwarf_fortress_unfuck-$version/libgraphics.so $PKG/usr/share/dwarffortress/libs/libgraphics.so
-	install -Dm755 $SRC/dwarffortress $PKG/usr/bin/dwarffortress
+	install -Dm755 $SRC/df_linux/libs/Dwarf_Fortress $PKG/usr/share/$name/libs/Dwarf_Fortress
+	install -Dm755 $SRC/dwarf_fortress_unfuck-$version/libgraphics.so $PKG/usr/share/$name/libs/libgraphics.so
+	install -Dm755 $SRC/$name $PKG/usr/bin/$name
 
-	ln -s /usr/lib/libpng.so $PKG/usr/share/dwarffortress/libs/libpng.so.3
+	ln -s /usr/lib/libpng.so $PKG/usr/share/$name/libs/libpng.so.3
 }
