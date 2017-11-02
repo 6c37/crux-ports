@@ -966,5 +966,6 @@ drwxr-xr-x	root/root	usr/lib/bx/script/
 -rw-r--r--	root/root	usr/lib/bx/script/query.bx
 -rwxr-xr-x	root/root	usr/lib/bx/wserv
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/man1/
--rw-r--r--	root/root	usr/share/man1/BitchX.1.bz2
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/BitchX.1.bz2.gz

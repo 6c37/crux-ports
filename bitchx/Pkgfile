@@ -2,17 +2,22 @@
 # URL:         http://www.bitchx.com/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
-# Optional:    cp437
 
 name=bitchx
 version=1.2.1
-release=3
-source=(http://www.bitchx.com/download/$name-$version.tar.gz)
+release=4
+source=(http://www.$name.com/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --exec_prefix=/usr --prefix=/usr --enable-ipv6 --with-plugins --with-ssl --mandir=/usr/share/
+	./configure \
+		--prefix=/usr \
+		--exec-prefix=/usr \
+		--enable-ipv6 \
+		--with-plugins \
+		--with-ssl \
+		--mandir=/usr/share/man
 
 	make 
 	make DESTDIR=$PKG install
