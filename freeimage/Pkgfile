@@ -7,7 +7,7 @@ name=freeimage
 version=3.17.0
 release=1
 source=(
-	http://downloads.sourceforge.net/project/freeimage/Source%20Distribution/$version/FreeImage${version//./}.zip
+	http://downloads.sourceforge.net/project/$name/Source%20Distribution/$version/FreeImage${version//./}.zip
 	gcc5.diff
 )
 
