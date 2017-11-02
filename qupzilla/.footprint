@@ -19,6 +19,8 @@ drwxr-xr-x	root/root	usr/lib/qupzilla/
 -rwxr-xr-x	root/root	usr/lib/qupzilla/libTabManager.so
 -rwxr-xr-x	root/root	usr/lib/qupzilla/libVideoner.so
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/appdata/
+-rw-rw-r--	root/root	usr/share/appdata/org.qupzilla.QupZilla.appdata.xml
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-rw-r--	root/root	usr/share/applications/org.qupzilla.QupZilla.desktop
 drwxr-xr-x	root/root	usr/share/bash-completion/
