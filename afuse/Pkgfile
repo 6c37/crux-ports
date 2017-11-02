@@ -6,7 +6,7 @@
 name=afuse
 version=0.4.1
 release=1
-source=(https://github.com/pcarrier/afuse/archive/v$version.tar.gz)
+source=(https://github.com/pcarrier/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
