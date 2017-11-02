@@ -1,7 +1,7 @@
 # Description: A compositor for X.
 # URL:         https://github.com/chjj/compton
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libconfig libpcre mesa3d xorg-libxcomposite xorg-libxinerama xorg-libxrandr xorg-libxdamage dbus asciidoc
+# Depends on:  libconfig mesa3d xorg-libxcomposite xorg-libxinerama xorg-libxrandr dbus asciidoc
 
 name=compton
 _commit=316eac0613bf342ff91cc645a6c3c80e6b9083fb
@@ -16,4 +16,3 @@ build() {
 	make docs
 	make DESTDIR=$PKG install
 }
-
