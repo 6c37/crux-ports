@@ -2,12 +2,12 @@
 # URL:         https://fishshell.com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  doxygen libpcre2
-# Optional:    python xsel
+# Optional:    xsel
 
 name=fish
 version=2.6.0
 release=1
-source=(https://github.com/fish-shell/fish-shell/archive/$version.tar.gz)
+source=(https://github.com/$name-shell/$name-shell/archive/$version.tar.gz)
 
 build() {
 	cd $name-shell-$version
@@ -22,7 +22,7 @@ build() {
 	make DESTDIR=$PKG install
 
 	install -d $PKG/bin
-	ln -s /usr/bin/fish $PKG/bin
+	ln -s /usr/bin/$name $PKG/bin
 
 	rm -rf $PKG/usr/share/{locale,doc}
 }
