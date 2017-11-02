@@ -15,6 +15,6 @@ build() {
 
 	make
 
-	install -Dm755 dtach   $PKG/usr/bin/dtach
-	install -Dm644 dtach.1 $PKG/usr/share/man/man1/dtach.1
+	install -Dm755 $name   $PKG/usr/bin/$name
+	install -Dm644 ${name}.1 $PKG/usr/share/man/man1/${name}.1
 }
