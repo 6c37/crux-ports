@@ -1,4 +1,10 @@
 drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/bumblebee/
+-rw-r--r--	root/root	etc/bumblebee/bumblebee.conf
+drwxr-xr-x	root/root	etc/bumblebee/xorg.conf.d/
+-rw-r--r--	root/root	etc/bumblebee/xorg.conf.d/10-dummy.conf (EMPTY)
+-rw-r--r--	root/root	etc/bumblebee/xorg.conf.nouveau
+-rw-r--r--	root/root	etc/bumblebee/xorg.conf.nvidia
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/bumblebeed
 drwxr-xr-x	root/root	lib/
@@ -9,18 +15,12 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bumblebee-bugreport
 -rwxr-xr-x	root/root	usr/bin/optirun
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/bash_completion.d/
--rw-r--r--	root/root	usr/etc/bash_completion.d/bumblebee
-drwxr-xr-x	root/root	usr/etc/bumblebee/
--rw-r--r--	root/root	usr/etc/bumblebee/bumblebee.conf
-drwxr-xr-x	root/root	usr/etc/bumblebee/xorg.conf.d/
--rw-r--r--	root/root	usr/etc/bumblebee/xorg.conf.d/10-dummy.conf (EMPTY)
--rw-r--r--	root/root	usr/etc/bumblebee/xorg.conf.nouveau
--rw-r--r--	root/root	usr/etc/bumblebee/xorg.conf.nvidia
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modprobe.d/
 -rw-r--r--	root/root	usr/lib/modprobe.d/bumblebee.conf
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/bumblebeed
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/bumblebee

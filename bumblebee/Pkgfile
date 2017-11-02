@@ -6,9 +6,9 @@
 
 name=bumblebee
 version=3.2.1
-release=3
+release=4
 source=(
-	http://www.bumblebee-project.org/bumblebee-$version.tar.gz
+	http://www.$name-project.org/$name-$version.tar.gz
 	0001-bb_nvidia_modeset-detection_bug699_01.patch
 	0002-bb_nvidia_modeset-detection_bug699_02.patch
 	0003-bb_nvidia_umv_detection_bug699.patch
@@ -16,8 +16,8 @@ source=(
 	0005-bb_nvidia_drm_detection_bug699_02.patch
 	0006-bb_hexadicimal_bug573.patch
 	0007-bb_mutebblogger.patch
-	bumblebee.conf
-	bumblebeed
+	$name.conf
+	${name}d
 )
 
 build() {
@@ -32,16 +32,17 @@ build() {
 		CONF_LDPATH_NVIDIA=/usr/lib/nvidia:/usr/lib32/nvidia \
 		CONF_MODPATH_NVIDIA=/usr/lib/xorg/nvidia/modules/drivers/,/usr/lib/xorg/nvidia/modules,/usr/lib/xorg/modules,/usr/lib/xorg/modules/drivers \
 		--prefix=/usr \
+		--sysconfdir=/etc \
 		--without-pidfile
 
 	make
-	make DESTDIR=$PKG install
+	make completiondir=/usr/share/bash-completion/completions DESTDIR=$PKG install
 
-	install -Dm755 $SRC/bumblebeed $PKG/etc/rc.d/bumblebeed
+	install -Dm755 $SRC/${name}d $PKG/etc/rc.d/${name}d
 
 	# Blacklist nvidia and nouveau modules
 	# Reference: https://github.com/Bumblebee-Project/Bumblebee/issues/719
-	install -Dm644 $SRC/bumblebee.conf $PKG/usr/lib/modprobe.d/bumblebee.conf
+	install -Dm644 $SRC/$name.conf $PKG/usr/lib/modprobe.d/$name.conf
 
 	rm -r $PKG/usr/share/doc
 }
