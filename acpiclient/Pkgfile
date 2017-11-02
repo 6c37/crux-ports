@@ -6,10 +6,10 @@
 name=acpiclient
 version=1.7
 release=1
-source=(http://downloads.sourceforge.net/acpiclient/acpi-$version.tar.gz)
+source=(http://downloads.sourceforge.net/$name/${name:0:4}-$version.tar.gz)
 
 build() {
-	cd acpi-$version
+	cd ${name:0:4}-$version
 
 	./configure --prefix=/usr
 
