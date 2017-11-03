@@ -1,13 +1,13 @@
 # Description: Atari ST/STE/TT/Falcon emulator.
-# URL:         http://hatari.tuxfamily.org
+# URL:         https://hatari.tuxfamily.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cmake libsdl zlib libpng readline xorg-libx11
+# Depends on:  cmake libsdl libpng xorg-libx11
 # Optional:    portaudio
 
 name=hatari
 version=2.0.0
 release=1
-source=(http://download.tuxfamily.org/$name/$version/$name-$version.tar.bz2)
+source=(https://download.tuxfamily.org/$name/$version/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
@@ -17,5 +17,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/hatari/hatariui/{README,TODO}
+	rm -rf $PKG/usr/share/$name/${name}ui/{README,TODO}
 }
