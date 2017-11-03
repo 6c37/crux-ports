@@ -1,4 +1,4 @@
-# Description: getopts(1) for fish.
+# Description: Getopts(1) for fish.
 # URL:         https://github.com/fisherman/getopts
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fish
@@ -6,10 +6,10 @@
 name=getopts
 version=1.1.0
 release=1
-source=(https://github.com/fisherman/getopts/archive/$version.tar.gz)
+source=(https://github.com/fisherman/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	install -Dm644 getopts.fish $PKG/usr/share/fish/functions/getopts.fish
+	install -Dm644 ${name}.fish $PKG/usr/share/fish/functions/${name}.fish
 }
