@@ -6,10 +6,10 @@
 name=iwlwifi-6050-ucode
 version=41.28.5.1
 release=1
-source=(https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-6050-ucode-$version.tgz)
+source=(https://wireless.wiki.kernel.org/_media/en/users/drivers/$name-$version.tgz)
 
 build() {
 	cd $name-$version
 
-	install -D -m 0644 iwlwifi-6050-5.ucode $PKG/lib/firmware/iwlwifi-6050-5.ucode
+	install -D -m 0644 ${name:0:12}-5.ucode $PKG/lib/firmware/${name:0:12}-5.ucode
 }
