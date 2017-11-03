@@ -32,6 +32,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/doc/kicad/INSTALL.txt
-	rm -rf $PKG/usr/share/doc/kicad/scripts/bom-in-python/README-bom.txt
+	rm -rf $PKG/usr/share/doc/$name/INSTALL.txt
+	rm -rf $PKG/usr/share/doc/$name/scripts/bom-in-python/README-bom.txt
 }

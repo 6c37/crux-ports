@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpRm+96+608PCf5wdQaZfDolHtkth0sJs16UPoJFOMs6WXBFuex25htDdQ/VvAgQd4FbeNeznwnyPXQveBm9+BQQ=
-SHA256 (Pkgfile) = c70cd1131d8bce37f4e45ed0651e27190ff40aa939a2002df1b3a69b9f10444c
+RWSsZdBvSzGVpZxuwp8EI1pR/EcXJOh5fBMhknvgy4+NzVJV+HvqkAwx6t3avWvsMYasa12ij9G5wPUKO9Hvly5KxNTjmE8a9QE=
+SHA256 (Pkgfile) = f9e617049efdb0b032d46dc3c81374b74ad01eb0410193207184b7b5ddc984b8
 SHA256 (.footprint) = 0125daf872515f11caf0e0b5c1207568c00b49b3ed570d8aa9458acbafd670d1
 SHA256 (kicad-4.0.7.tar.xz) = 09074c77c6097d0f2ae49711c6d6f6c4490f0c068bba69b17f5f07319255fdc1
 SHA256 (boost.patch) = 28cde68de669da0371705c437485472df6f12f18af3aed2c4b5151f84b8f243b
