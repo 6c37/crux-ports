@@ -1,12 +1,12 @@
 # Description: The swiss army knife of image processing.
 # URL:         http://www.graphicsmagick.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libpng libxml2 freetype libtiff dcraw libwebp libjpeg-turbo
+# Depends on:  libxml2 freetype libwebp
 
 name=graphicsmagick
 version=1.3.26
 release=1
-source=(ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/${version%.*}/GraphicsMagick-$version.tar.xz)
+source=(https://sourceforge.net/projects/$name/files/$name/$version/GraphicsMagick-$version.tar.xz)
 
 build() {
 	cd GraphicsMagick-$version
