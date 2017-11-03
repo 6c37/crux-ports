@@ -20,9 +20,9 @@ build() {
 	make DESTDIR=$PKG install
 
 	mkdir -p $PKG/usr/share/doc
-	cp -r doc $PKG/usr/share/doc/glm
+	cp -r doc $PKG/usr/share/doc/$name
 
-	rm -rf $PKG/usr/lib64/cmake/glm/glmConfig.cmake
+	rm -rf $PKG/usr/lib64/cmake/$name/${name}Config.cmake
 
 	find $PKG -type f -exec chmod 644 {} \;
 	find $PKG -type d -exec chmod 755 {} \;
