@@ -5,14 +5,16 @@
 
 name=gexiv2
 version=0.10.6
-release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/gexiv2/${version%.*}/gexiv2-$version.tar.xz)
+release=2
+source=(https://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
 	./configure --prefix=/usr
-  
+
 	make
 	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/gtk-doc
 }
