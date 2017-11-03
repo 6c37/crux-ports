@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpalYj1vKoMSpb3jVFtrQuIL0ZZMoU4JDfDdNxC9TKRCjkPsVX1d/eRXQpFZvlJ45z03z7ZMZ/mi19CbmDT5tng8=
-SHA256 (Pkgfile) = 8fa9b53a03067d83d37da7600bc91ad65fe6a477d60a5e4c44eb39a8be693baa
+RWSsZdBvSzGVpeqjqc22GPaTgyFpb4xJWhZDamuDYvPUZfg9HKdBd3SvrjwDyOWA3LczgVJMh8BJaOknRS6zx2W0AlW7pVGOEQQ=
+SHA256 (Pkgfile) = 5e121fa8cbfbf78c93b9abe07bbd154628ac5debee301b332ccc3983168e315e
 SHA256 (.footprint) = 7e347f113a27f0a758d3eda40b5911f6792a96eb012b0541f2af3f6be9f40d35
 SHA256 (guile-2.2.2.tar.gz) = 3d9b94183b19f04dd4317da87beedafd1c947142f3d861ca1f0224e7a75127ee
