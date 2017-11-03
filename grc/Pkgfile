@@ -11,7 +11,7 @@ source=(https://github.com/garabik/$name/archive/v$version.tar.gz)
 build() {
 	cd $name-$version
 
-	sed -i 's/python3/python/g' grc grcat
+	sed -i 's/python3/python/g' $name ${name}at
 
 	./install.sh $PKG/usr $PKG
 }
