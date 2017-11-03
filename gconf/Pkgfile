@@ -1,20 +1,23 @@
 # Description: GConf configuration system.
 # URL:         http://www.gnome.org/projects/gconf/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  dbus-glib intltool libxml2 polkit
+# Depends on:  dbus-glib libxml2 polkit
 
 name=gconf
 version=3.2.6
-release=2
-source=(http://ftp.gnome.org/pub/gnome/sources/GConf/${version%.*}/GConf-$version.tar.xz)
+release=3
+source=(https://ftp.gnome.org/pub/gnome/sources/GConf/${version%.*}/GConf-$version.tar.xz)
 
 build() {
 	cd GConf-$version
 
-	./configure --prefix=/usr --sysconfdir=/etc --disable-orbit
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-orbit
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/locale
+	rm -r $PKG/usr/share/{locale,gtk-doc}
 }
