@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQTj0ItYrOm2wYkgtuHU/dmoSkfHJ8USoo96j9M7eMTqiAEapyiLOzEX+tY7E9N0msy5iV6fZaqENhnm85DGAg0=
+RWSsZdBvSzGVpfobA0B6Z3HMj/g7VMWAtIZbEVBnBj22/88MtmUH0XOt7Achyh62pAsvbi3qz9ztHzPt0ZbxO40m8QJx/Kd1Lgc=
 SHA256 (Pkgfile) = a7cfc2ee97d91e22ad9c061e09cd299d0b1fdaea5f513bd105f44053aca6ba39
 SHA256 (.footprint) = 1e65014ba6d60ef6c9b774e800a9a380d015c7aaeb8fea808434f3a86d3a9b1c
 SHA256 (gbdfed-1.6.tbz2) = 5db25d4ce688dcb188dee056e58614a94a5e4fce4b6066fbb310951ab999093c
-SHA256 (num_signals.patch) = 78eaaf00637cbc595e208cc44886fcacc8c7c51ce0a3fc265e797bc704555e66
+SHA256 (num_signals.patch) = db1bc69090e08cc10932696c822005b92171310b10a954367e2b20526c0a0b3a
