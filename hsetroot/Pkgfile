@@ -6,14 +6,14 @@
 name=hsetroot
 version=1.0.2
 release=1
-source=(ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/$name-$version.tar.gz)
+source=(https://ftp.netbsd.org/pub/pkgsrc/distfiles/$name-$version.tar.gz)
 
 build() {
-	cd "$name-$version"
+	cd $name-$version
 
 	./configure --prefix=/usr
 
 	make LDFLAGS="-lX11"
 
-	install -Dm755 src/hsetroot $PKG/usr/bin/hsetroot
+	install -Dm755 src/$name $PKG/usr/bin/$name
 }
