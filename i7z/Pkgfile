@@ -13,8 +13,8 @@ source=(
 	fix-insecure-tempfile.patch
 	fix_cpuid_asm.patch
 	hyphen-used-as-minus-sign.patch
-	i7z-0.27.2-ncurses.patch
-	install-i7z_rw_registers.patch
+	$name-0.27.2-ncurses.patch
+	install-${name}_rw_registers.patch
 	qt5.patch
 	use_stdbool.patch
 )
