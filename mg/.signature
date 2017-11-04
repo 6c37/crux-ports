@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQfC+8XmuOnAdHogtCiwyqnsMlVSUE9Wi+EeSNUJeY/GycX0kUfflmAhIG+OPogWZjJaYjtf99j560NR5WGltgs=
+RWSsZdBvSzGVpekpZ64px8zIWi7ThFaY4Hec9f/QkJJmmtVXYJtNShXluQeL1hS9FGyi95btuGAYyDrkvXpDEVPXQ2TL3KbjtwM=
 SHA256 (Pkgfile) = 0c6b8447d03dda648cb1708134369b899eed5faf5a2ea55c03dfdbb84a0a21c6
 SHA256 (.footprint) = d38995f810be0b44f4783b77031d18b3008a7e313c75c7945ca00343eb66cd86
 SHA256 (mg-20171014.tar.gz) = 51519698f3f44acd984d7805e4e315ded50c15aba8222521f88756fd67745341
-SHA256 (libs.patch) = 02eebf3b72ca4994cb3dd9398aa3bc4c39032316ebc1ff48c394f48330f7d68c
+SHA256 (libs.patch) = c80d7a571be1e4f4adb3233b375f2e1a19bbff544ed1968ef27e1c4d8d42e9a4
