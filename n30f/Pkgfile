@@ -1,12 +1,12 @@
 # Description: A dirty hack for displaying shaped windows in X11.
 # URL:         https://github.com/sdhand/n30f
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  cairo xorg-libxcb
+# Depends on:  cairo
 
 name=n30f
 version=2.0
 release=1
-source=(https://github.com/sdhand/n30f/archive/$version.tar.gz)
+source=(https://github.com/sdhand/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
