@@ -1,12 +1,12 @@
 # Description: nVIDIA Linux Display Driver.
-# URL:         http://www.nvidia.com/
+# URL:         https://www.nvidia.com/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia-340
+# Depends on:  xorg-libxvmc-32 nvidia-340
 
 name=nvidia-340-32
-version=340.102
+version=340.104
 release=1
-source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
+source=(https://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
 build() {
 	sh NVIDIA-Linux-x86-$version.run --extract-only
