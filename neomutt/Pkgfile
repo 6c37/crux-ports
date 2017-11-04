@@ -13,6 +13,7 @@ build () {
 
 	./prepare \
 		--prefix=/usr \
+		--sysconfdir=/etc \
 		--with-docdir=/usr/share/doc/$name \
 		--with-mailpath=/var/spool/mail \
 		--enable-pop \
