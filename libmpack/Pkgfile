@@ -9,7 +9,7 @@ release=1
 source=(https://github.com/tarruda/$name/archive/$version.tar.gz)
 
 build() {
-	cd libmpack-$version
+	cd $name-$version
 
 	make PREFIX=/usr
 
@@ -28,5 +28,4 @@ build() {
 	gcc -O2 -fPIC -I/usr/include -c binding/lua/lmpack.c -o lmpack.o
 	gcc -shared -o mpack.so.5.3 lmpack.o
 	install -Dm755 mpack.so.5.3 "$PKG/usr/lib/lua/5.3/mpack.so"
-
 }
