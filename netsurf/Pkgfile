@@ -6,7 +6,7 @@
 
 name=netsurf
 version=3.7
-release=1
+release=2
 source=(
 	http://download.$name-browser.org/$name/releases/source-full/$name-all-$version.tar.gz
 	$name.sh
@@ -18,7 +18,5 @@ build() {
 	make LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2
 	make install LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2 DESTDIR=$PKG
 
-	install -Dm755 $SRC/netsurf.sh $PKG/usr/bin/netsurf
-
-	rm -rf $PKG/usr/share/netsurf/{de,en,fr,it,ja,nl}
+	install -Dm755 $SRC/$name.sh $PKG/usr/bin/$name
 }
