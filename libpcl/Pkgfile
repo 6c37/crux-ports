@@ -6,13 +6,13 @@
 name=libpcl
 version=1.12
 release=1
-source=(http://www.xmailserver.org/pcl-${version}.tar.gz)
+source=(http://www.xmailserver.org/${name:3:3}-$version.tar.gz)
 
 build() {
-	cd pcl-${version}
+	cd ${name:3:3}-$version
 
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 }
