@@ -1,21 +1,23 @@
 # Description: NVIDIA Linux Display Driver, 340xx legacy branch.
-# URL:         http://www.nvidia.com/
+# URL:         https://www.nvidia.com/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk gl-select
 
 name=nvidia-340
-version=340.102
+version=340.104
 release=1
 source=(
-	http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
+	https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
 	90-nvidia-uvm.rules
 	cr4.patch
+	kernel-4.11.patch
 )
 
 build() {
 	sh NVIDIA-Linux-x86_64-$version-no-compat32.run --extract-only
 	cd NVIDIA-Linux-x86_64-$version-no-compat32
-	patch -p0 < ${SRC}/cr4.patch
+	patch -p0 < $SRC/cr4.patch
+	patch -Np0 < $SRC/kernel-4.11.patch
 
 	# libraries
 	install -d $PKG/usr/lib/{tls,vdpau}
