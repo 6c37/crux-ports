@@ -6,23 +6,19 @@
 name=lua-lpeg
 version=1.0.1
 release=2
-source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$version.tar.gz)
+source=(http://www.inf.puc-rio.br/~roberto/${name:4:7}/${name:4:7}-$version.tar.gz)
 
 build() {
-	cd lpeg-$version
+	cd ${name:4:7}-$version
 
-	make LUADIR=/usr/include/luajit lua=luajit
+	make LUADIR=/usr/include/${name:0:3}jit ${name:0:3}=${name:0:3}jit
 
-	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.1/lpeg.so
-	install -Dm644 re.lua  $PKG/usr/share/lua/5.1/re.lua
+	install -Dm755 ${name:4:7}.so $PKG/usr/lib/${name:0:3}/5.1/${name:4:7}.so
+	install -Dm644 re.${name:0:3} $PKG/usr/share/${name:0:3}/5.1/re.${name:0:3}
 
+	install -Dm755 ${name:4:7}.so $PKG/usr/lib/${name:0:3}/5.2/${name:4:7}.so
+	install -Dm644 re.${name:0:3} $PKG/usr/share/${name:0:3}/5.2/re.${name:0:3}
 
-	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.2/lpeg.so
-	install -Dm644 re.lua  $PKG/usr/share/lua/5.2/re.lua
-
-
-
-	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.3/lpeg.so
-	install -Dm644 re.lua  $PKG/usr/share/lua/5.3/re.lua
-
+	install -Dm755 ${name:4:7}.so $PKG/usr/lib/${name:0:3}/5.3/${name:4:7}.so
+	install -Dm644 re.${name:0:3} $PKG/usr/share/${name:0:3}/5.3/re.${name:0:3}
 }
