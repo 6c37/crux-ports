@@ -1,6 +1,5 @@
-diff -Nru mingetty-1.07.orig/mingetty.c mingetty-1.07/mingetty.c
---- mingetty-1.07.orig/mingetty.c	2004-01-03 15:15:56.000000000 +0200
-+++ mingetty-1.07/mingetty.c	2006-11-22 22:13:26.967910100 +0200
+--- a/mingetty.c	2004-01-03 15:15:56.000000000 +0200
++++ b/mingetty.c	2006-11-22 22:13:26.967910100 +0200
 @@ -16,10 +16,15 @@
   * - autologin only at first login
   * - /etc/mingetty.conf that can be used instead of /etc/inittab for
