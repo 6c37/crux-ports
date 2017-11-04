@@ -6,7 +6,7 @@
 name=most
 version=5.0.0a
 release=2
-source=(http://www.jedsoft.org/releases/most/most-${version}.tar.gz)
+source=(http://www.jedsoft.org/releases/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -14,7 +14,7 @@ build() {
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 
-	rm -rf ${PKG}/usr/share/doc/most/{README,*.txt}
+	rm -r $PKG/usr/share/doc/most/{README,*.txt}
 }
