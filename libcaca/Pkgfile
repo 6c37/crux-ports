@@ -6,7 +6,7 @@
 name=libcaca
 version=0.99.beta19
 release=2
-source=(http://caca.zoy.org/files/$name/$name-$version.tar.gz)
+source=(http://${name#lib}.zoy.org/files/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version

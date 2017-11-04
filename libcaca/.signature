@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpSflasUug2qHsmzHxxyBFNDHab2g0mAh2Cx3ojvYFdnLmogodgIaz7X/pOUhpPMuIAt+i+FycB+2Q6ZcVLKnHAc=
-SHA256 (Pkgfile) = 74f3a0a5fa5bf7ae7a7e60ade8587114a288211f3307aa8fdb21cd1df6fd9693
+RWSsZdBvSzGVpX+QwioU7Pkx/HsxlpbdK4RJlOFRvT4jZlyXeK6j71H6Lk0I4Ol5Pd+TkGLLubL2kHqzu3qOWyNA44+U2Hz3AAw=
+SHA256 (Pkgfile) = c0a27ffea62550aad713a7738e308016a6301ae77d3305dfd1119610d6a45371
 SHA256 (.footprint) = 809836d9c4a3c12e513effb22e09b2c5a2aa16f7513c48fbdd652224ada4b38c
 SHA256 (libcaca-0.99.beta19.tar.gz) = 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
