@@ -6,7 +6,7 @@
 name=love
 version=0.10.2
 release=2
-source=(https://bitbucket.org/rude/love/downloads/love-$version-linux-src.tar.gz)
+source=(https://bitbucket.org/rude/$name/downloads/$name-$version-linux-src.tar.gz)
 
 build() {
 	cd $name-$version
