@@ -1,17 +1,19 @@
 # Description: A shared library (written in C) provides hardware access drivers for logic analyzers and other devices.
 # URL:         https://sigrok.org/wiki/Libsigrok
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  glibmm libzip doxygen
+# Depends on:  glibmm libzip
 
 name=libsigrok
 version=0.5.0
 release=1
-source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
+source=(https://${name:3:6}.org/download/source/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --disable-ruby
+	./configure \
+		--prefix=/usr \
+		--disable-ruby
 
 	make
 	make DESTDIR=$PKG install

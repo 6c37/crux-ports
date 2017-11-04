@@ -1,10 +1,6 @@
 Optional dependencies that will expand Sigrok's device support:
 
 libserialport
-librevisa
-libftdi
-libgpib
-libieee1284
 
 Refer to the output of the ./configure call to see which dependencies are
 required for your device.
