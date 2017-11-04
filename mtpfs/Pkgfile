@@ -1,12 +1,12 @@
 # Description: A FUSE filesystem that supports reading and writing from any MTP device.
-# URL:         http://www.adebenham.com/mtpfs/
+# URL:         https://www.adebenham.com/mtpfs/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libid3tag fuse glib libmtp
 
 name=mtpfs
 version=1.1
 release=1
-source=(http://www.adebenham.com/files/mtp/mtpfs-$version.tar.gz)
+source=(https://www.adebenham.com/files/mtp/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
