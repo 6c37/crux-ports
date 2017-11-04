@@ -1,12 +1,12 @@
 # Description: Just-in-time compiler.
-# URL:         http://luajit.org/
+# URL:         https://luajit.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=luajit
 version=2.0.5
 release=1
-source=(http://luajit.org/download/LuaJIT-$version.tar.gz)
+source=(https://${name}.org/download/LuaJIT-$version.tar.gz)
 
 build() {
 	cd LuaJIT-$version
@@ -14,5 +14,5 @@ build() {
 	make PREFIX=/usr CFLAGS=" -fPIC" amalg
 	make PREFIX=/usr DESTDIR=$PKG install
 
-	ln -s /usr/include/luajit-2.0 $PKG/usr/include/luajit
+	ln -s /usr/include/${name}-2.0 $PKG/usr/include/$name
 }
