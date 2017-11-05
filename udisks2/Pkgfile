@@ -1,5 +1,5 @@
 # Description:	D-Bus interfaces and tools for querying and manipulating storage devices.
-# URL:		http://www.freedesktop.org/wiki/Software/udisks/
+# URL:		https://www.freedesktop.org/wiki/Software/udisks/
 # Maintainer:	6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:	libgudev polkit libatasmart
 
@@ -13,7 +13,12 @@ build() {
 
 	sed -i -e '/^SUBDIRS =/ s/ doc//' Makefile.in
 
-	./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-nls
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib \
+		--localstatedir=/var \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
