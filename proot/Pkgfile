@@ -1,7 +1,7 @@
 # Description: Chroot, mount --bind and binfmt_misc without privilege and setup.
-# URL:         http://proot.me
+# URL:         https://github.com/proot-me/PRoot
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  talloc libarchive
+# Depends on:  talloc
 
 name=proot
 _commit=0bf2ee17daafeeadfed079cec97fe1ac781e696a
