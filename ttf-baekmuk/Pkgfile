@@ -1,12 +1,12 @@
 # Description: Baekmuk is a set of Korean TrueType fonts.
-# URL:         http://kldp.net/projects/baekmuk/
+# URL:         https://kldp.net/projects/baekmuk/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig
 
 name=ttf-baekmuk
 version=2.2
 release=2
-source=(http://kldp.net/baekmuk/release/865-baekmuk-ttf-$version.tar.gz)
+source=(https://kldp.net/baekmuk/release/865-baekmuk-ttf-$version.tar.gz)
 
 build() {
 	cd baekmuk-ttf-$version/
