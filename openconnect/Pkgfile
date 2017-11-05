@@ -1,7 +1,7 @@
 # Description: An SSL VPN client.
-# URL:         http://infradead.org/openconnect
+# URL:         https://www.infradead.org/openconnect
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libxml2 openssl pkg-config vpnc zlib
+# Depends on:  libxml2 vpnc
 
 name=openconnect
 version=7.08
@@ -11,10 +11,12 @@ source=(ftp://ftp.infradead.org/pub/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --sbindir=/usr/bin --disable-static
+	./configure \
+		--prefix=/usr \
+		--sbindir=/usr/bin \
+		--disable-nls \
+		--disable-static
 
 	make
 	make DESTDIR=$PKG install
-
-	rm -rf $PKG/usr/share/locale
 }
