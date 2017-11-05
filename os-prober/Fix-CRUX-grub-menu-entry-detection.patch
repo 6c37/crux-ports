@@ -1,6 +1,5 @@
-diff -pruN os-prober-1.75.orig/os-probes/mounted/common/90linux-distro os-prober-1.75/os-probes/mounted/common/90linux-distro
---- os-prober-1.75.orig/os-probes/mounted/common/90linux-distro	2017-05-04 14:57:23.197520770 +0800
-+++ os-prober-1.75/os-probes/mounted/common/90linux-distro	2017-05-04 15:09:13.848541790 +0800
+--- a/os-probes/mounted/common/90linux-distro	2017-05-04 14:57:23.197520770 +0800
++++ b/os-probes/mounted/common/90linux-distro	2017-05-04 15:09:13.848541790 +0800
 @@ -137,6 +137,9 @@ if (ls "$dir"/lib*/ld*.so* && [ -d "$dir
  	elif [ -e "$dir/etc/devuan_version" ]; then
  		short="Devuan"
