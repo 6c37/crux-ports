@@ -1,18 +1,17 @@
 # Description: Light-weight, simple and fast XML parser for C++ with XPath support.
-# URL:         http://pugixml.org
+# URL:         https://pugixml.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  cmake 
 
 name=pugixml
 version=1.8.1
 release=1
-source=(http://github.com/zeux/$name/releases/download/v$version/$name-$version.tar.gz)
+source=(https://github.com/zeux/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-${version%.*}
 
-	mkdir -p build
-	cd build
+	mkdir -p build ; cd build
 
 	cmake .. \
     		-DCMAKE_BUILD_TYPE=Release \
