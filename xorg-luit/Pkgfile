@@ -1,12 +1,15 @@
 # Description: Filter that can be run between an arbitrary application and a UTF-8 terminal emulator.
-# URL:         http://xorg.freedesktop.org/
+# URL:         https://xorg.freedesktop.org/
 # Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-libfontenc
 
 name=xorg-luit
 version=1.1.1
 release=1
-source=(http://xorg.freedesktop.org/archive/individual/app/luit-$version.tar.gz git_fixes.patch)
+source=(
+	https://xorg.freedesktop.org/archive/individual/app/luit-$version.tar.gz
+	git_fixes.patch
+)
 
 build() {
 	cd luit-$version
