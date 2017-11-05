@@ -1,7 +1,7 @@
 # Description: Redirects 3D commands from an OpenGL application onto a server-side 3D graphics card.
-# URL:         http://virtualgl.org
+# URL:         https://virtualgl.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxv glu libjpeg-turbo xorg-xcb-util-keysyms
+# Depends on:  glu libjpeg-turbo xorg-xcb-util-keysyms
 
 name=virtualgl
 version=2.5.2
