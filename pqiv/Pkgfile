@@ -1,8 +1,8 @@
 # Description: A simple image viewer inspired by qiv.
-# URL:         http://www.pberndt.com/Programme/Linux/pqiv/index.html
+# URL:         https://www.pberndt.com/Programme/Linux/pqiv/index.html
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk ffmpeg
-# Optional:    poppler-glib imagemagick gdk-pixbuf libwebp
+# Optional:    poppler-glib imagemagick libwebp
 
 name=pqiv
 version=2.9
