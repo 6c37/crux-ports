@@ -6,7 +6,7 @@
 name=xdg-user-dirs
 version=0.16
 release=1
-source=(http://user-dirs.freedesktop.org/releases/${name}-$version.tar.gz)
+source=(https://user-dirs.freedesktop.org/releases/$name-$version.tar.gz)
 
 build() {
 
