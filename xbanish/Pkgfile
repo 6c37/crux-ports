@@ -1,7 +1,7 @@
 # Description: Banish the mouse cursor when typing.
 # URL:         https://github.com/jcs/xbanish
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libx11 xorg-libxfixes xorg-libxcb xorg-libxi xorg-libxt xorg-xproto
+# Depends on:  xorg-libxi xorg-libxt
 
 name=xbanish
 version=1.5
