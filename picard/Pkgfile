@@ -1,5 +1,5 @@
 # Description: MusicBrainz's audio files tagger.
-# URL:         http://picard.musicbrainz.org
+# URL:         https://picard.musicbrainz.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  mutagen ffmpeg
 
