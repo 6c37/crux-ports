@@ -11,6 +11,6 @@ source=(https://github.com/jflesch/pyocr/archive/$version.tar.gz)
 build() {
 	cd pyocr-$version
 
-	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install --root=$PKG --optimize=1
+	python3 setup.py build
+	python3 setup.py install --root=$PKG --optimize=1
 }
