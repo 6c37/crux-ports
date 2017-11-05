@@ -6,7 +6,7 @@
 name=sigrok-cli
 version=0.7.0
 release=1
-source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
+source=(https://sigrok.org/download/source/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
