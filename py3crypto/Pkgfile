@@ -1,7 +1,7 @@
 # Description:  Python collection of cryptographic algorithms and protocols.
-# URL:          http://www.dlitz.net/software/pycrypto/
+# URL:          https://www.dlitz.net/software/pycrypto/
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:   libgmp python3
+# Depends on:   python3
 
 name=py3crypto
 version=2.6.1
@@ -10,6 +10,7 @@ source=(https://pypi.python.org/packages/source/p/pycrypto/pycrypto-$version.tar
 
 build() {
 	cd pycrypto-$version
-	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install --root=$PKG --optimize=1
+
+	python3 setup.py build
+	python3 setup.py install --root=$PKG --optimize=1
 }
