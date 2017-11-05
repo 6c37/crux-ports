@@ -6,7 +6,7 @@
 name=redshift
 version=1.11
 release=4
-source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.xz)
+source=(https://github.com/jonls/$name/releases/download/v$version/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
