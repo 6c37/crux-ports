@@ -11,7 +11,10 @@ source=(https://ftp.acc.umu.se/pub/GNOME/sources/pygobject/${version::4}/pygobje
 build() {
 	cd pygobject-$version
 
-	./configure --prefix=/usr --disable-introspection --disable-cairo
+	./configure \
+		--prefix=/usr \
+		--disable-introspection \
+		--disable-cairo
 
 	make
 	make DESTDIR=$PKG install

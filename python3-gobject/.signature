@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpRJA8nLXrtOrMGHsM4i/qQCS+7ofztiFVAGz+mr2334/HEnkuffTaf6x7jPB/Ylc4AXpW11Qg2mf/EilPFunYQE=
-SHA256 (Pkgfile) = b554d4c7a94cfce33895521e656a765b52b6f6366a8951dd0303b134f8015ebb
+RWSsZdBvSzGVpVdFXd/RyWtPcGKBG5frQ0sokVp0Kp+eDa9moeQF1xHXVU2NlOJnwIFT+I4dP+h+/f4XwSMSP3d6pF552SdfrgI=
+SHA256 (Pkgfile) = 135696696a5578ee1cc081000d6d6e84f160f813db2cff662d34aef8a38c4a4f
 SHA256 (.footprint) = 62963a701cdd11ac58b08cd960e99b302914a511212ec2c4ffca8f5fa9ace179
 SHA256 (pygobject-3.26.1.tar.xz) = f5577b9b9c70cabb9a60d81b855d488b767c66f867432e7fb64aa7269b04d1a9
