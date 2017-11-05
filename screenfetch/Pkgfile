@@ -10,7 +10,7 @@ release=2
 source=(
 	https://github.com/KittyKatt/screenFetch/archive/v$version.tar.gz
 	0001-Fix-gpu-variable-check-esp-it-s-empty.patch
-	)
+)
 
 build() {
 	cd screenFetch-$version
