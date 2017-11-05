@@ -1,8 +1,8 @@
 # Description: D-Bus service for applications to request thumbnails.
 # URL:         https://www.xfce.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  intltool dbus-glib gdk-pixbuf
-# Optional:    popler-glib freetype
+# Depends on:  dbus-glib gdk-pixbuf
+# Optional:    poppler-glib
 
 name=tumbler
 version=0.2.0
