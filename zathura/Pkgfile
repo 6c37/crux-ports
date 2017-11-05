@@ -2,12 +2,12 @@
 # URL:          https://pwmt.org/projects/zathura/
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   girara
-# Optional:     sqlite3 intltool check docutils
+# Optional:     sqlite3 docutils
 
 name=zathura
 version=0.3.7
 release=1
-source=(https://pwmt.org/projects/zathura/download/zathura-$version.tar.gz)
+source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
