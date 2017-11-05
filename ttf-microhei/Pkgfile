@@ -1,5 +1,5 @@
 # Description: A Sans-Serif style high quality CJK outline font. 
-# URL:         http://sourceforge.net/projects/wqy/
+# URL:         https://sourceforge.net/projects/wqy/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig
 
@@ -7,7 +7,7 @@ name=ttf-microhei
 version=0.2.0-beta
 release=1
 source=(
-	http://www.sourceforge.net/projects/wqy/files/wqy-microhei/$version/wqy-microhei-$version.tar.gz
+	https://www.sourceforge.net/projects/wqy/files/wqy-microhei/$version/wqy-microhei-$version.tar.gz
 	44-wqy-microhei.conf
 )
 
