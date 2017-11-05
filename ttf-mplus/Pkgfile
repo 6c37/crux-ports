@@ -1,12 +1,12 @@
 # Description: M+ Japanese outline fonts. 
-# URL:         http://mplus-fonts.sourceforge.jp
+# URL:         https://mplus-fonts.sourceforge.jp
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig	
 
 name=ttf-mplus
-version=062
+version=063
 release=1
-source=(http://iij.dl.sourceforge.jp/mplus-fonts/62344/mplus-TESTFLIGHT-$version.tar.xz)
+source=(https://rwthaachen.dl.osdn.jp/mplus-fonts/62344/mplus-TESTFLIGHT-$version.tar.xz)
 
 build() {
 	cd mplus-TESTFLIGHT-$version
