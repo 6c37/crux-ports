@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUi45+ofzYcI8Z8NlZly4pKIMrUINf1JZkr5uhOhl2jEm9DljZt5tBeh16A7AqY08IurZq8hiVT6zDbEkjU+Twg=
-SHA256 (Pkgfile) = e89f74f8450c609c04fd5d767bfbd50a20f265f8e81adb7215849df64871ec89
+RWSsZdBvSzGVpf/YsUh00hzdcvbEPHi2ixakFonyrQCUIhJRJM38rxSyVeRuRNQf5mgGibvbaX9FT262yra0gshgGk8ODSF6Dwo=
+SHA256 (Pkgfile) = 9efd5198eeeccc74d06d88be73a72572a0d9bd0203d4c0f7b2bf2c951adebc19
 SHA256 (.footprint) = 1590bcfcc2ffa6f67dfdeea547c1594473c9bd4dface43b3d91c2af5259f4dde
 SHA256 (sox-14.4.2.tar.bz2) = 81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
