@@ -1,12 +1,12 @@
 # Description: X.org font encoding files.
-# URL:         http://xorg.freedesktop.org/
+# URL:         https://xorg.freedesktop.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=xorg-fonts-encodings
 version=1.0.4
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/font/encodings-$version.tar.bz2)
+source=(https://xorg.freedesktop.org/releases/individual/font/encodings-$version.tar.bz2)
 
 build() {
 	cd encodings-$version
