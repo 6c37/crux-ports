@@ -1,22 +1,25 @@
 # Description: Convert source code to syntax highlighted document.
-# URL:         http://www.gnu.org/software/src-highlite/
+# URL:         https://www.gnu.org/software/src-highlite/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost
 
 name=source-highlight
 version=3.1.8
-release=1
-source=(http://ftp.gnu.org/gnu/src-highlite/$name-$version.tar.gz)
+release=2
+source=(https://ftp.gnu.org/gnu/src-highlite/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --sysconfdir=/etc
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--with-bash-completion=/usr/share/bash-completion/completions
 
 	make
 	make DESTDIR=$PKG install
 
 	echo -e "\npkgfile = sh.lang" >> $PKG/usr/share/source-highlight/lang.map
 
-	rm -rf $PKG/usr/share/{doc,info}
+	rm -r $PKG/usr/share/{doc,info}
 }
