@@ -1,7 +1,7 @@
 # Description: A free, fast-paced crossplatform first-person shooter.
 # URL:         https://xonotic.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  alsa-lib curl libjpeg libmodplug libvorbis libxpm xorg-libxxf86dga xorg-libxxf86vm libpng
+# Depends on:  alsa-lib libjpeg-turbo libmodplug libvorbis xorg-libxpm xorg-libxxf86dga xorg-libxxf86vm libpng
 
 name=xonotic
 version=0.8.2
