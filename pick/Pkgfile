@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=pick
-version=1.9.0
+version=2.0.0
 release=1
 source=(https://github.com/calleerlandsson/$name/releases/download/v$version/$name-$version.tar.gz)
 
