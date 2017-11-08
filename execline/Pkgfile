@@ -1,12 +1,12 @@
 # Description: A non-interactive scripting language.
-# URL:         http://skarnet.org/software/execline/
+# URL:         https://skarnet.org/software/execline/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  skalibs
 
 name=execline
 version=2.3.0.3
 release=1
-source=(http://skarnet.org/software/$name/$name-$version.tar.gz)
+source=(https://skarnet.org/software/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
