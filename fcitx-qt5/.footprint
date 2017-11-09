@@ -33,6 +33,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/FcitxQt5WidgetsAddons/
 drwxr-xr-x	root/root	usr/lib/fcitx/
 drwxr-xr-x	root/root	usr/lib/fcitx/libexec/
 -rwxr-xr-x	root/root	usr/lib/fcitx/libexec/fcitx-qt5-gui-wrapper
+drwxr-xr-x	root/root	usr/lib/fcitx/qt/
+-rwxr-xr-x	root/root	usr/lib/fcitx/qt/libfcitx-quickphrase-editor5.so
 lrwxrwxrwx	root/root	usr/lib/libFcitxQt5DBusAddons.so -> libFcitxQt5DBusAddons.so.1
 lrwxrwxrwx	root/root	usr/lib/libFcitxQt5DBusAddons.so.1 -> libFcitxQt5DBusAddons.so.1.0
 -rwxr-xr-x	root/root	usr/lib/libFcitxQt5DBusAddons.so.1.0

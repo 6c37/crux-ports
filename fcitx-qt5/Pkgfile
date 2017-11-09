@@ -4,12 +4,14 @@
 # Depends on:  fcitx qt5
 
 name=fcitx-qt5
-version=1.1.1
+version=1.2.0
 release=1
-source=(https://download.${name:0:5}-im.org/$name/$name-$version.tar.xz)
+source=(https://download.fcitx-im.org/$name/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
+
+	sed '/add_subdirectory(po)/d' -i CMakeLists.txt
 
 	cmake . \
 		-DCMAKE_BUILD_TYPE=Release \
