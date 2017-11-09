@@ -6,7 +6,7 @@
 name=fcitx-configtool
 version=0.4.10
 release=1
-source=(http://download.${name:0:5}-im.org/$name/$name-$version.tar.xz)
+source=(https://download.fcitx-im.org/$name/$name-$version.tar.xz)
 
 build() {
 
