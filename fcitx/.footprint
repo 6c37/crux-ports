@@ -125,6 +125,7 @@ drwxr-xr-x	root/root	usr/lib/fcitx/
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-fullwidth-char.so
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-imselector.so
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-ipc.so
+-rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-ipcportal.so
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-keyboard.so
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-kimpanel-ui.so
 -rwxr-xr-x	root/root	usr/lib/fcitx/fcitx-notificationitem.so
@@ -147,8 +148,6 @@ drwxr-xr-x	root/root	usr/lib/fcitx/libexec/
 -rwxr-xr-x	root/root	usr/lib/fcitx/libexec/fcitx-po-parser
 -rwxr-xr-x	root/root	usr/lib/fcitx/libexec/fcitx-qt-gui-wrapper
 -rwxr-xr-x	root/root	usr/lib/fcitx/libexec/fcitx-scanner
-drwxr-xr-x	root/root	usr/lib/fcitx/qt/
--rwxr-xr-x	root/root	usr/lib/fcitx/qt/libfcitx-quickphrase-editor.so
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Fcitx-1.0.typelib
 drwxr-xr-x	root/root	usr/lib/gtk-2.0/
@@ -165,9 +164,9 @@ lrwxrwxrwx	root/root	usr/lib/libfcitx-config.so.4 -> libfcitx-config.so.4.1
 lrwxrwxrwx	root/root	usr/lib/libfcitx-core.so -> libfcitx-core.so.0
 lrwxrwxrwx	root/root	usr/lib/libfcitx-core.so.0 -> libfcitx-core.so.0.3
 -rwxr-xr-x	root/root	usr/lib/libfcitx-core.so.0.3
-lrwxrwxrwx	root/root	usr/lib/libfcitx-gclient.so -> libfcitx-gclient.so.0
-lrwxrwxrwx	root/root	usr/lib/libfcitx-gclient.so.0 -> libfcitx-gclient.so.0.1
--rwxr-xr-x	root/root	usr/lib/libfcitx-gclient.so.0.1
+lrwxrwxrwx	root/root	usr/lib/libfcitx-gclient.so -> libfcitx-gclient.so.1
+-rwxr-xr-x	root/root	usr/lib/libfcitx-gclient.so.0.2
+lrwxrwxrwx	root/root	usr/lib/libfcitx-gclient.so.1 -> libfcitx-gclient.so.0.2
 lrwxrwxrwx	root/root	usr/lib/libfcitx-qt.so -> libfcitx-qt.so.0
 lrwxrwxrwx	root/root	usr/lib/libfcitx-qt.so.0 -> libfcitx-qt.so.0.1
 -rwxr-xr-x	root/root	usr/lib/libfcitx-qt.so.0.1
@@ -215,6 +214,7 @@ drwxr-xr-x	root/root	usr/share/fcitx/addon/
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-fullwidth-char.conf
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-imselector.conf
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-ipc.conf
+-rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-ipcportal.conf
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-keyboard.conf
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-kimpanel-ui.conf
 -rw-r--r--	root/root	usr/share/fcitx/addon/fcitx-notificationitem.conf
