@@ -1,12 +1,12 @@
 # Description: Another XRandR GUI.
-# URL:         http://christian.amsuess.com/tools/arandr/
+# URL:         https://christian.amsuess.com/tools/arandr/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xorg-xrandr pygtk docutils
 
 name=arandr
 version=0.1.9
 release=1
-source=(http://christian.amsuess.com/tools/arandr/files/$name-$version.tar.gz)
+source=(https://christian.amsuess.com/tools/$name/files/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
