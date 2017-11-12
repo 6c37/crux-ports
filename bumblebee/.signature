@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpcvahH4R9dC3RT89LYMCseCqNHK19uvpzofseB13Ynn70rG8BloZgheGyUAxS21WQ9Ntv1Welov0CCVUZD4Y6w0=
-SHA256 (Pkgfile) = 724fd5191629e5ad81a342dd85ccca79ced49d5f9733b223983d9a3086c45cd7
+RWSsZdBvSzGVpQ0OvkxLzcuhrzWp0jN0a5aCxoCYRGbjLTbJmrFcgs2tBinKtDrGijyuyIekYOTAWsVHwj+83+nBhmoEOOxKuwE=
+SHA256 (Pkgfile) = 50f2b78accf2e663563b424315210de0528385d862fab056132372bf37f2a870
 SHA256 (.footprint) = 7c0e525f8dd4e0d2b2928421e91c74280357d819f4e12571849e29fc9495505f
 SHA256 (bumblebee-3.2.1.tar.gz) = 1018703b07e2f607a4641249d69478ce076ae5a1e9dd6cff5694d394fa7ee30e
 SHA256 (0001-bb_nvidia_modeset-detection_bug699_01.patch) = aff3528d17a77ff19b4e0a7a10682b8351456f11795f71ef62b315e774fb408a
