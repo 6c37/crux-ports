@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUkyAy3Ut1uEXlqw93j7wi3ucqCE6Ei/xAmYL8f18j2TNl5yOWAagaQ8vi1+52nD0Y2PLHxgq2rNigdOlfhP5gw=
-SHA256 (Pkgfile) = 383dc6122a6aaf790183dffd622e53c856e1ea0b486019b0741d7dea5d8e8acf
+RWSsZdBvSzGVpRryFOMcbPVBqTeUb/xjsJCkWX0CzgSTAkF2sUPiC1kAKZ2eRaQ+a38Zsymq6KaXSx2D9lAF3jYPhUXVErXu8Ac=
+SHA256 (Pkgfile) = 1d950f3dd88ba473d974bd8a25b3b481e6d958994e395dcdf5abd8cdabc8d20e
 SHA256 (.footprint) = d390867e8f1579474e5df107605d9257325fe4f978694deb0f3b02793482132b
 SHA256 (autofs-5.1.3.tar.xz) = e96eebfe3ed5fb1a30f4510f538198affde223e370c6dc2bed9780309272b1bf
 SHA256 (autofs) = ad22e4a72617af4ea4190a3d3fbed406261bcafdec036976a3dd6be190709110
