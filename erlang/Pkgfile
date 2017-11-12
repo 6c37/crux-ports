@@ -1,10 +1,10 @@
 # Description: A programming language used to build massively scalable soft real-time systems with requirements on high availability.
-# URL:         http://erlang.org
+# URL:         https://www.erlang.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=erlang
-version=20.1.4
+version=20.1.5
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
