@@ -1,5 +1,5 @@
 # Description: Fortran interface to the GNU Scientific Library.
-# URL:         http://www.lrz.de/services/software/mathematik/gsl/fortran/
+# URL:         https://www.lrz.de/services/software/mathematik/gsl/fortran/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gcc-fortran gsl
 # Optional:    doxygen
@@ -7,7 +7,7 @@
 name=fgsl
 version=1.2.0
 release=1
-source=(http://www.lrz.de/services/software/mathematik/${name:1:3}/fortran/download/$name-$version.tar.gz)
+source=(https://www.lrz.de/services/software/mathematik/${name:1:3}/fortran/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
