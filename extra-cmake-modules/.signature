@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQYn7ERCfpH96D9v1Hu3Cg7g9QVzpm0gCNM0FyegutVgY8TM/9F1fpUdvMG0Ueqcp8fs46WKJES5jAkvxgl1eQw=
-SHA256 (Pkgfile) = 764464fc9fa0aa3eb1ca3a8b50d155d6a582275270b4e056509799039eb0f48f
+RWSsZdBvSzGVpWgxazqzaSvu7WdVU7kPQ4ygkCCgQbaVRONl9cGnBX91VqwYVMzvo0bNR2nKYF/rhhT/6Bl8D44bbyIcMP+xJAw=
+SHA256 (Pkgfile) = ff74b34b5fb67feea398fe6c6cfe4a9cb1ab68473925ea50d206985b68ae0312
 SHA256 (.footprint) = 19c719d9909ae9c496d5d6ea2a50fa0799160d3888596ec531aeb34ec826e71a
-SHA256 (extra-cmake-modules-5.39.0.tar.xz) = b80536d7bed8c12fc492857d3d433b3859462402fe231e463efcd3bf44ffbcd1
+SHA256 (extra-cmake-modules-5.40.0.tar.xz) = 83e48889c84474e4f560e10e4eea0cc529f8511b3bd0415fcb898ac0496e630a
