@@ -1,12 +1,12 @@
 # Description: A lightweight application which lets you control the audio volume.
-# URL:         http://sourceforge.net/projects/gvolwheel
+# URL:         https://sourceforge.net/projects/gvolwheel
 # Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk3
 
 name=gvolwheel
 version=1.0
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
