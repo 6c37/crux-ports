@@ -1,5 +1,5 @@
 # Description: Gnome Completion-Run Utility.
-# URL:         http://sourceforge.net/projects/gmrun
+# URL:         https://sourceforge.net/projects/gmrun
 # Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  gtk popt
 
@@ -7,7 +7,7 @@ name=gmrun
 version=0.9.2
 release=1
 source=(
-	http://downloads.sourceforge.net/$name/$name-$version.tar.gz
+	https://downloads.sourceforge.net/$name/$name-$version.tar.gz
 	$name-$version-gcc43.patch
 	$name-$version-glibc210.patch
 )
