@@ -1,15 +1,15 @@
 # Description: Client for battery, power, and thermal readings.
-# URL:         http://sourceforge.net/projects/acpiclient
+# URL:         https://sourceforge.net/projects/acpiclient
 # Maintainer:  6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=acpiclient
 version=1.7
 release=1
-source=(http://downloads.sourceforge.net/$name/${name:0:4}-$version.tar.gz)
+source=(https://downloads.sourceforge.net/$name/acpi-$version.tar.gz)
 
 build() {
-	cd ${name:0:4}-$version
+	cd acpi-$version
 
 	./configure --prefix=/usr
 
