@@ -6,7 +6,7 @@
 name=artwiz-fonts
 version=1.3
 release=1
-source=(http://downloads.sourceforge.net/sourceforge/artwizaleczapka/artwiz-aleczapka-en-$version.tar.bz2)
+source=(https://downloads.sourceforge.net/sourceforge/artwizaleczapka/artwiz-aleczapka-en-$version.tar.bz2)
 
 build() {
 
