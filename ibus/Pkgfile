@@ -5,7 +5,7 @@
 
 name=ibus
 version=1.5.17
-release=1
+release=2
 source=(
 	https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz
 	https://www.unicode.org/Public/emoji/6.0/emoji-data.txt
@@ -13,7 +13,7 @@ source=(
 	https://www.unicode.org/Public/emoji/6.0/emoji-test.txt
 	https://www.unicode.org/Public/emoji/6.0/emoji-variation-sequences.txt
 	https://www.unicode.org/Public/emoji/6.0/emoji-zwj-sequences.txt
-	https://github.com/fujiwarat/cldr-emoji-annotation/releases/download/31.90.0_1/cldr-emoji-annotation-31.90.0_1.tar.gz
+	https://github.com/fujiwarat/cldr-emoji-annotation/releases/download/32.0.0_1/cldr-emoji-annotation-32.0.0_1.tar.gz
 )
 
 build() {
@@ -21,7 +21,7 @@ build() {
 	cp $SRC/emoji-*.txt $SRC/$name-$version/emoji
 
 	install -d $SRC/$name-$version/annotation
-	cd $SRC/cldr-emoji-annotation-31.90.0_1
+	cd $SRC/cldr-emoji-annotation-32.0.0_1
 	./configure --prefix=$SRC/$name-$version/annotation
 	make
 	make install
