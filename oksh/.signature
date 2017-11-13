@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpeJDhn8QQix1r5Ur1dXBlXknbQokP3zmObI9ukygRayVRecu13QU3W9aaZMRTeJ5ZHsPoS9FsSRfSES9lco1tgw=
-SHA256 (Pkgfile) = 4f6cac3d2e195923e1c4a315a1559a0e9ab3e0b03c2d1992dec0da60a98c10cc
+RWSsZdBvSzGVpT45AVmXiyQSoHEQJq6w3zEWoTPxFk937gvDEQrjU/hHHp7BocHqtUtlxplBRFwcTacrOcBzY31/BadTOHrkbAI=
+SHA256 (Pkgfile) = 640b37e11dea7e9b2b846a704f7d39f928f18176e55e7becc34b2784abbd24a3
 SHA256 (.footprint) = bf5fd4cb2271a0419986a53557c49f2dee36beba6009516dc7b034bd94326e64
 SHA256 (oksh-0.5.9.tar.gz) = 2323be6676c88bdc916dd206b9e9bd6c23bbada513edaf71dcfad97e8df3c952
 SHA256 (Fix-Makefile.patch) = 44b11c3f75bea9237390cea77ba930df1f183ce9d2e65d713a52906b93760925

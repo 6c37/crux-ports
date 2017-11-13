@@ -1,5 +1,5 @@
 # Description: OpenBSD's version of ksh ported to Linux.
-# URL:         http://www.connochaetos.org/oksh/
+# URL:         https://www.connochaetos.org/oksh/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on: 
 
@@ -8,7 +8,7 @@ version=0.5.9
 release=3
 
 source=(
-	http://www.connochaetos.org/$name/$name-$version.tar.gz
+	https://www.connochaetos.org/$name/$name-$version.tar.gz
 	Fix-Makefile.patch
 )
 
