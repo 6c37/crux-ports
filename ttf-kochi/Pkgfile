@@ -6,7 +6,7 @@
 name=ttf-kochi
 version=20030809
 release=1
-source=(http://dl.sourceforge.jp/efont/5411/kochi-substitute-$version.tar.bz2)
+source=(https://dl.sourceforge.jp/efont/5411/kochi-substitute-$version.tar.bz2)
 
 build() {
 	cd kochi-substitute-20030809
