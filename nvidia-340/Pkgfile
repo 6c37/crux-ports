@@ -5,7 +5,7 @@
 
 name=nvidia-340
 version=340.104
-release=1
+release=2
 source=(
 	https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
 	90-nvidia-uvm.rules
@@ -55,11 +55,11 @@ build() {
 	install -m 0755 libnvidia-wfb.so.$version      $PKG/usr/lib/xorg/modules
 
 	# nvidia programs amd man-pages
-	install -d $PKG/usr/{bin,man/man1}
+	install -d $PKG/usr/{bin,share/man/man1}
 	install -m 0755 nvidia-{debugdump,persistenced,settings,smi,xconfig} \
 	$PKG/usr/bin
 	install -m 0644 nvidia-{persistenced,settings,smi,xconfig}.1.gz \
-	$PKG/usr/man/man1
+	$PKG/usr/share/man/man1
 
 	# desktop file and icon
 	install -d $PKG/usr/share/{applications,pixmaps}
