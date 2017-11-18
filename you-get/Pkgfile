@@ -5,11 +5,12 @@
 # Optional:    rtmpdump	
 
 name=you-get
-version=0.4.939
+version=0.4.964
 release=1
 source=(https://github.com/soimort/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
+
 	python3 setup.py install --root=$PKG
 }
