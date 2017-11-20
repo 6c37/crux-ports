@@ -1,12 +1,12 @@
 # Description: A Hei Ti Style (sans-serif) Chinese Outline Font.
-# URL:         http://sourceforge.net/projects/wqy/
+# URL:         https://sourceforge.net/projects/wqy/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig
 
 name=ttf-zenhei
 version=0.9.46
 release=1
-source=(http://downloads.sourceforge.net/project/wqy/wqy-zenhei-snapshot/$version-May/wqy-zenhei-$version-May.tar.bz2)
+source=(https://downloads.sourceforge.net/project/wqy/wqy-zenhei-snapshot/$version-May/wqy-zenhei-$version-May.tar.bz2)
 
 build()	{
 	cd wqy-zenhei

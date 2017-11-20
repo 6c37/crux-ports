@@ -1,5 +1,5 @@
 # Description: A minimal getty which allows automatic logins.
-# URL:         http://sourceforge.net/projects/mingetty
+# URL:         https://sourceforge.net/projects/mingetty
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
@@ -7,7 +7,7 @@ name=mingetty
 version=1.08
 release=3
 source=(
-	http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz
+	https://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz
 	utf8.patch
 )
 

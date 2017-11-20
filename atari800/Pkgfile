@@ -1,12 +1,12 @@
 # Description: Emulator of Atari 800/800XL/130XE/5200 with various extensions.
-# URL:         http://atari800.sourceforge.net
+# URL:         https://atari800.github.io
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  sdl_mixer sdl_image sdl_ttf sdl_sound sdl_net
 
 name=atari800
 version=3.1.0
 release=1
-source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
+source=(https://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version/src

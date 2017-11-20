@@ -52,14 +52,14 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.340.104
 lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx_so_nvidia -> libglx.so.340.104
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.340.104
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/nvidia-persistenced.1.gz
--rw-r--r--	root/root	usr/man/man1/nvidia-settings.1.gz
--rw-r--r--	root/root	usr/man/man1/nvidia-smi.1.gz
--rw-r--r--	root/root	usr/man/man1/nvidia-xconfig.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/nvidia-settings.desktop
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/nvidia-persistenced.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/nvidia-settings.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/nvidia-smi.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/nvidia-xconfig.1.gz
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/nvidia-settings.png

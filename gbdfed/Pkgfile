@@ -7,7 +7,7 @@ name=gbdfed
 version=1.6
 release=2
 source=(
-	http://math.nmsu.edu/~mleisher/Software/$name/$name-$version.tbz2
+	https://math.nmsu.edu/~mleisher/Software/$name/$name-$version.tbz2
 	num_signals.patch
 )
 

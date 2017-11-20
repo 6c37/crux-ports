@@ -1,12 +1,12 @@
 # Description: Free peer-reviewed portable C++ source libraries for python3 binding.
-# URL:         http://www.boost.org/
+# URL:         https://www.boost.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost python3
 
 name=py3boost
 version=1.65.1
 release=1
-source=(http://downloads.sourceforge.net/project/${name#py3}/${name#py3}/$version/${name#py3}_${version//./_}.tar.bz2)
+source=(https://downloads.sourceforge.net/project/${name#py3}/${name#py3}/$version/${name#py3}_${version//./_}.tar.bz2)
 
 build() {
 	cd ${name#py3}_${version//./_}

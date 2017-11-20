@@ -47,12 +47,12 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/box_drawing.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/core_text.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/fontconfig.cpython-36.pyc
--rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/freetype.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/list.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/__pycache__/render.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/box_drawing.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/core_text.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/fontconfig.py
--rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/freetype.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/list.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/render.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/graphics_fragment.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/graphics_vertex.glsl
@@ -79,7 +79,8 @@ drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
--rw-rw-r--	root/root	usr/share/icons/hicolor/256x256/kitty.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
+-rw-rw-r--	root/root	usr/share/icons/hicolor/256x256/apps/kitty.png
 drwxr-xr-x	root/root	usr/share/terminfo/
 drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-kitty

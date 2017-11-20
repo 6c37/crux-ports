@@ -6,7 +6,7 @@
 name=devil
 version=1.8.0
 release=1
-source=(http://downloads.sourceforge.net/openil/DevIL-$version.tar.gz)
+source=(https://downloads.sourceforge.net/openil/DevIL-$version.tar.gz)
 
 build() {
 	cd DevIL/DevIL

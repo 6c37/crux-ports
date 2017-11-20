@@ -1,12 +1,12 @@
 # Description:	Colorized df.
-# URL:		http://sourceforge.net/projects/bmp-plugins.berlios/
+# URL:		https://sourceforge.net/projects/bmp-plugins.berlios/
 # Maintainer:	6c37 team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=cdf
 version=0.2
 release=1
-source=(http://sourceforge.net/projects/bmp-plugins.berlios/files/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/bmp-plugins.berlios/files/$name-$version.tar.gz)
 
 build() {
         cd $name-$version

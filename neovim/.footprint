@@ -37,6 +37,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/autoload/health/
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider.vim
 drwxr-xr-x	root/root	usr/share/nvim/runtime/autoload/provider/
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider/clipboard.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider/node.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider/python.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider/python3.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/autoload/provider/pythonx.vim
@@ -774,6 +775,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/print/
 -rw-r--r--	root/root	usr/share/nvim/runtime/print/latin1.ps
 -rw-r--r--	root/root	usr/share/nvim/runtime/print/mac-roman.ps
 -rw-r--r--	root/root	usr/share/nvim/runtime/print/prolog.ps
+-rw-r--r--	root/root	usr/share/nvim/runtime/rgb.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/scripts.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/synmenu.vim
 drwxr-xr-x	root/root	usr/share/nvim/runtime/syntax/

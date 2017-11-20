@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpWImjLSQFCFNlXFh6Ua6JpFuYXTfl1daJVR/Q7DSlGGdu10yQC9mjlbmYVfgohjROnmfjjjn4sH5rw4ATwBL3A8=
-SHA256 (Pkgfile) = a9bad466bd31694a936178b3caaae7b22f071716c051ad88df5f0d16f1912129
+RWSsZdBvSzGVpb4Z8a1kQHsklRR41EfK3pFAhL7hyI6eOrGdAvBnJFrV5Bbhcx4rmuIjD9KMi+z+Q0QbOFHF+nzycy2Szn5bPQc=
+SHA256 (Pkgfile) = fcb356e148a61da3ad01437d734d107e82faf8b7e5cb43bc77077755b65c965f
 SHA256 (.footprint) = a2acb93eab92084472f8b2a1d33e949eee4fd80642dd1627474818f71b4d0b9e
 SHA256 (scim-pinyin-0.5.92.tar.gz) = 70727224a642c2f2c7739b82ebd0b4d6a6f444c9ad4311cf2a3c76230dd21d9e
