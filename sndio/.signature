@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpVlqNgk5OSC3mhHHXWObZWmdolIuFgsBUXi7yJDhLuj1zHNOtBgzvwOgRyPQl5mDrUQZbwnp2PKbqwCv6iubIgc=
-SHA256 (Pkgfile) = c43d9d3adfe8b8461e3f50e8cd3081485bec9abdebfbe916d321afc328744cb3
+RWSsZdBvSzGVpRaeX0I23r6eqXUBnG/HnpaxqYMCi2r7b+YKbny4GuNRTfAgijlnvKwTpxE9hQJPTDjs2bchdraL98S9hTvOeQc=
+SHA256 (Pkgfile) = e9d5b21991a768186eebdfd180fe17585598a2bfed93b75c34257097838106d1
 SHA256 (.footprint) = 6e65b196a0f3ed1e77fb002a421354ee8e231f77589bea2a1874df758593b5ff
-SHA256 (sndio-1.2.0.tar.gz) = b9808e189481904a4404b0c1715ad0c4b301e72abca8e49653bb526ff4e16cdc
+SHA256 (sndio-1.3.0.tar.gz) = bcc33213f02adc71bd0c3543f3b243847e7d27c5243b0b558182bc1b3056e4b1
