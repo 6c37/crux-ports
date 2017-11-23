@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=parallel
-version=20171022
+version=20171122
 release=1
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 
