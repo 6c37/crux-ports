@@ -1,0 +1,9 @@
+4dbc4cd98731f133a3f6e0f47625ad08  breakpad-use-ucontext_t.patch
+ab7416d1494bb6a0a96fb72c9388580d  chromium-gcc-r1.patch
+c478ec11090b14d712e9b47411302800  vivaldi-atk-r1.patch
+037aec8016723e539c05ddd70d635071  vivaldi-gcc-r1.patch
+cd31d0402429f252f25679c99dc1fb10  vivaldi-source_1.12.955.tar.xz
+212b1d6f3b11595ea5afdcb7670cb112  vivaldi-stable-1.12.955.48-1.x86_64.rpm
+67875edc1a142b3f8bd011f777a46619  vivaldi-symbols-r1.patch
+52f5fbb88e649b651d9bf000297edc1c  vivaldi.desktop
+83f42ef71823e0f87875359ce7c10895  vivaldi.sh

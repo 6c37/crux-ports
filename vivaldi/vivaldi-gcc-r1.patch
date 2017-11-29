@@ -1,0 +1,15 @@
+--- a/chromium/tools/gn/bootstrap/bootstrap.py
++++ b/chromium/tools/gn/bootstrap/bootstrap.py
+@@ -325,12 +325,6 @@
+     cxx = os.environ.get('CXX', 'c++')
+     ld = os.environ.get('LD', cxx)
+     ar = os.environ.get('AR', 'ar -X64')
+-  elif  is_linux:
+-    prefix = os.path.join(SRC_ROOT, "third_party/llvm-build/Release+Asserts/bin")
+-    cc = os.environ.get('CC', os.path.join(prefix, 'clang'))
+-    cxx = os.environ.get('CXX', os.path.join(prefix, 'clang++'))
+-    ld = cxx
+-    ar = os.environ.get('AR', os.path.join(prefix, 'llvm-ar'))
+   else:
+     cc = os.environ.get('CC', 'cc')
+     cxx = os.environ.get('CXX', 'c++')

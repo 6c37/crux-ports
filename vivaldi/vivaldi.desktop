@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Vivaldi
+Comment=Browser
+Exec=vivaldi %U
+Icon=vivaldi.png
+Terminal=false
+Type=Application
+Categories=Application;Network;

@@ -1,0 +1,135 @@
+# Description: A non-free browser for our friends.
+# URL:         https://vivaldi.com/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  dbus-glib gperf gtk3 libevent ninja nodejs nss pciutils xorg-libxscrnsaver xorg-libxt yasm libwebp ffmpeg flac harfbuzz-icu opus libgcrypt
+
+name=vivaldi
+version=1.12.955
+release=1
+source=(
+	https://vivaldi.com/source/$name-source_$version.tar.xz
+	https://downloads.vivaldi.com/stable/$name-stable-$version.48-1.x86_64.rpm
+	breakpad-use-ucontext_t.patch
+	chromium-gcc-r1.patch
+	vivaldi-gcc-r1.patch
+	vivaldi-atk-r1.patch
+	vivaldi-symbols-r1.patch
+	vivaldi.desktop
+	vivaldi.sh
+)
+
+build() {
+	cd $name-source
+
+	export PATH="$PATH":$PWD/chromium/third_party/depot_tools/
+
+	export CFLAGS="$CFLAGS $(pkg-config --cflags nspr)"
+	export LDFLAGS="$LDFLAGS $(pkg-config --libs nspr)"
+
+	# Fix build with glibc 2.26
+	patch -p1 -d chromium < $SRC/breakpad-use-ucontext_t.patch
+
+	# Build with gcc
+	patch -p1 -d chromium < $SRC/chromium-gcc-r1.patch
+	patch -p1 < $SRC/vivaldi-gcc-r1.patch
+
+	# Fix incorrectly named atk function
+	patch -p1 < $SRC/vivaldi-atk-r1.patch
+
+	# Fix build error
+	patch -p1 < $SRC/vivaldi-symbols-r1.patch
+
+	# Use system nodejs
+	mkdir -p chromium/third_party/node/linux/node-linux-x64/bin
+	ln -s /usr/bin/node chromium/third_party/node/linux/node-linux-x64/bin/
+
+	# The sysroot variable is empty for some reason
+	sed -i 's/rebase_path(sysroot)/""/' chromium/chrome/installer/linux/BUILD.gn
+
+	# Work around bug in blink in which GCC 6 optimizes away null pointer checks
+	# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=833524
+	# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68853#c2
+	sed -i '/config("compiler")/ a cflags_cc = [ "-fno-delete-null-pointer-checks" ]' chromium/build/config/linux/BUILD.gn
+
+	# Use system libraries
+	# http://www.linuxfromscratch.org/blfs/view/cvs/xsoft/chromium.html
+	for lib in ffmpeg flac harfbuzz-ng libjpeg libjpeg_turbo libpng libwebp libxslt yasm; do
+		find -type f -path "*chromium/third_party/$lib/*"     \
+			\! -path "*chromium/third_party/$lib/chromium/*"  \
+			\! -path "*chromium/third_party/$lib/google/*"    \
+			\! -path "*chromium/base/third_party/icu/*"       \
+			\! -regex '.*\.\(gn\|gni\|isolate\|py\)' \
+			-delete
+	done
+
+	python chromium/build/linux/unbundle/replace_gn_files.py \
+		--system-libraries ffmpeg flac harfbuzz-ng libjpeg libxml libevent libpng libwebp libxslt opus yasm freetype
+	python chromium/third_party/libaddressinput/chromium/tools/update-strings.py
+
+	python chromium/build/util/lastchange.py -o chromium/build/util/LASTCHANGE
+	python chromium/build/util/lastchange.py -m SKIA_COMMIT_HASH -s chromium/third_party/skia --header chromium/skia/ext/skia_commit_hash.h
+	python chromium/build/util/lastchange.py -s . --name-suffix _VIVALDI -o chromium/build/util/LASTCHANGE.vivaldi
+
+	python chromium/third_party/depot_tools/download_from_google_storage.py --extract --no_auth --bucket chromium-nodejs -s chromium/third_party/node/node_modules.tar.gz.sha1
+
+	_gn_args=(
+		'blink_gc_plugin=false'
+		'clang_use_chrome_plugins=false'
+		'enable_hangout_services_extension=true'
+		'enable_nacl=false'
+		'enable_swiftshader=false'
+		'enable_widevine=false'
+		'fatal_linker_warnings=false'
+		'ffmpeg_branding="Chrome"'
+		'icu_use_data_file=true'
+		'is_clang=false'
+		'is_component_build=false'
+		'is_debug=false'
+		'linux_use_bundled_binutils=false'
+		'use_custom_libcxx=false'
+		'proprietary_codecs=true'
+		'remove_webcore_debug_symbols=true'
+		'symbol_level=0'
+		'treat_warnings_as_errors=false'
+		'use_allocator="none"'
+		'use_cups=false'
+		'use_gconf=false'
+		'use_gnome_keyring=false'
+		'use_gold=false'
+		'use_kerberos=false'
+		'use_pulseaudio=false'
+		'use_sysroot=false'
+	)
+
+	python chromium/tools/gn/bootstrap/bootstrap.py --gn-gen-args="${_gn_args[*]}"
+	chromium/out/Release/gn gen out/Release --args="${_gn_args[*]}"
+
+	# Linking fix
+	sed -i 's/ -rpath \\\$\$ORIGIN\/lib\///' out/Release/obj/chrome/chrome_initial.ninja
+
+	ninja -j ${JOBS-1} -C out/Release vivaldi
+
+	# Copy over propriety Vivaldi resources from the RPM
+	cp -r $SRC/opt/vivaldi/resources/vivaldi out/Release/resources
+
+	install -Dm755 out/Release/vivaldi $PKG/usr/lib/vivaldi/vivaldi
+	install -Dm644 out/Release/*.pak $PKG/usr/lib/vivaldi
+	install -Dm644 out/Release/locales/en-US.pak $PKG/usr/lib/vivaldi/locales/en-US.pak
+	cp -a out/Release/resources $PKG/usr/lib/vivaldi
+
+	# Fix v8 natives
+	cp -a out/Release/{natives,snapshot}_blob.bin $PKG/usr/lib/vivaldi
+
+	for res in 16 22 24 32 48 64 128 256; do
+		install -Dm644 $SRC/opt/vivaldi/product_logo_$res.png \
+		$PKG/usr/share/icons/hicolor/${res}x$res/apps/vivaldi.png
+	done
+
+	# Fix icu installation
+	cp -a out/Release/icudtl.dat $PKG/usr/lib/vivaldi
+
+	install -d $PKG/usr/share/pixmaps
+	ln -sf /usr/share/icons/hicolor/48x48/apps/vivaldi.png $PKG/usr/share/pixmaps/vivaldi.png
+	install -Dm644 $SRC/vivaldi.desktop $PKG/usr/share/applications/vivaldi.desktop
+	install -Dm755 $SRC/vivaldi.sh $PKG/usr/bin/vivaldi
+}
