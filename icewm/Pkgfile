@@ -1,16 +1,19 @@
 # Description: A window manager designed for speed, usability, and consistency.
 # URL:         https://github.com/bbidulock/icewm
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxft gdk-pixbuf xorg-libxrandr xorg-libsm xorg-mkfontdir
+# Depends on:  xorg-libxft gdk-pixbuf xorg-libxrandr xorg-libsm xorg-mkfontdir asciidoc
 # Optional:    xorg-libxinerama libsndfile fribidi
 
 name=icewm
-version=1.4.2
+_commit=5669983c50a80ca6731fbc991d499ffa2116259e
+version=1.4.2_1
 release=1
-source=(https://github.com/bbidulock/$name/releases/download/$version/$name-$version.tar.bz2)
+source=(https://github.com/bbidulock/$name/archive/${_commit}.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-${_commit}
+
+	autoreconf -f -i -v
 
 	./configure \
 		--prefix=/usr \
