@@ -6,12 +6,19 @@
 name=optipng
 version=0.7.6
 release=1
-source=(https://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
+source=(
+	https://prdownloads.sourceforge.net/$name/$name-$version.tar.gz
+	optipng-0.7.6-cve-2017-1000229.patch
+)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/share/man
+	patch -p1 < $SRC/optipng-0.7.6-cve-2017-1000229.patch
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
