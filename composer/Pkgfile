@@ -4,10 +4,10 @@
 # Depends on:  php
 
 name=composer
-version=1.5.2
+version=1.5.5
 release=1
-source=(https://get${name}.org/download/$version/$name.phar)
+source=(https://getcomposer.org/download/$version/$name.phar)
 
 build() {
-	install -Dm755 ${name}.phar $PKG/usr/bin/$name
+	install -Dm755 composer.phar $PKG/usr/bin/$name
 }
