@@ -4,7 +4,7 @@
 # Depends on:  boehm-gc libunistring libffi
 
 name=guile
-version=2.2.2
+version=2.2.3
 release=1
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
@@ -19,5 +19,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/info
-	rm -r $PKG/usr/lib/lib${name}-2.?.so.*-gdb.scm
+	rm -r $PKG/usr/lib/libguile-2.?.so.*-gdb.scm
 }
