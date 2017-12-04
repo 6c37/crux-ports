@@ -1,0 +1,2 @@
+- To build php plugin, you need to package >=php-7.0 avaliable.
+- To build and run test, you must have >=cppunit-3.4 avaliable.

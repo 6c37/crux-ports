@@ -35,6 +35,11 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/exec.so.0 -> exec.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fifo.so -> fifo.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fifo.so.0 -> fifo.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/fifo.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/fset.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/fset.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fset.so -> fset.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fset.so.0 -> fset.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/fset.so.0.0.0
 -rw-r--r--	root/root	usr/lib/weechat/plugins/irc.a
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/irc.la
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/irc.so -> irc.so.0.0.0

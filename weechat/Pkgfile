@@ -2,10 +2,10 @@
 # URL:         https://weechat.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  cmake libgcrypt
-# Optional:    python ruby lua tcl gnutls
+# Optional:    enchant python ruby lua tcl guile php gnutls cppunit
 
 name=weechat
-version=1.9.1
+version=2.0
 release=1
 source=(https://github.com/$name/$name/archive/v$version.tar.gz)
 
