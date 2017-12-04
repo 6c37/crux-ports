@@ -344,10 +344,11 @@ f:053b822743fcc05359cfab0a9d64652d:python3-openalpr/.md5sum
 f:b175dea9081bdf4784d4499bc28a8780:python3-openalpr/Pkgfile
 f:4c6b5922e866d4870a9716856395be5f:python3-openalpr/.signature
 f:8fac97eba3ca65cc359003fa115b7947:python3-openalpr/.footprint
-f:c3b0a7fa2852efb0c2f753976f882838:weechat/.md5sum
-f:8fa8910ec5068d8b9317afdc56db8273:weechat/Pkgfile
-f:51efdf33266dd71e97787365e249615d:weechat/.signature
-f:26b101bb5d257efd0d27ace55080b2fa:weechat/.footprint
+f:a8217f2bc8394a484bb546bd4cb9181f:weechat/.md5sum
+f:f33eea86e3de76c985cff5b9300a540a:weechat/Pkgfile
+f:9f5dae5408a25fe37451a137cfe13b9c:weechat/README
+f:e1158172f419768a6b68a813bca5abd5:weechat/.signature
+f:c10f6a084afc4909fbb1cb49695bd3d9:weechat/.footprint
 f:591ace95f972f42275a6ad6645e46876:xorg-xfd/.md5sum
 f:9c5821b872e25aeae05d4d2903ac7597:xorg-xfd/Pkgfile
 f:be9a799ea83dc943da6d3c04596d75cf:xorg-xfd/.signature
