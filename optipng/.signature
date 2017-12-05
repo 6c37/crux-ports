@@ -1,6 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpcyuT1Vu9FQC44nOkitbybTcvGMW8DDiUdkkoorrXuPC0aQAwShHt2oI0QxRuqlKxEtZbyPM212wc6YnGkEXfAE=
-SHA256 (Pkgfile) = ea0e8a02de695f41425784bd57bfedd4cf0a8e1bdb5fc1454723e6279bb7c082
+RWSsZdBvSzGVpYYSLW7uAipDy1pe14bMEUmaPtv8ZFoz7GRFtmgdkk7Ztk0XViOHi9swqqnYR3WQNhDXmv2MGxbZpZsPXm+hrAw=
+SHA256 (Pkgfile) = d741b3e6f5939cd78d33f6e1cb9c6f1dfb13b2bbcc488c36df83f885b4f844b6
 SHA256 (.footprint) = b5367ec173be67a445f7951e3a6358cb09b83c5c484b1a4ea82a82527039c06e
 SHA256 (optipng-0.7.6.tar.gz) = 4870631fcbd3825605f00a168b8debf44ea1cda8ef98a73e5411eee97199be80
 SHA256 (optipng-0.7.6-cve-2017-1000229.patch) = 48b54dfd9e8bd98b06e9853231161c0d3c2a2a3b50bb19e9af6beff8468db911
+SHA256 (optipng-0.7.6-cve-2017-16938.patch) = ec922109958ebc472f60b1310157a037375abad4d099789eee325a964beafee3
