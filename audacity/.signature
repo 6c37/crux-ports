@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUVc13aZJ+k4t8CKTxAwaFf8SnAtqKjdZG1lZPbpm6XKtACgsg7XskMyEbAReGB/Rw5JSH90+SP1C+dlT8QL6ws=
-SHA256 (Pkgfile) = ea80af9acbdd0d3bda94684bf8e4ba9190320d18b38b94d7b3ac7433a7b31c9c
+RWSsZdBvSzGVpfoJWetSTn1/7HS1c5mgnUDzKKAcDBmXVbMMAMnnof0z8u6ctYa/AX1Wt1pTPM+GP2jQqfIHljrEFDvr5Rvnmw0=
+SHA256 (Pkgfile) = 0c4f8d1ef64107442b1a640fa98d85b650083bc8453b8d50fae0fbbd20e9fcdc
 SHA256 (.footprint) = cadbbbbb7f978afdbbc3670e637a2c50b60e5553f9ae85f23dd6bc9152637ad6
-SHA256 (Audacity-2.2.0.tar.gz) = 3e4b6861f45885e4c90db62eb479cab2a9361e1ebb0c567bf8362a2b17c9b727
+SHA256 (Audacity-2.2.1.tar.gz) = ff346e7a68a57a05089813efd78a81439f5419d211f80bb472c9d94c16ca05d8

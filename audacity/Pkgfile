@@ -5,7 +5,7 @@
 # Optional:    vamp-plugin-sdk
 
 name=audacity
-version=2.2.0
+version=2.2.1
 release=1
 source=(https://github.com/$name/$name/archive/Audacity-$version.tar.gz)
 
