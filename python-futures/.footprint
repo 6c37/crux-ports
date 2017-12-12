@@ -14,4 +14,4 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/concurrent/futures/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/process.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/thread.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/concurrent/futures/thread.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/futures-3.1.1-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/futures-3.2.0-py2.7.egg-info

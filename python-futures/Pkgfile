@@ -4,11 +4,12 @@
 # Depends on:  python
 
 name=python-futures
-version=3.1.1
+version=3.2.0
 release=1
 source=(https://files.pythonhosted.org/packages/source/f/futures/futures-$version.tar.gz)
 
 build() {
 	cd futures-$version
+
 	python setup.py install --root $PKG
 }
