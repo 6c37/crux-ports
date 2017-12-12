@@ -1,9 +1,0 @@
-untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpYibqYCPOzINAOdXp0p/iIp1aBlOHFGefw5RGPw3CX2pTeJp2VTBLClVbIiA3OPQc/iYUx/N1mpMIrvb61Cjww4=
-SHA256 (Pkgfile) = 948fd6b15f9bf03884054f94406e1380aff8e534aff14c925b08acc13d10cb42
-SHA256 (.footprint) = bfc90037fa3fdbd7d1b504e384ffa154cd905b9910581d83c50206a79c8be77a
-SHA256 (firefox-57.0.2.source.tar.xz) = cad021a13daf8fd2c951fab763e784c82aabef45e68a34c941fb64d62f1a5707
-SHA256 (firefox-install-dir.patch) = 32c0102521b7296627ba457575c742746400680c3aecd18be8b1b382dccdc0ce
-SHA256 (firefox.desktop) = d16fcb0c1a892916fd5d71716afc8b300847059e9f17c4c850bbe1d4edb5d5a0
-SHA256 (0001-Bug-1360278-Add-preference-to-trigger-context-menu-o.patch) = 31bfe75eb0e773a48347c4c972384094997c78d07dc0e079ddcf3a8cc4f90d2f
-SHA256 (0002-Bug-1419426-Implement-browserSettings.contextMenuSho.patch) = dec303c5b2b69cc195d543a8caf43dd7a89bd2750ce67495e523c9495fc1af48
