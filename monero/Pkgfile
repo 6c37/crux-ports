@@ -5,8 +5,12 @@
 
 name=monero
 version=0.11.1.0
-release=1
-source=(https://github.com/$name-project/$name/archive/v$version.tar.gz)
+release=2
+source=(
+	https://github.com/$name-project/$name/archive/v$version.tar.gz
+	monerod.conf
+	monerod
+)
 
 build() {
 	cd $name-$version
@@ -22,4 +26,6 @@ build() {
 
 	mkdir -p $PKG/usr/bin
 	install -m755 -t $PKG/usr/bin bin/*
+	install -Dm755 $SRC/monerod.conf $PKG/etc/monerod.conf
+	install -Dm755 $SRC/monerod $PKG/etc/rc.d/monerod
 }

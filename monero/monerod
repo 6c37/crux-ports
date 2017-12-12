@@ -1,15 +1,16 @@
 #!/bin/sh
 #
-# /etc/rc.d/mpd: start/stop mpd daemon
+# /etc/rc.d/monerod: start/stop monerod daemon
 #
 
 SSD=/sbin/start-stop-daemon
-PROG=/usr/bin/mpd
-PID=/var/run/mpd/mpd.pid
+PROG=/usr/bin/monerod
+PID=/var/run/monero.pid
+OPTS="--config-file /etc/monerod.conf --pidfile $PID --detach"
 
 case $1 in
 start)
-	$SSD --start --pidfile $PID --exec $PROG
+	$SSD --start --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
 	$SSD --stop --retry 10 --pidfile $PID
