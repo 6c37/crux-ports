@@ -6,7 +6,7 @@
 name=ttf-ubuntu
 version=0.83
 release=1
-source=(http://font.ubuntu.com/download/ubuntu-font-family-$version.zip)
+source=(http://ftp.halifax.rwth-aachen.de/gentoo/distfiles/ubuntu-font-family-$version.zip)
 
 build() {
 	cd ubuntu-font-family-$version
