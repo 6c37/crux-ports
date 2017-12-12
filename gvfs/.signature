@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpXcZRXSb7kjAbtIwaYjtD1G4NMEFvaBjvCH0buLlreChp9wmZBZZi5uac+VCna6KDek1oBLoEzHdpuEyt1WjHQY=
-SHA256 (Pkgfile) = 14caa41d70fcbf18b54f7ec9a8bc192f98eaf2a48cf5a27a8512def28a29b003
-SHA256 (.footprint) = 5f780ff37f17b7453b82f4e1a693ab0dc7e17a2425239601040a6f2e96cfc486
-SHA256 (gvfs-1.35.2.tar.xz) = 69fc77951e6b794469b4c918a6c86e240db52a1929f9f03fb8a5af6ea843b9eb
+RWSsZdBvSzGVpU081WXWDt1oBXfjjHFMjkViw1WgIFsEc0LPvMOsQ/QJMyazGigsjZ+vFRuc8gel62EQ4x/rV4FwvFYBc7FfLgY=
+SHA256 (Pkgfile) = 36683a6a27bf2439c01afc816fd75cb82ea33db773b3efa9235fbf1aaed3c844
+SHA256 (.footprint) = 13a1762cdec835977540f3b79426cb0271d8b206d8a270bef960fd6968fcd2f3
+SHA256 (gvfs-1.35.3.tar.xz) = 82311abde2c80f7f1346f7ea52456849e89a14e6408712c29b1d49b43e05467d
