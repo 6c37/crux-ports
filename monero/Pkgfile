@@ -1,0 +1,25 @@
+# Description: Monero: the secure, private, untraceable currency.
+# URL:         https://getmonero.org/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  boost cmake
+
+name=monero
+version=0.11.1.0
+release=1
+source=(https://github.com/$name-project/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	[ -e '/usr/lib/pkgconfig/libtls.pc' ] && PKGMK_MONERO+=' -DHAVE_LIBRESSL=1'
+
+	cmake . \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		$PKGMK_MONERO
+
+	make
+
+	mkdir -p $PKG/usr/bin
+	install -m755 -t $PKG/usr/bin bin/*
+}

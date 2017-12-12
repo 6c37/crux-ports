@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/monero-blockchain-export
+-rwxr-xr-x	root/root	usr/bin/monero-blockchain-import
+-rwxr-xr-x	root/root	usr/bin/monero-wallet-cli
+-rwxr-xr-x	root/root	usr/bin/monero-wallet-rpc
+-rwxr-xr-x	root/root	usr/bin/monerod
