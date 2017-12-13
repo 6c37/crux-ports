@@ -184,6 +184,7 @@ d:graphviz
 d:neomutt
 d:ttf-baekmuk
 d:transset-df
+d:monero
 d:neovim
 d:rust
 d:abduco
@@ -710,9 +711,9 @@ f:9ab4b7548cada302cc760606b7b3694e:xdg-user-dirs/Pkgfile
 f:32b8ba43954d88251a220bb3d38a4e58:xdg-user-dirs/.signature
 f:3c94457c55057dfec4a25ac166278ebb:xdg-user-dirs/.footprint
 f:f1da15cb94d431814639b21f57050ef9:firefox-quantum/.md5sum
-f:79dca6e32e226e49170c0b2c56fd39fa:firefox-quantum/Pkgfile
+f:da2ab24f9cb6ba12c45dbcb65cfe7b41:firefox-quantum/Pkgfile
 f:cabbfc5e71d9f6342dbb0d28f504e7b3:firefox-quantum/firefox.desktop
-f:a094b54c034e734cf1305c6b4d2d0871:firefox-quantum/.signature
+f:613463d7949da936d83c5cb95359ab11:firefox-quantum/.signature
 f:2ad8fb877389e4bc7215e42496d5b558:firefox-quantum/0002-Bug-1419426-Implement-browserSettings.contextMenuSho.patch
 f:1f3fb62cac8de06d0ec6023d5bb73692:firefox-quantum/.footprint
 f:d85262dd01433bbcffdc0432123127dc:firefox-quantum/0001-Bug-1360278-Add-preference-to-trigger-context-menu-o.patch
@@ -1074,6 +1075,12 @@ f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:5304c3fd2e8239502a0e64358c00c84f:transset-df/Pkgfile
 f:1c8c2af3d888ce30dcafa2e2a5bcff20:transset-df/.signature
 f:338de7dd9e860ab12ba3c528ba77cc79:transset-df/.footprint
+f:845a3ed220c816b5ab9c577aad14be1c:monero/.md5sum
+f:1c516b6d4057fb40e353e6476226efd3:monero/Pkgfile
+f:9ff53763831b0a11d48102e49301c9b1:monero/monerod
+f:b4523b688e426ee7036b6844325b2175:monero/.signature
+f:2e46a224b02b59e8395efd4c9d6c576c:monero/.footprint
+f:83e627d3f717f18c0a886ffe183f81e0:monero/monerod.conf
 f:2a96e24ce5ab4c0dc7b7e176805e750b:neovim/.md5sum
 f:81259671e18966be77dca4db0bda0e27:neovim/Pkgfile
 f:fc0ff2cc797d2fd13570fa39e672636d:neovim/.signature
@@ -1102,10 +1109,10 @@ f:d26ee5c16b6a18f415691032b6a47750:qt5ct/Pkgfile
 f:f70fca7c0db9b4ecf1b379e154297e65:qt5ct/README
 f:c45d92863d60f3b1609f6e87f8531959:qt5ct/.signature
 f:27b11d07763a309102eae33ed1411f32:qt5ct/.footprint
-f:ad00329a9de728fc8045a2f8d3c609ed:erlang/.md5sum
-f:baf0a14228381a7732c086f7b965e391:erlang/Pkgfile
-f:f5591e93fd40c57f9f4aa243ac671b69:erlang/.signature
-f:7c2f12e0a3e55280ebbb0adb69265cb5:erlang/.footprint
+f:3e61a4895e98ae743dd52728f2c8a1d9:erlang/.md5sum
+f:3fdbf8a11095b34a5817ab2b02ef721e:erlang/Pkgfile
+f:ca3e11ec8b2d5dad63eaf571c7d53969:erlang/.signature
+f:d194a726734001d193f7899b8b1c59a4:erlang/.footprint
 f:a84d7af928fd350026198a076a9d5dba:xmlstarlet/.md5sum
 f:1cc283c6e177a4e87d1d87eb5482ae06:xmlstarlet/Pkgfile
 f:844c87e8429021cfc5c9b81ef08aa5a3:xmlstarlet/.signature
