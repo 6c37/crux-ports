@@ -12,9 +12,9 @@ drwxr-xr-x	root/root	usr/include/libwacom-1.0/libwacom/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libwacom.a
 -rwxr-xr-x	root/root	usr/lib/libwacom.la
-lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.5.4
-lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.5.4
--rwxr-xr-x	root/root	usr/lib/libwacom.so.2.5.4
+lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.6.0
+lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.6.0
+-rwxr-xr-x	root/root	usr/lib/libwacom.so.2.6.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libwacom.pc
 drwxr-xr-x	root/root	usr/share/
@@ -54,6 +54,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-companion.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-13.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-16.tablet
+-rw-r--r--	root/root	usr/share/libwacom/dell-canvas-27.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtf-720.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dth-1152.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dth-2242.tablet
@@ -134,6 +135,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-481a.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-4822.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-4824.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-4831.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-484c.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5000.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5002.tablet
@@ -219,6 +221,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/layouts/
 -rw-r--r--	root/root	usr/share/libwacom/layouts/intuos5-s.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/mobilestudio-pro-13.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/mobilestudio-pro-16.svg
+-rw-r--r--	root/root	usr/share/libwacom/layouts/xp-pen-star03.svg
 -rw-r--r--	root/root	usr/share/libwacom/libwacom.stylus
 -rw-r--r--	root/root	usr/share/libwacom/mobilestudio-pro-13.tablet
 -rw-r--r--	root/root	usr/share/libwacom/mobilestudio-pro-16.tablet
@@ -226,3 +229,4 @@ drwxr-xr-x	root/root	usr/share/libwacom/layouts/
 -rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-m-p.tablet
 -rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-s-p.tablet
 -rw-r--r--	root/root	usr/share/libwacom/serial-wacf004.tablet
+-rw-r--r--	root/root	usr/share/libwacom/xp-pen-star03.tablet

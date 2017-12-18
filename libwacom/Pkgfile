@@ -4,9 +4,9 @@
 # Depends on:  libgudev
 
 name=libwacom
-version=0.26
+version=0.27
 release=1
-source=(https://sourceforge.net/projects/linux${name:3:5}/files/$name/$name-$version.tar.bz2)
+source=(https://sourceforge.net/projects/linuxwacom/files/$name/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
@@ -18,5 +18,5 @@ build() {
 
 	install -m755 -d $PKG/lib/udev/rules.d
 	cd tools
-	./generate-udev-rules > $PKG/lib/udev/rules.d/65-${name}.rules
+	./generate-udev-rules > $PKG/lib/udev/rules.d/65-$name.rules
 }
