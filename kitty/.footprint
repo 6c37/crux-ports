@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/borders.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/boss.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/child.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/cli.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/client.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/config.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/constants.cpython-36.pyc
@@ -27,6 +28,8 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/terminfo.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/utils.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/window.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/blit_fragment.glsl
+-rw-r--r--	root/root	usr/lib/kitty/kitty/blit_vertex.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/border_fragment.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/border_vertex.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/borders.py
@@ -34,6 +37,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/cell_fragment.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/cell_vertex.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/child.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/cli.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/client.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/config.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/constants.py
@@ -54,6 +58,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/fontconfig.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/list.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/fonts/render.py
+-rwxr-xr-x	root/root	usr/lib/kitty/kitty/glfw-x11.so
 -rw-r--r--	root/root	usr/lib/kitty/kitty/graphics_fragment.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/graphics_vertex.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/icat.py
