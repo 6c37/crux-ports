@@ -3,11 +3,11 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/neomutt
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/neomutt/
--rwxr-xr-x	root/root	usr/lib/neomutt/pgpewrap
--rwxr-xr-x	root/root	usr/lib/neomutt/pgpring
--rwxr-xr-x	root/root	usr/lib/neomutt/smime_keys
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/neomutt/
+-rwxr-xr-x	root/root	usr/libexec/neomutt/pgpewrap
+-rwxr-xr-x	root/root	usr/libexec/neomutt/pgpring
+-rwxr-xr-x	root/root	usr/libexec/neomutt/smime_keys
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/neomutt/

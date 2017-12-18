@@ -4,29 +4,22 @@
 # Depends on:  
 
 name=neomutt
-version=20171208
+version=20171215
 release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
 build () {
 	cd $name-$name-$version
 
-	./prepare \
+	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
-		--with-docdir=/usr/share/doc/$name \
-		--with-mailpath=/var/spool/mail \
-		--enable-pop \
-		--enable-imap \
-		--enable-smtp \
-		--enable-hcache \
-		--enable-sidebar \
-		--enable-compressed \
-		--with-ssl \
-		--enable-hcache \
 		--disable-nls \
-		--with-regex \
-		--with-gdbm
+		--enable-doc \
+		--docdir=/usr/share/doc/$name \
+		--with-mailpath=/var/spool/mail \
+		--ssl \
+		--gdbm
 
 	make
 	make DESTDIR=$PKG install
