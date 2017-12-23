@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpWni1WDcy1yr0eAYra6876CEnALI+C3SefIOR3Tr3KTLcZJ9j8BdQsSnf+zigtvZ8soZgO9ai1eBhI8GwMoYqwo=
-SHA256 (Pkgfile) = 0ae4d7d6b86a6f1dfbfe8dd9b6e67f7a81b90201f26246ace079e04eb7a2cf2f
+RWSsZdBvSzGVpT8VdTkswUdkinYWrHxogmCoeJBUjvOeJFHhYJOLBuSKPs+l1jf99uOVLBFIIJqqPFjXiM3j6/gTIJIXJeDNKwk=
+SHA256 (Pkgfile) = 8ea634576dba266473b3bf4ddcf69168c673538df486c8b923e0d671d8e7344e
 SHA256 (.footprint) = eeca5c45e23597e24cce00e08a35fb5e1b698fc38e5df1fc352438463b59a79a
 SHA256 (blender-2.79.tar.gz) = a9de03e769a2a4a0bf92186556896c4f4d32fd9ac4480915ae92d7f95b25c899
+SHA256 (fix-oiio-1.8.patch) = 68c97d17d74bd78e7bcc3b81d3133b4d75224ab71c25e7ac38a34d4847d517b6

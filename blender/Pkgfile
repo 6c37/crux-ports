@@ -5,11 +5,16 @@
 
 name=blender
 version=2.79
-release=2
-source=(https://download.$name.org/source/$name-$version.tar.gz)
+release=3
+source=(
+	https://download.$name.org/source/$name-$version.tar.gz
+	fix-oiio-1.8.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/fix-oiio-1.8.patch
 
 	mkdir build && cd build
 	cmake -C ../build_files/cmake/config/${name}_release.cmake ../ \
