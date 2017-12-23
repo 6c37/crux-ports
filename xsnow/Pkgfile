@@ -5,11 +5,16 @@
 
 name=xsnow
 version=1.42
-release=2
-source=(https://janswaal.home.xs4all.nl/Xsnow/$name-$version.tar.gz)
+release=3
+source=(
+	https://janswaal.home.xs4all.nl/Xsnow/$name-$version.tar.gz
+	https://raw.githubusercontent.com/ProtractorNinja/xsnow-comp-patch/master/xsnow-comp.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/xsnow-comp.patch
 
 	xmkmf
 	make
