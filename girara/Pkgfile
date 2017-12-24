@@ -4,7 +4,7 @@
 # Depends on:  gtk3
 
 name=girara
-version=0.2.7
+version=0.2.8
 release=1
 source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
 
