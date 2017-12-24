@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpXkUwjs1U6y9AW/+RgneBQbR+TeuPKWzEiEB4o2bbKqySWqCGRjUs3mn9xZmLG7S4yG3R23FXeX5Fgn89wC1kwg=
-SHA256 (Pkgfile) = 9c007474ade7b49b1bd7d028776cc2c7ff2da9e0406da064c33b9b0086fd453c
-SHA256 (.footprint) = f7914171ee0650ac9e89b881e3548f25d42bfa5bb64b0efab1af3b4e020ff942
-SHA256 (gexiv2-0.10.6.tar.xz) = 132788919667254b42c026ab39ab3c3a5be59be8575c05fa4b371ca8aed55825
+RWSsZdBvSzGVpc7kteKZ7O+nYnYccRVGaCAnMhMnh6D/QMAlj5SmbHhU4YRModQyg/fSJ1Y05R7bhXv4cX/wGtSBeCJHnWGhbQg=
+SHA256 (Pkgfile) = 85c8827a2b5059cf6c0fd3f0b658dc514426416233093b93e9e48f9488f05c07
+SHA256 (.footprint) = b3c34edca7a532d6bc2f492fe25e14d0fdcff83c77c8ae5de232925645b4f39e
+SHA256 (gexiv2-0.10.7.tar.xz) = 8bbd6dce0d558ac572385d8d726c4ba5caba1da411977806ade7f0e7bf08e3b8
