@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUaQpF/LAidGs3DgBKVecuht+5tGogjOT1Z59iVhlG3AVL8/7QjmmTxAE+xkq8AEJISs3qCSl08AyK0YPk8I3Qc=
-SHA256 (Pkgfile) = 1fd5df102c8ccb64f1d2cc446bbb24bbeaa51c7a6ba954bed8f4a4469420108f
-SHA256 (.footprint) = 90d2c00701ee36f028b388e66dd53f4b34f9fbc460bacea35ccd29d5e9aa9cf0
-SHA256 (zathura-0.3.7.tar.gz) = 22afff89f4093f22fb82188417ff9bfa9695b19a4fe894dca05b7c821b390ff0
+RWSsZdBvSzGVpQsDbxUZPrrpQbLRp4DcmOvX6MvQb/Tegtjz38zW3OAdiqrC6A1Fp+HfDVQ37f7LIKxnkwSKN0f3nOlAR1AY2wg=
+SHA256 (Pkgfile) = 3d56e4bdeec9dd92b1735158727e493050a37161502e7e6f203ea1be593ab9d4
+SHA256 (.footprint) = 44311b35184617dc1b2e85cd2205b77828f18a6d846efbe0717ee3496432e088
+SHA256 (zathura-0.3.8.tar.gz) = 46bf8558f7ff12efe11bf5d19e6e223aac97126061677199d0c3d53dfcbce537
