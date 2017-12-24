@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpbLsj8/oPC0FEt8+UXKSDHq4dh/HbzswipszVxEXLn2tzF//GXDch98e3Fv5KWv4D4pyyQw/hkU8gw1CEOsm9wM=
-SHA256 (Pkgfile) = af7ca64a287965c5c3e3f84ece6db3987daf5bee2ff0310ec61a0a0e80584668
-SHA256 (.footprint) = 44060a9c246a38a939d24d60bfdcaeb46db145585fd11d26c41e42ca012f463c
-SHA256 (boost_1_65_1.tar.bz2) = 9807a5d16566c57fd74fb522764e0b134a8bbe6b6e8967b83afefd30dcd3be81
+RWSsZdBvSzGVpRYuRf/eVFtVheHPW/4tUkPwFnvZ/jZJ/PvdaKG11//uqz19Uu3T7oV0i2iQqveRKNNoVH/LENwotyloJ8ScOQg=
+SHA256 (Pkgfile) = 3dcfe1dbfc7c4fdda5fe5737c517944eb1c4e9f8c6cc3428def2ace94e2c8410
+SHA256 (.footprint) = 886061e7830c0f89c3297cb267d90eb3400ba2a9721a1329498bc00dcdc5187e
+SHA256 (boost_1_66_0.tar.bz2) = 5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9
