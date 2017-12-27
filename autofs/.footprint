@@ -21,10 +21,8 @@ lrwxrwxrwx	root/root	usr/lib/autofs/lookup_files.so -> lookup_file.so
 -rwxr-xr-x	root/root	usr/lib/autofs/lookup_hosts.so
 -rwxr-xr-x	root/root	usr/lib/autofs/lookup_multi.so
 lrwxrwxrwx	root/root	usr/lib/autofs/lookup_nis.so -> lookup_yp.so
--rwxr-xr-x	root/root	usr/lib/autofs/lookup_nisplus.so
 -rwxr-xr-x	root/root	usr/lib/autofs/lookup_program.so
 -rwxr-xr-x	root/root	usr/lib/autofs/lookup_userhome.so
--rwxr-xr-x	root/root	usr/lib/autofs/lookup_yp.so
 -rwxr-xr-x	root/root	usr/lib/autofs/mount_afs.so
 -rwxr-xr-x	root/root	usr/lib/autofs/mount_autofs.so
 -rwxr-xr-x	root/root	usr/lib/autofs/mount_bind.so

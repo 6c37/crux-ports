@@ -4,7 +4,7 @@
 # Depends on:  libxml2
 
 name=autofs
-version=5.1.3
+version=5.1.4
 release=1
 source=(
 	https://www.kernel.org/pub/linux/daemons/$name/v5/$name-$version.tar.xz
