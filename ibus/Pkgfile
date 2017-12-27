@@ -5,14 +5,14 @@
 
 name=ibus
 version=1.5.17
-release=2
+release=3
 source=(
 	https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz
-	https://www.unicode.org/Public/emoji/6.0/emoji-data.txt
-	https://www.unicode.org/Public/emoji/6.0/emoji-sequences.txt
-	https://www.unicode.org/Public/emoji/6.0/emoji-test.txt
-	https://www.unicode.org/Public/emoji/6.0/emoji-variation-sequences.txt
-	https://www.unicode.org/Public/emoji/6.0/emoji-zwj-sequences.txt
+	https://www.unicode.org/Public/emoji/11.0/emoji-data.txt
+	https://www.unicode.org/Public/emoji/11.0/emoji-sequences.txt
+	https://www.unicode.org/Public/emoji/11.0/emoji-test.txt
+	https://www.unicode.org/Public/emoji/11.0/emoji-variation-sequences.txt
+	https://www.unicode.org/Public/emoji/11.0/emoji-zwj-sequences.txt
 	https://github.com/fujiwarat/cldr-emoji-annotation/releases/download/32.0.0_1/cldr-emoji-annotation-32.0.0_1.tar.gz
 )
 

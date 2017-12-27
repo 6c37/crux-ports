@@ -1,7 +1,7 @@
 b4c9d6e4b66027b81d077fcb8fb8e95a  cldr-emoji-annotation-32.0.0_1.tar.gz
-cf61376aa5308b3ad4216c2295b64eea  emoji-data.txt
-961dbdf23ef61e326a73c5de61cd5b32  emoji-sequences.txt
-539e6b9734bef4846e5c15213834a89f  emoji-test.txt
-eab5f3036c394f49821c2db295ddb126  emoji-variation-sequences.txt
-fee8e3ae2c9634a155c56b566d79f461  emoji-zwj-sequences.txt
+defc5bf8b09156d5d287958d9228db07  emoji-data.txt
+cee90427bb58165c0fcd1fd595c36f03  emoji-sequences.txt
+34762fb2f68ec94adbe6ba1a59958d96  emoji-test.txt
+2e40475ad5c569fbb65e0328037a85ca  emoji-variation-sequences.txt
+82ee7494b736c532735643cbeeeed55c  emoji-zwj-sequences.txt
 8bb26453d0d1fa58e56c22668aaa8786  ibus-1.5.17.tar.gz
