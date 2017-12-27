@@ -5,7 +5,7 @@
 # Optional:    atool
 
 name=nnn
-version=1.5
+version=1.6
 release=1
 source=(https://github.com/jarun/$name/archive/v$version.tar.gz)
 
