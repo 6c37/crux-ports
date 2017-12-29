@@ -5,7 +5,7 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=57.0.2
+version=57.0.3
 release=1
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
