@@ -4,7 +4,7 @@
 # Depends on:  python3 glew glfw xorg-xdpyinfo xsel glu libunistring
 
 name=kitty
-version=0.6.0
+version=0.6.1
 release=1
 source=(https://github.com/kovidgoyal/$name/archive/v$version.tar.gz)
 
