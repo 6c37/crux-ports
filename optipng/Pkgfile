@@ -4,19 +4,12 @@
 # Depends on:  
 
 name=optipng
-version=0.7.6
-release=2
-source=(
-	https://prdownloads.sourceforge.net/$name/$name-$version.tar.gz
-	optipng-0.7.6-cve-2017-1000229.patch
-	optipng-0.7.6-cve-2017-16938.patch
-)
+version=0.7.7
+release=1
+source=(https://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/optipng-0.7.6-cve-2017-1000229.patch
-	patch -p1 < $SRC/optipng-0.7.6-cve-2017-16938.patch
 
 	./configure \
 		--prefix=/usr \
