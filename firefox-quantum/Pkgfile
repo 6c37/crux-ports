@@ -1,7 +1,7 @@
 # Description: The Mozilla Firefox browser.
 # URL:         https://www.mozilla.com/firefox/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  clang alsa-lib autoconf-2.13 clang gtk gtk3 icu hunspell libevent libvpx nss rust unzip util-linux xorg-libxt zip
+# Depends on:  clang alsa-lib autoconf-2.13 clang gtk gtk3 icu hunspell libevent libvpx nss rust unzip xorg-libxt zip
 # Optional:    ffmpeg
 
 name=firefox-quantum
