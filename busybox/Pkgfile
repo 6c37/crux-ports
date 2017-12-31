@@ -5,11 +5,16 @@
 
 name=busybox
 version=1.27.2
-release=1
-source=(http://$name.net/downloads/$name-$version.tar.bz2)
+release=2
+source=(
+	http://$name.net/downloads/$name-$version.tar.bz2
+	CVE-2017-16544.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/CVE-2017-16544.patch
 
 	# https://bugs.gentoo.org/show_bug.cgi?id=310413
 	export CFLAGS+=' -fno-strict-aliasing'
