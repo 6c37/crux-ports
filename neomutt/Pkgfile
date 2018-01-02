@@ -5,7 +5,7 @@
 
 name=neomutt
 version=20171215
-release=1
+release=2
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
 build () {
@@ -14,6 +14,7 @@ build () {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
+		--libexecdir=/usr/lib \
 		--disable-nls \
 		--enable-doc \
 		--docdir=/usr/share/doc/$name \
