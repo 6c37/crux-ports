@@ -11,7 +11,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/rustdoc
 -rwxr-xr-x	root/root	usr/bin/rustfmt
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/*.so -> /usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/*.so
 -rw-r--r--	root/root	usr/lib/libarena-5b6fa4689f4569bb.so
 -rw-r--r--	root/root	usr/lib/libfmt_macros-f1ccb03e5d179741.so
 -rw-r--r--	root/root	usr/lib/libgraphviz-2a4fa2ba6ec65d1a.so
