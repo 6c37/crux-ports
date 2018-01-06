@@ -5,7 +5,7 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=57.0.3
+version=57.0.4
 release=1
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
@@ -26,9 +26,8 @@ build() {
 	# https://bugzilla.mozilla.org/show_bug.cgi?id=1419426
 	patch -p1 < $SRC/0002-Bug-1419426-Implement-browserSettings.contextMenuSho.patch
 
-	# This works around a bug in the style rust package to allow
-	# it to find the system headers for nspr and pixman
-	export BINDGEN_CFLAGS=$(pkg-config --cflags nspr pixman-1)
+	# https://users.rust-lang.org/t/psa-dealing-with-warning-unused-import-std-ascii-asciiext-in-today-s-nightly/13726
+	find servo -type f -iname '*\.rs' -print0 | xargs -0 sed -i 's/use std::ascii::AsciiExt;/#\[allow\(unused_imports\)\] use std::ascii::AsciiExt;/g'
 
 cat <<- EOF > .mozconfig
 	mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
