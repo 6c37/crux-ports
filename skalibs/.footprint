@@ -31,6 +31,7 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/functypes.h
 -rw-r--r--	root/root	usr/include/skalibs/gccattributes.h
 -rw-r--r--	root/root	usr/include/skalibs/genalloc.h
+-rw-r--r--	root/root	usr/include/skalibs/genqdyn.h
 -rw-r--r--	root/root	usr/include/skalibs/genset.h
 -rw-r--r--	root/root	usr/include/skalibs/gensetdyn.h
 -rw-r--r--	root/root	usr/include/skalibs/genwrite.h
@@ -45,6 +46,7 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/netstring.h
 -rw-r--r--	root/root	usr/include/skalibs/nonposix.h
 -rw-r--r--	root/root	usr/include/skalibs/nsig.h
+-rw-r--r--	root/root	usr/include/skalibs/posixplz.h
 -rw-r--r--	root/root	usr/include/skalibs/random.h
 -rw-r--r--	root/root	usr/include/skalibs/rc4.h
 -rw-r--r--	root/root	usr/include/skalibs/segfault.h
@@ -68,6 +70,8 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/surf.h
 -rw-r--r--	root/root	usr/include/skalibs/sysdeps.h
 -rw-r--r--	root/root	usr/include/skalibs/tai.h
+-rw-r--r--	root/root	usr/include/skalibs/textclient.h
+-rw-r--r--	root/root	usr/include/skalibs/textmessage.h
 -rw-r--r--	root/root	usr/include/skalibs/types.h
 -rw-r--r--	root/root	usr/include/skalibs/uint16.h
 -rw-r--r--	root/root	usr/include/skalibs/uint32.h
@@ -80,9 +84,9 @@ drwxr-xr-x	root/root	usr/include/skalibs/
 -rw-r--r--	root/root	usr/include/skalibs/webipc.h
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libskarnet.so -> libskarnet.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.6 -> libskarnet.so.2.6.2
-lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.6.2 -> libskarnet.so.2.6.2.0
--rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.6.2.0
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.6 -> libskarnet.so.2.6.3
+lrwxrwxrwx	root/root	usr/lib/libskarnet.so.2.6.3 -> libskarnet.so.2.6.3.0
+-rwxr-xr-x	root/root	usr/lib/libskarnet.so.2.6.3.0
 drwxr-xr-x	root/root	usr/lib/skalibs/
 -rw-r--r--	root/root	usr/lib/skalibs/libskarnet.a
 drwxr-xr-x	root/root	usr/lib/skalibs/sysdeps/
