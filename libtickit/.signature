@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpdo4/hB1MsvyK4vKDHo7FdVxjemsGTjMM8hRhU1JwDKlR8FeBHGNFphft7GzOjaPqQnVlUyasXX92pH3i6aeWwo=
-SHA256 (Pkgfile) = 1296646d0d7883b41ce79ddda199f8da2a1b6b5110f13cc59288b37ad1d4787e
-SHA256 (.footprint) = 6a9fd353352d85a787c519489119d6db3ac35a5483e394a7d9ae097909830849
-SHA256 (libtickit-0.1.tar.gz) = 4281d4d5cefa7deb5d78b4c985604ea6583ed502fedaaa4086f2142349347908
+RWSsZdBvSzGVpSahcxGaE4Mk+Ye+qexgYOZdSZYxq7wjgq5IjNTTymvVDOLhrobT7TIR7UiK0pmV104UdE0Vled4sfFJUrvcSgA=
+SHA256 (Pkgfile) = 93748b3b034f247479343b50829b4611ecc80d2c3e2658d0d179fa031a721051
+SHA256 (.footprint) = 4f5801c6fdd341784ecd6a483726f66aa67ff2c5255d4860bbc46e1f28ea37ac
+SHA256 (libtickit-0.2.tar.gz) = 88e1eaeb0fcd3a0f0bb0cac9cfdbb66a97fe358344c68024acb9b2da3bcb1320
