@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpaqjsqkyt9ABtRyqwRIQ1gn9oobcxBFTqvv5BXGgzHyMLW5rSdWaVzU8f8kMZMeOJ5minn14gNfkRz/g28BVsgM=
-SHA256 (Pkgfile) = 4ec86858e2ec535b6a6d0602ca209717a5fcadcf49b5ea56527c21bb4d96b5f0
-SHA256 (.footprint) = 524612147d9a7aeae9e33a2599b675e6ffb15da390760f69d051f55cf0c8c8b3
-SHA256 (lux-0.7.1.tar.xz) = 71d842e755c21dca5bf922fac2ce2d6adb43fec128b8fc33e7cb18576e385298
+RWSsZdBvSzGVpQkCxTavxoLxiFI5XuDy/haVK4gCuwlO50+V6FFx2zXH4Gr2ffgAFZbbY0+MnHEZFq/KY50piO1HHd10dYESKQs=
+SHA256 (Pkgfile) = f4c6defefeb1584c247184619b1b4d42d37c0c46a698399a6aaaf40ec4df7524
+SHA256 (.footprint) = f9a09cb38e015e11ddd67c5d84fe70961cbde46dbd6e3b6dfeb41f363e21605a
+SHA256 (lux-0.7.2.tar.xz) = 8b61362b499bf39ef69b4d6351eb2e92b0c4e82945bace4cf3cb1861c9e045c8

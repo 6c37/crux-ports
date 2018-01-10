@@ -4,7 +4,7 @@
 # Depends on:  git
 
 name=lux
-version=0.7.1
+version=0.7.2
 release=1
 source=(https://github.com/somasis/$name/releases/download/v$version/$name-$version.tar.xz)
 
