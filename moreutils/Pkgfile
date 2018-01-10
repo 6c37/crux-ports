@@ -4,7 +4,7 @@
 # Depends on:  docbook-xsl
 
 name=moreutils
-version=0.61
+version=0.62
 release=1
 source=(https://github.com/rtlanceroad/$name/archive/$version.tar.gz)
 
