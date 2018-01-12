@@ -4,12 +4,12 @@
 # Depends on:  cmake
 
 name=catch
-version=1.11.0
+version=1.12.0
 release=1
 source=(https://github.com/philsquared/$name/archive/v$version.tar.gz)
 
 build() {
-	cd Catch-$version
+	cd Catch2-$version
 
 	cmake . \
 		-DCMAKE_BUILD_TYPE=Release \
