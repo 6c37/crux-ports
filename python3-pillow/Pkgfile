@@ -11,7 +11,7 @@ source=(https://github.com/python-pillow/Pillow/archive/$version.tar.gz)
 build() {
 	cd Pillow-$version
 
-	sed -i '370 s|libdirs.get(platform_, None)|libdirs.get(platform_, libdirs)|' setup.py
+	sed -i '371 s|platform_|dirs|' setup.py
 
 	python3 setup.py build
 	python3 setup.py install --root=$PKG --optimize=0
