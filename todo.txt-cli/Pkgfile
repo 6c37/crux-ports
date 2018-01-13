@@ -1,0 +1,19 @@
+# Description: A simple and extensive shell script for managing your todo.txt file.
+# URL:         http://todotxt.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=todo.txt-cli
+version=2.10.0
+_commit=8ec3bab53c0aa36e18c2206bdabb4cc348695d54
+release=1
+source=(https://github.com/todotxt/$name/archive/${_commit}.tar.gz)
+
+build() {
+	cd $name-${_commit}
+
+	sed -i 's|bash_completion.d|bash-completion/completions|' Makefile
+
+	make prefix=/usr sysconfdir=/etc
+	make prefix=/usr sysconfdir=/etc DESTDIR=$PKG install
+}
