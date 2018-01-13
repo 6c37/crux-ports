@@ -2,6 +2,7 @@
 # URL:         http://log4cplus.sourceforge.net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
+# Optional:    qt5
 
 name=log4cplus
 version=1.2.0
@@ -11,8 +12,16 @@ source=(https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
 build() {
 	cd $name-$version
 
+	local QT5
+	if [ "$(pkginfo -i | grep '^qt5 ' )" ] ; then
+		QT5='--with-qt5'
+	else
+		QT5='--without-qt5'
+	fi
+
 	./configure \
 		--prefix=/usr \
+		$QT5 \
 		--with-working-locale
 
 	make
