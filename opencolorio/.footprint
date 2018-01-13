@@ -1,9 +1,11 @@
 drwxr-xr-x	root/root	usr/
+-rw-r--r--	root/root	usr/OpenColorIOConfig.cmake
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ociobakelut
 -rwxr-xr-x	root/root	usr/bin/ociocheck
--rwxr-xr-x	root/root	usr/bin/ocioconvert
--rwxr-xr-x	root/root	usr/bin/ociolutimage
+drwxr-xr-x	root/root	usr/cmake/
+-rw-r--r--	root/root	usr/cmake/OpenColorIO-relwithdebinfo.cmake
+-rw-r--r--	root/root	usr/cmake/OpenColorIO.cmake
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/OpenColorIO/
 -rw-r--r--	root/root	usr/include/OpenColorIO/OpenColorABI.h
@@ -13,10 +15,9 @@ drwxr-xr-x	root/root	usr/include/OpenColorIO/
 drwxr-xr-x	root/root	usr/include/PyOpenColorIO/
 -rw-r--r--	root/root	usr/include/PyOpenColorIO/PyOpenColorIO.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libOpenColorIO.a
 lrwxrwxrwx	root/root	usr/lib/libOpenColorIO.so -> libOpenColorIO.so.1
-lrwxrwxrwx	root/root	usr/lib/libOpenColorIO.so.1 -> libOpenColorIO.so.1.0.9
--rwxr-xr-x	root/root	usr/lib/libOpenColorIO.so.1.0.9
+lrwxrwxrwx	root/root	usr/lib/libOpenColorIO.so.1 -> libOpenColorIO.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libOpenColorIO.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/OpenColorIO.pc
 drwxr-xr-x	root/root	usr/lib/python2.7/

@@ -5,14 +5,18 @@
 # Optional:    openimageio
 
 name=opencolorio
-version=1.0.9
+version=1.1.0
 release=1
 source=(https://github.com/imageworks/OpenColorIO/archive/v$version.tar.gz)
 
 build() {
 	cd OpenColorIO-$version
 
-	cmake . -DCMAKE_INSTALL_PREFIX=/usr
+	sed -i '138 s/-Wall/-Wno-unused-function -Wno-deprecated-declarations/' CMakeLists.txt
+
+	cmake . \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DOCIO_BUILD_STATIC=OFF
 
 	make	
 	make DESTDIR=$PKG install
