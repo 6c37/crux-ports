@@ -1,7 +1,7 @@
 # Description: PulseAudio emulation for ALSA.
 # URL:         https://github.com/i-rinat/apulse
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  glib alsa-lib
+# Depends on:  glib alsa-lib cmake
 
 name=apulse
 version=0.1.10
