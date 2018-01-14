@@ -1,37 +1,32 @@
 # Description: A window manager designed for speed, usability, and consistency.
 # URL:         https://github.com/bbidulock/icewm
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxft gdk-pixbuf xorg-libxrandr xorg-libsm xorg-mkfontdir asciidoc
-# Optional:    xorg-libxinerama libsndfile fribidi
+# Depends on:  xorg-mkfontdir asciidoc
+# Optional:    gdk-pixbuf xorg-libxrandr xorg-libxinerama xorg-libsm xorg-libxft libsndfile fribidi
 
 name=icewm
-_commit=5669983c50a80ca6731fbc991d499ffa2116259e
-version=1.4.2_1
+_commit=1d4ccc5ee0ef454f15a624a7dfdcdc673fea349b
+version=1.4.2_2
 release=1
 source=(https://github.com/bbidulock/$name/archive/${_commit}.tar.gz)
 
 build() {
 	cd $name-${_commit}
 
+	local GDK
+	if [ "$(pkginfo -i | grep '^gdk-pixbuf ' )" ] ; then
+		GDK='--enable-gdk-pixbuf'
+	else
+		GDK='--disable-gdk-pixbuf'
+	fi
+
 	autoreconf -f -i -v
 
 	./configure \
-		--prefix=/usr \
 		--sysconfdir=/etc \
 		--disable-nls \
 		--disable-i18n \
-		--enable-sm \
-		--enable-shape \
-		--enable-shaped-decorations \
-		--enable-gradients \
-		--enable-xrandr \
-		--enable-xfreetype \
-		--enable-corefonts \
-		--enable-guievents \
-		--enable-silent-rules \
-		--disable-menus-gnome2 \
-		--with-x \
-		--with-icesound=ALSA,OSS
+		$GDK
 
 	make
 	make DESTDIR=$PKG install
