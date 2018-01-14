@@ -1,0 +1,26 @@
+--- a/CMakeLists.txt	2018-01-05 09:38:27.000000000 +0800
++++ b/CMakeLists.txt	2018-01-14 23:05:20.218947510 +0800
+@@ -596,7 +596,7 @@ if(TARGET OpenColorIO_STATIC)
+         set(OCIO_STATIC_COMPILE_DEFINITIONS )
+     endif()
+ endif()
+-install(EXPORT OpenColorIO DESTINATION cmake)
++install(EXPORT OpenColorIO DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/OpenColorIO)
+ file(WRITE "${CMAKE_BINARY_DIR}/OpenColorIOConfig.cmake"
+     "
+     get_filename_component(OpenColorIO_DIR \"\${CMAKE_CURRENT_LIST_FILE}\" PATH)
+@@ -608,7 +608,7 @@ file(WRITE "${CMAKE_BINARY_DIR}/OpenColo
+     
+     ## targets libraries + associated definitions
+     if(NOT TARGET OpenColorIO)
+-        include(\"\${OpenColorIO_DIR}/cmake/OpenColorIO.cmake\") ## thanks to imported target
++        include(\"\${OpenColorIO_DIR}/${CMAKE_INSTALL_LIBDIR}/cmake/OpenColorIO/OpenColorIO.cmake\") ## thanks to imported target
+         if(TARGET OpenColorIO AND NOT OpenColorIO_USE_STATIC)
+             message(STATUS \"shared target OpenColorIO : see OpenColorIO_LIBRARY\")
+             set(OpenColorIO_LIBRARY         OpenColorIO)
+@@ -646,4 +646,4 @@ file(WRITE "${CMAKE_BINARY_DIR}/OpenColo
+     message(STATUS OPENCOLORIO_FOUND=\${OPENCOLORIO_FOUND})
+     "
+ )
+-install(FILES "${CMAKE_BINARY_DIR}/OpenColorIOConfig.cmake" DESTINATION .)
++install(FILES "${CMAKE_BINARY_DIR}/OpenColorIOConfig.cmake" DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/OpenColorIO)
