@@ -1,4 +1,3 @@
 4511024cc556d0c6e7c467b6789524e2  90-nvidia-uvm.rules
-efbd37cde63d50f657d55a6f2b321142  NVIDIA-Linux-x86_64-340.104-no-compat32.run
-79671a27131da619a33eb02ed0c2c031  cr4.patch
+37c84428b64696be2b104edbc9855f57  NVIDIA-Linux-x86_64-340.106-no-compat32.run
 e09208cdee41f89ae787f86c602c69d2  kernel-4.11.patch
