@@ -4,7 +4,7 @@
 # Depends on:  xorg-libxvmc-32 nvidia-340
 
 name=nvidia-340-32
-version=340.104
+version=340.106
 release=1
 source=(https://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
