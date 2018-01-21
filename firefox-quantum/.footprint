@@ -21,7 +21,6 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/
 drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/aushelper@mozilla.org.xpi
--rw-r--r--	root/root	usr/lib/firefox/browser/features/e10srollout@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/firefox@getpocket.com.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/followonsearch@mozilla.com.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/formautofill@mozilla.org.xpi
@@ -61,8 +60,7 @@ lrwxrwxrwx	root/root	usr/lib/firefox/libnssckbi.so -> ../libnssckbi.so
 -rwxr-xr-x	root/root	usr/lib/firefox/pingsender
 -rw-r--r--	root/root	usr/lib/firefox/platform.ini
 -rwxr-xr-x	root/root	usr/lib/firefox/plugin-container
--rw-r--r--	root/root	usr/lib/firefox/removed-files
--rwxr-xr-x	root/root	usr/lib/firefox/run-mozilla.sh
+-rw-r--r--	root/root	usr/lib/firefox/removed-files (EMPTY)
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/firefox.desktop
