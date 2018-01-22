@@ -4,7 +4,7 @@
 # Depends on:   tesseract python3-setuptools
 
 name=py3tesseract
-version=0.1.7
+version=0.1.8
 release=1
 source=(https://files.pythonhosted.org/packages/source/p/pytesseract/pytesseract-$version.tar.gz)
 
