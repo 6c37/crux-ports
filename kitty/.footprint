@@ -16,12 +16,14 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/cli.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/client.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/config.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/config_utils.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/constants.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/icat.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/key_encoding.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/keys.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/layout.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/main.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/remote_control.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/rgb.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/session.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__pycache__/tabs.cpython-36.pyc
@@ -40,6 +42,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/cli.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/client.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/config.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/config_utils.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/constants.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/cursor_fragment.glsl
 -rw-r--r--	root/root	usr/lib/kitty/kitty/cursor_vertex.glsl
@@ -67,6 +70,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/kitty.conf
 -rw-r--r--	root/root	usr/lib/kitty/kitty/layout.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/main.py
+-rw-r--r--	root/root	usr/lib/kitty/kitty/remote_control.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/rgb.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/session.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/tabs.py
