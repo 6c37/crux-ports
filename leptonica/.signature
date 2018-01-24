@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpSuRZDOwQA2xdae/5lzFunTmJuuirQX4gbApDJ2fwfOysAjRJ/aI+quDcfYn0RiUiGC7CcLP1cM55gVtA9qEKgY=
-SHA256 (Pkgfile) = bca639760cd9dc0927c360b299a9283907da8c2f20d16440a6db7eca2f3ebf48
-SHA256 (.footprint) = 5adf44f9ba1e2d4449bdca66eee24e0286fc587d78ba799eeabda9512ecdb50e
-SHA256 (leptonica-1.74.4.tar.gz) = 29c35426a416bf454413c6fec24c24a0b633e26144a17e98351b6dffaa4a833b
+RWSsZdBvSzGVpf6TYEfV3HPraWb7EC2d1vO4zrGm+iB3lKH6Zina/zrBjPAGFFf8Xi3PBoIVd+O7f1ncaiLDQb50ullz89JoXwY=
+SHA256 (Pkgfile) = 88e4dade1ff11c81ab1e0ff385867ac6d77a053748da2d3add1eb730abdabac0
+SHA256 (.footprint) = 982541c514f887c977fb98880264216402f8fb02d39ff213aa76a15f60832e79
+SHA256 (leptonica-1.75.0.tar.gz) = def1a40e30f69fd3c80d9063bdd69fa50451d45e773b8609cffce7d42f287652
