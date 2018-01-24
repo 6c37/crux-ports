@@ -1,0 +1,2 @@
+To make ALSA audio work set the following value in about:config:
+security.sandbox.content.syscall_whitelist 16

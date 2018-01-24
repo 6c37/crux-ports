@@ -6,10 +6,11 @@
 
 name=firefox-quantum
 version=58.0
-release=1
+release=2
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
 	firefox-install-dir.patch
+	no-crmf.patch
 	firefox.desktop
 )
 
@@ -17,6 +18,9 @@ build() {
 	cd firefox-$version
 
 	patch -p1 < $SRC/firefox-install-dir.patch
+
+	# https://bugzilla.mozilla.org/show_bug.cgi?id=1371991
+	patch -p1 < $SRC/no-crmf.patch
 
 cat <<- EOF > .mozconfig
 	mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
@@ -61,10 +65,6 @@ cat <<- EOF > .mozconfig
 	ac_add_options --disable-necko-wifi
 	ac_add_options --disable-pulseaudio
 EOF
-
-	# This works around a bug in the style rust package to allow
-	# it to find the system headers for nspr and pixman
-	export BINDGEN_CFLAGS=$(pkg-config --cflags nspr pixman-1)
 
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach build
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach buildsymbols
