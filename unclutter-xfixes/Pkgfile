@@ -1,0 +1,16 @@
+# Description: A rewrite of unclutter using the x11-xfixes extension.
+# URL:         https://github.com/Airblader/unclutter-xfixes
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg-libxi libev asciidoc
+
+name=unclutter-xfixes
+version=1.3
+release=1
+source=(https://github.com/Airblader/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make all
+	make DESTDIR=$PKG install
+}
