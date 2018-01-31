@@ -5,8 +5,8 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=58.0
-release=2
+version=58.0.1
+release=1
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
 	firefox-install-dir.patch
