@@ -5,7 +5,7 @@
 # Optional:    qt5
 
 name=log4cplus
-version=1.2.0
+version=1.2.1
 release=1
 source=(https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
 

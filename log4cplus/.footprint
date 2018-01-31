@@ -80,9 +80,13 @@ drwxr-xr-x	root/root	usr/include/log4cplus/thread/impl/
 -rw-r--r--	root/root	usr/include/log4cplus/win32consoleappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/win32debugappender.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/liblog4cplus-1.2.so.5 -> liblog4cplus-1.2.so.5.1.4
--rwxr-xr-x	root/root	usr/lib/liblog4cplus-1.2.so.5.1.4
+lrwxrwxrwx	root/root	usr/lib/liblog4cplus-1.2.so.5 -> liblog4cplus-1.2.so.5.1.6
+-rwxr-xr-x	root/root	usr/lib/liblog4cplus-1.2.so.5.1.6
 -rwxr-xr-x	root/root	usr/lib/liblog4cplus.la
-lrwxrwxrwx	root/root	usr/lib/liblog4cplus.so -> liblog4cplus-1.2.so.5.1.4
+lrwxrwxrwx	root/root	usr/lib/liblog4cplus.so -> liblog4cplus-1.2.so.5.1.6
+lrwxrwxrwx	root/root	usr/lib/liblog4cplusqt5debugappender-1.2.so.5 -> liblog4cplusqt5debugappender-1.2.so.5.1.6
+-rwxr-xr-x	root/root	usr/lib/liblog4cplusqt5debugappender-1.2.so.5.1.6
+-rwxr-xr-x	root/root	usr/lib/liblog4cplusqt5debugappender.la
+lrwxrwxrwx	root/root	usr/lib/liblog4cplusqt5debugappender.so -> liblog4cplusqt5debugappender-1.2.so.5.1.6
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/log4cplus.pc
