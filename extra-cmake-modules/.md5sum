@@ -1,1 +1,3 @@
+bd9f20fc8267e5a6ccb382ce8bbf2b3e  0001-Make-sure-to-search-for-Qt5-based-qmlplugindump.patch
+1fedc1525ce4dcbadee4f26df3db7b84  0002-FindQtWaylandScanner.cmake-Use-qmake-query-for-HINT.patch
 4a193474526e10f2e9b365ae7033b036  extra-cmake-modules-5.42.0.tar.xz
