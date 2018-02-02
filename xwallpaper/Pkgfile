@@ -1,0 +1,19 @@
+# Description: A wallpaper setting utility for X.
+# URL:         https://github.com/stoeckmann/xwallpaper
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libseccomp libjpeg-turbo libpng xorg-libxpm
+
+name=xwallpaper
+version=0.3.0
+release=1
+source=(https://github.com/stoeckmann/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./autogen.sh
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
