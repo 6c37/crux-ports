@@ -2,7 +2,7 @@
 # URL:         https://www.musicpd.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost libid3tag libmpdclient glib ffmpeg
-# Optional:    flac sndio
+# Optional:    flac sndio libcdio
 
 name=mpd
 version=0.20.15

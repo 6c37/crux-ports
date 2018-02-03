@@ -1,2 +1,8 @@
 Make sure to run the pre-install, and to fix you music directory
 in /ect/mpd.conf.
+
+Optional dependencies enrich mpd's features, and we leave choices
+for end users:
+To enable FLAC support, append "--enable-flac" option;
+To enable sndio plugin, append "--enable-sndio" option;
+To enable libiso9660 archive plugin, append "--enable-iso9660" option.
