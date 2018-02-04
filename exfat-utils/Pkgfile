@@ -4,14 +4,14 @@
 # Depends on:  fuse
 
 name=exfat-utils
-version=1.2.7
+version=1.2.8
 release=1
 source=(https://github.com/relan/${name%-utils}/archive/v$version.tar.gz)
 
 build() {
 	cd ${name%-utils}-$version
 
-	autoreconf -i
+	autoreconf -fiv
 	./configure --prefix=/usr
 
 	make
