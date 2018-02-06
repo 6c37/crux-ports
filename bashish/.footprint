@@ -4,6 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bashishtheme
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bashish/
+-rw-r--r--	root/root	usr/share/bashish/bashish-version
 drwxr-xr-x	root/root	usr/share/bashish/defaults/
 -rw-r--r--	root/root	usr/share/bashish/defaults/gnome-terminal.png
 -rwxr-xr-x	root/root	usr/share/bashish/defaults/prompt.csh
