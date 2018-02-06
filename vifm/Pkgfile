@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=vifm
-version=0.9
+version=0.9.1
 release=1
 source=(https://github.com/$name/$name/archive/v$version.tar.gz)
 
@@ -12,8 +12,7 @@ build() {
 	cd $name-$version
 
 	./configure \
-		--prefix=/usr \
-		--disable-nls
+		--prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
