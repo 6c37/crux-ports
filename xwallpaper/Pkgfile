@@ -5,14 +5,16 @@
 
 name=xwallpaper
 version=0.3.0
-release=1
+release=2
 source=(https://github.com/stoeckmann/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
 	./autogen.sh
-	./configure --prefix=/usr
+	./configure \
+		--prefix=/usr \
+		--with-zshcompletiondir=/usr/share/zsh/site-functions
 
 	make
 	make DESTDIR=$PKG install
