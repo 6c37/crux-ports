@@ -4,8 +4,8 @@
 # Depends on:  talloc
 
 name=proot
-_commit=ca57ca598b38a979d65bad782228505fd5649d54
-version=20180122
+_commit=886a78b5d0ecc2f632e093c1947f1f5e81a64295
+version=20180208
 release=1
 source=(https://github.com/$name-me/PRoot/archive/${_commit}.tar.gz)
 
