@@ -12,9 +12,9 @@ drwxr-xr-x	root/root	usr/include/libwacom-1.0/libwacom/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libwacom.a
 -rwxr-xr-x	root/root	usr/lib/libwacom.la
-lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.6.0
-lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.6.0
--rwxr-xr-x	root/root	usr/lib/libwacom.so.2.6.0
+lrwxrwxrwx	root/root	usr/lib/libwacom.so -> libwacom.so.2.6.1
+lrwxrwxrwx	root/root	usr/lib/libwacom.so.2 -> libwacom.so.2.6.1
+-rwxr-xr-x	root/root	usr/lib/libwacom.so.2.6.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libwacom.pc
 drwxr-xr-x	root/root	usr/share/
@@ -37,6 +37,8 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/bamboo-4fg-se-m-pt.tablet
 -rw-r--r--	root/root	usr/share/libwacom/bamboo-4fg-se-s-pt.tablet
 -rw-r--r--	root/root	usr/share/libwacom/bamboo-one.tablet
+-rw-r--r--	root/root	usr/share/libwacom/bamboo-pad-wireless.tablet
+-rw-r--r--	root/root	usr/share/libwacom/bamboo-pad.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-12wx.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-13hd.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-13hdt.tablet
@@ -54,13 +56,18 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-companion.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-13.tablet
 -rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-16.tablet
+-rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-24-p.tablet
+-rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-24-pt.tablet
+-rw-r--r--	root/root	usr/share/libwacom/cintiq-pro-32.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dell-canvas-27.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtf-720.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dth-1152.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dth-2242.tablet
+-rw-r--r--	root/root	usr/share/libwacom/dth-2452.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dti-520.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtk-1651.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtk-2241.tablet
+-rw-r--r--	root/root	usr/share/libwacom/dtk-2451.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtu-1031.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtu-1031x.tablet
 -rw-r--r--	root/root	usr/share/libwacom/dtu-1141.tablet
@@ -71,6 +78,8 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/generic.tablet
 -rw-r--r--	root/root	usr/share/libwacom/graphire-usb.tablet
 -rw-r--r--	root/root	usr/share/libwacom/graphire-wireless-8x6.tablet
+-rw-r--r--	root/root	usr/share/libwacom/graphire2-4x5.tablet
+-rw-r--r--	root/root	usr/share/libwacom/graphire2-5x7.tablet
 -rw-r--r--	root/root	usr/share/libwacom/graphire3-4x5.tablet
 -rw-r--r--	root/root	usr/share/libwacom/graphire3-6x8.tablet
 -rw-r--r--	root/root	usr/share/libwacom/graphire4-4x5.tablet
@@ -148,6 +157,14 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5044.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5048.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-504a.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-5090.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-5099.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-509d.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-50b6.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-50b8.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-50f1.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-50f8.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-5110.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-90.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-93.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-e2.tablet
@@ -172,6 +189,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/layouts/
 -rw-r--r--	root/root	usr/share/libwacom/layouts/bamboo-4fg-s-t.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/bamboo-4fg-se-m-pt.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/bamboo-4fg-se-s-pt.svg
+-rw-r--r--	root/root	usr/share/libwacom/layouts/bamboo-pad.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/cintiq-12wx.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/cintiq-13hd.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/cintiq-20wsx.svg
@@ -183,8 +201,10 @@ drwxr-xr-x	root/root	usr/share/libwacom/layouts/
 -rw-r--r--	root/root	usr/share/libwacom/layouts/cintiq-companion-hybrid.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/cintiq-companion.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/dth-2242.svg
+-rw-r--r--	root/root	usr/share/libwacom/layouts/dth-2452.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/dti-520.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/dtk-1651.svg
+-rw-r--r--	root/root	usr/share/libwacom/layouts/dtk-2451.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/dtu-1031.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/dtu-1141.svg
 -rw-r--r--	root/root	usr/share/libwacom/layouts/ek-remote.svg
@@ -227,6 +247,8 @@ drwxr-xr-x	root/root	usr/share/libwacom/layouts/
 -rw-r--r--	root/root	usr/share/libwacom/mobilestudio-pro-16.tablet
 -rw-r--r--	root/root	usr/share/libwacom/n-trig-pen.tablet
 -rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-m-p.tablet
+-rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-m-p2.tablet
 -rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-s-p.tablet
+-rw-r--r--	root/root	usr/share/libwacom/one-by-wacom-s-p2.tablet
 -rw-r--r--	root/root	usr/share/libwacom/serial-wacf004.tablet
 -rw-r--r--	root/root	usr/share/libwacom/xp-pen-star03.tablet
