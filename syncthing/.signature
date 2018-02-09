@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpWHC2X9TlyO+NvXpPIIvTlrMG0JrYaQRy7MG1Liv9K3m4cpZlA6KPqxRJk2lBc0X1R5bgT0RjcvK3bmmRXsQWQk=
-SHA256 (Pkgfile) = 7f0271bff056baee0bfa431de1316b38c1c4bbe0cdfd4ef2f92b3bdce25c9a09
+RWSsZdBvSzGVpdyvHs5/B1goNMImc4yeLXfLcQtZfMbQtFtkX0KBnW2Eqicxhx+pzwr+1P8CfyS0id4Qar4zFXWd7NV/5uoaGwg=
+SHA256 (Pkgfile) = fdb0ab5f2caa0624b23149823ff9b76f91c47bf3e770de3c2fd562a28172209e
 SHA256 (.footprint) = 0f77c8ad3823acca23b30c1eb83321bfb4e4ceeb89755112b90393a7509b4b96
-SHA256 (syncthing-source-v0.14.43.tar.gz) = bb0250e0bafce690a8ce3f43f0ab8349874ac1c8f3cdc224ed5d0110099bbd9c
+SHA256 (syncthing-source-v0.14.44.tar.gz) = 2136ef7bdec305f01fd9e7bde92d904bb9215e1e6328703b12a98015b828b83b
 SHA256 (syncthingd) = 9b514d54c2126f649a97349b32fae92df6e30d0cc5059ec7e95f3af266118876
