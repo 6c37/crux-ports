@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpdDzDR1bgZzsOexrDLOP1ebsaMol/bE96SzO4tAjeMZlHvbXt29oRh76arQssHzvcpa0/3GaGPB5ynbVpQBHNA4=
-SHA256 (Pkgfile) = 5ecc8337a5b7b63d4e3f1ee37030735e404b93746958f3f4de87132cf733f436
-SHA256 (.footprint) = 67e4a03b5454d7870ddc9c08d522710207680111b9f2ba3cfa90cfb70098cec6
-SHA256 (extra-cmake-modules-5.42.0.tar.xz) = 430db21202c01e5a49f6fbaa6a0b2d7fb169857de5d16ff7a83f96acf5d086d6
-SHA256 (0001-Make-sure-to-search-for-Qt5-based-qmlplugindump.patch) = a47ec480bb08b97c018b618f310a775f77e61b42ab0913f76fced4f99a5ae34e
-SHA256 (0002-FindQtWaylandScanner.cmake-Use-qmake-query-for-HINT.patch) = e9a205bdea457074f6d5936840e705886eb3b1ca0e50b842bb58850ef2163e6d
+RWSsZdBvSzGVpVnIKufoJ0ibbPg64L+uLvKZFeIcfO9mM3diFpJAFFxEDcKmawhE/xkaEe98jf+Eh37pOoty3VXhSA1yPdKsHAA=
+SHA256 (Pkgfile) = 795d5a8e7b5e712df70dfff3efb772b5846437097e5d805ed22bd537cd26d64b
+SHA256 (.footprint) = d576e517ebaad068996ea68268e98795db8d455079c7fec4769063d383ea1e41
+SHA256 (extra-cmake-modules-5.43.0.tar.xz) = 5757a5ddceede5321b58345a8dbf953c2282487bf9c24ae477efde800b94fffd
