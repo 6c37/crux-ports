@@ -5,7 +5,7 @@
 
 name=libwacom
 version=0.28
-release=1
+release=2
 source=(https://sourceforge.net/projects/linuxwacom/files/$name/$name-$version.tar.bz2)
 
 build() {
@@ -19,4 +19,6 @@ build() {
 	install -m755 -d $PKG/lib/udev/rules.d
 	cd tools
 	./generate-udev-rules > $PKG/lib/udev/rules.d/65-$name.rules
+
+	sed '/failed/d' -i $PKG/lib/udev/rules.d/65-$name.rules
 }
