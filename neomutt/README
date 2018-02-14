@@ -1,0 +1,3 @@
+If you don't want to build documemtaion, you must have docbook-xsl installed 
+first. After that, remove '--docdir=/usr/share/doc/$name' and change 
+'--enable-doc' to '--disable-doc' in the Pkgfile.
