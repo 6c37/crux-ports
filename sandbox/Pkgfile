@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=sandbox
-version=2.12
+version=2.13
 release=1
 source=(https://dev.gentoo.org/~mgorny/dist/$name-$version.tar.xz)
 
