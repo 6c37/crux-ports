@@ -5,11 +5,28 @@
 
 name=sox
 version=14.4.2
-release=3
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+release=4
+source=(
+	https://downloads.sourceforge.net/$name/$name-$version.tar.bz2
+	CVE-2017-15371.patch
+	CVE-2017-11358.patch
+	CVE-2017-15370.patch
+	CVE-2017-11332.patch
+	CVE-2017-11359.patch
+	CVE-2017-15372.patch
+	CVE-2017-15642.patch
+)
 
 build() {
 	cd $name-$version
+
+	patch -p1 < $SRC/CVE-2017-15371.patch
+	patch -p1 < $SRC/CVE-2017-11358.patch
+	patch -p1 < $SRC/CVE-2017-15370.patch
+	patch -p1 < $SRC/CVE-2017-11332.patch
+	patch -p1 < $SRC/CVE-2017-11359.patch
+	patch -p1 < $SRC/CVE-2017-15372.patch
+	patch -p1 < $SRC/CVE-2017-15642.patch
 
 	./configure \
 		--prefix=/usr \
