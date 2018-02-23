@@ -5,7 +5,7 @@
 # Optional:    portaudio
 
 name=hatari
-version=2.0.0
+version=2.1.0
 release=1
 source=(https://download.tuxfamily.org/$name/$version/$name-$version.tar.bz2)
 
@@ -17,5 +17,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/share/$name/${name}ui/{README,TODO}
+	rm -f $PKG/usr/share/$name/hatariui/{README,TODO}
 }
