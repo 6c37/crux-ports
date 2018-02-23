@@ -8,7 +8,7 @@ version=2.2.5
 release=1
 source=(
 	https://github.com/QupZilla/$name/archive/v$version.tar.gz
-	plugins-80fea7d.zip
+	plugins-8ff5538.zip
 )
 
 build() {
