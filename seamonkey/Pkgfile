@@ -1,12 +1,12 @@
 # Description: The Mozilla internet suite.
 # URL:         https://www.seamonkey-project.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  nss libidl gtk3 unzip zip libevent libvpx icu hunspell autoconf-2.13
+# Depends on:  nss libidl gtk3 unzip zip libevent libvpx icu hunspell autoconf-2.13 xorg-libxt
 # Optional:    ffmpeg
 
 name=seamonkey
-version=2.49.1
-release=3
+version=2.49.2
+release=1
 source=(https://archive.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz)
 
 build() {
