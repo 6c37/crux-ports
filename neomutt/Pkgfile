@@ -1,24 +1,23 @@
 # Description: Powerful text-based mail client with all the best feature patches.
 # URL:         https://www.neomutt.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  
-# Optional:    docbook-xsl
+# Depends on:  docbook-xsl
 
 name=neomutt
-version=20171215
-release=2
+version=20180223
+release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
 build () {
 	cd $name-$name-$version
+
+	sed 's/public/PUBLIC/' -i auto.def
 
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--libexecdir=/usr/lib \
 		--disable-nls \
-		--enable-doc \
-		--docdir=/usr/share/doc/$name \
 		--with-mailpath=/var/spool/mail \
 		--ssl \
 		--gdbm

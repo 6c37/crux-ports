@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpWUQqgkVZJK7iiW35VRnO1tJgZgnsPB5/omQW9ZjkQAcbiKnyD5GXSadbwxT48ZvhZ0ypYeiIoAu6xZWme9vHAE=
-SHA256 (Pkgfile) = 3083186a9faef915527ef3aeb5181a7652aed9a508b97e11e241ce16f933b113
+RWSsZdBvSzGVpXjjwJhmvYwUz8dvedNvnTKpFO/OU+uTgkCkTFsErxk08OlNru21VvWEeGAX8R3EKHe3cNYQrIrBVXBXio+5Ew4=
+SHA256 (Pkgfile) = bdd090ba4e91a6bc58c457a6b40e681fd746ae781bb86b4522703e30f64360d1
 SHA256 (.footprint) = a263dc01f1641a318ce21b3733efed0934e7f129e179a3830cafda8f4d67d03a
-SHA256 (neomutt-20171215.tar.gz) = 7fb76e99a9f23715ad772ad8f7008c6e2db05eed344817055176c76dbd60c1b5
+SHA256 (neomutt-20180223.tar.gz) = 10ba010017cf7db6bb5ac3e2116d6defad56d34be0dceea9d70a66d8510927bb
