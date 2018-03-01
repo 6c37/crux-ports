@@ -6,6 +6,35 @@ drwxr-xr-x	root/root	usr/lib/kitty/
 -rw-r--r--	root/root	usr/lib/kitty/__main__.py
 drwxr-xr-x	root/root	usr/lib/kitty/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/__pycache__/__main__.cpython-36.pyc
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/__pycache__/__init__.cpython-36.pyc
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/tui/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/tui/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__pycache__/__init__.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__pycache__/handler.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__pycache__/loop.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__pycache__/operations.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/handler.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/loop.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/tui/operations.py
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/unicode_input/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/unicode_input/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/unicode_input/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/unicode_input/__pycache__/__init__.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/unicode_input/__pycache__/main.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/unicode_input/main.py
+-rwxr-xr-x	root/root	usr/lib/kitty/kittens/unicode_input/unicode_names.so
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/url_hints/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/url_hints/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/__pycache__/__init__.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/__pycache__/main.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/__pycache__/url_regex.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/main.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/url_hints/url_regex.py
 drwxrwxr-x	root/root	usr/lib/kitty/kitty/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/__init__.py
 drwxr-xr-x	root/root	usr/lib/kitty/kitty/__pycache__/
@@ -68,6 +97,8 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/key_encoding.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/keys.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/kitty.conf
+drwxrwxr-x	root/root	usr/lib/kitty/kitty/launcher/
+-rw-r--r--	root/root	usr/lib/kitty/kitty/launcher/kitty
 -rw-r--r--	root/root	usr/lib/kitty/kitty/layout.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/main.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/remote_control.py
