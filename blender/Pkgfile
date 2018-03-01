@@ -4,17 +4,12 @@
 # Depends on:  boost desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
 
 name=blender
-version=2.79
-release=3
-source=(
-	https://download.$name.org/source/$name-$version.tar.gz
-	fix-oiio-1.8.patch
-)
+version=2.79a
+release=1
+source=(https://download.$name.org/source/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 < $SRC/fix-oiio-1.8.patch
 
 	mkdir build && cd build
 	cmake -C ../build_files/cmake/config/${name}_release.cmake ../ \
