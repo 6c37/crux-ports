@@ -160,6 +160,7 @@ drwxr-xr-x	root/root	usr/share/libwacom/
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5090.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-5099.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-509d.tablet
+-rw-r--r--	root/root	usr/share/libwacom/isdv4-50b4.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-50b6.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-50b8.tablet
 -rw-r--r--	root/root	usr/share/libwacom/isdv4-50f1.tablet
