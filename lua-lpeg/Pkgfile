@@ -1,7 +1,7 @@
 # Description: Pattern-matching library for Lua.
 # URL:         http://www.inf.puc-rio.br/~roberto/lpeg
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  luajit lua51 lua52 lua
+# Depends on:  lua51 lua52 lua
 
 name=lua-lpeg
 version=1.0.1
