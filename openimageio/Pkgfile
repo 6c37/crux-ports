@@ -5,7 +5,7 @@
 # Optional:    qt4 qt5 glew ffmpeg py3boost
 
 name=openimageio
-version=1.8.8
+version=1.8.9
 release=1
 source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 
