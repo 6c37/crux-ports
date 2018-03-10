@@ -1,4 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/adb
+-rwxr-xr-x	root/root	usr/bin/dmtracedump
+-rwxr-xr-x	root/root	usr/bin/e2fsdroid
+-rwxr-xr-x	root/root	usr/bin/etc1tool
 -rwxr-xr-x	root/root	usr/bin/fastboot
+-rwxr-xr-x	root/root	usr/bin/hprog-conv

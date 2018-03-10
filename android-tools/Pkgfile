@@ -4,21 +4,19 @@
 # Depends on:
 
 name=android-tools
-version=7.0.0_p24
+version=8.1.0_r7
 release=1
 source=(
-	https://dev.alpinelinux.org/archive/$name/$name-core-${version/_p/_r}.tar.gz
-	https://dev.alpinelinux.org/archive/$name/$name-extras-${version/_p/_r}.tar.gz
-	https://dev.alpinelinux.org/archive/$name/$name-libselinux-${version/_p/_r}.tar.gz
-	https://dev.alpinelinux.org/archive/$name/$name-f2fs-tools-${version/_p/_r}.tar.gz
-	https://dev.alpinelinux.org/archive/$name/$name-safe-iop-${version/_p/_r}.tar.gz
-	https://dev.alpinelinux.org/archive/$name/$name-gtest-${version/_p/_r}.tar.gz
-	android-tools.patch
+	https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 )
 
 build() {
-	patch -p0 < $SRC/android-tools.patch
+	cd platform-tools
 
-	make
-	make DESTDIR=$PKG PREFIX=/usr install
+	install -Dm755 adb $PKG/usr/bin/adb
+	install -Dm755 dmtracedump $PKG/usr/bin/dmtracedump
+	install -Dm755 e2fsdroid $PKG/usr/bin/e2fsdroid
+	install -Dm755 etc1tool $PKG/usr/bin/etc1tool
+	install -Dm755 fastboot $PKG/usr/bin/fastboot
+	install -Dm755 hprof-conv $PKG/usr/bin/hprog-conv
 }
