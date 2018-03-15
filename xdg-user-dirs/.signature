@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpYn89Xax5JLAX5a7vfbclxo30DP+MudrPYeWN5tAI85ZP+ftl8WmnvSENRm+WcugrmNxHHC3gjMqh8ZDxa1b5Qk=
-SHA256 (Pkgfile) = 2164392f362819d9183174ff234ba5fd489167fd5634dc5011c2f0e2e7a046b2
+RWSsZdBvSzGVpStqhLE2W3GOPLwuvv+GAppa3Ar2vlKv7aNUSRkHpwN+2gUrN4TVc4VVly82AEH+gWCWeZsgAXagerbXUs5/Xg4=
+SHA256 (Pkgfile) = 544c7155a0827a96aa8f19d0e63992ab133abac778752b5a09cadba08d0c13cd
 SHA256 (.footprint) = 4a9749cde5752402dda32b7e004a13ff4a7587be047a603a73fdf6db800cfa59
-SHA256 (xdg-user-dirs-0.16.tar.gz) = 770fb42c8809d192c661585a0ee9ed9b65ebaca7532abe7dd68eca0e4962e3e6
+SHA256 (xdg-user-dirs-0.17.tar.gz) = 2a07052823788e8614925c5a19ef5b968d8db734fdee656699ea4f97d132418c
