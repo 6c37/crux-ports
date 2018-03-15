@@ -2424,7 +2424,6 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-apt.svg -> system-so
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-audio.svg -> preferences-desktop-sound.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-calculator.svg -> accessories-calculator.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-calendar.svg -> evolution-calendar.svg
--rw-r--r--	root/root	usr/share/icons/Humanity/apps/16/gnome-control-centre.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-desktop-config.svg -> paprefs.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/16/gnome-do-panel.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/16/gnome-eterm.svg -> utilities-terminal.svg
@@ -2882,7 +2881,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-audio.svg -> prefere
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-calculator.svg -> accessories-calculator.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-calendar.svg -> evolution-calendar.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-cd.svg -> ../../devices/24/media-optical.svg
--rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/gnome-control-centre.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-control-center.svg -> ../../categories/24/preferences-system.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/24/gnome-desktop-config.svg -> paprefs.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/gnome-display-properties.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/24/gnome-do-panel.svg
@@ -3216,6 +3215,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnochm.svg -> help-browser
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-app-install.svg -> synaptic.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-apt.svg -> system-software-installer.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-audio.svg -> preferences-desktop-sound.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-control-center.svg -> ../../categories/32/preferences-system.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-eterm.svg -> utilities-terminal.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-fs-blockdev.svg -> ../../devices/32/drive-harddisk.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/32/gnome-help.svg -> help-browser.svg
@@ -3430,7 +3430,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-audio.svg -> prefere
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-calculator.svg -> accessories-calculator.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-calendar.svg -> evolution-calendar.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-cd.svg -> ../../devices/48/media-optical.svg
--rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/gnome-control-centre.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-control-center.svg -> ../../categories/48/preferences-system.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-desktop-config.svg -> paprefs.svg
 -rw-r--r--	root/root	usr/share/icons/Humanity/apps/48/gnome-display-properties.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/48/gnome-eterm.svg -> utilities-terminal.svg
@@ -3709,6 +3709,7 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gksu-debian.xpm -> utiliti
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnochm.svg -> help-browser.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-app-install.svg -> synaptic.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-apt.svg -> system-software-installer.svg
+lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-control-center.svg -> ../../categories/64/preferences-system.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-eterm.svg -> utilities-terminal.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-help.svg -> help-browser.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/apps/64/gnome-info.svg -> ../../actions/64/gtk-info.svg
@@ -3795,7 +3796,6 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/applications-system.
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/configuration_section.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/documentation_section.svg -> system-help.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/gnome-applications.svg -> applications-office.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/gnome-control-center.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/gnome-devel.svg -> applications-development.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/gnome-globe.svg -> applications-internet.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/16/gnome-graphics.svg -> applications-graphics.svg
@@ -3892,7 +3892,6 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/applications-system.
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/configuration_section.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/documentation_section.svg -> system-help.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/gnome-applications.svg -> applications-office.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/gnome-control-center.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/gnome-devel.svg -> applications-development.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/gnome-globe.svg -> applications-internet.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/24/gnome-graphics.svg -> applications-graphics.svg
@@ -3958,7 +3957,6 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/applications-system.
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/configuration_section.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/documentation_section.svg -> system-help.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/gnome-applications.svg -> applications-office.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/gnome-control-center.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/gnome-devel.svg -> applications-development.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/gnome-globe.svg -> applications-internet.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/32/gnome-graphics.svg -> applications-graphics.svg
@@ -4060,7 +4058,6 @@ lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/applications-webbrow
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/configuration_section.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/documentation_section.svg -> system-help.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/gnome-applications.svg -> applications-office.svg
-lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/gnome-control-center.svg -> preferences-desktop.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/gnome-devel.svg -> applications-development.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/gnome-globe.svg -> applications-internet.svg
 lrwxrwxrwx	root/root	usr/share/icons/Humanity/categories/48/gnome-graphics.svg -> applications-graphics.svg
