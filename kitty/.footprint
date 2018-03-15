@@ -98,7 +98,7 @@ drwxr-xr-x	root/root	usr/lib/kitty/kitty/fonts/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kitty/keys.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/kitty.conf
 drwxrwxr-x	root/root	usr/lib/kitty/kitty/launcher/
--rw-r--r--	root/root	usr/lib/kitty/kitty/launcher/kitty
+-rwxrwxr-x	root/root	usr/lib/kitty/kitty/launcher/kitty
 -rw-r--r--	root/root	usr/lib/kitty/kitty/layout.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/main.py
 -rw-r--r--	root/root	usr/lib/kitty/kitty/remote_control.py
