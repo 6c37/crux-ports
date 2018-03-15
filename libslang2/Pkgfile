@@ -4,7 +4,7 @@
 # Depends on:  libpng
 
 name=libslang2
-version=2.3.1a
+version=2.3.2
 release=1
 source=(http://www.jedsoft.org/releases/${name:3:5}/${name:3:5}-$version.tar.bz2)
 
