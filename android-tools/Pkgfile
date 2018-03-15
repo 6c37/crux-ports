@@ -5,7 +5,7 @@
 
 name=android-tools
 version=8.1.0_r7
-release=1
+release=2
 source=(
 	https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 )
@@ -14,9 +14,5 @@ build() {
 	cd platform-tools
 
 	install -Dm755 adb $PKG/usr/bin/adb
-	install -Dm755 dmtracedump $PKG/usr/bin/dmtracedump
-	install -Dm755 e2fsdroid $PKG/usr/bin/e2fsdroid
-	install -Dm755 etc1tool $PKG/usr/bin/etc1tool
 	install -Dm755 fastboot $PKG/usr/bin/fastboot
-	install -Dm755 hprof-conv $PKG/usr/bin/hprog-conv
 }
