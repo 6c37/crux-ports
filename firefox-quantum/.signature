@@ -1,9 +1,8 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfhnD9yW/8K/NXSqJXeBJpRPemJJmDEvqgIC2zV2dzLisM34BRcn3legsKqBoHDSgWfHywYc90eNrV3bzD3NZQU=
-SHA256 (Pkgfile) = 10bbec9ba48f61239b703a7d3e4c2cb34c0d80912b62d4032ecd331666ec4760
+RWSsZdBvSzGVpZmfibDj4dPt/yjHfwJcclh0l2EGtdv36h6Lv9ZV7DShhaLo7zW3GzfEvehmwnMqrRcnTSKP5Vbv5M2yngjvvwE=
+SHA256 (Pkgfile) = b871ac2dba90d12d437b55d21d43a7ef00d2342bee5eab49e133ef009d9bf0d6
 SHA256 (.footprint) = 59849dd86758c5deb098168eeb2adc0958b27e34c70e914a267aec947d8f0c69
-SHA256 (firefox-58.0.2.source.tar.xz) = 2b7794e4c2a24fa388f3acb2956c96bb2c3eae455467f0e386788ebaea7240c3
-SHA256 (firefox-install-dir.patch) = 32c0102521b7296627ba457575c742746400680c3aecd18be8b1b382dccdc0ce
-SHA256 (no-crmf.patch) = c726c87d1f6d8f0ccca50e3086a6d4a77f7260db12a792e2cc78eefa51067371
-SHA256 (alsa.patch) = 29b0e502e6019abd35cb87cbdb27e2aadef1c79283c1e4f656dfdc9977b25fd8
-SHA256 (firefox.desktop) = d16fcb0c1a892916fd5d71716afc8b300847059e9f17c4c850bbe1d4edb5d5a0
+SHA256 (c61f5f5ead48c78a80c80db5c489bdc7cfaf8175.tar.bz2) = fb5ff29e2bc68fa5ebb8bd8c800b597fcb2dd5820899aef3372380c99a0acec6
+SHA256 (no-crmf.patch) = 818ab23d3e1520c544cec464abb51ac0079760361f757ad048d9f3de11d98578
+SHA256 (firefox-symbolic.svg) = 9a1a572dc88014882d54ba2d3079a1cf5b28fa03c5976ed2cb763c93dabbd797
+SHA256 (firefox.desktop) = c610e681f16778ba6035ed5d10a54c74a73f70f64187c982ef05edb2f4df4130

@@ -1,27 +1,23 @@
 # Description: The Mozilla Firefox browser.
 # URL:         https://www.mozilla.com/firefox/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  alsa-lib autoconf-2.13 clang gtk gtk3 icu hunspell libevent libvpx nss rust unzip xorg-libxt zip
+# Depends on:  alsa-lib autoconf-2.13 clang gtk gtk3 icu hunspell hyphen libevent libvpx nss rust unzip xorg-libxt zip
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=58.0.2
+version=59.0
 release=1
 source=(
-	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
-	firefox-install-dir.patch
+	#https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
+	https://hg.mozilla.org/releases/mozilla-release/archive/c61f5f5ead48c78a80c80db5c489bdc7cfaf8175.tar.bz2
 	no-crmf.patch
-	alsa.patch
+	firefox-symbolic.svg
 	firefox.desktop
 )
 
 build() {
-	cd firefox-$version
-
-	patch -p1 < $SRC/firefox-install-dir.patch
-
-	# https://bugzilla.mozilla.org/show_bug.cgi?id=1371991
-	patch -p1 < $SRC/alsa.patch
+	#cd firefox-$version
+	cd mozilla-release-c61f5f5ead48c78a80c80db5c489bdc7cfaf8175
 
 	# https://bugzilla.mozilla.org/show_bug.cgi?id=1371991
 	patch -p1 < $SRC/no-crmf.patch
@@ -31,7 +27,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --prefix=/usr
 	ac_add_options --enable-application=browser
 
-	ac_add_options --enable-optimize="-O2"
+	ac_add_options --enable-optimize="$CFLAGS"
 	ac_add_options --enable-release
 	ac_add_options --enable-gold
 	ac_add_options --enable-pie
@@ -49,16 +45,14 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
 	ac_add_options --enable-system-sqlite
-	ac_add_options --enable-system-cairo
+	#ac_add_options --enable-system-cairo
 	ac_add_options --enable-system-hunspell
-	ac_add_options --enable-alsa
 
-	ac_add_options --with-pthreads
 	ac_add_options --enable-official-branding
+	ac_add_options --enable-update-channel=release
 	ac_add_options --with-distribution-id=nu.crux
 
-	ac_add_options --enable-extensions=default,-gnomevfs
-	ac_add_options --enable-elf-hack
+	ac_add_options --enable-alsa
 
 	ac_add_options --disable-tests
 	ac_add_options --disable-dbus
@@ -74,18 +68,18 @@ EOF
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach buildsymbols
 	DESTDIR=$PKG ./mach install
 
-	for i in 16 22 24 32 48 256; do
+	for i in 16 22 24 32 48 64 128 256; do
 		install -Dm644 browser/branding/official/default$i.png $PKG/usr/share/icons/hicolor/${i}x${i}/apps/firefox.png
 	done
-
-	install -Dm 0644 browser/branding/official/content/icon64.png $PKG/usr/share/icons/hicolor/64x64/apps/firefox.png
-	install -Dm644 browser/branding/official/mozicon128.png $PKG/usr/share/icons/hicolor/128x128/apps/firefox.png
 	install -Dm644 browser/branding/official/content/about-logo.png $PKG/usr/share/icons/hicolor/192x192/apps/firefox.png
 	install -Dm644 browser/branding/official/content/about-logo@2x.png $PKG/usr/share/icons/hicolor/384x384/apps/firefox.png
+  	install -Dm644 $SRC/firefox-symbolic.svg $PKG/usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg
 	install -Dm644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
 
-	# Use system certificates
-	ln -srf $PKG/usr/lib/libnssckbi.so $PKG/usr/lib/firefox/libnssckbi.so
+	# Use system dictionaries
+	rm -r $PKG/usr/lib/firefox/dictionaries
+	ln -Ts /usr/share/hunspell $PKG/usr/lib/firefox/dictionaries
+	ln -Ts /usr/share/hyphen $PKG/usr/lib/firefox/hyphenation
 
 	install -d $PKG/etc/revdep.d
 	echo /usr/lib/firefox > $PKG/etc/revdep.d/firefox-quantum
