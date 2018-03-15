@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpXEv5MHQBfUMuTlT3rKY0cL4imfL/vbKiAe6tNcg/HOSYFDbyf5i0kfwmBQWAWBmB83UfBhTUqN3s59A8B9dvg4=
-SHA256 (Pkgfile) = 394f432cc15dd2b3c450aed6b7923ede2130f84a9dca0e1dcab8f813b4ed95f0
-SHA256 (.footprint) = 370c2dcf3bf4e828063c1db9394d357d51b8a05eba14b672b57e48f49ab0fe06
-SHA256 (humanity-icon-theme_0.6.14.tar.xz) = 0f11114d4c65043feecb2e451ab9fa10f351861e2af573cc5efd2197b02f5c9e
+RWSsZdBvSzGVpb2eIhLHoeemA2bgbHwOjfryj4eNUI1nxtLK3o5YLxmSl97zHZMY7Hm+BJeWlPSI/MpxA7Okm0Byu+6QiGsrxwc=
+SHA256 (Pkgfile) = 684fb1ee7c7cdb00ef3048451a664c6c070d7db21032ab495da225922cafdc3d
+SHA256 (.footprint) = 1277ad54b1b2a5bf3a0a6ecbdb474a198a9fc9862ff0837255deb3e261cfde43
+SHA256 (humanity-icon-theme_0.6.15.tar.xz) = 9dbcb425c2ee2a58c70da1eda4c2c88e32e7ede4094fb59772726864c8214aa6

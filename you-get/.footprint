@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.6/
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/top_level.txt
--rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1025-py3.6.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get-0.4.1040-py3.6.egg-info/zip-safe
 drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/you_get/
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/__main__.py
@@ -114,6 +114,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycach
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/kuwo.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/le.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/lizhi.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/longzhu.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/magisto.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/metacafe.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycache__/mgtv.cpython-36.pyc
@@ -215,6 +216,7 @@ drwxr-xr-x	root/root	usr/lib/python3.6/site-packages/you_get/extractors/__pycach
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/kuwo.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/le.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/lizhi.py
+-rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/longzhu.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/magisto.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/metacafe.py
 -rw-r--r--	root/root	usr/lib/python3.6/site-packages/you_get/extractors/mgtv.py
