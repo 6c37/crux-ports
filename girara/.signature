@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpRLYe4xf0rSDVS+D/8Hc4zSMcp8AsI2OqLFdrpJsbI7CFlzXIBUae/vXHhAC1GKLyk2XiFgVRFabGyz3ohEdLQk=
-SHA256 (Pkgfile) = 8244c899f6fc0fa446a1f29f4edd69b25afe76ded9e8f89fe6eece5af822873d
-SHA256 (.footprint) = d9d2b9b0b53bd0e837677fd29ba19d7b10204699a933d069a6a6954047beb9eb
-SHA256 (girara-0.2.8.tar.gz) = 285905e35375ecbdfe418c6b7735e373d780f76a5b6c90c08db28da9f4d09aa3
+RWSsZdBvSzGVpfQ3TUUvnm22gYwNd2ExZDQKfVcoxzDMS3KrMpZDMlpLGAErAKVWSzZygw4wyM0rfifYi9zknzxpqy43a924QQc=
+SHA256 (Pkgfile) = 3796a1b7da1ad2efd929c1671585afd3aa53941b9f73e63b14f126d0d5165b2a
+SHA256 (.footprint) = dfbc2ee22a4dbcce21457279b1845d467da4c9a6a5eb6741d142bbd7e64173f9
+SHA256 (girara-0.2.9.tar.xz) = a81f3e94c71a2ff92bf52295b402ede8175f82fbad1a27f29c1c05a4accb7d52

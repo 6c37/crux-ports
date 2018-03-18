@@ -1,18 +1,19 @@
 # Description: A library that implements a user interface that focuses on simplicity and minimalism.
 # URL:         https://pwmt.org/projects/girara/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk3
+# Depends on:  meson ninja gtk3
+# Optional:    libnotify json-c
 
 name=girara
-version=0.2.8
+version=0.2.9
 release=1
-source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
+source=(https://pwmt.org/projects/$name/download/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
-	make
-	make DESTDIR=$PKG install
+	meson build --prefix=/usr
+	DESTDIR=$PKG ninja -C build install
 
 	rm -rf $PKG/usr/share
 }
