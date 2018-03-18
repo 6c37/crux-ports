@@ -2,18 +2,21 @@
 # URL:          https://pwmt.org/projects/zathura/
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   girara
-# Optional:     sqlite3 docutils
+# Optional:     check texlive libseccomp doxygen docutils
 
 name=zathura
-version=0.3.8
+version=0.3.9
 release=1
-source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
+source=(https://pwmt.org/projects/$name/download/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
-	make
-	make DESTDIR=$PKG install
+	# man page needs sphinx, not avaliable
+	sed -i '191 d' meson.build
+
+	meson build --prefix=/usr
+	DESTDIR=$PKG ninja -C build install
 
 	rm -rf $PKG/usr/share/locale
 }
