@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/weechat
 lrwxrwxrwx	root/root	usr/bin/weechat-curses -> weechat
+-rwxr-xr-x	root/root	usr/bin/weechat-headless
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/weechat/
 -rw-r--r--	root/root	usr/include/weechat/weechat-plugin.h
