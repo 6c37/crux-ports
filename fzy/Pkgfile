@@ -1,0 +1,16 @@
+# Description: A better fuzzy finder.
+# URL:         https://github.com/jhawthorn/fzy
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=fzy
+version=0.9
+release=1
+source=(https://github.com/jhawthorn/$name/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
+}
