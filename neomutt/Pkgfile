@@ -2,9 +2,10 @@
 # URL:         https://www.neomutt.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  docbook-xsl
+# Optional:    libidn
 
 name=neomutt
-version=20180223
+version=20180323
 release=1
 source=(https://github.com/$name/$name/archive/$name-$version.tar.gz)
 
@@ -18,6 +19,7 @@ build () {
 		--sysconfdir=/etc \
 		--libexecdir=/usr/lib \
 		--disable-nls \
+		--disable-idn \
 		--with-mailpath=/var/spool/mail \
 		--ssl \
 		--gdbm

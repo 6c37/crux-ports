@@ -2,3 +2,8 @@ The default option controlled by auto.def file is to build documentation
 files, which needs docbook-xsl as a build dependency. If you don't want 
 to build documentation, you can set "--disable-doc" in the Pkgfile, then 
 (re)build neomutt with ingoring footprint. 
+
+The domain internalization using GNU libidn feature is disabled by 
+default. If you want to that feature, try install libidn first, remove 
+"--disable-idn" configure flags from Pkgfile and (re)build neomutt with 
+ignoring footprint.
