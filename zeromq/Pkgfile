@@ -1,0 +1,20 @@
+# Description: The ZeroMQ messaging library and tools.
+# URL:         http://zeromq.org/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=zeromq
+version=4.2.5
+release=1
+source=(https://github.com/zeromq/$name/releases/download/v$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--with-poller=epoll
+
+	make
+	make DESTDIR=$PKG install
+}
