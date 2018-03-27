@@ -1,7 +1,8 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpcYpA+AJlKFNI3umcQHzWGGVQi8z1xzKvlqD1M+KLGxpuv9tlH28GvLiOiKzo25T6RoivhTUXmtcEN2V90vSDg8=
-SHA256 (Pkgfile) = a91d8c28ffb480b57f057ba5c196e0f2ffd66dfb0a4564d07af56d2937242667
-SHA256 (.footprint) = 3c54606dccf65aa1758f95269d3be3d80237d70ea3361931f0ae590a892d1cdd
-SHA256 (v0.11.1.0.tar.gz) = b5b48d3e5317c599e1499278580e9a6ba3afc3536f4064fcf7b20840066a509b
+RWSsZdBvSzGVpbmJ1OW+MwLRly9lVR3zXuTAJam9vzCQa39foMUEBAYnfc+fFimfqpO61qXxCPj2fH9Yd11hh/Vqfjl1PN13ZQY=
+SHA256 (Pkgfile) = f5e9362a4c3686ba25482cf8218bc70b0b793afa0caa0eff844c7d6be4c8e166
+SHA256 (.footprint) = f2b88d208114167c7980b06c4be026b6b7bae6d0e8e7620e709255d27add7ee7
+SHA256 (v0.12.0.0.tar.gz) = 5e8303900a39e296c4ebaa41d957ab9ee04e915704e1049f82a9cbd4eedc8ffb
+SHA256 (unbound-193bdc4.tar.gz) = 0ee1b7b6c5583f71ab419395b19f9ceaab1ef9305dfdd23fefb453d7bc1412f1
 SHA256 (monerod.conf) = b98eef117b788bbcc92c238823fdc7e5f231f9f02f99aa3956b7319339c9f1fe
 SHA256 (monerod) = e9ddb5d4f8d4153fd11aa00076db95ff4390bef10557a9d6171cccdef3a8c9aa
