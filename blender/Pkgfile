@@ -4,8 +4,8 @@
 # Depends on:  boost desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
 
 name=blender
-version=2.79a
-release=2
+version=2.79b
+release=1
 source=(https://download.$name.org/source/$name-$version.tar.gz)
 
 build() {
@@ -36,6 +36,6 @@ build() {
 	python3 -m compileall $PKG/usr/share/$name
 	python3 -O -m compileall $PKG/usr/share/$name
 
-	rm -rf $PKG/usr/share/{doc,$name/${version%a}/scripts/addons/cycles/license}
+	rm -rf $PKG/usr/share/{doc,$name/${version%[a-z]}/scripts/addons/cycles/license}
 	find $PKG -iname 'readme*' -delete
 }
