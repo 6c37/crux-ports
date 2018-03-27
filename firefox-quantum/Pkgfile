@@ -5,11 +5,11 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=59.0
+version=59.0.2
 release=1
 source=(
 	#https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
-	https://hg.mozilla.org/releases/mozilla-release/archive/c61f5f5ead48c78a80c80db5c489bdc7cfaf8175.tar.bz2
+	https://hg.mozilla.org/releases/mozilla-release/archive/239e434d6d2b8e1e2b697c3416d1e96d48fe98e5.tar.gz
 	no-crmf.patch
 	firefox-symbolic.svg
 	firefox.desktop
@@ -17,7 +17,7 @@ source=(
 
 build() {
 	#cd firefox-$version
-	cd mozilla-release-c61f5f5ead48c78a80c80db5c489bdc7cfaf8175
+	cd mozilla-release-239e434d6d2b8e1e2b697c3416d1e96d48fe98e5
 
 	# https://bugzilla.mozilla.org/show_bug.cgi?id=1371991
 	patch -p1 < $SRC/no-crmf.patch
