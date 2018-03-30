@@ -38,6 +38,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/s6-log
 -rwxr-xr-x	root/root	usr/bin/s6-mkfifodir
 -rwxr-xr-x	root/root	usr/bin/s6-notifyoncheck
+-rwxr-xr-x	root/root	usr/bin/s6-permafailon
 -rwxr-xr-x	root/root	usr/bin/s6-setlock
 -rwxr-xr-x	root/root	usr/bin/s6-setsid
 -rwx------	root/root	usr/bin/s6-setuidgid
@@ -47,6 +48,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/s6-sudod
 -rwxr-xr-x	root/root	usr/bin/s6-supervise
 -rwxr-xr-x	root/root	usr/bin/s6-svc
+-rwxr-xr-x	root/root	usr/bin/s6-svdt
+-rwxr-xr-x	root/root	usr/bin/s6-svdt-clear
 -rwxr-xr-x	root/root	usr/bin/s6-svlisten
 -rwxr-xr-x	root/root	usr/bin/s6-svlisten1
 -rwxr-xr-x	root/root	usr/bin/s6-svok
