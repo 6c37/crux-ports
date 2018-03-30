@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpUo1KTlZOqiypAyF4AMu0hzTYZ9BJ1aSAjjzopFf+/X5qdHYZKMWGtxvrQHWoV1eCHUQLEWdhluLeapcgtfz6Qo=
-SHA256 (Pkgfile) = d819cce48f1e8bb93aa7725f5f8c7d27b526c62c0b280df6981052d1b1a24380
-SHA256 (.footprint) = 68d4e2ae171656df227747ef1a188e9e75194dc2a773cf247c015a5759c78054
-SHA256 (skalibs-2.6.3.1.tar.gz) = 8508ca00d4e2355e9ec0ec7f4808e98b349999d6732d2f123ac53b4df5260c81
+RWSsZdBvSzGVpZ2lMGNLYyLf5IsEgFpTuFihAkLLglrbsjW0R8uxf3hWq+iFXOXcqKuKbGO/qOEa9qLLrBk98WoxUTNt9v4bLQA=
+SHA256 (Pkgfile) = 82f57b3b739612efe0ce9a2a2a8c837ff0a8aaad6ec37fec853f1e02b0d24a69
+SHA256 (.footprint) = 82350198b9ea68b1e51abf20ac86c519149b79211cc9fdb8506ee3269aff7c7e
+SHA256 (skalibs-2.6.4.0.tar.gz) = 30ac73f1e8da6387fcfa19cfe1e326a143b4d811aaf532988b280daefa56dcc7
