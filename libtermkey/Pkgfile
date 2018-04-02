@@ -4,8 +4,8 @@
 # Depends on:  unibilium
 
 name=libtermkey
-_commit=d31dbdf4a57981b757cd8c0e40503a8a9fa2bc4c
-version=20171218
+_commit=698f9e3b23a29ce03ea513cfd96a4971a288a5d9
+version=20180402
 release=1
 source=(https://github.com/neovim/$name/archive/${_commit}.tar.gz)
 
