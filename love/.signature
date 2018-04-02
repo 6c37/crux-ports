@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpSd/xEpKIoCf3S4RI+CCcijlDqme1AfXdaAE1IuInkjiGy6UN92gHivLORTkxurYMk6hM2tXtCj3JxDaulyImwM=
-SHA256 (Pkgfile) = 6865c9c0e41b921f016136e9c58772996c46279bb45c7f0fda1cc8d6cc18ab13
-SHA256 (.footprint) = 45cc6c6db8d49c254cda2a10c80b573549b8cb774d73642774ea7109fc4d987d
-SHA256 (love-0.10.2-linux-src.tar.gz) = b26b306b113158927ae12d2faadb606eb1db49ffdcd7592d6a0a3fc0af21a387
+RWSsZdBvSzGVpTj3MNt6IJAAS1hHraTVLtaDW/VgEUlZSip2mvuIFP3qxN/1+fyR1Dt5V/xvb7nVCXOzN0srSYpOYB+jjwr1rgM=
+SHA256 (Pkgfile) = 1ebe10d92449dd56bc08a7eba12589e894b7f66b49123e0e9319040fff35a391
+SHA256 (.footprint) = fc1037c83c5d06340ea91274744b31d85e7ddf3609ac233c2f250249406fc885
+SHA256 (love-11.0-linux-src.tar.gz) = d9726803b42d51811c19a83b7f8bb99258f4999f0cf4189b2c6340884ff3370b
