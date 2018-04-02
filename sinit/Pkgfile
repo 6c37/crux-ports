@@ -4,10 +4,10 @@
 # Depends on:  
 
 name=sinit
-version=1.0
-release=2
+version=1.1
+release=1
 source=(
-	https://dl.suckless.org/$name/$name-$version.tar.gz
+	https://git.suckless.org/$name/snapshot/$name-$version.tar.gz
 	config.h
 )
 
