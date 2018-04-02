@@ -10,6 +10,12 @@ drwxrwxr-x	root/root	usr/lib/kitty/kittens/
 -rw-r--r--	root/root	usr/lib/kitty/kittens/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/kitty/kittens/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kittens/__pycache__/__init__.cpython-36.pyc
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/ask/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/ask/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/ask/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/ask/__pycache__/__init__.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/ask/__pycache__/main.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/ask/main.py
 drwxrwxr-x	root/root	usr/lib/kitty/kittens/tui/
 -rw-r--r--	root/root	usr/lib/kitty/kittens/tui/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/kitty/kittens/tui/__pycache__/
