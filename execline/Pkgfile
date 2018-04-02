@@ -4,7 +4,7 @@
 # Depends on:  skalibs
 
 name=execline
-version=2.4.0.0
+version=2.5.0.0
 release=1
 source=(https://skarnet.org/software/$name/$name-$version.tar.gz)
 
@@ -15,6 +15,4 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	
-	mv $PKG/usr/bin/{import,skaimport}
 }
