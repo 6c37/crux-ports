@@ -4,7 +4,7 @@
 # Depends on:  skalibs
 
 name=execline
-version=2.3.0.4
+version=2.4.0.0
 release=1
 source=(https://skarnet.org/software/$name/$name-$version.tar.gz)
 
