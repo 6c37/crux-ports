@@ -4,13 +4,12 @@
 # Depends on:  
 
 name=todo.txt-cli
-version=2.10.0
-_commit=8ec3bab53c0aa36e18c2206bdabb4cc348695d54
+version=2.11.0
 release=1
-source=(https://github.com/todotxt/$name/archive/${_commit}.tar.gz)
+source=(https://github.com/todotxt/$name/archive/v$version.tar.gz)
 
 build() {
-	cd $name-${_commit}
+	cd $name-$version
 
 	sed -i 's|bash_completion.d|bash-completion/completions|' Makefile
 
