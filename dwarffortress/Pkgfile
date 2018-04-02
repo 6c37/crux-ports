@@ -4,10 +4,10 @@
 # Depends on:  gtk sdl_image sdl_ttf openal libsndfile glew glu
 
 name=dwarffortress
-version=0.44.07
+version=0.44.09
 release=1
 source=(
-	http://www.bay12games.com/dwarves/df_44_07_linux.tar.bz2
+	http://www.bay12games.com/dwarves/df_44_09_linux.tar.bz2
 	https://github.com/svenstaro/dwarf_fortress_unfuck/archive/$version.tar.gz
 	$name
 )
