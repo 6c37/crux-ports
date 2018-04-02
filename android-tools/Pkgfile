@@ -6,9 +6,7 @@
 name=android-tools
 version=8.1.0_r7
 release=2
-source=(
-	https://dl.google.com/android/repository/platform-tools-latest-linux.zip
-)
+source=(https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 
 build() {
 	cd platform-tools
