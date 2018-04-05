@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpfdz7xvKf557Yl3IRHedT9xXnUsO4H9pcOdFOXXoi67ado0DC0XokepE3EXpsjhCKsZhEEI/8Uk4KhHIV53qHwM=
-SHA256 (Pkgfile) = 8e1cf3fba6e8b07b76e0b14da4a14807e69bdc2636d1a3055e41cb62637febe3
-SHA256 (.footprint) = 6f89e605c1d2b07d135a3b8a89fa55bc84b687676c722c3be052baa4d5fae0a0
-SHA256 (alsa-tools-1.1.5.tar.bz2) = bc3c6567de835223ee7d69487b8c22fb395a2e8c613341b0c96e6a5f6a2bd534
+RWSsZdBvSzGVpeydLhMGPNjHpUhoxe4o5QomVe+/26iTustR+Mxe/5XSxCFielFtYDRfsDoeL5mxEs0ZPJoG3TmiBD5FDguPGgY=
+SHA256 (Pkgfile) = e85f11ac756204022cf69edcede6e891db4399527d22ddcc910d9c04bae6faa3
+SHA256 (.footprint) = 16bc16cb29073d354866316db73a9665dca0976d03271627e07c503662e1c81d
+SHA256 (alsa-tools-1.1.6.tar.bz2) = d69c4dc2fb641a974d9903e9eb78c94cb0c7ac6c45bae664f0c9d6c0a1593227
