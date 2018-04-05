@@ -4,12 +4,12 @@
 # Depends on:  cmake 
 
 name=pugixml
-version=1.8.1
+version=1.9
 release=1
 source=(https://github.com/zeux/$name/releases/download/v$version/$name-$version.tar.gz)
 
 build() {
-	cd $name-${version%.*}
+	cd $name-$version
 
 	mkdir -p build ; cd build
 
