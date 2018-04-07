@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/icehelp
 -rwxr-xr-x	root/root	usr/bin/icesh
 -rwxr-xr-x	root/root	usr/bin/icewm
--rwxr-xr-x	root/root	usr/bin/icewm-menu-fdo
 -rwxr-xr-x	root/root	usr/bin/icewm-menu-xrandr
 -rwxr-xr-x	root/root	usr/bin/icewm-session
 -rwxr-xr-x	root/root	usr/bin/icewm-set-gnomewm
@@ -18,7 +17,6 @@ drwxr-xr-x	root/root	usr/share/doc/icewm/
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-env.5.html
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-focus_mode.5.html
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-keys.5.html
--rw-r--r--	root/root	usr/share/doc/icewm/icewm-menu-fdo.1.html
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-menu.5.html
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-preferences.5.html
 -rw-r--r--	root/root	usr/share/doc/icewm/icewm-prefoverride.5.html
@@ -73,6 +71,8 @@ drwxr-xr-x	root/root	usr/share/icewm/icons/
 -rw-r--r--	root/root	usr/share/icewm/icons/java_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/java_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/kde_16x16.xpm
+-rw-r--r--	root/root	usr/share/icewm/icons/key_16x16.png
+-rw-r--r--	root/root	usr/share/icewm/icons/key_32x32.png
 -rw-r--r--	root/root	usr/share/icewm/icons/koules_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/koules_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/lock_16x16.xpm
@@ -86,6 +86,8 @@ drwxr-xr-x	root/root	usr/share/icewm/icons/
 -rw-r--r--	root/root	usr/share/icewm/icons/netscape_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/pdf_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/pdf_32x32.xpm
+-rw-r--r--	root/root	usr/share/icewm/icons/pref_16x16.png
+-rw-r--r--	root/root	usr/share/icewm/icons/pref_32x32.png
 -rw-r--r--	root/root	usr/share/icewm/icons/programs_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/programs_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/reboot_16x16.xpm
@@ -94,6 +96,8 @@ drwxr-xr-x	root/root	usr/share/icewm/icons/
 -rw-r--r--	root/root	usr/share/icewm/icons/restart_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/run_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/run_32x32.xpm
+-rw-r--r--	root/root	usr/share/icewm/icons/save_16x16.png
+-rw-r--r--	root/root	usr/share/icewm/icons/save_32x32.png
 -rw-r--r--	root/root	usr/share/icewm/icons/settings_16x16.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/settings_32x32.xpm
 -rw-r--r--	root/root	usr/share/icewm/icons/shutdown_16x16.xpm
@@ -587,7 +591,6 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/icehelp.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/icesh.1.gz
--rw-r--r--	root/root	usr/share/man/man1/icewm-menu-fdo.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/icewm-session.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/icewm-set-gnomewm.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/icewm.1.gz

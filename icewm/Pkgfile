@@ -5,8 +5,8 @@
 # Optional:    gdk-pixbuf xorg-libxrandr xorg-libxinerama xorg-libsm xorg-libxft libsndfile fribidi
 
 name=icewm
-_commit=1d4ccc5ee0ef454f15a624a7dfdcdc673fea349b
-version=1.4.2_2
+_commit=0d5bb63c383bcf6edbf81bca9cb61aa189ae9232
+version=1.4.2_3
 release=1
 source=(https://github.com/bbidulock/$name/archive/${_commit}.tar.gz)
 
