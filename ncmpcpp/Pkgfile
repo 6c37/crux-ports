@@ -4,7 +4,7 @@
 # Depends on:  libmpdclient boost taglib
 
 name=ncmpcpp
-version=0.8.1
+version=0.8.2
 release=1
 source=(http://rybczak.net/$name/stable/$name-$version.tar.bz2)
 
