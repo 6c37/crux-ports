@@ -1,27 +1,37 @@
 # Description: A userspace virtual filesystem designed to work with the I/O abstractions of gio (glib).
 # URL:         https://wiki.gnome.org/Projects/gvfs
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr
+# Depends on:  libsecret libsoup xorg-libxdamage docbook-xsl udisks2 gcr meson ninja
 
 name=gvfs
-version=1.36.1
+version=1.37.1
 release=1
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
 
-	aclocal --install
-	autoreconf -v -f -i
-
-	./configure \
+	meson build \
 		--prefix=/usr \
-		--libexecdir=/usr/lib/$name \
-		--disable-avahi \
-		--disable-bash-completion \
-		--disable-gphoto2 \
-		--disable-nls
+		--libexecdir=/usr/lib \
+		-Dsystemduserunitdir=no \
+		-Dtmpfilesdir=no -Ddnssd=no \
+		-Dafc=false \
+		-Dbluray=false \
+		-Dcdda=false \
+		-Ddnssd=false \
+		-Ddeprecated_programs=true \
+		-Dfuse=false \
+		-Dgoa=false \
+		-Dgoogle=false \
+		-Dgphoto2=false \
+		-Dlogind=false \
+		-Dman=true \
+		-Dmtp=false \
+		-Dnfs=false \
+		-Dsmb=false
 
-	make
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG ninja -C build install
+
+	rm -rf $PKG/usr/share/locale
 }
