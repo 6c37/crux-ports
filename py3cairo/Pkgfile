@@ -1,0 +1,15 @@
+# Description:  A set of python bindings for cairo.
+# URL:          https://github.com/pygobject/pycairo
+# Maintainer:   6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:   cairo python3
+
+name=py3cairo
+version=1.17.0
+release=1
+source=(https://github.com/pygobject/pycairo/releases/download/v$version/pycairo-$version.tar.gz)
+
+build() {
+	cd pycairo-$version
+
+	python3 setup.py install --root=$PKG --optimize=1
+}
