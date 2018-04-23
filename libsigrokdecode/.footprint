@@ -6,14 +6,17 @@ drwxr-xr-x	root/root	usr/include/libsigrokdecode/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libsigrokdecode.a
 -rwxr-xr-x	root/root	usr/lib/libsigrokdecode.la
-lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so -> libsigrokdecode.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so.4 -> libsigrokdecode.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libsigrokdecode.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so -> libsigrokdecode.so.4.1.0
+lrwxrwxrwx	root/root	usr/lib/libsigrokdecode.so.4 -> libsigrokdecode.so.4.1.0
+-rwxr-xr-x	root/root	usr/lib/libsigrokdecode.so.4.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsigrokdecode.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ac97/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ac97/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ac97/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ade77xx/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ade77xx/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ade77xx/lists.py
@@ -60,6 +63,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/sdcard/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/common/srdhelper/mod.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/counter/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/counter/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/counter/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/dali/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dali/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/dali/lists.py
@@ -73,6 +79,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/dmx512/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ds1307/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds1307/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds1307/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ds243x/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds243x/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds243x/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/ds28ea00/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds28ea00/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/ds28ea00/pd.py
@@ -98,6 +107,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/em4305/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/gpib/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/gpib/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/gpib/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/graycode/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/graycode/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/graycode/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/guess_bitrate/pd.py
@@ -139,6 +151,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/lm75/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/lpc/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/lpc/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/lpc/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/maple_bus/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/maple_bus/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/maple_bus/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/max7219/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/max7219/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/max7219/pd.py
@@ -158,6 +173,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/mlx90614/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/modbus/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/modbus/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/modbus/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/morse/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/morse/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/morse/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/mrf24j40/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/mrf24j40/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/mrf24j40/lists.py
@@ -192,6 +210,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/pwm/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/qi/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/qi/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/qi/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rc_encode/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rc_encode/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rc_encode/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rfm12/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rfm12/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rfm12/pd.py
@@ -204,6 +225,9 @@ drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rgb_led_ws281x/
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/rtc8564/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rtc8564/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/rtc8564/pd.py
+drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/sda2506/
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/sda2506/__init__.py
+-rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/sda2506/pd.py
 drwxr-xr-x	root/root	usr/share/libsigrokdecode/decoders/sdcard_sd/
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/sdcard_sd/__init__.py
 -rw-r--r--	root/root	usr/share/libsigrokdecode/decoders/sdcard_sd/pd.py
