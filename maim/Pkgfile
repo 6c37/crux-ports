@@ -4,7 +4,7 @@
 # Depends on:  slop freetype xorg-libxfixes xorg-libxrandr
 
 name=maim
-version=5.4.68
+version=5.5
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
@@ -13,7 +13,7 @@ build() {
 
 	cmake \
 		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_PREFIX=/usr
 		.
 
 	make
