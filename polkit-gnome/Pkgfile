@@ -5,7 +5,7 @@
 
 name=polkit-gnome
 version=0.105
-release=1
+release=2
 source=(
 	https://download.gnome.org/sources/$name/$version/$name-$version.tar.bz2
 	polkit-gnome-authentication-agent-1.desktop
@@ -14,7 +14,9 @@ source=(
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/$name
 
 	make
 	make DESTDIR=$PKG install
