@@ -53,9 +53,17 @@ drwxr-xr-x	root/root	usr/lib/gtk-2.0/2.10.0/
 drwxr-xr-x	root/root	usr/lib/gtk-2.0/2.10.0/immodules/
 -rwxr-xr-x	root/root	usr/lib/gtk-2.0/2.10.0/immodules/im-ibus.la
 -rwxr-xr-x	root/root	usr/lib/gtk-2.0/2.10.0/immodules/im-ibus.so
+drwxr-xr-x	root/root	usr/lib/gtk-3.0/
+drwxr-xr-x	root/root	usr/lib/gtk-3.0/3.0.0/
+drwxr-xr-x	root/root	usr/lib/gtk-3.0/3.0.0/immodules/
+-rwxr-xr-x	root/root	usr/lib/gtk-3.0/3.0.0/immodules/im-ibus.la
+-rwxr-xr-x	root/root	usr/lib/gtk-3.0/3.0.0/immodules/im-ibus.so
 drwxr-xr-x	root/root	usr/lib/ibus/
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-engine-simple
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-extension-gtk3
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-portal
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-ui-emojier
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-ui-gtk3
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-x11
 -rwxr-xr-x	root/root	usr/lib/libibus-1.0.la
 lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.518
@@ -175,6 +183,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ibus/interface/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/ibus-setup.desktop
+-rw-r--r--	root/root	usr/share/applications/org.freedesktop.IBus.Panel.Emojier.desktop
+-rw-r--r--	root/root	usr/share/applications/org.freedesktop.IBus.Panel.Extension.Gtk3.desktop
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ibus.bash
@@ -186,6 +196,8 @@ drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/IBus-1.0.gir
 drwxr-xr-x	root/root	usr/share/ibus/
 drwxr-xr-x	root/root	usr/share/ibus/component/
+-rw-r--r--	root/root	usr/share/ibus/component/gtkextension.xml
+-rw-r--r--	root/root	usr/share/ibus/component/gtkpanel.xml
 -rw-r--r--	root/root	usr/share/ibus/component/simple.xml
 drwxr-xr-x	root/root	usr/share/ibus/dicts/
 -rw-r--r--	root/root	usr/share/ibus/dicts/emoji-af.dict
@@ -359,3 +371,9 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/ibus-daemon.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ibus-setup.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ibus.1.gz
+drwxr-xr-x	root/root	usr/share/man/man7/
+-rw-r--r--	root/root	usr/share/man/man7/ibus-emoji.7.gz
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/ibus-1.0.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/ibus-1.0.vapi
