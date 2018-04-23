@@ -4,7 +4,7 @@
 # Depends on:  sdl_mixer sdl_image sdl_ttf sdl_sound sdl_net
 
 name=atari800
-version=3.1.0
+version=4.0.0
 release=1
 source=(https://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
 
