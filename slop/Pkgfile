@@ -4,7 +4,7 @@
 # Depends on:  xorg-libxext glm glew icu
 
 name=slop
-version=7.3.49
+version=7.4
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
