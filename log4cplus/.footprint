@@ -5,6 +5,8 @@ drwxr-xr-x	root/root	usr/include/log4cplus/
 -rw-r--r--	root/root	usr/include/log4cplus/asyncappender.h
 drwxr-xr-x	root/root	usr/include/log4cplus/boost/
 -rw-r--r--	root/root	usr/include/log4cplus/boost/deviceappender.hxx
+-rw-r--r--	root/root	usr/include/log4cplus/callbackappender.h
+-rw-r--r--	root/root	usr/include/log4cplus/clfsappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/clogger.h
 -rw-r--r--	root/root	usr/include/log4cplus/config.hxx
 drwxr-xr-x	root/root	usr/include/log4cplus/config/
@@ -22,11 +24,9 @@ drwxr-xr-x	root/root	usr/include/log4cplus/helpers/
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/fileinfo.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/lockfile.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/loglog.h
--rw-r--r--	root/root	usr/include/log4cplus/helpers/logloguser.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/pointer.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/property.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/queue.h
--rw-r--r--	root/root	usr/include/log4cplus/helpers/sleep.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/snprintf.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/socket.h
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/socketbuffer.h
@@ -35,21 +35,25 @@ drwxr-xr-x	root/root	usr/include/log4cplus/helpers/
 -rw-r--r--	root/root	usr/include/log4cplus/helpers/timehelper.h
 -rw-r--r--	root/root	usr/include/log4cplus/hierarchy.h
 -rw-r--r--	root/root	usr/include/log4cplus/hierarchylocker.h
+-rw-r--r--	root/root	usr/include/log4cplus/initializer.h
 drwxr-xr-x	root/root	usr/include/log4cplus/internal/
 -rw-r--r--	root/root	usr/include/log4cplus/internal/cygwin-win32.h
 -rw-r--r--	root/root	usr/include/log4cplus/internal/env.h
 -rw-r--r--	root/root	usr/include/log4cplus/internal/internal.h
 -rw-r--r--	root/root	usr/include/log4cplus/internal/socket.h
 -rw-r--r--	root/root	usr/include/log4cplus/layout.h
+-rw-r--r--	root/root	usr/include/log4cplus/log4cplus.h
 -rw-r--r--	root/root	usr/include/log4cplus/log4judpappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/logger.h
 -rw-r--r--	root/root	usr/include/log4cplus/loggingmacros.h
 -rw-r--r--	root/root	usr/include/log4cplus/loglevel.h
 -rw-r--r--	root/root	usr/include/log4cplus/mdc.h
+-rw-r--r--	root/root	usr/include/log4cplus/msttsappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/ndc.h
 -rw-r--r--	root/root	usr/include/log4cplus/nteventlogappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/nullappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/qt4debugappender.h
+-rw-r--r--	root/root	usr/include/log4cplus/qt5debugappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/socketappender.h
 drwxr-xr-x	root/root	usr/include/log4cplus/spi/
 -rw-r--r--	root/root	usr/include/log4cplus/spi/appenderattachable.h
@@ -67,8 +71,7 @@ drwxr-xr-x	root/root	usr/include/log4cplus/thread/
 drwxr-xr-x	root/root	usr/include/log4cplus/thread/impl/
 -rw-r--r--	root/root	usr/include/log4cplus/thread/impl/syncprims-cxx11.h
 -rw-r--r--	root/root	usr/include/log4cplus/thread/impl/syncprims-impl.h
--rw-r--r--	root/root	usr/include/log4cplus/thread/impl/syncprims-pthreads.h
--rw-r--r--	root/root	usr/include/log4cplus/thread/impl/syncprims-win32.h
+-rw-r--r--	root/root	usr/include/log4cplus/thread/impl/syncprims-pmsm.h
 -rw-r--r--	root/root	usr/include/log4cplus/thread/impl/threads-impl.h
 -rw-r--r--	root/root	usr/include/log4cplus/thread/impl/tls.h
 -rw-r--r--	root/root	usr/include/log4cplus/thread/syncprims-pub-impl.h
@@ -80,13 +83,13 @@ drwxr-xr-x	root/root	usr/include/log4cplus/thread/impl/
 -rw-r--r--	root/root	usr/include/log4cplus/win32consoleappender.h
 -rw-r--r--	root/root	usr/include/log4cplus/win32debugappender.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/liblog4cplus-1.2.so.5 -> liblog4cplus-1.2.so.5.1.6
--rwxr-xr-x	root/root	usr/lib/liblog4cplus-1.2.so.5.1.6
+lrwxrwxrwx	root/root	usr/lib/liblog4cplus-2.0.so.3 -> liblog4cplus-2.0.so.3.1.2
+-rwxr-xr-x	root/root	usr/lib/liblog4cplus-2.0.so.3.1.2
 -rwxr-xr-x	root/root	usr/lib/liblog4cplus.la
-lrwxrwxrwx	root/root	usr/lib/liblog4cplus.so -> liblog4cplus-1.2.so.5.1.6
-lrwxrwxrwx	root/root	usr/lib/liblog4cplusqt5debugappender-1.2.so.5 -> liblog4cplusqt5debugappender-1.2.so.5.1.6
--rwxr-xr-x	root/root	usr/lib/liblog4cplusqt5debugappender-1.2.so.5.1.6
--rwxr-xr-x	root/root	usr/lib/liblog4cplusqt5debugappender.la
-lrwxrwxrwx	root/root	usr/lib/liblog4cplusqt5debugappender.so -> liblog4cplusqt5debugappender-1.2.so.5.1.6
+lrwxrwxrwx	root/root	usr/lib/liblog4cplus.so -> liblog4cplus-2.0.so.3.1.2
+lrwxrwxrwx	root/root	usr/lib/liblog4cplusU-2.0.so.3 -> liblog4cplusU-2.0.so.3.1.2
+-rwxr-xr-x	root/root	usr/lib/liblog4cplusU-2.0.so.3.1.2
+-rwxr-xr-x	root/root	usr/lib/liblog4cplusU.la
+lrwxrwxrwx	root/root	usr/lib/liblog4cplusU.so -> liblog4cplusU-2.0.so.3.1.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/log4cplus.pc
