@@ -4,7 +4,7 @@
 # Depends on:  php
 
 name=composer
-version=1.6.3
+version=1.6.4
 release=1
 source=(https://getcomposer.org/download/$version/$name.phar)
 
