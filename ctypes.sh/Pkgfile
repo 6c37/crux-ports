@@ -9,6 +9,7 @@ release=1
 source=(
 	https://github.com/taviso/$name/archive/v$version.tar.gz
 	fix-typos.patch
+	9d43f1bc4958ac136786f8c3b82cd3aa50713f49.patch
 )
 
 build () {
@@ -17,6 +18,7 @@ build () {
 	sed -i 's,-D_GNU_SOURCE,-D_GNU_SOURCE $(FFI_CFLAGS),' src/Makefile.am
 
 	patch -p1 < $SRC/fix-typos.patch
+	patch -p1 < $SRC/9d43f1bc4958ac136786f8c3b82cd3aa50713f49.patch
 
 	./autogen.sh
 	./configure --prefix=/usr
