@@ -66,6 +66,7 @@ drwxr-xr-x	root/root	usr/share/ECM/modules/
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cpp.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQtDeclareLoggingCategory.h.in
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMQueryQmake.cmake
+-rw-r--r--	root/root	usr/share/ECM/modules/ECMSetupQtPluginMacroNames.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMSetupVersion.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMUninstallTarget.cmake
 -rw-r--r--	root/root	usr/share/ECM/modules/ECMUseFindModules.cmake
