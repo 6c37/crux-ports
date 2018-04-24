@@ -1,5 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libboost_python3.a
-lrwxrwxrwx	root/root	usr/lib/libboost_python3.so -> libboost_python3.so.1.66.0
--rwxr-xr-x	root/root	usr/lib/libboost_python3.so.1.66.0
+-rw-r--r--	root/root	usr/lib/libboost_python36.a
+lrwxrwxrwx	root/root	usr/lib/libboost_python36.so -> libboost_python36.so.1.67.0
+-rwxr-xr-x	root/root	usr/lib/libboost_python36.so.1.67.0
