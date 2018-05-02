@@ -4,7 +4,7 @@
 # Depends on:  go
 
 name=syncthing
-version=0.14.46
+version=0.14.47
 release=1
 source=(
 	https://github.com/$name/$name/releases/download/v$version/$name-source-v$version.tar.gz
