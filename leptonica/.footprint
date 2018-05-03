@@ -45,8 +45,8 @@ drwxr-xr-x	root/root	usr/include/leptonica/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/liblept.a
 -rwxr-xr-x	root/root	usr/lib/liblept.la
-lrwxrwxrwx	root/root	usr/lib/liblept.so -> liblept.so.5.0.2
-lrwxrwxrwx	root/root	usr/lib/liblept.so.5 -> liblept.so.5.0.2
--rwxr-xr-x	root/root	usr/lib/liblept.so.5.0.2
+lrwxrwxrwx	root/root	usr/lib/liblept.so -> liblept.so.5.0.3
+lrwxrwxrwx	root/root	usr/lib/liblept.so.5 -> liblept.so.5.0.3
+-rwxr-xr-x	root/root	usr/lib/liblept.so.5.0.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/lept.pc
