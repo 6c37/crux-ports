@@ -17,6 +17,22 @@ drwxr-xr-x	root/root	usr/lib/kitty/kittens/ask/__pycache__/
 -rw-r--r--	root/root	usr/lib/kitty/kittens/ask/__pycache__/__init__.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kittens/ask/__pycache__/main.cpython-36.pyc
 -rw-r--r--	root/root	usr/lib/kitty/kittens/ask/main.py
+drwxrwxr-x	root/root	usr/lib/kitty/kittens/diff/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/kitty/kittens/diff/__pycache__/
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/__init__.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/collect.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/config.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/git.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/main.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/__pycache__/render.cpython-36.pyc
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/collect.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/config.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/diff.conf
+-rwxr-xr-x	root/root	usr/lib/kitty/kittens/diff/diff_speedup.so
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/git.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/main.py
+-rw-r--r--	root/root	usr/lib/kitty/kittens/diff/render.py
 drwxrwxr-x	root/root	usr/lib/kitty/kittens/hints/
 -rw-r--r--	root/root	usr/lib/kitty/kittens/hints/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/kitty/kittens/hints/__pycache__/

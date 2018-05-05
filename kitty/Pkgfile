@@ -4,7 +4,7 @@
 # Depends on:  python3 glew glfw xorg-xdpyinfo xsel glu libunistring libxkbcommon
 
 name=kitty
-version=0.9.0
+version=0.9.1
 release=1
 source=(https://github.com/kovidgoyal/$name/archive/v$version.tar.gz)
 
