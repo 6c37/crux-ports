@@ -15,7 +15,7 @@ build() {
 	cp -r FreeImage FreeImagefip
 
  	export CFLAGS+=" -O3 -fPIC -fexceptions -fvisibility=hidden -DNO_LCMS"
-	export CXXFLAGS+=" -O3 -fPIC -fexceptions -fvisibility=hidden -Wno-ctor-dtor-privacy"
+	export CXXFLAGS+=" -fPIC -fexceptions -fvisibility=hidden -Wno-ctor-dtor-privacy -Wno-narrowing"
 
 	cd FreeImage
 
