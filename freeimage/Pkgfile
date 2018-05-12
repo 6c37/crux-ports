@@ -5,10 +5,13 @@
 
 name=freeimage
 version=3.17.0
-release=1
+release=2
 source=(
 	https://downloads.sourceforge.net/project/$name/Source%20Distribution/$version/FreeImage${version//./}.zip
 	gcc5.diff
+	CVE-2015-0852.patch
+	CVE-2016-5684-1.patch
+	CVE-2016-5684-2.patch
 )
 
 build() {
@@ -20,6 +23,9 @@ build() {
 	cd FreeImage
 
 	patch -p1 --binary < $SRC/gcc5.diff
+	patch -p1 < $SRC/CVE-2015-0852.patch
+	patch -p1 < $SRC/CVE-2016-5684-1.patch
+	patch -p1 < $SRC/CVE-2016-5684-2.patch
 
 	make
 	make DESTDIR=$PKG install
@@ -27,6 +33,9 @@ build() {
 	cd $SRC/FreeImagefip
 
 	patch -p1 --binary < $SRC/gcc5.diff
+	patch -p1 < $SRC/CVE-2015-0852.patch
+	patch -p1 < $SRC/CVE-2016-5684-1.patch
+	patch -p1 < $SRC/CVE-2016-5684-2.patch
 
 	make -f Makefile.fip 
 	make -f Makefile.fip DESTDIR=$PKG install
