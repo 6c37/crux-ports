@@ -1,7 +1,7 @@
 # Description: C++ binding for 0MQ.
 # URL:         http://zeromq.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  zeromq cmake
+# Depends on:  libzmq cmake
 
 name=cppzmq
 version=4.2.3
