@@ -5,11 +5,18 @@
 
 name=blender
 version=2.79b
-release=1
-source=(https://download.$name.org/source/$name-$version.tar.gz)
+release=2
+source=(
+	https://download.$name.org/source/$name-$version.tar.gz
+	ffmpeg-4.0.patch
+)
 
 build() {
 	cd $name-$version
+
+	# ffmpeg fix
+	patch -p1 <$SRC/ffmpeg-4.0.patch
+	sed -i 's/c\->me_method = ME_EPZS/\/\/c\->me_method = ME_EPZS/' source/blender/blenkernel/intern/writeffmpeg.c
 
 	mkdir build && cd build
 	cmake -C ../build_files/cmake/config/${name}_release.cmake ../ \
@@ -28,7 +35,8 @@ build() {
 		-DWITH_CYCLES_NATIVE_ONLY=ON \
 		-DWITH_CYCLES_PTEX=OFF \
 		-DWITH_SYSTEM_OPENJPEG=ON \
-		-DWITH_SYSTEM_LZO=ON
+		-DWITH_SYSTEM_LZO=ON \
+		-DWITH_LLVM=ON
 
 	make
 	make DESTDIR=$PKG install

@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpbnL7jBATNGJE4h5WbniyfBfsEeFTpb/3qzonBSYKg9IjWZGF5/bPJrRRofERjTnr7UrlkYSbrS0rw41YRXYDAk=
-SHA256 (Pkgfile) = 3e49c925d697def198c82636da83f8116628867c6da87d1a82a632b7e6a253bc
+RWSsZdBvSzGVpTJud8H5lKh0U2XMAVrBr+Wt9Fk/p49Uh8FgkCXpQng/Cf0BWfK60SXAhZnD0OqyYoCWZwXF1zGOdP79KuHmNgc=
+SHA256 (Pkgfile) = a3e6c846b20847e116b3e145ec1f75fcd1c71d80e3eaf9dd1e891d8a1c87db09
 SHA256 (.footprint) = eeca5c45e23597e24cce00e08a35fb5e1b698fc38e5df1fc352438463b59a79a
 SHA256 (blender-2.79b.tar.gz) = 4c944c304a49e68ac687ea06f5758204def049b66dc211e1cffa1857716393bc
+SHA256 (ffmpeg-4.0.patch) = 3c2d505e36b3594ccfdf74b7d5494c403b8a61cbafb1dfb2e5e3ec072d0e469c
