@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpaaZ/GK9QhGNZ0sTzRwwzfxIXlgBvNROeX7Zs1lRGUX9L2If6Czjctd4pAqu7FbRbGPnGF1ux1+/2jWiKAJHlAI=
-SHA256 (Pkgfile) = 8f78e99e2a9d358389d1af560f43a0ac7d6aa59d5d29618c42ce88eb428a8439
-SHA256 (.footprint) = 1d89f4a59d814a8d8a6b19dd9e36c6d7fc3fbdd43d257c6f2e5205e59f4cde3c
-SHA256 (zeromq-4.2.5.tar.gz) = cc9090ba35713d59bb2f7d7965f877036c49c5558ea0c290b0dcc6f2a17e489f

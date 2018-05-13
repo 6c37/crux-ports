@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/curve_keygen
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/zmq.h
+-rw-r--r--	root/root	usr/include/zmq_utils.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libzmq.a
+-rwxr-xr-x	root/root	usr/lib/libzmq.la
+lrwxrwxrwx	root/root	usr/lib/libzmq.so -> libzmq.so.5.1.5
+lrwxrwxrwx	root/root	usr/lib/libzmq.so.5 -> libzmq.so.5.1.5
+-rwxr-xr-x	root/root	usr/lib/libzmq.so.5.1.5
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libzmq.pc
