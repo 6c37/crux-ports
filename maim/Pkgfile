@@ -1,15 +1,17 @@
 # Description: Utility to take a screenshot.
 # URL:         https://github.com/naelstrof/maim
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  slop freetype xorg-libxfixes xorg-libxrandr
+# Depends on:  slop freetype xorg-libxcomposite xorg-libxrandr
 
 name=maim
-version=5.5
+version=5.5.1
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
+
+	sed -i '3 s/5.5/5.5.1/' CMakeLists.txt
 
 	cmake \
 		-DCMAKE_BUILD_TYPE=Release \
