@@ -12,12 +12,9 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/neomutt/
 -rw-r--r--	root/root	usr/share/doc/neomutt/CODE_OF_CONDUCT.md
--rw-r--r--	root/root	usr/share/doc/neomutt/COPYRIGHT
 -rw-r--r--	root/root	usr/share/doc/neomutt/ChangeLog.md
--rw-r--r--	root/root	usr/share/doc/neomutt/INSTALL
 -rw-r--r--	root/root	usr/share/doc/neomutt/LICENSE.md
 -rw-r--r--	root/root	usr/share/doc/neomutt/PGP-Notes.txt
--rw-r--r--	root/root	usr/share/doc/neomutt/README.SSL
 -rw-r--r--	root/root	usr/share/doc/neomutt/README.md
 -rw-r--r--	root/root	usr/share/doc/neomutt/advancedusage.html
 drwxr-xr-x	root/root	usr/share/doc/neomutt/colorschemes/
