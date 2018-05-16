@@ -10,15 +10,15 @@ source=(
 	https://downloads.sourceforge.net/$name/$name-$version.tar.gz
 	$name-$version-gcc43.patch
 	$name-$version-glibc210.patch
+	$name-$version-fix-segfault.patch
 )
 
 build() {
 	cd $name-$version
 
-	for i in $SRC/*.patch
-	do
-		patch -p1 < $i
-	done
+	patch -p1 < $SRC/$name-$version-gcc43.patch
+	patch -p1 < $SRC/$name-$version-glibc210.patch
+	patch -p1 < $SRC/$name-$version-fix-segfault.patch
 
 	./configure --prefix=/usr
 
