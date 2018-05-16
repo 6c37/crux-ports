@@ -1,7 +1,7 @@
 # Description: Utility to query the user for a selection and print the region to stdout.
 # URL:         https://github.com/naelstrof/slop
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxext glm glew icu
+# Depends on:  xorg-libxext glm glew glu icu
 
 name=slop
 version=7.4
