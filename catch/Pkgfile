@@ -4,7 +4,7 @@
 # Depends on:  cmake
 
 name=catch
-version=1.12.1
+version=1.12.2
 release=1
 source=(https://github.com/catchorg/Catch2/archive/v$version.tar.gz)
 
