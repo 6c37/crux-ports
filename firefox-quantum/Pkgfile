@@ -5,7 +5,7 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=60.0
+version=60.0.1
 release=1
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
@@ -17,45 +17,45 @@ build() {
 	cd firefox-$version
 
 	cat <<-EOF >.mozconfig
-	mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
-	ac_add_options --prefix=/usr
-	ac_add_options --enable-application=browser
-
-	ac_add_options --enable-optimize="$CFLAGS"
-	ac_add_options --enable-release
-	ac_add_options --enable-gold
-	ac_add_options --enable-pie
-	ac_add_options --enable-rust-simd
-
-	ac_add_options --with-system-jpeg
-	ac_add_options --with-system-zlib
-	ac_add_options --with-system-png
-	ac_add_options --with-system-libvpx
-	ac_add_options --with-system-icu
-	ac_add_options --with-system-bz2
-	ac_add_options --with-system-nspr
-	ac_add_options --with-system-libevent
-	ac_add_options --with-system-nss
-	ac_add_options --enable-system-ffi
-	ac_add_options --enable-system-pixman
-	ac_add_options --enable-system-sqlite
-	ac_add_options --enable-system-hunspell
-
-	ac_add_options --enable-official-branding
-	ac_add_options --enable-update-channel=release
-	ac_add_options --with-distribution-id=nu.crux
-
-	ac_add_options --enable-alsa
-
-	ac_add_options --disable-tests
-	ac_add_options --disable-dbus
-	ac_add_options --disable-gconf
-	ac_add_options --disable-debug
-	ac_add_options --disable-updater
-	ac_add_options --disable-crashreporter
-	ac_add_options --disable-necko-wifi
-	ac_add_options --disable-pulseaudio
-EOF
+		mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
+		ac_add_options --prefix=/usr
+		ac_add_options --enable-application=browser
+		
+		ac_add_options --enable-optimize="$CFLAGS"
+		ac_add_options --enable-release
+		ac_add_options --enable-gold
+		ac_add_options --enable-pie
+		ac_add_options --enable-rust-simd
+		
+		ac_add_options --with-system-jpeg
+		ac_add_options --with-system-zlib
+		ac_add_options --with-system-png
+		ac_add_options --with-system-libvpx
+		ac_add_options --with-system-icu
+		ac_add_options --with-system-bz2
+		ac_add_options --with-system-nspr
+		ac_add_options --with-system-libevent
+		ac_add_options --with-system-nss
+		ac_add_options --enable-system-ffi
+		ac_add_options --enable-system-pixman
+		ac_add_options --enable-system-sqlite
+		ac_add_options --enable-system-hunspell
+		
+		ac_add_options --enable-official-branding
+		ac_add_options --enable-update-channel=release
+		ac_add_options --with-distribution-id=nu.crux
+		
+		ac_add_options --enable-alsa
+		
+		ac_add_options --disable-tests
+		ac_add_options --disable-dbus
+		ac_add_options --disable-gconf
+		ac_add_options --disable-debug
+		ac_add_options --disable-updater
+		ac_add_options --disable-crashreporter
+		ac_add_options --disable-necko-wifi
+		ac_add_options --disable-pulseaudio
+	EOF
 
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach build
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach buildsymbols
