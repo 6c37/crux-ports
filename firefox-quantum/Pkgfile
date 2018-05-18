@@ -6,15 +6,19 @@
 
 name=firefox-quantum
 version=60.0.1
-release=1
+release=2
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
+	0001-Bug-1435212-Add-support-for-FFmpeg-4.0.-r-bryce.patch
 	firefox-symbolic.svg
 	firefox.desktop
 )
 
 build() {
 	cd firefox-$version
+
+	# https://bugzilla.mozilla.org/show_bug.cgi?id=1435212
+	patch -p1 <$SRC/0001-Bug-1435212-Add-support-for-FFmpeg-4.0.-r-bryce.patch
 
 	cat <<-EOF >.mozconfig
 		mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
@@ -26,6 +30,10 @@ build() {
 		ac_add_options --enable-gold
 		ac_add_options --enable-pie
 		ac_add_options --enable-rust-simd
+		
+		ac_add_options --enable-official-branding
+		ac_add_options --enable-update-channel=release
+		ac_add_options --with-distribution-id=nu.crux
 		
 		ac_add_options --with-system-jpeg
 		ac_add_options --with-system-zlib
@@ -40,11 +48,6 @@ build() {
 		ac_add_options --enable-system-pixman
 		ac_add_options --enable-system-sqlite
 		ac_add_options --enable-system-hunspell
-		
-		ac_add_options --enable-official-branding
-		ac_add_options --enable-update-channel=release
-		ac_add_options --with-distribution-id=nu.crux
-		
 		ac_add_options --enable-alsa
 		
 		ac_add_options --disable-tests
@@ -58,7 +61,6 @@ build() {
 	EOF
 
 	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach build
-	MOZ_PARALLEL_BUILD="${JOBS-1}" ./mach buildsymbols
 	DESTDIR=$PKG ./mach install
 
 	for i in 16 22 24 32 48 64 128 256; do

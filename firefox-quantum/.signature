@@ -1,7 +1,8 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpQd61u66HC3BPpj94CqrcgfZckhtyrHBU5VdAtEJ1FSjQ56l5KsDfjQqABKjBj6+CuxcCFKH1l6FmeFqVhXw0Qs=
-SHA256 (Pkgfile) = 3647adc4afe88be860b81314c21870525a57c5ee2025d08f81d7f0f6d5eb7637
+RWSsZdBvSzGVpa+E79RJXRUDFWDcq74w6dhzCTy+C6Bmh/2VqiGW3SpxqlWGmQLQfB3/Rpt+zzZJ0WmQrzJ33GxAFq4Xklz+hwQ=
+SHA256 (Pkgfile) = af284ab462df0c6fb219d329e1329ac67f25a2ad5ab77d2fb7703294e7ea53d6
 SHA256 (.footprint) = 062ab0fd03d3f48d26cb5e20d301cba2e70237226a34e2abd76099dbac94dc3c
 SHA256 (firefox-60.0.1.source.tar.xz) = c8e621c7dfccbef14cce41a6847b83bee15b5276cd0c35771c3874e464e6a662
+SHA256 (0001-Bug-1435212-Add-support-for-FFmpeg-4.0.-r-bryce.patch) = 81ed8187ad0bc7d751d0bc4b48f57c3855905ca21a060390383c9c9f98b55dba
 SHA256 (firefox-symbolic.svg) = 9a1a572dc88014882d54ba2d3079a1cf5b28fa03c5976ed2cb763c93dabbd797
 SHA256 (firefox.desktop) = c610e681f16778ba6035ed5d10a54c74a73f70f64187c982ef05edb2f4df4130
