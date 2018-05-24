@@ -1,14 +1,14 @@
 # Description: Monero: the secure, private, untraceable currency.
 # URL:         https://getmonero.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boost cppzmq
+# Depends on:  boost cppzmq libunboud
 
 name=monero
-version=0.12.0.0
+version=0.12.1.0
 release=1
 source=(
 	https://github.com/$name-project/$name/archive/v$version.tar.gz
-	unbound-193bdc4.tar.gz
+	https://github.com/monero-project/miniupnp/archive/6a63f9954959119568fbc4af57d7b491b9428d87.zip
 	monerod.conf
 	monerod
 )
@@ -16,7 +16,7 @@ source=(
 build() {
 	cd $name-$version
 
-	mv $SRC/unbound external
+	mv $SRC/miniupnp-6a63f9954959119568fbc4af57d7b491b9428d87/* external/miniupnp
 
 	cmake . \
 		-DCMAKE_BUILD_TYPE=Release \
