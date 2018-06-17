@@ -160,6 +160,8 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/component_wise.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/dual_quaternion.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/dual_quaternion.inl
+-rw-r--r--	root/root	usr/include/glm/gtx/easing.hpp
+-rw-r--r--	root/root	usr/include/glm/gtx/easing.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/euler_angles.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/euler_angles.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/extend.hpp
@@ -254,7 +256,7 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/type_aligned.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/type_aligned.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/type_trait.hpp
--rw-r--r--	root/root	usr/include/glm/gtx/type_trait.inl (EMPTY)
+-rw-r--r--	root/root	usr/include/glm/gtx/type_trait.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/vec_swizzle.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/vector_angle.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/vector_angle.inl
@@ -387,8 +389,8 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00043_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00044.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00044_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00045.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00045_source.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00046.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00046_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00047.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00047_source.html
@@ -540,7 +542,6 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00120_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00121.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00121_source.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00122.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00122_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00123.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00123_source.html
@@ -566,10 +567,12 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00133_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00134.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00134_source.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00139.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00140.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00141.html
--rw-r--r--	root/root	usr/share/doc/glm/api/a00142.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00135.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00135_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00136.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00136_source.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00137.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00137_source.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00143.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00144.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00145.html
@@ -661,6 +664,14 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00231.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00232.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/a00233.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00234.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00235.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00236.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00237.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00238.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00239.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00240.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/a00241.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/arrowdown.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/arrowright.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/bc_s.png
@@ -673,6 +684,7 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/dir_9344afb825aed5e2f5be1d2015dde43c.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/dir_934f46a345653ef2b3014a1b37a162c1.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/dir_98f7f9d41f9d3029bd68cf237526a774.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/dir_d67f29d45f601ce6f7c09a9184f9bc53.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/dir_da256b9dd32ba43e2eaa8a2832c37f1b.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/dir_e8f3c1046ba4b357711397765359cd18.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/doc.png
@@ -685,13 +697,11 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/
 -rw-r--r--	root/root	usr/share/doc/glm/api/index.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/jquery.js
 -rw-r--r--	root/root	usr/share/doc/glm/api/logo-mini.png
--rw-r--r--	root/root	usr/share/doc/glm/api/man.doxy
 -rw-r--r--	root/root	usr/share/doc/glm/api/modules.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_f.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_g.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/nav_h.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/open.png
--rw-r--r--	root/root	usr/share/doc/glm/api/pages.doxy (EMPTY)
 drwxr-xr-x	root/root	usr/share/doc/glm/api/search/
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/all_0.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/all_0.js
@@ -854,6 +864,8 @@ drwxr-xr-x	root/root	usr/share/doc/glm/api/search/
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/groups_9.js
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/groups_a.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/groups_a.js
+-rw-r--r--	root/root	usr/share/doc/glm/api/search/groups_b.html
+-rw-r--r--	root/root	usr/share/doc/glm/api/search/groups_b.js
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/mag_sel.png
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/nomatches.html
 -rw-r--r--	root/root	usr/share/doc/glm/api/search/pages_0.html

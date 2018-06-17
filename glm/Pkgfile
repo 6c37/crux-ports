@@ -4,7 +4,7 @@
 # Depends on:  cmake
 
 name=glm
-version=0.9.9-a2
+version=0.9.9.0
 release=1
 source=(https://github.com/g-truc/$name/archive/$version.tar.gz)
 
@@ -16,7 +16,7 @@ build() {
 		-DCMAKE_CXX_COMPILER_ID=GNU \
 		-DCMAKE_CXX_FLAGS=" -std=c++11"
 
-	make	
+	make
 	make DESTDIR=$PKG install
 
 	mkdir -p $PKG/usr/share/doc

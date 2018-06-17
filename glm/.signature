@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpbhCHKS0RCGdqqOVXih2jwylm3SXk4LrBNmDSzg4ma8JEmjFsmIbXAwq5339rMpw5pKktyRFtjxg73RhAGMv3AE=
-SHA256 (Pkgfile) = d18e67f2ffbb42b7c0364868a37d5decf5cbabd9be961895598c4b8e5e5de506
+RWSsZdBvSzGVpaQ6iA95RYEc3U3tvU7GjY1ITfXJMrLuYyD1+fuKtnzwoP1FMQoeBKboMTeGY0Dhjk1s0OvxaKbqp6AfZQdw2Qk=
+SHA256 (Pkgfile) = 3836fb1a7134d88c18dd82e700fc40f317ab2479f5a8fae89446622134b76f6b
 SHA256 (.footprint) = 83668deceeeca120072492b5a9da72bac4d6b25e82421836e21bbb8ad904e716
-SHA256 (0.9.9-a2.tar.gz) = c0e4d12d242cfd08a02bff114c9ac5e0892ac6f54a116168b7d9faa8b89350bc
+SHA256 (0.9.9.0.tar.gz) = 514dea9ac0099dc389cf293cf1ab3d97aff080abad55bf79d4ab7ff6895ee69c
