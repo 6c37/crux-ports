@@ -4,7 +4,7 @@
 # Depends on:  slop freetype xorg-libxcomposite xorg-libxrandr
 
 name=maim
-version=5.5.1
+version=5.5.2
 release=1
 source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
