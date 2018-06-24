@@ -2,6 +2,7 @@
 # URL:         https://blender.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boost desktop-file-utils ffmpeg fftw glew glu python3 openimageio opencolorio
+# Optional:    opencl-amd
 
 name=blender
 version=2.79b

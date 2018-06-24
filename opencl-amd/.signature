@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37.pub
+RWSsZdBvSzGVpWjcf9hpTqlQyaX7GzEiZOF8ViE+6YiEHlW0iB+nA9EUaBoidGQr/8DHNViztJ1UtsZg9uIlI8z2N9gwWs6u8AU=
+SHA256 (Pkgfile) = d351ef604dfd00b6bc49a543a700771f38f9c848646edfbc0b0d68e2afa6f8f1
+SHA256 (.footprint) = 1ffc149c33665dd7f38fbb5d8018d8d2562bc30a2174d094d3ac797b3d12480b
+SHA256 (amdgpu-pro-18.20-606296.tar.xz) = 6a5058e84c378844d7d661906f10907de321e9f59a43b1804ff1244d13c6b765

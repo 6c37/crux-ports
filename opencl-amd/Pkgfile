@@ -1,0 +1,45 @@
+# Description: OpenCL userspace driver as provided in the amdgpu-pro driver stack. This package is intended to work along with the free amdgpu stack.
+# URL:         http://www.amd.com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libdrm ocl-icd
+
+name=opencl-amd
+version=18.20-606296
+release=1
+source=(https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-$version.tar.xz)
+
+build() {
+	mkdir opencl
+	cd opencl
+
+	ar x $SRC/amdgpu-pro-$version/opencl-amdgpu-pro-icd_${version}_amd64.deb
+	tar xJf data.tar.xz
+	ar x $SRC/amdgpu-pro-$version/opencl-orca-amdgpu-pro-icd_${version}_amd64.deb
+	tar xJf data.tar.xz
+	cd opt/amdgpu-pro/lib/x86_64-linux-gnu
+	sed -i "s|libdrm_amdgpu|libdrm_amdgpo|g" libamdocl-orca64.so
+
+	mkdir $SRC/libdrm
+	cd $SRC/libdrm
+	ar x $SRC/amdgpu-pro-$version/libdrm-amdgpu-amdgpu1_2.4.91-${version##*-}_amd64.deb
+	tar xJf data.tar.xz
+	cd opt/amdgpu/lib/x86_64-linux-gnu
+	rm libdrm_amdgpu.so.1
+	mv libdrm_amdgpu.so.1.0.0 libdrm_amdgpo.so.1.0.0
+	ln -s libdrm_amdgpo.so.1.0.0 libdrm_amdgpo.so.1
+
+	mv $SRC/opencl/etc $PKG/
+	mkdir -p $PKG/usr/lib
+	mv $SRC/opencl/opt/amdgpu-pro/lib/x86_64-linux-gnu/libamdocl64.so $PKG/usr/lib/
+	mv $SRC/opencl/opt/amdgpu-pro/lib/x86_64-linux-gnu/libamdocl-orca64.so $PKG/usr/lib/
+	mv $SRC/opencl/opt/amdgpu-pro/lib/x86_64-linux-gnu/libamdocl12cl64.so $PKG/usr/lib/
+	mv $SRC/libdrm/opt/amdgpu/lib/x86_64-linux-gnu/libdrm_amdgpo.so.1.0.0 $PKG/usr/lib/
+	mv $SRC/libdrm/opt/amdgpu/lib/x86_64-linux-gnu/libdrm_amdgpo.so.1 $PKG/usr/lib/
+
+	mkdir -p $PKG/opt/amdgpu/share/libdrm
+	cd $PKG/opt/amdgpu/share/libdrm
+	ln -s /usr/share/libdrm/amdgpu.ids amdgpu.ids
+
+	rm -r $SRC/opencl
+	rm -r $SRC/libdrm
+}

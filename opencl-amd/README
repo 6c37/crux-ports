@@ -1,0 +1,3 @@
+Download the $source yourself using:
+
+wget --referer https://support.amd.com/en-us/kb-articles/Pages/AMDGPU-PRO-Driver-for-Linux-Release-Notes.aspx -N $source

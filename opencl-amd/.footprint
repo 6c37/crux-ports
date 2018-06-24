@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/OpenCL/
+drwxr-xr-x	root/root	etc/OpenCL/vendors/
+-rw-r--r--	root/root	etc/OpenCL/vendors/amdocl-orca64.icd
+-rw-r--r--	root/root	etc/OpenCL/vendors/amdocl64.icd
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/amdgpu/
+drwxr-xr-x	root/root	opt/amdgpu/share/
+drwxr-xr-x	root/root	opt/amdgpu/share/libdrm/
+lrwxrwxrwx	root/root	opt/amdgpu/share/libdrm/amdgpu.ids -> /usr/share/libdrm/amdgpu.ids
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libamdocl-orca64.so
+-rw-r--r--	root/root	usr/lib/libamdocl12cl64.so
+-rw-r--r--	root/root	usr/lib/libamdocl64.so
+lrwxrwxrwx	root/root	usr/lib/libdrm_amdgpo.so.1 -> libdrm_amdgpo.so.1.0.0
+-rw-r--r--	root/root	usr/lib/libdrm_amdgpo.so.1.0.0

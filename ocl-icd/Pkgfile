@@ -1,0 +1,16 @@
+# Description: OpenCL ICD Bindings.
+# URL:         https://forge.imag.fr/projects/ocl-icd/
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  ruby mesa3d
+
+name=ocl-icd
+version=2.2.12
+release=1
+source=(https://forge.imag.fr/frs/download.php/836/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+	make DESTDIR=$PKG install
+}
