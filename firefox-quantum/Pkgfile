@@ -5,20 +5,16 @@
 # Optional:    ffmpeg
 
 name=firefox-quantum
-version=60.0.2
+version=61.0
 release=1
 source=(
 	https://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
-	0001-Bug-1435212-Add-support-for-FFmpeg-4.0.-r-bryce.patch
 	firefox-symbolic.svg
 	firefox.desktop
 )
 
 build() {
 	cd firefox-$version
-
-	# https://bugzilla.mozilla.org/show_bug.cgi?id=1435212
-	patch -p1 <$SRC/0001-Bug-1435212-Add-support-for-FFmpeg-4.0.-r-bryce.patch
 
 	cat <<-EOF >.mozconfig
 		mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir

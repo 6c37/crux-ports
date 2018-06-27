@@ -18,8 +18,6 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/chrome/icons/default/
 -rw-r--r--	root/root	usr/lib/firefox/browser/chrome/icons/default/default32.png
 -rw-r--r--	root/root	usr/lib/firefox/browser/chrome/icons/default/default48.png
 -rw-r--r--	root/root	usr/lib/firefox/browser/chrome/icons/default/default64.png
-drwxr-xr-x	root/root	usr/lib/firefox/browser/extensions/
--rw-r--r--	root/root	usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
 drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/aushelper@mozilla.org.xpi
@@ -28,6 +26,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/formautofill@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/onboarding@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/screenshots@mozilla.org.xpi
+-rw-r--r--	root/root	usr/lib/firefox/browser/features/webcompat-reporter@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/webcompat@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/omni.ja
 -rw-r--r--	root/root	usr/lib/firefox/chrome.manifest (EMPTY)
@@ -39,7 +38,7 @@ lrwxrwxrwx	root/root	usr/lib/firefox/dictionaries -> /usr/share/hunspell
 -rwxr-xr-x	root/root	usr/lib/firefox/firefox
 -rwxr-xr-x	root/root	usr/lib/firefox/firefox-bin
 drwxr-xr-x	root/root	usr/lib/firefox/fonts/
--rw-r--r--	root/root	usr/lib/firefox/fonts/EmojiOneMozilla.ttf
+-rw-r--r--	root/root	usr/lib/firefox/fonts/TwemojiMozilla.ttf
 drwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/
 drwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/0.1/
 -rwxr-xr-x	root/root	usr/lib/firefox/gmp-clearkey/0.1/libclearkey.so
