@@ -4,7 +4,7 @@
 # Depends on:  boost cppzmq libunboud
 
 name=monero
-version=0.12.2.0
+version=0.12.3.0
 release=1
 source=(
 	https://github.com/$name-project/$name/archive/v$version.tar.gz
