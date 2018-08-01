@@ -4,17 +4,16 @@
 # Depends on:  glib alsa-lib cmake
 
 name=apulse
-version=0.1.11
+version=0.1.12
 release=1
 source=(https://github.com/i-rinat/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	cmake \
+	cmake . \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_BUILD_TYPE=Release \
-		.
+		-DCMAKE_BUILD_TYPE=Release
 
 	make
 	make DESTDIR=$PKG install
