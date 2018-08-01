@@ -4,11 +4,11 @@
 # Depends on:
 
 name=erlang
-version=20.3.6
+version=21.0.3
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
-build(){
+build() {
 	cd otp-OTP-$version
 
 	./otp_build setup
