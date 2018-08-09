@@ -22,7 +22,6 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/features/
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/aushelper@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/firefox@getpocket.com.xpi
--rw-r--r--	root/root	usr/lib/firefox/browser/features/followonsearch@mozilla.com.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/formautofill@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/onboarding@mozilla.org.xpi
 -rw-r--r--	root/root	usr/lib/firefox/browser/features/screenshots@mozilla.org.xpi

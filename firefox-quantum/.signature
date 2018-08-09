@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/6c37.pub
-RWSsZdBvSzGVpRgbjoX7pDRWYkxJKVEph6joktEQfsTZ/EV8ORwqhOPpVjfjiZpqOnZSOA34oNACRgyv/EIUoHFckSAm9iLtRAI=
-SHA256 (Pkgfile) = 284b49931440ccead88f676196d2e500a1fe32d3f1a147450dcb3504eea9225f
+RWSsZdBvSzGVpbok+4xW/nUMpA/WY08kZjNRr4OOYiS+qjqZFmRWPkhjzlE0tR/i11/c1BUPWF4bK4f/QcQIWhtq9VuFRHKneAU=
+SHA256 (Pkgfile) = eda81cfc13e9326dc81042d67df987032d3d98cd11f35846bb173be6fd6f07dc
 SHA256 (.footprint) = 360547aec517962bb95fc4eadb0f35b2825cc9f6126e9b4f028a3bd78ddaefce
-SHA256 (firefox-61.0.1.source.tar.xz) = 708f4dc39fdf105fe9d3ee6b52412a1c7548fd7d34e14c29f840064de3fe8a28
+SHA256 (firefox-61.0.2.source.tar.xz) = 0bdecbbb2a955c9f4c5cd0b33acd1e47afcb6cd57ac89cf11257668e3cef202c
 SHA256 (firefox-symbolic.svg) = 9a1a572dc88014882d54ba2d3079a1cf5b28fa03c5976ed2cb763c93dabbd797
 SHA256 (firefox.desktop) = c610e681f16778ba6035ed5d10a54c74a73f70f64187c982ef05edb2f4df4130
